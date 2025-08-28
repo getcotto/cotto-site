@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* Brand design tokens */
+:root {
+  /* Colors */
+  --cotto-red: #941c1c;
+  --cotto-blue: #84a3db;
+  --cotto-cream: #f6efea;
+
+  /* Base surface/text */
+  --background: var(--cotto-cream);
+  --foreground: #171717;
+
+  /* Fonts */
+  --font-logo: "Bakersfield Display", Georgia, "Times New Roman", serif;
+  --font-brand: "Glacial Indifference", "Century Gothic", Arial, sans-serif;
+  /* Will be injected from next/font in layout as CSS var: --font-montserrat */
+}
+
+@theme inline {
+  /* Tailwind v4 theme tokens bound to CSS variables */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cotto-red: var(--cotto-red);
+  --color-cotto-blue: var(--cotto-blue);
+  --color-cotto-cream: var(--cotto-cream);
+  --font-sans: var(--font-brand);
+  --font-logo: var(--font-logo);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html, body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-brand);
+}
+
+/* Klaviyo embedded form overrides */
+.klaviyo-form-WsTrqm * {
+  font-family: var(--font-montserrat, var(--font-brand));
+}
+.klaviyo-form-WsTrqm button,
+.klaviyo-form-WsTrqm [type="submit"],
+.klaviyo-form-WsTrqm .Button__Primary {
+  background-color: var(--cotto-red) !important;
+  border-color: var(--cotto-red) !important;
+  color: white !important;
+}
+.klaviyo-form-WsTrqm .Button__Primary:hover {
+  filter: brightness(0.9);
+}
+
+/* Utilities */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1200px;
+}

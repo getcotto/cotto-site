@@ -18,7 +18,7 @@ export default function KlaviyoForm() {
   if (isSubmitted) {
     return (
       <div className="mt-6 text-center">
-        <p className="text-green-600 font-medium">Thanks for joining the waitlist!</p>
+        <p className="text-brand-red font-medium">Thanks for joining the waitlist!</p>
       </div>
     );
   }

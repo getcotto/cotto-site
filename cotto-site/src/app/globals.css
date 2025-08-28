@@ -3,16 +3,16 @@
 /* Brand design tokens */
 :root {
   /* Colors */
-  --cotto-red: #7c1d1d;
-  --cotto-blue: #84a3db;
-  --cotto-cream: #f6efea;
-  --brand-cream: #F6F0E9;
+  --cotto-red: #7C1D1D;
+  --cotto-blue: #6F89C9;
+  --cotto-cream: #F6EFE9;
+  --brand-cream: #F6EFE9;
   --brand-card: #FFFFFF;
   --hairline: rgba(0,0,0,.08);
 
   /* Base surface/text */
   --background: var(--cotto-cream);
-  --foreground: #171717;
+  --foreground: #2A1F1C;
 
   /* Fonts */
   --font-logo: "Bakersfield Display", Georgia, "Times New Roman", serif;
@@ -41,8 +41,17 @@
 
 html, body {
   background: var(--background);
-  color: var(--foreground);
+  color: rgb(42 31 28); /* brand.ink */
   font-family: var(--font-inter);
+}
+
+/* Global link styles */
+a {
+  color: #6F89C9; /* brand.blue */
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Type system */
@@ -78,6 +87,7 @@ html, body {
   border-radius: 8px !important;
   padding: 12px 16px !important;
   border: 1px solid #d1d5db !important;
+  color: rgb(42 31 28) !important; /* brand.ink */
 }
 
 /* Utilities */

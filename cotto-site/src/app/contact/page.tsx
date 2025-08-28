@@ -6,8 +6,8 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <div className="container py-16">
-      <h1 className="text-4xl font-semibold tracking-tight">Contact</h1>
-      <p className="mt-2 text-black/70 max-w-prose">
+      <h1 className="text-4xl font-semibold tracking-tight text-brand-ink font-display">Contact</h1>
+      <p className="mt-2 text-brand-ink/70 max-w-prose">
         Have a question, a new flavor suggestion, or just want to say hi? Drop us a note.
       </p>
 
@@ -20,7 +20,7 @@ export default function ContactPage() {
           href="https://www.instagram.com/getcotto"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[color:var(--cotto-blue)] underline underline-offset-4"
+          className="text-brand-blue underline underline-offset-4"
           data-analytics="outbound_social"
         >
           Instagram
@@ -29,7 +29,7 @@ export default function ContactPage() {
           href="https://www.tiktok.com/@getcotto"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[color:var(--cotto-blue)] underline underline-offset-4"
+          className="text-brand-blue underline underline-offset-4"
           data-analytics="outbound_social"
         >
           TikTok

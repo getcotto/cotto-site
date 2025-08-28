@@ -54,7 +54,13 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-      </body>
+     {process.env.NEXT_PUBLIC_KLAVIYO_COMPANY_ID && (
+  <script
+    defer
+    src={`https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=${process.env.NEXT_PUBLIC_KLAVIYO_COMPANY_ID}`}
+  />
+)}
+ </body>
     </html>
   );
 }

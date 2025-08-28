@@ -3,7 +3,7 @@
 /* Brand design tokens */
 :root {
   /* Colors */
-  --cotto-red: #7C1D1D;
+  --cotto-red: #cb102c;
   --cotto-blue: #6F89C9;
   --cotto-cream: #F6EFE9;
   --brand-cream: #F6EFE9;
@@ -12,7 +12,7 @@
 
   /* Base surface/text */
   --background: var(--cotto-cream);
-  --foreground: #7C1D1D;
+  --foreground: #cb102c;
 
   /* Fonts */
   --font-logo: "Bakersfield Display", Georgia, "Times New Roman", serif;
@@ -41,7 +41,7 @@
 
 html, body {
   background: var(--background);
-  color: #7C1D1D; /* brand.red */
+  color: #cb102c; /* brand.red */
   font-family: var(--font-inter);
 }
 
@@ -92,9 +92,9 @@ button[class*="btn"],
 input[class*="submit"],
 input[class*="button"],
 input[class*="btn"] {
-  background-color: #7C1D1D !important;
-  background: #7C1D1D !important;
-  border-color: #7C1D1D !important;
+  background-color: #cb102c !important;
+  background: #cb102c !important;
+  border-color: #cb102c !important;
   color: white !important;
   border-radius: 8px !important;
   padding: 12px 24px !important;
@@ -134,9 +134,9 @@ input[class*="btn"] {
 .klaviyo-form-WsTrqm .klaviyo-form__submit .klaviyo-form__submit [type="submit"],
 .klaviyo-form-WsTrqm .klaviyo-form__submit .klaviyo-form__submit button[type="submit"],
 .klaviyo-form-WsTrqm .klaviyo-form__submit .klaviyo-form__submit input[type="submit"] {
-  background-color: #7C1D1D !important;
-  background: #7C1D1D !important;
-  border-color: #7C1D1D !important;
+  background-color: #cb102c !important;
+  background: #cb102c !important;
+  border-color: #cb102c !important;
   color: white !important;
   border-radius: 8px !important;
   padding: 12px 24px !important;
@@ -158,15 +158,15 @@ input[class*="btn"] {
 .klaviyo-form-WsTrqm .klaviyo-form__submit .Button__Primary:hover,
 .klaviyo-form-WsTrqm .klaviyo-form__submit [type="submit"]:hover {
   filter: brightness(0.9) !important;
-  background-color: #6a1a1a !important;
-  background: #6a1a1a !important;
+  background-color: #b30f26 !important;
+  background: #b30f26 !important;
 }
 
 .klaviyo-form-WsTrqm input[type="email"] {
   border-radius: 8px !important;
   padding: 12px 16px !important;
   border: 1px solid #d1d5db !important;
-  color: #7C1D1D !important; /* brand.red */
+  color: #cb102c !important; /* brand.red */
 }
 
 /* Utilities */
@@ -200,8 +200,8 @@ input[class*="btn"] {
   background: repeating-linear-gradient(to right,
     #6F89C9,
     #6F89C9 100px,
-    #7C1D1D 100px,
-    #7C1D1D 200px
+    #cb102c 100px,
+    #cb102c 200px
   ) !important;
 }
 

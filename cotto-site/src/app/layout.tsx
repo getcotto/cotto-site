@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   title: "COTTO",
   description:
     "COTTO is reimagining cottage cheese with elevated, protein-packed dips made with clean ingredients. Join the waitlist to be the first to try.",
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "COTTO",
     description:

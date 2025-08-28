@@ -8,10 +8,7 @@ import GA from "@/components/GA";
 const fraunces = Fraunces({ 
   subsets: ["latin"], 
   variable: "--font-fraunces", 
-  display: "swap", 
-  axes: ["SOFT", "WONK"], 
-  style: ["normal"], 
-  weight: ["400", "600", "700"] 
+  display: "swap"
 });
 
 const inter = Inter({ 

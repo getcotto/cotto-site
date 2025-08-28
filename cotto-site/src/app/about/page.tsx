@@ -4,11 +4,6 @@ import FeatureCard from "@/components/FeatureCard";
 import PillCard from "@/components/PillCard";
 import { Leaf, Dumbbell, Sparkles, Salad, Soup, Sandwich } from "lucide-react";
 
-export const metadata = {
-  title: "About — COTTO",
-  description: "COTTO elevates cottage cheese dips with clean ingredients, protein-forward recipes, and familiar flavors with a modern twist.",
-};
-
 export default function AboutPage() {
   return (
     <div className="font-body">

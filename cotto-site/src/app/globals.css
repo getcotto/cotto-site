@@ -180,9 +180,19 @@ input[class*="btn"] {
 
 /* TikTok embed styling */
 .tiktok-embed {
-  margin: 0 !important;
+  margin: 0 auto !important;
   border-radius: 8px;
   overflow: hidden;
+  display: block !important;
+}
+
+/* Ensure TikTok embeds are centered on mobile */
+@media (max-width: 768px) {
+  .tiktok-embed {
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 325px !important;
+  }
 }
 
 /* Header stripes - using direct hex values */

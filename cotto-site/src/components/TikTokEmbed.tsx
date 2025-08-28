@@ -18,12 +18,12 @@ export default function TikTokEmbed({ url, className = "" }: TikTokEmbedProps) {
   }
 
   return (
-    <div className={`aspect-[9/16] ${className}`}>
+    <div className={`aspect-[9/16] w-full max-w-[325px] mx-auto ${className}`}>
       <blockquote
         className="tiktok-embed"
         cite={url}
         data-video-id={videoId}
-        style={{ maxWidth: '325px', minWidth: '325px' }}
+        style={{ width: '100%', maxWidth: '325px' }}
       >
         <section>
           <a

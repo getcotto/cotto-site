@@ -62,6 +62,54 @@ a:hover {
   font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji"; 
 }
 
+/* GLOBAL BUTTON OVERRIDE - FORCE ALL WAITLIST BUTTONS TO BE RED */
+button[type="submit"],
+input[type="submit"],
+button:contains("Join"),
+button:contains("Waitlist"),
+button:contains("Sign up"),
+button:contains("Subscribe"),
+.klaviyo-form-WsTrqm button,
+.klaviyo-form-WsTrqm [type="submit"],
+.klaviyo-form-WsTrqm .Button__Primary,
+.klaviyo-form-WsTrqm input[type="submit"],
+.klaviyo-form-WsTrqm .klaviyo-form__submit,
+.klaviyo-form-WsTrqm .klaviyo-form__submit button,
+.klaviyo-form-WsTrqm .klaviyo-form__submit input,
+.klaviyo-form-WsTrqm .klaviyo-form__submit .Button__Primary,
+.klaviyo-form-WsTrqm .klaviyo-form__submit [type="submit"],
+.klaviyo-form-WsTrqm .klaviyo-form__submit button[type="submit"],
+.klaviyo-form-WsTrqm .klaviyo-form__submit input[type="submit"],
+.klaviyo-form-WsTrqm .klaviyo-form__submit .klaviyo-form__submit,
+.klaviyo-form-WsTrqm .klaviyo-form__submit .klaviyo-form__submit button,
+.klaviyo-form-WsTrqm .klaviyo-form__submit .klaviyo-form__submit input,
+.klaviyo-form-WsTrqm .klaviyo-form__submit .klaviyo-form__submit .Button__Primary,
+.klaviyo-form-WsTrqm .klaviyo-form__submit .klaviyo-form__submit [type="submit"],
+.klaviyo-form-WsTrqm .klaviyo-form__submit .klaviyo-form__submit button[type="submit"],
+.klaviyo-form-WsTrqm .klaviyo-form__submit .klaviyo-form__submit input[type="submit"],
+/* Target any button that might be a waitlist button */
+button[style*="background"],
+button[style*="background-color"],
+button[class*="submit"],
+button[class*="button"],
+button[class*="btn"],
+input[class*="submit"],
+input[class*="button"],
+input[class*="btn"] {
+  background-color: #7C1D1D !important;
+  background: #7C1D1D !important;
+  border-color: #7C1D1D !important;
+  color: white !important;
+  border-radius: 8px !important;
+  padding: 12px 24px !important;
+  font-weight: 500 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
 /* Klaviyo embedded form overrides - ULTRA AGGRESSIVE */
 .klaviyo-form-WsTrqm {
   min-height: 60px;

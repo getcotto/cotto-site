@@ -11,7 +11,7 @@ export default function HomePage() {
       <section className="py-24 text-center">
         <h1 className="text-5xl font-extrabold mb-4 text-brand-red font-display">COTTO</h1>
         <h2 className="text-3xl font-bold mb-2 font-display text-brand-red">High-protein, clean ingredient, <span className="font-bold italic">cottage cheese-based dips</span></h2>
-        <p className="text-base mb-8 text-brand-red/90">Be the first to know when & where you can get our dips.</p>
+        <p className="text-base mb-8 text-brand-red/90">Be the first to know when & where you can dip.</p>
         
         {/* Inline Klaviyo signup form */}
         <div className="max-w-md mx-auto">

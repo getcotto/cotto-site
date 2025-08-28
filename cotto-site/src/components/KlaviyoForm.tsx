@@ -1,41 +1,10 @@
 ﻿"use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function KlaviyoForm() {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [klaviyoLoaded, setKlaviyoLoaded] = useState(false);
-  const [showFallback, setShowFallback] = useState(false);
-
-  useEffect(() => {
-    // Check if Klaviyo environment variable is available
-    const hasKlaviyoId = process.env.NEXT_PUBLIC_KLAVIYO_COMPANY_ID;
-    
-    if (!hasKlaviyoId) {
-      // If no Klaviyo ID, show fallback immediately
-      setShowFallback(true);
-      return;
-    }
-
-    // Check if Klaviyo script is loaded
-    const checkKlaviyo = () => {
-      if (window._klOnsite) {
-        setKlaviyoLoaded(true);
-      } else {
-        // Try again after a short delay, but show fallback after 3 seconds
-        setTimeout(() => {
-          if (!window._klOnsite) {
-            setShowFallback(true);
-          } else {
-            setKlaviyoLoaded(true);
-          }
-        }, 3000);
-      }
-    };
-    
-    checkKlaviyo();
-  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -56,30 +25,25 @@ export default function KlaviyoForm() {
 
   return (
     <div className="mt-6">
-      {/* Klaviyo embedded form - only show if loaded */}
-      {klaviyoLoaded && <div className="klaviyo-form-WsTrqm" />}
-      
-      {/* Fallback form if Klaviyo doesn't load or isn't available */}
-      {showFallback && (
-        <div className="mt-4">
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-              required
-              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-brand-red"
-            />
-            <button
-              type="submit"
-              className="px-6 py-3 bg-brand-red text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
-            >
-              Join Waitlist
-            </button>
-          </form>
-        </div>
-      )}
+      {/* Fallback form - always show since no Klaviyo ID is configured */}
+      <div className="mt-4">
+        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email"
+            required
+            className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-brand-red"
+          />
+          <button
+            type="submit"
+            className="px-6 py-3 bg-brand-red text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+          >
+            Join Waitlist
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

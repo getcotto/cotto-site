@@ -20,7 +20,7 @@ export default function HomePage() {
       </section>
 
       {/* TikTok Section */}
-      <section className="py-12 text-center">
+      <section className="py-12 pb-16 text-center">
         <h2 className="text-3xl font-bold mb-6 font-display text-brand-red">Follow along our journey to launch</h2>
         <div className="flex flex-col md:flex-row gap-4 md:gap-3 justify-center items-center max-w-2xl mx-auto">
           <TikTokEmbed url="https://www.tiktok.com/@getcotto/video/7542615383367224631" />

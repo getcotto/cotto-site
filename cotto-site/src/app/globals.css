@@ -72,15 +72,20 @@ a:hover {
 }
 .klaviyo-form-WsTrqm button,
 .klaviyo-form-WsTrqm [type="submit"],
-.klaviyo-form-WsTrqm .Button__Primary {
+.klaviyo-form-WsTrqm .Button__Primary,
+.klaviyo-form-WsTrqm input[type="submit"],
+.klaviyo-form-WsTrqm .klaviyo-form__submit {
   background-color: var(--cotto-blue) !important;
+  background: var(--cotto-blue) !important; /* Added this line for stronger override */
   border-color: var(--cotto-blue) !important;
   color: white !important;
   border-radius: 8px !important;
   padding: 12px 24px !important;
   font-weight: 500 !important;
 }
-.klaviyo-form-WsTrqm .Button__Primary:hover {
+.klaviyo-form-WsTrqm .Button__Primary:hover,
+.klaviyo-form-WsTrqm button:hover,
+.klaviyo-form-WsTrqm [type="submit"]:hover {
   filter: brightness(0.9) !important;
 }
 .klaviyo-form-WsTrqm input[type="email"] {
@@ -104,4 +109,14 @@ a:hover {
   margin: 0 !important;
   border-radius: 8px;
   overflow: hidden;
+}
+
+/* Header stripes */
+.header-stripes-bg {
+  background: repeating-linear-gradient(to right,
+    var(--cotto-blue),
+    var(--cotto-blue) 100px,
+    var(--cotto-red) 100px,
+    var(--cotto-red) 200px
+  );
 }

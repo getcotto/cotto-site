@@ -12,9 +12,9 @@ const navItems = [
 export default function Header() {
   const pathname = usePathname();
   return (
-    <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 border-b border-black/5">
+    <header className="sticky top-0 z-50 header-stripes-bg">
       <div className="container flex items-center justify-between h-14">
-        <Link href="/" className="text-xl font-semibold text-brand-red" aria-label="COTTO home">
+        <Link href="/" className="text-xl font-semibold text-white" aria-label="COTTO home">
           <span style={{ fontFamily: "var(--font-logo)" }}>COTTO</span>
         </Link>
         <nav className="flex items-center gap-6">
@@ -22,8 +22,8 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className={`text-sm hover:underline underline-offset-4 ${
-                pathname === item.href ? "text-brand-red" : "text-brand-red/80"
+              className={`text-sm hover:underline underline-offset-4 text-white ${
+                pathname === item.href ? "font-semibold" : "opacity-90"
               }`}
             >
               {item.label}

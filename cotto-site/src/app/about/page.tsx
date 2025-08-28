@@ -26,7 +26,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="rounded-2xl border border-neutral-200/70 bg-white p-5 shadow-[0_1px_0_rgba(0,0,0,0.04)]">
-            <h3 className="font-display text-lg font-semibold text-brand-red mb-2">Protein forward</h3>
+            <h3 className="font-display text-lg font-semibold text-brand-red mb-2">Protein packed</h3>
             <p className="text-sm leading-6 text-brand-red/80">
               Built on cottage cheese, packed with protein.
             </p>

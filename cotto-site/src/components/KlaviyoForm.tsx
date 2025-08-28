@@ -6,15 +6,31 @@ export default function KlaviyoForm() {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [klaviyoLoaded, setKlaviyoLoaded] = useState(false);
+  const [showFallback, setShowFallback] = useState(false);
 
   useEffect(() => {
+    // Check if Klaviyo environment variable is available
+    const hasKlaviyoId = process.env.NEXT_PUBLIC_KLAVIYO_COMPANY_ID;
+    
+    if (!hasKlaviyoId) {
+      // If no Klaviyo ID, show fallback immediately
+      setShowFallback(true);
+      return;
+    }
+
     // Check if Klaviyo script is loaded
     const checkKlaviyo = () => {
       if (window._klOnsite) {
         setKlaviyoLoaded(true);
       } else {
-        // Try again after a short delay
-        setTimeout(checkKlaviyo, 1000);
+        // Try again after a short delay, but show fallback after 3 seconds
+        setTimeout(() => {
+          if (!window._klOnsite) {
+            setShowFallback(true);
+          } else {
+            setKlaviyoLoaded(true);
+          }
+        }, 3000);
       }
     };
     
@@ -40,11 +56,11 @@ export default function KlaviyoForm() {
 
   return (
     <div className="mt-6">
-      {/* Klaviyo embedded form */}
-      <div className="klaviyo-form-WsTrqm" />
+      {/* Klaviyo embedded form - only show if loaded */}
+      {klaviyoLoaded && <div className="klaviyo-form-WsTrqm" />}
       
-      {/* Fallback form if Klaviyo doesn't load */}
-      {!klaviyoLoaded && (
+      {/* Fallback form if Klaviyo doesn't load or isn't available */}
+      {showFallback && (
         <div className="mt-4">
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input

@@ -6,7 +6,7 @@
 
 declare global {
   interface Window {
-    _klOnsite?: any;
+    _klOnsite?: unknown;
   }
 }
 

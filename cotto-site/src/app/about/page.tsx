@@ -13,7 +13,7 @@ export default function AboutPage() {
         </Section>
       </div>
 
-      {/* Why you'll double dip */}
+      {/* Why you&apos;ll double dip */}
       <Section className="py-8 sm:py-10">
         <h2 className="font-display text-2xl font-semibold tracking-tight text-brand-red mb-6">
           Why you&apos;ll double dip

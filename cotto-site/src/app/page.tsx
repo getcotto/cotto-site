@@ -14,7 +14,7 @@ export default function HomePage() {
         <p className="text-base mb-6 text-brand-red/90">Be the first to know when & where you can dip.</p>
         
         {/* Inline Klaviyo signup form */}
-        <div className="max-w-md mx-auto border border-red-500">
+        <div className="max-w-md mx-auto">
           <KlaviyoForm />
         </div>
       </section>

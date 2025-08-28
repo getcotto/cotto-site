@@ -53,11 +53,11 @@ export default function KlaviyoForm() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
               required
-              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-brand-ink"
+              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-brand-red"
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-brand-red text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+              className="px-6 py-3 bg-brand-blue text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
             >
               Join Waitlist
             </button>

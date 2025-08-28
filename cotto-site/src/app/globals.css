@@ -73,8 +73,8 @@ a:hover {
 .klaviyo-form-WsTrqm button,
 .klaviyo-form-WsTrqm [type="submit"],
 .klaviyo-form-WsTrqm .Button__Primary {
-  background-color: var(--cotto-red) !important;
-  border-color: var(--cotto-red) !important;
+  background-color: var(--cotto-blue) !important;
+  border-color: var(--cotto-blue) !important;
   color: white !important;
   border-radius: 8px !important;
   padding: 12px 24px !important;

@@ -1,5 +1,3 @@
-"use client";
-
 import dynamic from "next/dynamic";
 const KlaviyoForm = dynamic(() => import("@/components/KlaviyoForm"), { ssr: false });
 const TikTokEmbed = dynamic(() => import("@/components/TikTokEmbed"), { ssr: false });

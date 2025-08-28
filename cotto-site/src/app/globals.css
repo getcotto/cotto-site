@@ -6,6 +6,9 @@
   --cotto-red: #941c1c;
   --cotto-blue: #84a3db;
   --cotto-cream: #f6efea;
+  --brand-cream: #F6F0E9;
+  --brand-card: #FFFFFF;
+  --hairline: rgba(0,0,0,.08);
 
   /* Base surface/text */
   --background: var(--cotto-cream);
@@ -14,7 +17,7 @@
   /* Fonts */
   --font-logo: "Bakersfield Display", Georgia, "Times New Roman", serif;
   --font-brand: "Glacial Indifference", "Century Gothic", Arial, sans-serif;
-  /* Will be injected from next/font in layout as CSS var: --font-montserrat */
+  /* Will be injected from next/font in layout as CSS var: --font-fraunces and --font-inter */
 }
 
 @theme inline {
@@ -42,9 +45,17 @@ html, body {
   font-family: var(--font-brand);
 }
 
+/* Type system */
+.font-display { 
+  font-family: var(--font-fraunces), ui-serif, Georgia, serif; 
+}
+.font-body { 
+  font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji"; 
+}
+
 /* Klaviyo embedded form overrides */
 .klaviyo-form-WsTrqm * {
-  font-family: var(--font-montserrat, var(--font-brand));
+  font-family: var(--font-inter, var(--font-brand));
 }
 .klaviyo-form-WsTrqm button,
 .klaviyo-form-WsTrqm [type="submit"],

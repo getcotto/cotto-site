@@ -1,14 +1,23 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GA from "@/components/GA";
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-  display: "swap",
+const fraunces = Fraunces({ 
+  subsets: ["latin"], 
+  variable: "--font-fraunces", 
+  display: "swap", 
+  axes: ["SOFT", "WONK"], 
+  style: ["normal"], 
+  weight: ["400", "600", "700"] 
+});
+
+const inter = Inter({ 
+  subsets: ["latin"], 
+  variable: "--font-inter", 
+  display: "swap" 
 });
 
 export const metadata: Metadata = {
@@ -49,7 +58,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} antialiased min-h-dvh flex flex-col`}>
+      <body className={`${inter.variable} ${fraunces.variable} antialiased min-h-dvh flex flex-col bg-[#F6F0E9] text-neutral-900`}>
         <GA />
         <Header />
         <main className="flex-1">{children}</main>

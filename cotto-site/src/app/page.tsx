@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <div className="font-body">
       {/* Hero Section */}
-      <section className="pt-20 pb-16 text-center">
+      <section className="pt-20 pb-16 px-6 text-center">
         <h1 className="text-5xl font-extrabold mb-3 text-brand-red font-display">COTTO</h1>
         <h2 className="text-3xl font-bold mb-2 font-display text-brand-red">High-protein, clean ingredient, <span className="font-bold italic">cottage cheese-based dips</span></h2>
         <p className="text-base mb-6 text-brand-red/90">Be the first to know when & where you can dip.</p>

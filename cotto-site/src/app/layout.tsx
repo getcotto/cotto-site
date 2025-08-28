@@ -55,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${fraunces.variable} antialiased min-h-dvh flex flex-col bg-brand-cream text-brand-ink`}>
+      <body className={`${inter.variable} ${fraunces.variable} antialiased min-h-dvh flex flex-col bg-brand-cream text-brand-red`}>
         <GA />
         <Header />
         <main className="flex-1">{children}</main>

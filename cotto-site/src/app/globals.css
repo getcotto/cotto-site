@@ -65,3 +65,10 @@ html, body {
   padding-right: 1rem;
   max-width: 1200px;
 }
+
+/* TikTok embed styling */
+.tiktok-embed {
+  margin: 0 !important;
+  border-radius: 8px;
+  overflow: hidden;
+}

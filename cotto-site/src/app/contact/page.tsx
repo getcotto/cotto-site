@@ -8,7 +8,7 @@ export default function ContactPage() {
     <div className="container py-16">
       <h1 className="text-4xl font-semibold tracking-tight">Contact</h1>
       <p className="mt-2 text-black/70 max-w-prose">
-        Have a question or want to say hi? Drop us a note.
+        Have a question, a new flavor suggestion, or just want to say hi? Drop us a note.
       </p>
 
       <div className="mt-8 max-w-lg">

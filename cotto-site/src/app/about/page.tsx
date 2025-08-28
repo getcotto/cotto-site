@@ -1,46 +1,78 @@
-import Image from "next/image";
-
-export const metadata = {
-  title: "About — COTTO",
-};
-
-export default function AboutPage() {
+﻿export default function AboutPage() {
   return (
-    <div className="font-sans">
-      <section className="relative">
-        <div className="container py-16 sm:py-24 grid gap-6 sm:grid-cols-2 items-center">
-          <div className="aspect-[4/3] relative bg-white rounded-lg overflow-hidden ring-1 ring-black/5">
-            <Image src="/hero/about-hero.jpg" alt="COTTO founder" fill className="object-cover" />
+    <main className="px-6 sm:px-10 max-w-5xl mx-auto py-12 sm:py-16">
+      <h1 className="text-3xl font-semibold">About COTTO</h1>
+      
+      {/* Product Overview */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-semibold mb-6">What makes COTTO special</h2>
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold">Clean ingredients</h3>
+            <p className="text-black/70">
+              No natural flavors, no gums; just a short list of ingredients you can recognize.
+            </p>
           </div>
-          <div>
-            <h1 className="text-4xl font-semibold tracking-tight">Meet Kendall</h1>
-            <p className="mt-4 text-black/70 max-w-prose">
-              COTTO was born from a love of classic dips and a desire for cleaner,
-              protein-forward options. We craft elevated cottage cheese dips that are
-              bold, familiar, and ready to share.
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold">Protein forward</h3>
+            <p className="text-black/70">
+              Built on cottage cheese, packed with protein.
+            </p>
+          </div>
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold">Elevated flavors</h3>
+            <p className="text-black/70">
+              Familiar flavors with a modern twist.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="container py-12 sm:py-16">
-        <h2 className="text-2xl font-semibold">Our values</h2>
-        <div className="mt-6 grid gap-6 sm:grid-cols-3">
-          <div className="p-6 bg-white rounded-lg ring-1 ring-black/5">
-            <h3 className="font-medium">Clean protein made simple</h3>
-            <p className="mt-2 text-black/70">High-quality ingredients without the fuss.</p>
+      {/* How to Enjoy */}
+      <section className="mt-16">
+        <h2 className="text-2xl font-semibold mb-6">How to enjoy</h2>
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="p-4 bg-white rounded-lg border border-gray-200">
+            <p className="text-black/70">Dipping veggies/chips</p>
           </div>
-          <div className="p-6 bg-white rounded-lg ring-1 ring-black/5">
-            <h3 className="font-medium">Elevated classic flavors</h3>
-            <p className="mt-2 text-black/70">Familiar favorites with a modern, craveable twist.</p>
+          <div className="p-4 bg-white rounded-lg border border-gray-200">
+            <p className="text-black/70">Topping a Buddha bowl</p>
           </div>
-          <div className="p-6 bg-white rounded-lg ring-1 ring-black/5">
-            <h3 className="font-medium">Ready-to-dip convenience</h3>
-            <p className="mt-2 text-black/70">Grab, share, and enjoy anywhere.</p>
+          <div className="p-4 bg-white rounded-lg border border-gray-200">
+            <p className="text-black/70">Spreading on toast</p>
+          </div>
+          <div className="p-4 bg-white rounded-lg border border-gray-200">
+            <p className="text-black/70">Adding a scoop to a salad</p>
+          </div>
+          <div className="p-4 bg-white rounded-lg border border-gray-200">
+            <p className="text-black/70">Using as a high-protein swap for mayo or sour cream</p>
           </div>
         </div>
       </section>
-    </div>
+
+      {/* Founder Note */}
+      <section className="mt-16">
+        <h2 className="text-2xl font-semibold mb-6">Founder Note</h2>
+        <div className="bg-white rounded-lg p-6 border border-gray-200">
+          <p className="text-black/70 leading-relaxed">
+            Hi, I'm Kendall. COTTO was born from my own health journey. After facing health challenges 
+            that restricted what I could eat, I found myself craving delicious, protein-rich foods that 
+            actually made me feel good. Traditional cottage cheese was nutritious but lacked the flavor 
+            and versatility I wanted.
+          </p>
+          <p className="text-black/70 leading-relaxed mt-4">
+            That's why I created COTTO—elevated cottage cheese dips that are both delicious and 
+            nourishing. Every flavor is crafted with clean ingredients you can recognize, built on 
+            the protein foundation of cottage cheese, and designed to make healthy eating feel 
+            effortless and enjoyable.
+          </p>
+          <p className="text-black/70 leading-relaxed mt-4">
+            My hope is that COTTO helps others discover that healthy food can be both satisfying 
+            and truly delicious.
+          </p>
+        </div>
+      </section>
+    </main>
   );
 }
 

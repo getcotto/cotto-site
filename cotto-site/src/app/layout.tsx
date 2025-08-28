@@ -63,13 +63,11 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        {/* Klaviyo script - will load if company ID is available */}
-        {process.env.NEXT_PUBLIC_KLAVIYO_COMPANY_ID && (
-          <script
-            defer
-            src={`https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=${process.env.NEXT_PUBLIC_KLAVIYO_COMPANY_ID}`}
-          />
-        )}
+        {/* Klaviyo script with Company ID */}
+        <script
+          defer
+          src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=RMBPUm"
+        />
       </body>
     </html>
   );

@@ -4,34 +4,99 @@ import { useState } from "react";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<string | null>(null);
-  return (
-    <form
-      className="space-y-4"
-      onSubmit={(e) => {
-        e.preventDefault();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus(null);
+
+    try {
+      // Send to Klaviyo API
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          source: 'contact_form'
+        }),
+      });
+
+      if (response.ok) {
         setStatus("Thanks! We received your message.");
-      }}
-    >
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setStatus("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  return (
+    <form className="space-y-4" onSubmit={handleSubmit}>
       <div>
-        <label className="block text-sm font-medium">Name</label>
-        <input className="mt-1 w-full rounded-md border border-black/10 px-3 py-2 bg-white" required />
+        <label className="block text-sm font-medium text-brand-red">Name</label>
+        <input 
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 bg-white text-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent" 
+          required 
+        />
       </div>
       <div>
-        <label className="block text-sm font-medium">Email</label>
-        <input type="email" className="mt-1 w-full rounded-md border border-black/10 px-3 py-2 bg-white" required />
+        <label className="block text-sm font-medium text-brand-red">Email</label>
+        <input 
+          type="email" 
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 bg-white text-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent" 
+          required 
+        />
       </div>
       <div>
-        <label className="block text-sm font-medium">Message (optional)</label>
-        <textarea className="mt-1 w-full rounded-md border border-black/10 px-3 py-2 bg-white" rows={4} />
+        <label className="block text-sm font-medium text-brand-red">Message (optional)</label>
+        <textarea 
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 bg-white text-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent" 
+          rows={4} 
+        />
       </div>
       <button
         type="submit"
-        className="inline-flex items-center justify-center rounded-md bg-[color:var(--cotto-red)] text-white px-6 py-3 text-base font-medium hover:opacity-90"
+        disabled={isSubmitting}
+        className="inline-flex items-center justify-center rounded-md bg-brand-red text-white px-6 py-3 text-base font-medium hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"
         data-analytics="cta_click"
       >
-        Send
+        {isSubmitting ? "Sending..." : "Send"}
       </button>
-      {status && <p className="text-sm text-black/70">{status}</p>}
+      {status && (
+        <p className={`text-sm ${status.includes("Thanks") ? "text-green-600" : "text-red-600"}`}>
+          {status}
+        </p>
+      )}
     </form>
   );
 }

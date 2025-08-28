@@ -3,7 +3,7 @@
 /* Brand design tokens */
 :root {
   /* Colors */
-  --cotto-red: #941c1c;
+  --cotto-red: #7c1d1d;
   --cotto-blue: #84a3db;
   --cotto-cream: #f6efea;
   --brand-cream: #F6F0E9;
@@ -42,7 +42,7 @@
 html, body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-brand);
+  font-family: var(--font-inter);
 }
 
 /* Type system */

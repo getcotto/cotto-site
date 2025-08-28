@@ -141,18 +141,27 @@ a:hover {
   overflow: hidden;
 }
 
-/* Header stripes */
+/* Header stripes - using direct hex values */
 .header-stripes-bg {
   background: repeating-linear-gradient(to right,
-    var(--cotto-blue),
-    var(--cotto-blue) 100px,
-    var(--cotto-red) 100px,
-    var(--cotto-red) 200px
-  );
+    #6F89C9,
+    #6F89C9 100px,
+    #7C1D1D 100px,
+    #7C1D1D 200px
+  ) !important;
 }
 
-/* Header text color override */
+/* Header text color override - more specific */
+.header-stripes-bg,
 .header-stripes-bg a,
+.header-stripes-bg span,
 .header-stripes-bg * {
+  color: white !important;
+}
+
+/* Additional specificity for header links */
+header.header-stripes-bg a,
+header.header-stripes-bg span,
+header.header-stripes-bg * {
   color: white !important;
 }

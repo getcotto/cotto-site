@@ -57,7 +57,7 @@ export default function KlaviyoForm() {
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-brand-blue text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+              className="px-6 py-3 bg-brand-red text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
             >
               Join Waitlist
             </button>

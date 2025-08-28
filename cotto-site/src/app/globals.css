@@ -75,9 +75,9 @@ a:hover {
 .klaviyo-form-WsTrqm .Button__Primary,
 .klaviyo-form-WsTrqm input[type="submit"],
 .klaviyo-form-WsTrqm .klaviyo-form__submit {
-  background-color: var(--cotto-blue) !important;
-  background: var(--cotto-blue) !important; /* Added this line for stronger override */
-  border-color: var(--cotto-blue) !important;
+  background-color: var(--cotto-red) !important;
+  background: var(--cotto-red) !important; /* Reverted back to red */
+  border-color: var(--cotto-red) !important;
   color: white !important;
   border-radius: 8px !important;
   padding: 12px 24px !important;
@@ -119,4 +119,10 @@ a:hover {
     var(--cotto-red) 100px,
     var(--cotto-red) 200px
   );
+}
+
+/* Header text color override */
+.header-stripes-bg a,
+.header-stripes-bg * {
+  color: white !important;
 }

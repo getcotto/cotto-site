@@ -18,7 +18,7 @@ export default function TikTokEmbed({ url, className = "" }: TikTokEmbedProps) {
   }
 
   return (
-    <div className={`aspect-[9/16] w-full max-w-[325px] mx-auto ${className}`}>
+    <div className={`aspect-[9/16] w-[280px] md:w-[325px] ${className}`}>
       <blockquote
         className="tiktok-embed"
         cite={url}

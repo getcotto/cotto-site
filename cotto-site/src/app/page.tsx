@@ -11,11 +11,11 @@ export default function HomePage() {
       <section className="py-24 text-center">
         <h1 className="text-5xl font-extrabold mb-4 text-[#7c1d1d] font-display">COTTO</h1>
         <h2 className="text-3xl font-bold mb-2 font-display">Elevated Cottage Cheese–Based Dips</h2>
-        <p className="text-lg mb-6 text-black/70">High protein, clean ingredients, elevated flavors.</p>
+        <p className="text-lg mb-8 text-black/70">High protein, clean ingredients, elevated flavors.</p>
         
         {/* Inline Klaviyo signup form */}
         <div className="max-w-md mx-auto">
-          <div className="klaviyo-form-WsTrqm" />
+          <KlaviyoForm />
         </div>
       </section>
 

@@ -24,6 +24,8 @@ export const metadata: Metadata = {
     "COTTO is reimagining cottage cheese with elevated, protein-packed dips made with clean ingredients. Join the waitlist to be the first to try.",
   icons: {
     icon: "/favicon.svg",
+    apple: "/apple-touch-icon.svg",
+    shortcut: "/favicon.svg",
   },
   openGraph: {
     title: "COTTO",
@@ -33,10 +35,11 @@ export const metadata: Metadata = {
     siteName: "COTTO",
     images: [
       {
-        url: "/og-image.svg",
+        url: "/cotto-og-image.png",
         width: 1200,
         height: 630,
         alt: "COTTO - Cottage cheese-based dips",
+        type: "image/png",
       },
     ],
     locale: "en_US",
@@ -47,7 +50,15 @@ export const metadata: Metadata = {
     title: "COTTO",
     description:
       "COTTO is reimagining cottage cheese with elevated, protein-packed dips made with clean ingredients. Join the waitlist to be the first to try.",
-    images: ["/og-image.svg"],
+    images: ["/cotto-og-image.png"],
+  },
+  other: {
+    "apple-mobile-web-app-title": "COTTO",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "default",
+    "mobile-web-app-capable": "yes",
+    "msapplication-TileColor": "#7C1D1D",
+    "theme-color": "#7C1D1D",
   },
 };
 

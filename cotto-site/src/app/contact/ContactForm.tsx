@@ -64,35 +64,35 @@ export default function ContactForm() {
   return (
     <form className="space-y-4" onSubmit={handleSubmit}>
       <div>
-        <label className="block text-sm font-medium text-brand-red">Name</label>
+        <label className="block text-sm font-medium text-brand-red font-display">Name</label>
         <input 
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 bg-white text-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent" 
+          className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 bg-white text-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent font-display" 
           required 
           placeholder="Your name"
         />
       </div>
       <div>
-        <label className="block text-sm font-medium text-brand-red">Email</label>
+        <label className="block text-sm font-medium text-brand-red font-display">Email</label>
         <input 
           type="email" 
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 bg-white text-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent" 
+          className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 bg-white text-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent font-display" 
           required 
           placeholder="your.email@example.com"
         />
       </div>
       <div>
-        <label className="block text-sm font-medium text-brand-red">Message (optional)</label>
+        <label className="block text-sm font-medium text-brand-red font-display">Message (optional)</label>
         <textarea 
           name="message"
           value={formData.message}
           onChange={handleChange}
-          className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 bg-white text-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent" 
+          className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 bg-white text-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent font-display" 
           rows={4} 
           placeholder="Your message here..."
         />
@@ -100,13 +100,13 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="inline-flex items-center justify-center rounded-md bg-brand-red text-white px-6 py-3 text-base font-medium hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="inline-flex items-center justify-center rounded-md bg-brand-red text-white px-6 py-3 text-base font-medium hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed font-display"
         data-analytics="cta_click"
       >
         {isSubmitting ? "Sending..." : "Send"}
       </button>
       {status && (
-        <p className={`text-sm ${status.includes("Thanks") ? "text-green-600" : "text-red-600"}`}>
+        <p className={`text-sm ${status.includes("Thanks") ? "text-green-600" : "text-red-600"} font-display`}>
           {status}
         </p>
       )}

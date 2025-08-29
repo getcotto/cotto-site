@@ -1,0 +1,14 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="stripes" patternUnits="userSpaceOnUse" width="45" height="180">
+      <rect width="22.5" height="180" fill="#7C1D1D"/>
+      <rect x="22.5" width="22.5" height="180" fill="#6F89C9"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background with stripes -->
+  <rect width="180" height="180" fill="url(#stripes)"/>
+  
+  <!-- COTTO text - larger for touch icon -->
+  <text x="90" y="120" font-family="serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#F6EFE9">COTTO</text>
+</svg>

@@ -33,10 +33,10 @@ export const metadata: Metadata = {
     siteName: "COTTO",
     images: [
       {
-        url: "/cotto-og-image.png",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "COTTO",
+        alt: "COTTO - Cottage cheese-based dips",
       },
     ],
     locale: "en_US",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "COTTO",
     description:
       "COTTO is reimagining cottage cheese with elevated, protein-packed dips made with clean ingredients. Join the waitlist to be the first to try.",
-    images: ["/cotto-og-image.png"],
+    images: ["/og-image.svg"],
   },
 };
 

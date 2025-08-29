@@ -17,7 +17,7 @@ export default function ContactForm() {
     setStatus(null);
 
     try {
-      // Send to Klaviyo API
+      // Send to contact API
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -35,10 +35,12 @@ export default function ContactForm() {
         setStatus("Thanks! We received your message.");
         setFormData({ name: "", email: "", message: "" });
       } else {
-        setStatus("Something went wrong. Please try again.");
+        const errorData = await response.json().catch(() => ({}));
+        setStatus(errorData.error || "Something went wrong. Please try again.");
       }
     } catch (error) {
-      setStatus("Something went wrong. Please try again.");
+      console.error('Form submission error:', error);
+      setStatus("Network error. Please check your connection and try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -61,6 +63,7 @@ export default function ContactForm() {
           onChange={handleChange}
           className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 bg-white text-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent" 
           required 
+          placeholder="Your name"
         />
       </div>
       <div>
@@ -72,6 +75,7 @@ export default function ContactForm() {
           onChange={handleChange}
           className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 bg-white text-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent" 
           required 
+          placeholder="your.email@example.com"
         />
       </div>
       <div>
@@ -82,6 +86,7 @@ export default function ContactForm() {
           onChange={handleChange}
           className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 bg-white text-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent" 
           rows={4} 
+          placeholder="Your message here..."
         />
       </div>
       <button

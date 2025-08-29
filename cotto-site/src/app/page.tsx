@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <div className="font-body">
       {/* Hero Section */}
-      <section className="pt-32 pb-48 md:pb-16 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-screen">
+      <section className="pt-32 pb-48 md:pb-16 px-4 md:px-6 text-center flex flex-col items-center justify-center">
         <div className="w-full max-w-4xl">
           <h1 className="text-6xl md:text-8xl font-extrabold mb-3 text-brand-red font-display whitespace-nowrap">COTTO</h1>
           <h2 className="text-2xl md:text-4xl font-bold mb-2 font-display text-brand-red italic whitespace-nowrap">Cottage cheese-based dips</h2>

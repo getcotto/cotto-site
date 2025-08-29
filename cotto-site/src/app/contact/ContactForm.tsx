@@ -17,6 +17,8 @@ export default function ContactForm() {
     setStatus(null);
 
     try {
+      console.log('Submitting form data:', formData);
+      
       // Send to contact API
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -31,11 +33,17 @@ export default function ContactForm() {
         }),
       });
 
+      console.log('API response status:', response.status);
+      console.log('API response ok:', response.ok);
+
       if (response.ok) {
+        const responseData = await response.json();
+        console.log('API response data:', responseData);
         setStatus("Thanks! We received your message.");
         setFormData({ name: "", email: "", message: "" });
       } else {
         const errorData = await response.json().catch(() => ({}));
+        console.log('API error data:', errorData);
         setStatus(errorData.error || "Something went wrong. Please try again.");
       }
     } catch (error) {

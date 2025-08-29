@@ -21,46 +21,22 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Try to send to Klaviyo if API key is available
-    if (process.env.KLAVIYO_PRIVATE_API_KEY) {
-      try {
-        const klaviyoResponse = await fetch('https://a.klaviyo.com/api/v2/list/XzK9Yw/members', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Klaviyo-API-Key ${process.env.KLAVIYO_PRIVATE_API_KEY}`,
-          },
-          body: JSON.stringify({
-            profiles: [{
-              email: email,
-              $first_name: name.split(' ')[0],
-              $last_name: name.split(' ').slice(1).join(' ') || '',
-              $source: source || 'contact_form',
-              message: message || '',
-              contact_date: new Date().toISOString(),
-            }]
-          }),
-        });
-
-        if (!klaviyoResponse.ok) {
-          console.error('Klaviyo API error:', await klaviyoResponse.text());
-        }
-      } catch (klaviyoError) {
-        console.error('Klaviyo API error:', klaviyoError);
-        // Continue execution even if Klaviyo fails
-      }
-    }
-
-    // Log the contact form submission for now
-    console.log('Contact form submission:', {
+    // Log the contact form submission
+    console.log('Contact form submission received:', {
       name,
       email,
-      message,
-      source,
+      message: message || '',
+      source: source || 'contact_form',
       timestamp: new Date().toISOString()
     });
 
-    return NextResponse.json({ success: true });
+    // For now, just return success
+    // TODO: Add email notification or database storage later
+    return NextResponse.json({ 
+      success: true,
+      message: 'Message received successfully'
+    });
+
   } catch (error) {
     console.error('Contact form error:', error);
     return NextResponse.json(

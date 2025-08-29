@@ -43,6 +43,16 @@ html, body {
   background: var(--background);
   color: #7C1D1D; /* brand.red */
   font-family: var(--font-inter);
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure mobile background is correct */
+@media (max-width: 768px) {
+  html, body {
+    background: #F6EFE9 !important; /* brand-cream */
+    min-height: 100vh;
+  }
 }
 
 /* Global link styles */

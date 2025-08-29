@@ -77,7 +77,7 @@ export default function TermsPage() {
         <section className="mb-8">
           <h2 className="text-xl font-semibold text-brand-red mb-4">Disclaimer of Warranties</h2>
           <p className="mb-4">
-            Our services are provided "as is" and "as available" without warranties of any kind, either express or implied. We disclaim all warranties, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.
+            Our services are provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo; without warranties of any kind, either express or implied. We disclaim all warranties, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.
           </p>
         </section>
 
@@ -98,7 +98,7 @@ export default function TermsPage() {
         <section className="mb-8">
           <h2 className="text-xl font-semibold text-brand-red mb-4">Changes to Terms</h2>
           <p className="mb-4">
-            We reserve the right to modify these terms at any time. We will notify users of any material changes by posting the new terms on this page and updating the "Last updated" date. Your continued use of our services after such changes constitutes acceptance of the new terms.
+            We reserve the right to modify these terms at any time. We will notify users of any material changes by posting the new terms on this page and updating the &ldquo;Last updated&rdquo; date. Your continued use of our services after such changes constitutes acceptance of the new terms.
           </p>
         </section>
 

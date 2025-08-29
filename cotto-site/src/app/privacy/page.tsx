@@ -15,7 +15,7 @@ export default function PrivacyPage() {
         <section className="mb-8">
           <h2 className="text-xl font-semibold text-brand-red mb-4">Introduction</h2>
           <p className="mb-4">
-            COTTO ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our services, or interact with us.
+            COTTO (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our services, or interact with us.
           </p>
         </section>
 
@@ -102,7 +102,7 @@ export default function PrivacyPage() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-xl font-semibold text-brand-red mb-4">Children's Privacy</h2>
+          <h2 className="text-xl font-semibold text-brand-red mb-4">Children&apos;s Privacy</h2>
           <p className="mb-4">
             Our services are not intended for children under 13. We do not knowingly collect personal information from children under 13.
           </p>
@@ -111,7 +111,7 @@ export default function PrivacyPage() {
         <section className="mb-8">
           <h2 className="text-xl font-semibold text-brand-red mb-4">Changes to This Policy</h2>
           <p className="mb-4">
-            We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.
+            We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &ldquo;Last updated&rdquo; date.
           </p>
         </section>
 

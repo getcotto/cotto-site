@@ -1,5 +1,6 @@
-import ContactForm from "./ContactForm";
-export const metadata = {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Contact — COTTO",
 };
 
@@ -12,7 +13,7 @@ export default function ContactPage() {
       </p>
 
       <div className="mt-6 max-w-lg">
-        <ContactForm />
+        <div className="klaviyo-form-Wmbj8y"></div>
       </div>
 
       <div className="mt-8 flex items-center gap-4">

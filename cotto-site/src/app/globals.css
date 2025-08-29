@@ -115,6 +115,67 @@ input[class*="btn"] {
   font-family: var(--font-inter, var(--font-brand)) !important;
 }
 
+/* Contact form specific overrides */
+.klaviyo-form-Wmbj8y {
+  font-family: var(--font-fraunces), serif !important;
+}
+
+.klaviyo-form-Wmbj8y * {
+  font-family: var(--font-fraunces), serif !important;
+}
+
+.klaviyo-form-Wmbj8y input,
+.klaviyo-form-Wmbj8y textarea {
+  font-family: var(--font-fraunces), serif !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 6px !important;
+  padding: 8px 12px !important;
+  color: #7C1D1D !important;
+  background-color: white !important;
+}
+
+.klaviyo-form-Wmbj8y input:focus,
+.klaviyo-form-Wmbj8y textarea:focus {
+  outline: none !important;
+  ring: 2px !important;
+  ring-color: #7C1D1D !important;
+  border-color: #7C1D1D !important;
+}
+
+.klaviyo-form-Wmbj8y button,
+.klaviyo-form-Wmbj8y [type="submit"],
+.klaviyo-form-Wmbj8y .Button__Primary,
+.klaviyo-form-Wmbj8y input[type="submit"] {
+  background-color: #7C1D1D !important;
+  background: #7C1D1D !important;
+  border-color: #7C1D1D !important;
+  color: white !important;
+  border-radius: 6px !important;
+  padding: 12px 24px !important;
+  font-weight: 500 !important;
+  font-family: var(--font-fraunces), serif !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+.klaviyo-form-Wmbj8y button:hover,
+.klaviyo-form-Wmbj8y [type="submit"]:hover,
+.klaviyo-form-Wmbj8y .Button__Primary:hover,
+.klaviyo-form-Wmbj8y input[type="submit"]:hover {
+  opacity: 0.9 !important;
+  background-color: #6a1a1a !important;
+  background: #6a1a1a !important;
+}
+
+.klaviyo-form-Wmbj8y label {
+  color: #7C1D1D !important;
+  font-weight: 500 !important;
+  font-family: var(--font-fraunces), serif !important;
+}
+
 /* Target ALL possible button selectors with maximum specificity */
 .klaviyo-form-WsTrqm button,
 .klaviyo-form-WsTrqm [type="submit"],

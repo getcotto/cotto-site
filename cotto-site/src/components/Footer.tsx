@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+  if (pathname?.startsWith("/dash")) return null;
   return (
     <footer className="border-t border-black/5 bg-white">
       <div className="container py-8 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
@@ -38,5 +43,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-

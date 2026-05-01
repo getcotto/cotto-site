@@ -1,35 +1,47 @@
-import { Redis } from "@upstash/redis";
+import { createClient, type RedisClientType } from "redis";
 import { CATEGORIES, SOURCES, type Category, type Source, type TodoItem } from "./types";
 
 const KEY = "dash:todos:v1";
 
-let _redis: Redis | null = null;
-function redis(): Redis {
-  if (_redis) return _redis;
-  const url = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL;
-  const token = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN;
-  if (!url || !token) {
-    throw new Error("Missing KV/Upstash env vars (KV_REST_API_URL, KV_REST_API_TOKEN)");
+let _client: RedisClientType | null = null;
+let _connecting: Promise<RedisClientType> | null = null;
+
+async function client(): Promise<RedisClientType> {
+  if (_client?.isOpen) return _client;
+  if (_connecting) return _connecting;
+  const url = process.env.REDIS_URL;
+  if (!url) throw new Error("Missing REDIS_URL env var");
+  _connecting = (async () => {
+    const c = createClient({ url, socket: { connectTimeout: 10_000 } }) as RedisClientType;
+    c.on("error", () => {
+      // swallow runtime emit so a single hiccup doesn't crash the process
+    });
+    await c.connect();
+    _client = c;
+    return c;
+  })();
+  try {
+    return await _connecting;
+  } finally {
+    _connecting = null;
   }
-  _redis = new Redis({ url, token });
-  return _redis;
 }
 
 export async function listTodos(): Promise<TodoItem[]> {
-  const raw = await redis().get<TodoItem[] | string>(KEY);
+  const c = await client();
+  const raw = await c.get(KEY);
   if (!raw) return [];
-  if (typeof raw === "string") {
-    try {
-      return JSON.parse(raw) as TodoItem[];
-    } catch {
-      return [];
-    }
+  try {
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? (parsed as TodoItem[]) : [];
+  } catch {
+    return [];
   }
-  return raw;
 }
 
 async function writeTodos(items: TodoItem[]): Promise<void> {
-  await redis().set(KEY, JSON.stringify(items));
+  const c = await client();
+  await c.set(KEY, JSON.stringify(items));
 }
 
 function genId(): string {

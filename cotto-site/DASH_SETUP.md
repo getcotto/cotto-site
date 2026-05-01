@@ -8,13 +8,11 @@ Private to-do dashboard at `/dash`. Single-user, password gate, Upstash Redis (v
 
 In the Vercel dashboard for cotto-site:
 
-1. Go to **Storage** tab → **Create Database** → **Marketplace** → choose **Upstash** → **Redis**.
-2. Pick the free tier and the region closest to NYC (e.g. `us-east-1`).
-3. Connect it to the cotto-site project. Vercel will auto-inject these env vars on deploy:
-   - `KV_REST_API_URL`
-   - `KV_REST_API_TOKEN`
+1. Go to **Storage** tab → **Create Database** → choose **Redis** (Serverless Redis, by Redis Inc.).
+2. Pick the free tier and a region close to your users (e.g. `us-east-1`).
+3. Connect it to the cotto-site project. Vercel auto-injects `REDIS_URL` (TCP connection string).
 
-The store reads `KV_REST_API_*` first, falling back to `UPSTASH_REDIS_REST_*` if you'd rather use the Upstash variable names.
+The store uses node-redis over TCP, so this requires Node runtime (not Edge). All `/api/dash/*` routes and `/dash` already declare `runtime = "nodejs"`.
 
 ### 2. Set the password / API token
 
@@ -34,8 +32,7 @@ Add to `.env.local` (do not commit):
 
 ```
 DASH_SECRET=<same value>
-KV_REST_API_URL=<from Vercel Storage panel>
-KV_REST_API_TOKEN=<from Vercel Storage panel>
+REDIS_URL=<from Vercel Storage panel — `redis://default:<password>@host:port`>
 ```
 
 Or run `vercel env pull .env.local` to grab everything.

@@ -4,6 +4,7 @@ import { deleteTodo, patchTodo, type PatchInput } from "@/lib/dash/store";
 import { CATEGORIES, type Category } from "@/lib/dash/types";
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
 
 export async function PATCH(req: NextRequest, ctx: { params: Promise<{ id: string }> }) {
   if (!isAuthorizedRequest(req)) {

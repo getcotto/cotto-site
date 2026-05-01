@@ -4,6 +4,7 @@ import { archiveOldDone, createTodo, listTodos } from "@/lib/dash/store";
 import { CATEGORIES, SOURCES, type Category, type Source } from "@/lib/dash/types";
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
 
 export async function GET(req: NextRequest) {
   if (!isAuthorizedRequest(req)) {

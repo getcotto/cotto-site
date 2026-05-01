@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
 
 export default async function DashPage() {
   const authed = await isAuthorizedServer();

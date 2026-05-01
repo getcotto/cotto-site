@@ -11,6 +11,7 @@ const navItems = [
 
 export default function Header() {
   const pathname = usePathname();
+  if (pathname?.startsWith("/dash")) return null;
   return (
     <header 
       className="sticky top-0 z-50 header-stripes-bg"

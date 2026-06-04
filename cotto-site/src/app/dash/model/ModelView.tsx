@@ -149,6 +149,94 @@ export default function ModelView({ snapshot, storeError }: Props) {
             </div>
           </section>
 
+          {snapshot.production && snapshot.production.runs.length > 0 && (
+            <section className="mt-5">
+              <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                Production plan{snapshot.production.month ? ` · ${snapshot.production.month}` : ""}
+              </h2>
+              <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-neutral-100 text-xs text-neutral-500">
+                      <th className="px-3 py-2 text-left font-medium">Run</th>
+                      <th className="px-2 py-2 text-left font-medium">Produce / ship</th>
+                      <th className="px-2 py-2 text-left font-medium">Lands</th>
+                      <th className="px-2 py-2 text-right font-medium text-red-700">BUF</th>
+                      <th className="px-2 py-2 text-right font-medium text-blue-700">FO</th>
+                      <th className="px-2 py-2 text-right font-medium text-emerald-700">GR</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {snapshot.production.runs.map((r, i) => (
+                      <tr key={i} className="border-b border-neutral-50 last:border-0">
+                        <td className="px-3 py-2 font-medium text-neutral-800">{r.id}</td>
+                        <td className="px-2 py-2 text-neutral-600">
+                          {r.produce}
+                          {r.ship ? <span className="text-neutral-400"> · {r.ship}</span> : null}
+                        </td>
+                        <td className="px-2 py-2 text-neutral-500">{r.lands ?? ""}</td>
+                        <td className="px-2 py-2 text-right text-neutral-800">{r.buf ?? "—"}</td>
+                        <td className="px-2 py-2 text-right text-neutral-800">{r.fo ?? "—"}</td>
+                        <td className="px-2 py-2 text-right text-neutral-800">{r.gr ?? "—"}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                {(snapshot.production.totalBatches || snapshot.production.note) && (
+                  <div className="border-t border-neutral-100 px-3 py-2 text-xs text-neutral-500">
+                    {snapshot.production.totalBatches ? (
+                      <span className="font-medium text-neutral-700">
+                        {snapshot.production.totalBatches} batches · ~{snapshot.production.totalCases?.toLocaleString()} cs net.{" "}
+                      </span>
+                    ) : null}
+                    {snapshot.production.note}
+                  </div>
+                )}
+              </div>
+            </section>
+          )}
+
+          {snapshot.demandPlan && snapshot.demandPlan.accounts.length > 0 && (
+            <section className="mt-5">
+              <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                Demand plan · weekly by account
+              </h2>
+              <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-neutral-100 text-xs text-neutral-500">
+                      <th className="px-3 py-2 text-left font-medium">Account</th>
+                      <th className="px-2 py-2 text-right font-medium text-red-700">BUF</th>
+                      <th className="px-2 py-2 text-right font-medium text-blue-700">FO</th>
+                      <th className="px-2 py-2 text-right font-medium text-emerald-700">GR</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {snapshot.demandPlan.accounts.map((a, i) => (
+                      <tr key={i} className="border-b border-neutral-50 last:border-0">
+                        <td className="px-3 py-2 text-neutral-700">
+                          {a.account}
+                          {a.cadence && a.cadence !== "weekly" ? (
+                            <span className="ml-1 text-xs text-neutral-400">({a.cadence})</span>
+                          ) : null}
+                        </td>
+                        <td className="px-2 py-2 text-right text-neutral-700">{a.buf || ""}</td>
+                        <td className="px-2 py-2 text-right text-neutral-700">{a.fo || ""}</td>
+                        <td className="px-2 py-2 text-right text-neutral-700">{a.gr || ""}</td>
+                      </tr>
+                    ))}
+                    <tr className="border-t-2 border-neutral-200 bg-neutral-50 font-semibold">
+                      <td className="px-3 py-2 text-neutral-800">Total weekly</td>
+                      <td className="px-2 py-2 text-right text-neutral-900">{snapshot.demandPlan.weekly.buf}</td>
+                      <td className="px-2 py-2 text-right text-neutral-900">{snapshot.demandPlan.weekly.fo}</td>
+                      <td className="px-2 py-2 text-right text-neutral-900">{snapshot.demandPlan.weekly.gr}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          )}
+
           {snapshot.cash && (
             <section className="mt-5">
               <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">Cash</h2>

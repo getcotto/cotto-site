@@ -36,10 +36,44 @@ export type SkuInventory = {
   lots?: Array<{ lot: string; cases: number; bbd?: string; status?: string }>;
 };
 
+export type ProductionRun = {
+  id: string;
+  produce: string;
+  ship?: string;
+  lands?: string;
+  buf: number | null; // batches (null = TBD)
+  fo: number | null;
+  gr: number | null;
+};
+
+export type ProductionPlan = {
+  month?: string;
+  status?: string;
+  runs: ProductionRun[];
+  totalBatches?: number;
+  totalCases?: number;
+  note?: string;
+};
+
+export type DemandAccount = {
+  account: string;
+  cadence?: string;
+  buf: number;
+  fo: number;
+  gr: number;
+};
+
+export type DemandPlan = {
+  accounts: DemandAccount[];
+  weekly: { buf: number; fo: number; gr: number };
+};
+
 export type ModelSnapshot = {
   updatedAt: string; // set server-side on POST
   asOf?: string; // the model's effective date
   inventory: SkuInventory[];
+  production?: ProductionPlan;
+  demandPlan?: DemandPlan;
   flags?: Array<{ level: "red" | "amber" | "info"; text: string }>;
   deliveries?: Array<{ account: string; cases: number; date: string; status?: string }>;
   cash?: { runwayWeeks: number | null; minBalance: number | null; note?: string };

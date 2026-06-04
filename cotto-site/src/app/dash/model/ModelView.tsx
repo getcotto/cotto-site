@@ -258,10 +258,32 @@ export default function ModelView({ snapshot, storeError }: Props) {
             </section>
           )}
 
+          {snapshot.upcoming && snapshot.upcoming.length > 0 && (
+            <section className="mt-5">
+              <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                Upcoming deliveries · this week&apos;s orders
+              </h2>
+              <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white">
+                {snapshot.upcoming.map((d, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center justify-between border-b border-neutral-100 px-4 py-2 text-sm last:border-0"
+                  >
+                    <span className="text-neutral-800">{d.account}</span>
+                    <span className="flex items-center gap-3">
+                      <span className="font-medium text-neutral-900">{d.cases} cs</span>
+                      <span className="text-xs text-neutral-400">{d.date ?? "this week"}</span>
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           {snapshot.deliveries && snapshot.deliveries.length > 0 && (
             <section className="mt-5">
               <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">
-                Recent &amp; upcoming deliveries
+                Recent deliveries
               </h2>
               <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white">
                 {snapshot.deliveries.map((d, i) => (

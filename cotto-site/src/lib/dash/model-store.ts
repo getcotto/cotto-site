@@ -75,6 +75,7 @@ export type ModelSnapshot = {
   production?: ProductionPlan;
   demandPlan?: DemandPlan;
   flags?: Array<{ level: "red" | "amber" | "info"; text: string }>;
+  upcoming?: Array<{ account: string; cases: number; date?: string; status?: string }>;
   deliveries?: Array<{ account: string; cases: number; date: string; status?: string }>;
   cash?: { runwayWeeks: number | null; minBalance: number | null; note?: string };
   notes?: string[];

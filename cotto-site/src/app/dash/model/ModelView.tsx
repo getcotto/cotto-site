@@ -196,6 +196,54 @@ export default function ModelView({ snapshot, storeError }: Props) {
             </section>
           )}
 
+          {snapshot.packaging && snapshot.packaging.components.length > 0 && (
+            <section className="mt-5">
+              <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                Packaging vs production plan
+                {snapshot.packaging.covers ? ` · ${snapshot.packaging.covers}` : ""}
+              </h2>
+              <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-neutral-100 text-xs text-neutral-500">
+                      <th className="px-3 py-2 text-left font-medium">Component</th>
+                      <th className="px-2 py-2 text-right font-medium">On hand</th>
+                      <th className="px-2 py-2 text-right font-medium">On order</th>
+                      <th className="px-2 py-2 text-right font-medium">Need</th>
+                      <th className="px-2 py-2 text-right font-medium">Gap</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {snapshot.packaging.components.map((c, i) => (
+                      <tr key={i} className="border-b border-neutral-50 last:border-0">
+                        <td className="px-3 py-2 text-neutral-700">
+                          {c.status === "red" ? "🔴 " : c.status === "amber" ? "🟠 " : ""}
+                          {c.label}
+                          {c.supplier ? <span className="ml-1 text-xs text-neutral-400">({c.supplier})</span> : null}
+                        </td>
+                        <td className="px-2 py-2 text-right text-neutral-700">{c.onHand.toLocaleString()}</td>
+                        <td className="px-2 py-2 text-right text-neutral-400">{c.onOrder ? c.onOrder.toLocaleString() : ""}</td>
+                        <td className="px-2 py-2 text-right text-neutral-700">{c.need.toLocaleString()}</td>
+                        <td
+                          className={`px-2 py-2 text-right font-medium ${
+                            c.status === "red" ? "text-red-600" : c.status === "amber" ? "text-amber-600" : "text-emerald-700"
+                          }`}
+                        >
+                          {c.gap >= 0 ? "+" : ""}
+                          {c.gap.toLocaleString()}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                <div className="border-t border-neutral-100 px-3 py-2 text-xs text-neutral-500">
+                  Need = units the committed production plan consumes at gross fill (tubs/lids shared; labels per SKU).
+                  {snapshot.packaging.asOf ? ` Counts as of ${snapshot.packaging.asOf}.` : ""}
+                </div>
+              </div>
+            </section>
+          )}
+
           {snapshot.demandPlan && snapshot.demandPlan.accounts.length > 0 && (
             <section className="mt-5">
               <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">

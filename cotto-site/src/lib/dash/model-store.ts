@@ -68,12 +68,31 @@ export type DemandPlan = {
   weekly: { buf: number; fo: number; gr: number };
 };
 
+export type PackagingComponent = {
+  label: string;
+  sku?: string | null; // "BUF" | "FO" | "GR" | null (shared)
+  supplier?: string;
+  unit?: string; // "unit" | "box"
+  onHand: number;
+  onOrder?: number;
+  need: number; // units required by the committed production plan
+  gap: number; // onHand + onOrder - need
+  status: "red" | "amber" | "ok";
+};
+
+export type PackagingPlan = {
+  asOf?: string;
+  covers?: string; // which production month/plan the need reflects
+  components: PackagingComponent[];
+};
+
 export type ModelSnapshot = {
   updatedAt: string; // set server-side on POST
   asOf?: string; // the model's effective date
   inventory: SkuInventory[];
   production?: ProductionPlan;
   demandPlan?: DemandPlan;
+  packaging?: PackagingPlan;
   flags?: Array<{ level: "red" | "amber" | "info"; text: string }>;
   upcoming?: Array<{ account: string; cases: number; date?: string; status?: string }>;
   deliveries?: Array<{ account: string; cases: number; date: string; status?: string }>;

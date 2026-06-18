@@ -38,7 +38,7 @@ export default function Dashboard({ initialItems, storeError }: Props) {
   }, [items]);
 
   const grouped = useMemo(() => {
-    const m: Record<Category, TodoItem[]> = { ops: [], sales: [], marketing: [], finance: [], admin: [] };
+    const m: Record<Category, TodoItem[]> = { ops: [], sales: [], samples: [], marketing: [], finance: [], admin: [] };
     for (const it of open) m[it.category].push(it);
     for (const k of CATEGORIES) {
       m[k].sort((a, b) => {

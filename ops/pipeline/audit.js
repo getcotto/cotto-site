@@ -36,6 +36,15 @@ const accounts = rd('accounts.json', []);
 const findings = [];
 const add = (sev, area, title, detail, impact) => findings.push({ sev, area, title, detail, impact: impact || null });
 
+// ---------- 0. Open items (context captured from texts/calls/email, not movements/invoices) ----------
+try {
+  const oi = rd('open_items.json', { items: [] });
+  for (const it of oi.items || []) {
+    const sev = /urgent/i.test(it.status) ? '🔴' : /resolved/i.test(it.status) ? '✅' : '🟡';
+    add(sev, 'Open item', `[${it.area}] ${it.title}`, (it.detail || '') + (it.owner ? ` (owner: ${it.owner})` : ''));
+  }
+} catch (e) {}
+
 // ---------- 1. AR: from the RECONCILED ledger (Settle + Mercury), not Settle alone ----------
 try {
   const ar = JSON.parse(fs.readFileSync(path.join(SPINE, 'ar_status.json'), 'utf8'));   // produced by reconcile_ar.js

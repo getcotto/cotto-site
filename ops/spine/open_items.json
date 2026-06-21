@@ -1,0 +1,27 @@
+{
+  "_note": "Current operational context / open items captured from Kendall's texts, calls, and email that aren't movements (events.json) or invoices. The audit surfaces these so decisions made off-spine don't fall through the cracks. Update as items resolve; remove when closed.",
+  "asOf": "2026-06-20",
+  "items": [
+    {
+      "area": "Freight",
+      "status": "open-urgent",
+      "title": "MISSED pickup: the 6/15-17 run is stuck at Pueblo — needs a MONDAY (6/22) pickup",
+      "detail": "The run produced 6/15-17 was NOT collected on its 6/19 ship date (the miss that started all this). Jeremy at Liberty Multimodal is working on a Monday 6/22 pickup but it is still up in the air. This is the relief valve for the critically-low inventory (BUF/FO/GR < 1 wk). This is SEPARATE from the new run's Friday pickup below.",
+      "owner": "Jeremy / Liberty Multimodal"
+    },
+    {
+      "area": "Freight",
+      "status": "open",
+      "title": "New run (produced this week, started 6/22) ships Friday 6/26 — needs its own pickup",
+      "detail": "Heather at DTS has a final quote ready and is waiting on Kendall's approval to schedule the 6/26 pickup. Book this week. Distinct from the stuck 6/15-17 run above.",
+      "owner": "Heather / DTS"
+    },
+    {
+      "area": "Quality / Neighborly",
+      "status": "partially-resolved",
+      "title": "Neighborly mislabel — Evan will relabel on their own (they have a label maker); NOT a red flag from Neighborly's side anymore",
+      "detail": "Evan at Neighborly confirmed (via TEXT) they are fine to relabel the wrong-best-by units themselves. So Neighborly is no longer at risk and this is NOT a red flag from their side. STILL OPEN: Nathan (FK) must respond with the 5/25-27 lot codes (wrong vs correct dates, across NYC/NJ/LA accounts) AND the written process change before the 6/22 run. The FK accountability/process item is unacceptable and not yet resolved.",
+      "owner": "Nathan (FK) — lot codes + written process change still owed"
+    }
+  ]
+}

@@ -3,6 +3,13 @@
   "findings": [
     {
       "sev": "🔴",
+      "area": "Open item",
+      "title": "[Freight] MISSED pickup: the 6/15-17 run is stuck at Pueblo — needs a MONDAY (6/22) pickup",
+      "detail": "The run produced 6/15-17 was NOT collected on its 6/19 ship date (the miss that started all this). Jeremy at Liberty Multimodal is working on a Monday 6/22 pickup but it is still up in the air. This is the relief valve for the critically-low inventory (BUF/FO/GR < 1 wk). This is SEPARATE from the new run's Friday pickup below. (owner: Jeremy / Liberty Multimodal)",
+      "impact": null
+    },
+    {
+      "sev": "🔴",
       "area": "AR",
       "title": "Overdue AR (reconciled, past terms): $9081.62",
       "detail": "Meadow Lane $7344.80; Olive & Oak $355.86; Last Minute Market $1003.20; Jack's Market $118.80; Schmidts Country market $258.96. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
@@ -37,10 +44,17 @@
       "impact": null
     },
     {
-      "sev": "🔴",
-      "area": "Freight",
-      "title": "Book Pueblo freight by 2026-06-22 (Mon) — ships 2026-06-26",
-      "detail": "Runs C. Carriers: Jeremy/FFE, GianMarco@RLS, Heather@DTS.",
+      "sev": "🟡",
+      "area": "Open item",
+      "title": "[Freight] New run (produced this week, started 6/22) ships Friday 6/26 — needs its own pickup",
+      "detail": "Heather at DTS has a final quote ready and is waiting on Kendall's approval to schedule the 6/26 pickup. Book this week. Distinct from the stuck 6/15-17 run above. (owner: Heather / DTS)",
+      "impact": null
+    },
+    {
+      "sev": "🟡",
+      "area": "Open item",
+      "title": "[Storage / Logistics] Carriacou (Brooklyn) warehouse — NEW storage option; Mendez holding space, needs date/time/# pallets (BLOCKED on securing a truck)",
+      "detail": "Kendall reached out to Carriacou (Brooklyn; contact Mendez) about storing product there — NOT previously used. Rationale: (1) unsure Localee's hub can receive from a Sprinter van; (2) wants inventory accessible for trade shows. Mendez (6/19) confirmed space IS available and needs the final date, time, and # of pallets; Kendall is sending a PO. Can't give those details yet because there is no truck/freight booked. NEXT: once a truck is secured (see the freight items above), send Mendez the date/time/pallets to lock the Brooklyn receiving. Jake also coordinated with Mendez. (owner: Kendall (give Mendez details once a truck is booked); Mendez/Carriacou holding the space)",
       "impact": null
     },
     {
@@ -60,64 +74,71 @@
     {
       "sev": "🟡",
       "area": "Packaging",
-      "title": "REORDER 8oz PP TE round containers: need 26868 for all runs since 2026-06-01, have 15199 (short 11669)",
-      "detail": "Supplier The Cary Company. Need = every run after the 2026-06-01 count incl. the 6/10 + 6/15-17 already produced. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": null
+      "title": "Reorder 8oz PP TE round containers: covered through the 6/29-7/1 run, then runs out at the 7/13-15 run",
+      "detail": "Have 15199, need 26868 for all runs after the 2026-06-01 count (short 11669). Supplier The Cary Company. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 11669
     },
     {
       "sev": "🟡",
       "area": "Packaging",
-      "title": "REORDER 110mm PP TE lids: need 26868 for all runs since 2026-06-01, have 14500 (short 12368)",
-      "detail": "Supplier The Cary Company. Need = every run after the 2026-06-01 count incl. the 6/10 + 6/15-17 already produced. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": null
+      "title": "Reorder 110mm PP TE lids: covered through the 6/29-7/1 run, then runs out at the 7/13-15 run",
+      "detail": "Have 14500, need 26868 for all runs after the 2026-06-01 count (short 12368). Supplier The Cary Company. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 12368
     },
     {
       "sev": "🟡",
       "area": "Packaging",
-      "title": "REORDER Wrap Label - Buffalo: need 8880 for all runs since 2026-06-01, have 7900 (short 980)",
-      "detail": "Supplier ATL. Need = every run after the 2026-06-01 count incl. the 6/10 + 6/15-17 already produced. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": null
+      "title": "Reorder Wrap Label - Buffalo: covered through the 7/23-24 run, then runs out at the 7/27-29 run",
+      "detail": "Have 7900, need 8880 for all runs after the 2026-06-01 count (short 980). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 980
     },
     {
       "sev": "🟡",
       "area": "Packaging",
-      "title": "REORDER Wrap Label - French Onion: need 9672 for all runs since 2026-06-01, have 8500 (short 1172)",
-      "detail": "Supplier ATL. Need = every run after the 2026-06-01 count incl. the 6/10 + 6/15-17 already produced. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": null
+      "title": "Reorder Wrap Label - French Onion: covered through the 7/23-24 run, then runs out at the 7/27-29 run",
+      "detail": "Have 8500, need 9672 for all runs after the 2026-06-01 count (short 1172). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 1172
     },
     {
       "sev": "🟡",
       "area": "Packaging",
-      "title": "REORDER Wrap Label - Garden Ranch: need 8316 for all runs since 2026-06-01, have 5050 (short 3266)",
-      "detail": "Supplier ATL. Need = every run after the 2026-06-01 count incl. the 6/10 + 6/15-17 already produced. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": null
+      "title": "Reorder Wrap Label - Garden Ranch: covered through the 6/29-7/1 run, then runs out at the 7/13-15 run",
+      "detail": "Have 5050, need 8316 for all runs after the 2026-06-01 count (short 3266). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 3266
     },
     {
       "sev": "🟡",
       "area": "Packaging",
-      "title": "REORDER Lid Label - Buffalo: need 8880 for all runs since 2026-06-01, have 8500 (short 380)",
-      "detail": "Supplier ATL. Need = every run after the 2026-06-01 count incl. the 6/10 + 6/15-17 already produced. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": null
+      "title": "Reorder Lid Label - Buffalo: covered through the 7/23-24 run, then runs out at the 7/27-29 run",
+      "detail": "Have 8500, need 8880 for all runs after the 2026-06-01 count (short 380). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 380
     },
     {
       "sev": "🟡",
       "area": "Packaging",
-      "title": "REORDER Lid Label - French Onion: need 9672 for all runs since 2026-06-01, have 6000 (short 3672)",
-      "detail": "Supplier ATL. Need = every run after the 2026-06-01 count incl. the 6/10 + 6/15-17 already produced. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": null
+      "title": "Reorder Lid Label - French Onion: covered through the 6/29-7/1 run, then runs out at the 7/13-15 run",
+      "detail": "Have 6000, need 9672 for all runs after the 2026-06-01 count (short 3672). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 3672
     },
     {
       "sev": "🟡",
       "area": "Packaging",
-      "title": "REORDER Lid Label - Garden Ranch: need 8316 for all runs since 2026-06-01, have 8050 (short 266)",
-      "detail": "Supplier ATL. Need = every run after the 2026-06-01 count incl. the 6/10 + 6/15-17 already produced. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": null
+      "title": "Reorder Lid Label - Garden Ranch: covered through the 7/23-24 run, then runs out at the 7/27-29 run",
+      "detail": "Have 8050, need 8316 for all runs after the 2026-06-01 count (short 266). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 266
     },
     {
       "sev": "🟡",
       "area": "Packaging",
-      "title": "REORDER Cardboard Boxes (8oz 6-pack): need 4478 for all runs since 2026-06-01, have 3050 (short 1428)",
-      "detail": "Supplier PCA. Need = every run after the 2026-06-01 count incl. the 6/10 + 6/15-17 already produced. ⚠ count is stale — confirm with a fresh FK count.",
+      "title": "Reorder Cardboard Boxes (8oz 6-pack): covered through the 6/29-7/1 run, then runs out at the 7/13-15 run",
+      "detail": "Have 3050, need 4478 for all runs after the 2026-06-01 count (short 1428). Supplier PCA. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 1428
+    },
+    {
+      "sev": "✅",
+      "area": "Open item",
+      "title": "[Quality / Neighborly] Neighborly mislabel — Evan will relabel on their own (they have a label maker); NOT a red flag from Neighborly's side anymore",
+      "detail": "Evan at Neighborly confirmed (via TEXT) they are fine to relabel the wrong-best-by units themselves. So Neighborly is no longer at risk and this is NOT a red flag from their side. STILL OPEN: Nathan (FK) must respond with the 5/25-27 lot codes (wrong vs correct dates, across NYC/NJ/LA accounts) AND the written process change before the 6/22 run. The FK accountability/process item is unacceptable and not yet resolved. (owner: Nathan (FK) — lot codes + written process change still owed)",
       "impact": null
     },
     {
@@ -130,7 +151,7 @@
     {
       "sev": "✅",
       "area": "Freshness",
-      "title": "Spine fresh (latest event 2026-06-18, latest order 2026-06-18)",
+      "title": "Spine fresh (latest event 2026-06-18, latest order 2026-06-24)",
       "detail": "",
       "impact": null
     }

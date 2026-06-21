@@ -105,23 +105,42 @@ try {
   // since then (6/10, 6/15-17) that the stale count doesn't reflect. (Bug caught 6/20: was
   // only counting UPCOMING runs and ignoring consumption since the count, overstating coverage.)
   const ASOF = packaging.asOf || '2026-06-01';
-  const need = { buf: 0, fo: 0, gr: 0 };
+  // Upcoming runs after the count date, in chronological order, with per-SKU unit consumption.
+  // We walk them in order so we can report WHEN each component runs dry ("covered through the
+  // 6/26 run, runs out at the 7/13 run") instead of a bare "short N" that reads like "out today".
+  const runs = [];
   for (const r of plan.runs || []) {
     const prod = String(r.produce || '').match(/(\d{1,2})\/(\d{1,2})/);
     if (!prod) continue;
     const pd = `2026-${String(+prod[1]).padStart(2, '0')}-${String(+prod[2]).padStart(2, '0')}`;
     if (pd <= ASOF) continue;                        // count already includes runs on/before asOf
-    for (const k of ['buf', 'fo', 'gr']) need[k] += (Number(r[k]) || 0) * y[k] * UNITS_PER_CASE;
+    const u = {};
+    for (const k of ['buf', 'fo', 'gr']) u[k] = (Number(r[k]) || 0) * y[k] * UNITS_PER_CASE;
+    u.cases = (u.buf + u.fo + u.gr) / UNITS_PER_CASE;
+    runs.push({ date: pd, label: String(r.produce).match(/(\d{1,2}\/\d{1,2}(?:-\d{1,2}(?:\/\d{1,2})?)?)/)?.[1] || pd.slice(5), u });
   }
-  const totalUnits = need.buf + need.fo + need.gr, totalCases = totalUnits / UNITS_PER_CASE;
+  runs.sort((a, b) => (a.date < b.date ? -1 : 1));
+  const reqOf = (comp, u) => comp.key === 'box_6pk' ? u.cases : comp.shared ? (u.buf + u.fo + u.gr) : (u[(comp.sku || '').toLowerCase()] || 0);
+
   for (const comp of packaging.components || []) {
     const avail = (comp.onHand || 0) + (comp.onOrder || 0);
-    let req;
-    if (comp.key === 'box_6pk') req = totalCases;
-    else if (comp.shared) req = totalUnits;          // tubs, lids
-    else req = need[(comp.sku || '').toLowerCase()] || 0;
-    const gap = avail - req;
-    if (gap < 0) add(avail < req * 0.5 ? '🔴' : '🟡', 'Packaging', `REORDER ${comp.label}: need ${Math.round(req)} for all runs since ${ASOF}, have ${avail} (short ${Math.round(-gap)})`, `Supplier ${comp.supplier}. Need = every run after the ${ASOF} count incl. the 6/10 + 6/15-17 already produced. ⚠ count is stale — confirm with a fresh FK count.`);
+    const req = runs.reduce((s, r) => s + reqOf(comp, r.u), 0);
+    if (req <= avail) continue;                       // covered for every known run — no flag
+    // Walk runs in date order: find the run this component can't fully cover.
+    let cum = 0, coveredThrough = null, runsOutAt = null;
+    for (const r of runs) {
+      const need = reqOf(comp, r.u);
+      if (need <= 0) continue;
+      if (cum + need <= avail) { cum += need; coveredThrough = r; }
+      else { runsOutAt = r; break; }
+    }
+    const sev = coveredThrough ? '🟡' : '🔴';         // can't even cover the next run = act now
+    const phrase = coveredThrough
+      ? `covered through the ${coveredThrough.label} run, then runs out at the ${runsOutAt ? runsOutAt.label : 'next'} run`
+      : `NOT enough for the very next run (${runsOutAt ? runsOutAt.label : '?'}) — order before producing`;
+    add(sev, 'Packaging', `Reorder ${comp.label}: ${phrase}`,
+      `Have ${avail}, need ${Math.round(req)} for all runs after the ${ASOF} count (short ${Math.round(req - avail)}). Supplier ${comp.supplier}. ⚠ count is stale — confirm with a fresh FK count.`,
+      req - avail);
   }
 } catch (e) { add('🟡', 'Packaging', 'Packaging check error', e.message); }
 

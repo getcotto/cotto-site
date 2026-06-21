@@ -1,6 +1,6 @@
 {
   "_note": "Current operational context / open items captured from Kendall's texts, calls, and email that aren't movements (events.json) or invoices. The audit surfaces these so decisions made off-spine don't fall through the cracks. Update as items resolve; remove when closed.",
-  "asOf": "2026-06-20",
+  "asOf": "2026-06-21",
   "items": [
     {
       "area": "Freight",
@@ -22,6 +22,13 @@
       "title": "Neighborly mislabel — Evan will relabel on their own (they have a label maker); NOT a red flag from Neighborly's side anymore",
       "detail": "Evan at Neighborly confirmed (via TEXT) they are fine to relabel the wrong-best-by units themselves. So Neighborly is no longer at risk and this is NOT a red flag from their side. STILL OPEN: Nathan (FK) must respond with the 5/25-27 lot codes (wrong vs correct dates, across NYC/NJ/LA accounts) AND the written process change before the 6/22 run. The FK accountability/process item is unacceptable and not yet resolved.",
       "owner": "Nathan (FK) — lot codes + written process change still owed"
+    },
+    {
+      "area": "Storage / Logistics",
+      "status": "open-blocked",
+      "title": "Carriacou (Brooklyn) warehouse — NEW storage option; Mendez holding space, needs date/time/# pallets (BLOCKED on securing a truck)",
+      "detail": "Kendall reached out to Carriacou (Brooklyn; contact Mendez) about storing product there — NOT previously used. Rationale: (1) unsure Localee's hub can receive from a Sprinter van; (2) wants inventory accessible for trade shows. Mendez (6/19) confirmed space IS available and needs the final date, time, and # of pallets; Kendall is sending a PO. Can't give those details yet because there is no truck/freight booked. NEXT: once a truck is secured (see the freight items above), send Mendez the date/time/pallets to lock the Brooklyn receiving. Jake also coordinated with Mendez.",
+      "owner": "Kendall (give Mendez details once a truck is booked); Mendez/Carriacou holding the space"
     }
   ]
 }

@@ -1,0 +1,49 @@
+{
+  "_note": "Source-of-truth ledger for suppliers + co-man contacts + order history, so 'who's the rep / what did we order / what price / who to CC' is DATA, not an email hunt. The audit + draft steps read this. Update when an order is placed or a contact changes.",
+  "asOf": "2026-06-20",
+  "contacts": {
+    "fuel_kitchens": {
+      "role": "Co-manufacturer (Pueblo CO)",
+      "address": "1745 N Erie Ave, Pueblo CO 81001",
+      "people": [
+        { "name": "Nathan Stern", "title": "Director of Development", "email": "nathan@fuelkitchens.com", "phone": "720-480-4592", "for": "production planning, batch sheets, runs" },
+        { "name": "Lisa Trujillo", "title": "Ops admin / Purchasing", "email": "opsadmin@fuelkitchens.com", "alt_email": "purchasing@fuelkitchens.com", "for": "inventory counts, packaging on-hand, purchasing — CC on inventory + packaging asks" },
+        { "name": "John", "title": "Ops / shipping", "email": "TBD", "for": "BOL / pickups / shipping; 'BOL sent to John' = run picked up" }
+      ]
+    }
+  },
+  "suppliers": {
+    "cary": {
+      "name": "The Cary Company",
+      "supplies": ["tubs", "lids"],
+      "rep": { "name": "Daniel Fountain", "title": "Account Manager (Charlotte NC)", "email": "danielfountain@thecarycompany.com", "phone": "630-629-6600" },
+      "note": "Order from Daniel at QUOTED pricing (better than the website). Containers ship 500/box. Lead time can split when out of stock (PO 720273 split into SO672604 + SO672606). PRICING BREAKS in 5,000-unit increments — round order qty up to the next 5,000 for a better rate.",
+      "parts": {
+        "tubs": { "part": "34WRC8", "desc": "8oz 110mm Clear PP TE Round Container, 500/box", "quote_price": 0.17 },
+        "lids": { "part": "34WRCL", "desc": "110mm TE Lid, 500/box", "quote_price": 0.10 }
+      },
+      "orders": [
+        { "quote": "EST129592", "so": "SO672604", "cashSale": "CS312129", "date": "2026-05-19", "lines": { "tubs": 7946, "lids": 15000 }, "tracking": "80-118708", "total": 3287.71, "status": "shipped (landed ~late May, in 6/1 count)" },
+        { "quote": "EST129593", "so": "SO672606", "cashSale": "CS314027", "date": "2026-06-11", "lines": { "tubs": 7054 }, "tracking": "80-112642", "total": 1469.12, "status": "shipped (onOrder in packaging.json)" }
+      ]
+    },
+    "atl": {
+      "name": "American Tape & Labels (ATL)",
+      "supplies": ["wrap labels", "lid labels"],
+      "rep": { "name": "Callie Coble", "title": "Sales Rep #31", "email": "TBD", "note": "billed to 'Evolve Foods' (a Cotto/Dipsy name)" },
+      "note": "We do NOT always order every label type, and quantities vary — always confirm what an order covered by SKU.",
+      "orders": [
+        { "invoice": "61246", "date": "2026-06-14", "po": "060826", "lines": { "lid_buf": 3000, "wrap_buf": 6000, "wrap_fo": 6000 }, "total": 2279.31, "status": "shipped (onOrder in packaging.json)" }
+      ]
+    },
+    "pca": {
+      "name": "PCA",
+      "supplies": ["boxes"],
+      "rep": { "name": "TBD", "email": "TBD" },
+      "orders": []
+    }
+  },
+  "inventory_counts": [
+    { "date": "2026-06-01", "source": "FK EOM tracker (Nathan) + handwritten 5/28 + Lisa box count", "scope": "packaging on-hand at FK", "note": "Latest FULL packaging count. Does NOT reflect the 6/10 and 6/15-17 runs' consumption — see packaging.json asOf. Fresh count requested 6/20." }
+  ]
+}

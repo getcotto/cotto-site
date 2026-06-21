@@ -1,0 +1,25 @@
+{
+  "month": "July 2026 (rolling; June tail in-flight)",
+  "asOf": "2026-06-15",
+  "status": "COMMITTED — sent to Nathan 6/16. July = 40 batches / ~2,664 cs / ~15,984 units. June A/B/C executing; Run A landed 6/16.",
+  "demandComparison": { "may_fully_online_cs": 680, "june_fully_online_cs": 1650, "july_produced_cs": 2664, "july_produced_units": 15984, "note": "Fully-online = steady (incl OOS-suppressed Fairway ongoing) + one-time openings. May actual sold 626 cs; June actual sold ~483 cs through 6/11 (stockout-crippled). ~half of July production lands in August." },
+  "yields": { "buf": 74, "fo": 62, "gr": 66 },
+  "runs": [
+    { "id": "A", "produce": "6/10", "ship": "6/12", "lands": "~6/16 (in transit)", "buf": 2, "fo": 1, "gr": 2, "note": "recovery bridge — confirm landed on spec" },
+    { "id": "B", "produce": "6/15-17", "ship": "6/19", "lands": "~6/22", "buf": 4, "fo": 5, "gr": 3 },
+    { "id": "C", "produce": "6/24-26", "ship": "~6/26", "lands": "~6/29", "buf": 3, "fo": 4, "gr": 3 },
+    { "id": "6/29-7/1", "produce": "6/29-7/1", "ship": "~7/3 alone", "lands": "~7/6", "buf": 3, "fo": 3, "gr": 2, "trigger": "CONFIRMED in June planning (8 batches). Do not reopen." },
+    { "id": "7/13-15", "produce": "7/13-15", "ship": "7/17", "lands": "~7/20", "buf": 3, "fo": 5, "gr": 4, "trigger": "12 batches (cap). Dairy locks ~6/29. FO-led (it's the tight SKU once doors are in); BUF shorted because it carries early cushion. Reshape from latest 2-wk actuals + Fairway reorder at lock." },
+    { "id": "7/23-24 (growth, back-to-back)", "produce": "7/23-24", "ship": "Fri 7/31 consolidated w/ 7/27 run (~7 pallets)", "lands": "~8/3", "buf": 2, "fo": 3, "gr": 3, "trigger": "GROWTH/SAFETY run (internal label — NOT broken out to Nathan per Kendall). Produced 7/23-24, boxed with the 7/27 run, one Friday 7/31 freight. Internal cancel checkpoint ~7/13 if doors don't place POs." },
+    { "id": "7/27-29", "produce": "7/27-29", "ship": "7/31", "lands": "~8/3", "buf": 3, "fo": 5, "gr": 4, "trigger": "12 batches (cap). Dairy locks ~7/13. Ongoing base + doors, FO-led." }
+  ],
+  "batchCapPerRun": 12,
+  "dairyConfirm": "Whole month ordered NOW, one cancel opportunity (can't defer to ~2 wks before each run). Dairy scales with TOTAL BATCHES (all SKUs ~50/50 CC/yogurt), so batch totals are firm now; BUF/FO/GR split is flexible and refined closer to each run.",
+  "packagingStatus": "ATL label reorder PLACED + completed 6/14 (Invoice 61246, card x7132). packaging.json onOrder:0 is STALE. VERIFY: (1) order qty covers BUF + FO wrap shortfall (~6-7k each); (2) ATL ~2-3wk lead lands ~late June, covers 7/13+ runs but maybe NOT Run C 6/24 — check on-hand bridges B+C. Tubs/lids (Cary 4-6wk) + boxes (PCA) not re-confirmed.",
+  "freight": "3 July shipments: 6/29 run (~7/3), 7/13 run (Fri 7/17 -> lands 7/20), and 7/23-24 + 7/27-29 CONSOLIDATED on Fri 7/31 (~7 pallets, lands ~8/3). Confirm RLS takes 7 pallets.",
+  "safetyStockWeeks": 2,
+  "minShelfLifeDays": 21,
+  "carryInAsOf": { "asOf": "2026-06-11 dash + Run A inbound - this-week route", "buf": 0, "fo": 63, "gr": 0, "note": "Verified Edison sellable 6/11 was BUF 0 / FO 63 / GR 0 (BUF+GR drawn down). Plan anchored on this, not a model estimate." },
+  "julyCommitted": { "batches": 40, "cases": 2664, "units": 15984, "note": "6/29 (8, June-confirmed) + 7/13 (12) + 7/20 growth (8) + 7/27 (12). July-NEW dairy = 32 batches. ~Above June (2,354) = real growth room, not one-times." },
+  "note": "FIRM July dairy committed NOW: 6/29 (8) + 7/13 (12) + 7/20 GROWTH (8) + 7/27 (12) = 40 batches / ~2,664 cs. 12-batch/run is a HARD cap. The 7/20 back-to-back is committed to LEAVE ROOM FOR GROWTH (3 active NYC doors + 2-wk safety + DeCicco's cushion), NOT left out. Discipline that keeps this from being the May mistake: a HARD cancel checkpoint ~7/13 (freeze) that we ACTUALLY fire if the doors haven't placed POs, and Nathan is told upfront it's the flex run (no surprise back-out). Accepted trade: a possible flagged trim on Nathan, bounded to one run. Checkpoint: 6/16 Fairway reorder (refine SKU split, not dairy); ~7/13 doors PO go/no-go. Planner: production-planner-july.html."
+}

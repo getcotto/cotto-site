@@ -1,0 +1,31 @@
+{
+  "_notes": "Maps Mercury deposit names -> Cotto account, so unreferenced lump payments reconcile to AR. Matched by case-insensitive substring against the deposit description/reference/note. account_merge collapses accounts that pay together. non_ar = deposits that are NOT customer payments (prizes, refunds, founder transfers). Add an entry whenever a new payment source appears; NEVER guess an org - flag it for Kendall.",
+  "aliases": [
+    { "match": "meadow lane", "account": "Meadow Lane" },
+    { "match": "happier 365", "account": "Happier Grocery" },
+    { "match": "farm to people", "account": "Farm to People" },
+    { "match": "olive & oak", "account": "Olive & Oak" },
+    { "match": "olive oak cafe", "account": "Olive & Oak" },
+    { "match": "farm & forage", "account": "Farm & Forage Market" },
+    { "match": "sagaponack", "account": "Sagaponack General Store" },
+    { "match": "marginedge", "account": "Sagaponack General Store" },
+    { "match": "the shelf", "account": "The Shelf" },
+    { "match": "la grocere", "account": "The Shelf" },
+    { "match": "montauk", "account": "Montauk Yacht Club" },
+    { "match": "neighborly", "account": "Neighborly Ops LLC" },
+    { "match": "talafood", "account": "Butterfield Market" },
+    { "match": "butterfield", "account": "Butterfield Market" },
+    { "match": "sweet girls", "account": "Sweet Girls Eat" }
+  ],
+  "account_merge": { "Butterfield Market - 1150 Madison": "Butterfield Market" },
+  "non_ar": ["nimbus", "naturally new yo", "vistaprint", "united airlines", "the cary company"],
+  "resolved_facts": {
+    "talafood5645": "Butterfield (TRADEMARK-confirmed previously; deposit amounts match Butterfield invoices). NOT Fairway.",
+    "marginedge": "Sagaponack General Store — MarginEdge manages Sag's AP (verified email 6/2 + payment 6/9 for COTTO-1048).",
+    "la_grocere_llc": "The Shelf (legal entity La Grocere LLC).",
+    "nimbus": "Kendall's FORMER commercial kitchen (no longer used) — deposits are refunds, NOT customer AR.",
+    "fairway_wakefern": "Fedele Stella (Wakefern). Invoiced 6/17; NO payment received yet — all Fairway AR is genuinely open. Butterfield + Fairway are separate.",
+    "naturally_new_york_2000": "pitch prize, not AR.",
+    "cotto_jan_2949": "founder transfer, not AR."
+  }
+}

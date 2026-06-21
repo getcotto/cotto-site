@@ -1,0 +1,111 @@
+{
+  "asOf": "2026-06-01",
+  "source": "FK end-of-month tracker (Nathan Stern), 'Cotto - Inventory - 6.1.26.xlsx' + handwritten 5/28 count. Latest column used.",
+  "unitsPerCase": 6,
+  "note": "Packaging on-hand at Fuel Kitchens. Cotto-supplied (Kendall's responsibility). Coverage is computed against the committed production_plan.json at GROSS fill (raw yields 75/63/67 cs/batch x 6 u), since every filled tub consumes packaging regardless of FK retention. reorderPoint = flag amber below this. Update onHand from each FK EOM sheet; set onOrder when a PO is placed so coverage nets it in. [6/20: onOrder set for wrap_buf/wrap_fo/lid_buf from ATL INV 61246; tubs/lids/boxes onOrder still need Cary verification.]",
+  "components": [
+    {
+      "key": "tubs",
+      "label": "8oz PP TE round containers",
+      "sku": null,
+      "shared": true,
+      "unit": "unit",
+      "onHand": 8145,
+      "onOrder": 7054,
+      "onOrderNote": "SO672606 back-order, due ~6/12/26 (hard-charged on ship)",
+      "reorderPoint": 4000,
+      "supplier": "The Cary Company"
+    },
+    {
+      "key": "lids",
+      "label": "110mm PP TE lids",
+      "sku": null,
+      "shared": true,
+      "unit": "unit",
+      "onHand": 14500,
+      "onOrder": 0,
+      "reorderPoint": 4000,
+      "supplier": "The Cary Company"
+    },
+    {
+      "key": "wrap_buf",
+      "label": "Wrap Label - Buffalo",
+      "sku": "BUF",
+      "shared": false,
+      "unit": "unit",
+      "onHand": 1900,
+      "onOrder": 6000,
+      "reorderPoint": 2000,
+      "supplier": "ATL",
+      "onOrderNote": "ATL INV 61246 (6/14), confirmed"
+    },
+    {
+      "key": "wrap_fo",
+      "label": "Wrap Label - French Onion",
+      "sku": "FO",
+      "shared": false,
+      "unit": "unit",
+      "onHand": 2500,
+      "onOrder": 6000,
+      "reorderPoint": 2000,
+      "supplier": "ATL",
+      "onOrderNote": "ATL INV 61246 (6/14), confirmed"
+    },
+    {
+      "key": "wrap_gr",
+      "label": "Wrap Label - Garden Ranch",
+      "sku": "GR",
+      "shared": false,
+      "unit": "unit",
+      "onHand": 5050,
+      "onOrder": 0,
+      "reorderPoint": 2000,
+      "supplier": "ATL"
+    },
+    {
+      "key": "lid_buf",
+      "label": "Lid Label - Buffalo",
+      "sku": "BUF",
+      "shared": false,
+      "unit": "unit",
+      "onHand": 5500,
+      "onOrder": 3000,
+      "reorderPoint": 2000,
+      "supplier": "ATL",
+      "onOrderNote": "ATL INV 61246 (6/14), confirmed"
+    },
+    {
+      "key": "lid_fo",
+      "label": "Lid Label - French Onion",
+      "sku": "FO",
+      "shared": false,
+      "unit": "unit",
+      "onHand": 6000,
+      "onOrder": 0,
+      "reorderPoint": 2000,
+      "supplier": "ATL"
+    },
+    {
+      "key": "lid_gr",
+      "label": "Lid Label - Garden Ranch",
+      "sku": "GR",
+      "shared": false,
+      "unit": "unit",
+      "onHand": 8050,
+      "onOrder": 0,
+      "reorderPoint": 2000,
+      "supplier": "ATL"
+    },
+    {
+      "key": "box_6pk",
+      "label": "Cardboard Boxes (8oz 6-pack)",
+      "sku": null,
+      "shared": true,
+      "unit": "box",
+      "onHand": 3050,
+      "onOrder": 0,
+      "reorderPoint": 800,
+      "supplier": "PCA"
+    }
+  ]
+}

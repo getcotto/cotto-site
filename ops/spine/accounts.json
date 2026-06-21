@@ -1,0 +1,937 @@
+[
+  {
+    "id": "meadow-lane",
+    "name": "Meadow Lane",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-03-01",
+    "price_per_unit": 5.6,
+    "payment_terms": "NET 15",
+    "weekly_cases": {
+      "buf": 15,
+      "fo": 12,
+      "gr": 8
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Buyer Evy. Lead account. Tuesday cadence from 5/19. Interim 15/12/8 (5/14 Thu took 6/7/2, 5/19 Tue took 25/20/14 incl MDW stockup). CONFIRM post-MDW steady-state.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "weekly",
+    "delivery": {
+      "name": "Meadow Lane",
+      "address": "355 Greenwich St, New York, NY 10013"
+    },
+    "order_sources": {
+      "from_domains": [
+        "meadowlane.nyc"
+      ],
+      "subject_hints": [
+        "Meadow Lane",
+        "Cotto"
+      ],
+      "format": "email_body"
+    },
+    "buyer": {
+      "name": "Evy (purchasing) / Frances (owner)",
+      "email": "evy@meadowlane.nyc"
+    },
+    "desk_notes": "Evy manages ordering (cc frances@meadowlane.nyc). Tribeca. CONFIRM delivery address.",
+    "invoice_group": null,
+    "invoice_emails": [
+      "evy@meadowlane.nyc",
+      "accounting@meadowlane.nyc",
+      "meadowlanemeez@upload.email"
+    ]
+  },
+  {
+    "id": "the-shelf",
+    "name": "The Shelf",
+    "status": "Paused",
+    "channel": "Consignment",
+    "open_date": "2026-03-01",
+    "price_per_unit": 9.09,
+    "payment_terms": "Consignment",
+    "weekly_cases": {
+      "buf": 3,
+      "fo": 3,
+      "gr": 3
+    },
+    "acct_fee_per_wk": 150,
+    "model_notes": "70/30 of $12.99 + $150/wk fee. TEMPORARILY CLOSED (as of 6/2) - do not route.",
+    "aliases": [],
+    "invoice_rail": "none",
+    "expected_cadence": "weekly",
+    "delivery": null,
+    "order_sources": {
+      "from_domains": [],
+      "subject_hints": [
+        "Shelf"
+      ],
+      "format": "email_body"
+    },
+    "buyer": null,
+    "desk_notes": "Consignment 70/30 + weekly fee. No invoice.",
+    "invoice_group": null,
+    "invoice_emails": null
+  },
+  {
+    "id": "pop-up-grocer",
+    "name": "Pop Up Grocer",
+    "status": "Active",
+    "channel": "Consignment",
+    "open_date": "2026-04-10",
+    "price_per_unit": 8.4,
+    "payment_terms": "Consignment",
+    "weekly_cases": {
+      "buf": 10,
+      "fo": 8,
+      "gr": 6
+    },
+    "acct_fee_per_wk": 200,
+    "model_notes": "70/30 of $12.00 + $200/wk fee. 1x/wk Thu.",
+    "aliases": [],
+    "invoice_rail": "none",
+    "expected_cadence": "weekly",
+    "delivery": {
+      "name": "Pop Up Grocer",
+      "address": "205 Bleecker Street, New York, NY 10012"
+    },
+    "order_sources": {
+      "from_domains": [
+        "popupgrocer.com",
+        "email.lightspeedhq.com"
+      ],
+      "subject_hints": [
+        "Pop Up Grocer",
+        "MAI-",
+        "PUG"
+      ],
+      "format": "email_body"
+    },
+    "buyer": {
+      "name": "Maggie McGlinchy",
+      "email": "maggie@popupgrocer.com"
+    },
+    "desk_notes": "POs auto-send from no-reply@email.lightspeedhq.com (Lightspeed), subject \"Purchase order #MAI-#### from Pop Up Grocer\", quantities in body. cc flagship@popupgrocer.com. Consignment. Thursday.",
+    "invoice_group": null,
+    "invoice_emails": null
+  },
+  {
+    "id": "happier-grocery",
+    "name": "Happier Grocery",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-04-16",
+    "price_per_unit": 7.194,
+    "payment_terms": "NET 15",
+    "weekly_cases": {
+      "buf": 6,
+      "fo": 6,
+      "gr": 6
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "1x/wk. Tuesday cadence from 5/19. Steady 6/6/6 per recent orders. Buyer Tiffany Tan.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "weekly",
+    "delivery": {
+      "name": "Happier Grocery",
+      "address": "365 Canal St, Ground Floor, New York, NY 10013"
+    },
+    "order_sources": {
+      "from_domains": [
+        "happier.nyc"
+      ],
+      "subject_hints": [
+        "Happier",
+        "Cotto"
+      ],
+      "format": "email_body"
+    },
+    "buyer": {
+      "name": "Tiffany Tan",
+      "email": "t.tan@happier.nyc"
+    },
+    "desk_notes": "Buyer Tiffany Tan (cc e.christ@happier.nyc). Delivery: 365 Canal St, Ground Floor, NY 10013 (verified 6/2 via happiergrocery.com).",
+    "invoice_group": null,
+    "invoice_emails": [
+      "t.tan@happier.nyc",
+      "e.christ@happier.nyc",
+      "s.lorang@happier.nyc"
+    ]
+  },
+  {
+    "id": "olive-oak",
+    "name": "Olive & Oak",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-03-24",
+    "price_per_unit": 6.59,
+    "payment_terms": "NET 15",
+    "weekly_cases": {
+      "buf": 3,
+      "fo": 3,
+      "gr": 3
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Active again 6/2 (owner Felicia orders direct). Localee delivers on a separate ~Monday cycle from the main route, not the Thu run. Distributor still TBD.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "biweekly",
+    "delivery": {
+      "name": "Olive & Oak",
+      "address": "700 Oceanport Ave, Oceanport, NJ 07757"
+    },
+    "order_sources": {
+      "from_domains": [
+        "oliveandoaknj.com"
+      ],
+      "subject_hints": [
+        "Olive",
+        "Oak"
+      ],
+      "format": "email_body"
+    },
+    "buyer": {
+      "name": "Felicia Aschettino",
+      "email": "events@oliveandoaknj.com"
+    },
+    "desk_notes": "Paused — needs distributor. 6 cs/flavor biweekly when active.",
+    "invoice_group": null,
+    "invoice_emails": [
+      "events@oliveandoaknj.com"
+    ]
+  },
+  {
+    "id": "fairway-86th-st",
+    "name": "Fairway 86th St",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-05-20",
+    "price_per_unit": 6.6,
+    "payment_terms": "NET 30",
+    "weekly_cases": {
+      "buf": 8,
+      "fo": 8,
+      "gr": 8
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Fairway/Wakefern banner (Uptown), 240 E 86th St. Delivered via Localee. Merchant Fedele Stella. Equal GR now (was held last week for quality).",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "weekly",
+    "delivery": {
+      "name": "Fairway Market 86th St",
+      "address": "240 E 86th St, New York, NY"
+    },
+    "order_sources": {
+      "from_domains": [
+        "wakefern.com"
+      ],
+      "subject_hints": [
+        "Fairway"
+      ],
+      "format": "forwarded"
+    },
+    "buyer": {
+      "name": "Fedele Stella (Wakefern merchant) / Charlie Moore",
+      "email": "Fedele.Stella@wakefern.com"
+    },
+    "desk_notes": "Wakefern banner (Uptown) via Localee. Invoices via Wakefern AP (sent to Ido). Tied to ad cycle.",
+    "invoice_group": null,
+    "invoice_emails": [
+      "Fedele.Stella@wakefern.com"
+    ]
+  },
+  {
+    "id": "fairway-74th-st",
+    "name": "Fairway 74th St",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-05-20",
+    "price_per_unit": 6.6,
+    "payment_terms": "NET 30",
+    "weekly_cases": {
+      "buf": 8,
+      "fo": 8,
+      "gr": 8
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Fairway/Wakefern banner (Uptown), 2131 Broadway. Via Localee.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "weekly",
+    "delivery": {
+      "name": "Fairway Market 74th St",
+      "address": "2131 Broadway, New York, NY"
+    },
+    "order_sources": {
+      "from_domains": [
+        "wakefern.com"
+      ],
+      "subject_hints": [
+        "Fairway"
+      ],
+      "format": "forwarded"
+    },
+    "buyer": {
+      "name": "Fedele Stella (Wakefern merchant)",
+      "email": "Fedele.Stella@wakefern.com"
+    },
+    "desk_notes": "Wakefern banner (Uptown) via Localee.",
+    "invoice_group": null,
+    "invoice_emails": [
+      "Fedele.Stella@wakefern.com"
+    ]
+  },
+  {
+    "id": "fairway-chelsea",
+    "name": "Fairway Chelsea",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-05-20",
+    "price_per_unit": 6.6,
+    "payment_terms": "NET 30",
+    "weekly_cases": {
+      "buf": 4,
+      "fo": 4,
+      "gr": 4
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Fairway/Wakefern banner (Downtown), 766 6th Ave. Via Localee.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "weekly",
+    "delivery": {
+      "name": "Fairway Market Chelsea",
+      "address": "766 6th Ave, New York, NY"
+    },
+    "order_sources": {
+      "from_domains": [
+        "wakefern.com"
+      ],
+      "subject_hints": [
+        "Fairway"
+      ],
+      "format": "forwarded"
+    },
+    "buyer": {
+      "name": "Fedele Stella (Wakefern merchant)",
+      "email": "Fedele.Stella@wakefern.com"
+    },
+    "desk_notes": "Wakefern banner (Downtown) via Localee.",
+    "invoice_group": null,
+    "invoice_emails": [
+      "Fedele.Stella@wakefern.com"
+    ]
+  },
+  {
+    "id": "fairway-kips-bay",
+    "name": "Fairway Kips Bay",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-05-20",
+    "price_per_unit": 6.6,
+    "payment_terms": "NET 30",
+    "weekly_cases": {
+      "buf": 4,
+      "fo": 4,
+      "gr": 4
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Fairway/Wakefern banner (Downtown), 550 2nd Ave. Via Localee.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "weekly",
+    "delivery": {
+      "name": "Fairway Market Kips Bay",
+      "address": "550 2nd Ave, New York, NY"
+    },
+    "order_sources": {
+      "from_domains": [
+        "wakefern.com"
+      ],
+      "subject_hints": [
+        "Fairway"
+      ],
+      "format": "forwarded"
+    },
+    "buyer": {
+      "name": "Fedele Stella (Wakefern merchant)",
+      "email": "Fedele.Stella@wakefern.com"
+    },
+    "desk_notes": "Wakefern banner (Downtown) via Localee.",
+    "invoice_group": null,
+    "invoice_emails": [
+      "Fedele.Stella@wakefern.com"
+    ]
+  },
+  {
+    "id": "farm-to-people",
+    "name": "Farm to People",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-05-12",
+    "price_per_unit": 6.59,
+    "payment_terms": "Bill.com",
+    "weekly_cases": {
+      "buf": 10,
+      "fo": 10,
+      "gr": 10
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Launched wk of 5/12. Now active: 10/10/10 cs/wk per 5/19 PO. $6.59/u confirmed canonical. Bill.com invoice flow per Alie.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "weekly",
+    "delivery": {
+      "name": "Farm to People",
+      "address": "Brooklyn, NY — confirm; receiving 5am-11am"
+    },
+    "order_sources": {
+      "from_domains": [
+        "farmtopeople.com"
+      ],
+      "subject_hints": [
+        "Purchase Order",
+        "PUR-ORD",
+        "PO-2026"
+      ],
+      "format": "email_body"
+    },
+    "buyer": {
+      "name": "Alie",
+      "email": "alie@farmtopeople.com"
+    },
+    "desk_notes": "POs from orders@farmtopeople.com (quantities in body), buyer Alie. INVOICES go to invoices@farmtopeople.com WITH the PO# attached (Alie 5/14 — no longer orders@). Receiving 5–11am. 10/10/10 cs/wk.",
+    "invoice_group": null,
+    "invoice_emails": [
+      "invoices@farmtopeople.com"
+    ]
+  },
+  {
+    "id": "jack-s-market",
+    "name": "Jack's Market",
+    "status": "Pipeline",
+    "channel": "Wholesale",
+    "open_date": "2026-05-19",
+    "price_per_unit": 6.6,
+    "payment_terms": "NET 15",
+    "weekly_cases": {
+      "buf": 4,
+      "fo": 3,
+      "gr": 3
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "TBD launch May. Estimated 10 cs/wk steady-state.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "adhoc",
+    "delivery": {
+      "name": "Jack's Market",
+      "address": "Store 110 W 32nd St; Receiving 115 W 31st St, New York, NY (Mon–Sat 7am–3pm)"
+    },
+    "order_sources": {
+      "from_domains": [
+        "superfreshmarket.com"
+      ],
+      "subject_hints": [
+        "Jack's",
+        "Jacks Market"
+      ],
+      "format": "email_body"
+    },
+    "buyer": {
+      "name": "Jack's Market",
+      "email": "jacks@superfreshmarket.com"
+    },
+    "desk_notes": "Send invoices to jacks@superfreshmarket.com. New account — opening order stage.",
+    "invoice_group": null,
+    "invoice_emails": null
+  },
+  {
+    "id": "last-minute-market",
+    "name": "Last Minute Market",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-04-30",
+    "price_per_unit": 6.6,
+    "payment_terms": "NET 15",
+    "weekly_cases": {
+      "buf": 2,
+      "fo": 2,
+      "gr": 2
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Lindsey Rosenthal. 102 Walnut St, Montclair NJ. Biweekly via Localee (~3 cs/SKU delivery; 2 cs/wk avg). $6.60/u.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "biweekly",
+    "delivery": {
+      "name": "Last Minute Market",
+      "address": "102 Walnut St, Montclair, NJ"
+    },
+    "order_sources": {
+      "from_domains": [
+        "lastminutemarket.com"
+      ],
+      "subject_hints": [
+        "Last Minute",
+        "LMM",
+        "Cotto"
+      ],
+      "format": "email_body"
+    },
+    "buyer": {
+      "name": "Lindsey Rosenthal",
+      "email": "lindsey@lastminutemarket.com"
+    },
+    "desk_notes": "Biweekly via Localee. Payment via QuickBooks (Last Minute Montclair LLC) — CONFIRM AR rail (settle vs QBO).",
+    "invoice_group": null,
+    "invoice_emails": null
+  },
+  {
+    "id": "butterfield-lex",
+    "name": "Butterfield - Lex",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-04-30",
+    "price_per_unit": 6.6,
+    "payment_terms": "NET 30",
+    "weekly_cases": {
+      "buf": 18,
+      "fo": 24,
+      "gr": 8
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "PO #24278. Steady 18/24/8 per 5/14+5/19 orders (GR variable, 5/19 took 0). Tuesday cadence. Buyer Luis Merida.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "weekly",
+    "delivery": {
+      "name": "Butterfield Market — Lexington",
+      "address": "1114 Lexington Ave, New York, NY"
+    },
+    "order_sources": {
+      "from_domains": [
+        "butterfieldmarket.com"
+      ],
+      "subject_hints": [
+        "Butterfield",
+        "Lexington",
+        "On Lexington",
+        "1114"
+      ],
+      "format": "pdf"
+    },
+    "buyer": {
+      "name": "Luis Merida",
+      "email": "luismerida@butterfieldmarket.com"
+    },
+    "desk_notes": "Standing PO #24278. Order arrives as PDF attachment (Cotto MM-DD-YY.pdf). PDF parse needs attachment fetch (Chrome or Gmail-API).",
+    "invoice_group": null,
+    "invoice_emails": [
+      "luismerida@butterfieldmarket.com",
+      "billing@butterfieldmarket.com"
+    ]
+  },
+  {
+    "id": "butterfield-madison",
+    "name": "Butterfield - Madison",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-05-07",
+    "price_per_unit": 6.6,
+    "payment_terms": "NET 30",
+    "weekly_cases": {
+      "buf": 10,
+      "fo": 12,
+      "gr": 15
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "PO #29293. Steady 10/12/15 per 5/14+5/19 avg. Strong GR uptake. Tuesday cadence. Buyer Bielka Marquez.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "weekly",
+    "delivery": {
+      "name": "Butterfield Market — Madison",
+      "address": "1150 Madison Ave, New York, NY"
+    },
+    "order_sources": {
+      "from_domains": [
+        "butterfieldmarket.com"
+      ],
+      "subject_hints": [
+        "Butterfield",
+        "Madison",
+        "1150"
+      ],
+      "format": "pdf"
+    },
+    "buyer": {
+      "name": "Marcos Bravo (orders) / Bielka Marquez",
+      "email": "marcos@butterfieldmarket.com"
+    },
+    "desk_notes": "Standing PO #29293. PDF attachment. PDF parse needs attachment fetch. Watch for 3rd location 29-17 40th Ave (Astoria) on signature.",
+    "invoice_group": null,
+    "invoice_emails": [
+      "marcos@butterfieldmarket.com",
+      "bielka@butterfieldmarket.com",
+      "billing@butterfieldmarket.com"
+    ]
+  },
+  {
+    "id": "elm-wellness",
+    "name": "Elm Wellness",
+    "status": "Pipeline",
+    "channel": "Wholesale",
+    "open_date": "2026-05-27",
+    "price_per_unit": 6,
+    "payment_terms": "NET 15",
+    "weekly_cases": {
+      "buf": 5,
+      "fo": 4,
+      "gr": 3
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": null,
+    "delivery": null,
+    "order_sources": null,
+    "buyer": null,
+    "desk_notes": "Pipeline — no order intake yet.",
+    "invoice_group": null,
+    "invoice_emails": null
+  },
+  {
+    "id": "lifethyme-market",
+    "name": "Lifethyme Market",
+    "status": "Pipeline",
+    "channel": "Wholesale",
+    "open_date": "2026-05-27",
+    "price_per_unit": 6,
+    "payment_terms": "NET 15",
+    "weekly_cases": {
+      "buf": 5,
+      "fo": 4,
+      "gr": 3
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": null,
+    "delivery": null,
+    "order_sources": null,
+    "buyer": null,
+    "desk_notes": "Pipeline — no order intake yet.",
+    "invoice_group": null,
+    "invoice_emails": null
+  },
+  {
+    "id": "sag-general-store",
+    "name": "Sag General Store",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-05-21",
+    "price_per_unit": 7.19,
+    "payment_terms": "NET 15",
+    "weekly_cases": {
+      "buf": 2,
+      "fo": 2,
+      "gr": 2
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Sagaponack General Store (Sagaponack). Hamptons biweekly Tue (~3 cs/SKU delivery, ~2 cs/wk avg). $7.19/u canonical Hamptons rate.",
+    "aliases": [
+      "Sagaponack General Store"
+    ],
+    "invoice_rail": "settle",
+    "expected_cadence": "biweekly",
+    "delivery": {
+      "name": "Sagaponack General Store",
+      "address": "542 Sagg Main St, Sagaponack, NY 11962"
+    },
+    "order_sources": {
+      "from_domains": [
+        "sagaponackgeneralstore.com",
+        "nygrays.com"
+      ],
+      "subject_hints": [
+        "Sag",
+        "Sagaponack",
+        "Cotto Sell Sheet"
+      ],
+      "format": "email_body"
+    },
+    "buyer": {
+      "name": "Gabby Green (GM, places orders) / Mindy Gray (owner)",
+      "email": "gabby.green@sagaponackgeneralstore.com"
+    },
+    "desk_notes": "Orders arrive in the thread \"Cotto Sell Sheet & Details\" from Gabby Green (sagaponackgeneralstore.com); Mindy Gray = mindy@nygrays.com; cc kristen.himmelberg@sagaponackgeneralstore.com. Hamptons biweekly.",
+    "invoice_group": null,
+    "invoice_emails": null
+  },
+  {
+    "id": "montauk-yacht-club",
+    "name": "Montauk Yacht Club",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-05-21",
+    "price_per_unit": 7.19,
+    "payment_terms": "NET 15",
+    "weekly_cases": {
+      "buf": 2,
+      "fo": 2,
+      "gr": 2
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Montauk YC (Order #735). Hamptons biweekly Tue (~4 cs/SKU delivery, ~2 cs/wk avg). $7.19/u canonical Hamptons rate.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "biweekly",
+    "delivery": {
+      "name": "Montauk Yacht Club",
+      "address": "32 Star Island Rd, Montauk, NY"
+    },
+    "order_sources": {
+      "from_domains": [
+        "montaukyachtclub.com",
+        "craftable.com"
+      ],
+      "subject_hints": [
+        "Montauk",
+        "Order #"
+      ],
+      "format": "craftable"
+    },
+    "buyer": {
+      "name": "Amy Reynolds",
+      "email": "amy.reynolds@montaukyachtclub.com"
+    },
+    "desk_notes": "Orders via Craftable (noreply@craftable.com); Amy confirms by email. Hamptons biweekly.",
+    "invoice_group": null,
+    "invoice_emails": null
+  },
+  {
+    "id": "schmidts",
+    "name": "Schmidts",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-05-21",
+    "price_per_unit": 7.19,
+    "payment_terms": "NET 15",
+    "weekly_cases": {
+      "buf": 1,
+      "fo": 1,
+      "gr": 1
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Schmidts Country Market (Quogue). Hamptons biweekly Tue (~2 cs/SKU opening, ~1 cs/wk avg). $7.19/u canonical Hamptons rate.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "biweekly",
+    "delivery": {
+      "name": "Schmidts Country Market",
+      "address": "Quogue, NY — confirm"
+    },
+    "order_sources": {
+      "from_domains": [],
+      "subject_hints": [
+        "Schmidt"
+      ],
+      "format": "email_body"
+    },
+    "buyer": null,
+    "desk_notes": "Hamptons biweekly Tue.",
+    "invoice_group": null,
+    "invoice_emails": null
+  },
+  {
+    "id": "gourmet-garage-1",
+    "name": "Gourmet Garage 1",
+    "status": "Pipeline",
+    "channel": "TBD",
+    "open_date": "2026-06-01",
+    "price_per_unit": 4.53,
+    "payment_terms": "NET 30",
+    "weekly_cases": {
+      "buf": 5,
+      "fo": 5,
+      "gr": 5
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Distributor TBD",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": null,
+    "delivery": null,
+    "order_sources": {
+      "from_domains": [
+        "wakefern.com"
+      ],
+      "subject_hints": [
+        "Gourmet Garage"
+      ],
+      "format": "forwarded"
+    },
+    "buyer": {
+      "name": "Fedele Stella (Wakefern merchant)",
+      "email": "Fedele.Stella@wakefern.com"
+    },
+    "desk_notes": "Wakefern banner via Localee.",
+    "invoice_group": null,
+    "invoice_emails": null
+  },
+  {
+    "id": "gourmet-garage-2",
+    "name": "Gourmet Garage 2",
+    "status": "Pipeline",
+    "channel": "TBD",
+    "open_date": "2026-06-01",
+    "price_per_unit": 4.53,
+    "payment_terms": "NET 30",
+    "weekly_cases": {
+      "buf": 5,
+      "fo": 5,
+      "gr": 5
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Distributor TBD",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": null,
+    "delivery": null,
+    "order_sources": {
+      "from_domains": [
+        "wakefern.com"
+      ],
+      "subject_hints": [
+        "Gourmet Garage"
+      ],
+      "format": "forwarded"
+    },
+    "buyer": {
+      "name": "Fedele Stella (Wakefern merchant)",
+      "email": "Fedele.Stella@wakefern.com"
+    },
+    "desk_notes": "Wakefern banner via Localee.",
+    "invoice_group": null,
+    "invoice_emails": null
+  },
+  {
+    "id": "gourmet-garage-3",
+    "name": "Gourmet Garage 3",
+    "status": "Pipeline",
+    "channel": "TBD",
+    "open_date": "2026-06-01",
+    "price_per_unit": 4.53,
+    "payment_terms": "NET 30",
+    "weekly_cases": {
+      "buf": 5,
+      "fo": 5,
+      "gr": 5
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Distributor TBD",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": null,
+    "delivery": null,
+    "order_sources": {
+      "from_domains": [
+        "wakefern.com"
+      ],
+      "subject_hints": [
+        "Gourmet Garage"
+      ],
+      "format": "forwarded"
+    },
+    "buyer": {
+      "name": "Fedele Stella (Wakefern merchant)",
+      "email": "Fedele.Stella@wakefern.com"
+    },
+    "desk_notes": "Wakefern banner via Localee.",
+    "invoice_group": null,
+    "invoice_emails": null
+  },
+  {
+    "id": "misfits-market",
+    "name": "Misfits Market",
+    "status": "Pipeline",
+    "channel": "DTC",
+    "open_date": "2026-06-01",
+    "price_per_unit": 6.05,
+    "payment_terms": "NET 30",
+    "weekly_cases": {
+      "buf": 25,
+      "fo": 0,
+      "gr": 25
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "650u/SKU/mo BUF+GR. LA DC direct from FK (40-day shelf life min at receipt — model uses 45d for buffer). PO drops by 5/15 (Inputs!B70 = allocation start). First LA arrival ~5/26 from Block 2A; realistic launch wk of 6/1 (after MDW + Misfits processing). EXCLUDED from BK demand.",
+    "aliases": [
+      "Misfits Market (Emma Dineen)",
+      "Misfits Market (Jessie Kimsey)"
+    ],
+    "invoice_rail": "misfits_managed",
+    "expected_cadence": "monthly",
+    "delivery": null,
+    "order_sources": {
+      "from_domains": [
+        "misfitsmarket.com"
+      ],
+      "subject_hints": [
+        "Misfits"
+      ],
+      "format": "email_body"
+    },
+    "buyer": {
+      "name": "Jessie Kimsey",
+      "email": "jessie.kimsey@misfitsmarket.com"
+    },
+    "desk_notes": "DTC, LA-direct from FK. Excluded from Edison/BK demand.",
+    "invoice_group": null,
+    "invoice_emails": null
+  },
+  {
+    "id": "farm-forage-market",
+    "name": "Farm & Forage Market",
+    "status": "Active",
+    "channel": "Wholesale",
+    "open_date": "2026-05-19",
+    "price_per_unit": 7.19,
+    "payment_terms": "NET 15",
+    "weekly_cases": {
+      "buf": 0,
+      "fo": 1,
+      "gr": 1
+    },
+    "acct_fee_per_wk": 0,
+    "model_notes": "Farm & Forage (Amagansett). Hamptons biweekly Tue (0 BUF / 2 FO / 2 GR opening; ~1 cs/wk avg). Jonathan Bernard. $7.19/u canonical Hamptons rate. Opened 5/19.",
+    "aliases": [],
+    "invoice_rail": "settle",
+    "expected_cadence": "biweekly",
+    "delivery": {
+      "name": "Farm & Forage Market",
+      "address": "36 Hampton Road, Southampton, NY 11968"
+    },
+    "order_sources": {
+      "from_domains": [],
+      "subject_hints": [
+        "Farm & Forage",
+        "Farm and Forage"
+      ],
+      "format": "email_body"
+    },
+    "buyer": {
+      "name": "Jonathan Bernard",
+      "email": "jonathan.p.bernard@gmail.com"
+    },
+    "desk_notes": "Hamptons biweekly Tue. Two locations: Southampton flagship (36 Hampton Rd) = default; East Hampton outpost (58b Park Place) — CONFIRM which receives delivery.",
+    "invoice_group": null,
+    "invoice_emails": null
+  }
+]

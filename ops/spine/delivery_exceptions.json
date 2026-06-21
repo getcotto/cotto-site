@@ -1,0 +1,4 @@
+[
+  {"account":"Olive & Oak","date":"2026-06-04","skip":true,"reason":"missed delivery 6/4 — re-send owed"},
+  {"account":"Meadow Lane","date":"2026-06-04","buf":17,"reason":"supply-trimmed from 28 (only 127 BUF on hand)"}
+]

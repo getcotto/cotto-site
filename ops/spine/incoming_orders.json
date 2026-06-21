@@ -1,0 +1,719 @@
+[
+  {
+    "source_msg_id": "19e848e57ca11cb9",
+    "account_id": "meadow-lane",
+    "account_name": "Meadow Lane",
+    "store": null,
+    "order_date": "2026-06-01",
+    "requested_delivery": "2026-06-04",
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "FO",
+        "cases": 12
+      },
+      {
+        "sku": "GR",
+        "cases": 9
+      },
+      {
+        "sku": "BUF",
+        "cases": 17
+      }
+    ],
+    "total_cases": 49,
+    "status": "delivered",
+    "confidence": "high",
+    "captured_at": "2026-06-02T04:56:46.868Z",
+    "raw_excerpt": "Evy Garsbeke, thread 'Cotto x Meadow Lane'.",
+    "notes": "| Buffalo shorted 28->17 on 6/4 delivery (inventory; per Kendall->Lucy 6/3). FO/GR full."
+  },
+  {
+    "source_msg_id": "19e846e7525fb6e5",
+    "account_id": "butterfield-lex",
+    "account_name": "Butterfield - Lex",
+    "store": null,
+    "order_date": "2026-06-01",
+    "requested_delivery": null,
+    "po_number": "24515",
+    "lines": [
+      {
+        "sku": "FO",
+        "cases": 20
+      },
+      {
+        "sku": "BUF",
+        "cases": 8
+      },
+      {
+        "sku": "GR",
+        "cases": 10
+      }
+    ],
+    "total_cases": 38,
+    "status": "delivered",
+    "confidence": "high",
+    "captured_at": "2026-06-02T04:56:46.868Z",
+    "raw_excerpt": "PDF PO 24515 (auto-fetched). Net 30. $1,504.80.",
+    "notes": null
+  },
+  {
+    "source_msg_id": "19e83c1aca2b1a80",
+    "account_id": "butterfield-madison",
+    "account_name": "Butterfield - Madison",
+    "store": null,
+    "order_date": "2026-06-01",
+    "requested_delivery": null,
+    "po_number": "29578",
+    "lines": [
+      {
+        "sku": "FO",
+        "cases": 12
+      },
+      {
+        "sku": "BUF",
+        "cases": 10
+      },
+      {
+        "sku": "GR",
+        "cases": 4
+      }
+    ],
+    "total_cases": 26,
+    "status": "delivered",
+    "confidence": "high",
+    "captured_at": "2026-06-02T04:56:46.868Z",
+    "raw_excerpt": "PDF PO 29578 (auto-fetched). Net 30. $1,029.60.",
+    "notes": null
+  },
+  {
+    "source_msg_id": "19e82fba5b445170",
+    "account_id": "last-minute-market",
+    "account_name": "Last Minute Market",
+    "store": null,
+    "order_date": "2026-06-01",
+    "requested_delivery": null,
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 3
+      },
+      {
+        "sku": "FO",
+        "cases": 3
+      },
+      {
+        "sku": "GR",
+        "cases": 3
+      }
+    ],
+    "total_cases": 9,
+    "status": "delivered",
+    "confidence": "high",
+    "captured_at": "2026-06-02T04:56:46.868Z",
+    "raw_excerpt": "Lindsey, thread 'Wholesale at LMM': 3 of each.",
+    "notes": null
+  },
+  {
+    "source_msg_id": "19e7e97914ba9c4d",
+    "account_id": "farm-forage-market",
+    "account_name": "Farm & Forage Market",
+    "store": null,
+    "order_date": "2026-05-31",
+    "requested_delivery": null,
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 3
+      },
+      {
+        "sku": "FO",
+        "cases": 3
+      },
+      {
+        "sku": "GR",
+        "cases": 3
+      }
+    ],
+    "total_cases": 9,
+    "status": "delivered",
+    "confidence": "high",
+    "captured_at": "2026-06-02T04:56:46.868Z",
+    "raw_excerpt": "Thread 'Cotto x Farm & Forage Market': 3 of each (full restock once GR arrives).",
+    "notes": null
+  },
+  {
+    "source_msg_id": "19e748879ce3a603",
+    "account_id": "sag-general-store",
+    "account_name": "Sag General Store",
+    "store": null,
+    "order_date": "2026-05-29",
+    "requested_delivery": null,
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 6
+      },
+      {
+        "sku": "FO",
+        "cases": 6
+      },
+      {
+        "sku": "GR",
+        "cases": 6
+      }
+    ],
+    "total_cases": 18,
+    "status": "delivered",
+    "confidence": "high",
+    "captured_at": "2026-06-02T04:56:46.868Z",
+    "raw_excerpt": "Gabby Green (sagaponackgeneralstore.com), thread 'Cotto Sell Sheet & Details': '36 of each flavor' = 6 cases/flavor (Kendall confirmed).",
+    "notes": null
+  },
+  {
+    "source_msg_id": "fairway-86th-2026-06-04",
+    "account_id": "fairway-86th-st",
+    "account_name": "Fairway 86th St",
+    "store": null,
+    "order_date": "2026-06-02",
+    "requested_delivery": null,
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 20
+      },
+      {
+        "sku": "FO",
+        "cases": 20
+      },
+      {
+        "sku": "GR",
+        "cases": 20
+      }
+    ],
+    "total_cases": 60,
+    "status": "delivered",
+    "confidence": "high",
+    "captured_at": "2026-06-02T05:19:42.301Z",
+    "raw_excerpt": "Re-attempt of 5/28 failed delivery. Uptown. GR now included (held last week for quality).",
+    "notes": null
+  },
+  {
+    "source_msg_id": "fairway-74th-2026-06-04",
+    "account_id": "fairway-74th-st",
+    "account_name": "Fairway 74th St",
+    "store": null,
+    "order_date": "2026-06-02",
+    "requested_delivery": null,
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 20
+      },
+      {
+        "sku": "FO",
+        "cases": 20
+      },
+      {
+        "sku": "GR",
+        "cases": 20
+      }
+    ],
+    "total_cases": 60,
+    "status": "delivered",
+    "confidence": "high",
+    "captured_at": "2026-06-02T05:19:42.301Z",
+    "raw_excerpt": "Uptown. GR now included.",
+    "notes": null
+  },
+  {
+    "source_msg_id": "fairway-chelsea-2026-06-04",
+    "account_id": "fairway-chelsea",
+    "account_name": "Fairway Chelsea",
+    "store": null,
+    "order_date": "2026-06-02",
+    "requested_delivery": null,
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 10
+      },
+      {
+        "sku": "FO",
+        "cases": 10
+      },
+      {
+        "sku": "GR",
+        "cases": 10
+      }
+    ],
+    "total_cases": 30,
+    "status": "delivered",
+    "confidence": "high",
+    "captured_at": "2026-06-02T05:19:42.301Z",
+    "raw_excerpt": "Downtown. GR now included.",
+    "notes": null
+  },
+  {
+    "source_msg_id": "fairway-kipsbay-2026-06-04",
+    "account_id": "fairway-kips-bay",
+    "account_name": "Fairway Kips Bay",
+    "store": null,
+    "order_date": "2026-06-02",
+    "requested_delivery": null,
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 10
+      },
+      {
+        "sku": "FO",
+        "cases": 10
+      },
+      {
+        "sku": "GR",
+        "cases": 10
+      }
+    ],
+    "total_cases": 30,
+    "status": "delivered",
+    "confidence": "high",
+    "captured_at": "2026-06-02T05:19:42.301Z",
+    "raw_excerpt": "Downtown. GR now included.",
+    "notes": null
+  },
+  {
+    "source_msg_id": "19e899a83325c15a",
+    "account_id": "happier",
+    "account_name": "Happier Grocery",
+    "store": "Happier Grocery",
+    "order_date": "2026-06-02",
+    "requested_delivery": "2026-06-04",
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 4
+      },
+      {
+        "sku": "FO",
+        "cases": 4
+      },
+      {
+        "sku": "GR",
+        "cases": 3
+      }
+    ],
+    "total_cases": 11,
+    "status": "delivered",
+    "confidence": "high",
+    "captured_at": "2026-06-02T19:39:34.043Z",
+    "raw_excerpt": "May we please order for this week: Buffalo 4 CASE6, French Onion 4 CASE6, Garden Ranch 3 CASE6 (Tiffany Tan, t.tan@happier.nyc, 6/2)",
+    "notes": "Email-body order in the 'Cotto x Happier Grocery' thread."
+  },
+  {
+    "source_msg_id": "19e8014906a0f4f4",
+    "account_id": "olive-oak",
+    "account_name": "Olive & Oak",
+    "store": "Olive & Oak",
+    "order_date": "2026-05-31",
+    "requested_delivery": "2026-06-04",
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 4
+      },
+      {
+        "sku": "FO",
+        "cases": 4
+      },
+      {
+        "sku": "GR",
+        "cases": 2
+      }
+    ],
+    "total_cases": 10,
+    "status": "staged",
+    "confidence": "high",
+    "captured_at": "2026-06-02T20:36:03.480Z",
+    "raw_excerpt": "Can I order four cases of french onion, four cases of buffalo, and two of ranch? (Felicia Aschettino, owner, events@oliveandoaknj.com, 5/31)",
+    "notes": "MISSED initially - account was flagged Paused so coverage/detection skipped it. Email-body order in 'Cotto <> Olive & Oak' thread."
+  },
+  {
+    "source_msg_id": "19e8efd0b0b59c91",
+    "account_id": "farm-to-people",
+    "account_name": "Farm to People",
+    "store": "Farm to People",
+    "order_date": "2026-06-03",
+    "requested_delivery": "2026-06-04",
+    "po_number": "PO-2026-00329",
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 16
+      },
+      {
+        "sku": "FO",
+        "cases": 12
+      },
+      {
+        "sku": "GR",
+        "cases": 12
+      }
+    ],
+    "total_cases": 40,
+    "status": "delivered",
+    "confidence": "high",
+    "captured_at": "2026-06-03T19:57:37.907Z",
+    "raw_excerpt": "F2P PO-2026-00329 (6/3): 16 BUF / 12 FO / 12 GR. Quantities per Kendall + PO subject; PDF render failed, verify.",
+    "notes": "Rush add for this week (Thu 6/4 or Fri 6/5). Buffalo likely short - may need to short Meadow Lane."
+  },
+  {
+    "source_msg_id": "19ec6190b694e93f",
+    "account_id": "meadow-lane",
+    "account_name": "Meadow Lane",
+    "store": "Meadow Lane",
+    "order_date": "2026-06-14",
+    "requested_delivery": "2026-06-18",
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 18
+      },
+      {
+        "sku": "FO",
+        "cases": 10
+      },
+      {
+        "sku": "GR",
+        "cases": 10
+      }
+    ],
+    "total_cases": 38,
+    "status": "staged",
+    "confidence": "high",
+    "captured_at": "2026-06-14T13:10:21.317Z",
+    "raw_excerpt": "Can we place the following order for this week: 10 cases ranch, 10 cases french onion, 18 cases buffalo (Evy, 6/14)",
+    "notes": "Full order, NYC Thursday route week of 6/15."
+  },
+  {
+    "source_msg_id": "19ec5ce207eb4d6a",
+    "account_id": "olive-oak",
+    "account_name": "Olive & Oak",
+    "store": "Olive & Oak",
+    "order_date": "2026-06-14",
+    "requested_delivery": "2026-06-18",
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 3
+      },
+      {
+        "sku": "FO",
+        "cases": 3
+      },
+      {
+        "sku": "GR",
+        "cases": 3
+      }
+    ],
+    "total_cases": 9,
+    "status": "staged",
+    "confidence": "medium",
+    "captured_at": "2026-06-14T13:10:21.317Z",
+    "raw_excerpt": "I never received the ranch or french onion last week, but I can take 3 cases of each flavor for this week! (Felicia, 6/14)",
+    "notes": "CONFIRM: '3 of each flavor' read as all 3 SKUs (3/3/3); she may have meant only the ranch+FO she missed. Also: was shorted last week (never got ranch/FO) - owed makegood, invoice credit per Kendall."
+  },
+  {
+    "source_msg_id": "19ec635658ec413e",
+    "account_id": "sag-general-store",
+    "account_name": "Sag General Store",
+    "store": "Sag General Store",
+    "order_date": "2026-06-14",
+    "requested_delivery": "2026-06-21",
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 10
+      },
+      {
+        "sku": "FO",
+        "cases": 10
+      },
+      {
+        "sku": "GR",
+        "cases": 10
+      }
+    ],
+    "total_cases": 30,
+    "status": "staged",
+    "confidence": "high",
+    "captured_at": "2026-06-14T13:10:21.317Z",
+    "raw_excerpt": "Awesome! Let's order 60 more of each! (Gabby, 6/14)",
+    "notes": "Sag orders in UNITS not cases (per Kendall): 60 units each = 10 cases each. Hamptons delivery Sun 6/21."
+  },
+  {
+    "source_msg_id": "19ec5ceae53e73bd",
+    "account_id": "farm-forage-market",
+    "account_name": "Farm & Forage Market",
+    "store": "Farm & Forage Market",
+    "order_date": "2026-06-14",
+    "requested_delivery": "2026-06-21",
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 2
+      },
+      {
+        "sku": "FO",
+        "cases": 6
+      },
+      {
+        "sku": "GR",
+        "cases": 6
+      }
+    ],
+    "total_cases": 14,
+    "status": "staged",
+    "confidence": "high",
+    "captured_at": "2026-06-14T13:10:21.317Z",
+    "raw_excerpt": "Could I please have: 6 cases garden ranch, 6 cases French onion, 2 cases Buffalo for next soonest delivery! We are about to sell out of garden ranch. (Jonathan, 6/14)",
+    "notes": "About to sell out of GR. Hamptons delivery Sun 6/21."
+  },
+  {
+    "source_msg_id": "19ec70228a5be6e8",
+    "account_id": "butterfield-lex",
+    "account_name": "Butterfield - Lex",
+    "store": "Butterfield Market Lexington",
+    "order_date": "2026-06-14",
+    "requested_delivery": "2026-06-18",
+    "po_number": "24755",
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 10
+      },
+      {
+        "sku": "FO",
+        "cases": 16
+      },
+      {
+        "sku": "GR",
+        "cases": 8
+      }
+    ],
+    "total_cases": 34,
+    "status": "staged",
+    "confidence": "high",
+    "captured_at": "2026-06-14T17:08:09.617Z",
+    "raw_excerpt": "Butterfield Lex PO 24755: FO 16cs, GR 8cs, BUF 10cs ($1,346.40), Net 30 (Luis, 6/14)",
+    "notes": "PO 24755 (in PDF). In-store demo Fri 6/19 - deliver on Thursday route before then."
+  },
+  {
+    "source_msg_id": "19ec6d64a8116a26",
+    "account_id": "butterfield-madison",
+    "account_name": "Butterfield - Madison",
+    "store": "Butterfield Market Madison",
+    "order_date": "2026-06-14",
+    "requested_delivery": "2026-06-18",
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 18
+      },
+      {
+        "sku": "FO",
+        "cases": 3
+      },
+      {
+        "sku": "GR",
+        "cases": 16
+      }
+    ],
+    "total_cases": 37,
+    "status": "staged",
+    "confidence": "high",
+    "captured_at": "2026-06-14T17:08:09.617Z",
+    "raw_excerpt": "Madison (fwd by Marcos): FO 3, GR 16, BUF 18 (case pack 6). 'deliver at your earliest convenience' (6/14)",
+    "notes": "Email order, no formal PO# yet (Marcos said he'll place the PO). In-store demo Fri 6/19 - deliver Thursday before then."
+  },
+  {
+    "source_msg_id": "19ec6ad424884b7d",
+    "account_id": "farm-to-people",
+    "account_name": "Farm to People",
+    "store": "Farm to People",
+    "order_date": "2026-06-14",
+    "requested_delivery": "2026-06-19",
+    "po_number": "PO-2026-00606",
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 6
+      },
+      {
+        "sku": "GR",
+        "cases": 4
+      }
+    ],
+    "total_cases": 10,
+    "status": "staged",
+    "confidence": "high",
+    "captured_at": "2026-06-14T17:08:09.617Z",
+    "raw_excerpt": "F2P PO-2026-00606: Garden Ranch 4cs, Spicy Buffalo 6cs ($395.40), req delivery 6/19. No French Onion this time.",
+    "notes": "NO French Onion ordered this week. Req delivery 6/19. Bill.com rail."
+  },
+  {
+    "source_msg_id": "19ea6bf6ef9b0888",
+    "account_id": "schmidts",
+    "account_name": "Schmidts",
+    "store": "Schmidts Country Market",
+    "order_date": "2026-06-08",
+    "requested_delivery": "2026-06-21",
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 3
+      },
+      {
+        "sku": "FO",
+        "cases": 3
+      },
+      {
+        "sku": "GR",
+        "cases": 3
+      }
+    ],
+    "total_cases": 9,
+    "status": "staged",
+    "confidence": "high",
+    "captured_at": "2026-06-14T17:15:55.156Z",
+    "raw_excerpt": "3 cases each sku please, have fun talk soon (Dan, 6/8)",
+    "notes": "Placed 6/8, NOT yet delivered - carries to Hamptons 6/21 route (per Kendall, make sure it's on the route). Pays by mailed check (mailed to NY address, confirm receipt). No reminders/check-ins per standing flag."
+  },
+  {
+    "source_msg_id": "MAI-5465-backorder",
+    "account_id": "pop-up-grocer",
+    "account_name": "Pop Up Grocer",
+    "store": "Pop Up Grocer",
+    "order_date": "2026-06-11",
+    "requested_delivery": "2026-06-18",
+    "po_number": "MAI-5465",
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 12
+      },
+      {
+        "sku": "GR",
+        "cases": 10
+      }
+    ],
+    "total_cases": 22,
+    "status": "staged",
+    "confidence": "high",
+    "captured_at": "2026-06-14T17:34:35.354Z",
+    "raw_excerpt": "Backorder from MAI-5465: PUG got 16 FO on 6/11, owed 12 Buffalo + 10 Garden Ranch (both were out that week).",
+    "notes": "BACKORDER - rest of last week's PUG order (PO MAI-5465). Consignment. MUST deliver this week's NYC route regardless of any new order. Separate from anything PUG adds via this week's nudge."
+  },
+  {
+    "source_msg_id": "assumed-lmm-0614",
+    "account_id": "last-minute-market",
+    "account_name": "Last Minute Market",
+    "store": "Last Minute Market",
+    "order_date": "2026-06-14",
+    "requested_delivery": "2026-06-18",
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 3
+      },
+      {
+        "sku": "FO",
+        "cases": 3
+      },
+      {
+        "sku": "GR",
+        "cases": 3
+      }
+    ],
+    "total_cases": 9,
+    "status": "staged",
+    "confidence": "low",
+    "captured_at": "2026-06-15T00:39:30.488Z",
+    "raw_excerpt": "ASSUMED 3 of each (Kendall, 6/14) - Lindsey planning to order per prior email, not yet confirmed.",
+    "notes": "ASSUMED order pending Lindsey's confirmation."
+  },
+  {
+    "source_msg_id": "19ed1b377ccbdc7b",
+    "account_id": "happier-grocery",
+    "account_name": "Happier Grocery",
+    "store": "Happier Grocery",
+    "order_date": "2026-06-14",
+    "requested_delivery": "2026-06-17",
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 4
+      },
+      {
+        "sku": "FO",
+        "cases": 5
+      },
+      {
+        "sku": "GR",
+        "cases": 1
+      }
+    ],
+    "total_cases": 10,
+    "status": "invoiced",
+    "confidence": "confirmed",
+    "captured_at": "2026-06-15T00:39:30.488Z",
+    "raw_excerpt": "Liz Christ 6/16: 4cs buffalo, 5cs french onion, 1cs garden ranch (delivery 6/17). Kendall confirmed fulfilled 6/17. Invoiced COTTO-1082 $431.60.",
+    "notes": "Confirmed via Liz Christ 6/16 email; fulfilled 6/17; invoiced COTTO-1082 $431.60 (sent to t.tan/e.christ/s.lorang)."
+  },
+  {
+    "source_msg_id": "assumed-pug-new-0614",
+    "account_id": "pop-up-grocer",
+    "account_name": "Pop Up Grocer",
+    "store": "Pop Up Grocer (new order)",
+    "order_date": "2026-06-14",
+    "requested_delivery": "2026-06-18",
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "BUF",
+        "cases": 4
+      },
+      {
+        "sku": "FO",
+        "cases": 4
+      },
+      {
+        "sku": "GR",
+        "cases": 4
+      }
+    ],
+    "total_cases": 12,
+    "status": "staged",
+    "confidence": "low",
+    "captured_at": "2026-06-15T00:39:30.488Z",
+    "raw_excerpt": "ASSUMED 4 of each (Kendall, 6/14) - my read of 'four of each' for the remaining outstanding account; CONFIRM this is PUG.",
+    "notes": "ASSUMED new PUG order, SEPARATE from the 12 BUF + 10 GR backorder. Confirm '4 of each' was meant for PUG."
+  }
+]

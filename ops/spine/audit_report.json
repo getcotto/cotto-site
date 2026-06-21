@@ -44,6 +44,13 @@
       "impact": null
     },
     {
+      "sev": "🔴",
+      "area": "Freight",
+      "title": "Book Pueblo freight by 2026-06-22 (Mon) — ships 2026-06-26",
+      "detail": "Runs C. Carriers: Jeremy/FFE, GianMarco@RLS, Heather@DTS.",
+      "impact": null
+    },
+    {
       "sev": "🟡",
       "area": "Open item",
       "title": "[Freight] New run (produced this week, started 6/22) ships Friday 6/26 — needs its own pickup",

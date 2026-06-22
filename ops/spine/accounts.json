@@ -174,10 +174,10 @@
       "gr": 3
     },
     "acct_fee_per_wk": 0,
-    "model_notes": "Active again 6/2 (owner Felicia orders direct). Localee delivers on a separate ~Monday cycle from the main route, not the Thu run. Distributor still TBD.",
+    "model_notes": "Active again 6/2 (owner Felicia orders direct). WEEKLY default, but a NJ account NOT on the NYC route, so deliveries don't happen every week (Localee runs NJ on a separate ~Monday cycle, not the Thu/Tue NYC run). ASK weekly. Distributor still TBD.",
     "aliases": [],
     "invoice_rail": "settle",
-    "expected_cadence": "biweekly",
+    "expected_cadence": "weekly",
     "delivery": {
       "name": "Olive & Oak",
       "address": "700 Oceanport Ave, Oceanport, NJ 07757"
@@ -463,10 +463,10 @@
       "gr": 2
     },
     "acct_fee_per_wk": 0,
-    "model_notes": "Lindsey Rosenthal. 102 Walnut St, Montclair NJ. Biweekly via Localee (~3 cs/SKU delivery; 2 cs/wk avg). $6.60/u.",
+    "model_notes": "Lindsey Rosenthal. 102 Walnut St, Montclair NJ. WEEKLY default but a NJ account NOT on the NYC route, so deliveries are inconsistent (don't happen every week). ASK weekly. $6.60/u.",
     "aliases": [],
     "invoice_rail": "settle",
-    "expected_cadence": "biweekly",
+    "expected_cadence": "weekly",
     "delivery": {
       "name": "Last Minute Market",
       "address": "102 Walnut St, Montclair, NJ"

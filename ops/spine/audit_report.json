@@ -1,11 +1,18 @@
 {
-  "asOf": "2026-06-21",
+  "asOf": "2026-06-22",
   "findings": [
     {
       "sev": "🔴",
       "area": "Open item",
       "title": "[Freight] MISSED pickup: the 6/15-17 run is stuck at Pueblo — needs a MONDAY (6/22) pickup",
       "detail": "The run produced 6/15-17 was NOT collected on its 6/19 ship date (the miss that started all this). Jeremy at Liberty Multimodal is working on a Monday 6/22 pickup but it is still up in the air. This is the relief valve for the critically-low inventory (BUF/FO/GR < 1 wk). This is SEPARATE from the new run's Friday pickup below. (owner: Jeremy / Liberty Multimodal)",
+      "impact": null
+    },
+    {
+      "sev": "🔴",
+      "area": "Open item",
+      "title": "[Packaging] Packaging reorder for the 7/13 run — Cary TUBS + LIDS are time-critical NOW (4-6 wk lead)",
+      "detail": "VERIFIED 6/21. Short for runs through 7/27: tubs ~11.7k, lids ~12.4k (Cary, 4-6wk lead → order NOW to land by 7/13), boxes ~1.4k, GR wrap ~3.3k + FO lid ~3.7k labels (ATL, 2-3wk). DRAFTS STAGED 6/21 (review + send): (1) Cary 15k tubs + 15k lids → Daniel Fountain + Samantha Silva (Samantha processes orders; Daniel went unresponsive last ask — both on it now). (2) Boxes 5,000 → Connor (Snyder = PCA, same supplier; NO order was in progress, so this is a real reorder). (3) ATL French Onion lids 6,000 → Callie (orders) + James (pricing). OPEN DECISION — GR WRAP: short per audit BUT well-stocked (5,050 on hand) AND under a possible reformulation hold (lemon→vinegar may change the ingredient declaration on the label) — DO NOT reorder GR wrap until Kendall confirms the GR formula/label is locked. ⚠ DELETE the earlier wrong ATL draft (plain email to James only). Also: (4) backordered 7,054 tubs (EST129593) shipped — confirm landed → move onOrder→onHand. ⚠ CAVEAT: on-hand is the stale ~6/1 FK count; the FK fresh-count request is also drafted — reconcile before fully trusting the shortfall. (owner: Kendall — review + send the 3 drafts; decide GR-wrap hold; delete the bad James draft)",
       "impact": null
     },
     {
@@ -61,7 +68,49 @@
       "sev": "🟡",
       "area": "Open item",
       "title": "[Storage / Logistics] Carriacou (Brooklyn) warehouse — NEW storage option; Mendez holding space, needs date/time/# pallets (BLOCKED on securing a truck)",
-      "detail": "Kendall reached out to Carriacou (Brooklyn; contact Mendez) about storing product there — NOT previously used. Rationale: (1) unsure Localee's hub can receive from a Sprinter van; (2) wants inventory accessible for trade shows. Mendez (6/19) confirmed space IS available and needs the final date, time, and # of pallets; Kendall is sending a PO. Can't give those details yet because there is no truck/freight booked. NEXT: once a truck is secured (see the freight items above), send Mendez the date/time/pallets to lock the Brooklyn receiving. Jake also coordinated with Mendez. (owner: Kendall (give Mendez details once a truck is booked); Mendez/Carriacou holding the space)",
+      "detail": "Kendall reached out to Carriacou (Brooklyn; contact Mendez) about storing product there — NOT previously used. Rationale: (1) unsure Localee's hub can receive from a Sprinter van; (2) wants inventory accessible for trade shows. Mendez (6/19) confirmed space IS available and needs the final date, time, and # of pallets; Kendall is sending a PO. Can't give those details yet because there is no truck/freight booked. NEXT: once a truck is secured (see the freight items above), send Mendez the date/time/pallets to lock the Brooklyn receiving. Jake also coordinated with Mendez. SPECS NOW KNOWN (John, 6/19): 3 pallets — P1 48x40x54 1111lb, P2 48x40x35 713lb, P3 48x40x59 1211lb. So #pallets (3) + dims are answered; only the truck + date/time remain. (owner: Kendall (give Mendez date/time once a truck is booked); Mendez/Carriacou holding the space)",
+      "impact": null
+    },
+    {
+      "sev": "🟡",
+      "area": "Open item",
+      "title": "[Billing / Fairway] Fairway invoices — Lucy + Ido both asked if sent; share invoices with Lucy going forward (needed upon delivery)",
+      "detail": "On 6/17 both Lucy Lerman and Ido (Localee) asked whether Fairway's invoices were sent. Lucy: 'Moving forward please also share with me — it's needed upon delivery as well.' ACTION: confirm Fairway invoices are sent, and add Lucy to the invoice share for every delivery from now on. (owner: Kendall — send/confirm Fairway invoices + add Lucy to the share list)",
+      "impact": null
+    },
+    {
+      "sev": "🟡",
+      "area": "Open item",
+      "title": "[Orders / Fairway Kips Bay] Edgar (Fairway Kips Bay) wants +10 cases Buffalo on this week's delivery",
+      "detail": "Edgar at Fairway Kips Bay texted 6/19 'please send me 10 cases of the buffalo flavor.' Kendall confirmed 6/21 she'll add it to this week's delivery and asked if he wants FO/GR too. ACTION: capture the order (10cs BUF + any FO/GR he adds) into the order desk for this week's Localee delivery + invoice. (owner: Kendall — confirm SKUs with Edgar, add to this week's delivery + invoice)",
+      "impact": null
+    },
+    {
+      "sev": "🟡",
+      "area": "Open item",
+      "title": "[Logistics / Localee] Montauk Yacht Club — Ido needs the chef/buyer contact + delivery time window from Kendall",
+      "detail": "Ido (Localee) asked 6/19 for the chef/buyer contact info + time openings for Montauk Yacht Club (MYC); it's a rollover from last time where nobody was responsive, and the timing/distance is hard for Localee. ACTION: get Kendall the MYC chef/buyer contact + a delivery time window so Ido can route it. (owner: Kendall — provide MYC contact + delivery window to Ido)",
+      "impact": null
+    },
+    {
+      "sev": "🟡",
+      "area": "Open item",
+      "title": "[Quality / DTC] Yuliana cold-chain complaint — DTC dips arrived not cold (ice packs slid, insufficient)",
+      "detail": "Yuliana (6/19): ice packs were still cold but slid to one side and there weren't enough, so the dips were never cold on arrival. A DTC shipping cold-chain failure. ACTION: decide on a make-good (refund/replacement) and fix the DTC pack-out (more/secured ice packs). (owner: Kendall — make-good + pack-out fix)",
+      "impact": null
+    },
+    {
+      "sev": "🟡",
+      "area": "Open item",
+      "title": "[Production / Incoming] Incoming run (~6/15-17): 192 GR / 295 BUF / 330 FO cases — produced & weight-confirmed, NOT yet landed (stuck at Pueblo)",
+      "detail": "Nathan's final counts (text 6/18): GR 192, BUF 295, FO 330 cases (817 total). CROSS-CONFIRMED by John's independent pallet measurements — per-SKU stack heights + weights line up (GR 34.6in/713lb, BUF 52in/1111lb, FO 59.1in/1211lb, ~3.7 lb/case across all three). This is INCOMING production, NOT sellable on-hand — current on-hand stays BUF 56 / FO 68 / GR 60 cs until it LANDS. On arrival (pickup date TBD — Jeremy/Liberty working the stuck-run freight, still unresolved; RLS's soonest is Friday which doesn't work for this run) convert to inventory via `node cotto-pipeline/log_receipt.js B 295 330 192 <date> <location>`. Batch sheets emailed per-SKU 6/18 for production-batch backup; 5/25-27 batch sheet (separate, mislabel run) attached to the 6/19 'Batch Sheets' email. (owner: Kendall / Claude — convert to on-hand when the run lands)",
+      "impact": null
+    },
+    {
+      "sev": "🟡",
+      "area": "Open item",
+      "title": "[Billing / Invoicing] ⚠ BEHIND on invoicing — catch up the last ~2 weeks FIRST, then current (Loop A steps 5-6)",
+      "detail": "Flagged 6/21: we are BEHIND on invoicing. CATCH UP the last ~2 weeks of delivered orders into Settle (per-account invoice_emails, real COTTO-# read live from Settle) BEFORE doing the current week. Then reconcile paid vs unpaid (reconcile_ar) + dun the unpaid. Must include the Fairway invoices Lucy/Ido chased (+ add Lucy to the share going forward). To rebuild the 2-wk backlog, re-pull each account's delivered orders from Gmail/POD (the staging file only holds the current cycle). (owner: Kendall / Claude — run the order-desk invoicing backlog + current)",
       "impact": null
     },
     {
@@ -138,7 +187,7 @@
       "sev": "🟡",
       "area": "Packaging",
       "title": "Reorder Cardboard Boxes (8oz 6-pack): covered through the 6/29-7/1 run, then runs out at the 7/13-15 run",
-      "detail": "Have 3050, need 4478 for all runs after the 2026-06-01 count (short 1428). Supplier PCA. ⚠ count is stale — confirm with a fresh FK count.",
+      "detail": "Have 3050, need 4478 for all runs after the 2026-06-01 count (short 1428). Supplier Snyder Packaging (Connor Snyder, Connor@Snyder-pkg.com, 610-914-5880). ⚠ count is stale — confirm with a fresh FK count.",
       "impact": 1428
     },
     {

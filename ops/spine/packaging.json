@@ -2,7 +2,7 @@
   "asOf": "2026-06-01",
   "source": "FK end-of-month tracker (Nathan Stern), 'Cotto - Inventory - 6.1.26.xlsx' + handwritten 5/28 count. Latest column used.",
   "unitsPerCase": 6,
-  "note": "Packaging on-hand at Fuel Kitchens. Cotto-supplied (Kendall's responsibility). Coverage is computed against the committed production_plan.json at GROSS fill (raw yields 75/63/67 cs/batch x 6 u), since every filled tub consumes packaging regardless of FK retention. reorderPoint = flag amber below this. Update onHand from each FK EOM sheet; set onOrder when a PO is placed so coverage nets it in. [6/20: onOrder set for wrap_buf/wrap_fo/lid_buf from ATL INV 61246; tubs/lids/boxes onOrder still need Cary verification.]",
+  "note": "Packaging on-hand at Fuel Kitchens. Cotto-supplied (Kendall's responsibility). Coverage is computed against the committed production_plan.json at GROSS fill (raw yields 75/63/67 cs/batch x 6 u), since every filled tub consumes packaging regardless of FK retention. reorderPoint = flag amber below this. Update onHand from each FK EOM sheet; set onOrder when a PO is placed so coverage nets it in. [6/20: onOrder set for wrap_buf/wrap_fo/lid_buf from ATL INV 61246. 6/21 VERIFIED vs source emails: Cary order = EST129592 (7,946 tubs + 15,000 lids, in-stock = LANDED, in onHand) + EST129593 (7,054 tubs, backordered = onOrder; a recent Cary receipt suggests it shipped — confirm + move to onHand). Lids fully received (onOrder 0 correct). Boxes: supplier is SNYDER PACKAGING (Connor Snyder), not PCA — a ~5k order is in progress (set onOrder, see box_6pk) + a past-due Snyder invoice to pay. ATL: 61246 (6/14) is the latest, reflected. ⚠ ON-HAND IS STALE: anchored to FK's ~5/28-6/1 count (PRE recent production usage; boxes weren't even on that count) — REQUEST a fresh post-production count from Nathan and reconcile on-hand before trusting coverage. Still need a NEW Cary order for 7/13 (tubs+lids); the Cary rep (Daniel) went unresponsive on the last ask.]",
   "components": [
     {
       "key": "tubs",
@@ -105,7 +105,8 @@
       "onHand": 3050,
       "onOrder": 0,
       "reorderPoint": 800,
-      "supplier": "PCA"
+      "supplier": "Snyder Packaging (Connor Snyder, Connor@Snyder-pkg.com, 610-914-5880)",
+      "onOrderNote": "RESOLVED 6/21 (Kendall): 'PCA' and Snyder are the SAME supplier — Connor is the box contact. NO box order is currently in progress (onOrder 0 is correct; the past-due Snyder invoice was for a PRIOR order, already received → in onHand). Boxes are short for the 7/13 run with nothing on the way → 5,000-box reorder DRAFTED to Connor 6/21 (set onOrder 5000 once sent)."
     }
   ]
 }

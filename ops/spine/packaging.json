@@ -11,8 +11,8 @@
       "shared": true,
       "unit": "unit",
       "onHand": 8145,
-      "onOrder": 7054,
-      "onOrderNote": "SO672606 back-order, due ~6/12/26 (hard-charged on ship)",
+      "onOrder": 22054,
+      "onOrderNote": "= 7,054 (SO672606 back-order, ~6/12 — CONFIRM it landed, then move to onHand) + 15,000 NEW Cary order SENT 6/22 to Daniel + Samantha (asked to expedite for the 7/13 run).",
       "reorderPoint": 4000,
       "supplier": "The Cary Company"
     },
@@ -23,7 +23,8 @@
       "shared": true,
       "unit": "unit",
       "onHand": 14500,
-      "onOrder": 0,
+      "onOrder": 15000,
+      "onOrderNote": "NEW Cary order SENT 6/22 (15,000 lids) to Daniel + Samantha — confirm pricing/ship date; asked to expedite for the 7/13 run.",
       "reorderPoint": 4000,
       "supplier": "The Cary Company"
     },

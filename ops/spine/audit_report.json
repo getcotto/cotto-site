@@ -4,15 +4,15 @@
     {
       "sev": "🔴",
       "area": "Open item",
-      "title": "[Freight] STUCK 6/15-17 run at Pueblo — PLAN (6/22): ship SOLO early next week (Mon/Tue ~6/29-30), do NOT wait for the 7/3 consolidated load",
-      "detail": "The run produced 6/15-17 was NOT collected on its 6/19 ship date (the miss that started all this). 3 measured pallets (BUF 52in/1,111 lb · GR 35in/713 lb · FO 59in/1,211 lb, ~3,035 lb). It's the relief valve for critically-low NYC inventory (<1 wk, losing sales). PLAN as of 6/22: since Run C now ships 7/3 (see below), the stuck run is DECOUPLED — ship it SOLO early next week (target Mon/Tue ~6/29-30) for fast relief; do NOT fold it into the 7/3 consolidated load (too long to wait). Carrier hunt: JEREMY at FFE (text contact, 'Real-Streeter', came through on the 6/19 run) is chasing his network but has NO truck yet as of 6/22; run parallel RLS/DTS quotes for an EARLY-NEXT-WEEK pickup (NOT Friday). Jeremy email NOT in system — need it from Kendall to send the written load tender. FK (Nathan) asked to stage the pallets for a Mon/Tue load. (owner: Kendall — book early-next-week carrier (Jeremy/FFE + RLS/DTS); send Jeremy email once address provided)",
+      "title": "[Freight] STUCK 6/15-17 run — RESOLVED 6/22: sprinter via Jeremy (FFE), PICKED UP, delivering to Brooklyn (Carriacou) WEDNESDAY 6/24",
+      "detail": "RESOLVED 6/22. The 6/15-17 run (3 measured pallets: BUF 52in/1,111 lb · GR 35in/713 lb · FO 59in/1,211 lb, ~3,035 lb) was the relief valve for critically-low inventory. Jeremy (FFE) sourced a reefer SPRINTER (~$4,000), PICKED UP 6/22, delivering to BROOKLYN — Carriacou Logistics (Scholes St; contact Mendez 347-248-7056, Curlon & Mohamed on dock) — WEDNESDAY 6/24. This is the S3/best-case outcome: lands in time for this week's store deliveries + UNFI (6/23-25) + Fancy Food (6/26-30). Why the sprinter premium was worth it: Edison was down to just BUF 22/FO 33/GR 15 (Lucy 6/22) and nothing in Brooklyn — Edison alone could NOT cover this week, so Wednesday delivery was the only option that lands product in time. ON ARRIVAL convert to inventory (location = Brooklyn/Carriacou) and tell Lucy which stops pull from Brooklyn vs Edison's remaining 70 cs. (owner: Kendall / Claude — log receipt at Brooklyn on Wed arrival; coordinate Localee pulls Edison vs Brooklyn)",
       "impact": null
     },
     {
       "sev": "🔴",
       "area": "Open item",
-      "title": "[Packaging] Packaging reorder for the 7/13 run — Cary TUBS + LIDS are time-critical NOW (4-6 wk lead)",
-      "detail": "VERIFIED 6/21. Short for runs through 7/27: tubs ~11.7k, lids ~12.4k (Cary, 4-6wk lead → order NOW to land by 7/13), boxes ~1.4k, GR wrap ~3.3k + FO lid ~3.7k labels (ATL, 2-3wk). DRAFTS STAGED 6/21 (review + send): (1) Cary 15k tubs + 15k lids → Daniel Fountain + Samantha Silva (Samantha processes orders; Daniel went unresponsive last ask — both on it now). (2) Boxes 5,000 → Connor (Snyder = PCA, same supplier; NO order was in progress, so this is a real reorder). (3) ATL French Onion lids 6,000 → Callie (orders) + James (pricing). OPEN DECISION — GR WRAP: short per audit BUT well-stocked (5,050 on hand) AND under a possible reformulation hold (lemon→vinegar may change the ingredient declaration on the label) — DO NOT reorder GR wrap until Kendall confirms the GR formula/label is locked. ⚠ DELETE the earlier wrong ATL draft (plain email to James only). Also: (4) backordered 7,054 tubs (EST129593) shipped — confirm landed → move onOrder→onHand. ⚠ CAVEAT: on-hand is the stale ~6/1 FK count; the FK fresh-count request is also drafted — reconcile before fully trusting the shortfall. (owner: Kendall — review + send the 3 drafts; decide GR-wrap hold; delete the bad James draft)",
+      "title": "[Packaging] Packaging reorder for 7/13 run — Cary tubs+lids SENT 6/22 ✅; remaining: boxes + ATL FO-lid (this week), GR wrap (held)",
+      "detail": "Time-phased coverage (6/22): the 7/13 run is the cliff for tubs, lids, boxes, FO-lid, GR-wrap. STATUS: (1) ✅ Cary 15k tubs + 15k lids SENT 6/22 to Daniel + Samantha (the urgent one — 4-6wk lead, already past order-by for 7/13; asked to expedite). onOrder updated in packaging.json. (2) Boxes 5,000 → Connor — DRAFTED, send this week (2-3wk lead; only ~100 short at 7/13). (3) ATL French Onion lids 6,000 → Callie (orders) + James (pricing) — DRAFTED, send this week (~700 short at 7/13). OPEN DECISION — GR WRAP: ~500 short at 7/13 but HELD pending Kendall's call on whether the GR reformulation label (lemon→vinegar ingredient declaration) is locked. NOT-YET-URGENT (covered through the 7/27 run): BUF/FO wraps, BUF/GR lids — order in ~2 wks. ⚠ CONFIRM the 7,054-tub backorder (EST129593) landed → move onOrder→onHand. ⚠ On-hand is the stale ~6/1 FK count; fresh-count request to Nathan is drafted. (owner: Kendall — send boxes + ATL FO-lid drafts this week; decide GR-wrap hold; confirm tub backorder landed)",
       "impact": null
     },
     {
@@ -53,8 +53,8 @@
     {
       "sev": "🟡",
       "area": "Open item",
-      "title": "[Freight] Run C NO LONGER ships 6/26 — Nathan consolidating this-week + next-week runs to Fri JULY 3 (test-batch conflict)",
-      "detail": "CHANGED 6/22 (Nathan email 2:53pm, thread 'RE: Cotto PO 6/22 run'): FK can't ship 6/26 because they're running a test batch for another client whose travel couldn't move. Nathan proposes shipping THIS week's run (C) + NEXT week's run (6/29-7/1) TOGETHER on Friday JULY 3. Kendall ACCEPTING (reply drafted to Nathan, asks to confirm production still on schedule + stage the stuck pallets). CONSEQUENCES: (1) all the 6/26 RLS quote drafts to GianMarco are STALE — SCRAP them. (2) Book ONE consolidated freight for the 7/3 load: Run C (668 cs) + 6/29 run (540 cs) = ~1,208 cs, est ~5-6 pallets / ~4,600 lb — better rate, the consolidation Kendall wanted. Re-quote RLS/DTS for a 7/3 pickup once produced + measured. NOTE: this morning's Daily Brief/Audit still say 'ship 6/26' — they predate the move, ignore. (owner: Kendall — send Nathan reply; scrap 6/26 RLS drafts; re-quote 7/3 consolidated load)",
+      "title": "[Freight] Upcoming run (Run C) — Nathan now says it MAY be ready for a Fri 6/26 pickup; RLS quote DRAFTED 6/22 (Edison or Brooklyn TBC)",
+      "detail": "UPDATED 6/22: Nathan now says FK may be able to have this week's run ready for pickup FRIDAY 6/26 (reversing the earlier 7/3-consolidation plan). Kendall asked to quote RLS as if it WILL be ready Friday. RLS quote DRAFTED to GianMarco 6/22: pickup Fri 6/26 at FK Pueblo, reefer 33-40F, delivery NYC metro = Edison NJ OR Brooklyn NY (exact TBC at booking), est ~3 pallets / ~2,520 lb (BUF ~835 / FO ~970 / GR ~715 lb), confirmed dims to follow once produced + measured. ACTIONS: send RLS draft; confirm with Nathan whether Friday readiness is real; once produced, get John's measured pallets → send RLS confirmed numbers. The 6/29 run is separate (consolidation idea is moot if Run C goes Friday alone). (owner: Kendall — send RLS draft; confirm Nathan Friday readiness; provide measured dims when produced)",
       "impact": null
     },
     {
@@ -119,20 +119,6 @@
       "title": "Unconfirmed receipt 2026-06-16: 6/12 Pueblo run (FK) — est., no BOL yet",
       "detail": "150 BUF / 63 FO / 134 GR logged as estimate — reconcile when the BOL/receipt lands.",
       "impact": null
-    },
-    {
-      "sev": "🟡",
-      "area": "Packaging",
-      "title": "Reorder 8oz PP TE round containers: covered through the 6/29-7/1 run, then runs out at the 7/13-15 run",
-      "detail": "Have 15199, need 26868 for all runs after the 2026-06-01 count (short 11669). Supplier The Cary Company. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": 11669
-    },
-    {
-      "sev": "🟡",
-      "area": "Packaging",
-      "title": "Reorder 110mm PP TE lids: covered through the 6/29-7/1 run, then runs out at the 7/13-15 run",
-      "detail": "Have 14500, need 26868 for all runs after the 2026-06-01 count (short 12368). Supplier The Cary Company. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": 12368
     },
     {
       "sev": "🟡",

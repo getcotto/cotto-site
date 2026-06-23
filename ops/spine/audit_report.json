@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-06-22",
+  "asOf": "2026-06-23",
   "findings": [
     {
       "sev": "🔴",
       "area": "Open item",
-      "title": "[Freight] MISSED pickup: the 6/15-17 run is stuck at Pueblo — needs a MONDAY (6/22) pickup",
-      "detail": "The run produced 6/15-17 was NOT collected on its 6/19 ship date (the miss that started all this). Jeremy at Liberty Multimodal is working on a Monday 6/22 pickup but it is still up in the air. This is the relief valve for the critically-low inventory (BUF/FO/GR < 1 wk). This is SEPARATE from the new run's Friday pickup below. (owner: Jeremy / Liberty Multimodal)",
+      "title": "[Freight] STUCK 6/15-17 run at Pueblo — PLAN (6/22): ship SOLO early next week (Mon/Tue ~6/29-30), do NOT wait for the 7/3 consolidated load",
+      "detail": "The run produced 6/15-17 was NOT collected on its 6/19 ship date (the miss that started all this). 3 measured pallets (BUF 52in/1,111 lb · GR 35in/713 lb · FO 59in/1,211 lb, ~3,035 lb). It's the relief valve for critically-low NYC inventory (<1 wk, losing sales). PLAN as of 6/22: since Run C now ships 7/3 (see below), the stuck run is DECOUPLED — ship it SOLO early next week (target Mon/Tue ~6/29-30) for fast relief; do NOT fold it into the 7/3 consolidated load (too long to wait). Carrier hunt: JEREMY at FFE (text contact, 'Real-Streeter', came through on the 6/19 run) is chasing his network but has NO truck yet as of 6/22; run parallel RLS/DTS quotes for an EARLY-NEXT-WEEK pickup (NOT Friday). Jeremy email NOT in system — need it from Kendall to send the written load tender. FK (Nathan) asked to stage the pallets for a Mon/Tue load. (owner: Kendall — book early-next-week carrier (Jeremy/FFE + RLS/DTS); send Jeremy email once address provided)",
       "impact": null
     },
     {
@@ -18,9 +18,9 @@
     {
       "sev": "🔴",
       "area": "AR",
-      "title": "Overdue AR (reconciled, past terms): $9081.62",
-      "detail": "Meadow Lane $7344.80; Olive & Oak $355.86; Last Minute Market $1003.20; Jack's Market $118.80; Schmidts Country market $258.96. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
-      "impact": 9081.619999999999
+      "title": "Overdue AR (reconciled, past terms): $9858.14",
+      "detail": "Meadow Lane $7344.80; Olive & Oak $355.86; Last Minute Market $1003.20; Jack's Market $118.80; Schmidts Country market $258.96; Sagaponack General Store $776.52. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
+      "impact": 9858.14
     },
     {
       "sev": "🔴",
@@ -51,17 +51,10 @@
       "impact": null
     },
     {
-      "sev": "🔴",
-      "area": "Freight",
-      "title": "Book Pueblo freight by 2026-06-22 (Mon) — ships 2026-06-26",
-      "detail": "Runs C. Carriers: Jeremy/FFE, GianMarco@RLS, Heather@DTS.",
-      "impact": null
-    },
-    {
       "sev": "🟡",
       "area": "Open item",
-      "title": "[Freight] New run (produced this week, started 6/22) ships Friday 6/26 — needs its own pickup",
-      "detail": "Heather at DTS has a final quote ready and is waiting on Kendall's approval to schedule the 6/26 pickup. Book this week. Distinct from the stuck 6/15-17 run above. (owner: Heather / DTS)",
+      "title": "[Freight] Run C NO LONGER ships 6/26 — Nathan consolidating this-week + next-week runs to Fri JULY 3 (test-batch conflict)",
+      "detail": "CHANGED 6/22 (Nathan email 2:53pm, thread 'RE: Cotto PO 6/22 run'): FK can't ship 6/26 because they're running a test batch for another client whose travel couldn't move. Nathan proposes shipping THIS week's run (C) + NEXT week's run (6/29-7/1) TOGETHER on Friday JULY 3. Kendall ACCEPTING (reply drafted to Nathan, asks to confirm production still on schedule + stage the stuck pallets). CONSEQUENCES: (1) all the 6/26 RLS quote drafts to GianMarco are STALE — SCRAP them. (2) Book ONE consolidated freight for the 7/3 load: Run C (668 cs) + 6/29 run (540 cs) = ~1,208 cs, est ~5-6 pallets / ~4,600 lb — better rate, the consolidation Kendall wanted. Re-quote RLS/DTS for a 7/3 pickup once produced + measured. NOTE: this morning's Daily Brief/Audit still say 'ship 6/26' — they predate the move, ignore. (owner: Kendall — send Nathan reply; scrap 6/26 RLS drafts; re-quote 7/3 consolidated load)",
       "impact": null
     },
     {
@@ -191,6 +184,13 @@
       "impact": 1428
     },
     {
+      "sev": "🟡",
+      "area": "Freshness",
+      "title": "Spine may be stale (latest delivery 2026-06-18 = 5d ago, latest order 2026-06-24 = -1d ago)",
+      "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
+      "impact": null
+    },
+    {
       "sev": "✅",
       "area": "Open item",
       "title": "[Quality / Neighborly] Neighborly mislabel — Evan will relabel on their own (they have a label maker); NOT a red flag from Neighborly's side anymore",
@@ -201,13 +201,6 @@
       "sev": "✅",
       "area": "Inventory",
       "title": "On-hand: BUF 56 / FO 68 / GR 60 cs",
-      "detail": "",
-      "impact": null
-    },
-    {
-      "sev": "✅",
-      "area": "Freshness",
-      "title": "Spine fresh (latest event 2026-06-18, latest order 2026-06-24)",
       "detail": "",
       "impact": null
     }

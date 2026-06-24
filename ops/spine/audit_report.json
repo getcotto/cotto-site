@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-23",
+  "asOf": "2026-06-24",
   "findings": [
     {
       "sev": "🔴",
@@ -171,8 +171,15 @@
     },
     {
       "sev": "🟡",
+      "area": "Freight",
+      "title": "Book Pueblo freight by 2026-06-29 (Mon) — ships 2026-07-03",
+      "detail": "Runs 6/29-7/1. Carriers: Jeremy/FFE, GianMarco@RLS, Heather@DTS.",
+      "impact": null
+    },
+    {
+      "sev": "🟡",
       "area": "Freshness",
-      "title": "Spine may be stale (latest delivery 2026-06-18 = 5d ago, latest order 2026-06-24 = -1d ago)",
+      "title": "Spine may be stale (latest delivery 2026-06-18 = 6d ago, latest order 2026-06-24 = 0d ago)",
       "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
       "impact": null
     },

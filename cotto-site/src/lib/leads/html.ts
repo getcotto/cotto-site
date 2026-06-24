@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+export const LEADS_HTML = `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -203,11 +203,12 @@ document.getElementById("save").onclick=function(){
  window.scrollTo(0,0);
 };
 
-function leadsText(){return leads.map(function(l){return "- "+(l.store||"(photo lead)")+" | "+(l.temp||"")+" | "+(l.contact||"")+(l.skus?" ["+l.skus+"]":"")+(l.review?" | review:"+l.review:"")+(l.notes?" | "+l.notes:"")+(l.photo?" | [photo on phone]":"")}).join("\n")}
-document.getElementById("copy").onclick=function(){var t="Cotto UNFI East leads:\n"+leadsText();if(navigator.clipboard){navigator.clipboard.writeText(t)}var b=this,o=b.textContent;b.textContent="Copied";setTimeout(function(){b.textContent=o},1400)};
-document.getElementById("email").onclick=function(){if(!leads.length)return;location.href="mailto:kendall@getcotto.com?subject="+encodeURIComponent("Cotto UNFI East leads")+"&body="+encodeURIComponent(leadsText()+"\n\n(Photos are saved in the tool on this phone.)")};
+function leadsText(){return leads.map(function(l){return "- "+(l.store||"(photo lead)")+" | "+(l.temp||"")+" | "+(l.contact||"")+(l.skus?" ["+l.skus+"]":"")+(l.review?" | review:"+l.review:"")+(l.notes?" | "+l.notes:"")+(l.photo?" | [photo on phone]":"")}).join("\\n")}
+document.getElementById("copy").onclick=function(){var t="Cotto UNFI East leads:\\n"+leadsText();if(navigator.clipboard){navigator.clipboard.writeText(t)}var b=this,o=b.textContent;b.textContent="Copied";setTimeout(function(){b.textContent=o},1400)};
+document.getElementById("email").onclick=function(){if(!leads.length)return;location.href="mailto:kendall@getcotto.com?subject="+encodeURIComponent("Cotto UNFI East leads")+"&body="+encodeURIComponent(leadsText()+"\\n\\n(Photos are saved in the tool on this phone.)")};
 
 render();
 </script>
 </body>
 </html>
+`;

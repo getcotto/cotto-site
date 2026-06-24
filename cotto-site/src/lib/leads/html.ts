@@ -83,10 +83,11 @@ a{color:var(--bluedk);font-weight:600}
  <div class="fld"><label>Category review timing</label><input id="f-review" placeholder="e.g. reviews in Sept"/></div>
  <div class="fld"><label>What they asked / next step</label><textarea id="f-notes" rows="2" placeholder="Asked about free fill; send sell sheet"></textarea></div>
  <button class="btn" id="save">✓ Save lead</button>
- <div class="row" style="margin:18px 0 9px;align-items:center">
+ <div class="row" style="margin:18px 0 4px;align-items:center">
   <span style="font-weight:700">Leads <span id="count" class="k">(0)</span></span>
   <span><button class="btn sm" id="copy">Copy</button> <button class="btn sm" id="email">Email me</button></span>
  </div>
+ <div id="syncstat" class="k" style="margin:0 0 10px">checking backup…</div>
  <div id="leads"></div>
 </section>
 
@@ -188,26 +189,53 @@ function render(){
   '<button class="btn sm del" data-i="'+i+'" style="margin-top:7px">Delete</button>';
   box.appendChild(d);
  });
- document.querySelectorAll(".del").forEach(function(b){b.onclick=function(){leads.splice(+b.getAttribute("data-i"),1);save()}});
+ document.querySelectorAll(".del").forEach(function(b){b.onclick=function(){var i=+b.getAttribute("data-i");var rm=leads[i];leads.splice(i,1);save();if(rm&&rm.id)delServer(rm.id);}});
 }
 function save(){try{localStorage.setItem(KEY,JSON.stringify(leads))}catch(e){alert("Storage full — email your leads to clear space.")}render()}
+var API="/api/leads";
+function setSync(m){var el=document.getElementById("syncstat");if(el)el.textContent=m}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(leads))}catch(e){}}
+function countSynced(){var n=0;leads.forEach(function(l){if(l.synced)n++});return n+"/"+leads.length+" backed up to server"}
+function pushLead(l){
+ if(!l||!l.id){return}
+ setSync("saving…");
+ fetch(API,{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({lead:l})})
+ .then(function(r){if(r.ok){l.synced=true;persist();setSync(countSynced())}else{setSync("offline — saved on phone, will retry")}})
+ .catch(function(){setSync("offline — saved on phone, will retry")});
+}
+function pushUnsynced(){var any=false;leads.forEach(function(l){if(!l.synced){any=true;pushLead(l)}});if(!any)setSync(countSynced())}
+function delServer(id){fetch(API+"?id="+encodeURIComponent(id),{method:"DELETE"}).then(function(){setSync(countSynced())}).catch(function(){})}
+function reconcile(){
+ setSync("syncing…");
+ fetch(API).then(function(r){return r.ok?r.json():null}).then(function(d){
+  if(d&&d.leads){
+   var have={};leads.forEach(function(l){have[l.id]=true});
+   var added=0;
+   d.leads.forEach(function(s){if(s&&s.id&&!have[s.id]){s.synced=true;leads.push(s);added++}});
+   if(added){persist();render()}
+  }
+  pushUnsynced();
+ }).catch(function(){pushUnsynced()});
+}
 
 document.getElementById("save").onclick=function(){
  var skus=Object.keys(selSku).filter(function(k){return selSku[k]}).join("/");
  var store=document.getElementById("f-store").value.trim();
  if(!store&&!pendingPhoto){document.getElementById("f-store").focus();return}
- leads.unshift({store:store,contact:document.getElementById("f-contact").value.trim(),skus:skus,temp:selTemp,review:document.getElementById("f-review").value.trim(),notes:document.getElementById("f-notes").value.trim(),photo:pendingPhoto});
+ var lead={id:"L"+Date.now().toString(36)+Math.random().toString(36).slice(2,7),ts:new Date().toISOString(),store:store,contact:document.getElementById("f-contact").value.trim(),skus:skus,temp:selTemp,review:document.getElementById("f-review").value.trim(),notes:document.getElementById("f-notes").value.trim(),photo:pendingPhoto,synced:false};
+ leads.unshift(lead);
  save();
+ pushLead(lead);
  ["f-store","f-contact","f-review","f-notes"].forEach(function(id){document.getElementById(id).value=""});
  document.querySelectorAll(".chip.on").forEach(function(c){c.classList.remove("on")});selSku={};selTemp="";pendingPhoto="";thumb.style.display="none";
  window.scrollTo(0,0);
 };
 
-function leadsText(){return leads.map(function(l){return "- "+(l.store||"(photo lead)")+" | "+(l.temp||"")+" | "+(l.contact||"")+(l.skus?" ["+l.skus+"]":"")+(l.review?" | review:"+l.review:"")+(l.notes?" | "+l.notes:"")+(l.photo?" | [photo on phone]":"")}).join("\\n")}
+function leadsText(){return leads.map(function(l){return "- "+(l.store||"(photo lead)")+" | "+(l.temp||"")+" | "+(l.contact||"")+(l.skus?" ["+l.skus+"]":"")+(l.review?" | review:"+l.review:"")+(l.notes?" | "+l.notes:"")+(l.photo?" | [photo backed up]":"")}).join("\\n")}
 document.getElementById("copy").onclick=function(){var t="Cotto UNFI East leads:\\n"+leadsText();if(navigator.clipboard){navigator.clipboard.writeText(t)}var b=this,o=b.textContent;b.textContent="Copied";setTimeout(function(){b.textContent=o},1400)};
-document.getElementById("email").onclick=function(){if(!leads.length)return;location.href="mailto:kendall@getcotto.com?subject="+encodeURIComponent("Cotto UNFI East leads")+"&body="+encodeURIComponent(leadsText()+"\\n\\n(Photos are saved in the tool on this phone.)")};
+document.getElementById("email").onclick=function(){if(!leads.length)return;location.href="mailto:kendall@getcotto.com?subject="+encodeURIComponent("Cotto UNFI East leads")+"&body="+encodeURIComponent(leadsText()+"\\n\\n(Photos are backed up to the server — view them in the tool.)")};
 
-render();
+render();reconcile();
 </script>
 </body>
 </html>

@@ -72,7 +72,9 @@ a{color:var(--bluedk);font-weight:600}
  <div class="fld"><label>Photo of card / badge</label>
   <div class="cam">
    <label for="f-photo" class="camlbl">📸 Snap card</label>
+   <label for="f-upload" class="camlbl" style="color:var(--bluedk)">⬆ Upload</label>
    <input type="file" accept="image/*" capture="environment" id="f-photo" style="display:none"/>
+   <input type="file" accept="image/*" id="f-upload" style="display:none"/>
    <img id="f-thumb" alt="" class="thumb" style="display:none"/>
   </div>
  </div>
@@ -159,7 +161,7 @@ document.querySelectorAll(".logbtn").forEach(function(b){b.onclick=function(){
 }});
 
 var thumb=document.getElementById("f-thumb");
-document.getElementById("f-photo").onchange=function(e){
+function handlePhoto(e){
  var f=e.target.files[0];if(!f)return;var img=new Image();var r=new FileReader();
  r.onload=function(){img.onload=function(){
   var mw=720;var s=Math.min(1,mw/img.width);var cv=document.createElement("canvas");
@@ -167,7 +169,9 @@ document.getElementById("f-photo").onchange=function(e){
   cv.getContext("2d").drawImage(img,0,0,cv.width,cv.height);
   pendingPhoto=cv.toDataURL("image/jpeg",0.55);thumb.src=pendingPhoto;thumb.style.display="block";
  };img.src=r.result};r.readAsDataURL(f);
-};
+}
+document.getElementById("f-photo").onchange=handlePhoto;
+document.getElementById("f-upload").onchange=handlePhoto;
 
 document.querySelectorAll("#skus .chip").forEach(function(c){c.onclick=function(){c.classList.toggle("on");selSku[c.getAttribute("data-sku")]=c.classList.contains("on")}});
 document.querySelectorAll("#temp .chip").forEach(function(c){c.onclick=function(){document.querySelectorAll("#temp .chip").forEach(function(x){x.classList.remove("on")});c.classList.add("on");selTemp=c.getAttribute("data-temp")}});
@@ -232,8 +236,9 @@ document.getElementById("save").onclick=function(){
 };
 
 function leadsText(){return leads.map(function(l){return "- "+(l.store||"(photo lead)")+" | "+(l.temp||"")+" | "+(l.contact||"")+(l.skus?" ["+l.skus+"]":"")+(l.review?" | review:"+l.review:"")+(l.notes?" | "+l.notes:"")+(l.photo?" | [photo backed up]":"")}).join("\\n")}
-document.getElementById("copy").onclick=function(){var t="Cotto UNFI East leads:\\n"+leadsText();if(navigator.clipboard){navigator.clipboard.writeText(t)}var b=this,o=b.textContent;b.textContent="Copied";setTimeout(function(){b.textContent=o},1400)};
-document.getElementById("email").onclick=function(){if(!leads.length)return;location.href="mailto:kendall@getcotto.com?subject="+encodeURIComponent("Cotto UNFI East leads")+"&body="+encodeURIComponent(leadsText()+"\\n\\n(Photos are backed up to the server — view them in the tool.)")};
+function fallbackCopy(t){try{var ta=document.createElement("textarea");ta.value=t;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.focus();ta.select();document.execCommand("copy");document.body.removeChild(ta)}catch(e){}}
+document.getElementById("copy").onclick=function(){var t="Cotto UNFI East leads:\\n"+leadsText();var done=function(){var b=document.getElementById("copy"),o=b.textContent;b.textContent="Copied";setTimeout(function(){b.textContent=o},1400)};try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){fallbackCopy(t);done()})}else{fallbackCopy(t);done()}}catch(e){fallbackCopy(t);done()}};
+document.getElementById("email").onclick=function(){if(!leads.length){setSync("no leads to email yet");return}var url="mailto:kendall@getcotto.com?subject="+encodeURIComponent("Cotto UNFI East leads")+"&body="+encodeURIComponent(leadsText()+"\\n\\n(Photos are backed up to the server — view them in the tool.)");try{(window.top||window).location.href=url}catch(e){window.location.href=url}};
 
 render();reconcile();
 </script>

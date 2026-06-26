@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-25",
+  "asOf": "2026-06-26",
   "findings": [
     {
       "sev": "🔴",
@@ -28,27 +28,6 @@
       "title": "Delivered but NOT invoiced: $5030.22 (15 lines)",
       "detail": "Farm & Forage Market $388.26; Olive & Oak $158.16; Butterfield - Lex $1346.40; Butterfield - Madison $1465.20; Meadow Lane $1276.80; Farm to People $395.40 — create these invoices in Settle.",
       "impact": 5030.219999999999
-    },
-    {
-      "sev": "🔴",
-      "area": "Inventory",
-      "title": "BUF ~0.5 wks of supply",
-      "detail": "On-hand 56 cs vs 103 cs/wk demand (safety = 2 wks).",
-      "impact": null
-    },
-    {
-      "sev": "🔴",
-      "area": "Inventory",
-      "title": "FO ~0.6 wks of supply",
-      "detail": "On-hand 68 cs vs 107 cs/wk demand (safety = 2 wks).",
-      "impact": null
-    },
-    {
-      "sev": "🔴",
-      "area": "Inventory",
-      "title": "GR ~0.7 wks of supply",
-      "detail": "On-hand 60 cs vs 88 cs/wk demand (safety = 2 wks).",
-      "impact": null
     },
     {
       "sev": "🟡",
@@ -122,6 +101,13 @@
     },
     {
       "sev": "🟡",
+      "area": "Inventory",
+      "title": "GR ~1.9 wks of supply",
+      "detail": "On-hand 170 cs vs 88 cs/wk demand (safety = 2 wks).",
+      "impact": null
+    },
+    {
+      "sev": "🟡",
       "area": "Packaging",
       "title": "Reorder Wrap Label - Buffalo: covered through the 7/23-24 run, then runs out at the 7/27-29 run",
       "detail": "Have 7900, need 8880 for all runs after the 2026-06-01 count (short 980). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
@@ -177,13 +163,6 @@
       "impact": null
     },
     {
-      "sev": "🟡",
-      "area": "Freshness",
-      "title": "Spine may be stale (latest delivery 2026-06-18 = 7d ago, latest order 2026-06-24 = 1d ago)",
-      "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
-      "impact": null
-    },
-    {
       "sev": "✅",
       "area": "Open item",
       "title": "[Quality / Neighborly] Neighborly mislabel — Evan will relabel on their own (they have a label maker); NOT a red flag from Neighborly's side anymore",
@@ -193,7 +172,14 @@
     {
       "sev": "✅",
       "area": "Inventory",
-      "title": "On-hand: BUF 56 / FO 68 / GR 60 cs",
+      "title": "On-hand: BUF 280 / FO 331 / GR 170 cs",
+      "detail": "",
+      "impact": null
+    },
+    {
+      "sev": "✅",
+      "area": "Freshness",
+      "title": "Spine fresh (latest event 2026-06-25, latest order 2026-06-24)",
       "detail": "",
       "impact": null
     }

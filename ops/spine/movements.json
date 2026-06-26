@@ -1294,5 +1294,77 @@
     "dir": "Out",
     "lot": "FEFO",
     "notes": "F2P 6/18 completion (Localee fulfillment sheet, Delivered=TRUE). Not on the 6/17 POD report; signed POD to follow in Localee's second report."
+  },
+  {
+    "date": "2026-06-24",
+    "type": "Receipt",
+    "location": "Brooklyn (Carriacou)",
+    "account": "FK production run B",
+    "buf": 295,
+    "fo": 330,
+    "gr": 192,
+    "dir": "In",
+    "lot": "",
+    "notes": "Run B (produced 6/15-17) landed at Brooklyn/Carriacou 6/24 — Jeremy POD signed by Eduardo."
+  },
+  {
+    "date": "2026-06-25",
+    "type": "Adjustment",
+    "location": "Edison NJ",
+    "account": "Count reconciliation (Lucy/Localee)",
+    "buf": 43,
+    "fo": 39,
+    "gr": 56,
+    "dir": "Out",
+    "lot": "",
+    "notes": "True-up to Lucy 6/25 physical count: FO 29 / BUF 13 / GR 4. Absorbs this week NY deliveries (FTP 6/23 confirmed; O&O + Last Minute pending Lucy confirm) + reconciliation. Ledger was 56/68/60."
+  },
+  {
+    "date": "2026-06-25",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Meadow Lane (Tribeca)",
+    "buf": 10,
+    "fo": 10,
+    "gr": 5,
+    "dir": "Out",
+    "lot": "",
+    "notes": "Carriacou delivered Meadow Lane (Tribeca) from Brooklyn per signed slip (Cotto_Delivery_Slips_2026-06-24)."
+  },
+  {
+    "date": "2026-06-25",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Happier Grocery (Soho)",
+    "buf": 5,
+    "fo": 5,
+    "gr": 6,
+    "dir": "Out",
+    "lot": "",
+    "notes": "Carriacou delivered Happier Grocery (Soho) from Brooklyn per signed slip (Cotto_Delivery_Slips_2026-06-24)."
+  },
+  {
+    "date": "2026-06-25",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Butterfield Market - Madison (UES)",
+    "buf": 8,
+    "fo": 8,
+    "gr": 10,
+    "dir": "Out",
+    "lot": "",
+    "notes": "Carriacou delivered Butterfield Market - Madison (UES) from Brooklyn per signed slip (Cotto_Delivery_Slips_2026-06-24)."
+  },
+  {
+    "date": "2026-06-25",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Pop Up Grocer (West Village)",
+    "buf": 5,
+    "fo": 5,
+    "gr": 5,
+    "dir": "Out",
+    "lot": "",
+    "notes": "Carriacou delivered Pop Up Grocer (West Village) from Brooklyn per signed slip (Cotto_Delivery_Slips_2026-06-24)."
   }
 ]

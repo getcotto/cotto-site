@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-26",
+  "asOf": "2026-06-27",
   "findings": [
     {
       "sev": "🔴",
@@ -28,6 +28,13 @@
       "title": "Delivered but NOT invoiced: $5030.22 (15 lines)",
       "detail": "Farm & Forage Market $388.26; Olive & Oak $158.16; Butterfield - Lex $1346.40; Butterfield - Madison $1465.20; Meadow Lane $1276.80; Farm to People $395.40 — create these invoices in Settle.",
       "impact": 5030.219999999999
+    },
+    {
+      "sev": "🔴",
+      "area": "Freight",
+      "title": "Book Pueblo freight by 2026-06-29 (Mon) — ships 2026-07-03",
+      "detail": "Runs 6/29-7/1. Carriers: Jeremy/FFE, GianMarco@RLS, Heather@DTS.",
+      "impact": null
     },
     {
       "sev": "🟡",
@@ -156,13 +163,6 @@
       "impact": 1428
     },
     {
-      "sev": "🟡",
-      "area": "Freight",
-      "title": "Book Pueblo freight by 2026-06-29 (Mon) — ships 2026-07-03",
-      "detail": "Runs 6/29-7/1. Carriers: Jeremy/FFE, GianMarco@RLS, Heather@DTS.",
-      "impact": null
-    },
-    {
       "sev": "✅",
       "area": "Open item",
       "title": "[Quality / Neighborly] Neighborly mislabel — Evan will relabel on their own (they have a label maker); NOT a red flag from Neighborly's side anymore",
@@ -179,7 +179,7 @@
     {
       "sev": "✅",
       "area": "Freshness",
-      "title": "Spine fresh (latest event 2026-06-25, latest order 2026-06-24)",
+      "title": "Spine fresh (latest event 2026-06-25, latest order 2026-06-27)",
       "detail": "",
       "impact": null
     }

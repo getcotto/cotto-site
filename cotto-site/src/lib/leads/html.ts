@@ -195,10 +195,11 @@ function render(){
  });
  document.querySelectorAll(".del").forEach(function(b){b.onclick=function(){var i=+b.getAttribute("data-i");var rm=leads[i];leads.splice(i,1);save();if(rm&&rm.id)delServer(rm.id);}});
 }
-function save(){try{localStorage.setItem(KEY,JSON.stringify(leads))}catch(e){alert("Storage full — email your leads to clear space.")}render()}
 var API="/api/leads";
 function setSync(m){var el=document.getElementById("syncstat");if(el)el.textContent=m}
-function persist(){try{localStorage.setItem(KEY,JSON.stringify(leads))}catch(e){}}
+function localCopy(){return leads.map(function(l){return l.synced?Object.assign({},l,{photo:""}):l})}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(localCopy()))}catch(e){try{localStorage.setItem(KEY,JSON.stringify(leads.filter(function(l){return !l.synced})))}catch(e2){}}}
+function save(){persist();render()}
 function countSynced(){var n=0;leads.forEach(function(l){if(l.synced)n++});return n+"/"+leads.length+" backed up to server"}
 function pushLead(l){
  if(!l||!l.id){return}
@@ -213,10 +214,14 @@ function reconcile(){
  setSync("syncing…");
  fetch(API).then(function(r){return r.ok?r.json():null}).then(function(d){
   if(d&&d.leads){
-   var have={};leads.forEach(function(l){have[l.id]=true});
-   var added=0;
-   d.leads.forEach(function(s){if(s&&s.id&&!have[s.id]){s.synced=true;leads.push(s);added++}});
-   if(added){persist();render()}
+   var byId={};leads.forEach(function(l){byId[l.id]=l});
+   var changed=0;
+   d.leads.forEach(function(s){
+    if(!s||!s.id)return;
+    if(!byId[s.id]){s.synced=true;leads.push(s);changed++}
+    else if(!byId[s.id].photo&&s.photo){byId[s.id].photo=s.photo;changed++}
+   });
+   if(changed){persist();render()}
   }
   pushUnsynced();
  }).catch(function(){pushUnsynced()});

@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-28",
+  "asOf": "2026-06-30",
   "findings": [
     {
       "sev": "🔴",
@@ -18,9 +18,9 @@
     {
       "sev": "🔴",
       "area": "AR",
-      "title": "Overdue AR (reconciled, past terms): $9858.14",
-      "detail": "Meadow Lane $7344.80; Olive & Oak $355.86; Last Minute Market $1003.20; Jack's Market $118.80; Schmidts Country market $258.96; Sagaponack General Store $776.52. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
-      "impact": 9858.14
+      "title": "Overdue AR (reconciled, past terms): $12586.39",
+      "detail": "Meadow Lane $7344.80; Olive & Oak $355.86; Last Minute Market $1003.20; Jack's Market $118.80; Farm to People $2728.25; Schmidts Country market $258.96; Sagaponack General Store $776.52. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
+      "impact": 12586.39
     },
     {
       "sev": "🔴",
@@ -28,13 +28,6 @@
       "title": "Delivered but NOT invoiced: $5030.22 (15 lines)",
       "detail": "Farm & Forage Market $388.26; Olive & Oak $158.16; Butterfield - Lex $1346.40; Butterfield - Madison $1465.20; Meadow Lane $1276.80; Farm to People $395.40 — create these invoices in Settle.",
       "impact": 5030.219999999999
-    },
-    {
-      "sev": "🔴",
-      "area": "Freight",
-      "title": "Book Pueblo freight by 2026-06-29 (Mon) — ships 2026-07-03",
-      "detail": "Runs 6/29-7/1. Carriers: Jeremy/FFE, GianMarco@RLS, Heather@DTS.",
-      "impact": null
     },
     {
       "sev": "🟡",
@@ -110,7 +103,7 @@
       "sev": "🟡",
       "area": "Inventory",
       "title": "GR ~1.9 wks of supply",
-      "detail": "On-hand 170 cs vs 88 cs/wk demand (safety = 2 wks).",
+      "detail": "On-hand 165 cs vs 88 cs/wk demand (safety = 2 wks).",
       "impact": null
     },
     {
@@ -172,14 +165,14 @@
     {
       "sev": "✅",
       "area": "Inventory",
-      "title": "On-hand: BUF 280 / FO 331 / GR 170 cs",
+      "title": "On-hand: BUF 267 / FO 317 / GR 165 cs",
       "detail": "",
       "impact": null
     },
     {
       "sev": "✅",
       "area": "Freshness",
-      "title": "Spine fresh (latest event 2026-06-25, latest order 2026-06-27)",
+      "title": "Spine fresh (latest event 2026-06-27, latest order 2026-06-27)",
       "detail": "",
       "impact": null
     }

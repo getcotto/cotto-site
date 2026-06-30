@@ -652,5 +652,31 @@
     "lot": "",
     "notes": "Carriacou delivered Pop Up Grocer (West Village) from Brooklyn per signed slip (Cotto_Delivery_Slips_2026-06-24).",
     "ref": "DELIV-POPUP-20260625"
+  },
+  {
+    "date": "2026-06-27",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Fairway (stranded 6/22, Carriacou-delivered)",
+    "buf": 10,
+    "fo": 2,
+    "gr": 2,
+    "dir": "Out",
+    "lot": "",
+    "notes": "Carriacou delivered last week's stranded Localee stop from Brooklyn (Kendall confirmed via text). Qty per 6/22 tab — confirm exact.",
+    "ref": "DELIV-FAIRWAY-STRANDED-0622"
+  },
+  {
+    "date": "2026-06-27",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Butterfield Market - Lex (stranded 6/22, Carriacou-delivered)",
+    "buf": 3,
+    "fo": 12,
+    "gr": 3,
+    "dir": "Out",
+    "lot": "",
+    "notes": "Carriacou delivered last week's stranded Localee stop from Brooklyn (Kendall confirmed via text). Qty per 6/22 tab — confirm exact.",
+    "ref": "DELIV-BFLEX-STRANDED-0622"
   }
 ]

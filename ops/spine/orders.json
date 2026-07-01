@@ -5306,5 +5306,152 @@
     "status": "Delivered",
     "due": "2026-07-27",
     "notes": "Order desk weekly invoicing 6/26; delivered via Localee/Carriacou."
+  },
+  {
+    "date": "2026-06-30",
+    "account": "Meadow Lane",
+    "sku": "FO",
+    "cases": 10,
+    "status": "Scheduled",
+    "note": "6/30 Carriacou direct-delivery route (Localee pickup cancelled)",
+    "units": 60
+  },
+  {
+    "date": "2026-06-30",
+    "account": "Meadow Lane",
+    "sku": "GR",
+    "cases": 4,
+    "status": "Scheduled",
+    "note": "6/30 Carriacou route",
+    "units": 24
+  },
+  {
+    "date": "2026-06-30",
+    "account": "Meadow Lane",
+    "sku": "BUF",
+    "cases": 10,
+    "status": "Scheduled",
+    "note": "6/30 Carriacou route",
+    "units": 60
+  },
+  {
+    "date": "2026-06-30",
+    "account": "Happier Grocery",
+    "sku": "FO",
+    "cases": 2,
+    "status": "Scheduled",
+    "note": "6/30 Carriacou route",
+    "units": 12
+  },
+  {
+    "date": "2026-06-30",
+    "account": "Happier Grocery",
+    "sku": "GR",
+    "cases": 4,
+    "status": "Scheduled",
+    "note": "6/30 Carriacou route",
+    "units": 24
+  },
+  {
+    "date": "2026-06-30",
+    "account": "Happier Grocery",
+    "sku": "BUF",
+    "cases": 3,
+    "status": "Scheduled",
+    "note": "6/30 Carriacou route",
+    "units": 18
+  },
+  {
+    "date": "2026-06-30",
+    "account": "Pop Up Grocer",
+    "sku": "FO",
+    "cases": 5,
+    "status": "Scheduled",
+    "note": "6/30 Carriacou route",
+    "units": 30
+  },
+  {
+    "date": "2026-06-30",
+    "account": "Pop Up Grocer",
+    "sku": "GR",
+    "cases": 5,
+    "status": "Scheduled",
+    "note": "6/30 Carriacou route",
+    "units": 30
+  },
+  {
+    "date": "2026-06-30",
+    "account": "Pop Up Grocer",
+    "sku": "BUF",
+    "cases": 5,
+    "status": "Scheduled",
+    "note": "6/30 Carriacou route",
+    "units": 30
+  },
+  {
+    "date": "2026-06-30",
+    "account": "Butterfield - Lex",
+    "sku": "GR",
+    "cases": 4,
+    "status": "Scheduled",
+    "note": "6/30 Carriacou route",
+    "units": 24
+  },
+  {
+    "date": "2026-06-30",
+    "account": "Butterfield - Lex",
+    "sku": "BUF",
+    "cases": 6,
+    "status": "Scheduled",
+    "note": "6/30 Carriacou route",
+    "units": 36
+  },
+  {
+    "date": "2026-06-30",
+    "account": "Butterfield - Madison",
+    "sku": "FO",
+    "cases": 6,
+    "status": "Scheduled",
+    "note": "6/30 Carriacou route",
+    "units": 36
+  },
+  {
+    "date": "2026-06-30",
+    "account": "Butterfield - Madison",
+    "sku": "BUF",
+    "cases": 2,
+    "status": "Scheduled",
+    "note": "6/30 Carriacou route",
+    "units": 12
+  },
+  {
+    "date": "",
+    "account": "Sagaponack General Store",
+    "sku": "FO",
+    "cases": 10,
+    "status": "Requested",
+    "dedup_key": "sag-reorder-20260629|FO",
+    "note": "Gabby Green reorder 6/29; delivery date TBD (next Hamptons run)",
+    "units": 60
+  },
+  {
+    "date": "",
+    "account": "Sagaponack General Store",
+    "sku": "BUF",
+    "cases": 6,
+    "status": "Requested",
+    "dedup_key": "sag-reorder-20260629|BUF",
+    "note": "Gabby Green reorder 6/29; delivery TBD",
+    "units": 36
+  },
+  {
+    "date": "",
+    "account": "Sagaponack General Store",
+    "sku": "GR",
+    "cases": 6,
+    "status": "Requested",
+    "dedup_key": "sag-reorder-20260629|GR",
+    "note": "Gabby Green reorder 6/29; delivery TBD",
+    "units": 36
   }
 ]

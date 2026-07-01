@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-30",
+  "asOf": "2026-07-01",
   "findings": [
     {
       "sev": "🔴",
@@ -172,7 +172,7 @@
     {
       "sev": "✅",
       "area": "Freshness",
-      "title": "Spine fresh (latest event 2026-06-27, latest order 2026-06-27)",
+      "title": "Spine fresh (latest event 2026-06-27, latest order 2026-06-30)",
       "detail": "",
       "impact": null
     }

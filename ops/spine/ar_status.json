@@ -1,53 +1,73 @@
 {
   "asOf": "2026-07-02",
-  "totalInvoiced": 39262.11,
-  "totalOpenTrue": 9807.47,
+  "totalInvoiced": 76870.37,
+  "totalOpenTrue": 13926.84,
   "unmapped": [
-    {
-      "date": "03-03-2026",
-      "amount": 0.82,
-      "who": "Pop Up Grocer In",
-      "ref": ""
-    },
     {
       "date": "02-10-2026",
       "amount": 0.28,
       "who": "Bill.com",
       "ref": ""
+    },
+    {
+      "date": "03-03-2026",
+      "amount": 0.82,
+      "who": "Pop Up Grocer In",
+      "ref": ""
     }
   ],
   "byAccount": {
     "Meadow Lane": {
-      "invoiced": 13272,
-      "refPaid": 10617.6,
-      "banked": 16343.2,
+      "invoiced": 23016,
+      "refPaid": 16060.8,
+      "banked": 23701.6,
       "candidates": [
         "COTTO-1002 $1008.00 (2026-03-12)",
+        "COTTO-1007 $1209.60 (2026-04-10)",
+        "COTTO-1012 $1545.60 (2026-04-16)",
+        "COTTO-1013 $1545.60 (2026-04-20)",
         "COTTO-1096 $840.00 (2026-06-26)",
         "COTTO-1100 $806.40 (2026-07-02)"
       ],
       "openTrue": 0
     },
+    "Olive & Oak": {
+      "invoiced": 1621.14,
+      "refPaid": 672.18,
+      "banked": 1700.22,
+      "candidates": [
+        "COTTO-1057 $355.86 (2026-05-28)",
+        "COTTO-1097 $593.10 (2026-06-22)"
+      ],
+      "openTrue": 0
+    },
+    "The Shelf": {
+      "invoiced": 1245.33,
+      "refPaid": 1245.33,
+      "banked": 4746.57,
+      "candidates": [],
+      "openTrue": 0
+    },
     "Happier Grocery": {
-      "invoiced": 2805.57,
-      "refPaid": 2417.13,
-      "banked": 5265.52,
+      "invoiced": 5653.96,
+      "refPaid": 5265.52,
+      "banked": 8459.36,
       "candidates": [
         "COTTO-1101 $388.44 (2026-07-02)"
       ],
       "openTrue": 0
     },
     "Butterfield Market": {
-      "invoiced": 8712,
-      "refPaid": 0,
-      "banked": 14691.6,
+      "invoiced": 22413.6,
+      "refPaid": 13186.8,
+      "banked": 29383.2,
       "candidates": [
-        "COTTO-1054 $950.40 (2026-05-29)",
-        "COTTO-1055 $1346.40 (2026-05-29)",
         "COTTO-1067 $1504.80 (2026-06-04)",
         "COTTO-1068 $1029.60 (2026-06-04)",
         "COTTO-1076 $792.00 (2026-06-11)",
         "COTTO-1084 $633.60 (2026-06-11)",
+        "COTTO-1086 $1346.40 (2026-06-17)",
+        "COTTO-1087 $1465.20 (2026-06-17)",
         "COTTO-1095 $1029.60 (2026-06-26)",
         "COTTO-1099 $712.80 (2026-06-27)",
         "COTTO-1102 $396.00 (2026-07-02)",
@@ -55,27 +75,84 @@
       ],
       "openTrue": 0
     },
-    "Olive & Oak": {
-      "invoiced": 948.96,
-      "refPaid": 0,
-      "banked": 1028.04,
+    "Last Minute Market": {
+      "invoiced": 1676.4,
+      "refPaid": 356.4,
+      "banked": 580.8,
       "candidates": [
-        "COTTO-1057 $355.86 (2026-05-29)",
-        "COTTO-1097 $593.10 (2026-06-22)"
+        "COTTO-1019 $356.40 (2026-04-30)",
+        "COTTO-1028 $356.40 (2026-05-08)",
+        "COTTO-1077 $290.40 (2026-06-04)",
+        "COTTO-1098 $316.80 (2026-06-25)"
+      ],
+      "openTrue": 1095.6
+    },
+    "Sweet Girls Eat": {
+      "invoiced": 198,
+      "refPaid": 0,
+      "banked": 200,
+      "candidates": [
+        "COTTO-1030 $198.00 (2026-05-09)"
       ],
       "openTrue": 0
     },
+    "Jack's Market": {
+      "invoiced": 118.8,
+      "refPaid": 0,
+      "banked": 0,
+      "candidates": [
+        "COTTO-1034 $118.80 (2026-05-14)"
+      ],
+      "openTrue": 118.8
+    },
     "Farm to People": {
-      "invoiced": 2728.26,
-      "refPaid": 751.26,
-      "banked": 2649.19,
+      "invoiced": 5021.58,
+      "refPaid": 2649.18,
+      "banked": 5298.38,
       "candidates": [
         "COTTO-1069 $1581.60 (2026-06-04)",
-        "COTTO-1085 $395.40 (2026-06-11)"
+        "COTTO-1085 $395.40 (2026-06-11)",
+        "COTTO-1092 $395.40 (2026-06-19)"
       ],
-      "openTrue": 79.07
+      "openTrue": 0
     },
-    "Fairway 86th St": {
+    "Schmidts Country market": {
+      "invoiced": 647.4,
+      "refPaid": 0,
+      "banked": 0,
+      "candidates": [
+        "COTTO-1039 $258.96 (2026-05-19)",
+        "COTTO-1091 $388.44 (2026-06-21)"
+      ],
+      "openTrue": 647.4
+    },
+    "Montauk Yacht Club": {
+      "invoiced": 517.92,
+      "refPaid": 517.92,
+      "banked": 0,
+      "candidates": [],
+      "openTrue": 0
+    },
+    "Sagaponack General Store": {
+      "invoiced": 2459.76,
+      "refPaid": 388.44,
+      "banked": 2329.92,
+      "candidates": [
+        "COTTO-1074 $776.52 (2026-06-07)",
+        "COTTO-1089 $1294.80 (2026-06-21)"
+      ],
+      "openTrue": 129.84
+    },
+    "Farm & Forage Market": {
+      "invoiced": 776.88,
+      "refPaid": 172.64,
+      "banked": 345.28,
+      "candidates": [
+        "COTTO-1090 $604.24 (2026-06-21)"
+      ],
+      "openTrue": 431.6
+    },
+    "Fairway Market - 86th": {
       "invoiced": 2613.6,
       "refPaid": 0,
       "banked": 0,
@@ -85,7 +162,7 @@
       ],
       "openTrue": 2613.6
     },
-    "Fairway 74th St": {
+    "Fairway Market - 74th St": {
       "invoiced": 2613.6,
       "refPaid": 0,
       "banked": 0,
@@ -95,7 +172,7 @@
       ],
       "openTrue": 2613.6
     },
-    "Fairway Chelsea": {
+    "Fairway Market of Chelsea": {
       "invoiced": 1425.6,
       "refPaid": 0,
       "banked": 0,
@@ -105,7 +182,7 @@
       ],
       "openTrue": 1425.6
     },
-    "Fairway Kips Bay": {
+    "FAIRWAY MARKET OF KIPS BAY": {
       "invoiced": 2692.8,
       "refPaid": 0,
       "banked": 0,
@@ -117,24 +194,14 @@
       ],
       "openTrue": 2692.8
     },
-    "Last Minute Market": {
-      "invoiced": 673.2,
+    "Neighborly Ops LLC": {
+      "invoiced": 2158,
       "refPaid": 0,
-      "banked": 290.4,
+      "banked": 0,
       "candidates": [
-        "COTTO-1072 $356.40 (2026-06-04)",
-        "COTTO-1098 $316.80 (2026-06-25)"
+        "COTTO-1066 $2158.00 (2026-06-05)"
       ],
-      "openTrue": 382.8
-    },
-    "Sagaponack General Store": {
-      "invoiced": 776.52,
-      "refPaid": 0,
-      "banked": 1164.96,
-      "candidates": [
-        "COTTO-1074 $776.52 (2026-06-07)"
-      ],
-      "openTrue": 0
+      "openTrue": 2158
     }
   },
   "invoices": [
@@ -145,7 +212,7 @@
       "date": "2026-03-09",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "03-23-2026"
+      "paidDate": "03-20-2026"
     },
     {
       "invoice": "COTTO-1002",
@@ -167,9 +234,9 @@
     },
     {
       "invoice": "COTTO-1004",
-      "account": "Meadow Lane",
-      "amount": 2688,
-      "date": "2026-03-26",
+      "account": "Olive & Oak",
+      "amount": 355.86,
+      "date": "2026-03-20",
       "status": "paid",
       "paidVia": "mercury",
       "paidDate": "04-15-2026"
@@ -177,44 +244,368 @@
     {
       "invoice": "COTTO-1005",
       "account": "Meadow Lane",
-      "amount": 3192,
-      "date": "2026-04-02",
+      "amount": 2688,
+      "date": "2026-03-26",
       "status": "paid",
       "paidVia": "mercury",
       "paidDate": "04-14-2026"
     },
     {
+      "invoice": "COTTO-1006",
+      "account": "Meadow Lane",
+      "amount": 1915.2,
+      "date": "2026-04-01",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "04-14-2026"
+    },
+    {
+      "invoice": "COTTO-1007",
+      "account": "Meadow Lane",
+      "amount": 1209.6,
+      "date": "2026-04-10",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
+      "invoice": "COTTO-1009",
+      "account": "The Shelf",
+      "amount": 1245.33,
+      "date": "2026-04-10",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "04-15-2026"
+    },
+    {
+      "invoice": "COTTO-1009",
+      "account": "Happier Grocery",
+      "amount": 517.92,
+      "date": "2026-04-16",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "04-15-2026"
+    },
+    {
+      "invoice": "COTTO-1012",
+      "account": "Meadow Lane",
+      "amount": 1545.6,
+      "date": "2026-04-16",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
+      "invoice": "COTTO-1013",
+      "account": "Meadow Lane",
+      "amount": 1545.6,
+      "date": "2026-04-20",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
+      "invoice": "COTTO-1014",
+      "account": "Meadow Lane",
+      "amount": 772.8,
+      "date": "2026-04-23",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-05-08"
+    },
+    {
+      "invoice": "COTTO-1016",
+      "account": "Happier Grocery",
+      "amount": 517.92,
+      "date": "2026-04-30",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "04-29-2026"
+    },
+    {
+      "invoice": "COTTO-1018",
+      "account": "Butterfield Market",
+      "amount": 237.6,
+      "date": "2026-04-30",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-05-26"
+    },
+    {
+      "invoice": "COTTO-1019",
+      "account": "Last Minute Market",
+      "amount": 356.4,
+      "date": "2026-04-30",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
+      "invoice": "COTTO-1021",
+      "account": "Meadow Lane",
+      "amount": 1176,
+      "date": "2026-04-30",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "05-04-2026"
+    },
+    {
+      "invoice": "COTTO-1022",
+      "account": "Butterfield Market",
+      "amount": 277.2,
+      "date": "2026-05-03",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-05-26"
+    },
+    {
+      "invoice": "COTTO-1024",
+      "account": "Butterfield Market",
+      "amount": 1029.6,
+      "date": "2026-05-05",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-06-01"
+    },
+    {
+      "invoice": "COTTO-1025",
+      "account": "Happier Grocery",
+      "amount": 517.92,
+      "date": "2026-05-05",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "05-06-2026"
+    },
+    {
+      "invoice": "COTTO-1026",
+      "account": "Butterfield Market - 1150 Madison",
+      "amount": 950.4,
+      "date": "2026-05-07",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-06-01"
+    },
+    {
+      "invoice": "COTTO-1027",
+      "account": "Meadow Lane",
+      "amount": 504,
+      "date": "2026-05-08",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "05-22-2026"
+    },
+    {
+      "invoice": "COTTO-1028",
+      "account": "Last Minute Market",
+      "amount": 356.4,
+      "date": "2026-05-08",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
+      "invoice": "COTTO-1029",
+      "account": "Butterfield Market",
+      "amount": 1544.4,
+      "date": "2026-05-08",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-06-01"
+    },
+    {
+      "invoice": "COTTO-1030",
+      "account": "Sweet Girls Eat",
+      "amount": 198,
+      "date": "2026-05-09",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
+      "invoice": "COTTO-1031",
+      "account": "Meadow Lane",
+      "amount": 504,
+      "date": "2026-05-11",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "05-22-2026"
+    },
+    {
+      "invoice": "COTTO-1032",
+      "account": "Butterfield Market - 1150 Madison",
+      "amount": 1188,
+      "date": "2026-05-14",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-06-09"
+    },
+    {
+      "invoice": "COTTO-1033",
+      "account": "Butterfield Market",
+      "amount": 2138.4,
+      "date": "2026-05-14",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-06-09"
+    },
+    {
+      "invoice": "COTTO-1034",
+      "account": "Jack's Market",
+      "amount": 118.8,
+      "date": "2026-05-14",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
+      "invoice": "COTTO-1035",
+      "account": "Happier Grocery",
+      "amount": 517.92,
+      "date": "2026-05-14",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "05-15-2026"
+    },
+    {
+      "invoice": "COTTO-1037",
+      "account": "Farm to People",
+      "amount": 711.72,
+      "date": "2026-05-14",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "06-10-2026"
+    },
+    {
+      "invoice": "COTTO-1038",
+      "account": "Meadow Lane",
+      "amount": 504,
+      "date": "2026-05-14",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "05-22-2026"
+    },
+    {
+      "invoice": "COTTO-1039",
+      "account": "Schmidts Country market",
+      "amount": 258.96,
+      "date": "2026-05-19",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
+      "invoice": "COTTO-1040",
+      "account": "Happier Grocery",
+      "amount": 776.88,
+      "date": "2026-05-19",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "05-21-2026"
+    },
+    {
+      "invoice": "COTTO-1042",
+      "account": "Meadow Lane",
+      "amount": 1982.4,
+      "date": "2026-05-23",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "06-04-2026"
+    },
+    {
+      "invoice": "COTTO-1043",
+      "account": "Butterfield Market",
+      "amount": 1663.2,
+      "date": "2026-05-19",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-06-16"
+    },
+    {
+      "invoice": "COTTO-1044",
+      "account": "Butterfield Market - 1150 Madison",
+      "amount": 1861.2,
+      "date": "2026-05-19",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-06-16"
+    },
+    {
+      "invoice": "COTTO-1045",
+      "account": "Farm to People",
+      "amount": 1186.2,
+      "date": "2026-05-19",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "06-17-2026"
+    },
+    {
+      "invoice": "COTTO-1046",
+      "account": "Montauk Yacht Club",
+      "amount": 517.92,
+      "date": "2026-05-19",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-06-10"
+    },
+    {
+      "invoice": "COTTO-1048",
+      "account": "Sagaponack General Store",
+      "amount": 388.44,
+      "date": "2026-05-19",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-06-09"
+    },
+    {
+      "invoice": "COTTO-1049",
+      "account": "Farm & Forage Market",
+      "amount": 172.64,
+      "date": "2026-05-19",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "06-04-2026"
+    },
+    {
+      "invoice": "COTTO-1051",
+      "account": "Olive & Oak",
+      "amount": 316.32,
+      "date": "2026-05-18",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-06-09"
+    },
+    {
       "invoice": "COTTO-1053",
       "account": "Happier Grocery",
-      "amount": 604.3,
-      "date": "2026-05-29",
+      "amount": 604.24,
+      "date": "2026-05-28",
       "status": "paid",
       "paidVia": "mercury",
       "paidDate": "06-02-2026"
     },
     {
       "invoice": "COTTO-1054",
-      "account": "Butterfield - Lex",
+      "account": "Butterfield Market",
       "amount": 950.4,
-      "date": "2026-05-29",
-      "status": "open",
-      "paidVia": null,
-      "paidDate": null
+      "date": "2026-05-28",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-06-16"
     },
     {
       "invoice": "COTTO-1055",
-      "account": "Butterfield - Madison",
+      "account": "Butterfield Market - 1150 Madison",
       "amount": 1346.4,
-      "date": "2026-05-29",
-      "status": "open",
-      "paidVia": null,
-      "paidDate": null
+      "date": "2026-05-28",
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-06-16"
     },
     {
       "invoice": "COTTO-1056",
       "account": "Meadow Lane",
       "amount": 268.8,
-      "date": "2026-05-29",
+      "date": "2026-05-28",
       "status": "paid",
       "paidVia": "mercury",
       "paidDate": "06-17-2026"
@@ -223,7 +614,7 @@
       "invoice": "COTTO-1057",
       "account": "Olive & Oak",
       "amount": 355.86,
-      "date": "2026-05-29",
+      "date": "2026-05-28",
       "status": "open",
       "paidVia": null,
       "paidDate": null
@@ -239,7 +630,7 @@
     },
     {
       "invoice": "COTTO-1062",
-      "account": "Fairway 86th St",
+      "account": "Fairway Market - 86th",
       "amount": 2376,
       "date": "2026-06-04",
       "status": "open",
@@ -248,7 +639,7 @@
     },
     {
       "invoice": "COTTO-1063",
-      "account": "Fairway 74th St",
+      "account": "Fairway Market - 74th St",
       "amount": 2376,
       "date": "2026-06-04",
       "status": "open",
@@ -257,7 +648,7 @@
     },
     {
       "invoice": "COTTO-1064",
-      "account": "Fairway Chelsea",
+      "account": "Fairway Market of Chelsea",
       "amount": 1188,
       "date": "2026-06-04",
       "status": "open",
@@ -266,7 +657,7 @@
     },
     {
       "invoice": "COTTO-1065",
-      "account": "Fairway Kips Bay",
+      "account": "FAIRWAY MARKET OF KIPS BAY",
       "amount": 1188,
       "date": "2026-06-04",
       "status": "open",
@@ -274,8 +665,17 @@
       "paidDate": null
     },
     {
+      "invoice": "COTTO-1066",
+      "account": "Neighborly Ops LLC",
+      "amount": 2158,
+      "date": "2026-06-05",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
       "invoice": "COTTO-1067",
-      "account": "Butterfield - Lex",
+      "account": "Butterfield Market",
       "amount": 1504.8,
       "date": "2026-06-04",
       "status": "open",
@@ -284,7 +684,7 @@
     },
     {
       "invoice": "COTTO-1068",
-      "account": "Butterfield - Madison",
+      "account": "Butterfield Market - 1150 Madison",
       "amount": 1029.6,
       "date": "2026-06-04",
       "status": "open",
@@ -303,7 +703,7 @@
     {
       "invoice": "COTTO-1070",
       "account": "Happier Grocery",
-      "amount": 474.81,
+      "amount": 474.76,
       "date": "2026-06-04",
       "status": "paid",
       "paidVia": "mercury",
@@ -311,7 +711,7 @@
     },
     {
       "invoice": "COTTO-1071",
-      "account": "Fairway Kips Bay",
+      "account": "FAIRWAY MARKET OF KIPS BAY",
       "amount": 475.2,
       "date": "2026-06-11",
       "status": "open",
@@ -323,9 +723,9 @@
       "account": "Last Minute Market",
       "amount": 356.4,
       "date": "2026-06-04",
-      "status": "open",
-      "paidVia": null,
-      "paidDate": null
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-06-17"
     },
     {
       "invoice": "COTTO-1073",
@@ -338,7 +738,7 @@
     },
     {
       "invoice": "COTTO-1074",
-      "account": "Sag General Store",
+      "account": "Sagaponack General Store",
       "amount": 776.52,
       "date": "2026-06-07",
       "status": "open",
@@ -348,7 +748,7 @@
     {
       "invoice": "COTTO-1075",
       "account": "Happier Grocery",
-      "amount": 215.82,
+      "amount": 215.8,
       "date": "2026-06-11",
       "status": "paid",
       "paidVia": "mercury",
@@ -356,7 +756,7 @@
     },
     {
       "invoice": "COTTO-1076",
-      "account": "Butterfield - Lex",
+      "account": "Butterfield Market",
       "amount": 792,
       "date": "2026-06-11",
       "status": "open",
@@ -364,8 +764,17 @@
       "paidDate": null
     },
     {
+      "invoice": "COTTO-1077",
+      "account": "Last Minute Market",
+      "amount": 290.4,
+      "date": "2026-06-04",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
       "invoice": "COTTO-1078",
-      "account": "Fairway 86th St",
+      "account": "Fairway Market - 86th",
       "amount": 237.6,
       "date": "2026-06-17",
       "status": "open",
@@ -374,7 +783,7 @@
     },
     {
       "invoice": "COTTO-1079",
-      "account": "Fairway 74th St",
+      "account": "Fairway Market - 74th St",
       "amount": 237.6,
       "date": "2026-06-17",
       "status": "open",
@@ -383,7 +792,7 @@
     },
     {
       "invoice": "COTTO-1080",
-      "account": "Fairway Chelsea",
+      "account": "Fairway Market of Chelsea",
       "amount": 237.6,
       "date": "2026-06-17",
       "status": "open",
@@ -392,7 +801,7 @@
     },
     {
       "invoice": "COTTO-1081",
-      "account": "Fairway Kips Bay",
+      "account": "FAIRWAY MARKET OF KIPS BAY",
       "amount": 475.2,
       "date": "2026-06-17",
       "status": "open",
@@ -402,7 +811,7 @@
     {
       "invoice": "COTTO-1082",
       "account": "Happier Grocery",
-      "amount": 431.64,
+      "amount": 431.6,
       "date": "2026-06-17",
       "status": "paid",
       "paidVia": "mercury",
@@ -419,7 +828,7 @@
     },
     {
       "invoice": "COTTO-1084",
-      "account": "Butterfield - Madison",
+      "account": "Butterfield Market - 1150 Madison",
       "amount": 633.6,
       "date": "2026-06-11",
       "status": "open",
@@ -436,8 +845,71 @@
       "paidDate": null
     },
     {
+      "invoice": "COTTO-1086",
+      "account": "Butterfield Market",
+      "amount": 1346.4,
+      "date": "2026-06-17",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
+      "invoice": "COTTO-1087",
+      "account": "Butterfield Market - 1150 Madison",
+      "amount": 1465.2,
+      "date": "2026-06-17",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
+      "invoice": "COTTO-1088",
+      "account": "Meadow Lane",
+      "amount": 1276.8,
+      "date": "2026-06-17",
+      "status": "paid",
+      "paidVia": "mercury",
+      "paidDate": "06-30-2026"
+    },
+    {
+      "invoice": "COTTO-1089",
+      "account": "Sagaponack General Store",
+      "amount": 1294.8,
+      "date": "2026-06-21",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
+      "invoice": "COTTO-1090",
+      "account": "Farm & Forage Market",
+      "amount": 604.24,
+      "date": "2026-06-21",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
+      "invoice": "COTTO-1091",
+      "account": "Schmidts Country market",
+      "amount": 388.44,
+      "date": "2026-06-21",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
+      "invoice": "COTTO-1092",
+      "account": "Farm to People",
+      "amount": 395.4,
+      "date": "2026-06-19",
+      "status": "open",
+      "paidVia": null,
+      "paidDate": null
+    },
+    {
       "invoice": "COTTO-1093",
-      "account": "Fairway Kips Bay",
+      "account": "FAIRWAY MARKET OF KIPS BAY",
       "amount": 554.4,
       "date": "2026-06-27",
       "status": "open",
@@ -455,7 +927,7 @@
     },
     {
       "invoice": "COTTO-1095",
-      "account": "Butterfield - Madison",
+      "account": "Butterfield Market - 1150 Madison",
       "amount": 1029.6,
       "date": "2026-06-26",
       "status": "open",
@@ -491,7 +963,7 @@
     },
     {
       "invoice": "COTTO-1099",
-      "account": "Butterfield - Lex",
+      "account": "Butterfield Market",
       "amount": 712.8,
       "date": "2026-06-27",
       "status": "open",
@@ -518,7 +990,7 @@
     },
     {
       "invoice": "COTTO-1102",
-      "account": "Butterfield - Lex",
+      "account": "Butterfield Market",
       "amount": 396,
       "date": "2026-07-02",
       "status": "open",
@@ -527,7 +999,7 @@
     },
     {
       "invoice": "COTTO-1103",
-      "account": "Butterfield - Madison",
+      "account": "Butterfield Market - 1150 Madison",
       "amount": 316.8,
       "date": "2026-07-02",
       "status": "open",

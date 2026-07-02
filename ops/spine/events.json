@@ -678,5 +678,18 @@
     "lot": "",
     "notes": "Carriacou delivered last week's stranded Localee stop from Brooklyn (Kendall confirmed via text). Qty per 6/22 tab — confirm exact.",
     "ref": "DELIV-BFLEX-STRANDED-0622"
+  },
+  {
+    "date": "2026-07-01",
+    "type": "Receipt",
+    "location": "Brooklyn (Carriacou)",
+    "account": "FK 6/24 run (minus 1 held FO batch)",
+    "buf": 222,
+    "fo": 186,
+    "gr": 198,
+    "dir": "In",
+    "lot": "",
+    "notes": "6/24 run landed at Carriacou 7/1 — 3 pallets per RLS BOL1207678. SHIPPED estimate; awaiting Carriacou physical count to true-up.",
+    "ref": "RECEIPT-0624"
   }
 ]

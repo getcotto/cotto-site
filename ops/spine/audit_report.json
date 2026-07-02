@@ -18,9 +18,9 @@
     {
       "sev": "🔴",
       "area": "AR",
-      "title": "Overdue AR (reconciled, past terms): $382.80",
-      "detail": "Last Minute Market $382.80. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
-      "impact": 382.8
+      "title": "Overdue AR (reconciled, past terms): $1991.64",
+      "detail": "Last Minute Market $1095.60; Jack's Market $118.80; Schmidts Country market $647.40; Sagaponack General Store $129.84. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
+      "impact": 1991.6399999999996
     },
     {
       "sev": "🔴",
@@ -88,9 +88,9 @@
     {
       "sev": "🟡",
       "area": "AR",
-      "title": "Total open AR (Settle+Mercury reconciled): $9807.47",
+      "title": "Total open AR (Settle+Mercury reconciled): $13926.84",
       "detail": "Most is recent within-terms invoices. From ar_status.json — rerun reconcile_ar.js after each Mercury + Settle export.",
-      "impact": 9807.47
+      "impact": 13926.84
     },
     {
       "sev": "🟡",
@@ -101,16 +101,9 @@
     },
     {
       "sev": "🟡",
-      "area": "Inventory",
-      "title": "GR ~1.9 wks of supply",
-      "detail": "On-hand 165 cs vs 88 cs/wk demand (safety = 2 wks).",
-      "impact": null
-    },
-    {
-      "sev": "🟡",
-      "area": "Freshness",
-      "title": "Spine may be stale (latest delivery 2026-06-27 = 5d ago, latest order 2026-07-02 = 0d ago)",
-      "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
+      "area": "Receipts",
+      "title": "Unconfirmed receipt 2026-07-01: FK 6/24 run (minus 1 held FO batch)",
+      "detail": "222 BUF / 186 FO / 198 GR logged as estimate — reconcile when the BOL/receipt lands.",
       "impact": null
     },
     {
@@ -123,7 +116,14 @@
     {
       "sev": "✅",
       "area": "Inventory",
-      "title": "On-hand: BUF 267 / FO 317 / GR 165 cs",
+      "title": "On-hand: BUF 489 / FO 503 / GR 363 cs",
+      "detail": "",
+      "impact": null
+    },
+    {
+      "sev": "✅",
+      "area": "Freshness",
+      "title": "Spine fresh (latest event 2026-07-01, latest order 2026-07-02)",
       "detail": "",
       "impact": null
     }

@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-01",
+  "asOf": "2026-07-02",
   "findings": [
     {
       "sev": "🔴",
@@ -18,9 +18,9 @@
     {
       "sev": "🔴",
       "area": "AR",
-      "title": "Overdue AR (reconciled, past terms): $12586.39",
-      "detail": "Meadow Lane $7344.80; Olive & Oak $355.86; Last Minute Market $1003.20; Jack's Market $118.80; Farm to People $2728.25; Schmidts Country market $258.96; Sagaponack General Store $776.52. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
-      "impact": 12586.39
+      "title": "Overdue AR (reconciled, past terms): $382.80",
+      "detail": "Last Minute Market $382.80. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
+      "impact": 382.8
     },
     {
       "sev": "🔴",
@@ -88,9 +88,9 @@
     {
       "sev": "🟡",
       "area": "AR",
-      "title": "Total open AR (Settle+Mercury reconciled): $27495.59",
+      "title": "Total open AR (Settle+Mercury reconciled): $9807.47",
       "detail": "Most is recent within-terms invoices. From ar_status.json — rerun reconcile_ar.js after each Mercury + Settle export.",
-      "impact": 27495.59
+      "impact": 9807.47
     },
     {
       "sev": "🟡",
@@ -108,52 +108,10 @@
     },
     {
       "sev": "🟡",
-      "area": "Packaging",
-      "title": "Reorder Wrap Label - Buffalo: covered through the 7/23-24 run, then runs out at the 7/27-29 run",
-      "detail": "Have 7900, need 8880 for all runs after the 2026-06-01 count (short 980). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": 980
-    },
-    {
-      "sev": "🟡",
-      "area": "Packaging",
-      "title": "Reorder Wrap Label - French Onion: covered through the 7/23-24 run, then runs out at the 7/27-29 run",
-      "detail": "Have 8500, need 9672 for all runs after the 2026-06-01 count (short 1172). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": 1172
-    },
-    {
-      "sev": "🟡",
-      "area": "Packaging",
-      "title": "Reorder Wrap Label - Garden Ranch: covered through the 6/29-7/1 run, then runs out at the 7/13-15 run",
-      "detail": "Have 5050, need 8316 for all runs after the 2026-06-01 count (short 3266). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": 3266
-    },
-    {
-      "sev": "🟡",
-      "area": "Packaging",
-      "title": "Reorder Lid Label - Buffalo: covered through the 7/23-24 run, then runs out at the 7/27-29 run",
-      "detail": "Have 8500, need 8880 for all runs after the 2026-06-01 count (short 380). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": 380
-    },
-    {
-      "sev": "🟡",
-      "area": "Packaging",
-      "title": "Reorder Lid Label - French Onion: covered through the 6/29-7/1 run, then runs out at the 7/13-15 run",
-      "detail": "Have 6000, need 9672 for all runs after the 2026-06-01 count (short 3672). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": 3672
-    },
-    {
-      "sev": "🟡",
-      "area": "Packaging",
-      "title": "Reorder Lid Label - Garden Ranch: covered through the 7/23-24 run, then runs out at the 7/27-29 run",
-      "detail": "Have 8050, need 8316 for all runs after the 2026-06-01 count (short 266). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": 266
-    },
-    {
-      "sev": "🟡",
-      "area": "Packaging",
-      "title": "Reorder Cardboard Boxes (8oz 6-pack): covered through the 6/29-7/1 run, then runs out at the 7/13-15 run",
-      "detail": "Have 3050, need 4478 for all runs after the 2026-06-01 count (short 1428). Supplier Snyder Packaging (Connor Snyder, Connor@Snyder-pkg.com, 610-914-5880). ⚠ count is stale — confirm with a fresh FK count.",
-      "impact": 1428
+      "area": "Freshness",
+      "title": "Spine may be stale (latest delivery 2026-06-27 = 5d ago, latest order 2026-07-02 = 0d ago)",
+      "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
+      "impact": null
     },
     {
       "sev": "✅",
@@ -166,13 +124,6 @@
       "sev": "✅",
       "area": "Inventory",
       "title": "On-hand: BUF 267 / FO 317 / GR 165 cs",
-      "detail": "",
-      "impact": null
-    },
-    {
-      "sev": "✅",
-      "area": "Freshness",
-      "title": "Spine fresh (latest event 2026-06-27, latest order 2026-06-30)",
       "detail": "",
       "impact": null
     }

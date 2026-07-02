@@ -15,10 +15,16 @@
     { "match": "neighborly", "account": "Neighborly Ops LLC" },
     { "match": "talafood", "account": "Butterfield Market" },
     { "match": "butterfield", "account": "Butterfield Market" },
+    { "match": "last minute", "account": "Last Minute Market" },
     { "match": "sweet girls", "account": "Sweet Girls Eat" }
   ],
-  "account_merge": { "Butterfield Market - 1150 Madison": "Butterfield Market" },
-  "non_ar": ["nimbus", "naturally new yo", "vistaprint", "united airlines", "the cary company"],
+  "account_merge": {
+    "Butterfield Market - 1150 Madison": "Butterfield Market",
+    "Butterfield - Lex": "Butterfield Market",
+    "Butterfield - Madison": "Butterfield Market",
+    "Sag General Store": "Sagaponack General Store"
+  },
+  "non_ar": ["nimbus", "naturally new yo", "vistaprint", "united airlines", "the cary company", "shopify"],
   "resolved_facts": {
     "talafood5645": "Butterfield (TRADEMARK-confirmed previously; deposit amounts match Butterfield invoices). NOT Fairway.",
     "marginedge": "Sagaponack General Store — MarginEdge manages Sag's AP (verified email 6/2 + payment 6/9 for COTTO-1048).",

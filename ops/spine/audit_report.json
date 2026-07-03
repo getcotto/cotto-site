@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-02",
+  "asOf": "2026-07-03",
   "findings": [
     {
       "sev": "🔴",
@@ -116,14 +116,14 @@
     {
       "sev": "✅",
       "area": "Inventory",
-      "title": "On-hand: BUF 489 / FO 503 / GR 363 cs",
+      "title": "On-hand: BUF 471 / FO 486 / GR 350 cs",
       "detail": "",
       "impact": null
     },
     {
       "sev": "✅",
       "area": "Freshness",
-      "title": "Spine fresh (latest event 2026-07-01, latest order 2026-07-02)",
+      "title": "Spine fresh (latest event 2026-07-02, latest order 2026-07-02)",
       "detail": "",
       "impact": null
     }

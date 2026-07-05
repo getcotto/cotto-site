@@ -16,8 +16,11 @@
     { "match": "talafood", "account": "Butterfield Market" },
     { "match": "butterfield", "account": "Butterfield Market" },
     { "match": "last minute", "account": "Last Minute Market" },
-    { "match": "sweet girls", "account": "Sweet Girls Eat" }
+    { "match": "sweet girls", "account": "Sweet Girls Eat" },
+    { "match": "pop up grocer", "account": "Pop Up Grocer" }
   ],
+  "consignment": ["The Shelf", "Pop Up Grocer"],
+  "_consignment_note": "Consignment accounts pay on units sold, so deposits arrive WITHOUT a matched invoice — banked>invoiced is EXPECTED and must NOT be flagged as overpayment. Match is against the mergeAcct account name.",
   "account_merge": {
     "Butterfield Market - 1150 Madison": "Butterfield Market",
     "Butterfield - Lex": "Butterfield Market",
@@ -28,7 +31,7 @@
   "resolved_facts": {
     "talafood5645": "Butterfield (TRADEMARK-confirmed previously; deposit amounts match Butterfield invoices). NOT Fairway.",
     "marginedge": "Sagaponack General Store — MarginEdge manages Sag's AP (verified email 6/2 + payment 6/9 for COTTO-1048).",
-    "la_grocere_llc": "The Shelf (legal entity La Grocere LLC).",
+    "la_grocere_llc": "The Shelf (legal entity La Grocere LLC). CONSIGNMENT account — pays on units sold, so deposits arrive WITHOUT a matched invoice (e.g. $3,501 on 2026-03-06). banked > invoiced is EXPECTED here, NOT overpayment; never flag The Shelf as overpaid.",
     "nimbus": "Kendall's FORMER commercial kitchen (no longer used) — deposits are refunds, NOT customer AR.",
     "fairway_wakefern": "Fedele Stella (Wakefern). Invoiced 6/17; NO payment received yet — all Fairway AR is genuinely open. Butterfield + Fairway are separate.",
     "naturally_new_york_2000": "pitch prize, not AR.",

@@ -1,26 +1,13 @@
 {
-  "asOf": "2026-07-03",
+  "asOf": "2026-07-05",
   "totalInvoiced": 76870.37,
-  "totalOpenTrue": 13926.84,
-  "unmapped": [
-    {
-      "date": "02-10-2026",
-      "amount": 0.28,
-      "who": "Bill.com",
-      "ref": ""
-    },
-    {
-      "date": "03-03-2026",
-      "amount": 0.82,
-      "who": "Pop Up Grocer In",
-      "ref": ""
-    }
-  ],
+  "totalOpenTrue": 32849.14,
+  "unmapped": [],
   "byAccount": {
     "Meadow Lane": {
       "invoiced": 23016,
       "refPaid": 16060.8,
-      "banked": 23701.6,
+      "banked": 16343.2,
       "candidates": [
         "COTTO-1002 $1008.00 (2026-03-12)",
         "COTTO-1007 $1209.60 (2026-04-10)",
@@ -29,17 +16,17 @@
         "COTTO-1096 $840.00 (2026-06-26)",
         "COTTO-1100 $806.40 (2026-07-02)"
       ],
-      "openTrue": 0
+      "openTrue": 6672.8
     },
     "Olive & Oak": {
       "invoiced": 1621.14,
       "refPaid": 672.18,
-      "banked": 1700.22,
+      "banked": 1028.04,
       "candidates": [
         "COTTO-1057 $355.86 (2026-05-28)",
         "COTTO-1097 $593.10 (2026-06-22)"
       ],
-      "openTrue": 0
+      "openTrue": 593.1
     },
     "The Shelf": {
       "invoiced": 1245.33,
@@ -51,7 +38,7 @@
     "Happier Grocery": {
       "invoiced": 5653.96,
       "refPaid": 5265.52,
-      "banked": 8459.36,
+      "banked": 5653.96,
       "candidates": [
         "COTTO-1101 $388.44 (2026-07-02)"
       ],
@@ -60,7 +47,7 @@
     "Butterfield Market": {
       "invoiced": 22413.6,
       "refPaid": 13186.8,
-      "banked": 29383.2,
+      "banked": 14691.6,
       "candidates": [
         "COTTO-1067 $1504.80 (2026-06-04)",
         "COTTO-1068 $1029.60 (2026-06-04)",
@@ -73,19 +60,19 @@
         "COTTO-1102 $396.00 (2026-07-02)",
         "COTTO-1103 $316.80 (2026-07-02)"
       ],
-      "openTrue": 0
+      "openTrue": 7722
     },
     "Last Minute Market": {
       "invoiced": 1676.4,
       "refPaid": 356.4,
-      "banked": 580.8,
+      "banked": 290.4,
       "candidates": [
         "COTTO-1019 $356.40 (2026-04-30)",
         "COTTO-1028 $356.40 (2026-05-08)",
         "COTTO-1077 $290.40 (2026-06-04)",
         "COTTO-1098 $316.80 (2026-06-25)"
       ],
-      "openTrue": 1095.6
+      "openTrue": 1320
     },
     "Sweet Girls Eat": {
       "invoiced": 198,
@@ -108,13 +95,13 @@
     "Farm to People": {
       "invoiced": 5021.58,
       "refPaid": 2649.18,
-      "banked": 5298.38,
+      "banked": 2649.18,
       "candidates": [
         "COTTO-1069 $1581.60 (2026-06-04)",
         "COTTO-1085 $395.40 (2026-06-11)",
         "COTTO-1092 $395.40 (2026-06-19)"
       ],
-      "openTrue": 0
+      "openTrue": 2372.4
     },
     "Schmidts Country market": {
       "invoiced": 647.4,
@@ -136,21 +123,21 @@
     "Sagaponack General Store": {
       "invoiced": 2459.76,
       "refPaid": 388.44,
-      "banked": 2329.92,
+      "banked": 1164.96,
       "candidates": [
         "COTTO-1074 $776.52 (2026-06-07)",
         "COTTO-1089 $1294.80 (2026-06-21)"
       ],
-      "openTrue": 129.84
+      "openTrue": 1294.8
     },
     "Farm & Forage Market": {
       "invoiced": 776.88,
       "refPaid": 172.64,
-      "banked": 345.28,
+      "banked": 172.64,
       "candidates": [
         "COTTO-1090 $604.24 (2026-06-21)"
       ],
-      "openTrue": 431.6
+      "openTrue": 604.24
     },
     "Fairway Market - 86th": {
       "invoiced": 2613.6,
@@ -212,7 +199,7 @@
       "date": "2026-03-09",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "03-20-2026"
+      "paidDate": "2026-03-20"
     },
     {
       "invoice": "COTTO-1002",
@@ -230,7 +217,7 @@
       "date": "2026-03-19",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "04-14-2026"
+      "paidDate": "2026-04-14"
     },
     {
       "invoice": "COTTO-1004",
@@ -239,7 +226,7 @@
       "date": "2026-03-20",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "04-15-2026"
+      "paidDate": "2026-04-15"
     },
     {
       "invoice": "COTTO-1005",
@@ -248,7 +235,7 @@
       "date": "2026-03-26",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "04-14-2026"
+      "paidDate": "2026-04-14"
     },
     {
       "invoice": "COTTO-1006",
@@ -257,7 +244,7 @@
       "date": "2026-04-01",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "04-14-2026"
+      "paidDate": "2026-04-14"
     },
     {
       "invoice": "COTTO-1007",
@@ -275,7 +262,7 @@
       "date": "2026-04-10",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "04-15-2026"
+      "paidDate": "2026-04-15"
     },
     {
       "invoice": "COTTO-1009",
@@ -284,7 +271,7 @@
       "date": "2026-04-16",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "04-15-2026"
+      "paidDate": "2026-04-15"
     },
     {
       "invoice": "COTTO-1012",
@@ -320,7 +307,7 @@
       "date": "2026-04-30",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "04-29-2026"
+      "paidDate": "2026-04-29"
     },
     {
       "invoice": "COTTO-1018",
@@ -347,7 +334,7 @@
       "date": "2026-04-30",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "05-04-2026"
+      "paidDate": "2026-05-04"
     },
     {
       "invoice": "COTTO-1022",
@@ -374,7 +361,7 @@
       "date": "2026-05-05",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "05-06-2026"
+      "paidDate": "2026-05-06"
     },
     {
       "invoice": "COTTO-1026",
@@ -392,7 +379,7 @@
       "date": "2026-05-08",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "05-22-2026"
+      "paidDate": "2026-05-22"
     },
     {
       "invoice": "COTTO-1028",
@@ -428,7 +415,7 @@
       "date": "2026-05-11",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "05-22-2026"
+      "paidDate": "2026-05-22"
     },
     {
       "invoice": "COTTO-1032",
@@ -464,7 +451,7 @@
       "date": "2026-05-14",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "05-15-2026"
+      "paidDate": "2026-05-15"
     },
     {
       "invoice": "COTTO-1037",
@@ -473,7 +460,7 @@
       "date": "2026-05-14",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-10-2026"
+      "paidDate": "2026-06-10"
     },
     {
       "invoice": "COTTO-1038",
@@ -482,7 +469,7 @@
       "date": "2026-05-14",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "05-22-2026"
+      "paidDate": "2026-05-22"
     },
     {
       "invoice": "COTTO-1039",
@@ -500,7 +487,7 @@
       "date": "2026-05-19",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "05-21-2026"
+      "paidDate": "2026-05-21"
     },
     {
       "invoice": "COTTO-1042",
@@ -509,7 +496,7 @@
       "date": "2026-05-23",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-04-2026"
+      "paidDate": "2026-06-04"
     },
     {
       "invoice": "COTTO-1043",
@@ -536,7 +523,7 @@
       "date": "2026-05-19",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-17-2026"
+      "paidDate": "2026-06-17"
     },
     {
       "invoice": "COTTO-1046",
@@ -563,7 +550,7 @@
       "date": "2026-05-19",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-04-2026"
+      "paidDate": "2026-06-04"
     },
     {
       "invoice": "COTTO-1051",
@@ -581,7 +568,7 @@
       "date": "2026-05-28",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-02-2026"
+      "paidDate": "2026-06-02"
     },
     {
       "invoice": "COTTO-1054",
@@ -608,7 +595,7 @@
       "date": "2026-05-28",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-17-2026"
+      "paidDate": "2026-06-17"
     },
     {
       "invoice": "COTTO-1057",
@@ -626,7 +613,7 @@
       "date": "2026-05-29",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-24-2026"
+      "paidDate": "2026-06-24"
     },
     {
       "invoice": "COTTO-1062",
@@ -707,7 +694,7 @@
       "date": "2026-06-04",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-11-2026"
+      "paidDate": "2026-06-11"
     },
     {
       "invoice": "COTTO-1071",
@@ -734,7 +721,7 @@
       "date": "2026-06-04",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-23-2026"
+      "paidDate": "2026-06-23"
     },
     {
       "invoice": "COTTO-1074",
@@ -752,7 +739,7 @@
       "date": "2026-06-11",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-11-2026"
+      "paidDate": "2026-06-11"
     },
     {
       "invoice": "COTTO-1076",
@@ -815,7 +802,7 @@
       "date": "2026-06-17",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-18-2026"
+      "paidDate": "2026-06-18"
     },
     {
       "invoice": "COTTO-1083",
@@ -824,7 +811,7 @@
       "date": "2026-06-11",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-30-2026"
+      "paidDate": "2026-06-30"
     },
     {
       "invoice": "COTTO-1084",
@@ -869,7 +856,7 @@
       "date": "2026-06-17",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-30-2026"
+      "paidDate": "2026-06-30"
     },
     {
       "invoice": "COTTO-1089",
@@ -923,7 +910,7 @@
       "date": "2026-06-26",
       "status": "paid",
       "paidVia": "mercury",
-      "paidDate": "06-29-2026"
+      "paidDate": "2026-06-29"
     },
     {
       "invoice": "COTTO-1095",

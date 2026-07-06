@@ -1,18 +1,5 @@
 [
   {
-    "pickup": "2026-07-03",
-    "runs": [
-      "6/29-7/1"
-    ],
-    "buf": 3,
-    "fo": 3,
-    "gr": 2,
-    "pickup_dow": "Fri",
-    "book_by": "2026-06-29",
-    "book_by_dow": "Mon",
-    "overdue": true
-  },
-  {
     "pickup": "2026-07-17",
     "runs": [
       "7/13-15"

@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-03",
+  "asOf": "2026-07-06",
   "findings": [
     {
       "sev": "🔴",
@@ -18,9 +18,9 @@
     {
       "sev": "🔴",
       "area": "AR",
-      "title": "Overdue AR (reconciled, past terms): $1991.64",
-      "detail": "Last Minute Market $1095.60; Jack's Market $118.80; Schmidts Country market $647.40; Sagaponack General Store $129.84. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
-      "impact": 1991.6399999999996
+      "title": "Overdue AR (reconciled, past terms): $32244.90",
+      "detail": "Meadow Lane $6672.80; Olive & Oak $593.10; Butterfield Market $7722.00; Last Minute Market $1320.00; Jack's Market $118.80; Farm to People $2372.40; Schmidts Country market $647.40; Sagaponack General Store $1294.80; Fairway Market - 86th $2613.60; Fairway Market - 74th St $2613.60; Fairway Market of Chelsea $1425.60; FAIRWAY MARKET OF KIPS BAY $2692.80; Neighborly Ops LLC $2158.00. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
+      "impact": 32244.899999999998
     },
     {
       "sev": "🔴",
@@ -88,9 +88,9 @@
     {
       "sev": "🟡",
       "area": "AR",
-      "title": "Total open AR (Settle+Mercury reconciled): $13926.84",
+      "title": "Total open AR (Settle+Mercury reconciled): $32849.14",
       "detail": "Most is recent within-terms invoices. From ar_status.json — rerun reconcile_ar.js after each Mercury + Settle export.",
-      "impact": 13926.84
+      "impact": 32849.14
     },
     {
       "sev": "🟡",

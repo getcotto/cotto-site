@@ -4,13 +4,6 @@
     {
       "sev": "🔴",
       "area": "Open item",
-      "title": "[Freight] STUCK 6/15-17 run — RESOLVED 6/22: sprinter via Jeremy (FFE), PICKED UP, delivering to Brooklyn (Carriacou) WEDNESDAY 6/24",
-      "detail": "RESOLVED 6/22. The 6/15-17 run (3 measured pallets: BUF 52in/1,111 lb · GR 35in/713 lb · FO 59in/1,211 lb, ~3,035 lb) was the relief valve for critically-low inventory. Jeremy (FFE) sourced a reefer SPRINTER (~$4,000), PICKED UP 6/22, delivering to BROOKLYN — Carriacou Logistics (Scholes St; contact Mendez 347-248-7056, Curlon & Mohamed on dock) — WEDNESDAY 6/24. This is the S3/best-case outcome: lands in time for this week's store deliveries + UNFI (6/23-25) + Fancy Food (6/26-30). Why the sprinter premium was worth it: Edison was down to just BUF 22/FO 33/GR 15 (Lucy 6/22) and nothing in Brooklyn — Edison alone could NOT cover this week, so Wednesday delivery was the only option that lands product in time. ON ARRIVAL convert to inventory (location = Brooklyn/Carriacou) and tell Lucy which stops pull from Brooklyn vs Edison's remaining 70 cs. (owner: Kendall / Claude — log receipt at Brooklyn on Wed arrival; coordinate Localee pulls Edison vs Brooklyn)",
-      "impact": null
-    },
-    {
-      "sev": "🔴",
-      "area": "Open item",
       "title": "[Packaging] Packaging reorder for 7/13 run — Cary tubs+lids SENT 6/22 ✅; remaining: boxes + ATL FO-lid (this week), GR wrap (held)",
       "detail": "Time-phased coverage (6/22): the 7/13 run is the cliff for tubs, lids, boxes, FO-lid, GR-wrap. STATUS: (1) ✅ Cary 15k tubs + 15k lids SENT 6/22 to Daniel + Samantha (the urgent one — 4-6wk lead, already past order-by for 7/13; asked to expedite). onOrder updated in packaging.json. (2) Boxes 5,000 → Connor — DRAFTED, send this week (2-3wk lead; only ~100 short at 7/13). (3) ATL French Onion lids 6,000 → Callie (orders) + James (pricing) — DRAFTED, send this week (~700 short at 7/13). OPEN DECISION — GR WRAP: ~500 short at 7/13 but HELD pending Kendall's call on whether the GR reformulation label (lemon→vinegar ingredient declaration) is locked. NOT-YET-URGENT (covered through the 7/27 run): BUF/FO wraps, BUF/GR lids — order in ~2 wks. ⚠ CONFIRM the 7,054-tub backorder (EST129593) landed → move onOrder→onHand. ⚠ On-hand is the stale ~6/1 FK count; fresh-count request to Nathan is drafted. (owner: Kendall — send boxes + ATL FO-lid drafts this week; decide GR-wrap hold; confirm tub backorder landed)",
       "impact": null
@@ -32,15 +25,15 @@
     {
       "sev": "🟡",
       "area": "Open item",
-      "title": "[Freight] Upcoming run (Run C) — Nathan now says it MAY be ready for a Fri 6/26 pickup; RLS quote DRAFTED 6/22 (Edison or Brooklyn TBC)",
-      "detail": "UPDATED 6/22: Nathan now says FK may be able to have this week's run ready for pickup FRIDAY 6/26 (reversing the earlier 7/3-consolidation plan). Kendall asked to quote RLS as if it WILL be ready Friday. RLS quote DRAFTED to GianMarco 6/22: pickup Fri 6/26 at FK Pueblo, reefer 33-40F, delivery NYC metro = Edison NJ OR Brooklyn NY (exact TBC at booking), est ~3 pallets / ~2,520 lb (BUF ~835 / FO ~970 / GR ~715 lb), confirmed dims to follow once produced + measured. ACTIONS: send RLS draft; confirm with Nathan whether Friday readiness is real; once produced, get John's measured pallets → send RLS confirmed numbers. The 6/29 run is separate (consolidation idea is moot if Run C goes Friday alone). (owner: Kendall — send RLS draft; confirm Nathan Friday readiness; provide measured dims when produced)",
+      "title": "[Freight / Incoming] RLS Load 1209659 (PO 063026) — shipped 7/3, arriving Carriacou/Brooklyn Tue 7/7; LOG RECEIPT on arrival",
+      "detail": "The run previously tracked as 'Run C, maybe Fri 6/26' actually shipped FRIDAY 7/3 via RLS Order 1209659 / PO 063026: 3 refrigerated pallets, ~2,520 lb (BUF ~835 / FO ~970 / GR ~715 lb, estimated), pickup Fuel Kitchens (Pueblo CO), arriving Carriacou Logistics (257 Scholes St, Brooklyn; Mendez 347-248-7056) TUESDAY 7/7. NOT yet in inventory — on-hand stays low (this is the real relief for the BUF/FO/GR ~0.5-0.7 weeks-of-supply). ON ARRIVAL: log the receipt with the actual measured case counts (`node cotto-pipeline/log_receipt.js ... <date> \"Brooklyn (Carriacou)\"`), then the low-inventory flag clears on its own. (owner: Kendall / Claude — log the receipt at Brooklyn the moment it lands 7/7)",
       "impact": null
     },
     {
       "sev": "🟡",
       "area": "Open item",
-      "title": "[Storage / Logistics] Carriacou (Brooklyn) warehouse — NEW storage option; Mendez holding space, needs date/time/# pallets (BLOCKED on securing a truck)",
-      "detail": "Kendall reached out to Carriacou (Brooklyn; contact Mendez) about storing product there — NOT previously used. Rationale: (1) unsure Localee's hub can receive from a Sprinter van; (2) wants inventory accessible for trade shows. Mendez (6/19) confirmed space IS available and needs the final date, time, and # of pallets; Kendall is sending a PO. Can't give those details yet because there is no truck/freight booked. NEXT: once a truck is secured (see the freight items above), send Mendez the date/time/pallets to lock the Brooklyn receiving. Jake also coordinated with Mendez. SPECS NOW KNOWN (John, 6/19): 3 pallets — P1 48x40x54 1111lb, P2 48x40x35 713lb, P3 48x40x59 1211lb. So #pallets (3) + dims are answered; only the truck + date/time remain. (owner: Kendall (give Mendez date/time once a truck is booked); Mendez/Carriacou holding the space)",
+      "title": "[Storage / Logistics] Carriacou (Brooklyn) receiving — truck now BOOKED (RLS 1209659, arriving 7/7); send Mendez date/time + 3 pallets",
+      "detail": "Previously blocked on securing a truck — RESOLVED: RLS Load 1209659 is booked, arriving Carriacou (Scholes St; Mendez 347-248-7056) Tuesday 7/7 with 3 pallets. Space was confirmed available (Mendez 6/19). NEXT: send Mendez the confirmed date/time (7/7) + 3 pallets to lock receiving, and the PO. (owner: Kendall — give Mendez 7/7 date/time + 3 pallets; send the PO)",
       "impact": null
     },
     {
@@ -53,8 +46,8 @@
     {
       "sev": "🟡",
       "area": "Open item",
-      "title": "[Orders / Fairway Kips Bay] Edgar (Fairway Kips Bay) wants +10 cases Buffalo on this week's delivery",
-      "detail": "Edgar at Fairway Kips Bay texted 6/19 'please send me 10 cases of the buffalo flavor.' Kendall confirmed 6/21 she'll add it to this week's delivery and asked if he wants FO/GR too. ACTION: capture the order (10cs BUF + any FO/GR he adds) into the order desk for this week's Localee delivery + invoice. (owner: Kendall — confirm SKUs with Edgar, add to this week's delivery + invoice)",
+      "title": "[Orders / Fairway Kips Bay] Edgar (Fairway Kips Bay) wanted +10 cases Buffalo — from 6/19, likely already delivered; CONFIRM + close",
+      "detail": "Edgar at Fairway Kips Bay texted 6/19 'please send me 10 cases of the buffalo flavor.' Kendall confirmed 6/21 she'd add it to that week's delivery. This is now ~2+ weeks old and was almost certainly delivered/invoiced already — CONFIRM it was fulfilled and close, or re-capture if it slipped. (owner: Kendall — confirm the +10 BUF was delivered/invoiced, then close)",
       "impact": null
     },
     {
@@ -69,13 +62,6 @@
       "area": "Open item",
       "title": "[Quality / DTC] Yuliana cold-chain complaint — DTC dips arrived not cold (ice packs slid, insufficient)",
       "detail": "Yuliana (6/19): ice packs were still cold but slid to one side and there weren't enough, so the dips were never cold on arrival. A DTC shipping cold-chain failure. ACTION: decide on a make-good (refund/replacement) and fix the DTC pack-out (more/secured ice packs). (owner: Kendall — make-good + pack-out fix)",
-      "impact": null
-    },
-    {
-      "sev": "🟡",
-      "area": "Open item",
-      "title": "[Production / Incoming] Incoming run (~6/15-17): 192 GR / 295 BUF / 330 FO cases — produced & weight-confirmed, NOT yet landed (stuck at Pueblo)",
-      "detail": "Nathan's final counts (text 6/18): GR 192, BUF 295, FO 330 cases (817 total). CROSS-CONFIRMED by John's independent pallet measurements — per-SKU stack heights + weights line up (GR 34.6in/713lb, BUF 52in/1111lb, FO 59.1in/1211lb, ~3.7 lb/case across all three). This is INCOMING production, NOT sellable on-hand — current on-hand stays BUF 56 / FO 68 / GR 60 cs until it LANDS. On arrival (pickup date TBD — Jeremy/Liberty working the stuck-run freight, still unresolved; RLS's soonest is Friday which doesn't work for this run) convert to inventory via `node cotto-pipeline/log_receipt.js B 295 330 192 <date> <location>`. Batch sheets emailed per-SKU 6/18 for production-batch backup; 5/25-27 batch sheet (separate, mislabel run) attached to the 6/19 'Batch Sheets' email. (owner: Kendall / Claude — convert to on-hand when the run lands)",
       "impact": null
     },
     {
@@ -110,7 +96,7 @@
       "sev": "✅",
       "area": "Open item",
       "title": "[Quality / Neighborly] Neighborly mislabel — Evan will relabel on their own (they have a label maker); NOT a red flag from Neighborly's side anymore",
-      "detail": "Evan at Neighborly confirmed (via TEXT) they are fine to relabel the wrong-best-by units themselves. So Neighborly is no longer at risk and this is NOT a red flag from their side. STILL OPEN: Nathan (FK) must respond with the 5/25-27 lot codes (wrong vs correct dates, across NYC/NJ/LA accounts) AND the written process change before the 6/22 run. The FK accountability/process item is unacceptable and not yet resolved. (owner: Nathan (FK) — lot codes + written process change still owed)",
+      "detail": "Evan at Neighborly confirmed (via TEXT) they are fine to relabel the wrong-best-by units themselves. So Neighborly is no longer at risk and this is NOT a red flag from their side. STILL OPEN: Nathan (FK) must respond with the 5/25-27 lot codes (wrong vs correct dates, across NYC/NJ/LA accounts) AND the written process change. The FK accountability/process item is not yet resolved. (owner: Nathan (FK) — lot codes + written process change still owed)",
       "impact": null
     },
     {

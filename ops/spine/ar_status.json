@@ -1,8 +1,15 @@
 {
   "asOf": "2026-07-06",
   "totalInvoiced": 76870.37,
-  "totalOpenTrue": 32849.14,
-  "unmapped": [],
+  "totalOpenTrue": 30393.94,
+  "unmapped": [
+    {
+      "date": "2026-07-06",
+      "amount": 258.96,
+      "who": "Schmidts Country Market",
+      "ref": ""
+    }
+  ],
   "byAccount": {
     "Meadow Lane": {
       "invoiced": 23016,
@@ -47,7 +54,7 @@
     "Butterfield Market": {
       "invoiced": 22413.6,
       "refPaid": 13186.8,
-      "banked": 14691.6,
+      "banked": 17146.8,
       "candidates": [
         "COTTO-1067 $1504.80 (2026-06-04)",
         "COTTO-1068 $1029.60 (2026-06-04)",
@@ -60,7 +67,7 @@
         "COTTO-1102 $396.00 (2026-07-02)",
         "COTTO-1103 $316.80 (2026-07-02)"
       ],
-      "openTrue": 7722
+      "openTrue": 5266.8
     },
     "Last Minute Market": {
       "invoiced": 1676.4,

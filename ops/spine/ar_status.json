@@ -1,15 +1,8 @@
 {
   "asOf": "2026-07-06",
   "totalInvoiced": 76870.37,
-  "totalOpenTrue": 30393.94,
-  "unmapped": [
-    {
-      "date": "2026-07-06",
-      "amount": 258.96,
-      "who": "Schmidts Country Market",
-      "ref": ""
-    }
-  ],
+  "totalOpenTrue": 30134.98,
+  "unmapped": [],
   "byAccount": {
     "Meadow Lane": {
       "invoiced": 23016,
@@ -44,11 +37,9 @@
     },
     "Happier Grocery": {
       "invoiced": 5653.96,
-      "refPaid": 5265.52,
+      "refPaid": 5653.96,
       "banked": 5653.96,
-      "candidates": [
-        "COTTO-1101 $388.44 (2026-07-02)"
-      ],
+      "candidates": [],
       "openTrue": 0
     },
     "Butterfield Market": {
@@ -113,12 +104,12 @@
     "Schmidts Country market": {
       "invoiced": 647.4,
       "refPaid": 0,
-      "banked": 0,
+      "banked": 258.96,
       "candidates": [
         "COTTO-1039 $258.96 (2026-05-19)",
         "COTTO-1091 $388.44 (2026-06-21)"
       ],
-      "openTrue": 647.4
+      "openTrue": 388.44
     },
     "Montauk Yacht Club": {
       "invoiced": 517.92,
@@ -978,9 +969,9 @@
       "account": "Happier Grocery",
       "amount": 388.44,
       "date": "2026-07-02",
-      "status": "open",
-      "paidVia": null,
-      "paidDate": null
+      "status": "paid",
+      "paidVia": "settle",
+      "paidDate": "2026-07-03"
     },
     {
       "invoice": "COTTO-1102",

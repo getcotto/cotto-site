@@ -16,6 +16,7 @@
     { "match": "talafood", "account": "Butterfield Market" },
     { "match": "butterfield", "account": "Butterfield Market" },
     { "match": "last minute", "account": "Last Minute Market" },
+    { "match": "schmidts", "account": "Schmidts Country market" },
     { "match": "sweet girls", "account": "Sweet Girls Eat" },
     { "match": "pop up grocer", "account": "Pop Up Grocer" }
   ],

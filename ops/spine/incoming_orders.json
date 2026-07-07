@@ -715,5 +715,30 @@
     "captured_at": "2026-06-15T00:39:30.488Z",
     "raw_excerpt": "ASSUMED 4 of each (Kendall, 6/14) - my read of 'four of each' for the remaining outstanding account; CONFIRM this is PUG.",
     "notes": "ASSUMED new PUG order, SEPARATE from the 12 BUF + 10 GR backorder. Confirm '4 of each' was meant for PUG."
+  },
+  {
+    "source_msg_id": "text-edgar-20260706-0846",
+    "account_id": "fairway-kips-bay",
+    "account_name": "Fairway Kips Bay",
+    "store": "Kips Bay",
+    "order_date": "2026-07-06",
+    "requested_delivery": null,
+    "po_number": null,
+    "lines": [
+      {
+        "sku": "FO",
+        "cases": 5
+      },
+      {
+        "sku": "BUF",
+        "cases": 4
+      }
+    ],
+    "total_cases": 9,
+    "status": "staged",
+    "confidence": "high",
+    "captured_at": "2026-07-07T01:26:05.819Z",
+    "raw_excerpt": null,
+    "notes": "Text order from Edgar (+16468182319) 7/6 8:46am: 5 cases french onion + 4 cases buffalo; asked when to expect delivery"
   }
 ]

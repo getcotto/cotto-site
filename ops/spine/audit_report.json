@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-06",
+  "asOf": "2026-07-07",
   "findings": [
     {
       "sev": "🔴",
@@ -11,9 +11,9 @@
     {
       "sev": "🔴",
       "area": "AR",
-      "title": "Overdue AR (reconciled, past terms): $29530.74",
-      "detail": "Meadow Lane $6672.80; Olive & Oak $593.10; Butterfield Market $5266.80; Last Minute Market $1320.00; Jack's Market $118.80; Farm to People $2372.40; Schmidts Country market $388.44; Sagaponack General Store $1294.80; Fairway Market - 86th $2613.60; Fairway Market - 74th St $2613.60; Fairway Market of Chelsea $1425.60; FAIRWAY MARKET OF KIPS BAY $2692.80; Neighborly Ops LLC $2158.00. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
-      "impact": 29530.739999999994
+      "title": "Overdue AR (reconciled, past terms): $30134.98",
+      "detail": "Meadow Lane $6672.80; Olive & Oak $593.10; Butterfield Market $5266.80; Last Minute Market $1320.00; Jack's Market $118.80; Farm to People $2372.40; Schmidts Country market $388.44; Sagaponack General Store $1294.80; Farm & Forage Market $604.24; Fairway Market - 86th $2613.60; Fairway Market - 74th St $2613.60; Fairway Market of Chelsea $1425.60; FAIRWAY MARKET OF KIPS BAY $2692.80; Neighborly Ops LLC $2158.00. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
+      "impact": 30134.979999999996
     },
     {
       "sev": "🔴",
@@ -93,6 +93,13 @@
       "impact": null
     },
     {
+      "sev": "🟡",
+      "area": "Freshness",
+      "title": "Spine may be stale (latest delivery 2026-07-02 = 5d ago, latest order 2026-07-02 = 5d ago)",
+      "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
+      "impact": null
+    },
+    {
       "sev": "✅",
       "area": "Open item",
       "title": "[Quality / Neighborly] Neighborly mislabel — Evan will relabel on their own (they have a label maker); NOT a red flag from Neighborly's side anymore",
@@ -103,13 +110,6 @@
       "sev": "✅",
       "area": "Inventory",
       "title": "On-hand: BUF 471 / FO 486 / GR 350 cs",
-      "detail": "",
-      "impact": null
-    },
-    {
-      "sev": "✅",
-      "area": "Freshness",
-      "title": "Spine fresh (latest event 2026-07-02, latest order 2026-07-02)",
       "detail": "",
       "impact": null
     }

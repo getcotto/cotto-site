@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-10",
+  "asOf": "2026-07-12",
   "findings": [
     {
       "sev": "🔴",
@@ -21,6 +21,13 @@
       "title": "Delivered but NOT invoiced: $5030.22 (15 lines)",
       "detail": "Farm & Forage Market $388.26; Olive & Oak $158.16; Butterfield - Lex $1346.40; Butterfield - Madison $1465.20; Meadow Lane $1276.80; Farm to People $395.40 — create these invoices in Settle.",
       "impact": 5030.219999999999
+    },
+    {
+      "sev": "🔴",
+      "area": "Freight",
+      "title": "Book Pueblo freight by 2026-07-13 (Mon) — ships 2026-07-17",
+      "detail": "Runs 7/13-15. Carriers: Jeremy/FFE, GianMarco@RLS, Heather@DTS.",
+      "impact": null
     },
     {
       "sev": "🟡",
@@ -94,15 +101,8 @@
     },
     {
       "sev": "🟡",
-      "area": "Freight",
-      "title": "Book Pueblo freight by 2026-07-13 (Mon) — ships 2026-07-17",
-      "detail": "Runs 7/13-15. Carriers: Jeremy/FFE, GianMarco@RLS, Heather@DTS.",
-      "impact": null
-    },
-    {
-      "sev": "🟡",
       "area": "Freshness",
-      "title": "Spine may be stale (latest delivery 2026-07-02 = 8d ago, latest order 2026-07-02 = 8d ago)",
+      "title": "Spine may be stale (latest delivery 2026-07-02 = 10d ago, latest order 2026-07-02 = 10d ago)",
       "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
       "impact": null
     },

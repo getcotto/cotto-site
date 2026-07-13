@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-12",
+  "asOf": "2026-07-13",
   "findings": [
     {
       "sev": "🔴",
@@ -102,7 +102,7 @@
     {
       "sev": "🟡",
       "area": "Freshness",
-      "title": "Spine may be stale (latest delivery 2026-07-02 = 10d ago, latest order 2026-07-02 = 10d ago)",
+      "title": "Spine may be stale (latest delivery 2026-07-02 = 11d ago, latest order 2026-07-02 = 11d ago)",
       "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
       "impact": null
     },

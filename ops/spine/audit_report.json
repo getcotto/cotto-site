@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-15",
+  "asOf": "2026-07-16",
   "findings": [
     {
       "sev": "🔴",
@@ -94,8 +94,15 @@
     },
     {
       "sev": "🟡",
+      "area": "Receipts",
+      "title": "Unconfirmed receipt 2026-07-07: undefined",
+      "detail": "221 BUF / 199 FO / 130 GR logged as estimate — reconcile when the BOL/receipt lands.",
+      "impact": null
+    },
+    {
+      "sev": "🟡",
       "area": "Freshness",
-      "title": "Spine may be stale (latest delivery 2026-07-02 = 13d ago, latest order 2026-07-02 = 13d ago)",
+      "title": "Spine may be stale (latest delivery 2026-07-13 = 3d ago, latest order 2026-07-02 = 14d ago)",
       "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
       "impact": null
     },
@@ -109,7 +116,7 @@
     {
       "sev": "✅",
       "area": "Inventory",
-      "title": "On-hand: BUF 471 / FO 486 / GR 350 cs",
+      "title": "On-hand: BUF 625 / FO 615 / GR 422 cs",
       "detail": "",
       "impact": null
     }

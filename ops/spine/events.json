@@ -730,5 +730,41 @@
     "lot": "",
     "notes": "Carriacou delivered from Brooklyn, completed morning 7/2 (per Kendall). Consignment - bill on sell-through; awaiting Lightspeed MAI# for revenue row.",
     "ref": "DELIV-POPUP-20260702"
+  },
+  {
+    "date": "2026-07-07",
+    "type": "Receipt",
+    "location": "Brooklyn (Carriacou)",
+    "buf": 221,
+    "fo": 199,
+    "gr": 130,
+    "dir": "In",
+    "lot": "6/29-7/1 run",
+    "notes": "6/29-7/1 run via RLS 1209659; case counts from FK batch sheets; best-by Aug 28-30",
+    "ref": "RECEIPT-0629"
+  },
+  {
+    "date": "2026-07-09",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "buf": 17,
+    "fo": 20,
+    "gr": 8,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": "Carriacou 5-stop route, BOL 070926-001: Fairway Chelsea+Kips Bay, Butterfield Lex, Farm to People, Meadow Lane",
+    "ref": "DELIV-070926-001"
+  },
+  {
+    "date": "2026-07-13",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "buf": 50,
+    "fo": 50,
+    "gr": 50,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": "Meraki Direct DSD pickup, PO 6002145 / BOL 071326-001",
+    "ref": "MERAKI-6002145"
   }
 ]

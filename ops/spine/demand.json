@@ -1,19 +1,73 @@
-[
-  {"account":"Meadow Lane","active":true,"cadence":"weekly","buf":22,"fo":20,"gr":11,"note":"lead acct; ordered 28 BUF on 6/4, supply-trimmed to 17 — using the order (demand), not the constrained delivery"},
-  {"account":"Butterfield - Lex","active":true,"cadence":"weekly","buf":16,"fo":22,"gr":8,"note":"FO-led, steady"},
-  {"account":"Butterfield - Madison","active":true,"cadence":"weekly","buf":11,"fo":14,"gr":8,"note":"GR corrected down from a one-week 5/19 spike (was reading 19)"},
-  {"account":"Farm to People","active":true,"cadence":"weekly","buf":16,"fo":16,"gr":16,"note":"ONLINE platform (DTC) — high growth ceiling vs brick-and-mortar; ramping 6->16, set above recent; raise as it proves"},
-  {"account":"Pop Up Grocer","active":true,"cadence":"weekly","buf":9,"fo":11,"gr":7,"note":"consignment"},
-  {"account":"Happier Grocery","active":true,"cadence":"weekly","buf":5,"fo":4,"gr":4},
-  {"account":"Olive & Oak","active":true,"cadence":"sporadic","buf":1.5,"fo":1.5,"gr":1.5,"note":"orders ~3/3/3 occasionally; 6/4 order was MISSED (owe a delivery); excludes windows we couldn't supply"},
-  {"account":"Last Minute Market","active":true,"cadence":"sporadic","buf":2,"fo":2,"gr":2},
-  {"account":"Montauk Yacht Club","active":true,"cadence":"biweekly","buf":2,"fo":2,"gr":2,"note":"weekly-equiv (per-order halved)"},
-  {"account":"Sagaponack General Store","active":true,"cadence":"biweekly","buf":2,"fo":2,"gr":2,"note":"weekly-equiv (per-order halved)"},
-  {"account":"Schmidts","active":true,"cadence":"biweekly","buf":1,"fo":1,"gr":1,"note":"weekly-equiv (per-order halved)"},
-  {"account":"Farm & Forage Market","active":true,"cadence":"biweekly","buf":1,"fo":1.5,"gr":1.5,"note":"weekly-equiv (per-order halved)"},
-  {"account":"Sampling / shows","active":true,"cadence":"ongoing","buf":7,"fo":10,"gr":10,"note":"ongoing demos + show spikes (UNFI 6/23-25, Fancy Food 6/26-30)"},
-  {"account":"Fairway","active":true,"cadence":"weekly","buf":30,"fo":30,"gr":30,"oneTimeOpening":{"buf":60,"fo":60,"gr":60,"date":"2026-06-02","note":"shelf-fill, NOT steady demand"},"note":"4 stores. ONGOING 30/SKU is REAL steady demand (Kendall 6/16): a reorder is materializing; recent low Fairway volume was OUT-OF-STOCK suppression (we/they partially OOS), not soft demand. Count it per the exclude-stockout-windows rule. Opening (60/SKU, 6/2) is logged separately as one-time."},
-  {"account":"The Shelf","active":false,"buf":0,"fo":0,"gr":0,"note":"PAUSED — re-activate when it resumes"},
-  {"account":"Jack's Market","active":false,"buf":1,"fo":1,"gr":1,"note":"pipeline, not yet recurring"},
-  {"account":"Be Neighborly","active":false,"buf":0,"fo":0,"gr":0,"note":"one-off, not recurring"}
-]
+{
+  "_doc": "Weekly demand per account, SPLIT into booked vs upside. 'booked' = what this account has actually demonstrated it takes. 'upside' = the increment we HOPE for and have not yet seen. The planner runs both scenarios; production should be built on booked + whatever upside is cancel-protected, never on upside alone. This split exists because the flat pre-7/16 version encoded the stockout-corrected 'latent ~1,650/mo' estimate as if it were bookable, which is ~2x anything ever shipped (Mar 206 / Apr 396 / May 737 / Jun 786).",
+  "_writer": "human (Kendall). engine/plan.js reads, never writes.",
+  "_reconciliation_warning": "Bottom-up booked (~246 cs/wk = ~1,060/mo) still exceeds top-down actual throughput (Jun 786/mo = ~183 cs/wk) by ~35%. Some of that gap is real stockout suppression; some is accounts not ordering every single week. The planner reports this gap on every run — do not ignore it.",
+  "unit": "cases per week",
+  "accounts": [
+    { "account": "Meadow Lane", "active": true, "cadence": "weekly",
+      "booked": { "buf": 22, "fo": 20, "gr": 11 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
+      "note": "lead acct; ordered 28 BUF on 6/4, supply-trimmed to 17 — using the ORDER (demand), not the constrained delivery" },
+
+    { "account": "Butterfield - Lex", "active": true, "cadence": "weekly",
+      "booked": { "buf": 16, "fo": 22, "gr": 8 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
+      "note": "FO-led, steady" },
+
+    { "account": "Butterfield - Madison", "active": true, "cadence": "weekly",
+      "booked": { "buf": 11, "fo": 14, "gr": 8 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
+      "note": "GR corrected down from a one-week 5/19 spike (was reading 19)" },
+
+    { "account": "Farm to People", "active": true, "cadence": "weekly",
+      "booked": { "buf": 6, "fo": 6, "gr": 6 }, "upside": { "buf": 10, "fo": 10, "gr": 10 },
+      "note": "ONLINE/DTC — high ceiling. The old file carried 16/16/16 with the note 'ramping 6->16, set above recent; raise as it proves'. It has NOT yet proved: 6 is demonstrated, the +10 is the hope. Move it to booked when the orders show up." },
+
+    { "account": "Pop Up Grocer", "active": true, "cadence": "weekly",
+      "booked": { "buf": 9, "fo": 11, "gr": 7 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
+      "note": "consignment" },
+
+    { "account": "Happier Grocery", "active": true, "cadence": "weekly",
+      "booked": { "buf": 5, "fo": 4, "gr": 4 }, "upside": { "buf": 0, "fo": 0, "gr": 0 } },
+
+    { "account": "Olive & Oak", "active": true, "cadence": "sporadic",
+      "booked": { "buf": 1.5, "fo": 1.5, "gr": 1.5 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
+      "note": "orders ~3/3/3 occasionally; 6/4 order was MISSED (owe a delivery); excludes windows we couldn't supply. OPEN ITEM: confirm the 12-cs order." },
+
+    { "account": "Last Minute Market", "active": true, "cadence": "sporadic",
+      "booked": { "buf": 2, "fo": 2, "gr": 2 }, "upside": { "buf": 0, "fo": 0, "gr": 0 } },
+
+    { "account": "Montauk Yacht Club", "active": true, "cadence": "biweekly",
+      "booked": { "buf": 2, "fo": 2, "gr": 2 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
+      "note": "weekly-equiv (per-order halved)" },
+
+    { "account": "Sagaponack General Store", "active": true, "cadence": "biweekly",
+      "booked": { "buf": 2, "fo": 2, "gr": 2 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
+      "note": "weekly-equiv (per-order halved)" },
+
+    { "account": "Schmidts", "active": true, "cadence": "biweekly",
+      "booked": { "buf": 1, "fo": 1, "gr": 1 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
+      "note": "weekly-equiv (per-order halved); buys through Meraki" },
+
+    { "account": "Farm & Forage Market", "active": true, "cadence": "biweekly",
+      "booked": { "buf": 1, "fo": 1.5, "gr": 1.5 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
+      "note": "weekly-equiv (per-order halved)" },
+
+    { "account": "Sampling / shows", "active": true, "cadence": "ongoing",
+      "booked": { "buf": 7, "fo": 10, "gr": 10 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
+      "note": "ongoing demos + show spikes. Real consumption, lumpy timing." },
+
+    { "account": "Fairway", "active": true, "cadence": "weekly",
+      "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 30, "fo": 30, "gr": 30 },
+      "note": "4 doors. THE BIG ASSUMPTION — 90 cs/wk, ~25% of the whole demand book, sitting entirely in upside. Kendall 6/16: ongoing 30/SKU is real and recent low volume was OUT-OF-STOCK suppression, not soft demand, and 'a reorder is materializing'. It has not yet materialized, and we do not have Fairway's true un-suppressed rate. Booked stays 0 until a reorder PO lands; then move the demonstrated amount over. The 6/2 opening (60/SKU) was one-time shelf-fill and is deliberately excluded." },
+
+    { "account": "The Shelf", "active": false, "cadence": "weekly",
+      "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
+      "note": "PAUSED — consignment (La Grocere). Re-activate when it resumes." },
+
+    { "account": "Jack's Market", "active": false, "cadence": "weekly",
+      "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 1, "fo": 1, "gr": 1 },
+      "note": "pipeline, not yet recurring" },
+
+    { "account": "Be Neighborly", "active": false, "cadence": "sporadic",
+      "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
+      "note": "LA / first West Coast. NOT recurring demand — the 100 cs restock is handled as a DIVERSION off the Jul-13 run in run_calendar.json, not as weekly demand. Do not double-count." }
+  ]
+}

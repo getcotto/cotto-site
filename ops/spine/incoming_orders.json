@@ -399,11 +399,15 @@
       }
     ],
     "total_cases": 38,
-    "status": "staged",
+    "status": "delivered",
     "confidence": "high",
     "captured_at": "2026-06-14T13:10:21.317Z",
     "raw_excerpt": "Can we place the following order for this week: 10 cases ranch, 10 cases french onion, 18 cases buffalo (Evy, 6/14)",
-    "notes": "Full order, NYC Thursday route week of 6/15."
+    "notes": "Full order, NYC Thursday route week of 6/15.",
+    "invoice": null,
+    "invoice_date": "2026-06-17",
+    "promoted_at": "2026-07-17T01:38:42.152Z",
+    "promotion_note": "Backfill reconcile 2026-07-17: matched delivery 2026-06-17 on orders.json (delivered, not yet invoiced)."
   },
   {
     "source_msg_id": "19ec5ce207eb4d6a",
@@ -515,11 +519,15 @@
       }
     ],
     "total_cases": 34,
-    "status": "staged",
+    "status": "delivered",
     "confidence": "high",
     "captured_at": "2026-06-14T17:08:09.617Z",
     "raw_excerpt": "Butterfield Lex PO 24755: FO 16cs, GR 8cs, BUF 10cs ($1,346.40), Net 30 (Luis, 6/14)",
-    "notes": "PO 24755 (in PDF). In-store demo Fri 6/19 - deliver on Thursday route before then."
+    "notes": "PO 24755 (in PDF). In-store demo Fri 6/19 - deliver on Thursday route before then.",
+    "invoice": null,
+    "invoice_date": "2026-06-17",
+    "promoted_at": "2026-07-17T01:38:42.152Z",
+    "promotion_note": "Backfill reconcile 2026-07-17: matched delivery 2026-06-17 on orders.json (delivered, not yet invoiced)."
   },
   {
     "source_msg_id": "19ec6d64a8116a26",
@@ -544,11 +552,15 @@
       }
     ],
     "total_cases": 37,
-    "status": "staged",
+    "status": "delivered",
     "confidence": "high",
     "captured_at": "2026-06-14T17:08:09.617Z",
     "raw_excerpt": "Madison (fwd by Marcos): FO 3, GR 16, BUF 18 (case pack 6). 'deliver at your earliest convenience' (6/14)",
-    "notes": "Email order, no formal PO# yet (Marcos said he'll place the PO). In-store demo Fri 6/19 - deliver Thursday before then."
+    "notes": "Email order, no formal PO# yet (Marcos said he'll place the PO). In-store demo Fri 6/19 - deliver Thursday before then.",
+    "invoice": null,
+    "invoice_date": "2026-06-17",
+    "promoted_at": "2026-07-17T01:38:42.152Z",
+    "promotion_note": "Backfill reconcile 2026-07-17: matched delivery 2026-06-17 on orders.json (delivered, not yet invoiced)."
   },
   {
     "source_msg_id": "19ec6ad424884b7d",
@@ -569,11 +581,15 @@
       }
     ],
     "total_cases": 10,
-    "status": "staged",
+    "status": "delivered",
     "confidence": "high",
     "captured_at": "2026-06-14T17:08:09.617Z",
     "raw_excerpt": "F2P PO-2026-00606: Garden Ranch 4cs, Spicy Buffalo 6cs ($395.40), req delivery 6/19. No French Onion this time.",
-    "notes": "NO French Onion ordered this week. Req delivery 6/19. Bill.com rail."
+    "notes": "NO French Onion ordered this week. Req delivery 6/19. Bill.com rail.",
+    "invoice": null,
+    "invoice_date": "2026-06-18",
+    "promoted_at": "2026-07-17T01:38:42.152Z",
+    "promotion_note": "Backfill reconcile 2026-07-17: matched delivery 2026-06-18 on orders.json (delivered, not yet invoiced)."
   },
   {
     "source_msg_id": "19ea6bf6ef9b0888",
@@ -623,11 +639,15 @@
       }
     ],
     "total_cases": 22,
-    "status": "staged",
+    "status": "delivered",
     "confidence": "high",
     "captured_at": "2026-06-14T17:34:35.354Z",
     "raw_excerpt": "Backorder from MAI-5465: PUG got 16 FO on 6/11, owed 12 Buffalo + 10 Garden Ranch (both were out that week).",
-    "notes": "BACKORDER - rest of last week's PUG order (PO MAI-5465). Consignment. MUST deliver this week's NYC route regardless of any new order. Separate from anything PUG adds via this week's nudge."
+    "notes": "BACKORDER - rest of last week's PUG order (PO MAI-5465). Consignment. MUST deliver this week's NYC route regardless of any new order. Separate from anything PUG adds via this week's nudge.",
+    "invoice": "MAI-5465",
+    "invoice_date": "2026-06-17",
+    "promoted_at": "2026-07-17T01:38:42.152Z",
+    "promotion_note": "Backfill reconcile 2026-07-17: matched delivery 2026-06-17 on orders.json (invoice MAI-5465)."
   },
   {
     "source_msg_id": "assumed-lmm-0614",
@@ -735,10 +755,14 @@
       }
     ],
     "total_cases": 9,
-    "status": "staged",
+    "status": "delivered",
     "confidence": "high",
     "captured_at": "2026-07-07T01:26:05.819Z",
     "raw_excerpt": null,
-    "notes": "Text order from Edgar (+16468182319) 7/6 8:46am: 5 cases french onion + 4 cases buffalo; asked when to expect delivery"
+    "notes": "Text order from Edgar (+16468182319) 7/6 8:46am: 5 cases french onion + 4 cases buffalo; asked when to expect delivery",
+    "invoice": "COTTO-1106",
+    "invoice_date": "2026-07-09",
+    "promoted_at": "2026-07-17T01:38:42.152Z",
+    "promotion_note": "Backfill reconcile 2026-07-17: matched delivery 2026-07-09 on orders.json (invoice COTTO-1106)."
   }
 ]

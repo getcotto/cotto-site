@@ -1,0 +1,196 @@
+373 raw records -> 170 accounts
+
+AWG
+    <- AWG (Associated Wholesale Grocers)
+Agata & Valentina
+    <- Agata & Valentina (JAV Food Corp)
+    <- Agata & Valentina (JAV Food)
+Airgoods
+    <- Airgoods (wholesale marketplace)
+Albertsons
+    <- Albertsons (Kings Food Markets / Balducci's)
+    <- Albertsons (venture program)
+    <- Albertsons — Kings Food Markets & Balducci's
+Aldi
+    <- ALDI
+Amber Waves Farm
+    <- Amber Waves Farm (Amagansett, NY)
+Aux Delices
+    <- Aux Delices Foods
+Be Neighborly
+    <- Be Neighborly (Neighborly Marketplace / Neighborly Ops LLC)
+    <- Be Neighborly (parent of Mendocino Farms)
+Beyond Better Foods
+    <- Beyond Better Foods (maker of Enlightened)
+Butterfield Market
+    <- Butterfield Market (Lexington + Madison)
+California Milk Advisory Board
+    <- California Milk Advisory Board (CMAB)
+Castaway Cafe
+    <- Castaway Cafe (inside the private Swordfish Beach Club, Westhampton Beach NY)
+ChicExecs
+    <- ChicExecs Brand Strategy Agency (a division of CB Agency Group)
+    <- ChicExecs PR & Marketing Firm
+City Acres Market
+    <- City Acres
+D'Agostino
+    <- D'Agostino (DAG NYC)
+EBS — Emerging Brands Strategies; also a partner in Beckett Industries
+    <- EBS — Emerging Brands Strategies; also a partner in Beckett Industries (CPG investment)
+Eco-Meal
+    <- Eco-Meal Organic
+    <- EcoMeal
+Eli Zabar
+    <- Eli's Market
+Endeavor
+    <- Endeavor (Heartland office)
+Fairway Market
+    <- Fairway Market (Village Super Market / Wakefern)
+    <- Fairway Market / Gourmet Garage (NYC); earlier headline also listed Village Super Market
+    <- Fairway Market / Wakefern
+    <- Village Super Market / Fairway Market
+    <- Wakefern / Fairway Market
+    <- Wakefern / Fairway Market (Village Super Market)
+    <- Wakefern / Fairway Market + Gourmet Garage
+    <- Wakefern / Village Super Market (Fairway)
+    <- Wakefern / Village Super Market — Fairway Market
+    <- Wakefern / Village Super Market — Fairway Market & Gourmet Garage
+    <- Wakefern — Fairway Market / Gourmet Garage
+Farm to People
+    <- Farm To People
+Fields Texas
+    <- Fields Texas Ltd
+    <- Fields Texas Ltd.
+Food'N'Bev Connect
+    <- Food'N'Bev Connect (CT)
+Giant Food
+    <- Giant Food (Ahold Delhaize)
+Gourmet Foods International (GFI)
+    <- GFI Foods (3370 Panthersville Rd, Decatur, GA 30034)
+    <- GFI Foods (Gourmet Foods International)
+    <- Gourmet Foods International (GFI) — DEPARTED; now independent fractional sales
+Gourmet Garage
+    <- Startup CPG (with Citarella, Gourmet Garage, KeHE, Thrive Market, UNFI)
+INFRA
+    <- INFRA (Independent Natural Food Retailers Association)
+Independent CPG launch consultant
+    <- Independent CPG launch consultant (works with 20+ emerging CPG brands)
+Julie B Eatery
+    <- Julie B Eatery (upstate NY)
+KMG (Kinneberg)
+    <- Kinneberg Management Group (KMG)
+Key Food
+    <- Key Foods
+LA-based angel group
+    <- LA-based angel group (co-founder)
+LT Life — banner uncertain
+    <- LT Life (lt.life) — banner uncertain
+Last Minute Market
+    <- Last Minute Market (LMM)
+    <- Last Minute Market (Last Minute Montclair LLC)
+    <- Last Minute Market / Last Minute Montclair LLC
+Lunr Capital
+    <- LUNR Capital
+Many Thanks Consulting
+    <- Many Thanks Consulting (hellomanythanks.com)
+Market Fresh (MI)
+    <- Market Fresh
+    <- Market Fresh (Michigan)
+MeadeConnect
+    <- MeadeCo LLC / MeadeConnect (Northbrook, IL)
+Meraki Direct
+    <- Meraki Direct (DSD distributor; affiliated with Nounos Creamery)
+    <- Meraki Direct (Nounos Creamery)
+    <- Meraki Direct / Nounos Creamery
+    <- Meraki Distributors
+NCG
+    <- NCG (National Co+op Grocers)
+Naturally New York
+    <- Naturally New York — 'Riverside Route' event
+New Hope Network
+    <- New Hope Network (Expo West / Newtopia Now)
+    <- New Hope Network (Newtopia Now)
+NextDoor
+    <- NextDoor (Birmingham MI)
+NielsenIQ
+    <- NielsenIQ (NIQ)
+OMG Inc (Ryan Rogers)
+    <- OMG Inc (18 years at Target, left a few years ago); member of The Angel Group
+    <- OMG Inc / The Angel Group
+Olive & Oak
+    <- Olive & Oak (Oceanport, NJ)
+PBI / Store Brand Partner
+    <- PBI (Plant Based Innovations) / Store Brand Partner
+PDI / Hy-Vee
+    <- PDI SRD (pdisrd.com)
+    <- Perishable Distributors of Iowa (PDI) — Hy-Vee subsidiary
+Peaklign Partners
+    <- Peaklign Partners (Skaneateles / Syracuse, NY)
+Pop Up Grocer
+    <- Many Thanks Consulting (ex-Pop Up Grocer buyer)
+Raley's
+    <- Raley's (The Raley's Companies)
+    <- The Raley's Companies
+RangeMe / ECRM
+    <- ECRM (MarketGate)
+    <- ECRM / RangeMe
+    <- RangeMe
+    <- RangeMe (product discovery platform)
+    <- Sprouts Farmers Market (via RangeMe)
+    <- Walmart U.S. (via RangeMe)
+Relatable
+    <- Relatable (angel investor)
+River Sea Network (internal)
+    <- River Sea Network (works with Cotto internally; not an investor)
+Sagaponack General Store
+    <- Sagaponack General Store (Hamptons, NY) / NY Grays
+Schmidt's Country Market
+    <- Schmidt's Market
+    <- Schmidts Country Market
+Startup CPG
+    <- Sprouts Farmers Market (via Startup CPG)
+    <- Startup CPG / Sprouts
+    <- Startup CPG — retailer grocery runs & buyer meetings
+    <- StartupCPG
+The Fresh Market
+    <- Jack's Market (Superfresh Market)
+The Goods Mart
+    <- The Goods Mart (retailer) / Krupa Consulting (PR)
+The Shelf
+    <- The Shelf (Miami / NYC)
+    <- The Shelf (Pop-Up)
+    <- The Shelf (The Shelf NYC / theshelfmiami.com)
+UNFI
+    <- Mohegan Sun (venue for UNFI East Holiday & Winter Selling Show)
+    <- Startup CPG (representing UNFI)
+    <- UNFI (UpNext program)
+    <- UNFI (UpNext)
+    <- UNFI (account manager supporting the dairy/dip buyer at Wegmans)
+    <- UNFI (rep calling on The Winn-Dixie Company)
+    <- UNFI East Holiday & Winter Selling Show / Mohegan Sun
+    <- UNFI — East Inside Sales
+    <- UNFI — UpNext
+    <- UNFI — UpNext program
+Union Kitchen
+    <- Union Kitchen (1625 Eckington Place NE, Washington, DC 20002)
+Valley Roots
+    <- Fuel & Iron Realty (referrer) → Valley Roots (food hub / distributor)
+Wakefern / ShopRite
+    <- ShopRite
+    <- Village Super Market / Wakefern
+    <- Wakefern
+    <- Wakefern (procurement org for ShopRite)
+Walmart Canada
+    <- Walmart Canada (Wal-Mart Canada Corp.)
+Westside Market
+    <- W Market NYC
+Whole Foods Market
+    <- Amazon / Whole Foods Market
+    <- Whole Foods Market + Rainforest Distribution
+    <- Whole Foods Market / Amazon
+YBYD
+    <- YBYD (Your Brand Your Dream)
+e2p
+    <- e2p ('e2p Ecosystem' — exact business model not stated in threads; UNCERTAIN)
+
+DROPPED (no company / duplicate rows): 7

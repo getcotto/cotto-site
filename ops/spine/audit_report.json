@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-16",
+  "asOf": "2026-07-17",
   "findings": [
     {
       "sev": "🔴",
@@ -18,9 +18,9 @@
     {
       "sev": "🔴",
       "area": "Billing",
-      "title": "Delivered but NOT invoiced: $5030.22 (15 lines)",
-      "detail": "Farm & Forage Market $388.26; Olive & Oak $158.16; Butterfield - Lex $1346.40; Butterfield - Madison $1465.20; Meadow Lane $1276.80; Farm to People $395.40 — create these invoices in Settle.",
-      "impact": 5030.219999999999
+      "title": "Delivered but NOT invoiced: $8463.74 (31 lines)",
+      "detail": "Farm & Forage Market $388.26; Olive & Oak $158.16; Butterfield - Lex $2296.80; Butterfield - Madison $1940.40; Meadow Lane $2587.20; Farm to People $790.80; Happier Grocery $302.12 — create these invoices in Settle.",
+      "impact": 8463.739999999998
     },
     {
       "sev": "🟡",
@@ -100,13 +100,6 @@
       "impact": null
     },
     {
-      "sev": "🟡",
-      "area": "Freshness",
-      "title": "Spine may be stale (latest delivery 2026-07-13 = 3d ago, latest order 2026-07-02 = 14d ago)",
-      "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
-      "impact": null
-    },
-    {
       "sev": "✅",
       "area": "Open item",
       "title": "[Quality / Neighborly] Neighborly mislabel — Evan will relabel on their own (they have a label maker); NOT a red flag from Neighborly's side anymore",
@@ -117,6 +110,13 @@
       "sev": "✅",
       "area": "Inventory",
       "title": "On-hand: BUF 625 / FO 615 / GR 422 cs",
+      "detail": "",
+      "impact": null
+    },
+    {
+      "sev": "✅",
+      "area": "Freshness",
+      "title": "Spine fresh (latest event 2026-07-13, latest order 2026-07-17)",
       "detail": "",
       "impact": null
     }

@@ -1,0 +1,6833 @@
+[
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 400,
+  "review_name": "SUNCARE",
+  "review_start": "2025-06-27",
+  "cutoff": "2025-08-22",
+  "publish": "2025-12-26"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "VALENTINE",
+  "review_start": "2025-03-31",
+  "cutoff": "2025-05-10",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "EASTER",
+  "review_start": "2025-03-31",
+  "cutoff": "2025-05-10",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "LAWN & GARDEN",
+  "review_start": "2025-06-02",
+  "cutoff": "2025-07-25",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "SPRING",
+  "review_start": "2025-06-02",
+  "cutoff": "2025-07-25",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "SUMMER",
+  "review_start": "2025-06-02",
+  "cutoff": "2025-07-25",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 269,
+  "review_name": "HISPANIC CKWARE HEALTHTEX",
+  "review_start": "2025-07-18",
+  "cutoff": "2025-09-12",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 77,
+  "review_name": "BATH SOAP",
+  "review_start": "2025-07-18",
+  "cutoff": "2025-09-12",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 354,
+  "review_name": "HISPANIC COOKWARE IMUSA",
+  "review_start": "2025-07-18",
+  "cutoff": "2025-09-12",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 409,
+  "review_name": "BCS-HAND SOAP",
+  "review_start": "2025-07-18",
+  "cutoff": "2025-09-12",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 416,
+  "review_name": "NON-REF MEAT SNACK WEDGE",
+  "review_start": "2025-07-18",
+  "cutoff": "2025-09-12",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 442,
+  "review_name": "BCS BATH SOAP",
+  "review_start": "2025-07-18",
+  "cutoff": "2025-09-12",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 536,
+  "review_name": "PPL-NON-REF MEAT SNCK",
+  "review_start": "2025-07-18",
+  "cutoff": "2025-09-12",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 586,
+  "review_name": "MEAT-NON-REF MEAT SNCK",
+  "review_start": "2025-07-18",
+  "cutoff": "2025-09-12",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "BRADLEY FLOSITZ",
+  "rss": 589,
+  "review_name": "SCOTCH",
+  "review_start": "2025-07-18",
+  "cutoff": "2025-09-12",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 923,
+  "review_name": "SCO-NON REF MEAT SNCK",
+  "review_start": "2025-07-18",
+  "cutoff": "2025-09-12",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 321,
+  "review_name": "PROD-PRODUCE SNACKS",
+  "review_start": "2025-07-18",
+  "cutoff": "2025-09-12",
+  "publish": "2026-01-02"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "RYAN CALCUTTI",
+  "rss": 69,
+  "review_name": "YOGURT/CULTURE",
+  "review_start": "2025-06-13",
+  "cutoff": "2025-08-08",
+  "publish": "2026-01-03"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 11,
+  "review_name": "SHAMP/COND/STYLING",
+  "review_start": "2025-07-25",
+  "cutoff": "2025-09-19",
+  "publish": "2026-01-09"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 19,
+  "review_name": "DELI-SPECIALTY CHEESE",
+  "review_start": "2025-07-25",
+  "cutoff": "2025-09-19",
+  "publish": "2026-01-09"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 20,
+  "review_name": "PROFESSIONAL HAIR CARE",
+  "review_start": "2025-07-25",
+  "cutoff": "2025-09-19",
+  "publish": "2026-01-09"
+ },
+ {
+  "cat_mgr": "DARRELL PILIEGO",
+  "contact": "ALEX MICKENBERG",
+  "rss": 627,
+  "review_name": "PROD-SPECIALTY",
+  "review_start": "2025-07-25",
+  "cutoff": "2025-09-19",
+  "publish": "2026-01-09"
+ },
+ {
+  "cat_mgr": "WESLEY REESE",
+  "contact": "KEITH MACDONALD",
+  "rss": 538,
+  "review_name": "PROD-CHILLED JUICE",
+  "review_start": "2025-07-25",
+  "cutoff": "2025-09-19",
+  "publish": "2026-01-09"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 243,
+  "review_name": "BAKEWARE, GLASS",
+  "review_start": "2025-08-01",
+  "cutoff": "2025-09-26",
+  "publish": "2026-01-16"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 598,
+  "review_name": "GLAS-METAL-FOIL BAK COMBO",
+  "review_start": "2025-08-01",
+  "cutoff": "2025-09-26",
+  "publish": "2026-01-16"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 242,
+  "review_name": "BAKEWARE, FOIL",
+  "review_start": "2025-08-01",
+  "cutoff": "2025-09-26",
+  "publish": "2026-01-16"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "CHAD SHOEMAKER",
+  "rss": 102,
+  "review_name": "ENHANCED WATER",
+  "review_start": "2025-08-01",
+  "cutoff": "2025-09-26",
+  "publish": "2026-01-16"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "CHAD SHOEMAKER",
+  "rss": 103,
+  "review_name": "SPARKLING WATER",
+  "review_start": "2025-08-01",
+  "cutoff": "2025-09-26",
+  "publish": "2026-01-16"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "CHUCK REED",
+  "rss": 128,
+  "review_name": "BAGGED SNACKS",
+  "review_start": "2025-08-01",
+  "cutoff": "2025-09-26",
+  "publish": "2026-01-16"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "CHUCK REED",
+  "rss": 223,
+  "review_name": "CANISTER SNACKS",
+  "review_start": "2025-08-01",
+  "cutoff": "2025-09-26",
+  "publish": "2026-01-16"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 303,
+  "review_name": "PREMIUM COOKIE/CRACKER",
+  "review_start": "2025-08-01",
+  "cutoff": "2025-09-26",
+  "publish": "2026-01-16"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "CHUCK REED",
+  "rss": 628,
+  "review_name": "CMB-BAG/CANISTER",
+  "review_start": "2025-08-01",
+  "cutoff": "2025-09-26",
+  "publish": "2026-01-16"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 918,
+  "review_name": "CMB-POOL CHEM/WATER SOFTN",
+  "review_start": "2025-08-01",
+  "cutoff": "2025-09-26",
+  "publish": "2026-01-16"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 309,
+  "review_name": "PUBLIX/SPECIALTY CSD",
+  "review_start": "2025-07-25",
+  "cutoff": "2025-09-19",
+  "publish": "2026-01-23"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 958,
+  "review_name": "GRANOLA",
+  "review_start": "2025-08-08",
+  "cutoff": "2025-10-03",
+  "publish": "2026-01-23"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 134,
+  "review_name": "CEREAL RTE",
+  "review_start": "2025-08-08",
+  "cutoff": "2025-10-03",
+  "publish": "2026-01-23"
+ },
+ {
+  "cat_mgr": "ALI POLAT",
+  "contact": "ANGELOT PAUL",
+  "rss": 800,
+  "review_name": "DELI-TEA/LEMONADE",
+  "review_start": "2025-08-08",
+  "cutoff": "2025-10-03",
+  "publish": "2026-01-23"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "RYAN CALCUTTI",
+  "rss": 474,
+  "review_name": "MILK & MILK ALTERNATIVES",
+  "review_start": "2025-08-08",
+  "cutoff": "2025-10-03",
+  "publish": "2026-01-23"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "RYAN CALCUTTI",
+  "rss": 560,
+  "review_name": "CREAMERS & HALF N HALF",
+  "review_start": "2025-08-08",
+  "cutoff": "2025-10-03",
+  "publish": "2026-01-23"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 82,
+  "review_name": "INSECTICIDE",
+  "review_start": "2025-08-08",
+  "cutoff": "2025-10-03",
+  "publish": "2026-01-23"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "DARRELL LAMOUREUX",
+  "rss": 122,
+  "review_name": "SUGAR & SUGAR SUBSTITUTES",
+  "review_start": "2025-08-08",
+  "cutoff": "2025-10-03",
+  "publish": "2026-01-23"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "RICK TURP",
+  "rss": 676,
+  "review_name": "LOCK BOX WINE",
+  "review_start": "2025-08-08",
+  "cutoff": "2025-10-03",
+  "publish": "2026-01-23"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "RICK TURP",
+  "rss": 678,
+  "review_name": "LS - LOCK BOX WINE",
+  "review_start": "2025-08-08",
+  "cutoff": "2025-10-03",
+  "publish": "2026-01-23"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "JAMES WILSON",
+  "rss": 159,
+  "review_name": "SALAD DRESSINGS/CROUTONS",
+  "review_start": "2025-08-08",
+  "cutoff": "2025-10-03",
+  "publish": "2026-01-23"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 428,
+  "review_name": "MEAT-IQF MEAT",
+  "review_start": "2025-08-15",
+  "cutoff": "2025-10-10",
+  "publish": "2026-01-30"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 818,
+  "review_name": "MEAT-FRZN MEAT-KOSHER CPG",
+  "review_start": "2025-08-15",
+  "cutoff": "2025-10-10",
+  "publish": "2026-01-30"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 75,
+  "review_name": "AIR FRESHENER",
+  "review_start": "2025-08-15",
+  "cutoff": "2025-10-10",
+  "publish": "2026-01-30"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 423,
+  "review_name": "MEAT-FROZEN GRILLING",
+  "review_start": "2025-08-15",
+  "cutoff": "2025-10-10",
+  "publish": "2026-01-30"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 425,
+  "review_name": "MEAT-IQF POULTRY",
+  "review_start": "2025-08-15",
+  "cutoff": "2025-10-10",
+  "publish": "2026-01-30"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "SCOTT GIFFORD",
+  "rss": 592,
+  "review_name": "RUM",
+  "review_start": "2025-08-15",
+  "cutoff": "2025-10-10",
+  "publish": "2026-01-30"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "TERRY ADAMSON",
+  "rss": 285,
+  "review_name": "CONVENTIONAL/PREM ICE CRM",
+  "review_start": "2025-08-22",
+  "cutoff": "2025-10-17",
+  "publish": "2026-02-06"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 620,
+  "review_name": "TRADITIONAL BREW COFFEE",
+  "review_start": "2025-08-22",
+  "cutoff": "2025-10-17",
+  "publish": "2026-02-06"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 19,
+  "review_name": "CHEESE-GOAT/FETA/BLUE",
+  "review_start": "2025-08-22",
+  "cutoff": "2025-10-17",
+  "publish": "2026-02-06"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 173,
+  "review_name": "NAPKINS",
+  "review_start": "2025-08-22",
+  "cutoff": "2025-10-17",
+  "publish": "2026-02-06"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 175,
+  "review_name": "PLATES/CUPS",
+  "review_start": "2025-08-22",
+  "cutoff": "2025-10-17",
+  "publish": "2026-02-06"
+ },
+ {
+  "cat_mgr": "DAVID PAGAN",
+  "contact": "MIGUEL URENA",
+  "rss": 198,
+  "review_name": "CARIBBEAN HISPANIC",
+  "review_start": "2025-08-22",
+  "cutoff": "2025-10-17",
+  "publish": "2026-02-06"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 350,
+  "review_name": "ONE CUP BREW",
+  "review_start": "2025-08-22",
+  "cutoff": "2025-10-17",
+  "publish": "2026-02-06"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 619,
+  "review_name": "INSTANT COFFEE",
+  "review_start": "2025-08-22",
+  "cutoff": "2025-10-17",
+  "publish": "2026-02-06"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 621,
+  "review_name": "PREMIUM BAG COFFEE",
+  "review_start": "2025-08-22",
+  "cutoff": "2025-10-17",
+  "publish": "2026-02-06"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 80,
+  "review_name": "DISH DETERGENT",
+  "review_start": "2025-08-22",
+  "cutoff": "2025-10-17",
+  "publish": "2026-02-06"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 85,
+  "review_name": "SCRUB PADS",
+  "review_start": "2025-08-22",
+  "cutoff": "2025-10-17",
+  "publish": "2026-02-06"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 475,
+  "review_name": "DISH/SCRUB COMBO",
+  "review_start": "2025-08-22",
+  "cutoff": "2025-10-17",
+  "publish": "2026-02-06"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "TERRY ADAMSON",
+  "rss": 286,
+  "review_name": "SPECIALTY ICE CREAM",
+  "review_start": "2025-08-29",
+  "cutoff": "2025-10-24",
+  "publish": "2026-02-13"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 34,
+  "review_name": "FOOT CARE",
+  "review_start": "2025-08-29",
+  "cutoff": "2025-10-24",
+  "publish": "2026-02-13"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 380,
+  "review_name": "MAYBELLINE",
+  "review_start": "2025-08-29",
+  "cutoff": "2025-10-24",
+  "publish": "2026-02-13"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 381,
+  "review_name": "REVLON",
+  "review_start": "2025-08-29",
+  "cutoff": "2025-10-24",
+  "publish": "2026-02-13"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 382,
+  "review_name": "MILANI",
+  "review_start": "2025-08-29",
+  "cutoff": "2025-10-24",
+  "publish": "2026-02-13"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 385,
+  "review_name": "ALMAY",
+  "review_start": "2025-08-29",
+  "cutoff": "2025-10-24",
+  "publish": "2026-02-13"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 387,
+  "review_name": "L'OREAL",
+  "review_start": "2025-08-29",
+  "cutoff": "2025-10-24",
+  "publish": "2026-02-13"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 435,
+  "review_name": "ELF",
+  "review_start": "2025-08-29",
+  "cutoff": "2025-10-24",
+  "publish": "2026-02-13"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 529,
+  "review_name": "MEAT-READY TO HEAT",
+  "review_start": "2025-08-29",
+  "cutoff": "2025-10-24",
+  "publish": "2026-02-13"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 669,
+  "review_name": "PPL-MINERAL FUSIONS",
+  "review_start": "2025-08-29",
+  "cutoff": "2025-10-24",
+  "publish": "2026-02-13"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 93,
+  "review_name": "CANADA DRY/RC",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "MATT LUCAS",
+  "rss": 41,
+  "review_name": "MULTI SERVE JUICE",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 88,
+  "review_name": "COCA-COLA",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 91,
+  "review_name": "PEPSI",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 93,
+  "review_name": "7UP",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 185,
+  "review_name": "DOG TREATS",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "JAMES WILSON",
+  "rss": 196,
+  "review_name": "LATIN/VIN/SAUCES/MARINADE",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "ERIN AVELLA",
+  "rss": 209,
+  "review_name": "SINGLE SERVE WINES",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 275,
+  "review_name": "STATIONERY/SCHOOL SUPPLIE",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 338,
+  "review_name": "ART/CRAFT",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 346,
+  "review_name": "RAWHIDE",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 352,
+  "review_name": "MAILING CENTER",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 355,
+  "review_name": "EDUCATION/ACTIVITY",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "MATT LUCAS",
+  "rss": 378,
+  "review_name": "HISPANIC JUICE",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 632,
+  "review_name": "DOG TREATS/RAWHIDE",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "ERIN AVELLA",
+  "rss": 674,
+  "review_name": "LS - SINGLE SERVE WINES",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "MATT BAILEY",
+  "rss": 675,
+  "review_name": "COLD WINE",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "JAMES WILSON",
+  "rss": 65,
+  "review_name": "COOKING CONDIMENTS",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "ZACH PRINZI",
+  "rss": 639,
+  "review_name": "CANDY N LINE WITH PUSHERS",
+  "review_start": "2025-09-05",
+  "cutoff": "2025-10-31",
+  "publish": "2026-02-20"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 999,
+  "review_name": "PASSOVER",
+  "review_start": "2025-06-19",
+  "cutoff": "2025-09-01",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 233,
+  "review_name": "FISHING EQUIPMENT",
+  "review_start": "2025-07-28",
+  "cutoff": "2025-09-01",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 247,
+  "review_name": "BEACH SUPPLIES",
+  "review_start": "2025-07-28",
+  "cutoff": "2025-09-01",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 710,
+  "review_name": "POOL SUPPLIES",
+  "review_start": "2025-07-28",
+  "cutoff": "2025-09-01",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 14,
+  "review_name": "FEMININE HYGIENE",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "MIKE PALESTRINI",
+  "contact": "MEAGAN NICHOLS",
+  "rss": 142,
+  "review_name": "FLAVORED ADULT BEVERAGES",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 157,
+  "review_name": "TOPPINGS/CONES (END CAP)",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "MIKE PALESTRINI",
+  "contact": "SCOTT COURTNEY",
+  "rss": 217,
+  "review_name": "MAINSTREAM BEER",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "MIKE PALESTRINI",
+  "contact": "MEAGAN NICHOLS",
+  "rss": 218,
+  "review_name": "IMPORT BEER",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "MIKE PALESTRINI",
+  "contact": "BRENT PROPST",
+  "rss": 222,
+  "review_name": "CRAFT BEER",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 340,
+  "review_name": "WINE ACCESSORIES",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 348,
+  "review_name": "FAMILY PLANNING",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "SCOTT GIFFORD",
+  "rss": 612,
+  "review_name": "LIQUOR PRE-MIX DRINKS",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 761,
+  "review_name": "WINE ACCES POWER PANEL",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 302,
+  "review_name": "COOKIES",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "ERIC STEINBACH",
+  "rss": 108,
+  "review_name": "SWEET GOODS",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "WESLEY REESE",
+  "contact": "KEITH MACDONALD",
+  "rss": 622,
+  "review_name": "PROD-HPP HEALTHY BEVERAGE",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "CHUCK REED",
+  "rss": 213,
+  "review_name": "RICE CAKES",
+  "review_start": "2025-09-12",
+  "cutoff": "2025-11-07",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "JOHN CRAIG",
+  "contact": "J.P. PORTUONDO",
+  "rss": 575,
+  "review_name": "RTC VENDOR PREP",
+  "review_start": "2025-12-31",
+  "cutoff": "2026-01-31",
+  "publish": "2026-02-27"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 25,
+  "review_name": "SPORTS NUTRITION",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 651,
+  "review_name": "BCS-FUNCTIONAL FOODS",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 650,
+  "review_name": "BCS-NUTRITIONAL BEVERAGES",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 411,
+  "review_name": "BCS-PROTIN POWDERS",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 412,
+  "review_name": "BCS-NATRL SPORT NUTRITION",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 24,
+  "review_name": "WEIGHT CONTROL",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 990,
+  "review_name": "SALTY 3.1/GRIPPO/MIKESELL",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 221,
+  "review_name": "SALTY 4/WISE/CAPE/SNYDER",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 374,
+  "review_name": "SALTY 2/FRITO LAY",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 987,
+  "review_name": "SALTY 1/FRITO LAY",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 988,
+  "review_name": "SALTY 2.1/GOLDEN FLAKE",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 989,
+  "review_name": "SALTY 3/UTZ/PUBLIX/TAKIS",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 184,
+  "review_name": "DELI-OLIVES",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "ALI POLAT",
+  "contact": "RACHEL SANTOS",
+  "rss": 40,
+  "review_name": "SELF SERVICE MISC ITEMS",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "DAVID PAGAN",
+  "contact": "MIGUEL URENA",
+  "rss": 459,
+  "review_name": "CAJUN",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 13,
+  "review_name": "DEODORANT",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "DARRELL PILIEGO",
+  "contact": "BRIAN HULL",
+  "rss": 205,
+  "review_name": "PROD-FRESH PACK VEGETABLE",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "DARRELL LAMOUREUX",
+  "rss": 317,
+  "review_name": "FLOUR/MEALS/COATING",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "JEFF BOGGS",
+  "contact": "GARY HARVEY",
+  "rss": 548,
+  "review_name": "PROD-CARROTS & CELERY",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 584,
+  "review_name": "MEAT-CHEESE SHREDS",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "DARRELL PILIEGO",
+  "contact": "BRIAN HULL",
+  "rss": 959,
+  "review_name": "PROD-CMB-FRSH PCK/BLK VEG",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 135,
+  "review_name": "BREAKFAST BARS",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 316,
+  "review_name": "CMB-SPRTS NUTR/WEIGT CTRL",
+  "review_start": "2025-09-19",
+  "cutoff": "2025-11-14",
+  "publish": "2026-03-06"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "GARY HART",
+  "rss": 574,
+  "review_name": "LOCAL-GA",
+  "review_start": "2025-09-26",
+  "cutoff": "2025-11-21",
+  "publish": "2026-03-13"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "TERRY ADAMSON",
+  "rss": 287,
+  "review_name": "FROZEN NOVELTIES",
+  "review_start": "2025-10-03",
+  "cutoff": "2025-11-28",
+  "publish": "2026-03-20"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 29,
+  "review_name": "FIRST AID",
+  "review_start": "2025-10-03",
+  "cutoff": "2025-11-28",
+  "publish": "2026-03-20"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 37,
+  "review_name": "THERAPEUTIC",
+  "review_start": "2025-10-03",
+  "cutoff": "2025-11-28",
+  "publish": "2026-03-20"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 38,
+  "review_name": "WRAPS/BRACES",
+  "review_start": "2025-10-03",
+  "cutoff": "2025-11-28",
+  "publish": "2026-03-20"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 168,
+  "review_name": "CHARCOAL/FIRE LOGS",
+  "review_start": "2025-10-03",
+  "cutoff": "2025-11-28",
+  "publish": "2026-03-20"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 301,
+  "review_name": "CRACKERS",
+  "review_start": "2025-10-03",
+  "cutoff": "2025-11-28",
+  "publish": "2026-03-20"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 461,
+  "review_name": "MINDFUL SNACKING",
+  "review_start": "2025-10-03",
+  "cutoff": "2025-11-28",
+  "publish": "2026-03-20"
+ },
+ {
+  "cat_mgr": "DARRELL PILIEGO",
+  "contact": "DUSTIN MYERS",
+  "rss": 559,
+  "review_name": "PROD-ORGANIC SALADS",
+  "review_start": "2025-10-03",
+  "cutoff": "2025-11-28",
+  "publish": "2026-03-20"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 953,
+  "review_name": "PP-WRAPS/BRACES",
+  "review_start": "2025-10-03",
+  "cutoff": "2025-11-28",
+  "publish": "2026-03-20"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 137,
+  "review_name": "PANCAKE SYRUP/MIX",
+  "review_start": "2025-10-10",
+  "cutoff": "2025-12-05",
+  "publish": "2026-03-27"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "JAMES WILSON",
+  "rss": 161,
+  "review_name": "MAYONNAISE/MUSTARD",
+  "review_start": "2025-10-10",
+  "cutoff": "2025-12-05",
+  "publish": "2026-03-27"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 282,
+  "review_name": "FROZEN FAMILY",
+  "review_start": "2025-10-10",
+  "cutoff": "2025-12-05",
+  "publish": "2026-03-27"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "BRADLEY FLOSITZ",
+  "rss": 591,
+  "review_name": "TEQUILA",
+  "review_start": "2025-10-10",
+  "cutoff": "2025-12-05",
+  "publish": "2026-03-27"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "MATT BAILEY",
+  "rss": 607,
+  "review_name": "WHITE",
+  "review_start": "2025-10-10",
+  "cutoff": "2025-12-05",
+  "publish": "2026-03-27"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "CHAD SHOEMAKER",
+  "rss": 815,
+  "review_name": "RTD TEA/RTD COFFEE",
+  "review_start": "2025-10-10",
+  "cutoff": "2025-12-05",
+  "publish": "2026-03-27"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "CHAD SHOEMAKER",
+  "rss": 816,
+  "review_name": "ENERGY",
+  "review_start": "2025-10-10",
+  "cutoff": "2025-12-05",
+  "publish": "2026-03-27"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 826,
+  "review_name": "CHAPSTICK POWER PANEL",
+  "review_start": "2025-10-10",
+  "cutoff": "2025-12-05",
+  "publish": "2026-03-27"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 83,
+  "review_name": "LAUNDRY DETERGENT",
+  "review_start": "2025-10-17",
+  "cutoff": "2025-12-12",
+  "publish": "2026-04-03"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 305,
+  "review_name": "ON THE GO",
+  "review_start": "2025-10-17",
+  "cutoff": "2025-12-12",
+  "publish": "2026-04-03"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 35,
+  "review_name": "ORAL CARE-COMBO",
+  "review_start": "2025-10-17",
+  "cutoff": "2025-12-12",
+  "publish": "2026-04-03"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 86,
+  "review_name": "FURNITURE/FLOOR CARE",
+  "review_start": "2025-10-17",
+  "cutoff": "2025-12-12",
+  "publish": "2026-04-03"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "JAMES KREBS",
+  "rss": 147,
+  "review_name": "PASTA SIDE DISH",
+  "review_start": "2025-10-17",
+  "cutoff": "2025-12-12",
+  "publish": "2026-04-03"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 418,
+  "review_name": "ORAL CARE-MOUTHWASH",
+  "review_start": "2025-10-17",
+  "cutoff": "2025-12-12",
+  "publish": "2026-04-03"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 419,
+  "review_name": "ORAL CARE-FLOSS/DENTURE",
+  "review_start": "2025-10-17",
+  "cutoff": "2025-12-12",
+  "publish": "2026-04-03"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 421,
+  "review_name": "ORAL CARE-TOOTHBRUSHES",
+  "review_start": "2025-10-17",
+  "cutoff": "2025-12-12",
+  "publish": "2026-04-03"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 422,
+  "review_name": "ORAL CARE-TOOTHPASTE",
+  "review_start": "2025-10-17",
+  "cutoff": "2025-12-12",
+  "publish": "2026-04-03"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 23,
+  "review_name": "ADULT NUTRITION",
+  "review_start": "2025-10-24",
+  "cutoff": "2025-12-19",
+  "publish": "2026-04-10"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 28,
+  "review_name": "DIABETIC",
+  "review_start": "2025-10-24",
+  "cutoff": "2025-12-19",
+  "publish": "2026-04-10"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 186,
+  "review_name": "SHOES",
+  "review_start": "2025-10-24",
+  "cutoff": "2025-12-19",
+  "publish": "2026-04-10"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 225,
+  "review_name": "APPAREL/DSD",
+  "review_start": "2025-10-24",
+  "cutoff": "2025-12-19",
+  "publish": "2026-04-10"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 631,
+  "review_name": "CMB-ADLT NUTR/WGHT CNTRL",
+  "review_start": "2025-10-24",
+  "cutoff": "2025-12-19",
+  "publish": "2026-04-10"
+ },
+ {
+  "cat_mgr": "DARRELL PILIEGO",
+  "contact": "ALEX MICKENBERG",
+  "rss": 627,
+  "review_name": "PROD-SPECIALTY",
+  "review_start": "2025-10-24",
+  "cutoff": "2025-12-19",
+  "publish": "2026-04-10"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 397,
+  "review_name": "BABY HEALTH CARE",
+  "review_start": "2025-10-24",
+  "cutoff": "2025-12-19",
+  "publish": "2026-04-10"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 496,
+  "review_name": "BABY HEALTH CARE - RX",
+  "review_start": "2025-10-24",
+  "cutoff": "2025-12-19",
+  "publish": "2026-04-10"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 71,
+  "review_name": "BABY FOOD",
+  "review_start": "2025-10-24",
+  "cutoff": "2025-12-19",
+  "publish": "2026-04-10"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "TERRY ADAMSON",
+  "rss": 344,
+  "review_name": "EGGS",
+  "review_start": "2025-10-31",
+  "cutoff": "2025-12-26",
+  "publish": "2026-04-17"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 15,
+  "review_name": "ADULT CARE",
+  "review_start": "2025-10-31",
+  "cutoff": "2025-12-26",
+  "publish": "2026-04-17"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "JAMES WILSON",
+  "rss": 160,
+  "review_name": "KETCHUP/SAUCES/BBQ",
+  "review_start": "2025-10-31",
+  "cutoff": "2025-12-26",
+  "publish": "2026-04-17"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 526,
+  "review_name": "CMB-FEM HY/INCONTINENCE",
+  "review_start": "2025-10-31",
+  "cutoff": "2025-12-26",
+  "publish": "2026-04-17"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 633,
+  "review_name": "MEAT-BACON/BREAKFAST",
+  "review_start": "2025-10-31",
+  "cutoff": "2025-12-26",
+  "publish": "2026-04-17"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "JIMMY MCCAULEY",
+  "rss": 115,
+  "review_name": "CHECKSTAND PEG CANDY",
+  "review_start": "2025-10-31",
+  "cutoff": "2025-12-26",
+  "publish": "2026-04-17"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "JIMMY MCCAULEY",
+  "rss": 624,
+  "review_name": "THEATRE BOX WEDGE",
+  "review_start": "2025-10-31",
+  "cutoff": "2025-12-26",
+  "publish": "2026-04-17"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "LAWN & GARDEN",
+  "review_start": "2025-04-30",
+  "cutoff": "2025-06-27",
+  "publish": "2026-04-24"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "SPRING",
+  "review_start": "2025-04-30",
+  "cutoff": "2025-06-27",
+  "publish": "2026-04-24"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "SUMMER",
+  "review_start": "2025-04-30",
+  "cutoff": "2025-06-27",
+  "publish": "2026-04-24"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "DARRELL LAMOUREUX",
+  "rss": 490,
+  "review_name": "BAKING INGREDIENTS",
+  "review_start": "2025-11-07",
+  "cutoff": "2026-01-02",
+  "publish": "2026-04-24"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 174,
+  "review_name": "PAPER TOWELS",
+  "review_start": "2025-11-07",
+  "cutoff": "2026-01-02",
+  "publish": "2026-04-24"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 447,
+  "review_name": "FROZEN DINNER/ENTREE",
+  "review_start": "2025-11-07",
+  "cutoff": "2026-01-02",
+  "publish": "2026-04-24"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "SCOTT GIFFORD",
+  "rss": 587,
+  "review_name": "VODKA",
+  "review_start": "2025-11-07",
+  "cutoff": "2026-01-02",
+  "publish": "2026-04-24"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "STAN TUTEN",
+  "rss": 294,
+  "review_name": "FROZEN PIZZA",
+  "review_start": "2025-11-07",
+  "cutoff": "2026-01-02",
+  "publish": "2026-04-24"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "STAN TUTEN",
+  "rss": 296,
+  "review_name": "FROZEN SNACKS",
+  "review_start": "2025-11-07",
+  "cutoff": "2026-01-02",
+  "publish": "2026-04-24"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "STAN TUTEN",
+  "rss": 332,
+  "review_name": "FROZEN APPETIZERS",
+  "review_start": "2025-11-07",
+  "cutoff": "2026-01-02",
+  "publish": "2026-04-24"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 321,
+  "review_name": "PROD-PRODUCE SNACKS",
+  "review_start": "2025-11-14",
+  "cutoff": "2026-01-09",
+  "publish": "2026-05-01"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 73,
+  "review_name": "INFANT FORMULA",
+  "review_start": "2025-11-14",
+  "cutoff": "2026-01-09",
+  "publish": "2026-05-01"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 180,
+  "review_name": "REFRIGERATED PET FOODS",
+  "review_start": "2025-11-14",
+  "cutoff": "2026-01-09",
+  "publish": "2026-05-01"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 215,
+  "review_name": "DELI-DELI BREAD",
+  "review_start": "2025-11-14",
+  "cutoff": "2026-01-09",
+  "publish": "2026-05-01"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 367,
+  "review_name": "NATURAL SALTY SNACKS",
+  "review_start": "2025-11-14",
+  "cutoff": "2026-01-09",
+  "publish": "2026-05-01"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 265,
+  "review_name": "KITCHEN TOWELS",
+  "review_start": "2025-11-14",
+  "cutoff": "2026-01-09",
+  "publish": "2026-05-01"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 671,
+  "review_name": "KITCHEN TOWELS PEG",
+  "review_start": "2025-11-14",
+  "cutoff": "2026-01-09",
+  "publish": "2026-05-01"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "JAMES KREBS",
+  "rss": 18,
+  "review_name": "SHELF STABLE CHEESE",
+  "review_start": "2025-11-21",
+  "cutoff": "2026-01-16",
+  "publish": "2026-05-08"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "JAMES KREBS",
+  "rss": 59,
+  "review_name": "PASTA SAUCE",
+  "review_start": "2025-11-21",
+  "cutoff": "2026-01-16",
+  "publish": "2026-05-08"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "CHAD SHOEMAKER",
+  "rss": 101,
+  "review_name": "BASE WATER",
+  "review_start": "2025-11-21",
+  "cutoff": "2026-01-16",
+  "publish": "2026-05-08"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "MATT LUCAS",
+  "rss": 43,
+  "review_name": "FLAVORED WATER ENHANCERS",
+  "review_start": "2025-11-21",
+  "cutoff": "2026-01-16",
+  "publish": "2026-05-08"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "MATT LUCAS",
+  "rss": 130,
+  "review_name": "SINGLE SERVE JUICE",
+  "review_start": "2025-11-21",
+  "cutoff": "2026-01-16",
+  "publish": "2026-05-08"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "ERIC STEINBACH",
+  "rss": 156,
+  "review_name": "PEANUT BUTTER/JELLY",
+  "review_start": "2025-11-21",
+  "cutoff": "2026-01-16",
+  "publish": "2026-05-08"
+ },
+ {
+  "cat_mgr": "WESLEY REESE",
+  "contact": "TOMAS MARTINEZ",
+  "rss": 314,
+  "review_name": "PROD-HERBS & MUSHROOMS",
+  "review_start": "2025-11-21",
+  "cutoff": "2026-01-16",
+  "publish": "2026-05-08"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 72,
+  "review_name": "DIAPERS",
+  "review_start": "2025-11-28",
+  "cutoff": "2026-01-23",
+  "publish": "2026-05-15"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 74,
+  "review_name": "BABY WIPES",
+  "review_start": "2025-11-28",
+  "cutoff": "2026-01-23",
+  "publish": "2026-05-15"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 31,
+  "review_name": "PAIN",
+  "review_start": "2025-11-28",
+  "cutoff": "2026-01-23",
+  "publish": "2026-05-15"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 482,
+  "review_name": "HISPANIC OTC/PERSON CARE",
+  "review_start": "2025-11-28",
+  "cutoff": "2026-01-23",
+  "publish": "2026-05-15"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "RICK TURP",
+  "rss": 608,
+  "review_name": "RED/BOX",
+  "review_start": "2025-11-28",
+  "cutoff": "2026-01-23",
+  "publish": "2026-05-15"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 453,
+  "review_name": "HISP CARIB OTC",
+  "review_start": "2025-11-28",
+  "cutoff": "2026-01-23",
+  "publish": "2026-05-15"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 8,
+  "review_name": "PROD-NUTS",
+  "review_start": "2025-11-28",
+  "cutoff": "2026-01-23",
+  "publish": "2026-05-15"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 58,
+  "review_name": "PROD-PEANUTS",
+  "review_start": "2025-11-28",
+  "cutoff": "2026-01-23",
+  "publish": "2026-05-15"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 62,
+  "review_name": "PROD-ALMNDS/WALNTS/PECANS",
+  "review_start": "2025-11-28",
+  "cutoff": "2026-01-23",
+  "publish": "2026-05-15"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 76,
+  "review_name": "ALL PURPOSE CLEANER",
+  "review_start": "2025-12-05",
+  "cutoff": "2026-01-30",
+  "publish": "2026-05-22"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "BRIAN CAHILL",
+  "rss": 140,
+  "review_name": "POTATO/STUFFING/GRAVY",
+  "review_start": "2025-12-05",
+  "cutoff": "2026-01-30",
+  "publish": "2026-05-22"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 295,
+  "review_name": "FROZEN POT PIE",
+  "review_start": "2025-12-05",
+  "cutoff": "2026-01-30",
+  "publish": "2026-05-22"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 324,
+  "review_name": "FROZEN SKILLET MEALS",
+  "review_start": "2025-12-05",
+  "cutoff": "2026-01-30",
+  "publish": "2026-05-22"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 325,
+  "review_name": "FROZEN PASTA",
+  "review_start": "2025-12-05",
+  "cutoff": "2026-01-30",
+  "publish": "2026-05-22"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 396,
+  "review_name": "VITAMINS",
+  "review_start": "2025-12-05",
+  "cutoff": "2026-01-30",
+  "publish": "2026-05-22"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 384,
+  "review_name": "PPL-IMPLEMENTS",
+  "review_start": "2025-12-12",
+  "cutoff": "2026-02-06",
+  "publish": "2026-05-29"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 19,
+  "review_name": "CHEESE-MOZZARELLA/FRESH CHEESES",
+  "review_start": "2025-12-12",
+  "cutoff": "2026-02-06",
+  "publish": "2026-05-29"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 19,
+  "review_name": "CHEESE-SPREADS/SNACKING",
+  "review_start": "2025-12-12",
+  "cutoff": "2026-02-06",
+  "publish": "2026-05-29"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 187,
+  "review_name": "BIRD",
+  "review_start": "2025-12-12",
+  "cutoff": "2026-02-06",
+  "publish": "2026-05-29"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 12,
+  "review_name": "COTTON",
+  "review_start": "2025-12-12",
+  "cutoff": "2026-02-06",
+  "publish": "2026-05-29"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 120,
+  "review_name": "HISPANIC GALLETA/TOAST",
+  "review_start": "2025-12-12",
+  "cutoff": "2026-02-06",
+  "publish": "2026-05-29"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 121,
+  "review_name": "HISPANC COOKIE/CRKS/TOAST",
+  "review_start": "2025-12-12",
+  "cutoff": "2026-02-06",
+  "publish": "2026-05-29"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 188,
+  "review_name": "PET SUPPLIES",
+  "review_start": "2025-12-12",
+  "cutoff": "2026-02-06",
+  "publish": "2026-05-29"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 189,
+  "review_name": "PET TOYS",
+  "review_start": "2025-12-12",
+  "cutoff": "2026-02-06",
+  "publish": "2026-05-29"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 384,
+  "review_name": "IMPLEMENTS",
+  "review_start": "2025-12-12",
+  "cutoff": "2026-02-06",
+  "publish": "2026-05-29"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 604,
+  "review_name": "BIRD/PET SUPPLIES/PE TOYS",
+  "review_start": "2025-12-12",
+  "cutoff": "2026-02-06",
+  "publish": "2026-05-29"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 618,
+  "review_name": "CMB-COTTON/IMPLEMENTS",
+  "review_start": "2025-12-12",
+  "cutoff": "2026-02-06",
+  "publish": "2026-05-29"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 172,
+  "review_name": "FACIAL TISSUE",
+  "review_start": "2025-12-12",
+  "cutoff": "2026-02-06",
+  "publish": "2026-05-29"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 358,
+  "review_name": "MEAT-CMB-FROZEN MEAT CPG",
+  "review_start": "2025-12-19",
+  "cutoff": "2026-02-13",
+  "publish": "2026-06-05"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 429,
+  "review_name": "MEAT-ENTREES MISC",
+  "review_start": "2025-12-19",
+  "cutoff": "2026-02-13",
+  "publish": "2026-06-05"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 518,
+  "review_name": "REUSABLE BAGS",
+  "review_start": "2025-12-19",
+  "cutoff": "2026-02-13",
+  "publish": "2026-06-05"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 519,
+  "review_name": "JHOOKS",
+  "review_start": "2025-12-19",
+  "cutoff": "2026-02-13",
+  "publish": "2026-06-05"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 535,
+  "review_name": "MEAT-FRZN BREAKFAST MEAT",
+  "review_start": "2025-12-19",
+  "cutoff": "2026-02-13",
+  "publish": "2026-06-05"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 916,
+  "review_name": "MEAT-FROZEN APPETIZERS",
+  "review_start": "2025-12-19",
+  "cutoff": "2026-02-13",
+  "publish": "2026-06-05"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 917,
+  "review_name": "MEAT-FRZN CHICKEN ENTREES",
+  "review_start": "2025-12-19",
+  "cutoff": "2026-02-13",
+  "publish": "2026-06-05"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 430,
+  "review_name": "MEAT-FRZN CHICKEN SPECLTY",
+  "review_start": "2025-12-19",
+  "cutoff": "2026-02-13",
+  "publish": "2026-06-05"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 805,
+  "review_name": "FE WEDGE-RAZOR BLADE CMB",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "ALI POLAT",
+  "contact": "ANGELOT PAUL",
+  "rss": 40,
+  "review_name": "DELI SALADS (HOME-STYLE)",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "TERRY ADAMSON",
+  "rss": 60,
+  "review_name": "CREAM CHEESE/BAGEL",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "RACHEL SANTOS",
+  "rss": 2,
+  "review_name": "DELI-PRE-PACK MEAT/CHEESE",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 6,
+  "review_name": "TEXTURED HAIR CARE",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 9,
+  "review_name": "HAIR COLOR",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 10,
+  "review_name": "TEXTURED HAIR ACCESSORIES",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 16,
+  "review_name": "SHAVING NEEDS",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 17,
+  "review_name": "RAZOR BLADES FRONT",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 26,
+  "review_name": "SPECIALTY BATH",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 376,
+  "review_name": "PARTY GOODS",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 403,
+  "review_name": "AROMATHERAPY PGM-HYBRID",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 456,
+  "review_name": "PPL-BATH ACCESSORIES",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "JOE MCCOY",
+  "rss": 596,
+  "review_name": "PROD-GRAB GO",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 613,
+  "review_name": "MEAT-LUNCHMEAT",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "MATT SPLIT",
+  "rss": 714,
+  "review_name": "PROD-GRAB & GO FRUIT",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "JOE MCCOY",
+  "rss": 715,
+  "review_name": "PROD-GRAB & GO SALADS",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 786,
+  "review_name": "PARTY GOODS SHADOW BOX",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 787,
+  "review_name": "PARTY GOODS RACK",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 963,
+  "review_name": "TBL-PREWRAPD BAR SOAP",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "MATT LUCAS",
+  "rss": 964,
+  "review_name": "APPLESAUCE",
+  "review_start": "2025-12-26",
+  "cutoff": "2026-02-20",
+  "publish": "2026-06-12"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 328,
+  "review_name": "FE COKE VISI COOLER",
+  "review_start": "2026-01-02",
+  "cutoff": "2026-02-27",
+  "publish": "2026-06-19"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 329,
+  "review_name": "FE PEPSI VISI COOLER",
+  "review_start": "2026-01-02",
+  "cutoff": "2026-02-27",
+  "publish": "2026-06-19"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 677,
+  "review_name": "SCO-BEVERAGE COOLER",
+  "review_start": "2026-01-02",
+  "cutoff": "2026-02-27",
+  "publish": "2026-06-19"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 821,
+  "review_name": "CV-SS BEVERAGE CASE",
+  "review_start": "2026-01-02",
+  "cutoff": "2026-02-27",
+  "publish": "2026-06-19"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "RYAN CALCUTTI",
+  "rss": 69,
+  "review_name": "YOGURT/CULTURE",
+  "review_start": "2026-01-02",
+  "cutoff": "2026-02-27",
+  "publish": "2026-06-19"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "ERIN AVELLA",
+  "rss": 610,
+  "review_name": "EVERYDAY/VALUE/SPECIALTY",
+  "review_start": "2026-01-02",
+  "cutoff": "2026-02-27",
+  "publish": "2026-06-19"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 625,
+  "review_name": "NUTRITION BAR WEDGE",
+  "review_start": "2026-01-02",
+  "cutoff": "2026-02-27",
+  "publish": "2026-06-19"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 135,
+  "review_name": "BREAKFAST BARS",
+  "review_start": "2026-01-02",
+  "cutoff": "2026-02-27",
+  "publish": "2026-06-19"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 134,
+  "review_name": "CEREAL RTE",
+  "review_start": "2026-01-02",
+  "cutoff": "2026-02-27",
+  "publish": "2026-06-19"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 958,
+  "review_name": "GRANOLA",
+  "review_start": "2026-01-02",
+  "cutoff": "2026-02-27",
+  "publish": "2026-06-19"
+ },
+ {
+  "cat_mgr": "ALI POLAT",
+  "contact": "RACHEL SANTOS",
+  "rss": 40,
+  "review_name": "HOLIDAY",
+  "review_start": "2026-01-16",
+  "cutoff": "2026-03-13",
+  "publish": "2026-07-03"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "TERRY ADAMSON",
+  "rss": 64,
+  "review_name": "MARGARINE/DOUGH",
+  "review_start": "2026-01-16",
+  "cutoff": "2026-03-13",
+  "publish": "2026-07-03"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 760,
+  "review_name": "TRASH BAGS",
+  "review_start": "2026-01-16",
+  "cutoff": "2026-03-13",
+  "publish": "2026-07-03"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 803,
+  "review_name": "FOILS AND BAGS",
+  "review_start": "2026-01-16",
+  "cutoff": "2026-03-13",
+  "publish": "2026-07-03"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "RACHEL SANTOS",
+  "rss": 4,
+  "review_name": "DELI-MEAT/CHEESE SERVICE",
+  "review_start": "2026-01-16",
+  "cutoff": "2026-03-13",
+  "publish": "2026-07-03"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "CHUCK REED",
+  "rss": 54,
+  "review_name": "DRIED FRUIT/SNACKS",
+  "review_start": "2026-01-16",
+  "cutoff": "2026-03-13",
+  "publish": "2026-07-03"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 170,
+  "review_name": "BAGS/WRAPS",
+  "review_start": "2026-01-16",
+  "cutoff": "2026-03-13",
+  "publish": "2026-07-03"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "BRADLEY FLOSITZ",
+  "rss": 432,
+  "review_name": "BOURBON/AMERICAN WHISKEY",
+  "review_start": "2026-01-23",
+  "cutoff": "2026-03-20",
+  "publish": "2026-07-10"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "BRADLEY FLOSITZ",
+  "rss": 433,
+  "review_name": "CANADIAN WHISKEY",
+  "review_start": "2026-01-23",
+  "cutoff": "2026-03-20",
+  "publish": "2026-07-10"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "BRADLEY FLOSITZ",
+  "rss": 590,
+  "review_name": "NORTH AMERICAN WHISKEY",
+  "review_start": "2026-01-23",
+  "cutoff": "2026-03-20",
+  "publish": "2026-07-10"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "BRIAN CAHILL",
+  "rss": 141,
+  "review_name": "RICE",
+  "review_start": "2026-01-23",
+  "cutoff": "2026-03-20",
+  "publish": "2026-07-10"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "BRIAN CAHILL",
+  "rss": 318,
+  "review_name": "RICE SIDE DISH",
+  "review_start": "2026-01-23",
+  "cutoff": "2026-03-20",
+  "publish": "2026-07-10"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "BRIAN CAHILL",
+  "rss": 603,
+  "review_name": "RICE/DRY BEAN",
+  "review_start": "2026-01-23",
+  "cutoff": "2026-03-20",
+  "publish": "2026-07-10"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 33,
+  "review_name": "EYE CARE",
+  "review_start": "2026-01-23",
+  "cutoff": "2026-03-20",
+  "publish": "2026-07-10"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "DARRELL LAMOUREUX",
+  "rss": 123,
+  "review_name": "CAKE DECORATIONS",
+  "review_start": "2026-01-23",
+  "cutoff": "2026-03-20",
+  "publish": "2026-07-10"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "DARRELL LAMOUREUX",
+  "rss": 124,
+  "review_name": "CAKE MIXES",
+  "review_start": "2026-01-23",
+  "cutoff": "2026-03-20",
+  "publish": "2026-07-10"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 457,
+  "review_name": "EYE CARE/COTTON COMBO",
+  "review_start": "2026-01-23",
+  "cutoff": "2026-03-20",
+  "publish": "2026-07-10"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "STAN TUTEN",
+  "rss": 281,
+  "review_name": "FROZEN BREAKFAST",
+  "review_start": "2026-01-30",
+  "cutoff": "2026-03-27",
+  "publish": "2026-07-17"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "GARY HART",
+  "rss": 165,
+  "review_name": "MEXICAN (AMERICAN)",
+  "review_start": "2026-01-30",
+  "cutoff": "2026-03-27",
+  "publish": "2026-07-17"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 614,
+  "review_name": "MEAT-REFRIGERATED SNACKS",
+  "review_start": "2026-01-30",
+  "cutoff": "2026-03-27",
+  "publish": "2026-07-17"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 46,
+  "review_name": "PROD-DRD FRUIT/FRUIT SQZE",
+  "review_start": "2026-01-30",
+  "cutoff": "2026-03-27",
+  "publish": "2026-07-17"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 66,
+  "review_name": "PROD-PRODUCE CHIPS",
+  "review_start": "2026-01-30",
+  "cutoff": "2026-03-27",
+  "publish": "2026-07-17"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 220,
+  "review_name": "PROD-PISTACHIOS",
+  "review_start": "2026-01-30",
+  "cutoff": "2026-03-27",
+  "publish": "2026-07-17"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 292,
+  "review_name": "FROZEN KOSHER",
+  "review_start": "2026-01-30",
+  "cutoff": "2026-03-27",
+  "publish": "2026-07-17"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 237,
+  "review_name": "ACRYLICS, PARTY WARE",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 179,
+  "review_name": "WET CAT",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 7,
+  "review_name": "HAIR ACCESSORIES",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 178,
+  "review_name": "DRY CAT",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 214,
+  "review_name": "BCS-CHILDREN/IMMUNITY",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "LISANDRO GONZALEZ",
+  "contact": "JEREMY NOLES",
+  "rss": 234,
+  "review_name": "MEAT-RTE SMOKED MEAT",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 368,
+  "review_name": "FLOOR & DUSTERS",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 420,
+  "review_name": "BCS-CHILDREN'S VITAMINS",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 427,
+  "review_name": "BCS-IMMUNE",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "JEFF JASKIEWICZ",
+  "contact": "JEREMY NOLES",
+  "rss": 578,
+  "review_name": "MEAT-RTC SMOKED MEAT",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 601,
+  "review_name": "CMB-HAIR COLOR ACCESS",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "ALI POLAT",
+  "contact": "ANGELOT PAUL",
+  "rss": 800,
+  "review_name": "DELI-TEA/LEMONADE",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "JAMES WILSON",
+  "rss": 162,
+  "review_name": "PICKLES/PEPPERS/OLIVES",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "GARY HART",
+  "rss": 574,
+  "review_name": "LOCAL-NC,SC,VA",
+  "review_start": "2026-02-06",
+  "cutoff": "2026-04-03",
+  "publish": "2026-07-24"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "GARY HART",
+  "rss": 386,
+  "review_name": "LOCAL MARKET INLINE KY",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "JIMMY MCCAULEY",
+  "rss": 920,
+  "review_name": "FE CUSTOMER LEFT BTLE/GUM",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "JIMMY MCCAULEY",
+  "rss": 981,
+  "review_name": "FE CUSTOMER RIGHT CANDY",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "JIMMY MCCAULEY",
+  "rss": 193,
+  "review_name": "FE CUSTOMER LEFT GUM/MINT",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "RYAN CALCUTTI",
+  "rss": 560,
+  "review_name": "CREAMERS & HALF N HALF - HOLIDAY ITEMS",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "STAN TUTEN",
+  "rss": 279,
+  "review_name": "FROZEN BEVERAGE",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "STAN TUTEN",
+  "rss": 297,
+  "review_name": "FROZEN FRUIT",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "DAVID PAGAN",
+  "contact": "MIGUEL URENA",
+  "rss": 492,
+  "review_name": "BRAZILIAN",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "DAVID PAGAN",
+  "contact": "MIGUEL URENA",
+  "rss": 497,
+  "review_name": "SOUTH AMERICAN",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 78,
+  "review_name": "BATHROOM CLEANER",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 399,
+  "review_name": "LOTION",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 407,
+  "review_name": "BCS FACIAL",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 441,
+  "review_name": "BCS HAND BODY LOTIONS",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 250,
+  "review_name": "CANDLES",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "GARY HART",
+  "rss": 574,
+  "review_name": "LOCAL-TN, KY",
+  "review_start": "2026-02-13",
+  "cutoff": "2026-04-10",
+  "publish": "2026-07-31"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 273,
+  "review_name": "FOOD STORAGE",
+  "review_start": "2026-02-20",
+  "cutoff": "2026-04-17",
+  "publish": "2026-08-07"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 276,
+  "review_name": "STORAGE PLASTICS",
+  "review_start": "2026-02-20",
+  "cutoff": "2026-04-17",
+  "publish": "2026-08-07"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 337,
+  "review_name": "HOUSEHOLD PLASTICS",
+  "review_start": "2026-02-20",
+  "cutoff": "2026-04-17",
+  "publish": "2026-08-07"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 261,
+  "review_name": "KITCHENWARE",
+  "review_start": "2026-02-20",
+  "cutoff": "2026-04-17",
+  "publish": "2026-08-07"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "SCOTT GIFFORD",
+  "rss": 593,
+  "review_name": "CORDIALS",
+  "review_start": "2026-02-20",
+  "cutoff": "2026-04-17",
+  "publish": "2026-08-07"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "BRIAN CAHILL",
+  "rss": 53,
+  "review_name": "CONDENSED SOUP",
+  "review_start": "2026-02-20",
+  "cutoff": "2026-04-17",
+  "publish": "2026-08-07"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "BRIAN CAHILL",
+  "rss": 55,
+  "review_name": "INSTANT SOUP/BROTH",
+  "review_start": "2026-02-20",
+  "cutoff": "2026-04-17",
+  "publish": "2026-08-07"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "BRIAN CAHILL",
+  "rss": 57,
+  "review_name": "RTE SOUP",
+  "review_start": "2026-02-20",
+  "cutoff": "2026-04-17",
+  "publish": "2026-08-07"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 110,
+  "review_name": "DELI-SPECIALTY SNACKS",
+  "review_start": "2026-02-20",
+  "cutoff": "2026-04-17",
+  "publish": "2026-08-07"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 224,
+  "review_name": "DELI-DELI SNACKS",
+  "review_start": "2026-02-20",
+  "cutoff": "2026-04-17",
+  "publish": "2026-08-07"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "MATT BAILEY",
+  "rss": 606,
+  "review_name": "SPARKLING",
+  "review_start": "2026-02-20",
+  "cutoff": "2026-04-17",
+  "publish": "2026-08-07"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 620,
+  "review_name": "TRADITIONAL BREW COFFEE",
+  "review_start": "2026-02-27",
+  "cutoff": "2026-04-24",
+  "publish": "2026-08-14"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 619,
+  "review_name": "INSTANT COFFEE",
+  "review_start": "2026-02-27",
+  "cutoff": "2026-04-24",
+  "publish": "2026-08-14"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 621,
+  "review_name": "PREMIUM BAG COFFEE",
+  "review_start": "2026-02-27",
+  "cutoff": "2026-04-24",
+  "publish": "2026-08-14"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 280,
+  "review_name": "FROZEN BREAD",
+  "review_start": "2026-02-27",
+  "cutoff": "2026-04-24",
+  "publish": "2026-08-14"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 333,
+  "review_name": "FROZEN BISCUIT/DOUGH",
+  "review_start": "2026-02-27",
+  "cutoff": "2026-04-24",
+  "publish": "2026-08-14"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 350,
+  "review_name": "ONE CUP BREW",
+  "review_start": "2026-02-27",
+  "cutoff": "2026-04-24",
+  "publish": "2026-08-14"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 426,
+  "review_name": "BCS-HERBS",
+  "review_start": "2026-02-27",
+  "cutoff": "2026-04-24",
+  "publish": "2026-08-14"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 644,
+  "review_name": "BCS BONE JOINT/EMOTIONAL",
+  "review_start": "2026-02-27",
+  "cutoff": "2026-04-24",
+  "publish": "2026-08-14"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 585,
+  "review_name": "MEAT-CHEESE SLICES/SNACKS",
+  "review_start": "2026-02-27",
+  "cutoff": "2026-04-24",
+  "publish": "2026-08-14"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 27,
+  "review_name": "COUGH/COLD",
+  "review_start": "2026-03-06",
+  "cutoff": "2026-05-01",
+  "publish": "2026-08-21"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 32,
+  "review_name": "STOMACH/LAX",
+  "review_start": "2026-03-06",
+  "cutoff": "2026-05-01",
+  "publish": "2026-08-21"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "MATT LUCAS",
+  "rss": 48,
+  "review_name": "SHELF STABLE FRUIT",
+  "review_start": "2026-03-06",
+  "cutoff": "2026-05-01",
+  "publish": "2026-08-21"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "CHUCK REED",
+  "rss": 212,
+  "review_name": "NUTS SNACKING",
+  "review_start": "2026-03-06",
+  "cutoff": "2026-05-01",
+  "publish": "2026-08-21"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "MATT LUCAS",
+  "rss": 319,
+  "review_name": "LATIN FRUITS",
+  "review_start": "2026-03-06",
+  "cutoff": "2026-05-01",
+  "publish": "2026-08-21"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 455,
+  "review_name": "STOMACH/LAX/FOOT COMBO",
+  "review_start": "2026-03-06",
+  "cutoff": "2026-05-01",
+  "publish": "2026-08-21"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "SCOTT GIFFORD",
+  "rss": 612,
+  "review_name": "LIQUOR PRE-MIX DRINKS",
+  "review_start": "2026-03-13",
+  "cutoff": "2026-05-08",
+  "publish": "2026-08-28"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 19,
+  "review_name": "CHEESE-OTHER SPECIALTY VARIETIES/SOFT RIPENED",
+  "review_start": "2026-03-13",
+  "cutoff": "2026-05-08",
+  "publish": "2026-08-28"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 184,
+  "review_name": "DELI-PICKLES",
+  "review_start": "2026-03-13",
+  "cutoff": "2026-05-08",
+  "publish": "2026-08-28"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 39,
+  "review_name": "PPL-TRIAL SIZE",
+  "review_start": "2026-03-13",
+  "cutoff": "2026-05-08",
+  "publish": "2026-08-28"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 89,
+  "review_name": "HISPANIC SODA",
+  "review_start": "2026-03-13",
+  "cutoff": "2026-05-08",
+  "publish": "2026-08-28"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 119,
+  "review_name": "TRIAL SIZE IN LINE",
+  "review_start": "2026-03-13",
+  "cutoff": "2026-05-08",
+  "publish": "2026-08-28"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 177,
+  "review_name": "CAT LITTER",
+  "review_start": "2026-03-13",
+  "cutoff": "2026-05-08",
+  "publish": "2026-08-28"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 216,
+  "review_name": "BCS MULT/SINGLE VITAMINS",
+  "review_start": "2026-03-13",
+  "cutoff": "2026-05-08",
+  "publish": "2026-08-28"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 647,
+  "review_name": "BCS SINGL VIT/MINERAL/AMI",
+  "review_start": "2026-03-13",
+  "cutoff": "2026-05-08",
+  "publish": "2026-08-28"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 648,
+  "review_name": "BCS MULTI VIT/GLAND/HORM",
+  "review_start": "2026-03-13",
+  "cutoff": "2026-05-08",
+  "publish": "2026-08-28"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 321,
+  "review_name": "PROD-PRODUCE SNACKS",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "SCOTT GIFFORD",
+  "rss": 210,
+  "review_name": "COCKTAIL MIXES",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "SCOTT GIFFORD",
+  "rss": 611,
+  "review_name": "LS - COCKTAIL MIXERS",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 268,
+  "review_name": "LIGHT BULBS IN LINE",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 81,
+  "review_name": "FABRIC SOFTENER",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "DARRELL LAMOUREUX",
+  "rss": 126,
+  "review_name": "SPICES",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "DAVID PAGAN",
+  "contact": "MIGUEL URENA",
+  "rss": 164,
+  "review_name": "CENTRAL AMERICAN",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "DAVID PAGAN",
+  "contact": "MIGUEL URENA",
+  "rss": 166,
+  "review_name": "MEXICAN (AUTHENTIC)",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "GARY HART",
+  "rss": 167,
+  "review_name": "ASIAN",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 176,
+  "review_name": "DESIGNER TABLEWARE",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 227,
+  "review_name": "SOCKS/UNDERWEAR/SHOE CARE",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 229,
+  "review_name": "HOSIERY-DSD",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "DARRELL LAMOUREUX",
+  "rss": 347,
+  "review_name": "ETHNIC SPICES",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 467,
+  "review_name": "SOCKS/FOOTCARE",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "GARY HART",
+  "rss": 510,
+  "review_name": "INDIAN",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "BRADLEY FLOSITZ",
+  "rss": 595,
+  "review_name": "LIQUOR TO-GO",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 79,
+  "review_name": "BLEACH/LAUNDRY ADDITIVES",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 637,
+  "review_name": "BLEACH/FABRIC SOFTENER",
+  "review_start": "2026-03-20",
+  "cutoff": "2026-05-15",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "JOHN CRAIG",
+  "contact": "J.P. PORTUONDO",
+  "rss": 575,
+  "review_name": "RTC VENDOR PREP",
+  "review_start": "2026-06-30",
+  "cutoff": "2026-07-31",
+  "publish": "2026-09-04"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 999,
+  "review_name": "FALL",
+  "review_start": "2025-10-31",
+  "cutoff": "2026-01-28",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 999,
+  "review_name": "HALLOWEEN",
+  "review_start": "2025-10-31",
+  "cutoff": "2026-01-28",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "DARRELL PILIEGO",
+  "contact": "ALEX MICKENBERG",
+  "rss": 627,
+  "review_name": "PROD-SPECIALTY",
+  "review_start": "2026-03-27",
+  "cutoff": "2026-05-22",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "STAN TUTEN",
+  "rss": 283,
+  "review_name": "FROZEN TOPPING",
+  "review_start": "2026-03-27",
+  "cutoff": "2026-05-22",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "JAMES KREBS",
+  "rss": 52,
+  "review_name": "CANNED VEGETABLES",
+  "review_start": "2026-03-27",
+  "cutoff": "2026-05-22",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KATHY ARNOLD",
+  "rss": 67,
+  "review_name": "PROD-GARLIC/TOPPINGS",
+  "review_start": "2026-03-27",
+  "cutoff": "2026-05-22",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 111,
+  "review_name": "CMB-BODY CARE/VITAMIN",
+  "review_start": "2026-03-27",
+  "cutoff": "2026-05-22",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "STAN TUTEN",
+  "rss": 284,
+  "review_name": "FROZEN DESSERTS",
+  "review_start": "2026-03-27",
+  "cutoff": "2026-05-22",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "STAN TUTEN",
+  "rss": 288,
+  "review_name": "FROZEN PIES",
+  "review_start": "2026-03-27",
+  "cutoff": "2026-05-22",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 448,
+  "review_name": "BCS RFGER PROBITCS",
+  "review_start": "2026-03-27",
+  "cutoff": "2026-05-22",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "MATT SPLIT",
+  "rss": 543,
+  "review_name": "PROD-VALUE ADDED",
+  "review_start": "2026-03-27",
+  "cutoff": "2026-05-22",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 645,
+  "review_name": "BCS CARDIO/DIGEST HLT",
+  "review_start": "2026-03-27",
+  "cutoff": "2026-05-22",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 646,
+  "review_name": "BCS ESSENTIAL FATTY ACIDS",
+  "review_start": "2026-03-27",
+  "cutoff": "2026-05-22",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 785,
+  "review_name": "BCS-RFRG NUTR SPLMNT COMB",
+  "review_start": "2026-03-27",
+  "cutoff": "2026-05-22",
+  "publish": "2026-09-11"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 152,
+  "review_name": "TEA",
+  "review_start": "2026-04-03",
+  "cutoff": "2026-05-29",
+  "publish": "2026-09-18"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 168,
+  "review_name": "CHARCOAL/FIRE LOGS",
+  "review_start": "2026-04-03",
+  "cutoff": "2026-05-29",
+  "publish": "2026-09-18"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 255,
+  "review_name": "KITCHEN ORGANIZATION",
+  "review_start": "2026-04-03",
+  "cutoff": "2026-05-29",
+  "publish": "2026-09-18"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 266,
+  "review_name": "LAUNDRY AND BATH",
+  "review_start": "2026-04-03",
+  "cutoff": "2026-05-29",
+  "publish": "2026-09-18"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 394,
+  "review_name": "INFANT FEEDING ACCESSORIE",
+  "review_start": "2026-04-03",
+  "cutoff": "2026-05-29",
+  "publish": "2026-09-18"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 395,
+  "review_name": "TODDLER FEEDING ACCESSORI",
+  "review_start": "2026-04-03",
+  "cutoff": "2026-05-29",
+  "publish": "2026-09-18"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 544,
+  "review_name": "SEWING/RIT DYE PANEL",
+  "review_start": "2026-04-03",
+  "cutoff": "2026-05-29",
+  "publish": "2026-09-18"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 602,
+  "review_name": "FEEDING/TODDLER",
+  "review_start": "2026-04-03",
+  "cutoff": "2026-05-29",
+  "publish": "2026-09-18"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "ERIN AVELLA",
+  "rss": 609,
+  "review_name": "FRANCE/ITALY/SPAIN",
+  "review_start": "2026-04-03",
+  "cutoff": "2026-05-29",
+  "publish": "2026-09-18"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 838,
+  "review_name": "BCS-BEAUTY IN AND OUT",
+  "review_start": "2026-04-03",
+  "cutoff": "2026-05-29",
+  "publish": "2026-09-18"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 25,
+  "review_name": "SPORTS NUTRITION",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "JAMES WILSON",
+  "rss": 155,
+  "review_name": "OIL",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 316,
+  "review_name": "CMB-SPRTS NUTR/WEIGT CTRL",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 411,
+  "review_name": "BCS-PROTIN POWDERS",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 412,
+  "review_name": "BCS-NATRL SPORT NUTRITION",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 650,
+  "review_name": "BCS-NUTRITIONAL BEVERAGES",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 651,
+  "review_name": "BCS-FUNCTIONAL FOODS",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "ALI POLAT",
+  "contact": "ANGELOT PAUL",
+  "rss": 914,
+  "review_name": "DELI-CV-DIPS",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "ALI POLAT",
+  "contact": "ANGELOT PAUL",
+  "rss": 21,
+  "review_name": "DELI-DIPS/SPREADS",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 238,
+  "review_name": "CASUAL BEVERAGE WARE",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 375,
+  "review_name": "HISPANIC SNACKS",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 398,
+  "review_name": "CMB-ON THE GO/CASUAL BEV",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 401,
+  "review_name": "HISPANIC PERSONAL CARE",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 417,
+  "review_name": "ON THE GO CUPS/WATER FILT",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 436,
+  "review_name": "FROZEN MEATLESS",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "WESLEY REESE",
+  "contact": "KEITH MACDONALD",
+  "rss": 539,
+  "review_name": "PROD-DIPS",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "WESLEY REESE",
+  "contact": "KEITH MACDONALD",
+  "rss": 540,
+  "review_name": "PROD-SALAD DRESSING",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "WESLEY REESE",
+  "contact": "KEITH MACDONALD",
+  "rss": 921,
+  "review_name": "PROD-CMB-DIPS/DRESSINGS",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "JAMES WILSON",
+  "rss": 158,
+  "review_name": "VINEGAR",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 24,
+  "review_name": "WEIGHT CONTROL",
+  "review_start": "2026-04-10",
+  "cutoff": "2026-06-05",
+  "publish": "2026-09-25"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "JAMES KREBS",
+  "rss": 47,
+  "review_name": "CANNED BEANS",
+  "review_start": "2026-04-17",
+  "cutoff": "2026-06-12",
+  "publish": "2026-10-02"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 100,
+  "review_name": "HARD BREAD",
+  "review_start": "2026-04-17",
+  "cutoff": "2026-06-12",
+  "publish": "2026-10-02"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "STAN TUTEN",
+  "rss": 351,
+  "review_name": "FROZEN POTATOES",
+  "review_start": "2026-04-17",
+  "cutoff": "2026-06-12",
+  "publish": "2026-10-02"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 377,
+  "review_name": "CHECK STAND NON FOOD",
+  "review_start": "2026-04-17",
+  "cutoff": "2026-06-12",
+  "publish": "2026-10-02"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 583,
+  "review_name": "MEAT-CHEESE CHUNKS",
+  "review_start": "2026-04-17",
+  "cutoff": "2026-06-12",
+  "publish": "2026-10-02"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "BRADLEY FLOSITZ",
+  "rss": 588,
+  "review_name": "BRANDY/COGNAC",
+  "review_start": "2026-04-17",
+  "cutoff": "2026-06-12",
+  "publish": "2026-10-02"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 826,
+  "review_name": "CHAPSTICK POWER PANEL",
+  "review_start": "2026-04-17",
+  "cutoff": "2026-06-12",
+  "publish": "2026-10-02"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 244,
+  "review_name": "BAKING ACCESSORIES",
+  "review_start": "2026-04-17",
+  "cutoff": "2026-06-12",
+  "publish": "2026-10-02"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 773,
+  "review_name": "KITCHEN GADGETS COMBO",
+  "review_start": "2026-04-17",
+  "cutoff": "2026-06-12",
+  "publish": "2026-10-02"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 999,
+  "review_name": "CHRISTMAS",
+  "review_start": "2025-10-31",
+  "cutoff": "2026-02-25",
+  "publish": "2026-10-09"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 999,
+  "review_name": "NEW YEAR",
+  "review_start": "2025-10-31",
+  "cutoff": "2026-02-25",
+  "publish": "2026-10-09"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "ERIC STEINBACH",
+  "rss": 310,
+  "review_name": "GROCERY FRESH BREAD",
+  "review_start": "2026-04-24",
+  "cutoff": "2026-06-19",
+  "publish": "2026-10-09"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "RYAN CALCUTTI",
+  "rss": 474,
+  "review_name": "MILK & MILK ALTERNATIVE - HOLIDAY ITEMS",
+  "review_start": "2026-04-24",
+  "cutoff": "2026-06-19",
+  "publish": "2026-10-09"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "GARY HART",
+  "rss": 153,
+  "review_name": "CANNED MEAT/SEAFOOD",
+  "review_start": "2026-04-24",
+  "cutoff": "2026-06-19",
+  "publish": "2026-10-09"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "STAN TUTEN",
+  "rss": 300,
+  "review_name": "FROZEN VEGETABLES",
+  "review_start": "2026-04-24",
+  "cutoff": "2026-06-19",
+  "publish": "2026-10-09"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "DARRELL LAMOUREUX",
+  "rss": 490,
+  "review_name": "BAKING INGREDIENTS",
+  "review_start": "2026-04-24",
+  "cutoff": "2026-06-19",
+  "publish": "2026-10-09"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 236,
+  "review_name": "TOYS",
+  "review_start": "2026-05-01",
+  "cutoff": "2026-06-26",
+  "publish": "2026-10-16"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 241,
+  "review_name": "AUTOMOTIVE",
+  "review_start": "2026-05-01",
+  "cutoff": "2026-06-26",
+  "publish": "2026-10-16"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 249,
+  "review_name": "BROOMS/MOPS/BRUSHES",
+  "review_start": "2026-05-01",
+  "cutoff": "2026-06-26",
+  "publish": "2026-10-16"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 253,
+  "review_name": "MEAT-HISPANIC MEAT/CHEESE",
+  "review_start": "2026-05-01",
+  "cutoff": "2026-06-26",
+  "publish": "2026-10-16"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 260,
+  "review_name": "ELECTRICAL/HARDWARE",
+  "review_start": "2026-05-01",
+  "cutoff": "2026-06-26",
+  "publish": "2026-10-16"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 262,
+  "review_name": "AIR FILTERS",
+  "review_start": "2026-05-01",
+  "cutoff": "2026-06-26",
+  "publish": "2026-10-16"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 450,
+  "review_name": "MEDICINE COMBO",
+  "review_start": "2026-05-01",
+  "cutoff": "2026-06-26",
+  "publish": "2026-10-16"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 636,
+  "review_name": "AUTOMOTIVE/FILTERS",
+  "review_start": "2026-05-01",
+  "cutoff": "2026-06-26",
+  "publish": "2026-10-16"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 171,
+  "review_name": "BATH TISSUE",
+  "review_start": "2026-05-08",
+  "cutoff": "2026-07-03",
+  "publish": "2026-10-23"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 374,
+  "review_name": "SALTY 2/FRITO LAY",
+  "review_start": "2026-05-08",
+  "cutoff": "2026-07-03",
+  "publish": "2026-10-23"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 987,
+  "review_name": "SALTY 1/FRITO LAY",
+  "review_start": "2026-05-08",
+  "cutoff": "2026-07-03",
+  "publish": "2026-10-23"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 133,
+  "review_name": "HOT CEREAL/GRITS",
+  "review_start": "2026-05-08",
+  "cutoff": "2026-07-03",
+  "publish": "2026-10-23"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 306,
+  "review_name": "SPECIALTY COOKIE/CRACKER",
+  "review_start": "2026-05-08",
+  "cutoff": "2026-07-03",
+  "publish": "2026-10-23"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 149,
+  "review_name": "SHELF STABLE MILK",
+  "review_start": "2026-05-08",
+  "cutoff": "2026-07-03",
+  "publish": "2026-10-23"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "ERIC STEINBACH",
+  "rss": 104,
+  "review_name": "TORTILLAS",
+  "review_start": "2026-05-08",
+  "cutoff": "2026-07-03",
+  "publish": "2026-10-23"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 200,
+  "review_name": "KOSHER",
+  "review_start": "2026-05-08",
+  "cutoff": "2026-07-03",
+  "publish": "2026-10-23"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 537,
+  "review_name": "MEAT-REFRIGERATED PASTA",
+  "review_start": "2026-05-08",
+  "cutoff": "2026-07-03",
+  "publish": "2026-10-23"
+ },
+ {
+  "cat_mgr": "WESLEY REESE",
+  "contact": "JOE MCCOY",
+  "rss": 541,
+  "review_name": "PROD-PACKAGED SALADS",
+  "review_start": "2026-05-08",
+  "cutoff": "2026-07-03",
+  "publish": "2026-10-23"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 999,
+  "review_name": "CHANNUKAH",
+  "review_start": "2026-03-21",
+  "cutoff": "2026-06-03",
+  "publish": "2026-10-30"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 999,
+  "review_name": "WINTER",
+  "review_start": "2026-03-21",
+  "cutoff": "2026-06-03",
+  "publish": "2026-10-30"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 19,
+  "review_name": "CHEESE-ITALIAN/BLUE",
+  "review_start": "2026-05-15",
+  "cutoff": "2026-07-10",
+  "publish": "2026-10-30"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 581,
+  "review_name": "COFFEE ACCESSORIES",
+  "review_start": "2026-05-15",
+  "cutoff": "2026-07-10",
+  "publish": "2026-10-30"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 582,
+  "review_name": "KITCHEN APPLIANCES",
+  "review_start": "2026-05-15",
+  "cutoff": "2026-07-10",
+  "publish": "2026-10-30"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 19,
+  "review_name": "CHEESE-SWISS/CHEDDAR",
+  "review_start": "2026-05-15",
+  "cutoff": "2026-07-10",
+  "publish": "2026-10-30"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "TERRY ADAMSON",
+  "rss": 61,
+  "review_name": "DESSERTS/DAIRY",
+  "review_start": "2026-05-15",
+  "cutoff": "2026-07-10",
+  "publish": "2026-10-30"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "JAMES KREBS",
+  "rss": 145,
+  "review_name": "PASTA DRY",
+  "review_start": "2026-05-15",
+  "cutoff": "2026-07-10",
+  "publish": "2026-10-30"
+ },
+ {
+  "cat_mgr": "DARRELL PILIEGO",
+  "contact": "BRIAN HULL",
+  "rss": 272,
+  "review_name": "PROD-PACKAGE SALAD VEG",
+  "review_start": "2026-05-15",
+  "cutoff": "2026-07-10",
+  "publish": "2026-10-30"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "SCOTT GIFFORD",
+  "rss": 594,
+  "review_name": "GIN",
+  "review_start": "2026-05-15",
+  "cutoff": "2026-07-10",
+  "publish": "2026-10-30"
+ },
+ {
+  "cat_mgr": "LISANDRO GONZALEZ",
+  "contact": "JAY NEWBERRY",
+  "rss": 452,
+  "review_name": "ABF/GREENWISE",
+  "review_start": "2026-08-28",
+  "cutoff": "2026-09-25",
+  "publish": "2026-10-30"
+ },
+ {
+  "cat_mgr": "LISANDRO GONZALEZ",
+  "contact": "JAY NEWBERRY",
+  "rss": 371,
+  "review_name": "MEAT-GROUND MEAT",
+  "review_start": "2026-08-28",
+  "cutoff": "2026-09-25",
+  "publish": "2026-10-31"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "JAMES KREBS",
+  "rss": 50,
+  "review_name": "CANNED PASTA",
+  "review_start": "2026-05-22",
+  "cutoff": "2026-07-17",
+  "publish": "2026-11-06"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "GARY HART",
+  "rss": 163,
+  "review_name": "BRITISH",
+  "review_start": "2026-05-22",
+  "cutoff": "2026-07-17",
+  "publish": "2026-11-06"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 277,
+  "review_name": "UMBRELLA RACK",
+  "review_start": "2026-05-22",
+  "cutoff": "2026-07-17",
+  "publish": "2026-11-06"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "GARY HART",
+  "rss": 515,
+  "review_name": "GERMAN",
+  "review_start": "2026-05-22",
+  "cutoff": "2026-07-17",
+  "publish": "2026-11-06"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "GARY HART",
+  "rss": 668,
+  "review_name": "EUROPEAN",
+  "review_start": "2026-05-22",
+  "cutoff": "2026-07-17",
+  "publish": "2026-11-06"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 634,
+  "review_name": "MEAT-FRNK/DNR SAUSAGE",
+  "review_start": "2026-05-29",
+  "cutoff": "2026-07-24",
+  "publish": "2026-11-13"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "BRIAN CAHILL",
+  "rss": 138,
+  "review_name": "DRY BEANS",
+  "review_start": "2026-05-29",
+  "cutoff": "2026-07-24",
+  "publish": "2026-11-13"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 182,
+  "review_name": "WET DOG",
+  "review_start": "2026-05-29",
+  "cutoff": "2026-07-24",
+  "publish": "2026-11-13"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "CHUCK REED",
+  "rss": 211,
+  "review_name": "MICROWAVE POPCORN",
+  "review_start": "2026-05-29",
+  "cutoff": "2026-07-24",
+  "publish": "2026-11-13"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 226,
+  "review_name": "RUBBER/LATEX GLOVES",
+  "review_start": "2026-05-29",
+  "cutoff": "2026-07-24",
+  "publish": "2026-11-13"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "RYAN CALCUTTI",
+  "rss": 69,
+  "review_name": "YOGURT/CULTURE",
+  "review_start": "2026-06-12",
+  "cutoff": "2026-08-07",
+  "publish": "2026-11-27"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "BRIAN CAHILL",
+  "rss": 51,
+  "review_name": "CANNED TOMATOES",
+  "review_start": "2026-06-12",
+  "cutoff": "2026-08-07",
+  "publish": "2026-11-27"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 181,
+  "review_name": "DRY DOG",
+  "review_start": "2026-06-12",
+  "cutoff": "2026-08-07",
+  "publish": "2026-11-27"
+ },
+ {
+  "cat_mgr": "DAVID PAGAN",
+  "contact": "MIGUEL URENA",
+  "rss": 197,
+  "review_name": "HAITIAN",
+  "review_start": "2026-06-12",
+  "cutoff": "2026-08-07",
+  "publish": "2026-11-27"
+ },
+ {
+  "cat_mgr": "DAVID PAGAN",
+  "contact": "MIGUEL URENA",
+  "rss": 199,
+  "review_name": "JAMAICAN DRY GROCERY",
+  "review_start": "2026-06-12",
+  "cutoff": "2026-08-07",
+  "publish": "2026-11-27"
+ },
+ {
+  "cat_mgr": "DAVID PAGAN",
+  "contact": "MIGUEL URENA",
+  "rss": 790,
+  "review_name": "JAMAICAN BREAD",
+  "review_start": "2026-06-12",
+  "cutoff": "2026-08-07",
+  "publish": "2026-11-27"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 136,
+  "review_name": "TOASTER PASTRY",
+  "review_start": "2026-06-19",
+  "cutoff": "2026-08-14",
+  "publish": "2026-12-04"
+ },
+ {
+  "cat_mgr": "WESLEY REESE",
+  "contact": "KATHY ARNOLD",
+  "rss": 542,
+  "review_name": "PROD-SOY/VEGETARIAN",
+  "review_start": "2026-06-19",
+  "cutoff": "2026-08-14",
+  "publish": "2026-12-04"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 125,
+  "review_name": "CANNING",
+  "review_start": "2026-06-26",
+  "cutoff": "2026-08-21",
+  "publish": "2026-12-11"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 231,
+  "review_name": "PERSONAL ELECTRONICS",
+  "review_start": "2026-06-26",
+  "cutoff": "2026-08-21",
+  "publish": "2026-12-11"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 245,
+  "review_name": "BATTERIES/FLASHLIGHTS",
+  "review_start": "2026-06-26",
+  "cutoff": "2026-08-21",
+  "publish": "2026-12-11"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 254,
+  "review_name": "COFFEE FILTERS/CREAMER",
+  "review_start": "2026-06-26",
+  "cutoff": "2026-08-21",
+  "publish": "2026-12-11"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 258,
+  "review_name": "COOLERS",
+  "review_start": "2026-06-26",
+  "cutoff": "2026-08-21",
+  "publish": "2026-12-11"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 291,
+  "review_name": "FROZEN CARIBBEAN HISPANIC",
+  "review_start": "2026-06-26",
+  "cutoff": "2026-08-21",
+  "publish": "2026-12-11"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 299,
+  "review_name": "FROZEN GROCERY SEAFOOD",
+  "review_start": "2026-06-26",
+  "cutoff": "2026-08-21",
+  "publish": "2026-12-11"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 499,
+  "review_name": "BTRY/LGHTBLB/ELEC/HRDW",
+  "review_start": "2026-06-26",
+  "cutoff": "2026-08-21",
+  "publish": "2026-12-11"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 505,
+  "review_name": "SPECIALTY BATTERY",
+  "review_start": "2026-06-26",
+  "cutoff": "2026-08-21",
+  "publish": "2026-12-11"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "ED EASOM",
+  "rss": 638,
+  "review_name": "PERSONAL ELECTRONICS/BATT",
+  "review_start": "2026-06-26",
+  "cutoff": "2026-08-21",
+  "publish": "2026-12-11"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 400,
+  "review_name": "SUNCARE",
+  "review_start": "2026-06-26",
+  "cutoff": "2026-08-21",
+  "publish": "2026-12-25"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "VALENTINE",
+  "review_start": "2026-03-30",
+  "cutoff": "2026-05-09",
+  "publish": "2026-12-31"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "EASTER",
+  "review_start": "2026-03-30",
+  "cutoff": "2026-05-09",
+  "publish": "2026-12-31"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "LAWN & GARDEN",
+  "review_start": "2026-06-01",
+  "cutoff": "2026-07-24",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "SPRING",
+  "review_start": "2026-06-01",
+  "cutoff": "2026-07-24",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "SUMMER",
+  "review_start": "2026-06-01",
+  "cutoff": "2026-07-24",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 269,
+  "review_name": "HISPANIC CKWARE HEALTHTEX",
+  "review_start": "2026-07-17",
+  "cutoff": "2026-09-11",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 77,
+  "review_name": "BATH SOAP",
+  "review_start": "2026-07-17",
+  "cutoff": "2026-09-11",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 354,
+  "review_name": "HISPANIC COOKWARE IMUSA",
+  "review_start": "2026-07-17",
+  "cutoff": "2026-09-11",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 409,
+  "review_name": "BCS-HAND SOAP",
+  "review_start": "2026-07-17",
+  "cutoff": "2026-09-11",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 416,
+  "review_name": "NON-REF MEAT SNACK WEDGE",
+  "review_start": "2026-07-17",
+  "cutoff": "2026-09-11",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 442,
+  "review_name": "BCS BATH SOAP",
+  "review_start": "2026-07-17",
+  "cutoff": "2026-09-11",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 536,
+  "review_name": "PPL-NON-REF MEAT SNCK",
+  "review_start": "2026-07-17",
+  "cutoff": "2026-09-11",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 586,
+  "review_name": "MEAT-NON-REF MEAT SNCK",
+  "review_start": "2026-07-17",
+  "cutoff": "2026-09-11",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "BRADLEY FLOSITZ",
+  "rss": 589,
+  "review_name": "SCOTCH",
+  "review_start": "2026-07-17",
+  "cutoff": "2026-09-11",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 923,
+  "review_name": "SCO-NON REF MEAT SNCK",
+  "review_start": "2026-07-17",
+  "cutoff": "2026-09-11",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 321,
+  "review_name": "PROD-PRODUCE SNACKS",
+  "review_start": "2026-07-17",
+  "cutoff": "2026-09-11",
+  "publish": "2027-01-01"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 184,
+  "review_name": "DELI-OLIVES",
+  "review_start": "2026-07-24",
+  "cutoff": "2026-09-18",
+  "publish": "2027-01-08"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 11,
+  "review_name": "SHAMP/COND/STYLING",
+  "review_start": "2026-07-24",
+  "cutoff": "2026-09-18",
+  "publish": "2027-01-08"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 19,
+  "review_name": "DELI-SPECIALTY CHEESE",
+  "review_start": "2026-07-24",
+  "cutoff": "2026-09-18",
+  "publish": "2027-01-08"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 20,
+  "review_name": "PROFESSIONAL HAIR CARE",
+  "review_start": "2026-07-24",
+  "cutoff": "2026-09-18",
+  "publish": "2027-01-08"
+ },
+ {
+  "cat_mgr": "DARRELL PILIEGO",
+  "contact": "ALEX MICKENBERG",
+  "rss": 627,
+  "review_name": "PROD-SPECIALTY",
+  "review_start": "2026-07-24",
+  "cutoff": "2026-09-18",
+  "publish": "2027-01-08"
+ },
+ {
+  "cat_mgr": "WESLEY REESE",
+  "contact": "KEITH MACDONALD",
+  "rss": 538,
+  "review_name": "PROD-CHILLED JUICE",
+  "review_start": "2026-07-24",
+  "cutoff": "2026-09-18",
+  "publish": "2027-01-08"
+ },
+ {
+  "cat_mgr": "WESLEY REESE",
+  "contact": "KEITH MACDONALD",
+  "rss": 622,
+  "review_name": "PROD-HPP HEALTHY BEVERAGE",
+  "review_start": "2026-07-24",
+  "cutoff": "2026-09-18",
+  "publish": "2027-01-08"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 243,
+  "review_name": "BAKEWARE, GLASS",
+  "review_start": "2026-07-31",
+  "cutoff": "2026-09-25",
+  "publish": "2027-01-15"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 598,
+  "review_name": "GLAS-METAL-FOIL BAK COMBO",
+  "review_start": "2026-07-31",
+  "cutoff": "2026-09-25",
+  "publish": "2027-01-15"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 242,
+  "review_name": "BAKEWARE, FOIL",
+  "review_start": "2026-07-31",
+  "cutoff": "2026-09-25",
+  "publish": "2027-01-15"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "CHAD SHOEMAKER",
+  "rss": 102,
+  "review_name": "ENHANCED WATER",
+  "review_start": "2026-07-31",
+  "cutoff": "2026-09-25",
+  "publish": "2027-01-15"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "CHAD SHOEMAKER",
+  "rss": 103,
+  "review_name": "SPARKLING WATER",
+  "review_start": "2026-07-31",
+  "cutoff": "2026-09-25",
+  "publish": "2027-01-15"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "CHUCK REED",
+  "rss": 128,
+  "review_name": "BAGGED SNACKS",
+  "review_start": "2026-07-31",
+  "cutoff": "2026-09-25",
+  "publish": "2027-01-15"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "CHUCK REED",
+  "rss": 223,
+  "review_name": "CANISTER SNACKS",
+  "review_start": "2026-07-31",
+  "cutoff": "2026-09-25",
+  "publish": "2027-01-15"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 302,
+  "review_name": "COOKIES",
+  "review_start": "2026-07-31",
+  "cutoff": "2026-09-25",
+  "publish": "2027-01-15"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 303,
+  "review_name": "PREMIUM COOKIE/CRACKER",
+  "review_start": "2026-07-31",
+  "cutoff": "2026-09-25",
+  "publish": "2027-01-15"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "CHUCK REED",
+  "rss": 628,
+  "review_name": "CMB-BAG/CANISTER",
+  "review_start": "2026-07-31",
+  "cutoff": "2026-09-25",
+  "publish": "2027-01-15"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 918,
+  "review_name": "CMB-POOL CHEM/WATER SOFTN",
+  "review_start": "2026-07-31",
+  "cutoff": "2026-09-25",
+  "publish": "2027-01-15"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 958,
+  "review_name": "GRANOLA",
+  "review_start": "2026-08-07",
+  "cutoff": "2026-10-02",
+  "publish": "2027-01-22"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 135,
+  "review_name": "BREAKFAST BARS",
+  "review_start": "2026-08-07",
+  "cutoff": "2026-10-02",
+  "publish": "2027-01-22"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 134,
+  "review_name": "CEREAL RTE",
+  "review_start": "2026-08-07",
+  "cutoff": "2026-10-02",
+  "publish": "2027-01-22"
+ },
+ {
+  "cat_mgr": "ALI POLAT",
+  "contact": "ANGELOT PAUL",
+  "rss": 800,
+  "review_name": "DELI-TEA/LEMONADE",
+  "review_start": "2026-08-07",
+  "cutoff": "2026-10-02",
+  "publish": "2027-01-22"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "RYAN CALCUTTI",
+  "rss": 474,
+  "review_name": "MILK & MILK ALTERNATIVES",
+  "review_start": "2026-08-07",
+  "cutoff": "2026-10-02",
+  "publish": "2027-01-22"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "RYAN CALCUTTI",
+  "rss": 560,
+  "review_name": "CREAMERS & HALF N HALF",
+  "review_start": "2026-08-07",
+  "cutoff": "2026-10-02",
+  "publish": "2027-01-22"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "MATT LUCAS",
+  "rss": 43,
+  "review_name": "FLAVORED WATER ENHANCERS",
+  "review_start": "2026-08-07",
+  "cutoff": "2026-10-02",
+  "publish": "2027-01-22"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 82,
+  "review_name": "INSECTICIDE",
+  "review_start": "2026-08-07",
+  "cutoff": "2026-10-02",
+  "publish": "2027-01-22"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "DARRELL LAMOUREUX",
+  "rss": 122,
+  "review_name": "SUGAR & SUGAR SUBSTITUTES",
+  "review_start": "2026-08-07",
+  "cutoff": "2026-10-02",
+  "publish": "2027-01-22"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "RICK TURP",
+  "rss": 676,
+  "review_name": "LOCK BOX WINE",
+  "review_start": "2026-08-07",
+  "cutoff": "2026-10-02",
+  "publish": "2027-01-22"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "RICK TURP",
+  "rss": 678,
+  "review_name": "LS - LOCK BOX WINE",
+  "review_start": "2026-08-07",
+  "cutoff": "2026-10-02",
+  "publish": "2027-01-22"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "JAMES WILSON",
+  "rss": 159,
+  "review_name": "SALAD DRESSINGS/CROUTONS",
+  "review_start": "2026-08-07",
+  "cutoff": "2026-10-02",
+  "publish": "2027-01-22"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 428,
+  "review_name": "MEAT-IQF MEAT",
+  "review_start": "2026-08-14",
+  "cutoff": "2026-10-09",
+  "publish": "2027-01-29"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 818,
+  "review_name": "MEAT-FRZN MEAT-KOSHER CPG",
+  "review_start": "2026-08-14",
+  "cutoff": "2026-10-09",
+  "publish": "2027-01-29"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 75,
+  "review_name": "AIR FRESHENER",
+  "review_start": "2026-08-14",
+  "cutoff": "2026-10-09",
+  "publish": "2027-01-29"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 423,
+  "review_name": "MEAT-FROZEN GRILLING",
+  "review_start": "2026-08-14",
+  "cutoff": "2026-10-09",
+  "publish": "2027-01-29"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 425,
+  "review_name": "MEAT-IQF POULTRY",
+  "review_start": "2026-08-14",
+  "cutoff": "2026-10-09",
+  "publish": "2027-01-29"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "SCOTT GIFFORD",
+  "rss": 592,
+  "review_name": "RUM",
+  "review_start": "2026-08-14",
+  "cutoff": "2026-10-09",
+  "publish": "2027-01-29"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "TERRY ADAMSON",
+  "rss": 285,
+  "review_name": "CONVENTIONAL/PREM ICE CRM",
+  "review_start": "2026-08-21",
+  "cutoff": "2026-10-16",
+  "publish": "2027-02-05"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 19,
+  "review_name": "CHEESE-GOAT/FETA",
+  "review_start": "2026-08-21",
+  "cutoff": "2026-10-16",
+  "publish": "2027-02-05"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 173,
+  "review_name": "NAPKINS",
+  "review_start": "2026-08-21",
+  "cutoff": "2026-10-16",
+  "publish": "2027-02-05"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 175,
+  "review_name": "PLATES/CUPS",
+  "review_start": "2026-08-21",
+  "cutoff": "2026-10-16",
+  "publish": "2027-02-05"
+ },
+ {
+  "cat_mgr": "DAVID PAGAN",
+  "contact": "MIGUEL URENA",
+  "rss": 198,
+  "review_name": "CARIBBEAN HISPANIC",
+  "review_start": "2026-08-21",
+  "cutoff": "2026-10-16",
+  "publish": "2027-02-05"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 350,
+  "review_name": "ONE CUP BREW",
+  "review_start": "2026-08-21",
+  "cutoff": "2026-10-16",
+  "publish": "2027-02-05"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 80,
+  "review_name": "DISH DETERGENT",
+  "review_start": "2026-08-21",
+  "cutoff": "2026-10-16",
+  "publish": "2027-02-05"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 85,
+  "review_name": "SCRUB PADS",
+  "review_start": "2026-08-21",
+  "cutoff": "2026-10-16",
+  "publish": "2027-02-05"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 475,
+  "review_name": "DISH/SCRUB COMBO",
+  "review_start": "2026-08-21",
+  "cutoff": "2026-10-16",
+  "publish": "2027-02-05"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 256,
+  "review_name": "BBQ",
+  "review_start": "2026-08-21",
+  "cutoff": "2026-10-16",
+  "publish": "2027-02-05"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "TERRY ADAMSON",
+  "rss": 286,
+  "review_name": "SPECIALTY ICE CREAM",
+  "review_start": "2026-08-28",
+  "cutoff": "2026-10-23",
+  "publish": "2027-02-12"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 34,
+  "review_name": "FOOT CARE",
+  "review_start": "2026-08-28",
+  "cutoff": "2026-10-23",
+  "publish": "2027-02-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 380,
+  "review_name": "MAYBELLINE",
+  "review_start": "2026-08-28",
+  "cutoff": "2026-10-23",
+  "publish": "2027-02-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 381,
+  "review_name": "REVLON",
+  "review_start": "2026-08-28",
+  "cutoff": "2026-10-23",
+  "publish": "2027-02-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 382,
+  "review_name": "MILANI",
+  "review_start": "2026-08-28",
+  "cutoff": "2026-10-23",
+  "publish": "2027-02-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 385,
+  "review_name": "ALMAY",
+  "review_start": "2026-08-28",
+  "cutoff": "2026-10-23",
+  "publish": "2027-02-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 387,
+  "review_name": "L'OREAL",
+  "review_start": "2026-08-28",
+  "cutoff": "2026-10-23",
+  "publish": "2027-02-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 435,
+  "review_name": "ELF",
+  "review_start": "2026-08-28",
+  "cutoff": "2026-10-23",
+  "publish": "2027-02-12"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 529,
+  "review_name": "MEAT-READY TO HEAT",
+  "review_start": "2026-08-28",
+  "cutoff": "2026-10-23",
+  "publish": "2027-02-12"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 669,
+  "review_name": "PPL-MINERAL FUSIONS",
+  "review_start": "2026-08-28",
+  "cutoff": "2026-10-23",
+  "publish": "2027-02-12"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 93,
+  "review_name": "CANADA DRY/RC",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "MATT LUCAS",
+  "rss": 41,
+  "review_name": "MULTI SERVE JUICE",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 88,
+  "review_name": "COCA-COLA",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 91,
+  "review_name": "PEPSI",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "WILLIAM MOORE",
+  "rss": 93,
+  "review_name": "7UP",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 185,
+  "review_name": "DOG TREATS",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "JAMES WILSON",
+  "rss": 196,
+  "review_name": "LATIN/VIN/SAUCES/MARINADE",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "ERIN AVELLA",
+  "rss": 209,
+  "review_name": "SINGLE SERVE WINES",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 275,
+  "review_name": "STATIONERY/SCHOOL SUPPLIE",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 338,
+  "review_name": "ART/CRAFT",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 346,
+  "review_name": "RAWHIDE",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 352,
+  "review_name": "MAILING CENTER",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 355,
+  "review_name": "EDUCATION/ACTIVITY",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "MATT LUCAS",
+  "rss": 378,
+  "review_name": "HISPANIC JUICE",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 632,
+  "review_name": "DOG TREATS/RAWHIDE",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "ERIN AVELLA",
+  "rss": 674,
+  "review_name": "LS - SINGLE SERVE WINES",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "MATT BAILEY",
+  "rss": 675,
+  "review_name": "COLD WINE",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "JAMES WILSON",
+  "rss": 65,
+  "review_name": "COOKING CONDIMENTS",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "ZACH PRINZI",
+  "rss": 639,
+  "review_name": "CANDY N LINE WITH PUSHERS",
+  "review_start": "2026-09-04",
+  "cutoff": "2026-10-30",
+  "publish": "2027-02-19"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 999,
+  "review_name": "PASSOVER",
+  "review_start": "2026-06-18",
+  "cutoff": "2026-08-31",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 999,
+  "review_name": "PASSOVER",
+  "review_start": "2026-06-19",
+  "cutoff": "2026-09-01",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 233,
+  "review_name": "FISHING EQUIPMENT",
+  "review_start": "2026-07-27",
+  "cutoff": "2026-08-31",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 247,
+  "review_name": "BEACH SUPPLIES",
+  "review_start": "2026-07-27",
+  "cutoff": "2026-08-31",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 710,
+  "review_name": "POOL SUPPLIES",
+  "review_start": "2026-07-27",
+  "cutoff": "2026-08-31",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 14,
+  "review_name": "FEMININE HYGIENE",
+  "review_start": "2026-09-11",
+  "cutoff": "2026-11-06",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "MIKE PALESTRINI",
+  "contact": "MEAGAN NICHOLS",
+  "rss": 142,
+  "review_name": "FLAVORED ADULT BEVERAGES",
+  "review_start": "2026-09-11",
+  "cutoff": "2026-11-06",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "SAMANTHA CAMPBELL",
+  "rss": 157,
+  "review_name": "TOPPINGS/CONES (END CAP)",
+  "review_start": "2026-09-11",
+  "cutoff": "2026-11-06",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "MIKE PALESTRINI",
+  "contact": "SCOTT COURTNEY",
+  "rss": 217,
+  "review_name": "MAINSTREAM BEER",
+  "review_start": "2026-09-11",
+  "cutoff": "2026-11-06",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "MIKE PALESTRINI",
+  "contact": "MEAGAN NICHOLS",
+  "rss": 218,
+  "review_name": "IMPORT BEER",
+  "review_start": "2026-09-11",
+  "cutoff": "2026-11-06",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "MIKE PALESTRINI",
+  "contact": "BRENT PROPST",
+  "rss": 222,
+  "review_name": "CRAFT BEER",
+  "review_start": "2026-09-11",
+  "cutoff": "2026-11-06",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 340,
+  "review_name": "WINE ACCESSORIES",
+  "review_start": "2026-09-11",
+  "cutoff": "2026-11-06",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 348,
+  "review_name": "FAMILY PLANNING",
+  "review_start": "2026-09-11",
+  "cutoff": "2026-11-06",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 761,
+  "review_name": "WINE ACCES POWER PANEL",
+  "review_start": "2026-09-11",
+  "cutoff": "2026-11-06",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "CHUCK REED",
+  "rss": 213,
+  "review_name": "RICE CAKES",
+  "review_start": "2026-09-11",
+  "cutoff": "2026-11-06",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "JOHN CRAIG",
+  "contact": "J.P. PORTUONDO",
+  "rss": 575,
+  "review_name": "RTC VENDOR PREP",
+  "review_start": "2026-12-30",
+  "cutoff": "2027-01-30",
+  "publish": "2027-02-26"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 374,
+  "review_name": "SALTY 2/FRITO LAY",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 989,
+  "review_name": "SALTY 3/UTZ/PUBLIX/TAKIS",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 987,
+  "review_name": "SALTY 1/FRITO LAY",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 221,
+  "review_name": "SALTY 4/WISE/CAPE/SNYDER",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 990,
+  "review_name": "SALTY 3.1/GRIPPO/MIKESELL",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 988,
+  "review_name": "SALTY 2.1/GOLDEN FLAKE",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 316,
+  "review_name": "CMB-SPRTS NUTR/WEIGT CTRL",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 25,
+  "review_name": "SPORTS NUTRITION",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 651,
+  "review_name": "BCS-FUNCTIONAL FOODS",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 650,
+  "review_name": "BCS-NUTRITIONAL BEVERAGES",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 411,
+  "review_name": "BCS-PROTIN POWDERS",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 412,
+  "review_name": "BCS-NATRL SPORT NUTRITION",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 24,
+  "review_name": "WEIGHT CONTROL",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "ALI POLAT",
+  "contact": "RACHEL SANTOS",
+  "rss": 40,
+  "review_name": "SELF SERVICE MISC ITEMS",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "DAVID PAGAN",
+  "contact": "MIGUEL URENA",
+  "rss": 459,
+  "review_name": "CAJUN",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 13,
+  "review_name": "DEODORANT",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "DARRELL PILIEGO",
+  "contact": "BRIAN HULL",
+  "rss": 205,
+  "review_name": "PROD-FRESH PACK VEGETABLE",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "DARRELL LAMOUREUX",
+  "rss": 317,
+  "review_name": "FLOUR/MEALS/COATING",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "JEFF BOGGS",
+  "contact": "GARY HARVEY",
+  "rss": 548,
+  "review_name": "PROD-CARROTS & CELERY",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 584,
+  "review_name": "MEAT-CHEESE SHREDS",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "DARRELL PILIEGO",
+  "contact": "BRIAN HULL",
+  "rss": 959,
+  "review_name": "PROD-CMB-FRSH PCK/BLK VEG",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 672,
+  "review_name": "HISPANIC BROOMS/MOPS",
+  "review_start": "2026-09-18",
+  "cutoff": "2026-11-13",
+  "publish": "2027-03-05"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "MATT LUCAS",
+  "rss": 44,
+  "review_name": "SPORTS DRINKS",
+  "review_start": "2026-09-25",
+  "cutoff": "2026-11-20",
+  "publish": "2027-03-12"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "ERIC STEINBACH",
+  "rss": 108,
+  "review_name": "SWEET GOODS",
+  "review_start": "2026-09-25",
+  "cutoff": "2026-11-20",
+  "publish": "2027-03-12"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "GARY HART",
+  "rss": 574,
+  "review_name": "LOCAL-GA",
+  "review_start": "2026-09-25",
+  "cutoff": "2026-11-20",
+  "publish": "2027-03-12"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "TERRY ADAMSON",
+  "rss": 287,
+  "review_name": "FROZEN NOVELTIES",
+  "review_start": "2026-10-02",
+  "cutoff": "2026-11-27",
+  "publish": "2027-03-19"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 29,
+  "review_name": "FIRST AID",
+  "review_start": "2026-10-02",
+  "cutoff": "2026-11-27",
+  "publish": "2027-03-19"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 37,
+  "review_name": "THERAPEUTIC",
+  "review_start": "2026-10-02",
+  "cutoff": "2026-11-27",
+  "publish": "2027-03-19"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 38,
+  "review_name": "WRAPS/BRACES",
+  "review_start": "2026-10-02",
+  "cutoff": "2026-11-27",
+  "publish": "2027-03-19"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 168,
+  "review_name": "CHARCOAL/FIRE LOGS",
+  "review_start": "2026-10-02",
+  "cutoff": "2026-11-27",
+  "publish": "2027-03-19"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 301,
+  "review_name": "CRACKERS",
+  "review_start": "2026-10-02",
+  "cutoff": "2026-11-27",
+  "publish": "2027-03-19"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 461,
+  "review_name": "MINDFUL SNACKING",
+  "review_start": "2026-10-02",
+  "cutoff": "2026-11-27",
+  "publish": "2027-03-19"
+ },
+ {
+  "cat_mgr": "DARRELL PILIEGO",
+  "contact": "DUSTIN MYERS",
+  "rss": 559,
+  "review_name": "PROD-ORGANIC SALADS",
+  "review_start": "2026-10-02",
+  "cutoff": "2026-11-27",
+  "publish": "2027-03-19"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 953,
+  "review_name": "PP-WRAPS/BRACES",
+  "review_start": "2026-10-02",
+  "cutoff": "2026-11-27",
+  "publish": "2027-03-19"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 137,
+  "review_name": "PANCAKE SYRUP/MIX",
+  "review_start": "2026-10-09",
+  "cutoff": "2026-12-04",
+  "publish": "2027-03-26"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "JAMES WILSON",
+  "rss": 161,
+  "review_name": "MAYONNAISE/MUSTARD",
+  "review_start": "2026-10-09",
+  "cutoff": "2026-12-04",
+  "publish": "2027-03-26"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 282,
+  "review_name": "FROZEN FAMILY",
+  "review_start": "2026-10-09",
+  "cutoff": "2026-12-04",
+  "publish": "2027-03-26"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "STAN TUTEN",
+  "rss": 294,
+  "review_name": "FROZEN PIZZA",
+  "review_start": "2026-10-09",
+  "cutoff": "2026-12-04",
+  "publish": "2027-03-26"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "BRADLEY FLOSITZ",
+  "rss": 591,
+  "review_name": "TEQUILA",
+  "review_start": "2026-10-09",
+  "cutoff": "2026-12-04",
+  "publish": "2027-03-26"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "MATT BAILEY",
+  "rss": 607,
+  "review_name": "WHITE",
+  "review_start": "2026-10-09",
+  "cutoff": "2026-12-04",
+  "publish": "2027-03-26"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "CHAD SHOEMAKER",
+  "rss": 815,
+  "review_name": "RTD TEA/RTD COFFEE",
+  "review_start": "2026-10-09",
+  "cutoff": "2026-12-04",
+  "publish": "2027-03-26"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "CHAD SHOEMAKER",
+  "rss": 816,
+  "review_name": "ENERGY",
+  "review_start": "2026-10-09",
+  "cutoff": "2026-12-04",
+  "publish": "2027-03-26"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 826,
+  "review_name": "CHAPSTICK POWER PANEL",
+  "review_start": "2026-10-09",
+  "cutoff": "2026-12-04",
+  "publish": "2027-03-26"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 83,
+  "review_name": "LAUNDRY DETERGENT",
+  "review_start": "2026-10-16",
+  "cutoff": "2026-12-11",
+  "publish": "2027-04-02"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 305,
+  "review_name": "ON THE GO",
+  "review_start": "2026-10-16",
+  "cutoff": "2026-12-11",
+  "publish": "2027-04-02"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 35,
+  "review_name": "ORAL CARE-COMBO",
+  "review_start": "2026-10-16",
+  "cutoff": "2026-12-11",
+  "publish": "2027-04-02"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 86,
+  "review_name": "FURNITURE/FLOOR CARE",
+  "review_start": "2026-10-16",
+  "cutoff": "2026-12-11",
+  "publish": "2027-04-02"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "JAMES KREBS",
+  "rss": 147,
+  "review_name": "PASTA SIDE DISH",
+  "review_start": "2026-10-16",
+  "cutoff": "2026-12-11",
+  "publish": "2027-04-02"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 418,
+  "review_name": "ORAL CARE-MOUTHWASH",
+  "review_start": "2026-10-16",
+  "cutoff": "2026-12-11",
+  "publish": "2027-04-02"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 419,
+  "review_name": "ORAL CARE-FLOSS/DENTURE",
+  "review_start": "2026-10-16",
+  "cutoff": "2026-12-11",
+  "publish": "2027-04-02"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 421,
+  "review_name": "ORAL CARE-TOOTHBRUSHES",
+  "review_start": "2026-10-16",
+  "cutoff": "2026-12-11",
+  "publish": "2027-04-02"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 422,
+  "review_name": "ORAL CARE-TOOTHPASTE",
+  "review_start": "2026-10-16",
+  "cutoff": "2026-12-11",
+  "publish": "2027-04-02"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 23,
+  "review_name": "ADULT NUTRITION",
+  "review_start": "2026-10-23",
+  "cutoff": "2026-12-18",
+  "publish": "2027-04-09"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 28,
+  "review_name": "DIABETIC",
+  "review_start": "2026-10-23",
+  "cutoff": "2026-12-18",
+  "publish": "2027-04-09"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 186,
+  "review_name": "SHOES",
+  "review_start": "2026-10-23",
+  "cutoff": "2026-12-18",
+  "publish": "2027-04-09"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 225,
+  "review_name": "APPAREL/DSD",
+  "review_start": "2026-10-23",
+  "cutoff": "2026-12-18",
+  "publish": "2027-04-09"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 631,
+  "review_name": "CMB-ADLT NUTR/WGHT CNTRL",
+  "review_start": "2026-10-23",
+  "cutoff": "2026-12-18",
+  "publish": "2027-04-09"
+ },
+ {
+  "cat_mgr": "DARRELL PILIEGO",
+  "contact": "ALEX MICKENBERG",
+  "rss": 627,
+  "review_name": "PROD-SPECIALTY",
+  "review_start": "2026-10-23",
+  "cutoff": "2026-12-18",
+  "publish": "2027-04-09"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 327,
+  "review_name": "BABY CARE",
+  "review_start": "2026-10-23",
+  "cutoff": "2026-12-18",
+  "publish": "2027-04-09"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 397,
+  "review_name": "BABY HEALTH CARE",
+  "review_start": "2026-10-23",
+  "cutoff": "2026-12-18",
+  "publish": "2027-04-09"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 449,
+  "review_name": "BABY BATH & HEALTH",
+  "review_start": "2026-10-23",
+  "cutoff": "2026-12-18",
+  "publish": "2027-04-09"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 496,
+  "review_name": "BABY HEALTH CARE - RX",
+  "review_start": "2026-10-23",
+  "cutoff": "2026-12-18",
+  "publish": "2027-04-09"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 788,
+  "review_name": "HISPANIC BABY CARE",
+  "review_start": "2026-10-23",
+  "cutoff": "2026-12-18",
+  "publish": "2027-04-09"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 71,
+  "review_name": "BABY FOOD",
+  "review_start": "2026-10-23",
+  "cutoff": "2026-12-18",
+  "publish": "2027-04-09"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "ERIC STEINBACH",
+  "rss": 310,
+  "review_name": "GROCERY FRESH BREAD",
+  "review_start": "2026-10-23",
+  "cutoff": "2026-12-18",
+  "publish": "2027-04-09"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "JIMMY MCCAULEY",
+  "rss": 984,
+  "review_name": "SCO-CANDY WALL 1 BAG",
+  "review_start": "2026-10-30",
+  "cutoff": "2026-12-25",
+  "publish": "2027-04-16"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "JIMMY MCCAULEY",
+  "rss": 928,
+  "review_name": "SCO-CANDY 2 BAG ON LEFT",
+  "review_start": "2026-10-30",
+  "cutoff": "2026-12-25",
+  "publish": "2027-04-16"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "JIMMY MCCAULEY",
+  "rss": 926,
+  "review_name": "SCO-CANDY 2 BAG ON RIGHT",
+  "review_start": "2026-10-30",
+  "cutoff": "2026-12-25",
+  "publish": "2027-04-16"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "JIMMY MCCAULEY",
+  "rss": 925,
+  "review_name": "SCO-CANDY PEG BG/TBOX CMB",
+  "review_start": "2026-10-30",
+  "cutoff": "2026-12-25",
+  "publish": "2027-04-16"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "JIMMY MCCAULEY",
+  "rss": 924,
+  "review_name": "SCO-CANDY GUM MERCH WALL",
+  "review_start": "2026-10-30",
+  "cutoff": "2026-12-25",
+  "publish": "2027-04-16"
+ },
+ {
+  "cat_mgr": "ANDREW BORNMANN",
+  "contact": "JON SMALL",
+  "rss": 136,
+  "review_name": "TOASTER PASTRY",
+  "review_start": "2026-10-30",
+  "cutoff": "2026-12-25",
+  "publish": "2027-04-16"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "TERRY ADAMSON",
+  "rss": 344,
+  "review_name": "EGGS",
+  "review_start": "2026-10-30",
+  "cutoff": "2026-12-25",
+  "publish": "2027-04-16"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 15,
+  "review_name": "ADULT CARE",
+  "review_start": "2026-10-30",
+  "cutoff": "2026-12-25",
+  "publish": "2027-04-16"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "JAMES WILSON",
+  "rss": 160,
+  "review_name": "KETCHUP/SAUCES/BBQ",
+  "review_start": "2026-10-30",
+  "cutoff": "2026-12-25",
+  "publish": "2027-04-16"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "BARRETT SUMNER",
+  "rss": 526,
+  "review_name": "CMB-FEM HY/INCONTINENCE",
+  "review_start": "2026-10-30",
+  "cutoff": "2026-12-25",
+  "publish": "2027-04-16"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 633,
+  "review_name": "MEAT-BACON/BREAKFAST",
+  "review_start": "2026-10-30",
+  "cutoff": "2026-12-25",
+  "publish": "2027-04-16"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "JIMMY MCCAULEY",
+  "rss": 115,
+  "review_name": "CHECKSTAND PEG CANDY",
+  "review_start": "2026-10-30",
+  "cutoff": "2026-12-25",
+  "publish": "2027-04-16"
+ },
+ {
+  "cat_mgr": "DARRIN MIDDLETON",
+  "contact": "JIMMY MCCAULEY",
+  "rss": 624,
+  "review_name": "THEATRE BOX WEDGE",
+  "review_start": "2026-10-30",
+  "cutoff": "2026-12-25",
+  "publish": "2027-04-16"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "LAWN & GARDEN",
+  "review_start": "2026-04-29",
+  "cutoff": "2026-06-26",
+  "publish": "2027-04-23"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "SPRING",
+  "review_start": "2026-04-29",
+  "cutoff": "2026-06-26",
+  "publish": "2027-04-23"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 999,
+  "review_name": "SUMMER",
+  "review_start": "2026-04-29",
+  "cutoff": "2026-06-26",
+  "publish": "2027-04-23"
+ },
+ {
+  "cat_mgr": "BARBARA DWYER",
+  "contact": "DARRELL LAMOUREUX",
+  "rss": 490,
+  "review_name": "BAKING INGREDIENTS",
+  "review_start": "2026-11-06",
+  "cutoff": "2027-01-01",
+  "publish": "2027-04-23"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 174,
+  "review_name": "PAPER TOWELS",
+  "review_start": "2026-11-06",
+  "cutoff": "2027-01-01",
+  "publish": "2027-04-23"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 447,
+  "review_name": "FROZEN DINNER/ENTREE",
+  "review_start": "2026-11-06",
+  "cutoff": "2027-01-01",
+  "publish": "2027-04-23"
+ },
+ {
+  "cat_mgr": "ERIK SHAPIRO",
+  "contact": "SCOTT GIFFORD",
+  "rss": 587,
+  "review_name": "VODKA",
+  "review_start": "2026-11-06",
+  "cutoff": "2027-01-01",
+  "publish": "2027-04-23"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 321,
+  "review_name": "PROD-PRODUCE SNACKS",
+  "review_start": "2026-11-13",
+  "cutoff": "2027-01-08",
+  "publish": "2027-04-30"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 73,
+  "review_name": "INFANT FORMULA",
+  "review_start": "2026-11-13",
+  "cutoff": "2027-01-08",
+  "publish": "2027-04-30"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 179,
+  "review_name": "WET CAT",
+  "review_start": "2026-11-13",
+  "cutoff": "2027-01-08",
+  "publish": "2027-04-30"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 180,
+  "review_name": "REFRIGERATED PET FOODS",
+  "review_start": "2026-11-13",
+  "cutoff": "2027-01-08",
+  "publish": "2027-04-30"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 215,
+  "review_name": "DELI-DELI BREAD",
+  "review_start": "2026-11-13",
+  "cutoff": "2027-01-08",
+  "publish": "2027-04-30"
+ },
+ {
+  "cat_mgr": "DON SCOTT",
+  "contact": "MIKE DEMASI",
+  "rss": 367,
+  "review_name": "NATURAL SALTY SNACKS",
+  "review_start": "2026-11-13",
+  "cutoff": "2027-01-08",
+  "publish": "2027-04-30"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "JAMES KREBS",
+  "rss": 18,
+  "review_name": "SHELF STABLE CHEESE",
+  "review_start": "2026-11-20",
+  "cutoff": "2027-01-15",
+  "publish": "2027-05-07"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "JAMES KREBS",
+  "rss": 59,
+  "review_name": "PASTA SAUCE",
+  "review_start": "2026-11-20",
+  "cutoff": "2027-01-15",
+  "publish": "2027-05-07"
+ },
+ {
+  "cat_mgr": "BRETT RUVOLO",
+  "contact": "CHAD SHOEMAKER",
+  "rss": 101,
+  "review_name": "BASE WATER",
+  "review_start": "2026-11-20",
+  "cutoff": "2027-01-15",
+  "publish": "2027-05-07"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "MATT LUCAS",
+  "rss": 130,
+  "review_name": "SINGLE SERVE JUICE",
+  "review_start": "2026-11-20",
+  "cutoff": "2027-01-15",
+  "publish": "2027-05-07"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "ERIC STEINBACH",
+  "rss": 156,
+  "review_name": "PEANUT BUTTER/JELLY",
+  "review_start": "2026-11-20",
+  "cutoff": "2027-01-15",
+  "publish": "2027-05-07"
+ },
+ {
+  "cat_mgr": "WESLEY REESE",
+  "contact": "TOMAS MARTINEZ",
+  "rss": 314,
+  "review_name": "PROD-HERBS & MUSHROOMS",
+  "review_start": "2026-11-20",
+  "cutoff": "2027-01-15",
+  "publish": "2027-05-07"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 72,
+  "review_name": "DIAPERS",
+  "review_start": "2026-11-27",
+  "cutoff": "2027-01-22",
+  "publish": "2027-05-14"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "KEVIN ROBERTS",
+  "rss": 74,
+  "review_name": "BABY WIPES",
+  "review_start": "2026-11-27",
+  "cutoff": "2027-01-22",
+  "publish": "2027-05-14"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 31,
+  "review_name": "PAIN",
+  "review_start": "2026-11-27",
+  "cutoff": "2027-01-22",
+  "publish": "2027-05-14"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "STAN TUTEN",
+  "rss": 281,
+  "review_name": "FROZEN BREAKFAST",
+  "review_start": "2026-11-27",
+  "cutoff": "2027-01-22",
+  "publish": "2027-05-14"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 482,
+  "review_name": "HISPANIC OTC/PERSON CARE",
+  "review_start": "2026-11-27",
+  "cutoff": "2027-01-22",
+  "publish": "2027-05-14"
+ },
+ {
+  "cat_mgr": "SPENCER LARSCHEID",
+  "contact": "RICK TURP",
+  "rss": 608,
+  "review_name": "RED/BOX",
+  "review_start": "2026-11-27",
+  "cutoff": "2027-01-22",
+  "publish": "2027-05-14"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "DANA LONERGAN",
+  "rss": 453,
+  "review_name": "HISP CARIB OTC",
+  "review_start": "2026-11-27",
+  "cutoff": "2027-01-22",
+  "publish": "2027-05-14"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 8,
+  "review_name": "PROD-NUTS",
+  "review_start": "2026-11-27",
+  "cutoff": "2027-01-22",
+  "publish": "2027-05-14"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 58,
+  "review_name": "PROD-PEANUTS",
+  "review_start": "2026-11-27",
+  "cutoff": "2027-01-22",
+  "publish": "2027-05-14"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "KEITH PILIEGO",
+  "rss": 62,
+  "review_name": "PROD-ALMNDS/WALNTS/PECANS",
+  "review_start": "2026-11-27",
+  "cutoff": "2027-01-22",
+  "publish": "2027-05-14"
+ },
+ {
+  "cat_mgr": "BRENT EVERS",
+  "contact": "DANIEL BOSTON",
+  "rss": 76,
+  "review_name": "ALL PURPOSE CLEANER",
+  "review_start": "2026-12-04",
+  "cutoff": "2027-01-29",
+  "publish": "2027-05-21"
+ },
+ {
+  "cat_mgr": "SARAH MILBURN",
+  "contact": "BRIAN CAHILL",
+  "rss": 140,
+  "review_name": "POTATO/STUFFING/GRAVY",
+  "review_start": "2026-12-04",
+  "cutoff": "2027-01-29",
+  "publish": "2027-05-21"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 295,
+  "review_name": "FROZEN POT PIE",
+  "review_start": "2026-12-04",
+  "cutoff": "2027-01-29",
+  "publish": "2027-05-21"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 324,
+  "review_name": "FROZEN SKILLET MEALS",
+  "review_start": "2026-12-04",
+  "cutoff": "2027-01-29",
+  "publish": "2027-05-21"
+ },
+ {
+  "cat_mgr": "CESAR URREA",
+  "contact": "TROY HUTCHENS",
+  "rss": 325,
+  "review_name": "FROZEN PASTA",
+  "review_start": "2026-12-04",
+  "cutoff": "2027-01-29",
+  "publish": "2027-05-21"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 396,
+  "review_name": "VITAMINS",
+  "review_start": "2026-12-04",
+  "cutoff": "2027-01-29",
+  "publish": "2027-05-21"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 384,
+  "review_name": "PPL-IMPLEMENTS",
+  "review_start": "2026-12-11",
+  "cutoff": "2027-02-05",
+  "publish": "2027-05-28"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "CHERYL JAMES",
+  "rss": 19,
+  "review_name": "CHEESE-SPREADS/SNACKING/MOZZARELLA/FRESH CHEESES",
+  "review_start": "2026-12-11",
+  "cutoff": "2027-02-05",
+  "publish": "2027-05-28"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 187,
+  "review_name": "BIRD",
+  "review_start": "2026-12-11",
+  "cutoff": "2027-02-05",
+  "publish": "2027-05-28"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 12,
+  "review_name": "COTTON",
+  "review_start": "2026-12-11",
+  "cutoff": "2027-02-05",
+  "publish": "2027-05-28"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 120,
+  "review_name": "HISPANIC GALLETA/TOAST",
+  "review_start": "2026-12-11",
+  "cutoff": "2027-02-05",
+  "publish": "2027-05-28"
+ },
+ {
+  "cat_mgr": "STEPHANIE SIMPSON",
+  "contact": "JEFF ORME",
+  "rss": 121,
+  "review_name": "HISPANC COOKIE/CRKS/TOAST",
+  "review_start": "2026-12-11",
+  "cutoff": "2027-02-05",
+  "publish": "2027-05-28"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 188,
+  "review_name": "PET SUPPLIES",
+  "review_start": "2026-12-11",
+  "cutoff": "2027-02-05",
+  "publish": "2027-05-28"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 189,
+  "review_name": "PET TOYS",
+  "review_start": "2026-12-11",
+  "cutoff": "2027-02-05",
+  "publish": "2027-05-28"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 384,
+  "review_name": "IMPLEMENTS",
+  "review_start": "2026-12-11",
+  "cutoff": "2027-02-05",
+  "publish": "2027-05-28"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "CHAD STEWART",
+  "rss": 604,
+  "review_name": "BIRD/PET SUPPLIES/PE TOYS",
+  "review_start": "2026-12-11",
+  "cutoff": "2027-02-05",
+  "publish": "2027-05-28"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 618,
+  "review_name": "CMB-COTTON/IMPLEMENTS",
+  "review_start": "2026-12-11",
+  "cutoff": "2027-02-05",
+  "publish": "2027-05-28"
+ },
+ {
+  "cat_mgr": "DAN BLANCHARD",
+  "contact": "KENT FIGHTMASTER",
+  "rss": 172,
+  "review_name": "FACIAL TISSUE",
+  "review_start": "2026-12-11",
+  "cutoff": "2027-02-05",
+  "publish": "2027-05-28"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 358,
+  "review_name": "MEAT-CMB-FROZEN MEAT CPG",
+  "review_start": "2026-12-18",
+  "cutoff": "2027-02-12",
+  "publish": "2027-06-04"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 429,
+  "review_name": "MEAT-ENTREES MISC",
+  "review_start": "2026-12-18",
+  "cutoff": "2027-02-12",
+  "publish": "2027-06-04"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "IVONNE LEON",
+  "rss": 518,
+  "review_name": "REUSABLE BAGS",
+  "review_start": "2026-12-18",
+  "cutoff": "2027-02-12",
+  "publish": "2027-06-04"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 519,
+  "review_name": "JHOOKS",
+  "review_start": "2026-12-18",
+  "cutoff": "2027-02-12",
+  "publish": "2027-06-04"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 535,
+  "review_name": "MEAT-FRZN BREAKFAST MEAT",
+  "review_start": "2026-12-18",
+  "cutoff": "2027-02-12",
+  "publish": "2027-06-04"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 916,
+  "review_name": "MEAT-FROZEN APPETIZERS",
+  "review_start": "2026-12-18",
+  "cutoff": "2027-02-12",
+  "publish": "2027-06-04"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 917,
+  "review_name": "MEAT-FRZN CHICKEN ENTREES",
+  "review_start": "2026-12-18",
+  "cutoff": "2027-02-12",
+  "publish": "2027-06-04"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "TODD JONES JR",
+  "rss": 430,
+  "review_name": "MEAT-FRZN CHICKEN SPECLTY",
+  "review_start": "2026-12-18",
+  "cutoff": "2027-02-12",
+  "publish": "2027-06-04"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 805,
+  "review_name": "FE WEDGE-RAZOR BLADE CMB",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "ALI POLAT",
+  "contact": "ANGELOT PAUL",
+  "rss": 40,
+  "review_name": "DELI SALADS (HOME-STYLE)",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "ANDREW GRIFFIN",
+  "contact": "TERRY ADAMSON",
+  "rss": 60,
+  "review_name": "CREAM CHEESE/BAGEL",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "JONETTE BACCHUS-YATES",
+  "contact": "RACHEL SANTOS",
+  "rss": 2,
+  "review_name": "DELI-PRE-PACK MEAT/CHEESE",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 6,
+  "review_name": "TEXTURED HAIR CARE",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 9,
+  "review_name": "HAIR COLOR",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "ROBIN BUTZ",
+  "rss": 10,
+  "review_name": "TEXTURED HAIR ACCESSORIES",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 16,
+  "review_name": "SHAVING NEEDS",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 17,
+  "review_name": "RAZOR BLADES FRONT",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 26,
+  "review_name": "SPECIALTY BATH",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 376,
+  "review_name": "PARTY GOODS",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "KEVIN ROUTH",
+  "contact": "CHRISTINA BRADLEY",
+  "rss": 403,
+  "review_name": "AROMATHERAPY PGM-HYBRID",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 456,
+  "review_name": "PPL-BATH ACCESSORIES",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "JOE MCCOY",
+  "rss": 596,
+  "review_name": "PROD-GRAB GO",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "TONJA PRATT",
+  "contact": "DAVID URFER",
+  "rss": 613,
+  "review_name": "MEAT-LUNCHMEAT",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "MATT SPLIT",
+  "rss": 714,
+  "review_name": "PROD-GRAB & GO FRUIT",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "MICHAEL CRIBBS",
+  "contact": "JOE MCCOY",
+  "rss": 715,
+  "review_name": "PROD-GRAB & GO SALADS",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 786,
+  "review_name": "PARTY GOODS SHADOW BOX",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "ANNA REYNOLDS",
+  "contact": "KRISTIN GRUBKA",
+  "rss": 787,
+  "review_name": "PARTY GOODS RACK",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "PAM BRYANT",
+  "contact": "MATTHEW BUCHY",
+  "rss": 963,
+  "review_name": "TBL-PREWRAPD BAR SOAP",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "TOBI BUTCHER",
+  "contact": "MATT LUCAS",
+  "rss": 964,
+  "review_name": "APPLESAUCE",
+  "review_start": "2026-12-25",
+  "cutoff": "2027-02-19",
+  "publish": "2027-06-11"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 999,
+  "review_name": "FALL",
+  "review_start": "2026-10-30",
+  "cutoff": "2027-01-27",
+  "publish": "2027-09-10"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 999,
+  "review_name": "HALLOWEEN",
+  "review_start": "2026-10-30",
+  "cutoff": "2027-01-27",
+  "publish": "2027-09-10"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 999,
+  "review_name": "CHRISTMAS",
+  "review_start": "2026-10-30",
+  "cutoff": "2027-02-24",
+  "publish": "2027-10-08"
+ },
+ {
+  "cat_mgr": "SHERRY GOODELLE",
+  "contact": "DAN BRYAN",
+  "rss": 999,
+  "review_name": "NEW YEAR",
+  "review_start": "2026-10-30",
+  "cutoff": "2027-02-24",
+  "publish": "2027-10-08"
+ }
+]

@@ -9,22 +9,44 @@ Outputs: crm_accounts.json  — the dataset the site renders
 import json, glob, re, unicodedata, datetime, collections, os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-TODAY = datetime.date(2026, 7, 16)
+# Must never be hardcoded: this runs on a schedule, and a frozen "today" would quietly
+# stop ageing every lead -- days-since would stick and nothing would ever come due.
+TODAY = (
+    datetime.date.fromisoformat(os.environ["CRM_ASOF"])
+    if os.environ.get("CRM_ASOF")
+    else datetime.date.today()
+)
 
 # ---------------------------------------------------------------- load
+# Every sweep_*.json in this directory is an input, so the refresh job can drop in a new
+# month's file (sweep_live_2026-08.json) and it merges with no code change. Two shapes are
+# accepted: a flat list of lead records, or a dict of named lists (the Notion/cal/LinkedIn
+# pull). Records whose keys are all underscore-prefixed are coverage notes, not leads.
 recs = []
-for f in sorted(glob.glob(os.path.join(HERE, "sweep_0[1-4]*.json"))):
-    win = os.path.basename(f)[6:8]
-    for r in json.load(open(f, encoding="utf-8")):
-        if any(k.startswith("_") for k in r):
-            continue
-        r["_src"] = "gmail"; r["_win"] = win
-        recs.append(r)
-d5 = json.load(open(os.path.join(HERE, "sweep_05_notion_calendar_linkedin.json"), encoding="utf-8"))
-for k in ("notion_crm", "calendar", "linkedin"):
-    for r in d5.get(k, []):
-        r["_src"] = k; r["_win"] = "05"
-        recs.append(r)
+for f in sorted(glob.glob(os.path.join(HERE, "sweep_*.json"))):
+    base = os.path.basename(f)
+    try:
+        data = json.load(open(f, encoding="utf-8"))
+    except Exception as e:
+        print(f"  !! skipping unreadable {base}: {e}")
+        continue
+    if isinstance(data, dict):
+        for key, rows in data.items():
+            if not isinstance(rows, list):
+                continue
+            for r in rows:
+                if not isinstance(r, dict) or any(k.startswith("_") for k in r):
+                    continue
+                r["_src"] = key
+                r["_win"] = base
+                recs.append(r)
+    else:
+        for r in data:
+            if not isinstance(r, dict) or any(k.startswith("_") for k in r):
+                continue
+            r.setdefault("_src", "gmail")
+            r["_win"] = base
+            recs.append(r)
 
 door_plan = json.load(open(os.path.join(HERE, "door_plan.json"), encoding="utf-8"))
 try:
@@ -355,6 +377,19 @@ for c, a in accounts.items():
 
 out.sort(key=lambda x: (x["stage"] != "live", -(x["plannedDoors"] or 0), x["company"]))
 json.dump(out, open(os.path.join(HERE, "crm_accounts.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+
+# Stats travel with the data so the emitter never hardcodes a count that can go stale.
+json.dump(
+    {
+        "records": len(recs),
+        "accounts": len(out),
+        "generatedAt": datetime.datetime.now().isoformat(timespec="seconds"),
+        "asOf": TODAY.isoformat(),
+        "sweepFiles": sorted(os.path.basename(f) for f in glob.glob(os.path.join(HERE, "sweep_*.json"))),
+    },
+    open(os.path.join(HERE, "crm_meta.json"), "w", encoding="utf-8"),
+    indent=1,
+)
 
 with open(os.path.join(HERE, "merge_report.txt"), "w", encoding="utf-8") as fh:
     fh.write(f"{len(recs)} raw records -> {len(out)} accounts\n\n")

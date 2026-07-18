@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-17",
+  "asOf": "2026-07-18",
   "findings": [
     {
       "sev": "🔴",
@@ -100,6 +100,13 @@
       "impact": null
     },
     {
+      "sev": "🟡",
+      "area": "Freshness",
+      "title": "Spine may be stale (latest delivery 2026-07-13 = 5d ago, latest order 2026-07-17 = 1d ago)",
+      "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
+      "impact": null
+    },
+    {
       "sev": "✅",
       "area": "Open item",
       "title": "[Quality / Neighborly] Neighborly mislabel — Evan will relabel on their own (they have a label maker); NOT a red flag from Neighborly's side anymore",
@@ -110,13 +117,6 @@
       "sev": "✅",
       "area": "Inventory",
       "title": "On-hand: BUF 625 / FO 615 / GR 422 cs",
-      "detail": "",
-      "impact": null
-    },
-    {
-      "sev": "✅",
-      "area": "Freshness",
-      "title": "Spine fresh (latest event 2026-07-13, latest order 2026-07-17)",
       "detail": "",
       "impact": null
     }

@@ -66,6 +66,10 @@
       "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 1, "fo": 1, "gr": 1 },
       "note": "pipeline, not yet recurring" },
 
+    { "account": "Eco-Meal", "active": false, "cadence": "pipeline",
+      "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
+      "note": "NEW distributor (Union Market) on the 'eco' channel — 30-day floor (doors.json serviced_by 'eco'; run_calendar minShelfLifeDaysAtDelivery.eco). Starts Aug 2026; no PO yet, so booked=0 and NO quantity is invented. When a real PO lands, flip active:true and move the demonstrated amount into booked — same mechanism as Fairway's upside. Channel is authoritative in doors.json; this row only carries the (currently zero) quantity." },
+
     { "account": "Be Neighborly", "active": false, "cadence": "sporadic",
       "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
       "note": "LA / first West Coast. NOT recurring demand — the 100 cs restock is handled as a DIVERSION off the Jul-13 run in run_calendar.json, not as weekly demand. Do not double-count." }

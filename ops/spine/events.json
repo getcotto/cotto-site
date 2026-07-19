@@ -766,5 +766,17 @@
     "lot": "FEFO",
     "notes": "Meraki Direct DSD pickup, PO 6002145 / BOL 071326-001",
     "ref": "MERAKI-6002145"
+  },
+  {
+    "date": "2026-07-16",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "buf": 19,
+    "fo": 25,
+    "gr": 19,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": "7/16 NYC direct route (delivered), 63 cs. FEFO'd off the oldest lot: 19 BUF + 25 FO off the 6/15 run, then 19 GR off the 6/24 run (6/15 holds no GR). Reconciles Brooklyn to 492/434/287 = 1,213.",
+    "ref": "DELIV-20260716-NYC"
   }
 ]

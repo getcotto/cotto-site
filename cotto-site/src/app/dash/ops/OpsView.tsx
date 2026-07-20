@@ -317,11 +317,72 @@ function FreshnessBanner({
           {freshness!.lastSwept ? ` · latest movement ${freshness!.lastSwept}` : ""} — capture is current.
         </div>
       )}
+      {freshness?.sources && <SourceFreshnessStrip sources={freshness.sources} />}
       {packagingStaleNote && (
         <div className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-2 text-xs font-medium text-amber-800">
           ⚠ {packagingStaleNote}
         </div>
       )}
+    </div>
+  );
+}
+
+// Per-source freshness chips: one per input the sweep pulls (gmail, settle, texts, slips,
+// calendar, meraki), each green/amber/red by its own staleness so a single quiet channel is
+// visible at a glance. A source with no local cache (calendar is live-queried) shows grey. Slips
+// go red on a backlog (photos arrived but unread) even with no processed date.
+function SourceFreshnessStrip({
+  sources,
+}: {
+  sources: NonNullable<NonNullable<OpsSnapshot["freshness"]>["sources"]>;
+}) {
+  const ORDER = ["gmail", "settle", "texts", "slips", "meraki", "calendar"];
+  const keys = Object.keys(sources).sort((a, b) => {
+    const ia = ORDER.indexOf(a), ib = ORDER.indexOf(b);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+  });
+  const tone = (s: (typeof sources)[string]): "green" | "amber" | "red" | "grey" => {
+    if (s.backlog) return "red";
+    if (s.staleDays == null) return "grey";
+    if (s.staleDays > 3) return "red";
+    if (s.staleDays > 1) return "amber";
+    return "green";
+  };
+  const cls: Record<string, string> = {
+    green: "border-emerald-200 bg-emerald-50 text-emerald-700",
+    amber: "border-amber-300 bg-amber-50 text-amber-900",
+    red: "border-red-300 bg-red-50 text-red-800",
+    grey: "border-neutral-200 bg-neutral-50 text-neutral-500",
+  };
+  return (
+    <div className="flex flex-wrap gap-1.5">
+      {keys.map((k) => {
+        const s = sources[k];
+        const t = tone(s);
+        const detail = s.backlog
+          ? "backlog"
+          : s.staleDays == null
+            ? s.note
+              ? "live"
+              : "—"
+            : s.staleDays === 0
+              ? "today"
+              : `${s.staleDays}d`;
+        return (
+          <span
+            key={k}
+            title={
+              (s.lastIngested ? `last: ${s.lastIngested}` : "no local cache") +
+              (s.lastArrived ? ` · arrived: ${s.lastArrived}` : "") +
+              (s.note ? ` · ${s.note}` : "")
+            }
+            className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-medium ${cls[t]}`}
+          >
+            <span className="font-semibold">{k}</span>
+            <span className="opacity-70">{detail}</span>
+          </span>
+        );
+      })}
     </div>
   );
 }

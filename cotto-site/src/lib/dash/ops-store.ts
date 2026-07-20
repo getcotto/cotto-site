@@ -116,6 +116,19 @@ export type OpsSnapshot = {
     lastSwept: string | null; // most recent capture date (events + orders), or null if none
     staleDays: number | null; // days since lastSwept; null when nothing captured yet
     opsViewAsOf: string | null; // the curated view's own asOf (can lag the engine)
+    // Per-source freshness so a single dead input (Settle export not pulled, texts not captured,
+    // slips piling up unread) shows on its own chip instead of hiding inside the aggregate.
+    // Each source reports a real file/mtime signal; a source with no local cache is null.
+    sources?: Record<
+      string,
+      {
+        lastIngested: string | null;
+        staleDays: number | null;
+        backlog?: boolean; // slips: photos arrived that haven't been processed yet
+        lastArrived?: string | null; // slips: newest photo landed
+        note?: string;
+      }
+    >;
   };
 };
 

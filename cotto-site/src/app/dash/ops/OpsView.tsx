@@ -94,6 +94,9 @@ export default function OpsView({ snapshot, storeError }: Props) {
   const s = snapshot;
   return (
     <Shell asOf={s.asOf} updatedAt={s.updatedAt}>
+      {/* FRESHNESS — is the Gmail capture still running? Loud when it isn't. */}
+      <FreshnessBanner freshness={s.freshness} packagingStaleNote={s.packaging?.staleNote} />
+
       {/* KPIs */}
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         <Kpi label="On hand" value={s.onHand.total} unit={`cs · Bklyn ${s.location.brooklyn} + Edison ${s.location.edison}`} accent="cyan" />
@@ -271,6 +274,55 @@ export default function OpsView({ snapshot, storeError }: Props) {
       {/* PLANNING FLAGS — monthly diagnostics, de-emphasized at the bottom, collapsed by default */}
       {s.flags && s.flags.length > 0 && <PlanningFlags flags={s.flags} />}
     </Shell>
+  );
+}
+
+// Top-of-page capture-freshness banner. Quiet green when the sweep ran today/yesterday
+// (staleDays <= 1); loud amber (2-3 days) or red (>3 days) when the Gmail-dependent capture
+// hasn't run — the failure mode that once froze silently for a week. Also echoes the
+// packaging/count staleness up top so both staleness signals are visible before any number.
+function FreshnessBanner({
+  freshness,
+  packagingStaleNote,
+}: {
+  freshness?: OpsSnapshot["freshness"];
+  packagingStaleNote?: string;
+}) {
+  const hasFreshness = freshness && freshness.staleDays != null;
+  const days = freshness?.staleDays ?? null;
+  const stale = days != null && days > 1;
+  const level = days != null && days > 3 ? "red" : "amber"; // loudness tier for stale
+
+  return (
+    <div className="mb-5 space-y-2">
+      {!hasFreshness ? (
+        <div className="rounded-xl border border-neutral-300 bg-neutral-50 px-4 py-2.5 text-sm text-neutral-600">
+          Capture freshness unknown — no <code className="rounded bg-neutral-100 px-1 py-0.5">freshness</code> in this snapshot. Re-run{" "}
+          <code className="rounded bg-neutral-100 px-1 py-0.5">emit-ops-snapshot.js</code>.
+        </div>
+      ) : stale ? (
+        <div
+          className={`rounded-xl border-2 px-4 py-3 text-sm font-semibold ${
+            level === "red" ? "border-red-400 bg-red-50 text-red-800" : "border-amber-400 bg-amber-50 text-amber-900"
+          }`}
+        >
+          ⚠ Last swept {days} days ago{freshness!.lastSwept ? ` (${freshness!.lastSwept})` : ""} — capture hasn't run.
+          <span className="ml-1 font-normal">
+            New orders, deliveries, and receipts may be missing from this view. Run the order desk or the daily brief to resweep.
+          </span>
+        </div>
+      ) : (
+        <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2 text-xs font-medium text-emerald-700">
+          ✓ Swept {days === 0 ? "today" : "yesterday"}
+          {freshness!.lastSwept ? ` · latest movement ${freshness!.lastSwept}` : ""} — capture is current.
+        </div>
+      )}
+      {packagingStaleNote && (
+        <div className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-2 text-xs font-medium text-amber-800">
+          ⚠ {packagingStaleNote}
+        </div>
+      )}
+    </div>
   );
 }
 

@@ -109,6 +109,14 @@ export type OpsSnapshot = {
   history?: OpsHistoryRow[];
   flags?: Array<{ level: "red" | "amber" | "info"; text: string }>;
   notes?: string[];
+  // Capture recency — is the Gmail-dependent sweep still running? Derived by
+  // emit-ops-snapshot.js from the newest movement across events.json + orders.json.
+  // Drives the top-of-page freshness banner so a frozen pipe is loud, not silent.
+  freshness?: {
+    lastSwept: string | null; // most recent capture date (events + orders), or null if none
+    staleDays: number | null; // days since lastSwept; null when nothing captured yet
+    opsViewAsOf: string | null; // the curated view's own asOf (can lag the engine)
+  };
 };
 
 export async function getOpsSnapshot(): Promise<OpsSnapshot | null> {

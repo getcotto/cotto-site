@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import type { ReactNode } from "react";
 import type { OpsSnapshot, OpsLot, OpsOrder, OpsLedgerRow, OpsRun, OpsHistoryRow, OpsPackagingComponent } from "@/lib/dash/ops-store";
 
@@ -100,16 +101,6 @@ export default function OpsView({ snapshot, storeError }: Props) {
         <Kpi label="Inbound" value={s.location.inbound} unit="cs · 7/13 run" accent="amber" />
         <Kpi label="BUF / FO / GR" value={`${s.onHand.buf}/${s.onHand.fo}/${s.onHand.gr}`} unit="cases on hand" accent="neutral" />
       </div>
-
-      {s.flags && s.flags.length > 0 && (
-        <div className="mt-4 space-y-2">
-          {s.flags.map((f, i) => (
-            <div key={i} className={`rounded-lg border px-3 py-2 text-sm ${f.level === "red" ? "border-red-200 bg-red-50 text-red-700" : f.level === "amber" ? "border-amber-200 bg-amber-50 text-amber-800" : "border-neutral-200 bg-neutral-50 text-neutral-700"}`}>
-              {f.text}
-            </div>
-          ))}
-        </div>
-      )}
 
       {/* LOTS */}
       <Section id="inventory" eyebrow="Where it is" title="Inventory by lot & shelf life">
@@ -276,8 +267,70 @@ export default function OpsView({ snapshot, storeError }: Props) {
           </ul>
         </div>
       )}
+
+      {/* PLANNING FLAGS — monthly diagnostics, de-emphasized at the bottom, collapsed by default */}
+      {s.flags && s.flags.length > 0 && <PlanningFlags flags={s.flags} />}
     </Shell>
   );
+}
+
+// First sentence/clause of a flag, for the collapsed one-line preview. Splits on the first
+// sentence end or the em/colon boundary the engine uses to lead its longer callouts.
+function firstClause(text: string): string {
+  const m = text.match(/^(.*?[.:])\s/);
+  const clause = (m ? m[1] : text).trim();
+  return clause.length > 140 ? clause.slice(0, 137).trimEnd() + "…" : clause;
+}
+
+function PlanningFlags({ flags }: { flags: NonNullable<OpsSnapshot["flags"]> }) {
+  const [open, setOpen] = useState(false);
+  const redCount = flags.filter((f) => f.level === "red").length;
+  return (
+    <section className="mt-10 border-t border-neutral-200 pt-6">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="flex w-full items-center gap-2 text-left text-[11px] font-bold uppercase tracking-[0.14em] text-neutral-500 hover:text-neutral-700"
+      >
+        <span className={`inline-block transition-transform ${open ? "rotate-90" : ""}`}>▸</span>
+        Planning flags ({flags.length})
+        {redCount > 0 && <span className="rounded bg-red-50 px-1.5 py-0.5 text-[10px] font-semibold text-red-700">{redCount} red</span>}
+        <span className="ml-1 font-normal normal-case tracking-normal text-neutral-400">monthly S&amp;OP diagnostics — not daily to-dos</span>
+      </button>
+      {open ? (
+        <div className="mt-4 space-y-2">
+          {flags.map((f, i) => (
+            <details key={i} className={`group rounded-lg border px-3 py-2 text-sm ${f.level === "red" ? "border-red-200 bg-red-50" : f.level === "amber" ? "border-amber-200 bg-amber-50" : "border-neutral-200 bg-neutral-50"}`}>
+              <summary className="flex cursor-pointer list-none items-start gap-2">
+                <FlagChip level={f.level} />
+                <span className={`flex-1 ${f.level === "red" ? "text-red-800" : f.level === "amber" ? "text-amber-900" : "text-neutral-700"}`}>
+                  {firstClause(f.text)}
+                </span>
+                <span className="mt-0.5 shrink-0 text-[11px] font-medium text-neutral-400 group-open:hidden">details</span>
+              </summary>
+              <p className={`mt-2 whitespace-pre-wrap text-[13px] leading-relaxed ${f.level === "red" ? "text-red-700" : f.level === "amber" ? "text-amber-800" : "text-neutral-600"}`}>
+                {f.text}
+              </p>
+            </details>
+          ))}
+        </div>
+      ) : (
+        <div className="mt-2 flex flex-wrap gap-1.5">
+          {flags.map((f, i) => (
+            <span key={i} className={`inline-flex items-center gap-1 rounded px-1.5 py-0.5 text-[11px] font-medium ${f.level === "red" ? "bg-red-50 text-red-700" : f.level === "amber" ? "bg-amber-50 text-amber-800" : "bg-neutral-100 text-neutral-500"}`}>
+              <FlagChip level={f.level} />
+              {firstClause(f.text)}
+            </span>
+          ))}
+        </div>
+      )}
+    </section>
+  );
+}
+
+function FlagChip({ level }: { level: "red" | "amber" | "info" }) {
+  const cls = level === "red" ? "bg-red-500" : level === "amber" ? "bg-amber-500" : "bg-neutral-400";
+  return <span className={`mt-1 inline-block h-2 w-2 shrink-0 rounded-full ${cls}`} aria-label={level} />;
 }
 
 function RunsTable({ runs }: { runs: OpsRun[] }) {

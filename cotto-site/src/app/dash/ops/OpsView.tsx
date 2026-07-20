@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
-import type { OpsSnapshot, OpsLot, OpsOrder, OpsLedgerRow, OpsRun, OpsHistoryRow } from "@/lib/dash/ops-store";
+import type { OpsSnapshot, OpsLot, OpsOrder, OpsLedgerRow, OpsRun, OpsHistoryRow, OpsPackagingComponent } from "@/lib/dash/ops-store";
 
 type Props = {
   snapshot: OpsSnapshot | null;
@@ -51,6 +51,22 @@ function Td({ children, right, muted }: { children: ReactNode; right?: boolean; 
     <td className={`whitespace-nowrap border-t border-neutral-100 px-3 py-2 text-sm tabular-nums ${right ? "text-right" : "text-left"} ${muted ? "text-neutral-400" : "text-neutral-800"}`}>
       {children}
     </td>
+  );
+}
+
+// A subtotal-style row for market positions that are NOT warehouse best-by lots
+// (Meraki in-market, inbound in production). Case totals only — no per-SKU or best-by.
+function SummaryRow({ label, title, cases }: { label: string; title: string; cases: number }) {
+  return (
+    <tr className="bg-neutral-50 italic text-neutral-500" title={title}>
+      <td className="whitespace-nowrap border-t border-neutral-200 px-3 py-2 text-sm font-medium">{label}</td>
+      <td className="whitespace-nowrap border-t border-neutral-200 px-3 py-2 text-sm" />
+      <td className="whitespace-nowrap border-t border-neutral-200 px-3 py-2 text-right text-sm">—</td>
+      <td className="whitespace-nowrap border-t border-neutral-200 px-3 py-2 text-right text-sm">—</td>
+      <td className="whitespace-nowrap border-t border-neutral-200 px-3 py-2 text-right text-sm">—</td>
+      <td className="whitespace-nowrap border-t border-neutral-200 px-3 py-2 text-right text-sm tabular-nums font-semibold">{cases.toLocaleString()}</td>
+      <td className="whitespace-nowrap border-t border-neutral-200 px-3 py-2 text-sm" colSpan={3} />
+    </tr>
   );
 }
 
@@ -117,6 +133,13 @@ export default function OpsView({ snapshot, storeError }: Props) {
                   <Td muted>{l.directUntil ?? "—"}</Td>
                 </tr>
               ))}
+              {/* Summary rows — NOT warehouse best-by lots. Case totals only, from location counts. */}
+              {s.location.meraki > 0 && (
+                <SummaryRow label="Meraki — in market" title="Cases with Meraki Direct, per Meraki's report" cases={s.location.meraki} />
+              )}
+              {s.location.inbound > 0 && (
+                <SummaryRow label="Inbound — in production" title="Cases produced but not yet landed at a warehouse" cases={s.location.inbound} />
+              )}
             </tbody>
           </table>
         </div>
@@ -126,6 +149,40 @@ export default function OpsView({ snapshot, storeError }: Props) {
           </p>
         )}
       </Section>
+
+      {/* PACKAGING REORDER */}
+      {s.packaging && s.packaging.components.length > 0 && (
+        <Section id="packaging" eyebrow="Order before we run out" title="Packaging — reorder">
+          <div className="overflow-x-auto rounded-xl border border-neutral-200 bg-white shadow-sm">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr>
+                  <Th>Component</Th><Th>Supplier</Th><Th right>On hand</Th><Th>Reorder by</Th><Th right>Order qty</Th><Th>Status</Th>
+                </tr>
+              </thead>
+              <tbody>
+                {s.packaging.components.map((c: OpsPackagingComponent, i) => (
+                  <tr key={i}>
+                    <Td>{c.label}</Td>
+                    <Td muted>{c.supplier}</Td>
+                    <Td right>{c.onHand.toLocaleString()}</Td>
+                    <Td>{c.reorderBy ?? "—"}</Td>
+                    <Td right><span className="font-semibold">{c.orderQty ? c.orderQty.toLocaleString() : "—"}</span></Td>
+                    <td className="border-t border-neutral-100 px-3 py-2">
+                      <span className={`inline-block rounded px-2 py-0.5 text-xs font-medium ${c.status === "RED" ? "bg-red-50 text-red-700" : "bg-amber-50 text-amber-800"}`}>
+                        {c.status}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {s.packaging.staleNote && (
+            <p className="mt-2 text-xs text-amber-700">⚠ {s.packaging.staleNote}</p>
+          )}
+        </Section>
+      )}
 
       {/* ORDERS */}
       <Section id="orders" eyebrow="This week" title="Open orders — by channel">

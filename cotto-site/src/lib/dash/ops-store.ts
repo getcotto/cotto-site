@@ -79,6 +79,21 @@ export type OpsHistoryRow = {
   signal?: string;
 };
 
+// Packaging reorder alerts — sourced from the committed engine JSON (spine/packaging_status.json)
+// by emit-ops-snapshot.js. Only components that need action (RED/AMBER) are sent up.
+export type OpsPackagingComponent = {
+  label: string; // e.g. "Wrap Label - Buffalo"
+  supplier: string; // e.g. "ATL" | "The Cary Company"
+  onHand: number;
+  reorderBy: string | null; // ISO date, or null if not yet due
+  status: "RED" | "AMBER";
+  orderQty: number; // suggested order quantity (order-up-to − position)
+};
+export type OpsPackaging = {
+  components: OpsPackagingComponent[];
+  staleNote?: string; // set when the packaging count is old enough to distrust the reorder dates
+};
+
 export type OpsSnapshot = {
   updatedAt: string; // set server-side on POST
   asOf: string; // effective date of the data
@@ -90,6 +105,7 @@ export type OpsSnapshot = {
   ledger: OpsLedgerRow[];
   pipeline: OpsRun[];
   augustPlan?: { runs: OpsRun[]; totalBatches: number; totalCases: number; dueDate?: string; note?: string };
+  packaging?: OpsPackaging;
   history?: OpsHistoryRow[];
   flags?: Array<{ level: "red" | "amber" | "info"; text: string }>;
   notes?: string[];

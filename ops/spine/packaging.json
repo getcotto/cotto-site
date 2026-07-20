@@ -14,7 +14,8 @@
       "onOrder": 15000,
       "onOrderNote": "Cary 15k (ordered) + 7,054 backorder landed (in onHand). Nathan flagged SHORT 6/30 (\"exhausted on cups this run\"); Cary shipment inbound — MAY BE SHORT, TBD.",
       "reorderPoint": 4000,
-      "supplier": "The Cary Company"
+      "supplier": "The Cary Company",
+      "leadDays": 21
     },
     {
       "key": "lids",
@@ -26,7 +27,8 @@
       "onOrder": 15000,
       "onOrderNote": "Cary 15k ordered, inbound.",
       "reorderPoint": 4000,
-      "supplier": "The Cary Company"
+      "supplier": "The Cary Company",
+      "leadDays": 21
     },
     {
       "key": "wrap_buf",
@@ -38,7 +40,8 @@
       "onOrder": 0,
       "reorderPoint": 2000,
       "supplier": "ATL",
-      "onOrderNote": "inv 61246 landed, in onHand"
+      "onOrderNote": "inv 61246 landed, in onHand",
+      "leadDays": 10
     },
     {
       "key": "wrap_fo",
@@ -50,7 +53,8 @@
       "onOrder": 3000,
       "reorderPoint": 2000,
       "supplier": "ATL",
-      "onOrderNote": "ATL PO 070126, lands ~7/9"
+      "onOrderNote": "ATL PO 070126, lands ~7/9",
+      "leadDays": 10
     },
     {
       "key": "wrap_gr",
@@ -62,7 +66,8 @@
       "onOrder": 3000,
       "reorderPoint": 2000,
       "supplier": "ATL",
-      "onOrderNote": "ATL PO 070126, lands ~7/9 (capped for GR reformulation hedge)"
+      "onOrderNote": "ATL PO 070126, lands ~7/9 (capped for GR reformulation hedge)",
+      "leadDays": 10
     },
     {
       "key": "lid_buf",
@@ -74,7 +79,8 @@
       "onOrder": 0,
       "reorderPoint": 2000,
       "supplier": "ATL",
-      "onOrderNote": "inv 61246 landed, in onHand"
+      "onOrderNote": "inv 61246 landed, in onHand",
+      "leadDays": 10
     },
     {
       "key": "lid_fo",
@@ -86,7 +92,8 @@
       "onOrder": 6000,
       "reorderPoint": 2000,
       "supplier": "ATL",
-      "onOrderNote": "ATL PO 070126, lands ~7/9"
+      "onOrderNote": "ATL PO 070126, lands ~7/9",
+      "leadDays": 10
     },
     {
       "key": "lid_gr",
@@ -97,7 +104,8 @@
       "onHand": 5900,
       "onOrder": 0,
       "reorderPoint": 2000,
-      "supplier": "ATL"
+      "supplier": "ATL",
+      "leadDays": 10
     },
     {
       "key": "box_6pk",
@@ -109,7 +117,9 @@
       "onOrder": 5000,
       "reorderPoint": 800,
       "supplier": "Snyder Packaging (Connor Snyder, Connor@Snyder-pkg.com, 610-914-5880)",
-      "onOrderNote": "on-hand UNKNOWN (not in FK 6/26 count) — 3050 is a stale placeholder. 5,000 ordered to Connor/Snyder (SENT); delivery date TBC."
+      "onOrderNote": "on-hand UNKNOWN (not in FK 6/26 count) — 3050 is a stale placeholder. 5,000 ordered to Connor/Snyder (SENT); delivery date TBC.",
+      "leadDays": 21
     }
-  ]
+  ],
+  "leadDaysNote": "leadDays are ESTIMATES (Cary tubs/lids 21d, ATL labels 10d, Snyder boxes 21d) — CONFIRM the real door-to-FK lead time with each supplier; the reorder-by dates depend on them."
 }

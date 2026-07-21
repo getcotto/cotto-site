@@ -111,6 +111,20 @@ export type OpsSnapshot = {
   updatedAt: string; // set server-side on POST
   asOf: string; // effective date of the data
   onHand: { buf: number; fo: number; gr: number; total: number };
+  // Free-to-promise, from the engine. On-hand alone overstates availability: Meraki pulls ~160 cs
+  // a week and open orders sit against it. staleOpen is a data-quality signal — orders still
+  // flagged open whose delivery already happened — and is deliberately NOT subtracted.
+  committed?: {
+    windowEnd: string;
+    onHand: { buf: number; fo: number; gr: number; total: number };
+    committed: { buf: number; fo: number; gr: number; total: number };
+    expected: { buf: number; fo: number; gr: number; total: number };
+    freeToPromise: { buf: number; fo: number; gr: number; total: number };
+    expectedRows?: Array<{ due: string; account: string; cases: number; everyDays: number }>;
+    committedRows?: Array<{ date: string; account: string; sku: string; cases: number; status: string }>;
+    staleOpen: { buf: number; fo: number; gr: number; total: number };
+    staleOpenRows?: Array<{ date: string; account: string; sku: string; cases: number; status: string }>;
+  };
   // Meraki is deliberately absent: once they pick up, it is SOLD. We cannot see how much sits
   // in their DC versus already on store shelves, so reporting it as a position we hold was
   // precision we do not have. (Kendall, 2026-07-21)

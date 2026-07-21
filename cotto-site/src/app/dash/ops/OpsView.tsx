@@ -100,9 +100,70 @@ export default function OpsView({ snapshot, storeError }: Props) {
       {/* KPIs */}
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         <Kpi label="On hand" value={s.onHand.total} unit={`cs · Bklyn ${s.location.brooklyn} + Edison ${s.location.edison}`} accent="cyan" />
+        {/* Free to promise leads over on-hand: on-hand is what exists, this is what you can sell. */}
+        {s.committed && (
+          <Kpi
+            label="Free to promise"
+            value={s.committed.freeToPromise.total}
+            unit={`cs · less ${s.committed.committed.total} committed + ${s.committed.expected.total} due by ${s.committed.windowEnd.slice(5)}`}
+            accent="emerald"
+          />
+        )}
         <Kpi label="Inbound" value={s.location.inbound} unit="cs · 7/13 run" accent="amber" />
         <Kpi label="BUF / FO / GR" value={`${s.onHand.buf}/${s.onHand.fo}/${s.onHand.gr}`} unit="cases on hand" accent="neutral" />
       </div>
+
+      {/* WHAT IS ACTUALLY FREE */}
+      {s.committed && (
+        <Section id="free" eyebrow="What you can actually sell" title="On hand vs spoken for">
+          <div className="overflow-x-auto rounded-xl border border-neutral-200 bg-white shadow-sm">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr><Th>Line</Th><Th right>BUF</Th><Th right>FO</Th><Th right>GR</Th><Th right>Cases</Th><Th>What it is</Th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <Td>On hand</Td>
+                  <Td right>{s.committed.onHand.buf}</Td><Td right>{s.committed.onHand.fo}</Td><Td right>{s.committed.onHand.gr}</Td>
+                  <Td right><span className="font-semibold">{s.committed.onHand.total}</span></Td>
+                  <Td muted>Physically in the warehouses</Td>
+                </tr>
+                <tr>
+                  <Td>Less committed</Td>
+                  <Td right>−{s.committed.committed.buf}</Td><Td right>−{s.committed.committed.fo}</Td><Td right>−{s.committed.committed.gr}</Td>
+                  <Td right>−{s.committed.committed.total}</Td>
+                  <Td muted>Open orders still owed</Td>
+                </tr>
+                <tr>
+                  <Td>Less due out</Td>
+                  <Td right>−{s.committed.expected.buf}</Td><Td right>−{s.committed.expected.fo}</Td><Td right>−{s.committed.expected.gr}</Td>
+                  <Td right>−{s.committed.expected.total}</Td>
+                  <Td muted>
+                    {s.committed.expectedRows?.length
+                      ? s.committed.expectedRows.map((r) => `${r.account.split(" ")[0]} ${r.cases} on ${r.due.slice(5)}`).join(" · ")
+                      : `Recurring pulls by ${s.committed.windowEnd.slice(5)}`}
+                  </Td>
+                </tr>
+                <tr className="bg-emerald-50 font-semibold">
+                  <td className="border-t-2 border-emerald-300 px-3 py-2 text-sm">Free to promise</td>
+                  <td className="border-t-2 border-emerald-300 px-3 py-2 text-right text-sm tabular-nums">{s.committed.freeToPromise.buf}</td>
+                  <td className="border-t-2 border-emerald-300 px-3 py-2 text-right text-sm tabular-nums">{s.committed.freeToPromise.fo}</td>
+                  <td className="border-t-2 border-emerald-300 px-3 py-2 text-right text-sm tabular-nums">{s.committed.freeToPromise.gr}</td>
+                  <td className="border-t-2 border-emerald-300 px-3 py-2 text-right text-sm tabular-nums">{s.committed.freeToPromise.total}</td>
+                  <td className="border-t-2 border-emerald-300 px-3 py-2 text-sm font-normal text-emerald-800">Sellable without breaking a promise</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          {s.committed.staleOpen.total > 0 && (
+            <p className="mt-2 text-xs text-amber-700">
+              ⚠ {s.committed.staleOpen.total} cs across {s.committed.staleOpenRows?.length ?? 0} order row(s) are still marked open with
+              past delivery dates — almost certainly delivered and never closed out. Excluded above so they cannot double-subtract, but the
+              order book needs closing.
+            </p>
+          )}
+        </Section>
+      )}
 
       {/* LOTS */}
       <Section id="inventory" eyebrow="Where it is" title="Inventory by lot & shelf life">

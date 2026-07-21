@@ -498,7 +498,6 @@ function Shell({ children, asOf, updatedAt }: { children: ReactNode; asOf?: stri
           <span className="hidden text-xs text-neutral-400 sm:inline">Inventory &amp; production command center</span>
           <nav className="ml-auto flex items-center gap-3 text-sm">
             <Link href="/dash" className="text-neutral-500 hover:text-neutral-900">Dash</Link>
-            <Link href="/dash/model" className="text-neutral-500 hover:text-neutral-900">Model</Link>
           </nav>
         </div>
       </header>

@@ -93,7 +93,14 @@ export type OpsPackagingComponent = {
   //   ORDER = cut a PO now · LATE = already ordered but it lands after a run that needs it
   //   (chase the supplier, don't reorder) · WATCH = order soon · COVERED/OK = nothing to do
   action?: "ORDER" | "LATE" | "WATCH" | "COVERED" | "OK";
-  lateFor?: { run: string; on: string; receipt: string; po?: string; confirmed?: boolean };
+  // LATE carries the actual shortfall, not just "a run happens first" — that naive version
+  // painted every line red even where on-hand covered the intervening run.
+  lateFor?: { run: string; on: string; short?: number; receipt?: string | null; po?: string; confirmed?: boolean };
+  leadDays?: number; // planning lead time; edit in spine/packaging.json
+  lastOrderedOn?: string; // when we last cut a PO for this component
+  expectedBy?: string; // when the open receipt is due
+  expectedConfirmed?: boolean; // false = the date is what WE asked for, not what they promised
+  runsOutOn?: string; // the date we actually hit zero, not a run id
 };
 export type OpsPackaging = {
   components: OpsPackagingComponent[];
@@ -104,7 +111,10 @@ export type OpsSnapshot = {
   updatedAt: string; // set server-side on POST
   asOf: string; // effective date of the data
   onHand: { buf: number; fo: number; gr: number; total: number };
-  location: { brooklyn: number; edison: number; meraki: number; inbound: number };
+  // Meraki is deliberately absent: once they pick up, it is SOLD. We cannot see how much sits
+  // in their DC versus already on store shelves, so reporting it as a position we hold was
+  // precision we do not have. (Kendall, 2026-07-21)
+  location: { brooklyn: number; edison: number; meraki?: number; inbound: number };
   directFloorDays?: number; // shelf-life floor used for the direct-door column
   lots: OpsLot[];
   orders: OpsOrder[];

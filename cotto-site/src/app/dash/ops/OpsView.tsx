@@ -100,7 +100,6 @@ export default function OpsView({ snapshot, storeError }: Props) {
       {/* KPIs */}
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         <Kpi label="On hand" value={s.onHand.total} unit={`cs · Bklyn ${s.location.brooklyn} + Edison ${s.location.edison}`} accent="cyan" />
-        <Kpi label="With Meraki" value={s.location.meraki} unit="cs · in market" accent="emerald" />
         <Kpi label="Inbound" value={s.location.inbound} unit="cs · 7/13 run" accent="amber" />
         <Kpi label="BUF / FO / GR" value={`${s.onHand.buf}/${s.onHand.fo}/${s.onHand.gr}`} unit="cases on hand" accent="neutral" />
       </div>
@@ -128,9 +127,6 @@ export default function OpsView({ snapshot, storeError }: Props) {
                 </tr>
               ))}
               {/* Summary rows — NOT warehouse best-by lots. Case totals only, from location counts. */}
-              {s.location.meraki > 0 && (
-                <SummaryRow label="Meraki — in market" title="Cases with Meraki Direct, per Meraki's report" cases={s.location.meraki} />
-              )}
               {s.location.inbound > 0 && (
                 <SummaryRow label="Inbound — in production" title="Cases produced but not yet landed at a warehouse" cases={s.location.inbound} />
               )}
@@ -151,7 +147,7 @@ export default function OpsView({ snapshot, storeError }: Props) {
             <table className="w-full border-collapse">
               <thead>
                 <tr>
-                  <Th>Component</Th><Th>Supplier</Th><Th right>On hand</Th><Th>Reorder by</Th><Th right>Order qty</Th><Th>Status</Th>
+                  <Th>Component</Th><Th>Supplier</Th><Th right>On hand</Th><Th right>Lead</Th><Th>Last order</Th><Th>Expected</Th><Th>Runs out</Th><Th right>Order qty</Th><Th>Action</Th>
                 </tr>
               </thead>
               <tbody>
@@ -160,7 +156,17 @@ export default function OpsView({ snapshot, storeError }: Props) {
                     <Td>{c.label}</Td>
                     <Td muted>{c.supplier}</Td>
                     <Td right>{c.onHand.toLocaleString()}</Td>
-                    <Td>{c.reorderBy ?? "—"}</Td>
+                    <Td right muted>{c.leadDays != null ? `${c.leadDays}d` : "—"}</Td>
+                    <Td muted>{c.lastOrderedOn ?? "—"}</Td>
+                    <Td>
+                      {c.expectedBy ? (
+                        <span className={c.expectedConfirmed === false ? "text-amber-700" : undefined}>
+                          {c.expectedBy}
+                          {c.expectedConfirmed === false && <span title="date we asked for, not supplier-confirmed"> *</span>}
+                        </span>
+                      ) : "—"}
+                    </Td>
+                    <Td>{c.runsOutOn ?? "—"}</Td>
                     <Td right><span className="font-semibold">{c.orderQty ? c.orderQty.toLocaleString() : "—"}</span></Td>
                     <td className="border-t border-neutral-100 px-3 py-2">
                       {/* The ACTION, not the alarm level. "RED" on 8 of 9 components told you
@@ -180,7 +186,7 @@ export default function OpsView({ snapshot, storeError }: Props) {
                       </span>
                       {c.action === "LATE" && c.lateFor && (
                         <div className="mt-0.5 text-[11px] font-normal text-orange-700">
-                          ordered, lands {c.lateFor.receipt} · {c.lateFor.run} runs {c.lateFor.on}
+                          short {c.lateFor.short?.toLocaleString()} at {c.lateFor.run} ({c.lateFor.on})
                         </div>
                       )}
                     </td>
@@ -215,6 +221,24 @@ export default function OpsView({ snapshot, storeError }: Props) {
                 </tr>
               ))}
             </tbody>
+            {/* Total: the open book is the number that matters against on-hand, and reading it
+                off a column of rows is exactly the arithmetic a dashboard should have done. */}
+            <tfoot>
+              <tr className="bg-neutral-50 font-semibold">
+                <td className="border-t-2 border-neutral-300 px-3 py-2" colSpan={2}>
+                  Total open ({s.orders.length} order{s.orders.length === 1 ? "" : "s"})
+                </td>
+                <td className="border-t-2 border-neutral-300 px-3 py-2 text-right tabular-nums">
+                  {(["buf", "fo", "gr"] as const)
+                    .map((k) => s.orders.reduce((n, o) => n + (Number(o[k]) || 0), 0))
+                    .join(" / ")}
+                </td>
+                <td className="border-t-2 border-neutral-300 px-3 py-2 text-right tabular-nums">
+                  {s.orders.reduce((n, o) => n + (Number(o.cases) || 0), 0).toLocaleString()}
+                </td>
+                <td className="border-t-2 border-neutral-300 px-3 py-2" />
+              </tr>
+            </tfoot>
           </table>
         </div>
       </Section>

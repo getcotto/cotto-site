@@ -163,9 +163,26 @@ export default function OpsView({ snapshot, storeError }: Props) {
                     <Td>{c.reorderBy ?? "—"}</Td>
                     <Td right><span className="font-semibold">{c.orderQty ? c.orderQty.toLocaleString() : "—"}</span></Td>
                     <td className="border-t border-neutral-100 px-3 py-2">
-                      <span className={`inline-block rounded px-2 py-0.5 text-xs font-medium ${c.status === "RED" ? "bg-red-50 text-red-700" : "bg-amber-50 text-amber-800"}`}>
-                        {c.status}
+                      {/* The ACTION, not the alarm level. "RED" on 8 of 9 components told you
+                          nothing; ORDER vs LATE tells you whether to cut a PO or chase a supplier. */}
+                      <span
+                        className={`inline-block rounded px-2 py-0.5 text-xs font-semibold ${
+                          c.action === "ORDER"
+                            ? "bg-red-50 text-red-700"
+                            : c.action === "LATE"
+                              ? "bg-orange-50 text-orange-800"
+                              : c.action === "WATCH"
+                                ? "bg-amber-50 text-amber-800"
+                                : "bg-neutral-100 text-neutral-600"
+                        }`}
+                      >
+                        {c.action ?? c.status}
                       </span>
+                      {c.action === "LATE" && c.lateFor && (
+                        <div className="mt-0.5 text-[11px] font-normal text-orange-700">
+                          ordered, lands {c.lateFor.receipt} · {c.lateFor.run} runs {c.lateFor.on}
+                        </div>
+                      )}
                     </td>
                   </tr>
                 ))}

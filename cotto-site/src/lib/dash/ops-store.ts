@@ -88,6 +88,12 @@ export type OpsPackagingComponent = {
   reorderBy: string | null; // ISO date, or null if not yet due
   status: "RED" | "AMBER";
   orderQty: number; // suggested order quantity (order-up-to − position)
+  // What to DO. status alone was a pure function of reorderBy, so components with an open PO
+  // already covering them still rendered RED — 8 of 9 at once, which made the panel unreadable.
+  //   ORDER = cut a PO now · LATE = already ordered but it lands after a run that needs it
+  //   (chase the supplier, don't reorder) · WATCH = order soon · COVERED/OK = nothing to do
+  action?: "ORDER" | "LATE" | "WATCH" | "COVERED" | "OK";
+  lateFor?: { run: string; on: string; receipt: string; po?: string; confirmed?: boolean };
 };
 export type OpsPackaging = {
   components: OpsPackagingComponent[];

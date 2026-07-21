@@ -7,17 +7,59 @@
   "_lids_ambiguity_RESOLVED": "The 6/26 anchor carried an unresolved read: 21,675 (FK scan) vs 2,675 (old spine). The 7/17 count settles it — the OLD SPINE WAS RIGHT and 21,675 was a misread of 2,675. Proof: from 2,675, the ledger computes 2,675 + 15,000 receipts - 8,065 consumed = 9,610, versus FK's counted 9,698 (drift +88). From 21,675 it computes 28,610, which is ~3x the physical shelf. CONSEQUENCE: lids are NOT the comfortable position the ledger showed — real on-hand is ~9.7k against ~18.7k of 90-day consumption, so lids now need reordering rather than sitting GREEN.",
   "unitsPerCase": 6,
   "consumption": {
-    "yields_cs_per_batch": { "buf": 75, "fo": 63, "gr": 67 },
+    "yields_cs_per_batch": {
+      "buf": 75,
+      "fo": 63,
+      "gr": 67
+    },
     "labelScrapFactor": 1.03,
     "note": "yields of record are 75/63/67 (run actuals); label scrap 3%"
   },
-  "horizonDays": { "labels": 60, "default": 90 },
+  "horizonDays": {
+    "labels": 60,
+    "default": 90
+  },
   "consumption_log": [
-    { "run": "5/25", "produce": "2026-05-25", "buf": 902, "fo": 1943, "gr": 1259, "basis": "est" },
-    { "run": "6/15", "produce": "2026-06-15", "buf": 1773, "fo": 2070, "gr": 1156, "basis": "batch sheet" },
-    { "run": "6/24", "produce": "2026-06-24", "buf": 1333, "fo": 1635, "gr": 1168, "basis": "batch sheet" },
-    { "run": "6/29", "produce": "2026-06-29", "buf": 1331, "fo": 1197, "gr": 785, "basis": "batch sheet" },
-    { "run": "7/13", "produce": "2026-07-13", "buf": 1332, "fo": 2232, "gr": 1188, "basis": "batch sheet (7/13-7/15 run: FO 1+4+1 = 6 batches, GR 3, BUF 3 — confirmed against PRO-FM-02 logs). PREDATES the 7/17 anchor, so it is history only and is not re-consumed." }
+    {
+      "run": "5/25",
+      "produce": "2026-05-25",
+      "buf": 902,
+      "fo": 1943,
+      "gr": 1259,
+      "basis": "est"
+    },
+    {
+      "run": "6/15",
+      "produce": "2026-06-15",
+      "buf": 1773,
+      "fo": 2070,
+      "gr": 1156,
+      "basis": "batch sheet"
+    },
+    {
+      "run": "6/24",
+      "produce": "2026-06-24",
+      "buf": 1333,
+      "fo": 1635,
+      "gr": 1168,
+      "basis": "batch sheet"
+    },
+    {
+      "run": "6/29",
+      "produce": "2026-06-29",
+      "buf": 1331,
+      "fo": 1197,
+      "gr": 785,
+      "basis": "batch sheet"
+    },
+    {
+      "run": "7/13",
+      "produce": "2026-07-13",
+      "buf": 1332,
+      "fo": 2232,
+      "gr": 1188,
+      "basis": "batch sheet (7/13-7/15 run: FO 1+4+1 = 6 batches, GR 3, BUF 3 — confirmed against PRO-FM-02 logs). PREDATES the 7/17 anchor, so it is history only and is not re-consumed."
+    }
   ],
   "components": [
     {
@@ -28,7 +70,11 @@
       "leadDays": 14,
       "reorderPoint": 4000,
       "moq": 5000,
-      "anchor": { "date": "2026-07-17", "qty": 10039, "source": "FK weekly count 7/17 (unlabeled cups). Ledger had computed 9,980 — drift +59." },
+      "anchor": {
+        "date": "2026-07-17",
+        "qty": 10039,
+        "source": "FK weekly count 7/17 (unlabeled cups). Ledger had computed 9,980 — drift +59."
+      },
       "receipts": []
     },
     {
@@ -39,7 +85,11 @@
       "leadDays": 7,
       "reorderPoint": 4000,
       "moq": 5000,
-      "anchor": { "date": "2026-07-17", "qty": 9698, "source": "FK weekly count 7/17. RESOLVES the 21,675-vs-2,675 ambiguity in favour of 2,675 (see _lids_ambiguity_RESOLVED). Lids are ~9.7k, not ~28.6k." },
+      "anchor": {
+        "date": "2026-07-17",
+        "qty": 9698,
+        "source": "FK weekly count 7/17. RESOLVES the 21,675-vs-2,675 ambiguity in favour of 2,675 (see _lids_ambiguity_RESOLVED). Lids are ~9.7k, not ~28.6k."
+      },
       "receipts": []
     },
     {
@@ -50,8 +100,23 @@
       "leadDays": 10,
       "reorderPoint": 2000,
       "moq": 3000,
-      "anchor": { "date": "2026-07-17", "qty": 1800, "source": "FK weekly count 7/17 (Buffalo labels - cups). Ledger had 4,257 — drift -2,457, the largest real gap." },
-      "receipts": []
+      "anchor": {
+        "date": "2026-07-17",
+        "qty": 1800,
+        "source": "FK weekly count 7/17 (Buffalo labels - cups). Ledger had 4,257 — drift -2,457, the largest real gap."
+      },
+      "receipts": [
+        {
+          "date": "2026-07-29",
+          "qty": 6000,
+          "po": "072026",
+          "supplier": "American Tape & Label",
+          "orderedOn": "2026-07-20",
+          "expectedConfirmed": false,
+          "ref": "19f82a1e",
+          "source": "PO 072026 sent 2026-07-20 (expected date REQUESTED, awaiting supplier confirmation)"
+        }
+      ]
     },
     {
       "key": "wrap_fo",
@@ -61,8 +126,23 @@
       "leadDays": 10,
       "reorderPoint": 2000,
       "moq": 3000,
-      "anchor": { "date": "2026-07-17", "qty": 4000, "source": "FK weekly count 7/17 (French labels - cups). Includes the 7/9 ATL PO070126 receipt." },
-      "receipts": []
+      "anchor": {
+        "date": "2026-07-17",
+        "qty": 4000,
+        "source": "FK weekly count 7/17 (French labels - cups). Includes the 7/9 ATL PO070126 receipt."
+      },
+      "receipts": [
+        {
+          "date": "2026-07-29",
+          "qty": 6000,
+          "po": "072026",
+          "supplier": "American Tape & Label",
+          "orderedOn": "2026-07-20",
+          "expectedConfirmed": false,
+          "ref": "19f82a1e",
+          "source": "PO 072026 sent 2026-07-20 (expected date REQUESTED, awaiting supplier confirmation)"
+        }
+      ]
     },
     {
       "key": "wrap_gr",
@@ -72,7 +152,11 @@
       "leadDays": 10,
       "reorderPoint": 2000,
       "moq": 3000,
-      "anchor": { "date": "2026-07-17", "qty": 3700, "source": "FK weekly count 7/17 (Ranch labels - cups). Includes the 7/9 ATL PO070126 receipt." },
+      "anchor": {
+        "date": "2026-07-17",
+        "qty": 3700,
+        "source": "FK weekly count 7/17 (Ranch labels - cups). Includes the 7/9 ATL PO070126 receipt."
+      },
       "receipts": []
     },
     {
@@ -83,8 +167,23 @@
       "leadDays": 10,
       "reorderPoint": 2000,
       "moq": 3000,
-      "anchor": { "date": "2026-07-17", "qty": 2300, "source": "FK weekly count 7/17 (Buffalo labels - lids)." },
-      "receipts": []
+      "anchor": {
+        "date": "2026-07-17",
+        "qty": 2300,
+        "source": "FK weekly count 7/17 (Buffalo labels - lids)."
+      },
+      "receipts": [
+        {
+          "date": "2026-07-29",
+          "qty": 6000,
+          "po": "072026",
+          "supplier": "American Tape & Label",
+          "orderedOn": "2026-07-20",
+          "expectedConfirmed": false,
+          "ref": "19f82a1e",
+          "source": "PO 072026 sent 2026-07-20 (expected date REQUESTED, awaiting supplier confirmation)"
+        }
+      ]
     },
     {
       "key": "lid_fo",
@@ -94,8 +193,23 @@
       "leadDays": 10,
       "reorderPoint": 2000,
       "moq": 3000,
-      "anchor": { "date": "2026-07-17", "qty": 4100, "source": "FK weekly count 7/17 (French labels - lids). Includes the 7/9 ATL PO070126 6k receipt." },
-      "receipts": []
+      "anchor": {
+        "date": "2026-07-17",
+        "qty": 4100,
+        "source": "FK weekly count 7/17 (French labels - lids). Includes the 7/9 ATL PO070126 6k receipt."
+      },
+      "receipts": [
+        {
+          "date": "2026-07-29",
+          "qty": 6000,
+          "po": "072026",
+          "supplier": "American Tape & Label",
+          "orderedOn": "2026-07-20",
+          "expectedConfirmed": false,
+          "ref": "19f82a1e",
+          "source": "PO 072026 sent 2026-07-20 (expected date REQUESTED, awaiting supplier confirmation)"
+        }
+      ]
     },
     {
       "key": "lid_gr",
@@ -105,7 +219,11 @@
       "leadDays": 10,
       "reorderPoint": 2000,
       "moq": 3000,
-      "anchor": { "date": "2026-07-17", "qty": 4050, "source": "FK weekly count 7/17 (Ranch labels - lids)." },
+      "anchor": {
+        "date": "2026-07-17",
+        "qty": 4050,
+        "source": "FK weekly count 7/17 (Ranch labels - lids)."
+      },
       "receipts": []
     },
     {
@@ -116,9 +234,17 @@
       "leadDays": 14,
       "reorderPoint": 800,
       "moq": 5000,
-      "anchor": { "date": "2026-05-21", "qty": 3050, "source": "FK 5/21 - boxes omitted from BOTH the 6/26 and 7/17 counts, so this stays ROUGH. Ask Nathan to add boxes to the weekly sheet." },
+      "anchor": {
+        "date": "2026-05-21",
+        "qty": 3050,
+        "source": "FK 5/21 - boxes omitted from BOTH the 6/26 and 7/17 counts, so this stays ROUGH. Ask Nathan to add boxes to the weekly sheet."
+      },
       "receipts": [
-        { "date": "2026-07-14", "qty": 5825, "source": "PCA KENDALL630 (5000 ordered, 5825 shipped overrun)" }
+        {
+          "date": "2026-07-14",
+          "qty": 5825,
+          "source": "PCA KENDALL630 (5000 ordered, 5825 shipped overrun)"
+        }
       ]
     }
   ],

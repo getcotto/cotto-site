@@ -427,7 +427,7 @@ function FreshnessBanner({
             level === "red" ? "border-red-400 bg-red-50 text-red-800" : "border-amber-400 bg-amber-50 text-amber-900"
           }`}
         >
-          ⚠ Last swept {days} days ago{freshness!.lastSwept ? ` (${freshness!.lastSwept})` : ""} — capture hasn't run.
+          ⚠ Last swept {days} days ago{freshness!.lastSwept ? ` (${freshness!.lastSwept})` : ""} — capture has not run.
           <span className="ml-1 font-normal">
             New orders, deliveries, and receipts may be missing from this view. Run the order desk or the daily brief to resweep.
           </span>

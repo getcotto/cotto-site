@@ -121,9 +121,13 @@ export type OpsSnapshot = {
     windowEnd: string;
     onHand: { buf: number; fo: number; gr: number; total: number };
     committed: { buf: number; fo: number; gr: number; total: number };
-    expected: { buf: number; fo: number; gr: number; total: number };
+    // FORECAST is never subtracted from freeToPromise. Until a PO lands the quantity is a cadence
+    // estimate that could be more or less, and reserving stock against a guess understates what
+    // can actually be sold. (Kendall, 2026-07-21)
+    forecast: { buf: number; fo: number; gr: number; total: number };
     freeToPromise: { buf: number; fo: number; gr: number; total: number };
-    expectedRows?: Array<{ due: string; account: string; cases: number; everyDays: number }>;
+    freeAfterForecast: { buf: number; fo: number; gr: number; total: number };
+    forecastRows?: Array<{ due: string; account: string; cases: number; everyDays: number; basis?: string }>;
     committedRows?: Array<{ date: string; account: string; sku: string; cases: number; status: string }>;
     staleOpen: { buf: number; fo: number; gr: number; total: number };
     staleOpenRows?: Array<{ date: string; account: string; sku: string; cases: number; status: string }>;

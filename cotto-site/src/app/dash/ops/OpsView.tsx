@@ -105,7 +105,7 @@ export default function OpsView({ snapshot, storeError }: Props) {
           <Kpi
             label="Free to promise"
             value={s.committed.freeToPromise.total}
-            unit={`cs · less ${s.committed.committed.total} committed + ${s.committed.expected.total} due by ${s.committed.windowEnd.slice(5)}`}
+            unit={`cs · less ${s.committed.committed.total} committed${s.committed.forecast.total ? ` · ~${s.committed.freeAfterForecast.total} after forecast pulls` : ""}`}
             accent="emerald"
           />
         )}
@@ -134,23 +134,31 @@ export default function OpsView({ snapshot, storeError }: Props) {
                   <Td right>−{s.committed.committed.total}</Td>
                   <Td muted>Open orders still owed</Td>
                 </tr>
-                <tr>
-                  <Td>Less due out</Td>
-                  <Td right>−{s.committed.expected.buf}</Td><Td right>−{s.committed.expected.fo}</Td><Td right>−{s.committed.expected.gr}</Td>
-                  <Td right>−{s.committed.expected.total}</Td>
-                  <Td muted>
-                    {s.committed.expectedRows?.length
-                      ? s.committed.expectedRows.map((r) => `${r.account.split(" ")[0]} ${r.cases} on ${r.due.slice(5)}`).join(" · ")
-                      : `Recurring pulls by ${s.committed.windowEnd.slice(5)}`}
-                  </Td>
-                </tr>
                 <tr className="bg-emerald-50 font-semibold">
                   <td className="border-t-2 border-emerald-300 px-3 py-2 text-sm">Free to promise</td>
                   <td className="border-t-2 border-emerald-300 px-3 py-2 text-right text-sm tabular-nums">{s.committed.freeToPromise.buf}</td>
                   <td className="border-t-2 border-emerald-300 px-3 py-2 text-right text-sm tabular-nums">{s.committed.freeToPromise.fo}</td>
                   <td className="border-t-2 border-emerald-300 px-3 py-2 text-right text-sm tabular-nums">{s.committed.freeToPromise.gr}</td>
                   <td className="border-t-2 border-emerald-300 px-3 py-2 text-right text-sm tabular-nums">{s.committed.freeToPromise.total}</td>
-                  <td className="border-t-2 border-emerald-300 px-3 py-2 text-sm font-normal text-emerald-800">Sellable without breaking a promise</td>
+                  <td className="border-t-2 border-emerald-300 px-3 py-2 text-sm font-normal text-emerald-800">Sellable now, nothing reserved against a guess</td>
+                </tr>
+                {/* Forecast sits BELOW the line and is not subtracted: no PO, so the quantity could
+                    be more or less. Shown so the likely position is visible, not reserved. */}
+                <tr className="italic text-neutral-500">
+                  <Td>Forecast pulls</Td>
+                  <Td right>({s.committed.forecast.buf})</Td><Td right>({s.committed.forecast.fo})</Td><Td right>({s.committed.forecast.gr})</Td>
+                  <Td right>({s.committed.forecast.total})</Td>
+                  <Td muted>
+                    {s.committed.forecastRows?.length
+                      ? `${s.committed.forecastRows.map((r) => `${r.account.split(" ")[0]} ~${r.cases} around ${r.due.slice(5)}`).join(" · ")} — no PO yet, not reserved`
+                      : "Expected, not committed"}
+                  </Td>
+                </tr>
+                <tr className="text-neutral-600">
+                  <Td>Likely free after</Td>
+                  <Td right>{s.committed.freeAfterForecast.buf}</Td><Td right>{s.committed.freeAfterForecast.fo}</Td><Td right>{s.committed.freeAfterForecast.gr}</Td>
+                  <Td right>{s.committed.freeAfterForecast.total}</Td>
+                  <Td muted>Planning view if the forecast lands as expected</Td>
                 </tr>
               </tbody>
             </table>

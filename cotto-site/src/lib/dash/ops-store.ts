@@ -138,6 +138,10 @@ export type OpsSnapshot = {
     freeAfterForecast: { buf: number; fo: number; gr: number; total: number };
     forecastRows?: Array<{ due: string; account: string; cases: number; everyDays: number; basis?: string }>;
     committedRows?: Array<{ date: string; account: string; sku: string; cases: number; status: string }>;
+    // True when zero forward orders are captured while past-dated rows sit open — i.e. deliveries
+    // are being scheduled outside the order book, so every "free" figure is an UPPER BOUND.
+    captureSuspect?: boolean;
+    captureNote?: string | null;
     staleOpen: { buf: number; fo: number; gr: number; total: number };
     staleOpenRows?: Array<{ date: string; account: string; sku: string; cases: number; status: string }>;
   };

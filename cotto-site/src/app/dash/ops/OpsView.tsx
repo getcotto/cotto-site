@@ -103,7 +103,7 @@ export default function OpsView({ snapshot, storeError }: Props) {
         {/* Free to promise leads over on-hand: on-hand is what exists, this is what you can sell. */}
         {s.committed && (
           <Kpi
-            label="Free to promise"
+            label={s.committed.captureSuspect ? "Free to promise (upper bound)" : "Free to promise"}
             value={s.committed.freeToPromise.total}
             unit={`cs · less ${s.committed.committed.total} committed${s.committed.forecast.total ? ` · ~${s.committed.freeAfterForecast.total} after forecast pulls` : ""}`}
             accent="emerald"
@@ -116,6 +116,12 @@ export default function OpsView({ snapshot, storeError }: Props) {
       {/* WHAT IS ACTUALLY FREE */}
       {s.committed && (
         <Section id="free" eyebrow="What you can actually sell" title="On hand vs spoken for">
+          {s.committed.captureSuspect && (
+            <div className="mb-3 rounded-xl border-2 border-amber-400 bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-900">
+              ⚠ These are UPPER BOUNDS, not reservation-adjusted.
+              <span className="ml-1 font-normal">{s.committed.captureNote}</span>
+            </div>
+          )}
           <div className="overflow-x-auto rounded-xl border border-neutral-200 bg-white shadow-sm">
             <table className="w-full border-collapse">
               <thead>
@@ -180,7 +186,7 @@ export default function OpsView({ snapshot, storeError }: Props) {
             <thead>
               <tr>
                 <Th>Lot</Th><Th>Loc</Th><Th right>BUF</Th><Th right>FO</Th><Th right>GR</Th><Th right>Cases</Th>
-                <Th right>Spoken for</Th><Th right>Free</Th><Th>Best-by</Th><Th>Can serve</Th>
+                <Th right>Spoken for</Th><Th right>{s.committed?.captureSuspect ? "Free*" : "Free"}</Th><Th>Best-by</Th><Th>Can serve</Th>
               </tr>
             </thead>
             <tbody>

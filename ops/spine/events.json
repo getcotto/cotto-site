@@ -778,5 +778,31 @@
     "lot": "FEFO",
     "notes": "7/16 NYC direct route (delivered), 63 cs. FEFO'd off the oldest lot: 19 BUF + 25 FO off the 6/15 run, then 19 GR off the 6/24 run (6/15 holds no GR). Reconciles Brooklyn to 492/434/287 = 1,213.",
     "ref": "DELIV-20260716-NYC"
+  },
+  {
+    "date": "2026-07-20",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Meraki Direct (DSD pickup)",
+    "buf": 50,
+    "fo": 60,
+    "gr": 50,
+    "dir": "Out",
+    "lot": "6/24 run + 6/29-7/1 top-up",
+    "notes": "Meraki Direct will-call pickup, PO P6002168 / BOL 072026-001 (160 cs: FO 60 / BUF 50 / GR 50). Staged from 6/24 run (best-by Aug 23-25), top-up 6/29-7/1. Confirmed pickup Mon 7/20 11:00 AM at Carriacou 257 Scholes St (email gmail:19f715fe95cac8f1 + gmail:19f71579e8d609e0; Mendez iMessage 7/17-7/20). Also in orders.json (Meraki Direct, Scheduled, P6002168).",
+    "ref": "MERAKI-6002168"
+  },
+  {
+    "date": "2026-07-20",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Cotto samples (Kendall apt, 44 W 22nd St)",
+    "buf": 20,
+    "fo": 20,
+    "gr": 20,
+    "dir": "Out",
+    "lot": "FEFO oldest",
+    "notes": "60 cs (BUF 20 / FO 20 / GR 20) pulled from Brooklyn for sampling (Sprouts/BrandBank/gifting), delivered to 44 W 22nd St, Flatiron, Mon 7/20 ~8 AM by Mohamed/Carriacou. FEFO oldest lot. Source: email gmail:19f7fa5a58f0687c (7/19 breakdown) + iMessage 7/20 (Mohamed en route 10:28, delivery confirmed). NOT a sale - inventory moved to samples; removed from sellable Brooklyn on-hand.",
+    "ref": "TRANSFER-APT-20260720"
   }
 ]

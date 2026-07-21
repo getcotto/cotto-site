@@ -1,125 +1,127 @@
 {
-  "asOf": "2026-07-01",
-  "source": "RESET 7/1: labels + tubs/lids = Nathan FK physical count 6/26; onOrder = confirmed orders (Cary tubs/lids, ATL PO 070126 labels lands ~7/9, Snyder boxes sent). Boxes on-hand UNKNOWN (not counted). Supersedes the stale 6/1 anchor.",
+  "_doc": "PACKAGING LEDGER (self-maintaining). Mirrors the finished-goods inventory model: each component carries a COUNT ANCHOR (the only hand-entered on-hand), plus RECEIPT events (landed POs) and — via consumption_log + run_calendar — CONSUMPTION events (production runs). engine/packaging_plan.js COMPUTES live on-hand = anchor.qty + receipts-since − consumption-since. NEVER hand-edit a computed on-hand; only (a) add a receipt when a PO lands, (b) add a run to consumption_log when it produces, or (c) replace a component anchor when a fresh physical count arrives (reconcile drift first).",
+  "_writer": "human maintains anchors/receipts/consumption_log; engine/packaging_plan.js reads, writes only spine/packaging_status.json",
+  "asOf": "2026-07-20",
+  "source": "RE-ANCHORED 2026-07-20 to the FK weekly physical count dated 2026-07-17 (scanned inventory sheet, Cotto/Dipsy, received with the 7/13-7/15 batch sheets). This is the fresh count the prior interim anchor was waiting on. Every tub/lid/label anchor below is now FK's counted 7/17 figure, so all receipts dated on/before 7/17 (Cary SO680747 15k tubs+lids ~7/1; ATL PO070126 lid_fo 6k / wrap_fo 3k / wrap_gr 3k ~7/9) are BAKED INTO the count and have been removed to avoid double-counting. The 7/13 run in consumption_log likewise predates the anchor and is excluded by the engine automatically (kept as history). BOXES were NOT on FK's 7/17 sheet, so box_6pk keeps its 5/21 anchor + the 7/14 PCA receipt and remains ROUGH.",
+  "_drift_at_reanchor": "Ledger-computed vs FK-counted at re-anchor (computed − counted): tubs 9,980 vs 10,039 (+59, excellent); lids 28,610 vs 9,698 (-18,912 — SEE BELOW, resolved); wrap_buf 4,257 vs 1,800 (-2,457, the worst real drift — Buffalo wrap was being consumed faster than logged); wrap_fo 3,368 vs 4,000 (+632); wrap_gr 2,568 vs 3,700 (+1,132); lid_buf 1,957 vs 2,300 (+343); lid_fo 4,468 vs 4,100 (-368); lid_gr 3,768 vs 4,050 (+282). Label drift is consistent with the 3% scrap factor being approximate plus partial-sheet waste; tubs prove the ledger mechanics are sound.",
+  "_lids_ambiguity_RESOLVED": "The 6/26 anchor carried an unresolved read: 21,675 (FK scan) vs 2,675 (old spine). The 7/17 count settles it — the OLD SPINE WAS RIGHT and 21,675 was a misread of 2,675. Proof: from 2,675, the ledger computes 2,675 + 15,000 receipts - 8,065 consumed = 9,610, versus FK's counted 9,698 (drift +88). From 21,675 it computes 28,610, which is ~3x the physical shelf. CONSEQUENCE: lids are NOT the comfortable position the ledger showed — real on-hand is ~9.7k against ~18.7k of 90-day consumption, so lids now need reordering rather than sitting GREEN.",
   "unitsPerCase": 6,
-  "note": "Packaging on-hand at Fuel Kitchens. Cotto-supplied (Kendall's responsibility). Coverage is computed against the committed production_plan.json at GROSS fill (raw yields 75/63/67 cs/batch x 6 u), since every filled tub consumes packaging regardless of FK retention. reorderPoint = flag amber below this. Update onHand from each FK EOM sheet; set onOrder when a PO is placed so coverage nets it in. [6/20: onOrder set for wrap_buf/wrap_fo/lid_buf from ATL INV 61246. 6/21 VERIFIED vs source emails: Cary order = EST129592 (7,946 tubs + 15,000 lids, in-stock = LANDED, in onHand) + EST129593 (7,054 tubs, backordered = onOrder; a recent Cary receipt suggests it shipped — confirm + move to onHand). Lids fully received (onOrder 0 correct). Boxes: supplier is SNYDER PACKAGING (Connor Snyder), not PCA — a ~5k order is in progress (set onOrder, see box_6pk) + a past-due Snyder invoice to pay. ATL: 61246 (6/14) is the latest, reflected. ⚠ ON-HAND IS STALE: anchored to FK's ~5/28-6/1 count (PRE recent production usage; boxes weren't even on that count) — REQUEST a fresh post-production count from Nathan and reconcile on-hand before trusting coverage. Still need a NEW Cary order for 7/13 (tubs+lids); the Cary rep (Daniel) went unresponsive on the last ask.]",
+  "consumption": {
+    "yields_cs_per_batch": { "buf": 75, "fo": 63, "gr": 67 },
+    "labelScrapFactor": 1.03,
+    "note": "yields of record are 75/63/67 (run actuals); label scrap 3%"
+  },
+  "horizonDays": { "labels": 60, "default": 90 },
+  "consumption_log": [
+    { "run": "5/25", "produce": "2026-05-25", "buf": 902, "fo": 1943, "gr": 1259, "basis": "est" },
+    { "run": "6/15", "produce": "2026-06-15", "buf": 1773, "fo": 2070, "gr": 1156, "basis": "batch sheet" },
+    { "run": "6/24", "produce": "2026-06-24", "buf": 1333, "fo": 1635, "gr": 1168, "basis": "batch sheet" },
+    { "run": "6/29", "produce": "2026-06-29", "buf": 1331, "fo": 1197, "gr": 785, "basis": "batch sheet" },
+    { "run": "7/13", "produce": "2026-07-13", "buf": 1332, "fo": 2232, "gr": 1188, "basis": "batch sheet (7/13-7/15 run: FO 1+4+1 = 6 batches, GR 3, BUF 3 — confirmed against PRO-FM-02 logs). PREDATES the 7/17 anchor, so it is history only and is not re-consumed." }
+  ],
   "components": [
     {
       "key": "tubs",
       "label": "8oz PP TE round containers",
       "sku": null,
-      "shared": true,
-      "unit": "unit",
-      "onHand": 3045,
-      "onOrder": 15000,
-      "onOrderNote": "Cary 15k (ordered) + 7,054 backorder landed (in onHand). Nathan flagged SHORT 6/30 (\"exhausted on cups this run\"); Cary shipment inbound — MAY BE SHORT, TBD.",
-      "reorderPoint": 4000,
       "supplier": "The Cary Company",
-      "leadDays": 21
+      "leadDays": 14,
+      "reorderPoint": 4000,
+      "moq": 5000,
+      "anchor": { "date": "2026-07-17", "qty": 10039, "source": "FK weekly count 7/17 (unlabeled cups). Ledger had computed 9,980 — drift +59." },
+      "receipts": []
     },
     {
       "key": "lids",
       "label": "110mm PP TE lids",
       "sku": null,
-      "shared": true,
-      "unit": "unit",
-      "onHand": 2675,
-      "onOrder": 15000,
-      "onOrderNote": "Cary 15k ordered, inbound.",
-      "reorderPoint": 4000,
       "supplier": "The Cary Company",
-      "leadDays": 21
+      "leadDays": 7,
+      "reorderPoint": 4000,
+      "moq": 5000,
+      "anchor": { "date": "2026-07-17", "qty": 9698, "source": "FK weekly count 7/17. RESOLVES the 21,675-vs-2,675 ambiguity in favour of 2,675 (see _lids_ambiguity_RESOLVED). Lids are ~9.7k, not ~28.6k." },
+      "receipts": []
     },
     {
       "key": "wrap_buf",
       "label": "Wrap Label - Buffalo",
       "sku": "BUF",
-      "shared": false,
-      "unit": "unit",
-      "onHand": 7000,
-      "onOrder": 0,
-      "reorderPoint": 2000,
       "supplier": "ATL",
-      "onOrderNote": "inv 61246 landed, in onHand",
-      "leadDays": 10
+      "leadDays": 10,
+      "reorderPoint": 2000,
+      "moq": 3000,
+      "anchor": { "date": "2026-07-17", "qty": 1800, "source": "FK weekly count 7/17 (Buffalo labels - cups). Ledger had 4,257 — drift -2,457, the largest real gap." },
+      "receipts": []
     },
     {
       "key": "wrap_fo",
       "label": "Wrap Label - French Onion",
       "sku": "FO",
-      "shared": false,
-      "unit": "unit",
-      "onHand": 3900,
-      "onOrder": 3000,
-      "reorderPoint": 2000,
       "supplier": "ATL",
-      "onOrderNote": "ATL PO 070126, lands ~7/9",
-      "leadDays": 10
+      "leadDays": 10,
+      "reorderPoint": 2000,
+      "moq": 3000,
+      "anchor": { "date": "2026-07-17", "qty": 4000, "source": "FK weekly count 7/17 (French labels - cups). Includes the 7/9 ATL PO070126 receipt." },
+      "receipts": []
     },
     {
       "key": "wrap_gr",
       "label": "Wrap Label - Garden Ranch",
       "sku": "GR",
-      "shared": false,
-      "unit": "unit",
-      "onHand": 1600,
-      "onOrder": 3000,
-      "reorderPoint": 2000,
       "supplier": "ATL",
-      "onOrderNote": "ATL PO 070126, lands ~7/9 (capped for GR reformulation hedge)",
-      "leadDays": 10
+      "leadDays": 10,
+      "reorderPoint": 2000,
+      "moq": 3000,
+      "anchor": { "date": "2026-07-17", "qty": 3700, "source": "FK weekly count 7/17 (Ranch labels - cups). Includes the 7/9 ATL PO070126 receipt." },
+      "receipts": []
     },
     {
       "key": "lid_buf",
       "label": "Lid Label - Buffalo",
       "sku": "BUF",
-      "shared": false,
-      "unit": "unit",
-      "onHand": 4700,
-      "onOrder": 0,
-      "reorderPoint": 2000,
       "supplier": "ATL",
-      "onOrderNote": "inv 61246 landed, in onHand",
-      "leadDays": 10
+      "leadDays": 10,
+      "reorderPoint": 2000,
+      "moq": 3000,
+      "anchor": { "date": "2026-07-17", "qty": 2300, "source": "FK weekly count 7/17 (Buffalo labels - lids)." },
+      "receipts": []
     },
     {
       "key": "lid_fo",
       "label": "Lid Label - French Onion",
       "sku": "FO",
-      "shared": false,
-      "unit": "unit",
-      "onHand": 2000,
-      "onOrder": 6000,
-      "reorderPoint": 2000,
       "supplier": "ATL",
-      "onOrderNote": "ATL PO 070126, lands ~7/9",
-      "leadDays": 10
+      "leadDays": 10,
+      "reorderPoint": 2000,
+      "moq": 3000,
+      "anchor": { "date": "2026-07-17", "qty": 4100, "source": "FK weekly count 7/17 (French labels - lids). Includes the 7/9 ATL PO070126 6k receipt." },
+      "receipts": []
     },
     {
       "key": "lid_gr",
       "label": "Lid Label - Garden Ranch",
       "sku": "GR",
-      "shared": false,
-      "unit": "unit",
-      "onHand": 5900,
-      "onOrder": 0,
-      "reorderPoint": 2000,
       "supplier": "ATL",
-      "leadDays": 10
+      "leadDays": 10,
+      "reorderPoint": 2000,
+      "moq": 3000,
+      "anchor": { "date": "2026-07-17", "qty": 4050, "source": "FK weekly count 7/17 (Ranch labels - lids)." },
+      "receipts": []
     },
     {
       "key": "box_6pk",
       "label": "Cardboard Boxes (8oz 6-pack)",
       "sku": null,
-      "shared": true,
-      "unit": "box",
-      "onHand": 3050,
-      "onOrder": 5000,
+      "supplier": "PCA (Packaging Corp of America); rep Connor Snyder",
+      "leadDays": 14,
       "reorderPoint": 800,
-      "supplier": "Snyder Packaging (Connor Snyder, Connor@Snyder-pkg.com, 610-914-5880)",
-      "onOrderNote": "on-hand UNKNOWN (not in FK 6/26 count) — 3050 is a stale placeholder. 5,000 ordered to Connor/Snyder (SENT); delivery date TBC.",
-      "leadDays": 21
+      "moq": 5000,
+      "anchor": { "date": "2026-05-21", "qty": 3050, "source": "FK 5/21 - boxes omitted from BOTH the 6/26 and 7/17 counts, so this stays ROUGH. Ask Nathan to add boxes to the weekly sheet." },
+      "receipts": [
+        { "date": "2026-07-14", "qty": 5825, "source": "PCA KENDALL630 (5000 ordered, 5825 shipped overrun)" }
+      ]
     }
   ],
-  "leadDaysNote": "leadDays are ESTIMATES (Cary tubs/lids 21d, ATL labels 10d, Snyder boxes 21d) — CONFIRM the real door-to-FK lead time with each supplier; the reorder-by dates depend on them."
+  "_prelabeled_wip": "FK's 7/17 sheet also counted PRE-LABELED cups (tubs already wrapped, staged to fill): Buffalo 23, French Onion 0, Garden Ranch 70 = 93 units. Immaterial (<0.1% of tub stock) and already-committed WIP, so it is NOT added to any anchor — recorded here so a future count that folds them in does not read as drift.",
+  "leadDaysNote": "leadDays from ACTUAL PO->delivery scrape: ATL labels ~8-10d (was a ~21d scramble early w/ rush fees, now reliable ~5-7d ship + 1d CO Ground); Cary lids ~7d reliable, TUBS ~7d IN STOCK but real backorder risk (May 34WRC8 went ~4wk) so budgeted 14d; PCA boxes ~14d repeat. Boxes anchor is the 5/21 count so box on-hand is ROUGH; consumption from all runs since 5/21."
 }

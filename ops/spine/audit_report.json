@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-20",
+  "asOf": "2026-07-21",
   "findings": [
     {
       "sev": "🔴",
@@ -21,6 +21,55 @@
       "title": "Delivered but NOT invoiced: $8463.74 (31 lines)",
       "detail": "Farm & Forage Market $388.26; Olive & Oak $158.16; Butterfield - Lex $2296.80; Butterfield - Madison $1940.40; Meadow Lane $2587.20; Farm to People $790.80; Happier Grocery $302.12 — create these invoices in Settle.",
       "impact": 8463.739999999998
+    },
+    {
+      "sev": "🔴",
+      "area": "Packaging",
+      "title": "Reorder Wrap Label - Buffalo: NOT enough for the very next run (7/23-24) — order before producing",
+      "detail": "Have 0, need 2220 for all runs after the 2026-07-20 count (short 2220). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 2220
+    },
+    {
+      "sev": "🔴",
+      "area": "Packaging",
+      "title": "Reorder Wrap Label - French Onion: NOT enough for the very next run (7/23-24) — order before producing",
+      "detail": "Have 0, need 2976 for all runs after the 2026-07-20 count (short 2976). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 2976
+    },
+    {
+      "sev": "🔴",
+      "area": "Packaging",
+      "title": "Reorder Wrap Label - Garden Ranch: NOT enough for the very next run (7/23-24) — order before producing",
+      "detail": "Have 0, need 2772 for all runs after the 2026-07-20 count (short 2772). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 2772
+    },
+    {
+      "sev": "🔴",
+      "area": "Packaging",
+      "title": "Reorder Lid Label - Buffalo: NOT enough for the very next run (7/23-24) — order before producing",
+      "detail": "Have 0, need 2220 for all runs after the 2026-07-20 count (short 2220). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 2220
+    },
+    {
+      "sev": "🔴",
+      "area": "Packaging",
+      "title": "Reorder Lid Label - French Onion: NOT enough for the very next run (7/23-24) — order before producing",
+      "detail": "Have 0, need 2976 for all runs after the 2026-07-20 count (short 2976). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 2976
+    },
+    {
+      "sev": "🔴",
+      "area": "Packaging",
+      "title": "Reorder Lid Label - Garden Ranch: NOT enough for the very next run (7/23-24) — order before producing",
+      "detail": "Have 0, need 2772 for all runs after the 2026-07-20 count (short 2772). Supplier ATL. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 2772
+    },
+    {
+      "sev": "🔴",
+      "area": "Packaging",
+      "title": "Reorder Cardboard Boxes (8oz 6-pack): NOT enough for the very next run (7/23-24) — order before producing",
+      "detail": "Have 0, need 1328 for all runs after the 2026-07-20 count (short 1328). Supplier PCA (Packaging Corp of America); rep Connor Snyder. ⚠ count is stale — confirm with a fresh FK count.",
+      "impact": 1328
     },
     {
       "sev": "🟡",
@@ -109,14 +158,14 @@
     {
       "sev": "✅",
       "area": "Inventory",
-      "title": "On-hand: BUF 606 / FO 590 / GR 403 cs",
+      "title": "On-hand: BUF 536 / FO 510 / GR 333 cs",
       "detail": "",
       "impact": null
     },
     {
       "sev": "✅",
       "area": "Freshness",
-      "title": "Spine fresh (latest event 2026-07-16, latest order 2026-07-20)",
+      "title": "Spine fresh (latest event 2026-07-20, latest order 2026-07-20)",
       "detail": "",
       "impact": null
     }

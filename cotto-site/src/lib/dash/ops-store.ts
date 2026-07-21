@@ -40,6 +40,15 @@ export type OpsLot = {
   merakiUntil?: string; // Meraki eligibility cutoff (best-by - 30)
   directUntil?: string; // direct-door cutoff (best-by - floor)
   note?: string;
+  // What of this lot is already spoken for, FEFO-allocated and floor-aware. STRANDED means the
+  // lot still holds cases but cannot meet a channel's shelf-life floor by the next claim date —
+  // so those cases are not "free" in any useful sense, they just cannot serve that channel.
+  committed?: number;
+  forecastClaim?: number;
+  free?: number;
+  daysLeftAtNextClaim?: number;
+  strandedForMeraki?: boolean;
+  strandedForDirect?: boolean;
 };
 
 export type OpsOrder = {

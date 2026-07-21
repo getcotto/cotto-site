@@ -180,7 +180,7 @@ export default function OpsView({ snapshot, storeError }: Props) {
             <thead>
               <tr>
                 <Th>Lot</Th><Th>Loc</Th><Th right>BUF</Th><Th right>FO</Th><Th right>GR</Th><Th right>Cases</Th>
-                <Th>Best-by</Th><Th>Meraki until</Th><Th>Direct until</Th>
+                <Th right>Spoken for</Th><Th right>Free</Th><Th>Best-by</Th><Th>Can serve</Th>
               </tr>
             </thead>
             <tbody>
@@ -190,9 +190,31 @@ export default function OpsView({ snapshot, storeError }: Props) {
                   <Td muted>{l.location}</Td>
                   <Td right>{l.buf}</Td><Td right>{l.fo}</Td><Td right>{l.gr}</Td>
                   <Td right><span className="font-semibold">{l.cases}</span></Td>
+                  <Td right>
+                    {(l.committed ?? 0) + (l.forecastClaim ?? 0) > 0 ? (
+                      <span title={`${l.committed ?? 0} committed · ${l.forecastClaim ?? 0} forecast`}>
+                        {(l.committed ?? 0) + (l.forecastClaim ?? 0)}
+                        {l.forecastClaim ? <span className="text-neutral-400"> (fcst)</span> : null}
+                      </span>
+                    ) : "—"}
+                  </Td>
+                  <Td right><span className="font-semibold">{l.free ?? l.cases}</span></Td>
                   <Td>{l.bestBy}</Td>
-                  <Td muted>{l.merakiUntil ?? "—"}</Td>
-                  <Td muted>{l.directUntil ?? "—"}</Td>
+                  <Td>
+                    {/* Eligibility at the next real claim date, not today — a lot can look fine
+                        now and already be too old for the pickup it would have to serve. */}
+                    {l.strandedForDirect ? (
+                      <span className="rounded bg-red-50 px-1.5 py-0.5 text-xs font-semibold text-red-700" title={`Only ${l.daysLeftAtNextClaim}d left by the next claim date — under the 21-day direct floor`}>
+                        neither
+                      </span>
+                    ) : l.strandedForMeraki ? (
+                      <span className="rounded bg-amber-50 px-1.5 py-0.5 text-xs font-medium text-amber-800" title={`${l.daysLeftAtNextClaim}d left by the next claim date — under Meraki's 30-day floor`}>
+                        direct only
+                      </span>
+                    ) : (
+                      <span className="rounded bg-emerald-50 px-1.5 py-0.5 text-xs font-medium text-emerald-700">any channel</span>
+                    )}
+                  </Td>
                 </tr>
               ))}
               {/* Summary rows — NOT warehouse best-by lots. Case totals only, from location counts. */}

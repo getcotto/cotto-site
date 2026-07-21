@@ -228,7 +228,12 @@ export default function OpsView({ snapshot, storeError }: Props) {
                       ) : "—"}
                     </Td>
                     <Td>{c.runsOutOn ?? "—"}</Td>
-                    <Td right><span className="font-semibold">{c.orderQty ? c.orderQty.toLocaleString() : "—"}</span></Td>
+                    <Td right>
+                      <span className="font-semibold">{c.orderQty ? c.orderQty.toLocaleString() : "—"}</span>
+                      {c.sizedOnEstimatedSplit && (
+                        <span title="Rests on August's DERIVED 4/5/3 SKU split — the 12-batch total is committed, the split is not" className="ml-1 text-amber-600">†</span>
+                      )}
+                    </Td>
                     <td className="border-t border-neutral-100 px-3 py-2">
                       {/* The ACTION, not the alarm level. "RED" on 8 of 9 components told you
                           nothing; ORDER vs LATE tells you whether to cut a PO or chase a supplier. */}
@@ -256,6 +261,12 @@ export default function OpsView({ snapshot, storeError }: Props) {
               </tbody>
             </table>
           </div>
+          {s.packaging.components.some((c) => c.sizedOnEstimatedSplit) && (
+            <p className="mt-2 text-xs text-amber-700">
+              † Quantity rests on August&apos;s <strong>derived</strong> 4/5/3 SKU split. The 12-batch total is committed with Nathan; the
+              per-flavour split is inferred from demand mix. Confirm it before treating these label quantities as final.
+            </p>
+          )}
           {s.packaging.staleNote && (
             <p className="mt-2 text-xs text-amber-700">⚠ {s.packaging.staleNote}</p>
           )}

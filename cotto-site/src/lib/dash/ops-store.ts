@@ -101,6 +101,9 @@ export type OpsPackagingComponent = {
   expectedBy?: string; // when the open receipt is due
   expectedConfirmed?: boolean; // false = the date is what WE asked for, not what they promised
   runsOutOn?: string; // the date we actually hit zero, not a run id
+  // True when this SKU's quantity rests on a run whose batch TOTAL is committed but whose SKU
+  // SPLIT was derived (August: 12 batches agreed with Nathan, 4/5/3 inferred from demand mix).
+  sizedOnEstimatedSplit?: boolean;
 };
 export type OpsPackaging = {
   components: OpsPackagingComponent[];

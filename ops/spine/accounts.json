@@ -208,7 +208,7 @@
     "status": "Active",
     "channel": "Wholesale",
     "open_date": "2026-05-20",
-    "price_per_unit": 6.6,
+    "price_per_unit": 6.0,
     "payment_terms": "NET 30",
     "weekly_cases": {
       "buf": 8,
@@ -216,7 +216,7 @@
       "gr": 8
     },
     "acct_fee_per_wk": 0,
-    "model_notes": "Fairway/Wakefern banner (Uptown), 240 E 86th St. Delivered via Localee. Merchant Fedele Stella. Equal GR now (was held last week for quality).",
+    "model_notes": "Fairway/Wakefern banner (Uptown), 240 E 86th St. Delivered via Localee. Merchant Fedele Stella. Equal GR now (was held last week for quality). Cost change filed 6/27/26, Wakefern (Ashley Fountain, Village DSD) confirmed set effective 6/30/26: $36.00/case = $6.00/unit, SRP $9.99.",
     "aliases": [],
     "invoice_rail": "settle",
     "expected_cadence": "weekly",
@@ -249,7 +249,7 @@
     "status": "Active",
     "channel": "Wholesale",
     "open_date": "2026-05-20",
-    "price_per_unit": 6.6,
+    "price_per_unit": 6.0,
     "payment_terms": "NET 30",
     "weekly_cases": {
       "buf": 8,
@@ -257,7 +257,7 @@
       "gr": 8
     },
     "acct_fee_per_wk": 0,
-    "model_notes": "Fairway/Wakefern banner (Uptown), 2131 Broadway. Via Localee.",
+    "model_notes": "Fairway/Wakefern banner (Uptown), 2131 Broadway. Via Localee. Cost change filed 6/27/26, Wakefern (Ashley Fountain, Village DSD) confirmed set effective 6/30/26: $36.00/case = $6.00/unit, SRP $9.99.",
     "aliases": [],
     "invoice_rail": "settle",
     "expected_cadence": "weekly",
@@ -290,7 +290,7 @@
     "status": "Active",
     "channel": "Wholesale",
     "open_date": "2026-05-20",
-    "price_per_unit": 6.6,
+    "price_per_unit": 6.0,
     "payment_terms": "NET 30",
     "weekly_cases": {
       "buf": 4,
@@ -298,7 +298,7 @@
       "gr": 4
     },
     "acct_fee_per_wk": 0,
-    "model_notes": "Fairway/Wakefern banner (Downtown), 766 6th Ave. Via Localee.",
+    "model_notes": "Fairway/Wakefern banner (Downtown), 766 6th Ave. Via Localee. Cost change filed 6/27/26, Wakefern (Ashley Fountain, Village DSD) confirmed set effective 6/30/26: $36.00/case = $6.00/unit, SRP $9.99.",
     "aliases": [],
     "invoice_rail": "settle",
     "expected_cadence": "weekly",
@@ -331,7 +331,7 @@
     "status": "Active",
     "channel": "Wholesale",
     "open_date": "2026-05-20",
-    "price_per_unit": 6.6,
+    "price_per_unit": 6.0,
     "payment_terms": "NET 30",
     "weekly_cases": {
       "buf": 4,
@@ -339,7 +339,7 @@
       "gr": 4
     },
     "acct_fee_per_wk": 0,
-    "model_notes": "Fairway/Wakefern banner (Downtown), 550 2nd Ave. Via Localee.",
+    "model_notes": "Fairway/Wakefern banner (Downtown), 550 2nd Ave. Via Localee. Cost change filed 6/27/26, Wakefern (Ashley Fountain, Village DSD) confirmed set effective 6/30/26: $36.00/case = $6.00/unit, SRP $9.99.",
     "aliases": [],
     "invoice_rail": "settle",
     "expected_cadence": "weekly",

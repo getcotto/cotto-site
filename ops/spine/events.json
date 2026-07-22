@@ -690,7 +690,9 @@
     "dir": "In",
     "lot": "",
     "notes": "6/24 run landed at Carriacou 7/1 — 3 pallets per RLS BOL1207678. SHIPPED estimate; awaiting Carriacou physical count to true-up.",
-    "ref": "RECEIPT-0624"
+    "ref": "RECEIPT-0624",
+    "basis": "counted",
+    "basisNote": "Run receipt confirmed off the Fuel Kitchens batch sheets. Backfilled 2026-07-21 from the documentary trail, not inferred."
   },
   {
     "date": "2026-07-02",
@@ -703,7 +705,9 @@
     "dir": "Out",
     "lot": "",
     "notes": "Carriacou delivered from Brooklyn, completed morning 7/2 (per Kendall). Signed slips Cotto_Delivery_Slips_2026-07-01_Carriacou. Invoiced COTTO-1100.",
-    "ref": "DELIV-MEADOW-20260702"
+    "ref": "DELIV-MEADOW-20260702",
+    "basis": "counted",
+    "basisNote": "Delivery covered by the 18 signature-verified Carriacou slips (6/25, 6/27, 7/2, 7/9, 7/16), reconciled 2026-07-19. Backfilled 2026-07-21 from the documentary trail, not inferred."
   },
   {
     "date": "2026-07-02",
@@ -716,7 +720,9 @@
     "dir": "Out",
     "lot": "",
     "notes": "Carriacou delivered from Brooklyn, completed morning 7/2 (per Kendall). Invoiced COTTO-1101.",
-    "ref": "DELIV-HAPPIER-20260702"
+    "ref": "DELIV-HAPPIER-20260702",
+    "basis": "counted",
+    "basisNote": "Delivery covered by the 18 signature-verified Carriacou slips (6/25, 6/27, 7/2, 7/9, 7/16), reconciled 2026-07-19. Backfilled 2026-07-21 from the documentary trail, not inferred."
   },
   {
     "date": "2026-07-02",
@@ -729,7 +735,9 @@
     "dir": "Out",
     "lot": "",
     "notes": "Carriacou delivered from Brooklyn, completed morning 7/2 (per Kendall). Consignment - bill on sell-through; awaiting Lightspeed MAI# for revenue row.",
-    "ref": "DELIV-POPUP-20260702"
+    "ref": "DELIV-POPUP-20260702",
+    "basis": "counted",
+    "basisNote": "Delivery covered by the 18 signature-verified Carriacou slips (6/25, 6/27, 7/2, 7/9, 7/16), reconciled 2026-07-19. Backfilled 2026-07-21 from the documentary trail, not inferred."
   },
   {
     "date": "2026-07-07",
@@ -741,7 +749,9 @@
     "dir": "In",
     "lot": "6/29-7/1 run",
     "notes": "6/29-7/1 run via RLS 1209659; case counts from FK batch sheets; best-by Aug 28-30",
-    "ref": "RECEIPT-0629"
+    "ref": "RECEIPT-0629",
+    "basis": "counted",
+    "basisNote": "Run receipt confirmed off the Fuel Kitchens batch sheets. Backfilled 2026-07-21 from the documentary trail, not inferred."
   },
   {
     "date": "2026-07-09",
@@ -753,7 +763,9 @@
     "dir": "Out",
     "lot": "FEFO",
     "notes": "Carriacou 5-stop route, BOL 070926-001: Fairway Chelsea+Kips Bay, Butterfield Lex, Farm to People, Meadow Lane",
-    "ref": "DELIV-070926-001"
+    "ref": "DELIV-070926-001",
+    "basis": "counted",
+    "basisNote": "Delivery covered by the 18 signature-verified Carriacou slips (6/25, 6/27, 7/2, 7/9, 7/16), reconciled 2026-07-19. Backfilled 2026-07-21 from the documentary trail, not inferred."
   },
   {
     "date": "2026-07-13",
@@ -765,7 +777,9 @@
     "dir": "Out",
     "lot": "FEFO",
     "notes": "Meraki Direct DSD pickup, PO 6002145 / BOL 071326-001",
-    "ref": "MERAKI-6002145"
+    "ref": "MERAKI-6002145",
+    "basis": "counted",
+    "basisNote": "Meraki will-call pickup against a numbered PO and a signed BOL. Backfilled 2026-07-21 from the documentary trail, not inferred."
   },
   {
     "date": "2026-07-16",
@@ -777,7 +791,9 @@
     "dir": "Out",
     "lot": "FEFO",
     "notes": "7/16 NYC direct route (delivered), 63 cs. FEFO'd off the oldest lot: 19 BUF + 25 FO off the 6/15 run, then 19 GR off the 6/24 run (6/15 holds no GR). Reconciles Brooklyn to 492/434/287 = 1,213.",
-    "ref": "DELIV-20260716-NYC"
+    "ref": "DELIV-20260716-NYC",
+    "basis": "counted",
+    "basisNote": "Delivery covered by the 18 signature-verified Carriacou slips (6/25, 6/27, 7/2, 7/9, 7/16), reconciled 2026-07-19. Backfilled 2026-07-21 from the documentary trail, not inferred."
   },
   {
     "date": "2026-07-20",
@@ -790,7 +806,9 @@
     "dir": "Out",
     "lot": "6/24 run + 6/29-7/1 top-up",
     "notes": "Meraki Direct will-call pickup, PO P6002168 / BOL 072026-001 (160 cs: FO 60 / BUF 50 / GR 50). Staged from 6/24 run (best-by Aug 23-25), top-up 6/29-7/1. Confirmed pickup Mon 7/20 11:00 AM at Carriacou 257 Scholes St (email gmail:19f715fe95cac8f1 + gmail:19f71579e8d609e0; Mendez iMessage 7/17-7/20). Also in orders.json (Meraki Direct, Scheduled, P6002168).",
-    "ref": "MERAKI-6002168"
+    "ref": "MERAKI-6002168",
+    "basis": "counted",
+    "basisNote": "Meraki will-call pickup against a numbered PO and a signed BOL. Backfilled 2026-07-21 from the documentary trail, not inferred."
   },
   {
     "date": "2026-07-20",
@@ -803,6 +821,76 @@
     "dir": "Out",
     "lot": "FEFO oldest",
     "notes": "60 cs (BUF 20 / FO 20 / GR 20) pulled from Brooklyn for sampling (Sprouts/BrandBank/gifting), delivered to 44 W 22nd St, Flatiron, Mon 7/20 ~8 AM by Mohamed/Carriacou. FEFO oldest lot. Source: email gmail:19f7fa5a58f0687c (7/19 breakdown) + iMessage 7/20 (Mohamed en route 10:28, delivery confirmed). NOT a sale - inventory moved to samples; removed from sellable Brooklyn on-hand.",
-    "ref": "TRANSFER-APT-20260720"
+    "ref": "TRANSFER-APT-20260720",
+    "basis": "counted",
+    "basisNote": "Deliberate staged sample pull, quantity set by Kendall at the time. Backfilled 2026-07-21 from the documentary trail, not inferred."
+  },
+  {
+    "date": "2026-07-17",
+    "type": "Receipt",
+    "location": "In Transit (FK->Carriacou)",
+    "account": "FK production run 7-13wk-INTRANSIT-EST",
+    "buf": 192,
+    "fo": 357,
+    "gr": 178,
+    "dir": "In",
+    "lot": "",
+    "notes": "Production run 7-13wk-INTRANSIT-EST landed at In Transit (FK->Carriacou) — counts confirmed.",
+    "ref": "RECEIPT-7-13wk-INTRANSIT-EST",
+    "basis": "counted",
+    "note": "IN TRANSIT, COUNTED. 7/13-7/15 FK production week, picked up 7/17 (BOL 1215199), lands Carriacou 7/22. Per-batch actuals: GR 7/13 390+396+402=1,188u; FO 7/13 400u; FO 7/14 402+378+400+404=1,584u; BUF 7/15 479+475+440=1,394u; FO 7/15 397u. Week total 4,963u = 827 cs (BUF 232 / FO 397 / GR 198). Less Neighborly COTTO-1114 (40/40/20 = 100 cs) = 727 cs in transit. Supersedes the 738-cs estimate, which was derived from same-flavour priors and came within 1.2%. ON ARRIVAL: log an Out from here and an In to Brooklyn against the signed receiving slip.",
+    "basisNote": "CONFIRMED 2026-07-21 from the Batch Coding Traceability Log (PRO-FM-03, 1568_001.pdf), which records per-batch yield as \"units - cases\" in its NOTES column. This is the form that was missing: PRO-FM-02 left Actual Yield blank, PRO-FM-01 carries only theoretical units/batch."
+  },
+  {
+    "date": "2026-07-01",
+    "dir": "Out",
+    "location": "Edison NJ",
+    "buf": 0,
+    "fo": 6,
+    "gr": 4,
+    "account": "Butterfield",
+    "type": "Delivery",
+    "basis": "counted",
+    "ref": "LOCALEE-2026-07-01-Butterfield",
+    "note": "Localee Brand Delivery Report 19f202da82472fb6__BrandReport_Cotto_7-1-2026.pdf — POD n/a, signed at Butterfield. Movement record only (the report states NOT FOR INVOICE PURPOSES); billing stays Settle's."
+  },
+  {
+    "date": "2026-07-01",
+    "dir": "Out",
+    "location": "Edison NJ",
+    "buf": 8,
+    "fo": 0,
+    "gr": 0,
+    "account": "Butterfield (store split unresolved)",
+    "type": "Delivery",
+    "basis": "counted",
+    "ref": "LOCALEE-2026-07-01-Buffalo",
+    "note": "Localee Brand Delivery Report 19f202da82472fb6__BrandReport_Cotto_7-1-2026.pdf — POD n/a, signed at Buffalo. Movement record only (the report states NOT FOR INVOICE PURPOSES); billing stays Settle's. NOTE: the 7/1 report lists Butterfield Lexington and Madison as separate stops; the wrapped PDF layout could not be split reliably, so this row carries the combined Buffalo cases for both. Totals verified against the report TOTAL (18 cs). Does not affect on-hand: dated on the anchor date, not after it."
+  },
+  {
+    "date": "2026-07-09",
+    "dir": "Out",
+    "location": "Edison NJ",
+    "buf": 3,
+    "fo": 0,
+    "gr": 2,
+    "account": "Happier Grocery",
+    "type": "Delivery",
+    "basis": "counted",
+    "ref": "LOCALEE-2026-07-09-HappierGrocery",
+    "note": "Localee Brand Delivery Report 19f48124d65aedf3__Cotto_DeliveryReport_7-9-2026.pdf — POD n/a, signed at Happier Grocery. Movement record only (the report states NOT FOR INVOICE PURPOSES); billing stays Settle's."
+  },
+  {
+    "date": "2026-07-13",
+    "dir": "Out",
+    "location": "Edison NJ",
+    "buf": 4,
+    "fo": 4,
+    "gr": 4,
+    "account": "Olive and Oak",
+    "type": "Delivery",
+    "basis": "counted",
+    "ref": "LOCALEE-2026-07-13-OliveandOak",
+    "note": "Localee Brand Delivery Report 19f71cc1d37b785e__Cotto_DeliveryReport_7-13-2026.pdf — POD n/a, signed at Olive and Oak. Movement record only (the report states NOT FOR INVOICE PURPOSES); billing stays Settle's."
   }
 ]

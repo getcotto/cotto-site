@@ -5966,10 +5966,10 @@
     "units": 300,
     "price": 4.95,
     "total": 1485,
-    "status": "Scheduled",
+    "status": "Delivered",
     "due": "2026-08-12",
     "dedup_key": "gap0716|2026-07-13|meraki|FO",
-    "notes": "Gap harvest 7/16. Meraki Direct PO P6002145 (gmail:19f3e002cbf12ae2), 7/7, $29.70/cs, NET 30, FOB Origin, Will Call, pickup 257 Scholes St Brooklyn. PO PDF = 30/30/30 (90 cs, $2,673); Valentina AMENDED to +20 each = 150 cs (gmail:19f476a621ed0098, 'we can add 20 cases of each, bringing the total to 150 cases on this PO'); Kendall's BOL email confirms '150 cases total: 50 FO / 50 BUF / 50 GR' (gmail:19f4dfc6ff452181, BOL 071326-001). ⚠ Status Scheduled NOT Delivered: pickup was arranged for Mon 7/13 9am-12pm but NO post-pickup confirmation was found in Gmail. ⚠ NEW ACCOUNT — 'Meraki Direct' has no accounts.json entry; add one. First order; distributor price, not retail."
+    "notes": "Gap harvest 7/16. Meraki Direct PO P6002145 (gmail:19f3e002cbf12ae2), 7/7, $29.70/cs, NET 30, FOB Origin, Will Call, pickup 257 Scholes St Brooklyn. PO PDF = 30/30/30 (90 cs, $2,673); Valentina AMENDED to +20 each = 150 cs (gmail:19f476a621ed0098, 'we can add 20 cases of each, bringing the total to 150 cases on this PO'); Kendall's BOL email confirms '150 cases total: 50 FO / 50 BUF / 50 GR' (gmail:19f4dfc6ff452181, BOL 071326-001). ⚠ Status Scheduled NOT Delivered: pickup was arranged for Mon 7/13 9am-12pm but NO post-pickup confirmation was found in Gmail. ⚠ NEW ACCOUNT — 'Meraki Direct' has no accounts.json entry; add one. First order; distributor price, not retail. CLOSED 2026-07-21 by close_stale_orders.js: matched the delivery event MERAKI-6002145 on 2026-07-13 (same stop, 50 cs of FO out, covering this 50). The row had been left open since 2026-07-13."
   },
   {
     "date": "2026-07-13",
@@ -5983,10 +5983,10 @@
     "units": 300,
     "price": 4.95,
     "total": 1485,
-    "status": "Scheduled",
+    "status": "Delivered",
     "due": "2026-08-12",
     "dedup_key": "gap0716|2026-07-13|meraki|BUF",
-    "notes": "Gap harvest 7/16. PO P6002145 amended to 150 cs (gmail:19f4dfc6ff452181). Pickup 7/13 not confirmed — status Scheduled."
+    "notes": "Gap harvest 7/16. PO P6002145 amended to 150 cs (gmail:19f4dfc6ff452181). Pickup 7/13 not confirmed — status Scheduled. CLOSED 2026-07-21 by close_stale_orders.js: matched the delivery event MERAKI-6002145 on 2026-07-13 (same stop, 50 cs of BUF out, covering this 50). The row had been left open since 2026-07-13."
   },
   {
     "date": "2026-07-13",
@@ -6000,10 +6000,10 @@
     "units": 300,
     "price": 4.95,
     "total": 1485,
-    "status": "Scheduled",
+    "status": "Delivered",
     "due": "2026-08-12",
     "dedup_key": "gap0716|2026-07-13|meraki|GR",
-    "notes": "Gap harvest 7/16. PO P6002145 amended to 150 cs (gmail:19f4dfc6ff452181). Pickup 7/13 not confirmed — status Scheduled."
+    "notes": "Gap harvest 7/16. PO P6002145 amended to 150 cs (gmail:19f4dfc6ff452181). Pickup 7/13 not confirmed — status Scheduled. CLOSED 2026-07-21 by close_stale_orders.js: matched the delivery event MERAKI-6002145 on 2026-07-13 (same stop, 50 cs of GR out, covering this 50). The row had been left open since 2026-07-13."
   },
   {
     "date": "2026-07-17",
@@ -6070,10 +6070,10 @@
     "units": 360,
     "price": 4.95,
     "total": 1782,
-    "status": "Scheduled",
+    "status": "Delivered",
     "due": "",
     "split_verified": true,
-    "notes": "Meraki Direct bulk will-call pickup PO P6002168; staged from 6/24 run (best-by Aug 23-25) for 30-day distributor shelf life. Scheduled ship 2026-07-20, 11am, 257 Scholes St. SKU split SOURCED. Source: PO PDF gmail:19f71029c025317e + pickup-confirm (SENT) gmail:19f715fe95cac8f1 (BOL Cotto_BOL_072026-001_Meraki-pickup.pdf)."
+    "notes": "Meraki Direct bulk will-call pickup PO P6002168; staged from 6/24 run (best-by Aug 23-25) for 30-day distributor shelf life. Scheduled ship 2026-07-20, 11am, 257 Scholes St. SKU split SOURCED. Source: PO PDF gmail:19f71029c025317e + pickup-confirm (SENT) gmail:19f715fe95cac8f1 (BOL Cotto_BOL_072026-001_Meraki-pickup.pdf). CLOSED 2026-07-21 by close_stale_orders.js: matched the delivery event MERAKI-6002168 on 2026-07-20 (same stop, 60 cs of FO out, covering this 60). The row had been left open since 2026-07-20."
   },
   {
     "date": "2026-07-20",
@@ -6089,10 +6089,10 @@
     "units": 300,
     "price": 4.95,
     "total": 1485,
-    "status": "Scheduled",
+    "status": "Delivered",
     "due": "",
     "split_verified": true,
-    "notes": "Meraki Direct bulk will-call pickup PO P6002168. SKU split SOURCED. Source: PO PDF gmail:19f71029c025317e + pickup-confirm gmail:19f715fe95cac8f1."
+    "notes": "Meraki Direct bulk will-call pickup PO P6002168. SKU split SOURCED. Source: PO PDF gmail:19f71029c025317e + pickup-confirm gmail:19f715fe95cac8f1. CLOSED 2026-07-21 by close_stale_orders.js: matched the delivery event MERAKI-6002168 on 2026-07-20 (same stop, 50 cs of BUF out, covering this 50). The row had been left open since 2026-07-20."
   },
   {
     "date": "2026-07-20",
@@ -6108,10 +6108,10 @@
     "units": 300,
     "price": 4.95,
     "total": 1485,
-    "status": "Scheduled",
+    "status": "Delivered",
     "due": "",
     "split_verified": true,
-    "notes": "Meraki Direct bulk will-call pickup PO P6002168. SKU split SOURCED. Source: PO PDF gmail:19f71029c025317e + pickup-confirm gmail:19f715fe95cac8f1."
+    "notes": "Meraki Direct bulk will-call pickup PO P6002168. SKU split SOURCED. Source: PO PDF gmail:19f71029c025317e + pickup-confirm gmail:19f715fe95cac8f1. CLOSED 2026-07-21 by close_stale_orders.js: matched the delivery event MERAKI-6002168 on 2026-07-20 (same stop, 50 cs of GR out, covering this 50). The row had been left open since 2026-07-20."
   },
   {
     "date": "2026-06-22",
@@ -6186,8 +6186,8 @@
     "notes": "Schmidt's Country Market Hamptons reorder, 3 FO/3 BUF/3 GR = 9 cs, Meraki 7/15 run. Source: gmail:19f4e240e57fc2bc + gmail:19f4e141e3ad5d01."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Butterfield - Lex",
     "channel": "Wholesale",
     "sku": "FO",
@@ -6200,11 +6200,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|butterfield-lex|FO",
-    "notes": "Butterfield Lexington PO 25421 (Luis Merida, 7/20, gmail:19f80cdfa22b3df0 / attachment 'COTTO PO 07-20-26.pdf'): FO 7 / BUF 5 / GR 5 = 17 cs, $673.20. For upcoming ~7/23 Carriacou route (not yet delivered). ⚠ Butterfield reuses PO numbers across weeks."
+    "notes": "Butterfield Lexington PO 25421 (Luis Merida, 7/20, gmail:19f80cdfa22b3df0 / attachment 'COTTO PO 07-20-26.pdf'): FO 7 / BUF 5 / GR 5 = 17 cs, $673.20. For upcoming ~7/23 Carriacou route (not yet delivered). ⚠ Butterfield reuses PO numbers across weeks. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Butterfield - Lex",
     "channel": "Wholesale",
     "sku": "BUF",
@@ -6217,11 +6217,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|butterfield-lex|BUF",
-    "notes": "Butterfield Lexington PO 25421 (7/20, gmail:19f80cdfa22b3df0). For upcoming ~7/23 route."
+    "notes": "Butterfield Lexington PO 25421 (7/20, gmail:19f80cdfa22b3df0). For upcoming ~7/23 route. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Butterfield - Lex",
     "channel": "Wholesale",
     "sku": "GR",
@@ -6234,11 +6234,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|butterfield-lex|GR",
-    "notes": "Butterfield Lexington PO 25421 (7/20, gmail:19f80cdfa22b3df0). For upcoming ~7/23 route."
+    "notes": "Butterfield Lexington PO 25421 (7/20, gmail:19f80cdfa22b3df0). For upcoming ~7/23 route. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Butterfield - Madison",
     "channel": "Wholesale",
     "sku": "FO",
@@ -6251,11 +6251,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|butterfield-madison|FO",
-    "notes": "Butterfield Madison order (Johangel Berroa 7/19, gmail:19f7a676a3071758, 'order for this week'): FO 6 / GR 2 / BUF 8 = 16 cs. Kendall confirmed 7/20. For upcoming ~7/23 route (not yet delivered)."
+    "notes": "Butterfield Madison order (Johangel Berroa 7/19, gmail:19f7a676a3071758, 'order for this week'): FO 6 / GR 2 / BUF 8 = 16 cs. Kendall confirmed 7/20. For upcoming ~7/23 route (not yet delivered). Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Butterfield - Madison",
     "channel": "Wholesale",
     "sku": "BUF",
@@ -6268,11 +6268,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|butterfield-madison|BUF",
-    "notes": "Butterfield Madison order (Johangel Berroa 7/19, gmail:19f7a676a3071758). For upcoming ~7/23 route."
+    "notes": "Butterfield Madison order (Johangel Berroa 7/19, gmail:19f7a676a3071758). For upcoming ~7/23 route. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Butterfield - Madison",
     "channel": "Wholesale",
     "sku": "GR",
@@ -6285,11 +6285,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|butterfield-madison|GR",
-    "notes": "Butterfield Madison order (Johangel Berroa 7/19, gmail:19f7a676a3071758). For upcoming ~7/23 route."
+    "notes": "Butterfield Madison order (Johangel Berroa 7/19, gmail:19f7a676a3071758). For upcoming ~7/23 route. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Fairway 74th St",
     "channel": "Wholesale",
     "sku": "FO",
@@ -6302,11 +6302,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|fairway-74th|FO",
-    "notes": "Fairway/Wakefern order (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 182 W74th = FO 5 / BUF 5 = 10 cs. Total order FO 18 / BUF 24 / GR 7 = 49 cs across 4 stores. For upcoming ~7/23 route."
+    "notes": "Fairway/Wakefern order (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 182 W74th = FO 5 / BUF 5 = 10 cs. Total order FO 18 / BUF 24 / GR 7 = 49 cs across 4 stores. For upcoming ~7/23 route. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Fairway 74th St",
     "channel": "Wholesale",
     "sku": "BUF",
@@ -6319,11 +6319,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|fairway-74th|BUF",
-    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 182 W74th."
+    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 182 W74th. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Fairway 86th St",
     "channel": "Wholesale",
     "sku": "FO",
@@ -6336,11 +6336,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|fairway-86th|FO",
-    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 183 E86th = FO 5 / BUF 5 = 10 cs."
+    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 183 E86th = FO 5 / BUF 5 = 10 cs. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Fairway 86th St",
     "channel": "Wholesale",
     "sku": "BUF",
@@ -6353,11 +6353,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|fairway-86th|BUF",
-    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 183 E86th."
+    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 183 E86th. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Fairway Kips Bay",
     "channel": "Wholesale",
     "sku": "FO",
@@ -6370,11 +6370,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|fairway-kipsbay|FO",
-    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 185 Kips Bay = FO 4 / BUF 10 / GR 4 = 18 cs."
+    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 185 Kips Bay = FO 4 / BUF 10 / GR 4 = 18 cs. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Fairway Kips Bay",
     "channel": "Wholesale",
     "sku": "BUF",
@@ -6387,11 +6387,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|fairway-kipsbay|BUF",
-    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 185 Kips Bay."
+    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 185 Kips Bay. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Fairway Kips Bay",
     "channel": "Wholesale",
     "sku": "GR",
@@ -6404,11 +6404,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|fairway-kipsbay|GR",
-    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 185 Kips Bay."
+    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 185 Kips Bay. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Fairway Chelsea",
     "channel": "Wholesale",
     "sku": "FO",
@@ -6421,11 +6421,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|fairway-chelsea|FO",
-    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 186 Chelsea = FO 4 / BUF 4 / GR 3 = 11 cs."
+    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 186 Chelsea = FO 4 / BUF 4 / GR 3 = 11 cs. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Fairway Chelsea",
     "channel": "Wholesale",
     "sku": "BUF",
@@ -6438,11 +6438,11 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|fairway-chelsea|BUF",
-    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 186 Chelsea."
+    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 186 Chelsea. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
-    "date": "2026-07-20",
-    "invoice": "",
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
     "account": "Fairway Chelsea",
     "channel": "Wholesale",
     "sku": "GR",
@@ -6455,7 +6455,7 @@
     "status": "Scheduled",
     "due": "2026-08-19",
     "dedup_key": "ord0720|fairway-chelsea|GR",
-    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 186 Chelsea."
+    "notes": "Fairway/Wakefern (Fedele Stella 7/20, gmail:19f7fcc0e1d85b08): store 186 Chelsea. Delivery date CONFIRMED as 2026-07-22 by Kendall's outbound BOL 072226-001 (7-stop Carriacou route, pull from the 6/15 run). The order was already captured on 07-20; the BOL confirms WHEN it ships, it does not create a second order."
   },
   {
     "date": "2026-06-05",
@@ -6712,5 +6712,50 @@
     "status": "Invoiced",
     "due": "2026-07-29",
     "notes": "RECON CATCH 7/20. FREIGHT-ONLY: COTTO-1113 = freight for JUNE 5 shipment (PO 060126 = COTTO-1066), 50% of $1,150 = $575. channel=Freight, 0 cases."
+  },
+  {
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
+    "account": "Happier Grocery (Soho)",
+    "channel": "Wholesale",
+    "sku": "BUF",
+    "flavor": "Buffalo",
+    "cases": 4,
+    "units": 24,
+    "price": 0,
+    "total": 0,
+    "status": "Scheduled",
+    "basis": "planned",
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 072226-001 (2026-07-22), pull from 6/15 RUN. Captured by ingest_outbound_bol.js from msg 19f85e485e783288. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+  },
+  {
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
+    "account": "Happier Grocery (Soho)",
+    "channel": "Wholesale",
+    "sku": "FO",
+    "flavor": "French Onion",
+    "cases": 2,
+    "units": 12,
+    "price": 0,
+    "total": 0,
+    "status": "Scheduled",
+    "basis": "planned",
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 072226-001 (2026-07-22), pull from 6/15 RUN. Captured by ingest_outbound_bol.js from msg 19f85e485e783288. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+  },
+  {
+    "date": "2026-07-22",
+    "invoice": "BOL-072226-001",
+    "account": "Happier Grocery (Soho)",
+    "channel": "Wholesale",
+    "sku": "GR",
+    "flavor": "Garden Ranch",
+    "cases": 2,
+    "units": 12,
+    "price": 0,
+    "total": 0,
+    "status": "Scheduled",
+    "basis": "planned",
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 072226-001 (2026-07-22), pull from 6/15 RUN. Captured by ingest_outbound_bol.js from msg 19f85e485e783288. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
   }
 ]

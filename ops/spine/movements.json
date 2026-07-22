@@ -1510,5 +1510,65 @@
     "dir": "Out",
     "lot": "FEFO oldest",
     "notes": "60 cs (BUF 20 / FO 20 / GR 20) pulled from Brooklyn for sampling (Sprouts/BrandBank/gifting), delivered to 44 W 22nd St, Flatiron, Mon 7/20 ~8 AM by Mohamed/Carriacou. FEFO oldest lot. Source: email gmail:19f7fa5a58f0687c (7/19 breakdown) + iMessage 7/20 (Mohamed en route 10:28, delivery confirmed). NOT a sale - inventory moved to samples; removed from sellable Brooklyn on-hand."
+  },
+  {
+    "date": "2026-07-17",
+    "type": "Receipt",
+    "location": "In Transit (FK->Carriacou)",
+    "account": "FK production run 7-13wk-INTRANSIT-EST",
+    "buf": 192,
+    "fo": 357,
+    "gr": 178,
+    "dir": "In",
+    "lot": "",
+    "notes": "Production run 7-13wk-INTRANSIT-EST landed at In Transit (FK->Carriacou) — counts confirmed."
+  },
+  {
+    "date": "2026-07-01",
+    "type": "Delivery",
+    "location": "Edison NJ",
+    "account": "Butterfield",
+    "buf": 0,
+    "fo": 6,
+    "gr": 4,
+    "dir": "Out",
+    "lot": "",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-01",
+    "type": "Delivery",
+    "location": "Edison NJ",
+    "account": "Butterfield (store split unresolved)",
+    "buf": 8,
+    "fo": 0,
+    "gr": 0,
+    "dir": "Out",
+    "lot": "",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-09",
+    "type": "Delivery",
+    "location": "Edison NJ",
+    "account": "Happier Grocery",
+    "buf": 3,
+    "fo": 0,
+    "gr": 2,
+    "dir": "Out",
+    "lot": "",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-13",
+    "type": "Delivery",
+    "location": "Edison NJ",
+    "account": "Olive and Oak",
+    "buf": 4,
+    "fo": 4,
+    "gr": 4,
+    "dir": "Out",
+    "lot": "",
+    "notes": ""
   }
 ]

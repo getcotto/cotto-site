@@ -1,86 +1,356 @@
 {
   "_doc": "Weekly demand per account, SPLIT into booked vs upside. 'booked' = what this account has actually demonstrated it takes. 'upside' = the increment we HOPE for and have not yet seen. The planner runs both scenarios; production should be built on booked + whatever upside is cancel-protected, never on upside alone. This split exists because the flat pre-7/16 version encoded the stockout-corrected 'latent ~1,650/mo' estimate as if it were bookable, which is ~2x anything ever shipped (Mar 206 / Apr 396 / May 737 / Jun 786).",
   "_writer": "human (Kendall). engine/plan.js reads, never writes.",
-  "asOf": "2026-07-20",
+  "asOf": "2026-07-21",
   "_derivation": "REBUILT 2026-07-20 from the ledger, not by hand. Every 'booked' figure = that account's DEMONSTRATED average over the 8 complete weeks 2026-05-25 -> 2026-07-20, computed from orders.json product rows (BUF/FO/GR cases) / 8. Bottom-up now ties to top-down by construction: demonstrated total was 225.9 cs/wk (978 cs/mo) across all accounts, and active booked here sums to ~233 cs/wk including Montauk (which is invisible in the ledger, see its note). The PRIOR version summed to 246.5 cs/wk but was structurally wrong in three OFFSETTING ways: Meraki (the largest single line, 38.8 cs/wk demonstrated) was ABSENT entirely, Fairway carried 0 booked despite 37.8 cs/wk actually shipping across 4 doors, and Neighborly was switched off despite 18.8 cs/wk. The errors cancelled, so the total looked plausible while the structure was wrong. Re-derive this file the same way (never hand-tune a single line) whenever the channel mix changes.",
   "_reconciliation_warning": "Bottom-up booked (~233 cs/wk = ~1,008/mo) vs top-down demonstrated (225.9 cs/wk = 978/mo): these now agree within ~3%, where the prior file was ~35% high. That agreement is the POINT — if a future edit pushes bottom-up materially above demonstrated throughput without a NAMED reason (a new door, a confirmed PO), the edit is wrong, not the actuals. Note the demonstrated window includes stockout suppression (Buffalo hit zero in June), so it is a floor, not a ceiling. The planner reports this gap on every run — do not ignore it.",
   "_channel_note": "MERAKI MIGRATION (confirmed by Kendall 2026-07-20): Meadow Lane, Farm to People, Sag General Store, Farm & Forage Market and Schmidts are moving to be SERVICED BY MERAKI. They are therefore active:false here and their demonstrated volume is FOLDED INTO the Meraki Direct line, so the channel shift is net-neutral and nothing is double-counted (plan.js skips active:false accounts). Meraki-serviced stores also invoice to Meraki, not the store (doors.json _billing_rule). Everything else Meraki moves is net-new doors.",
   "unit": "cases per week",
   "accounts": [
-    { "account": "Meraki Direct (DSD)", "active": true, "cadence": "weekly pickup",
-      "booked": { "buf": 28.6, "fo": 34.4, "gr": 24.1 }, "upside": { "buf": 10, "fo": 10, "gr": 10 },
-      "note": "LARGEST line. = Meraki's own demonstrated 12.5/13.8/12.5 (pickups 7/13 = 150 cs, 7/20 = 160 cs) PLUS the five migrating accounts folded in: Meadow Lane 10.5/12.5/5.4, Farm to People 3.4/5.4/3.5, Sag 0.8/0.8/0.8, Farm & Forage 0.6/1.1/1.1, Schmidts 0.8/0.8/0.8. Only 2 weeks of direct Meraki history, and the 7/13 pickup may carry initial DSD fill, so treat the own-volume portion as provisional. Upside = new doors Meraki is placing." },
-
-    { "account": "Fairway (4 doors)", "active": true, "cadence": "weekly, often ordered by PHONE",
-      "booked": { "buf": 14.0, "fo": 13.3, "gr": 10.5 }, "upside": { "buf": 5, "fo": 5, "gr": 5 },
-      "note": "WAS 0 booked / 30-30-30 upside, which zeroed a real account in the booked scenario the dash leads with. Demonstrated across Kips Bay 11.9, 86th St 9.5, 74th St 9.5, Chelsea 6.6 = 37.8 cs/wk. Trending up (7/20 was its biggest week). Orders often come by phone, so a silent week here may be a CAPTURE gap, not a demand drop." },
-
-    { "account": "Butterfield - Lex", "active": true, "cadence": "weekly",
-      "booked": { "buf": 7.0, "fo": 12.1, "gr": 5.3 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "FO-led, steady." },
-
-    { "account": "Butterfield - Madison", "active": true, "cadence": "weekly",
-      "booked": { "buf": 7.8, "fo": 10.0, "gr": 5.1 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "Steady. Settle bills this door as 'Butterfield Market - 1150 Madison'." },
-
-    { "account": "Neighborly Ops LLC", "active": true, "cadence": "bulk restock every ~5-6 weeks",
-      "booked": { "buf": 7.5, "fo": 7.5, "gr": 3.8 }, "upside": { "buf": 5, "fo": 5, "gr": 5 },
-      "note": "First West Coast account. WAS switched off at zero despite 150 cs shipped: 6/5 = 50 cs, 7/14 = 100 cs (doubling). Not weekly — lands as a bulk restock, so this weekly figure is an 8-week average and the planner should expect it lumpy. Ordering is largely call-aligned." },
-
-    { "account": "Pop Up Grocer", "active": true, "cadence": "weekly",
-      "booked": { "buf": 4.1, "fo": 4.6, "gr": 3.4 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "" },
-
-    { "account": "Happier Grocery", "active": true, "cadence": "weekly",
-      "booked": { "buf": 3.6, "fo": 3.5, "gr": 3.6 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "Evenly split across all three SKUs." },
-
-    { "account": "Sampling / shows", "active": true, "cadence": "as scheduled",
-      "booked": { "buf": 2.4, "fo": 2.4, "gr": 2.4 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "Demonstrated consumption, not customer demand: apartment/home-fridge pulls 1.6/1.6/1.6 plus the UNFI East show (Mohegan) 0.8/0.8/0.8. The prior file carried 7/10/10 here (27 cs/wk), roughly 4x what actually moved. RAISE THIS DELIBERATELY when a show is booked, rather than leaving standing headroom." },
-
-    { "account": "Olive & Oak", "active": true, "cadence": "weekly",
-      "booked": { "buf": 1.1, "fo": 1.6, "gr": 0.8 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "" },
-
-    { "account": "Last Minute Market", "active": true, "cadence": "weekly",
-      "booked": { "buf": 0.8, "fo": 0.8, "gr": 0.6 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "" },
-
-    { "account": "Montauk Yacht Club", "active": true, "cadence": "seasonal (summer)",
-      "booked": { "buf": 2, "fo": 2, "gr": 2 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "CARRIED OVER UNVERIFIED — the one line NOT derived from the ledger. Montauk bills OUTSIDE Settle and shows zero product rows in orders.json for the whole 8-week window, so its real rate is invisible to this method. Kept at the prior 2/2/2 rather than silently zeroed. VERIFY against actual Montauk invoices and correct." },
-
-    { "account": "Meadow Lane", "active": false, "cadence": "weekly",
-      "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "MOVED TO MERAKI 2026-07. Demonstrated 10.5/12.5/5.4 (28.4 cs/wk) folded into the Meraki Direct line. Was the lead direct account. Do NOT re-activate without removing the same volume from Meraki." },
-
-    { "account": "Farm to People", "active": false, "cadence": "weekly",
-      "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "MOVED TO MERAKI 2026-07. Demonstrated 3.4/5.4/3.5 (12.3 cs/wk) folded into Meraki. ONLINE/DTC with a high ceiling; the prior file carried a +10/10/10 upside that never proved out, now reflected in Meraki's upside instead." },
-
-    { "account": "Sag General Store", "active": false, "cadence": "weekly",
-      "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "MOVED TO MERAKI 2026-07. Demonstrated 0.8/0.8/0.8 folded into Meraki. Pays under the alias 'MarginEdge'." },
-
-    { "account": "Farm & Forage Market", "active": false, "cadence": "weekly",
-      "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "MOVED TO MERAKI 2026-07. Demonstrated 0.6/1.1/1.1 folded into Meraki." },
-
-    { "account": "Schmidts Country Market", "active": false, "cadence": "weekly",
-      "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "MOVED TO MERAKI 2026-07 (already bought through Meraki). Demonstrated 0.8/0.8/0.8 folded into Meraki. NOTE: appeared in the ledger under BOTH 'Schmidts' and 'Schmidts Country Market' (9 cs each) — merged here. Orders have come in via Instagram DM and been confirmed by email." },
-
-    { "account": "The Shelf", "active": false, "cadence": "consignment",
-      "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "Consignment — Settle invoice value does not equal order value by design. No demonstrated volume in the window." },
-
-    { "account": "Jack's Market", "active": false, "cadence": "occasional",
-      "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 1, "fo": 1, "gr": 1 },
-      "note": "No demonstrated volume in the 8-week window." },
-
-    { "account": "Eco-Meal", "active": false, "cadence": "distributor",
-      "booked": { "buf": 0, "fo": 0, "gr": 0 }, "upside": { "buf": 0, "fo": 0, "gr": 0 },
-      "note": "No demonstrated volume in the window." }
-  ]
+    {
+      "account": "Meraki Direct (DSD)",
+      "active": true,
+      "cadence": "weekly pickup",
+      "booked": {
+        "buf": 28.6,
+        "fo": 34.4,
+        "gr": 24.1
+      },
+      "upside": {
+        "buf": 10,
+        "fo": 10,
+        "gr": 10
+      },
+      "note": "LARGEST line. = Meraki's own demonstrated 12.5/13.8/12.5 (pickups 7/13 = 150 cs, 7/20 = 160 cs) PLUS the five migrating accounts folded in: Meadow Lane 10.5/12.5/5.4, Farm to People 3.4/5.4/3.5, Sag 0.8/0.8/0.8, Farm & Forage 0.6/1.1/1.1, Schmidts 0.8/0.8/0.8. Only 2 weeks of direct Meraki history, and the 7/13 pickup may carry initial DSD fill, so treat the own-volume portion as provisional. Upside = new doors Meraki is placing. LUMPY: Meraki does not trickle, it takes ~160 cases on one day. Booked stays the amortised truth; event.cases is what has to be physically present on pickup day.",
+      "demandType": "lumpy",
+      "event": {
+        "cases": {
+          "buf": 50,
+          "fo": 60,
+          "gr": 50
+        },
+        "everyDays": 7,
+        "lastOn": "2026-07-20",
+        "source": "OBSERVED from the ledger: pickups 2026-07-13 (150 cs) and 2026-07-20 (160 cs) are SEVEN days apart, and Kendall 2026-07-21: \"presumably they will pick up weekly\". everyDays is now derived from the gap between real pickups. The prior value of 13 was CIRCULAR - computed as eventCases x 7 / the demonstrated booked rate, which forces perWeek to equal booked by construction, so it could never disagree with the number it was supposed to test.",
+        "cadenceWarning": "The booked rate of 87.1 cs/wk is an 8-week trailing average that includes ramp-up weeks with no pickup. If Meraki now pulls ~155 cs EVERY week, the trailing average understates forward demand and 286.8 cs/wk is the SUSTAINED rate, not a peak. Confirm the standing cadence with Oreste/Valentina before sizing another run."
+      }
+    },
+    {
+      "account": "Fairway (4 doors)",
+      "active": true,
+      "cadence": "weekly, often ordered by PHONE",
+      "booked": {
+        "buf": 14,
+        "fo": 13.3,
+        "gr": 10.5
+      },
+      "upside": {
+        "buf": 5,
+        "fo": 5,
+        "gr": 5
+      },
+      "note": "WAS 0 booked / 30-30-30 upside, which zeroed a real account in the booked scenario the dash leads with. Demonstrated across Kips Bay 11.9, 86th St 9.5, 74th St 9.5, Chelsea 6.6 = 37.8 cs/wk. Trending up (7/20 was its biggest week). Orders often come by phone, so a silent week here may be a CAPTURE gap, not a demand drop. STEADY ON PURPOSE: crossing all 4 doors spreads over a couple of weeks rather than landing in one day, so modelling it as an event would inflate the peak. Kendall 2026-07-21: \"that tends to get spread out across a couple weeks, so I dont wanna inflate it.\" Revisit only if a crossing ever lands as a single-day slug in the ledger.",
+      "demandType": "steady"
+    },
+    {
+      "account": "Butterfield - Lex",
+      "active": true,
+      "cadence": "weekly",
+      "booked": {
+        "buf": 7,
+        "fo": 12.1,
+        "gr": 5.3
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "FO-led, steady.",
+      "demandType": "steady"
+    },
+    {
+      "account": "Butterfield - Madison",
+      "active": true,
+      "cadence": "weekly",
+      "booked": {
+        "buf": 7.8,
+        "fo": 10,
+        "gr": 5.1
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "Steady. Settle bills this door as 'Butterfield Market - 1150 Madison'.",
+      "demandType": "steady"
+    },
+    {
+      "account": "Neighborly Ops LLC",
+      "active": true,
+      "cadence": "bulk restock every ~5-6 weeks",
+      "booked": {
+        "buf": 7.5,
+        "fo": 7.5,
+        "gr": 3.8
+      },
+      "upside": {
+        "buf": 5,
+        "fo": 5,
+        "gr": 5
+      },
+      "note": "First West Coast account. WAS switched off at zero despite 150 cs shipped: 6/5 = 50 cs, 7/14 = 100 cs (doubling). Not weekly — lands as a bulk restock, so this weekly figure is an 8-week average and the planner should expect it lumpy. Ordering is largely call-aligned. LUMPY: bulk West Coast restock, not a weekly draw.",
+      "demandType": "lumpy",
+      "event": {
+        "cases": {
+          "buf": 40,
+          "fo": 40,
+          "gr": 20
+        },
+        "everyDays": 37,
+        "lastOn": "2026-07-14",
+        "source": "OBSERVED: COTTO-1114 on 2026-07-14, BUF 40 / FO 40 / GR 20 = 100 cs. everyDays derived from the demonstrated 18.8 cs/wk (100 x 7 / 18.8 = 37.2d), which matches the recorded cadence of a bulk restock every ~5-6 weeks."
+      }
+    },
+    {
+      "account": "Pop Up Grocer",
+      "active": true,
+      "cadence": "weekly",
+      "booked": {
+        "buf": 4.1,
+        "fo": 4.6,
+        "gr": 3.4
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "",
+      "demandType": "steady"
+    },
+    {
+      "account": "Happier Grocery",
+      "active": true,
+      "cadence": "weekly",
+      "booked": {
+        "buf": 3.6,
+        "fo": 3.5,
+        "gr": 3.6
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "Evenly split across all three SKUs.",
+      "demandType": "steady"
+    },
+    {
+      "account": "Sampling / shows",
+      "active": true,
+      "cadence": "as scheduled",
+      "booked": {
+        "buf": 2.4,
+        "fo": 2.4,
+        "gr": 2.4
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "Demonstrated consumption, not customer demand: apartment/home-fridge pulls 1.6/1.6/1.6 plus the UNFI East show (Mohegan) 0.8/0.8/0.8. The prior file carried 7/10/10 here (27 cs/wk), roughly 4x what actually moved. RAISE THIS DELIBERATELY when a show is booked, rather than leaving standing headroom.",
+      "demandType": "steady"
+    },
+    {
+      "account": "Olive & Oak",
+      "active": true,
+      "cadence": "weekly",
+      "booked": {
+        "buf": 1.1,
+        "fo": 1.6,
+        "gr": 0.8
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "",
+      "demandType": "steady"
+    },
+    {
+      "account": "Last Minute Market",
+      "active": true,
+      "cadence": "weekly",
+      "booked": {
+        "buf": 0.8,
+        "fo": 0.8,
+        "gr": 0.6
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "",
+      "demandType": "steady"
+    },
+    {
+      "account": "Montauk Yacht Club",
+      "active": true,
+      "cadence": "seasonal (summer)",
+      "booked": {
+        "buf": 2,
+        "fo": 2,
+        "gr": 2
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "CARRIED OVER UNVERIFIED — the one line NOT derived from the ledger. Montauk bills OUTSIDE Settle and shows zero product rows in orders.json for the whole 8-week window, so its real rate is invisible to this method. Kept at the prior 2/2/2 rather than silently zeroed. VERIFY against actual Montauk invoices and correct.",
+      "demandType": "steady"
+    },
+    {
+      "account": "Meadow Lane",
+      "active": false,
+      "cadence": "weekly",
+      "booked": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "MOVED TO MERAKI 2026-07. Demonstrated 10.5/12.5/5.4 (28.4 cs/wk) folded into the Meraki Direct line. Was the lead direct account. Do NOT re-activate without removing the same volume from Meraki.",
+      "demandType": "steady"
+    },
+    {
+      "account": "Farm to People",
+      "active": false,
+      "cadence": "weekly",
+      "booked": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "MOVED TO MERAKI 2026-07. Demonstrated 3.4/5.4/3.5 (12.3 cs/wk) folded into Meraki. ONLINE/DTC with a high ceiling; the prior file carried a +10/10/10 upside that never proved out, now reflected in Meraki's upside instead.",
+      "demandType": "steady"
+    },
+    {
+      "account": "Sag General Store",
+      "active": false,
+      "cadence": "weekly",
+      "booked": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "MOVED TO MERAKI 2026-07. Demonstrated 0.8/0.8/0.8 folded into Meraki. Pays under the alias 'MarginEdge'.",
+      "demandType": "steady"
+    },
+    {
+      "account": "Farm & Forage Market",
+      "active": false,
+      "cadence": "weekly",
+      "booked": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "MOVED TO MERAKI 2026-07. Demonstrated 0.6/1.1/1.1 folded into Meraki.",
+      "demandType": "steady"
+    },
+    {
+      "account": "Schmidts Country Market",
+      "active": false,
+      "cadence": "weekly",
+      "booked": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "MOVED TO MERAKI 2026-07 (already bought through Meraki). Demonstrated 0.8/0.8/0.8 folded into Meraki. NOTE: appeared in the ledger under BOTH 'Schmidts' and 'Schmidts Country Market' (9 cs each) — merged here. Orders have come in via Instagram DM and been confirmed by email.",
+      "demandType": "steady"
+    },
+    {
+      "account": "The Shelf",
+      "active": false,
+      "cadence": "consignment",
+      "booked": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "Consignment — Settle invoice value does not equal order value by design. No demonstrated volume in the window.",
+      "demandType": "steady"
+    },
+    {
+      "account": "Jack's Market",
+      "active": false,
+      "cadence": "occasional",
+      "booked": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "upside": {
+        "buf": 1,
+        "fo": 1,
+        "gr": 1
+      },
+      "note": "No demonstrated volume in the 8-week window.",
+      "demandType": "steady"
+    },
+    {
+      "account": "Eco-Meal",
+      "active": false,
+      "cadence": "distributor",
+      "booked": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "upside": {
+        "buf": 0,
+        "fo": 0,
+        "gr": 0
+      },
+      "note": "No demonstrated volume in the window.",
+      "demandType": "steady"
+    }
+  ],
+  "_demand_model": "STEADY vs LUMPY, read by engine/lib/demand_model.js. booked[] remains the amortised weekly truth for every account (do not change it). Accounts that draw a slug on ONE day additionally carry event{cases,everyDays,lastOn,source}. Three numbers come out: baseWeekly (steady only, what must be sustained), weeklyEquivalent (base + lumpy amortised, for CAPACITY), and peakWeek (base + the single largest event, for INVENTORY - the week stock must actually exist). Only reclassify an account when a real single-day slug appears in the ledger."
 }

@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-21",
+  "asOf": "2026-07-22",
   "findings": [
     {
       "sev": "🔴",
@@ -18,9 +18,9 @@
     {
       "sev": "🔴",
       "area": "Billing",
-      "title": "Delivered but NOT invoiced: $8463.74 (31 lines)",
-      "detail": "Farm & Forage Market $388.26; Olive & Oak $158.16; Butterfield - Lex $2296.80; Butterfield - Madison $1940.40; Meadow Lane $2587.20; Farm to People $790.80; Happier Grocery $302.12 — create these invoices in Settle.",
-      "impact": 8463.739999999998
+      "title": "Delivered but NOT invoiced: $12918.74 (34 lines)",
+      "detail": "Farm & Forage Market $388.26; Olive & Oak $158.16; Butterfield - Lex $2296.80; Butterfield - Madison $1940.40; Meadow Lane $2587.20; Farm to People $790.80; Happier Grocery $302.12; Meraki Direct $4455.00 — create these invoices in Settle.",
+      "impact": 12918.739999999998
     },
     {
       "sev": "🔴",
@@ -149,6 +149,20 @@
       "impact": null
     },
     {
+      "sev": "🟡",
+      "area": "Receipts",
+      "title": "Unconfirmed receipt 2026-07-17: FK production run 7-13wk-INTRANSIT-EST",
+      "detail": "192 BUF / 357 FO / 178 GR logged as estimate — reconcile when the BOL/receipt lands.",
+      "impact": null
+    },
+    {
+      "sev": "🟡",
+      "area": "Freight",
+      "title": "Book Pueblo freight by 2026-07-27 (Mon) — ships 2026-07-31",
+      "detail": "Runs 7/23-24 (growth, back-to-back)+7/27-29. Carriers: Jeremy/FFE, GianMarco@RLS, Heather@DTS.",
+      "impact": null
+    },
+    {
       "sev": "✅",
       "area": "Open item",
       "title": "[Quality / Neighborly] Neighborly mislabel — Evan will relabel on their own (they have a label maker); NOT a red flag from Neighborly's side anymore",
@@ -158,14 +172,14 @@
     {
       "sev": "✅",
       "area": "Inventory",
-      "title": "On-hand: BUF 536 / FO 510 / GR 333 cs",
+      "title": "On-hand: BUF 713 / FO 857 / GR 501 cs",
       "detail": "",
       "impact": null
     },
     {
       "sev": "✅",
       "area": "Freshness",
-      "title": "Spine fresh (latest event 2026-07-20, latest order 2026-07-20)",
+      "title": "Spine fresh (latest event 2026-07-20, latest order 2026-07-22)",
       "detail": "",
       "impact": null
     }

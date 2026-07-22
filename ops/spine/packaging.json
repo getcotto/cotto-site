@@ -112,9 +112,10 @@
           "po": "072026",
           "supplier": "American Tape & Label",
           "orderedOn": "2026-07-20",
-          "expectedConfirmed": false,
+          "expectedConfirmed": true,
           "ref": "19f82a1e",
-          "source": "PO 072026 sent 2026-07-20 (expected date REQUESTED, awaiting supplier confirmation)"
+          "source": "PO 072026 sent 2026-07-20 (expected date REQUESTED, awaiting supplier confirmation)",
+          "confirmedBy": "ATL order confirmations 66869 (wrap) and 66870 (lid), gmail:19f84f0e43aebfdb, 2026-07-21 13:50 UTC: \"Getting these to Fuel Kitchens by the 29th shouldn't be a problem.\" Both confirmation PDFs state Estimated Completion 2026-07-27, Ship Via UPS. So the date IS supplier-confirmed — but 7/29 is real and unavoidable, since completion falls on the morning the 7/27 run starts and a UPS leg follows it."
         }
       ]
     },
@@ -138,9 +139,10 @@
           "po": "072026",
           "supplier": "American Tape & Label",
           "orderedOn": "2026-07-20",
-          "expectedConfirmed": false,
+          "expectedConfirmed": true,
           "ref": "19f82a1e",
-          "source": "PO 072026 sent 2026-07-20 (expected date REQUESTED, awaiting supplier confirmation)"
+          "source": "PO 072026 sent 2026-07-20 (expected date REQUESTED, awaiting supplier confirmation)",
+          "confirmedBy": "ATL order confirmations 66869 (wrap) and 66870 (lid), gmail:19f84f0e43aebfdb, 2026-07-21 13:50 UTC: \"Getting these to Fuel Kitchens by the 29th shouldn't be a problem.\" Both confirmation PDFs state Estimated Completion 2026-07-27, Ship Via UPS. So the date IS supplier-confirmed — but 7/29 is real and unavoidable, since completion falls on the morning the 7/27 run starts and a UPS leg follows it."
         }
       ]
     },
@@ -179,9 +181,10 @@
           "po": "072026",
           "supplier": "American Tape & Label",
           "orderedOn": "2026-07-20",
-          "expectedConfirmed": false,
+          "expectedConfirmed": true,
           "ref": "19f82a1e",
-          "source": "PO 072026 sent 2026-07-20 (expected date REQUESTED, awaiting supplier confirmation)"
+          "source": "PO 072026 sent 2026-07-20 (expected date REQUESTED, awaiting supplier confirmation)",
+          "confirmedBy": "ATL order confirmations 66869 (wrap) and 66870 (lid), gmail:19f84f0e43aebfdb, 2026-07-21 13:50 UTC: \"Getting these to Fuel Kitchens by the 29th shouldn't be a problem.\" Both confirmation PDFs state Estimated Completion 2026-07-27, Ship Via UPS. So the date IS supplier-confirmed — but 7/29 is real and unavoidable, since completion falls on the morning the 7/27 run starts and a UPS leg follows it."
         }
       ]
     },
@@ -205,9 +208,10 @@
           "po": "072026",
           "supplier": "American Tape & Label",
           "orderedOn": "2026-07-20",
-          "expectedConfirmed": false,
+          "expectedConfirmed": true,
           "ref": "19f82a1e",
-          "source": "PO 072026 sent 2026-07-20 (expected date REQUESTED, awaiting supplier confirmation)"
+          "source": "PO 072026 sent 2026-07-20 (expected date REQUESTED, awaiting supplier confirmation)",
+          "confirmedBy": "ATL order confirmations 66869 (wrap) and 66870 (lid), gmail:19f84f0e43aebfdb, 2026-07-21 13:50 UTC: \"Getting these to Fuel Kitchens by the 29th shouldn't be a problem.\" Both confirmation PDFs state Estimated Completion 2026-07-27, Ship Via UPS. So the date IS supplier-confirmed — but 7/29 is real and unavoidable, since completion falls on the morning the 7/27 run starts and a UPS leg follows it."
         }
       ]
     },
@@ -235,9 +239,9 @@
       "reorderPoint": 800,
       "moq": 5000,
       "anchor": {
-        "date": "2026-05-21",
-        "qty": 3050,
-        "source": "FK 5/21 - boxes omitted from BOTH the 6/26 and 7/17 counts, so this stays ROUGH. Ask Nathan to add boxes to the weekly sheet."
+        "date": "2026-07-21",
+        "qty": 5825,
+        "source": "COUNTED. Lisa Trujillo (FK) in writing, 2026-07-21 14:25 UTC, gmail:19f814144e642d3c: \"the box count is 5825.\" Supersedes the 5/21 RECEIPT-derived anchor, which was the only figure available because boxes were omitted from both FK weekly count sheets. Corroborated by PCA invoice 217-10077062 (gmail:19f6792621e0b179): ordered 5,000, SHIPPED 5,825, invoiced 7/14, in FK hands by the 7/17 count."
       },
       "receipts": [
         {
@@ -249,5 +253,6 @@
     }
   ],
   "_prelabeled_wip": "FK's 7/17 sheet also counted PRE-LABELED cups (tubs already wrapped, staged to fill): Buffalo 23, French Onion 0, Garden Ranch 70 = 93 units. Immaterial (<0.1% of tub stock) and already-committed WIP, so it is NOT added to any anchor — recorded here so a future count that folds them in does not read as drift.",
-  "leadDaysNote": "leadDays from ACTUAL PO->delivery scrape: ATL labels ~8-10d (was a ~21d scramble early w/ rush fees, now reliable ~5-7d ship + 1d CO Ground); Cary lids ~7d reliable, TUBS ~7d IN STOCK but real backorder risk (May 34WRC8 went ~4wk) so budgeted 14d; PCA boxes ~14d repeat. Boxes anchor is the 5/21 count so box on-hand is ROUGH; consumption from all runs since 5/21."
+  "leadDaysNote": "VERIFIED 2026-07-22 from actual PO-date -> ship-date on supplier invoices, not from memory. ATL non-rush: 3/20->3/27 (7d), 4/29->5/5 (6d), 5/14->5/21 (7d), 6/9->6/14 (5d), 7/1->7/8 (7d), 7/20->7/27 est (7d) = 5-7d median 7, plus ~1d UPS Denver->Pueblo. The four 1-2 day turns in early April all carried RUSH24/RUSH72 fees ($225/$125). So leadDays 10 is conservative by 2-3 days: KEEP IT, and note the \"4-5 day lead\" in the supplier brief is optimistic — ATL has never hit it without paying a rush. Cary: in-stock 2-4d (SO680747 ordered 6/23 shipped 6/25) but SO672606 BACKORDERED 5/14->6/10 = 27 DAYS on this exact tub SKU, which is why tubs stay budgeted at 14. Cary lids at 7 is slightly optimistic (2d to ship + road freight to Pueblo, and no delivery confirmation email exists for any Cary shipment — landing dates are inferred from ship date, not proven); 9 would be honest. PCA: PO 6/30, acknowledged same day (order 552939, due 7/13), invoiced/shipped 7/14, in FK hands by the 7/17 count = 14-15d, so 14 is right and marginally optimistic.",
+  "priceNote": "ATL prices by TOTAL ORDER SIZE, so there is no standing per-unit rate. Observed lid-label ladder: $0.12965 (3k), $0.10421 (6k), $0.09333 (6k), $0.08316 (18k), $0.07518 (12k), $0.06937 (18k). ⚠ PO 072026 was priced at $0.09333/lid from invoice 62036; ATL confirmation 66870 prices it at $0.07518, and wrap matches at $0.15153. PO total $2,938.32 vs confirmed $2,720.52 = $217.80 IN COTTO FAVOUR. Do not treat any single invoice price as the rate."
 }

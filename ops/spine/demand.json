@@ -12,9 +12,9 @@
       "active": true,
       "cadence": "weekly pickup",
       "booked": {
-        "buf": 28.6,
-        "fo": 34.4,
-        "gr": 24.1
+        "buf": 50,
+        "fo": 60,
+        "gr": 50
       },
       "upside": {
         "buf": 10,
@@ -33,7 +33,8 @@
         "lastOn": "2026-07-20",
         "source": "OBSERVED from the ledger: pickups 2026-07-13 (150 cs) and 2026-07-20 (160 cs) are SEVEN days apart, and Kendall 2026-07-21: \"presumably they will pick up weekly\". everyDays is now derived from the gap between real pickups. The prior value of 13 was CIRCULAR - computed as eventCases x 7 / the demonstrated booked rate, which forces perWeek to equal booked by construction, so it could never disagree with the number it was supposed to test.",
         "cadenceWarning": "The booked rate of 87.1 cs/wk is an 8-week trailing average that includes ramp-up weeks with no pickup. If Meraki now pulls ~155 cs EVERY week, the trailing average understates forward demand and 286.8 cs/wk is the SUSTAINED rate, not a peak. Confirm the standing cadence with Oreste/Valentina before sizing another run."
-      }
+      },
+      "bookedBasis": "PROMOTED 2026-07-21 from an 8-week trailing average (28.6/34.4/24.1 = 87.1 cs/wk) to the observed standing pickup (50/60/50 = 160 cs/wk). The trailing average included ramp-up weeks with no pickup at all, so it understated forward demand by ~73 cs/wk. Trigger: Kendall confirmed the cadence directly -- \"meraki is going weekly\" (2026-07-21). This is exactly the promotion the prior note asked for. ⚠ EVIDENCE GRADE: founder statement, not yet a written confirmation from Oreste/Valentina, and only 2 real pickups of history (7/13, 7/20) one of which may carry initial DSD fill. Downgrade this back to the trailing average if a week passes with no pickup. The five migrating accounts (Meadow Lane, Farm to People, Sag, Farm & Forage, Schmidts) are SERVED BY this pickup and must not be added on top."
     },
     {
       "account": "Fairway (4 doors)",

@@ -1,5 +1,7 @@
 {
-  "asOf": "2026-07-22",
+  "asOf": "2026-07-06",
+  "ranAt": "2026-07-22",
+  "inputAgeNote": "Inputs exported 2026-07-06; this run happened 2026-07-22. Balances reflect the EXPORT date.",
   "totalInvoiced": 76870.37,
   "totalOpenTrue": 30134.98,
   "unmapped": [],

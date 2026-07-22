@@ -72,6 +72,13 @@
       "impact": 1328
     },
     {
+      "sev": "🔴",
+      "area": "Freshness",
+      "title": "⚠ SPINE FROZEN — AR last reconciled 2026-07-06 (16d ago). This is a STALE COPY; every number in this report is out of date. DO NOT act on it.",
+      "detail": "A routine is reading a frozen spine. Reconcile the source and repoint it before trusting any figure below.",
+      "impact": null
+    },
+    {
       "sev": "🟡",
       "area": "Open item",
       "title": "[Freight / Incoming] RLS Load 1209659 (PO 063026) — shipped 7/3, arriving Carriacou/Brooklyn Tue 7/7; LOG RECEIPT on arrival",
@@ -138,7 +145,7 @@
       "sev": "🟡",
       "area": "Receipts",
       "title": "Unconfirmed receipt 2026-07-01: FK 6/24 run (minus 1 held FO batch)",
-      "detail": "222 BUF / 186 FO / 198 GR logged as estimate — reconcile when the BOL/receipt lands.",
+      "detail": "222 BUF / 186 FO / 195 GR logged as estimate — reconcile when the BOL/receipt lands.",
       "impact": null
     },
     {
@@ -152,7 +159,7 @@
       "sev": "🟡",
       "area": "Receipts",
       "title": "Unconfirmed receipt 2026-07-17: FK production run 7-13wk-INTRANSIT-EST",
-      "detail": "192 BUF / 357 FO / 178 GR logged as estimate — reconcile when the BOL/receipt lands.",
+      "detail": "191 BUF / 355 FO / 178 GR logged as estimate — reconcile when the BOL/receipt lands.",
       "impact": null
     },
     {
@@ -172,7 +179,7 @@
     {
       "sev": "✅",
       "area": "Inventory",
-      "title": "On-hand: BUF 713 / FO 857 / GR 501 cs",
+      "title": "On-hand: BUF 712 / FO 855 / GR 498 cs",
       "detail": "",
       "impact": null
     },

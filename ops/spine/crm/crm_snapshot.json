@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-07-18T14:10:03.697Z",
- "asOf": "2026-07-18",
+ "updatedAt": "2026-07-22T03:12:15.536Z",
+ "asOf": "2026-07-22",
  "doors": {
   "liveNow": 21,
   "plannedNow": 24,
@@ -272,17 +272,17 @@
      "source": "calendar"
     }
    ],
-   "lastTouch": "2026-07-17",
+   "lastTouch": "2026-07-21",
    "nextMeeting": null,
-   "daysSince": 1,
+   "daysSince": 0,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
    "statuses": [
     {
-     "date": "2026-07-17",
+     "date": "2026-07-21",
      "src": "gmail",
-     "text": "Active account. Scheduling more Fairway demos (7/7). Wakefern/UNFI setup thread 7/17. CONTACT CHANGE: Agustina Lago Evia (social/giveaway) is leaving Wakefern; Kaysh Mohan (Kayshwar.Mohan@wakefern.com) is taking over that project."
+     "text": "Active account, reordering. Fedele Stella sent a four-store order 7/20 (W 74th, E 86th, Kips Bay, Chelsea across French Onion, Buffalo and Garden Ranch). Kendall confirmed 7/21 and moved delivery to Wednesday 7/22 for all four stores because Edgar reported Kips Bay had sold out completely. Fedele: 'Thx you da best.' Separately on 7/15 Fedele made good on the UNFI introduction to Tim Heuser, which is now driving the UNFI new item setup."
     },
     {
      "date": "2026-07-15",
@@ -377,7 +377,7 @@
    ],
    "lastTouch": "2026-04-15",
    "nextMeeting": null,
-   "daysSince": 94,
+   "daysSince": 97,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -496,22 +496,22 @@
      "source": "gmail"
     }
    ],
-   "lastTouch": "2026-07-14",
+   "lastTouch": "2026-07-21",
    "nextMeeting": null,
-   "daysSince": 4,
-   "owes": "them",
-   "due": false,
-   "dueReason": null,
+   "daysSince": 0,
+   "owes": "us",
+   "due": true,
+   "dueReason": "We owe the next move",
    "statuses": [
     {
-     "date": "2026-07-14",
+     "date": "2026-07-21",
      "src": "gmail",
-     "text": "Live account placing weekly POs across locations (1114 Lex / 1150 Madison / 29-17 40th Ave). Orders confirmed 6/14, 6/21, 6/26, 6/28, 7/7, 7/12, 7/13. Skipped the week of 7/5: 'we will not be placing any orders for this week.' Kendall probed distributor migration 7/14; Marcos Bravo 7/14: 'We currently do not work with Meraki Direct, but we will look into it.'"
+     "text": "Active customer, now ordering for two locations. 1150 Madison order 7/19 (6 FO / 2 GR / 8 BUF), confirmed 7/21. Separate PO for Butterfield on Lexington arrived 7/20 from Luis Merida (Purchasing & Receiving Coordinator), confirmed same day. Both deliver this week."
     },
     {
      "date": "2026-07-14",
      "src": "gmail",
-     "text": "Active customer, weekly reorders at 1150 Madison (FO + GR). Also Leslie (leslie@butterfieldmarket.com) and Luis Merida (luismerida@butterfieldmarket.com) on the Lexington PO. Do not yet work with Meraki but will look into it."
+     "text": "Live account placing weekly POs across locations (1114 Lex / 1150 Madison / 29-17 40th Ave). Orders confirmed 6/14, 6/21, 6/26, 6/28, 7/7, 7/12, 7/13. Skipped the week of 7/5: 'we will not be placing any orders for this week.' Kendall probed distributor migration 7/14; Marcos Bravo 7/14: 'We currently do not work with Meraki Direct, but we will look into it.'"
     },
     {
      "date": "2026-06-19",
@@ -590,7 +590,7 @@
    ],
    "lastTouch": "2026-07-14",
    "nextMeeting": null,
-   "daysSince": 4,
+   "daysSince": 7,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -665,15 +665,28 @@
       "s.lorang@happier.nyc"
      ],
      "source": "gmail"
+    },
+    {
+     "name": "T. Tan; S. Lorang",
+     "role": "Buying / ops contacts",
+     "emails": [
+      "t.tan@happier.nyc"
+     ],
+     "source": "gmail"
     }
    ],
-   "lastTouch": "2026-06-04",
+   "lastTouch": "2026-07-21",
    "nextMeeting": null,
-   "daysSince": 44,
+   "daysSince": 0,
    "owes": "them",
-   "due": true,
-   "dueReason": "Waiting on them 44 days - chase",
+   "due": false,
+   "dueReason": null,
    "statuses": [
+    {
+     "date": "2026-07-21",
+     "src": "gmail",
+     "text": "Active account. Live back-and-forth on 7/20 and 7/21 across two contacts, t.tan@happier.nyc and s.lorang@happier.nyc. Kendall sent the last message on each thread."
+    },
     {
      "date": "2026-06-04",
      "src": "gmail",
@@ -694,7 +707,8 @@
    "thirdParty": [],
    "threads": [
     "19ccf8e9e5b8875f",
-    "19e8e9462f4660fc"
+    "19e8e9462f4660fc",
+    "19f4c659fbc09918"
    ],
    "sources": [
     "gmail",
@@ -706,7 +720,8 @@
    "notes": [
     "Second contact e.christ@happier.nyc cc'd from 3/20 onward. Kendall was selected for a Happier Grocery 1:1 at Expo West via Startup CPG (Alex Nguyen, booth #8904, Hot Products Pavilion, ACC Level 3) on 2/26 — that Expo meeting is what created this relationship. Per Kendall's own 4/17 summary to Krupa Consulting, Happier Grocery had launched by mid-April.",
     "Marginal for CRM purposes — the only in-window email traffic is invoice handling. Kept because Happier is a live retail account and the buyer contact (t.tan@happier.nyc) is current.",
-    "NYC. Intro from Expo West."
+    "NYC. Intro from Expo West.",
+    "Full names not given in the headers, only initials as shown. Second contact is s.lorang@happier.nyc."
    ]
   },
   {
@@ -739,7 +754,7 @@
    ],
    "lastTouch": "2026-06-17",
    "nextMeeting": null,
-   "daysSince": 31,
+   "daysSince": 34,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -819,7 +834,7 @@
    ],
    "lastTouch": "2026-04-30",
    "nextMeeting": null,
-   "daysSince": 79,
+   "daysSince": 82,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -929,7 +944,7 @@
    ],
    "lastTouch": "2026-06-04",
    "nextMeeting": null,
-   "daysSince": 44,
+   "daysSince": 47,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -1074,7 +1089,7 @@
    ],
    "lastTouch": "2026-07-10",
    "nextMeeting": null,
-   "daysSince": 8,
+   "daysSince": 11,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -1190,7 +1205,7 @@
    ],
    "lastTouch": "2026-06-15",
    "nextMeeting": null,
-   "daysSince": 33,
+   "daysSince": 36,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -1263,13 +1278,18 @@
      "source": "gmail"
     }
    ],
-   "lastTouch": "2026-05-15",
+   "lastTouch": "2026-07-21",
    "nextMeeting": null,
-   "daysSince": 64,
-   "owes": "them",
+   "daysSince": 0,
+   "owes": "us",
    "due": true,
-   "dueReason": "Waiting on them 64 days - chase",
+   "dueReason": "We owe the next move",
    "statuses": [
+    {
+     "date": "2026-07-21",
+     "src": "gmail",
+     "text": "Active consignment account, plus two open collaboration asks, both from Sloane on 7/21. (1) The Shelf x Cotto x COB Foods: Adriana at COB Foods proposed a joint activation this month; Kendall replied 'Yes, love this idea! Would love to be involved. Let me know what makes sense on next steps.' (2) Shelf Rush Takeover at AEPhi, UT Austin, during Rush Work Week on 2026-08-13: a UGC-first pop-up reaching roughly 250 chapter members, with the chapter committing to one TikTok, one Instagram Reel and 5+ Instagram Story frames, and participating brands getting the raw photo and video. Sloane asks brands to REPLY YES to receive the questionnaire. That email is still UNREAD and unanswered."
+    },
     {
      "date": "2026-05-15",
      "src": "gmail",
@@ -1294,7 +1314,8 @@
    "reviewWindows": [
     "Pop-up live in January 2026. Sloane's 2026-01-23 'Next Steps' item was due EOD 2026-01-23.",
     "Weekly rotation contracts; NYC run extended to March 8, then weekly",
-    "Sample at 1-800-DTC x The Shelf — June 25 @ AIR HQ (Kendall declined; conflict with UNFI East show at Mohegan Sun June 24–25)."
+    "Sample at 1-800-DTC x The Shelf — June 25 @ AIR HQ (Kendall declined; conflict with UNFI East show at Mohegan Sun June 24–25).",
+    "Shelf Rush Takeover activation is 2026-08-13; a YES is needed well ahead of that to be included in the giveaway bags."
    ],
    "thirdParty": [
     "Juice Press — The Shelf ran a Cotto sampling pop-up inside Juice Press; Sloane ended that pop-up 4/29."
@@ -1302,13 +1323,15 @@
    "threads": [
     "19af474e7f86880e",
     "19d8475d18c282a8",
-    "19dd036010484e3f"
+    "19dd036010484e3f",
+    "19f85ff5ade9f65a"
    ],
    "sources": [
     "gmail",
     "notion_crm"
    ],
    "aliases": [
+    "The Shelf",
     "The Shelf (Miami / NYC)",
     "The Shelf (Pop-Up)",
     "The Shelf (The Shelf NYC / theshelfmiami.com)"
@@ -1416,7 +1439,7 @@
    ],
    "lastTouch": "2026-06-08",
    "nextMeeting": null,
-   "daysSince": 40,
+   "daysSince": 43,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -1472,7 +1495,7 @@
    ],
    "lastTouch": "2026-04-08",
    "nextMeeting": null,
-   "daysSince": 101,
+   "daysSince": 104,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -1545,22 +1568,22 @@
      "source": "gmail"
     }
    ],
-   "lastTouch": "2026-07-10",
+   "lastTouch": "2026-07-20",
    "nextMeeting": null,
-   "daysSince": 8,
+   "daysSince": 1,
    "owes": "them",
    "due": false,
    "dueReason": null,
    "statuses": [
     {
-     "date": "2026-07-10",
+     "date": "2026-07-20",
      "src": "gmail",
-     "text": "Cold intro sent 7/10 to both. No reply from Nachreiner."
+     "text": "SUBMITTED AND ACKNOWLEDGED. Cold intro sent 7/10 to Jeff Nachreiner (co-addressee nicolelambeck@sprouts.com BOUNCED). Vendor submission for Fresh Finds Cooler (In and Out) filed and confirmed received by VendorSubmissionSupport@sprouts.com on 7/20: 'We have received your submission for Fresh Finds Cooler (In and Out) and will be reviewing.' Samples were packed and shipped the same day."
     },
     {
      "date": "2026-07-10",
      "src": "gmail",
-     "text": "Cold intro sent 7/10. Co-addressee nicolelambeck@sprouts.com BOUNCED (permanent fatal error); jeffreynachreiner@sprouts.com did not bounce."
+     "text": "Cold intro sent 7/10 to both. No reply from Nachreiner."
     },
     {
      "date": "2026-01-23",
@@ -1570,7 +1593,8 @@
    ],
    "reviewWindows": [
     "THIS EMAIL IS ITSELF A REVIEW-WINDOW ASK, still unanswered. Verbatim: 'As I look through the reset calendar and submission process, I'm having trouble determining which category would be the best fit for Cotto, and therefore when the appropriate reset window and submission deadline would be.' She asked (1) 'Which category you'd recommend submitting Cotto under' and (2) 'Whether there is a known timeline or upcoming reset period for that category?'",
-    "Memory: Sprouts 2026 reset — Fresh Finds Cooler, window to 12/25/26 (not restated in this thread)"
+    "Memory: Sprouts 2026 reset — Fresh Finds Cooler, window to 12/25/26 (not restated in this thread)",
+    "Sprouts Fresh Finds Cooler (In and Out) review — submission received 7/20"
    ],
    "thirdParty": [],
    "threads": [
@@ -1586,7 +1610,7 @@
    "notes": [
     "Positioned Cotto as 'a refrigerated dip made with whipped cottage cheese... meant to be merchandised in the refrigerated set (typically alongside other fresh dips or cultured dairy-based items).' Sent same day Sprouts had already rejected her Spotlight pitch-slam submission (2026-01-05), so this is a second, separate front door.",
     "BOUNCE: MAILER-DAEMON@mx0b-00224301.pphosted.com — 'The following addresses had permanent fatal errors: <nicolelambeck@sprouts.com>'. Nachreiner's address appears valid (no NDR). Find a replacement for Lambeck.",
-    "BOUNCED: nicolelambeck@sprouts.com. Separately, Sprouts 2026 Fresh Finds submission is filled but not yet submitted (per project notes)."
+    "BOUNCED: nicolelambeck@sprouts.com. Fresh Finds Cooler submission moved from filled to SUBMITTED and acknowledged 7/20 (thread 19f8138a659805b4). Awaiting Sprouts review."
    ]
   },
   {
@@ -1654,7 +1678,7 @@
    ],
    "lastTouch": "2026-07-17",
    "nextMeeting": null,
-   "daysSince": 1,
+   "daysSince": 4,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -1756,22 +1780,22 @@
      "source": "gmail"
     }
    ],
-   "lastTouch": "2026-07-14",
+   "lastTouch": "2026-07-21",
    "nextMeeting": null,
-   "daysSince": 4,
-   "owes": "them",
-   "due": false,
-   "dueReason": null,
+   "daysSince": 0,
+   "owes": "us",
+   "due": true,
+   "dueReason": "We owe the next move",
    "statuses": [
     {
-     "date": "2026-07-14",
+     "date": "2026-07-21",
      "src": "gmail",
-     "text": "Kendall followed up after meeting at Mohegan Sun. Stanley 7/14 (on vacation, returning 7/20): 'We are not currently reviewing this set but I will talk to the team about adding you to the category review email that [goes out]'. Kendall thanked him and said she'd watch for the reset."
+     "text": "Warm but not in review. Devin Stanley on 7/14: 'not currently reviewing this set.' NEW route in: Startup CPG announced a Miami Grocery Run with The Fresh Market on 7/21, apply-to-sample format. Kendall has not applied. Also note the separate 7/24 calendar deadline to confirm the NYC Grocery Run spot."
     },
     {
      "date": "2026-07-14",
      "src": "gmail",
-     "text": "Warm but not in review. Devin: 'not currently reviewing this set' but offered to add Cotto to the category review email for the next reset. On vacation, back week of 7/20. Also engaged Brittiany East (brittianyeast@thefreshmarket.net)."
+     "text": "Kendall followed up after meeting at Mohegan Sun. Stanley 7/14 (on vacation, returning 7/20): 'We are not currently reviewing this set but I will talk to the team about adding you to the category review email that [goes out]'. Kendall thanked him and said she'd watch for the reset."
     },
     {
      "date": "2026-07-12",
@@ -1786,7 +1810,7 @@
    ],
    "reviewWindows": [
     "IMPORTANT: set NOT currently under review. Stanley offered to add Cotto to the category review notification email. Follow up after his 7/20 return.",
-    "Category reset date TBD — asked to be added to their category-review notification list"
+    "Devin Stanley says the set is not currently under review. Startup CPG Miami Grocery Run with The Fresh Market: application open as of 7/21. Separate calendar deadline 2026-07-24, 'Confirm NYC Grocery Run spot (3 steps).'"
    ],
    "thirdParty": [],
    "threads": [
@@ -1837,13 +1861,18 @@
      "source": "linkedin"
     }
    ],
-   "lastTouch": "2026-07-16",
+   "lastTouch": "2026-07-20",
    "nextMeeting": null,
-   "daysSince": 2,
-   "owes": "them",
-   "due": false,
-   "dueReason": null,
+   "daysSince": 1,
+   "owes": "us",
+   "due": true,
+   "dueReason": "We owe the next move",
    "statuses": [
+    {
+     "date": "2026-07-20",
+     "src": "gmail",
+     "text": "No direct buyer contact. Open route in: Startup CPG is running a Fresh Thyme Pitch Slam where the winner gets Fresh Thyme shelf space. Applications close 2026-08-02, and Kendall has a 7/31 calendar reminder reading 'Deadline to Apply Startup CPG Fresh Thyme Market is Aug 2.' Not applied as of 7/21."
+    },
     {
      "date": "2026-07-16",
      "src": "linkedin",
@@ -1855,10 +1884,15 @@
      "text": "Abdee reached out on LinkedIn; Kendall responded 6/15 and shipped samples 6/22 (received 6/23). Abdee 6/24: 'Thanks again for the samples. They were great. Adding @Tracy Pernatozzi who handles our Dairy Dept. She can guide you from this point forward. I know you were open to setting up though kehe[...]'. Kendall introduced herself to Tracy 6/24 and chased again 7/6 — no reply from Tracy."
     }
    ],
-   "reviewWindows": [],
-   "thirdParty": [],
+   "reviewWindows": [
+    "Startup CPG Fresh Thyme Pitch Slam application deadline 2026-08-02."
+   ],
+   "thirdParty": [
+    "Fresh Thyme named by Startup CPG as the pitch slam prize"
+   ],
    "threads": [
-    "19ec94edf861acfc"
+    "19ec94edf861acfc",
+    "19f81c6c6882f33c"
    ],
    "sources": [
     "gmail",
@@ -1869,7 +1903,8 @@
    ],
    "notes": [
     "STALLED at the handoff — Tracy Pernatozzi has not responded to two messages. KeHE named as the intended route to Fresh Thyme (ties to the Amy Clark/KeHE thread). Separate Startup CPG opportunity: 'Pitch LIVE for Fresh Thyme in Chicago on Oct 27' — alternate route if Tracy stays cold.",
-    "Verbatim ask: 'I love what I've read about your products and would love to be able to get some samples in front of my team. Are you able to ship samples to our HQ? Address is... Fresh Thyme Market, 2650 Warrenville Road, Suite 700, Downers Grove, IL 60515. Also, are your products being distributed by anyone currently? We use Kehe. Is that something you would be interested in if we were to approve your products?' The KeHE question is unresolved — Cotto's KeHE record in Notion is an empty placeholder. Fresh Thyme is separately on the H2 2026 bench and there is a 2026-07-31 calendar item: 'Deadline to Apply Startup CPG Fresh Thyme Market is Aug 2.' Threads: 19f6d4b835e6e99c (new ping), 19ec94edf861acfc (email), 19ec8b5fe6c61585 (original InMail)."
+    "Verbatim ask: 'I love what I've read about your products and would love to be able to get some samples in front of my team. Are you able to ship samples to our HQ? Address is... Fresh Thyme Market, 2650 Warrenville Road, Suite 700, Downers Grove, IL 60515. Also, are your products being distributed by anyone currently? We use Kehe. Is that something you would be interested in if we were to approve your products?' The KeHE question is unresolved — Cotto's KeHE record in Notion is an empty placeholder. Fresh Thyme is separately on the H2 2026 bench and there is a 2026-07-31 calendar item: 'Deadline to Apply Startup CPG Fresh Thyme Market is Aug 2.' Threads: 19f6d4b835e6e99c (new ping), 19ec94edf861acfc (email), 19ec8b5fe6c61585 (original InMail).",
+    "No named Fresh Thyme buyer in any thread. This is an application route, not a relationship yet."
    ]
   },
   {
@@ -1900,7 +1935,7 @@
    ],
    "lastTouch": "2026-07-16",
    "nextMeeting": null,
-   "daysSince": 2,
+   "daysSince": 5,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -2087,22 +2122,22 @@
      "source": "gmail"
     }
    ],
-   "lastTouch": "2026-07-13",
+   "lastTouch": "2026-07-21",
    "nextMeeting": "2026-07-22",
-   "daysSince": 5,
+   "daysSince": 0,
    "owes": "them",
    "due": false,
    "dueReason": null,
    "statuses": [
     {
-     "date": "2026-07-13",
+     "date": "2026-07-21",
      "src": "gmail",
-     "text": "Kendall followed up post-Fancy Food 7/12. West 7/13: 'Great to meet you as well! I'm adding our Merchant, @Hwang, Cynthia here. I think you may have met at the show.' Kendall replied 7/13 to both, referencing the note she'd sent Cindy the prior week that also looped in John Lawson."
+     "text": "Warm, progressing on two tracks. Fancy Food follow-up with Nicole West; Nicole looped in a merchant. NEW: Kendall is registered for Naturally New York's Riverside Route on 2026-07-22, 5:30-8:00 PM at Harborside 3, Jersey City, a moderated buyer/distributor conversation with John Lawson (Senior Local Forager, Whole Foods Market) and Rainforest Distribution. Separately, Kendall submitted the form for a 1:1 meeting at the Chicago Grocery Run with Whole Foods in September 2026 on 7/17."
     },
     {
      "date": "2026-07-13",
      "src": "gmail",
-     "text": "Warm, progressing. FFS follow-up; Nicole looped in Merchant Cynthia Hwang (hwangcyn@amazon.com). Separately, a WFM buyer requested samples of all 3 SKUs on RangeMe 7/9, and LEAP: Early Growth application submitted 7/7 via ECRM. WFM contacts route through amazon.com addresses (nicmwest@amazon.com)."
+     "text": "Kendall followed up post-Fancy Food 7/12. West 7/13: 'Great to meet you as well! I'm adding our Merchant, @Hwang, Cynthia here. I think you may have met at the show.' Kendall replied 7/13 to both, referencing the note she'd sent Cindy the prior week that also looped in John Lawson."
     },
     {
      "date": "2026-07-07",
@@ -2184,7 +2219,7 @@
    ],
    "lastTouch": "2026-07-11",
    "nextMeeting": null,
-   "daysSince": 7,
+   "daysSince": 10,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -2254,7 +2289,7 @@
    ],
    "lastTouch": "2026-07-13",
    "nextMeeting": null,
-   "daysSince": 5,
+   "daysSince": 8,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -2323,7 +2358,7 @@
    ],
    "lastTouch": "2026-07-16",
    "nextMeeting": null,
-   "daysSince": 2,
+   "daysSince": 5,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -2376,7 +2411,7 @@
    ],
    "lastTouch": "2026-06-23",
    "nextMeeting": null,
-   "daysSince": 25,
+   "daysSince": 28,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -2439,10 +2474,10 @@
    ],
    "lastTouch": "2026-05-13",
    "nextMeeting": null,
-   "daysSince": 66,
+   "daysSince": 69,
    "owes": null,
    "due": true,
-   "dueReason": "No contact in 66 days",
+   "dueReason": "No contact in 69 days",
    "statuses": [
     {
      "date": "2026-05-13",
@@ -2495,7 +2530,7 @@
    ],
    "lastTouch": "2026-07-12",
    "nextMeeting": null,
-   "daysSince": 6,
+   "daysSince": 9,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -2553,7 +2588,7 @@
    ],
    "lastTouch": "2026-02-27",
    "nextMeeting": null,
-   "daysSince": 141,
+   "daysSince": 144,
    "owes": "us",
    "due": false,
    "dueReason": null,
@@ -2607,15 +2642,28 @@
       "nika@hungryroot.com"
      ],
      "source": "gmail"
+    },
+    {
+     "name": "Nika",
+     "role": "Merchandising contact (met at Fancy Food)",
+     "emails": [
+      "nika@hungryroot.com"
+     ],
+     "source": "gmail"
     }
    ],
-   "lastTouch": "2026-07-16",
+   "lastTouch": "2026-07-18",
    "nextMeeting": null,
-   "daysSince": 2,
+   "daysSince": 3,
    "owes": "them",
    "due": false,
    "dueReason": null,
    "statuses": [
+    {
+     "date": "2026-07-18",
+     "src": "gmail",
+     "text": "Fancy Food follow-up sent to Nika on 7/16 asking about getting Cotto onto Hungryroot. No reply yet. Kendall also submitted the Startup CPG 'Opportunity Knocks - Hungryroot' form on 7/18 (Google Forms receipt confirmed), inside the 7/23 submission deadline."
+    },
     {
      "date": "2026-07-16",
      "src": "gmail",
@@ -2628,7 +2676,8 @@
     }
    ],
    "reviewWindows": [
-    "⚠ No third-party dip slots available for the remainder of 2026 — the door reopens in the 2027 planning cycle"
+    "⚠ No third-party dip slots available for the remainder of 2026 — the door reopens in the 2027 planning cycle",
+    "Startup CPG Opportunity Knocks for Hungryroot: submissions closed 2026-07-23. Cotto submitted 7/18."
    ],
    "thirdParty": [],
    "threads": [
@@ -2643,7 +2692,8 @@
    ],
    "notes": [
     "Clean, well-documented pass on assortment capacity, not on product or price. Clare Blunt, 510.866.6610. Revisit for 2027.",
-    "Parallel path: Startup CPG ran an 'Opportunity Knocks: Hungryroot' submission with a July 23 deadline — unclear whether Cotto submitted."
+    "Parallel path: Startup CPG ran an 'Opportunity Knocks: Hungryroot' submission with a July 23 deadline — unclear whether Cotto submitted.",
+    "Last name not stated in the thread, only 'Nika'. Two parallel routes in: direct email and the Startup CPG submission."
    ]
   },
   {
@@ -2676,7 +2726,7 @@
    ],
    "lastTouch": "2026-05-17",
    "nextMeeting": null,
-   "daysSince": 62,
+   "daysSince": 65,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -2787,7 +2837,7 @@
    ],
    "lastTouch": "2026-07-16",
    "nextMeeting": null,
-   "daysSince": 2,
+   "daysSince": 5,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -2800,7 +2850,7 @@
     {
      "date": "2026-07-16",
      "src": "gmail",
-     "text": "FFS follow-up to Jeni Ganzman (jeni.ganzman@awginc.com), who loved the product and forwarded to CM Jennifer Egeland. Jennifer asked whether Cotto has a broker who calls on AWG members — 'a vital component for being successful within our network.'"
+     "text": "Warm and gated on a broker. Fancy Food follow-up to Jeni Ganzman (jeni.ganzman@awginc.com), who replied 'We loved the product' and handed off to Jennifer Egeland, the category manager. Jennifer sent AWG working information and asked directly: 'Do you have a broker who calls on AWG members? That is a vital component for being successful within our network.' Kendall has not answered. This is the open question, and it connects to the live broker conversations (Green Spoon 7/23, CROSSMARK 7/23, JCB Growth 7/27)."
     }
    ],
    "reviewWindows": [],
@@ -2817,7 +2867,7 @@
    ],
    "notes": [
     "GATING ASK, verbatim: 'Do you have a broker who calls on AWG members? That is a vital component for being successful within our network. Since we work with all independents, the broker is an extension of your sales team, knowing the retail contacts, the stores' expectations, and the processes to gain shelf placement.' Ties directly to the Green Spoon / Acosta / Pinnacle / Crossmark broker conversations.",
-    "Kendall owes a reply on broker coverage for AWG. Ties to active broker conversations (Green Spoon, CROSSMARK, Pinnacle, Seacrest)."
+    "AWG requires a broker calling on their members. Answering Jennifer well probably depends on which broker Kendall picks in the next two weeks."
    ]
   },
   {
@@ -2850,7 +2900,7 @@
    ],
    "lastTouch": "2026-07-09",
    "nextMeeting": null,
-   "daysSince": 9,
+   "daysSince": 12,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -2922,7 +2972,7 @@
    ],
    "lastTouch": "2026-04-18",
    "nextMeeting": null,
-   "daysSince": 91,
+   "daysSince": 94,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -2993,7 +3043,7 @@
    ],
    "lastTouch": "2026-03-22",
    "nextMeeting": null,
-   "daysSince": 118,
+   "daysSince": 121,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -3060,7 +3110,7 @@
    ],
    "lastTouch": "2026-07-10",
    "nextMeeting": null,
-   "daysSince": 8,
+   "daysSince": 11,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -3153,7 +3203,7 @@
    ],
    "lastTouch": "2026-07-08",
    "nextMeeting": null,
-   "daysSince": 10,
+   "daysSince": 13,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -3223,10 +3273,10 @@
    ],
    "lastTouch": "2026-05-20",
    "nextMeeting": null,
-   "daysSince": 59,
+   "daysSince": 62,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 59 days - chase",
+   "dueReason": "Waiting on them 62 days - chase",
    "statuses": [
     {
      "date": "2026-05-20",
@@ -3273,10 +3323,10 @@
    ],
    "lastTouch": "2025-12-01",
    "nextMeeting": null,
-   "daysSince": 229,
+   "daysSince": 232,
    "owes": null,
    "due": true,
-   "dueReason": "No contact in 229 days",
+   "dueReason": "No contact in 232 days",
    "statuses": [
     {
      "date": "2025-12-01",
@@ -3321,7 +3371,7 @@
    ],
    "lastTouch": "2026-06-18",
    "nextMeeting": null,
-   "daysSince": 30,
+   "daysSince": 33,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -3400,7 +3450,7 @@
    ],
    "lastTouch": "2026-07-10",
    "nextMeeting": null,
-   "daysSince": 8,
+   "daysSince": 11,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -3464,10 +3514,10 @@
    ],
    "lastTouch": "2026-04-15",
    "nextMeeting": null,
-   "daysSince": 94,
+   "daysSince": 97,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 94 days - chase",
+   "dueReason": "Waiting on them 97 days - chase",
    "statuses": [
     {
      "date": "2026-04-15",
@@ -3513,7 +3563,7 @@
    ],
    "lastTouch": "2025-12-18",
    "nextMeeting": null,
-   "daysSince": 212,
+   "daysSince": 215,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -3554,7 +3604,7 @@
    "contacts": [],
    "lastTouch": "2026-07-08",
    "nextMeeting": null,
-   "daysSince": 10,
+   "daysSince": 13,
    "owes": null,
    "due": false,
    "dueReason": null,
@@ -3637,10 +3687,10 @@
    ],
    "lastTouch": "2025-10-26",
    "nextMeeting": null,
-   "daysSince": 265,
+   "daysSince": 268,
    "owes": null,
    "due": true,
-   "dueReason": "No contact in 265 days",
+   "dueReason": "No contact in 268 days",
    "statuses": [
     {
      "date": "2025-10-26",
@@ -3691,7 +3741,7 @@
    ],
    "lastTouch": "2026-07-08",
    "nextMeeting": null,
-   "daysSince": 10,
+   "daysSince": 13,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -3747,7 +3797,7 @@
    ],
    "lastTouch": "2026-07-08",
    "nextMeeting": null,
-   "daysSince": 10,
+   "daysSince": 13,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -3847,7 +3897,7 @@
    ],
    "lastTouch": "2026-07-16",
    "nextMeeting": "2026-07-22",
-   "daysSince": 2,
+   "daysSince": 5,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -3865,7 +3915,7 @@
     {
      "date": null,
      "src": "gmail",
-     "text": "CROSSMARK discussion call scheduled 7/22."
+     "text": "CROSSMARK discussion call on the calendar for 2026-07-23 at 14:00 ET with jim.buchta@crossmark.com (moved from 7/22). NOTE: double-booked against the Green Spoon Connect call at the same hour."
     }
    ],
    "reviewWindows": [
@@ -3885,7 +3935,7 @@
    "notes": [
     "Free national broker access as an NIQ Pitch Slam prize — potentially the cheapest answer to AWG's broker requirement. Meeting 7/22.",
     "CROSSMARK is a national retail sales/broker agency. Jim Buchta was on the NIQ Founders Virtual Pitch Slam attendee list (2026-05-06) — that is almost certainly the origin of this relationship. Not in the Notion CRM.",
-    "Calendar-only (no email thread found this month)."
+    "CALENDAR CONFLICT: CROSSMARK and Green Spoon Sales are both 7/23 at 2:00 PM ET. One needs to move."
    ]
   },
   {
@@ -3911,10 +3961,10 @@
    ],
    "lastTouch": "2026-03-25",
    "nextMeeting": null,
-   "daysSince": 115,
+   "daysSince": 118,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 115 days - chase",
+   "dueReason": "Waiting on them 118 days - chase",
    "statuses": [
     {
      "date": "2026-03-25",
@@ -3967,7 +4017,7 @@
    ],
    "lastTouch": "2026-06-17",
    "nextMeeting": null,
-   "daysSince": 31,
+   "daysSince": 34,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -4032,7 +4082,7 @@
    ],
    "lastTouch": "2026-04-28",
    "nextMeeting": null,
-   "daysSince": 81,
+   "daysSince": 84,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -4100,7 +4150,7 @@
    ],
    "lastTouch": "2026-07-12",
    "nextMeeting": null,
-   "daysSince": 6,
+   "daysSince": 9,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -4171,7 +4221,7 @@
    ],
    "lastTouch": "2026-06-15",
    "nextMeeting": null,
-   "daysSince": 33,
+   "daysSince": 36,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -4228,10 +4278,10 @@
    ],
    "lastTouch": "2026-06-12",
    "nextMeeting": null,
-   "daysSince": 36,
+   "daysSince": 39,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 36 days - chase",
+   "dueReason": "Waiting on them 39 days - chase",
    "statuses": [
     {
      "date": "2026-06-12",
@@ -4272,7 +4322,7 @@
    ],
    "lastTouch": "2026-03-06",
    "nextMeeting": null,
-   "daysSince": 134,
+   "daysSince": 137,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -4323,38 +4373,31 @@
       "pd@danielfoodscorp.com"
      ],
      "source": "gmail"
-    },
-    {
-     "name": "Daniel Foods team",
-     "role": "Distributor",
-     "emails": [
-      "pd@danielfoodscorp.com"
-     ],
-     "source": "gmail"
     }
    ],
-   "lastTouch": "2026-07-08",
+   "lastTouch": "2026-07-21",
    "nextMeeting": null,
-   "daysSince": 10,
+   "daysSince": 0,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
    "statuses": [
     {
-     "date": "2026-07-08",
+     "date": "2026-07-21",
      "src": "gmail",
-     "text": "Cold inbound after the show: 'My name is Sanghyun Lee and I'm the purchasing manager at Daniel Foods. It was a pleasure meeting at the show and I hope you had a successful exhibition. We are a specialty food [distributor]'. Subject: '[DANIEL FOODS] 2026 Fancy Food Shows_[Cotto]'. NO REPLY FROM KENDALL."
+     "text": "Fancy Food follow-up sent 7/8 ([DANIEL FOODS] 2026 Fancy Food Shows_[Cotto]). Sanghyun Lee in their purchasing department chased on 7/21: 'I'm just circling back to the reference below. If you can give me some feedback, that'd be great.' Still UNREAD. Kendall owes the reply."
     },
     {
      "date": "2026-07-08",
      "src": "gmail",
-     "text": "Fancy Food follow-up 7/8 ([DANIEL FOODS] 2026 Fancy Food Shows_[Cotto])."
+     "text": "Cold inbound after the show: 'My name is Sanghyun Lee and I'm the purchasing manager at Daniel Foods. It was a pleasure meeting at the show and I hope you had a successful exhibition. We are a specialty food [distributor]'. Subject: '[DANIEL FOODS] 2026 Fancy Food Shows_[Cotto]'. NO REPLY FROM KENDALL."
     }
    ],
    "reviewWindows": [],
    "thirdParty": [],
    "threads": [
-    "19f41eee9569dc2f"
+    "19f41eee9569dc2f",
+    "19f8546258c8171b"
    ],
    "sources": [
     "gmail"
@@ -4406,7 +4449,7 @@
    ],
    "lastTouch": "2026-04-22",
    "nextMeeting": null,
-   "daysSince": 87,
+   "daysSince": 90,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -4468,7 +4511,7 @@
    ],
    "lastTouch": "2026-04-16",
    "nextMeeting": null,
-   "daysSince": 93,
+   "daysSince": 96,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -4523,7 +4566,7 @@
    ],
    "lastTouch": "2026-07-08",
    "nextMeeting": null,
-   "daysSince": 10,
+   "daysSince": 13,
    "owes": null,
    "due": false,
    "dueReason": null,
@@ -4569,10 +4612,10 @@
    ],
    "lastTouch": "2026-06-26",
    "nextMeeting": null,
-   "daysSince": 22,
+   "daysSince": 25,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 22 days - chase",
+   "dueReason": "Waiting on them 25 days - chase",
    "statuses": [
     {
      "date": "2026-06-26",
@@ -4656,10 +4699,10 @@
    ],
    "lastTouch": "2026-06-12",
    "nextMeeting": null,
-   "daysSince": 36,
+   "daysSince": 39,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 36 days - chase",
+   "dueReason": "Waiting on them 39 days - chase",
    "statuses": [
     {
      "date": "2026-06-12",
@@ -4710,7 +4753,7 @@
    ],
    "lastTouch": "2026-07-03",
    "nextMeeting": null,
-   "daysSince": 15,
+   "daysSince": 18,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -4784,10 +4827,10 @@
    ],
    "lastTouch": "2026-06-12",
    "nextMeeting": null,
-   "daysSince": 36,
+   "daysSince": 39,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 36 days - chase",
+   "dueReason": "Waiting on them 39 days - chase",
    "statuses": [
     {
      "date": "2026-06-12",
@@ -4830,7 +4873,7 @@
    ],
    "lastTouch": "2026-06-12",
    "nextMeeting": null,
-   "daysSince": 36,
+   "daysSince": 39,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -4886,10 +4929,10 @@
    ],
    "lastTouch": "2026-01-22",
    "nextMeeting": null,
-   "daysSince": 177,
+   "daysSince": 180,
    "owes": null,
    "due": true,
-   "dueReason": "No contact in 177 days",
+   "dueReason": "No contact in 180 days",
    "statuses": [
     {
      "date": "2026-01-22",
@@ -4983,7 +5026,7 @@
    ],
    "lastTouch": "2026-07-14",
    "nextMeeting": null,
-   "daysSince": 4,
+   "daysSince": 7,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -5129,7 +5172,7 @@
    ],
    "lastTouch": "2026-05-15",
    "nextMeeting": null,
-   "daysSince": 64,
+   "daysSince": 67,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -5179,7 +5222,7 @@
    ],
    "lastTouch": "2026-07-07",
    "nextMeeting": null,
-   "daysSince": 11,
+   "daysSince": 14,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -5235,13 +5278,18 @@
      "source": "gmail"
     }
    ],
-   "lastTouch": "2026-07-14",
-   "nextMeeting": "2026-07-21",
-   "daysSince": 4,
+   "lastTouch": "2026-07-21",
+   "nextMeeting": null,
+   "daysSince": 0,
    "owes": "them",
    "due": false,
    "dueReason": null,
    "statuses": [
+    {
+     "date": "2026-07-21",
+     "src": "gmail",
+     "text": "Inbound customer message 7/14 + intro via Kyle (Paperboy Ventures). Intro call scheduled Tue 7/21 (Cotto x Foxtrot - Brooke)."
+    },
     {
      "date": "2026-07-14",
      "src": "gmail",
@@ -5256,11 +5304,6 @@
      "date": "2026-06-23",
      "src": "gmail",
      "text": "Introduced by Kyle Fitzpatrick (Paperboy Ventures). After the call: 'Great catching up today! And congrats on everything so far. Count me in for $25k - excited to be on the team. And do let us know when you are ready for Chicago / Dallas[.]'"
-    },
-    {
-     "date": null,
-     "src": "gmail",
-     "text": "Inbound customer message 7/14 + intro via Kyle (Paperboy Ventures). Intro call scheduled Tue 7/21 (Cotto x Foxtrot - Brooke)."
     }
    ],
    "reviewWindows": [],
@@ -5307,7 +5350,7 @@
    ],
    "lastTouch": "2026-06-17",
    "nextMeeting": null,
-   "daysSince": 31,
+   "daysSince": 34,
    "owes": null,
    "due": false,
    "dueReason": null,
@@ -5357,7 +5400,7 @@
    ],
    "lastTouch": "2026-07-02",
    "nextMeeting": null,
-   "daysSince": 16,
+   "daysSince": 19,
    "owes": null,
    "due": false,
    "dueReason": null,
@@ -5412,7 +5455,7 @@
    ],
    "lastTouch": "2026-07-14",
    "nextMeeting": null,
-   "daysSince": 4,
+   "daysSince": 7,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -5477,7 +5520,7 @@
    ],
    "lastTouch": "2026-07-02",
    "nextMeeting": null,
-   "daysSince": 16,
+   "daysSince": 19,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -5521,10 +5564,10 @@
    ],
    "lastTouch": "2026-06-03",
    "nextMeeting": null,
-   "daysSince": 45,
+   "daysSince": 48,
    "owes": null,
    "due": true,
-   "dueReason": "No contact in 45 days",
+   "dueReason": "No contact in 48 days",
    "statuses": [
     {
      "date": "2026-06-03",
@@ -5567,7 +5610,7 @@
    ],
    "lastTouch": "2026-03-16",
    "nextMeeting": null,
-   "daysSince": 124,
+   "daysSince": 127,
    "owes": "us",
    "due": false,
    "dueReason": null,
@@ -5630,7 +5673,7 @@
    ],
    "lastTouch": "2026-03-24",
    "nextMeeting": null,
-   "daysSince": 116,
+   "daysSince": 119,
    "owes": "us",
    "due": false,
    "dueReason": null,
@@ -5710,7 +5753,7 @@
    ],
    "lastTouch": "2026-07-14",
    "nextMeeting": "2026-07-23",
-   "daysSince": 4,
+   "daysSince": 7,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -5733,7 +5776,7 @@
     {
      "date": null,
      "src": "gmail",
-     "text": "Green Spoon x Cotto broker conversation; Connect call scheduled 7/23."
+     "text": "Green Spoon x Cotto broker conversation. Connect call on the calendar for 2026-07-23 at 14:00 ET with fred.ashworth@greenspoonsales.com. NOTE: this is double-booked against the CROSSMARK discussion at the same hour."
     }
    ],
    "reviewWindows": [],
@@ -5753,7 +5796,7 @@
     "Most-progressed broker conversation in the window and directly responsive to AWG's 'do you have a broker?' gate. Competing broker options: Acosta, Pinnacle (Southeast), Crossmark (NIQ prize), Vdriven, Shelf Wolf, Broker of the Year.",
     "LINKEDIN-SOURCED — see the linkedin array. Opened 5/28: 'Thanks for connecting with me on LinkedIn a while back.' Ran into each other at Mohegan Sun (UNFI East). Green Spoon company deck sent 7/14 ahead of the call. Natural-channel food broker. Not in the Notion CRM.",
     "Green Spoon Sales is a natural-channel food broker. The only LinkedIn-sourced broker lead that has converted to a booked meeting. Company deck attached to the 7/14 email for review ahead of the call. Thread: 19e6f4dbf3ec6b68.",
-    "Natural-channel broker. Relevant to AWG's broker-coverage question."
+    "CALENDAR CONFLICT: Green Spoon Connect and CROSSMARK Discussion are both 7/23 at 2:00 PM ET. One needs to move."
    ]
   },
   {
@@ -5779,10 +5822,10 @@
    ],
    "lastTouch": "2026-06-12",
    "nextMeeting": null,
-   "daysSince": 36,
+   "daysSince": 39,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 36 days - chase",
+   "dueReason": "Waiting on them 39 days - chase",
    "statuses": [
     {
      "date": "2026-06-12",
@@ -5825,10 +5868,10 @@
    ],
    "lastTouch": "2026-06-03",
    "nextMeeting": null,
-   "daysSince": 45,
+   "daysSince": 48,
    "owes": null,
    "due": true,
-   "dueReason": "No contact in 45 days",
+   "dueReason": "No contact in 48 days",
    "statuses": [
     {
      "date": "2026-06-03",
@@ -5871,10 +5914,10 @@
    ],
    "lastTouch": "2026-03-16",
    "nextMeeting": null,
-   "daysSince": 124,
+   "daysSince": 127,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 124 days - chase",
+   "dueReason": "Waiting on them 127 days - chase",
    "statuses": [
     {
      "date": "2026-03-16",
@@ -5898,6 +5941,58 @@
    ]
   },
   {
+   "id": "heinen-s",
+   "company": "Heinen's",
+   "type": "retailer",
+   "stage": "in-talks",
+   "doors": null,
+   "plannedDoors": null,
+   "plannedOpen": null,
+   "plannedChannel": null,
+   "inPlan": false,
+   "contacts": [
+    {
+     "name": "Anne Mayer",
+     "role": "Category Manager",
+     "emails": [
+      "amayer@heinens.com"
+     ],
+     "source": "gmail"
+    }
+   ],
+   "lastTouch": "2026-07-21",
+   "nextMeeting": null,
+   "daysSince": 0,
+   "owes": "us",
+   "due": true,
+   "dueReason": "We owe the next move",
+   "statuses": [
+    {
+     "date": "2026-07-21",
+     "src": "gmail",
+     "text": "HOT INBOUND, PULL DEMAND. Anne Mayer, Category Manager at Heinen's, emailed her UNFI account manager Timm DeAlexandro on 7/6: 'Are you familiar with the Cotto brand of whipped cottage cheese dips? I saw them at Fancy Food and they had a UNFI Next sign. Kendall, the founder, said they are not currently in UNFI but working on it. I'm interested in adding this line, can you let me know when they will be coded in UNFI?' Timm answered her 7/7: 'Not currently coded, but I will work with the contact!' Timm then forwarded the whole chain to Kendall on 7/21 asking 'Did you guys start the process on new item set up at UNFI?' That email is still UNREAD. The only thing standing between Cotto and a Heinen's order is UNFI coding, and the UNFI new item request went to Tim Heuser on 7/21."
+    }
+   ],
+   "reviewWindows": [
+    "Blocked on UNFI item coding. Kendall has a 2026-08-13 calendar reminder, 'Check back with Timm at UNFI on Heinen's.'"
+   ],
+   "thirdParty": [
+    "Heinen's named by Timm DeAlexandro (UNFI Account Manager, Central Region)"
+   ],
+   "threads": [
+    "19f85ace80066af9"
+   ],
+   "sources": [
+    "gmail"
+   ],
+   "aliases": [
+    "Heinen's"
+   ],
+   "notes": [
+    "NEW ACCOUNT, not previously in the CRM. Heinen's is an Ohio grocery chain; Anne Mayer's signature is 4540 Richmond Road, Warrensville Heights OH 44128, O: 216-475-2300 ext. 62353. Door count not stated in the thread, do not guess. Kendall has not yet replied to Timm."
+   ]
+  },
+  {
    "id": "infra",
    "company": "INFRA",
    "type": "buying-group",
@@ -5917,7 +6012,7 @@
    ],
    "lastTouch": "2026-06-28",
    "nextMeeting": null,
-   "daysSince": 20,
+   "daysSince": 23,
    "owes": null,
    "due": false,
    "dueReason": null,
@@ -5961,10 +6056,10 @@
    ],
    "lastTouch": "2026-04-21",
    "nextMeeting": null,
-   "daysSince": 88,
+   "daysSince": 91,
    "owes": null,
    "due": true,
-   "dueReason": "No contact in 88 days",
+   "dueReason": "No contact in 91 days",
    "statuses": [
     {
      "date": "2026-04-21",
@@ -6007,7 +6102,7 @@
    ],
    "lastTouch": "2025-12-22",
    "nextMeeting": null,
-   "daysSince": 208,
+   "daysSince": 211,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -6065,7 +6160,7 @@
    ],
    "lastTouch": "2026-04-14",
    "nextMeeting": null,
-   "daysSince": 95,
+   "daysSince": 98,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -6168,7 +6263,7 @@
    ],
    "lastTouch": "2026-01-31",
    "nextMeeting": null,
-   "daysSince": 168,
+   "daysSince": 171,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -6228,7 +6323,7 @@
    ],
    "lastTouch": "2026-07-08",
    "nextMeeting": "2026-07-27",
-   "daysSince": 10,
+   "daysSince": 13,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -6281,10 +6376,10 @@
    ],
    "lastTouch": "2026-04-15",
    "nextMeeting": null,
-   "daysSince": 94,
+   "daysSince": 97,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 94 days - chase",
+   "dueReason": "Waiting on them 97 days - chase",
    "statuses": [
     {
      "date": "2026-04-15",
@@ -6368,7 +6463,7 @@
    ],
    "lastTouch": "2025-12-28",
    "nextMeeting": null,
-   "daysSince": 202,
+   "daysSince": 205,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -6418,10 +6513,10 @@
    ],
    "lastTouch": "2026-04-17",
    "nextMeeting": null,
-   "daysSince": 92,
+   "daysSince": 95,
    "owes": null,
    "due": true,
-   "dueReason": "No contact in 92 days",
+   "dueReason": "No contact in 95 days",
    "statuses": [
     {
      "date": "2026-04-17",
@@ -6474,7 +6569,7 @@
    ],
    "lastTouch": "2026-07-06",
    "nextMeeting": null,
-   "daysSince": 12,
+   "daysSince": 15,
    "owes": null,
    "due": false,
    "dueReason": null,
@@ -6520,7 +6615,7 @@
    ],
    "lastTouch": "2026-07-16",
    "nextMeeting": null,
-   "daysSince": 2,
+   "daysSince": 5,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -6588,10 +6683,10 @@
    ],
    "lastTouch": "2026-06-12",
    "nextMeeting": null,
-   "daysSince": 36,
+   "daysSince": 39,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 36 days - chase",
+   "dueReason": "Waiting on them 39 days - chase",
    "statuses": [
     {
      "date": "2026-06-12",
@@ -6644,10 +6739,10 @@
    ],
    "lastTouch": "2026-04-28",
    "nextMeeting": null,
-   "daysSince": 81,
+   "daysSince": 84,
    "owes": null,
    "due": true,
-   "dueReason": "No contact in 81 days",
+   "dueReason": "No contact in 84 days",
    "statuses": [
     {
      "date": "2026-04-28",
@@ -6690,10 +6785,10 @@
    ],
    "lastTouch": "2026-06-19",
    "nextMeeting": null,
-   "daysSince": 29,
+   "daysSince": 32,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 29 days - chase",
+   "dueReason": "Waiting on them 32 days - chase",
    "statuses": [
     {
      "date": "2026-06-19",
@@ -6738,10 +6833,10 @@
    ],
    "lastTouch": "2026-05-25",
    "nextMeeting": null,
-   "daysSince": 54,
+   "daysSince": 57,
    "owes": null,
    "due": true,
-   "dueReason": "No contact in 54 days",
+   "dueReason": "No contact in 57 days",
    "statuses": [
     {
      "date": "2026-05-25",
@@ -6860,7 +6955,7 @@
    ],
    "lastTouch": "2026-07-17",
    "nextMeeting": null,
-   "daysSince": 1,
+   "daysSince": 4,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -6934,7 +7029,7 @@
    ],
    "lastTouch": "2026-01-23",
    "nextMeeting": null,
-   "daysSince": 176,
+   "daysSince": 179,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -6982,7 +7077,7 @@
    ],
    "lastTouch": "2026-03-27",
    "nextMeeting": null,
-   "daysSince": 113,
+   "daysSince": 116,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -7040,7 +7135,7 @@
    ],
    "lastTouch": "2026-04-06",
    "nextMeeting": null,
-   "daysSince": 103,
+   "daysSince": 106,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -7098,7 +7193,7 @@
    ],
    "lastTouch": "2026-06-17",
    "nextMeeting": null,
-   "daysSince": 31,
+   "daysSince": 34,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -7265,7 +7360,7 @@
    ],
    "lastTouch": "2026-07-16",
    "nextMeeting": null,
-   "daysSince": 2,
+   "daysSince": 5,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -7315,7 +7410,7 @@
    ],
    "lastTouch": "2026-05-18",
    "nextMeeting": null,
-   "daysSince": 61,
+   "daysSince": 64,
    "owes": null,
    "due": false,
    "dueReason": null,
@@ -7366,10 +7461,10 @@
    ],
    "lastTouch": "2025-11-29",
    "nextMeeting": null,
-   "daysSince": 231,
+   "daysSince": 234,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 231 days - chase",
+   "dueReason": "Waiting on them 234 days - chase",
    "statuses": [
     {
      "date": "2025-11-29",
@@ -7463,17 +7558,17 @@
      "source": "calendar"
     }
    ],
-   "lastTouch": "2026-07-17",
+   "lastTouch": "2026-07-21",
    "nextMeeting": null,
-   "daysSince": 1,
+   "daysSince": 0,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
    "statuses": [
     {
-     "date": "2026-07-17",
+     "date": "2026-07-21",
      "src": "gmail",
-     "text": "Active DSD onboarding. First PO 6002168 (160 cases) confirmed; will-call pickup Mon 7/20 11AM from Carriacou (Brooklyn). Oreste Kavvadas (oreste@merakidirect.co) is sales director doing account/pipeline mapping; Valentina Martinez cutting POs. Steve advising slow, deliberate retailer rollout; guiding Citarella approach (buyer 'Ray')."
+     "text": "Active DSD onboarding, first order moved. PO 6002168 (160 cases) confirmed 7/17; BOL sent; Meraki's own driver picked up will-call from Carriacou Logistics, 257 Scholes St Brooklyn, on Monday 7/20 at 11:00 AM. Further exchange with Oreste on 7/21."
     },
     {
      "date": "2026-07-16",
@@ -7555,10 +7650,10 @@
    ],
    "lastTouch": "2026-06-12",
    "nextMeeting": null,
-   "daysSince": 36,
+   "daysSince": 39,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 36 days - chase",
+   "dueReason": "Waiting on them 39 days - chase",
    "statuses": [
     {
      "date": "2026-06-12",
@@ -7601,7 +7696,7 @@
    ],
    "lastTouch": "2026-07-16",
    "nextMeeting": null,
-   "daysSince": 2,
+   "daysSince": 5,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -7663,7 +7758,7 @@
    ],
    "lastTouch": "2026-07-17",
    "nextMeeting": null,
-   "daysSince": 1,
+   "daysSince": 4,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -7724,22 +7819,22 @@
      "source": "gmail"
     }
    ],
-   "lastTouch": "2026-07-17",
+   "lastTouch": "2026-07-20",
    "nextMeeting": null,
    "daysSince": 1,
-   "owes": "us",
-   "due": true,
-   "dueReason": "We owe the next move",
+   "owes": "them",
+   "due": false,
+   "dueReason": null,
    "statuses": [
     {
-     "date": "2026-07-17",
+     "date": "2026-07-20",
      "src": "gmail",
-     "text": "Kendall submitted 7/17: 'I'm submitting as a prospective new brand! We make whipped cottage cheese dips that are naturally high in protein and made with clean, simple ingredients'. Auto-response: 'Thank you for your interest in becoming a part of the Natural Grocers supplier community! We are always interested in partnering with new and exciting brands. To be considered, all products must [meet standards]'."
+     "text": "SUBMITTED. Kendall introduced Cotto 7/17; Natural Grocers new-items team sent the new item form and the 'things we won't carry' policy the same day. Kendall returned the completed new item form plus ingredient panels on 7/20 and shipped retail-ready samples to the Golden, CO office (FedEx 874641430380). Awaiting their review."
     },
     {
      "date": "2026-07-17",
      "src": "gmail",
-     "text": "Kendall submitted Cotto as a prospective new brand 7/17. Natural Grocers replied with a supplier packet to complete and their 'things we won't carry' list to review before submitting."
+     "text": "Kendall submitted 7/17: 'I'm submitting as a prospective new brand! We make whipped cottage cheese dips that are naturally high in protein and made with clean, simple ingredients'. Auto-response: 'Thank you for your interest in becoming a part of the Natural Grocers supplier community! We are always interested in partnering with new and exciting brands. To be considered, all products must [meet standards]'."
     }
    ],
    "reviewWindows": [],
@@ -7756,7 +7851,7 @@
    ],
    "notes": [
     "Submitted on the final day of the window; auto-reply lists product qualification requirements.",
-    "Must complete attached supplier form and confirm no disqualifying ingredients."
+    "newitemsfood@naturalgrocers.com is a shared team box, not a named buyer. No named contact yet."
    ]
   },
   {
@@ -7781,7 +7876,7 @@
    ],
    "lastTouch": "2026-07-15",
    "nextMeeting": null,
-   "daysSince": 3,
+   "daysSince": 6,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -7864,7 +7959,7 @@
    ],
    "lastTouch": "2026-07-16",
    "nextMeeting": null,
-   "daysSince": 2,
+   "daysSince": 5,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -7959,7 +8054,7 @@
    ],
    "lastTouch": "2026-07-15",
    "nextMeeting": null,
-   "daysSince": 3,
+   "daysSince": 6,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -8009,7 +8104,7 @@
    "contacts": [],
    "lastTouch": "2026-07-05",
    "nextMeeting": null,
-   "daysSince": 13,
+   "daysSince": 16,
    "owes": null,
    "due": false,
    "dueReason": null,
@@ -8066,7 +8161,7 @@
    ],
    "lastTouch": "2026-06-05",
    "nextMeeting": null,
-   "daysSince": 43,
+   "daysSince": 46,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -8126,7 +8221,7 @@
    ],
    "lastTouch": "2026-07-07",
    "nextMeeting": null,
-   "daysSince": 11,
+   "daysSince": 14,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -8184,7 +8279,7 @@
    ],
    "lastTouch": "2026-06-18",
    "nextMeeting": null,
-   "daysSince": 30,
+   "daysSince": 33,
    "owes": null,
    "due": false,
    "dueReason": null,
@@ -8228,13 +8323,23 @@
      "source": "gmail"
     }
    ],
-   "lastTouch": "2026-07-12",
-   "nextMeeting": "2026-07-21",
-   "daysSince": 6,
+   "lastTouch": "2026-07-21",
+   "nextMeeting": null,
+   "daysSince": 0,
    "owes": "them",
    "due": false,
    "dueReason": null,
    "statuses": [
+    {
+     "date": "2026-07-21",
+     "src": "calendar",
+     "text": "UPCOMING — 'PDI <> Cotto', 2026-07-21 11:00 ET."
+    },
+    {
+     "date": "2026-07-21",
+     "src": "gmail",
+     "text": "Inbound customer message 7/8. Call scheduled 7/21 (PDI <> Cotto)."
+    },
     {
      "date": "2026-07-12",
      "src": "gmail",
@@ -8244,16 +8349,6 @@
      "date": "2026-07-12",
      "src": "notion_crm",
      "text": "In Talks, Priority High. Inbound via site contact form 2026-07-08: interested in carrying Cotto, asked about capacity, MOQ, delivered pricing. Intro call booked Tue 2026-07-21 10-10:30am CDT."
-    },
-    {
-     "date": null,
-     "src": "calendar",
-     "text": "UPCOMING — 'PDI <> Cotto', 2026-07-21 11:00 ET."
-    },
-    {
-     "date": null,
-     "src": "gmail",
-     "text": "Inbound customer message 7/8. Call scheduled 7/21 (PDI <> Cotto)."
     }
    ],
    "reviewWindows": [],
@@ -8297,10 +8392,10 @@
    ],
    "lastTouch": "2026-04-10",
    "nextMeeting": null,
-   "daysSince": 99,
+   "daysSince": 102,
    "owes": null,
    "due": true,
-   "dueReason": "No contact in 99 days",
+   "dueReason": "No contact in 102 days",
    "statuses": [
     {
      "date": "2026-04-10",
@@ -8380,7 +8475,7 @@
    ],
    "lastTouch": "2026-01-30",
    "nextMeeting": null,
-   "daysSince": 169,
+   "daysSince": 172,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -8430,7 +8525,7 @@
    ],
    "lastTouch": "2026-07-10",
    "nextMeeting": null,
-   "daysSince": 8,
+   "daysSince": 11,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -8536,22 +8631,22 @@
      "source": "gmail"
     }
    ],
-   "lastTouch": "2026-07-16",
+   "lastTouch": "2026-07-21",
    "nextMeeting": null,
-   "daysSince": 2,
+   "daysSince": 0,
    "owes": "them",
    "due": false,
    "dueReason": null,
    "statuses": [
     {
-     "date": "2026-07-16",
+     "date": "2026-07-21",
      "src": "gmail",
-     "text": "Cotto was selected for a 1:1 buyer meeting with Schoon at Startup CPG's booth (4506A, Level 1) during Summer Fancy Food — Alex Nguyen (alex@startupcpg.com) notified Kendall 6/17 and she booked a slot. Kendall sent the post-show follow-up 7/16: 'It was great meeting you in our 1:1 at the Fancy Food Show'. No reply yet."
+     "text": "Fancy Food 1:1 follow-up sent 7/16 to Amaury Schoon, no reply yet. Rainforest is co-presenting Naturally New York's Riverside Route on 2026-07-22 alongside Whole Foods Market, and Kendall is attending. In-person follow-up opportunity."
     },
     {
      "date": "2026-07-16",
      "src": "gmail",
-     "text": "FFS 1:1 follow-up 7/16. No reply yet."
+     "text": "Cotto was selected for a 1:1 buyer meeting with Schoon at Startup CPG's booth (4506A, Level 1) during Summer Fancy Food — Alex Nguyen (alex@startupcpg.com) notified Kendall 6/17 and she booked a slot. Kendall sent the post-show follow-up 7/16: 'It was great meeting you in our 1:1 at the Fancy Food Show'. No reply yet."
     },
     {
      "date": "2026-06-29",
@@ -8574,7 +8669,9 @@
      "text": "Kendall's Expo West follow-up 3/16: 'I've heard great things about working with Rainforest from other brands in the Northeast.' Matthew replied same day: 'your ears must have been ringing because we did submit our findings on a shared drive on Friday (you were on my list!) to get a webinar invite.' Kendall committed to send samples to NJ and said she was 'working through the NIF now'. Kendall registered for and attended the Rainforest Post-Expo West webinar (3/20)."
     }
    ],
-   "reviewWindows": [],
+   "reviewWindows": [
+    "Riverside Route panel 2026-07-22, 5:30-8:00 PM, Harborside 3, Jersey City."
+   ],
    "thirdParty": [],
    "threads": [
     "19d20f7c6a036a07",
@@ -8626,7 +8723,7 @@
    ],
    "lastTouch": "2026-07-17",
    "nextMeeting": null,
-   "daysSince": 1,
+   "daysSince": 4,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -8740,7 +8837,7 @@
    ],
    "lastTouch": "2026-07-17",
    "nextMeeting": null,
-   "daysSince": 1,
+   "daysSince": 4,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -8842,7 +8939,7 @@
    ],
    "lastTouch": "2026-05-21",
    "nextMeeting": null,
-   "daysSince": 58,
+   "daysSince": 61,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -8890,10 +8987,10 @@
    ],
    "lastTouch": "2026-04-18",
    "nextMeeting": null,
-   "daysSince": 91,
+   "daysSince": 94,
    "owes": null,
    "due": true,
-   "dueReason": "No contact in 91 days",
+   "dueReason": "No contact in 94 days",
    "statuses": [
     {
      "date": "2026-04-18",
@@ -8936,7 +9033,7 @@
    ],
    "lastTouch": "2026-05-28",
    "nextMeeting": null,
-   "daysSince": 51,
+   "daysSince": 54,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -9025,7 +9122,7 @@
    ],
    "lastTouch": "2026-02-25",
    "nextMeeting": null,
-   "daysSince": 143,
+   "daysSince": 146,
    "owes": "us",
    "due": false,
    "dueReason": null,
@@ -9073,7 +9170,7 @@
    ],
    "lastTouch": "2026-07-09",
    "nextMeeting": null,
-   "daysSince": 9,
+   "daysSince": 12,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -9135,7 +9232,7 @@
    ],
    "lastTouch": "2026-07-13",
    "nextMeeting": null,
-   "daysSince": 5,
+   "daysSince": 8,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -9189,7 +9286,7 @@
    ],
    "lastTouch": "2026-07-08",
    "nextMeeting": null,
-   "daysSince": 10,
+   "daysSince": 13,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -9253,7 +9350,7 @@
    ],
    "lastTouch": "2026-07-09",
    "nextMeeting": null,
-   "daysSince": 9,
+   "daysSince": 12,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -9351,7 +9448,7 @@
    ],
    "lastTouch": "2026-07-17",
    "nextMeeting": null,
-   "daysSince": 1,
+   "daysSince": 4,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -9447,13 +9544,18 @@
      "source": "notion_crm"
     }
    ],
-   "lastTouch": "2026-02-03",
+   "lastTouch": "2026-07-21",
    "nextMeeting": null,
-   "daysSince": 165,
-   "owes": null,
+   "daysSince": 0,
+   "owes": "us",
    "due": true,
-   "dueReason": "No contact in 165 days",
+   "dueReason": "We owe the next move",
    "statuses": [
+    {
+     "date": "2026-07-21",
+     "src": "gmail",
+     "text": "Broker inbound 7/18. Kendall replied 7/21 and Vincent came back the same day. Ball is on her side. One of several live broker conversations alongside Green Spoon (7/23), CROSSMARK (7/23) and JCB Growth (7/27)."
+    },
     {
      "date": "2026-02-03",
      "src": "gmail",
@@ -9470,7 +9572,8 @@
     "Meraki Direct — 'a DSD distributor in the tri-state area'"
    ],
    "threads": [
-    "19c23c87b5193634"
+    "19c23c87b5193634",
+    "19f748fab8efadf9"
    ],
    "sources": [
     "gmail",
@@ -9481,7 +9584,8 @@
    ],
    "notes": [
     "Last name not given in the email. Uncertain.",
-    "Active connector — intro'd Nounos/Meraki Direct, Vybes founder (Jonathan), Cultivar co-packing (Pedro)."
+    "Active connector — intro'd Nounos/Meraki Direct, Vybes founder (Jonathan), Cultivar co-packing (Pedro).",
+    "Last name not stated in the thread."
    ]
   },
   {
@@ -9514,7 +9618,7 @@
    ],
    "lastTouch": "2026-07-14",
    "nextMeeting": null,
-   "daysSince": 4,
+   "daysSince": 7,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -9575,7 +9679,7 @@
    ],
    "lastTouch": "2026-04-07",
    "nextMeeting": null,
-   "daysSince": 102,
+   "daysSince": 105,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -9624,7 +9728,7 @@
    ],
    "lastTouch": "2026-07-17",
    "nextMeeting": null,
-   "daysSince": 1,
+   "daysSince": 4,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -9680,7 +9784,7 @@
    ],
    "lastTouch": "2026-07-06",
    "nextMeeting": null,
-   "daysSince": 12,
+   "daysSince": 15,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -9734,7 +9838,7 @@
    ],
    "lastTouch": "2026-01-21",
    "nextMeeting": null,
-   "daysSince": 178,
+   "daysSince": 181,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -9784,7 +9888,7 @@
    ],
    "lastTouch": "2026-07-03",
    "nextMeeting": null,
-   "daysSince": 15,
+   "daysSince": 18,
    "owes": null,
    "due": false,
    "dueReason": null,
@@ -9830,7 +9934,7 @@
    ],
    "lastTouch": "2026-02-26",
    "nextMeeting": null,
-   "daysSince": 142,
+   "daysSince": 145,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -9878,7 +9982,7 @@
    ],
    "lastTouch": "2026-07-06",
    "nextMeeting": null,
-   "daysSince": 12,
+   "daysSince": 15,
    "owes": null,
    "due": false,
    "dueReason": null,
@@ -9961,7 +10065,7 @@
    ],
    "lastTouch": "2026-07-06",
    "nextMeeting": null,
-   "daysSince": 12,
+   "daysSince": 15,
    "owes": null,
    "due": false,
    "dueReason": null,
@@ -10148,15 +10252,38 @@
       "bob.mcnally@unfi.com"
      ],
      "source": "gmail"
+    },
+    {
+     "name": "Timm DeAlexandro",
+     "role": "Account Manager, Central Region",
+     "emails": [
+      "timothy.dealexandro@unfi.com"
+     ],
+     "source": "gmail"
     }
    ],
-   "lastTouch": "2026-07-17",
+   "lastTouch": "2026-07-21",
    "nextMeeting": null,
-   "daysSince": 1,
-   "owes": "us",
-   "due": true,
-   "dueReason": "We owe the next move",
+   "daysSince": 0,
+   "owes": "them",
+   "due": false,
+   "dueReason": null,
    "statuses": [
+    {
+     "date": "2026-07-21",
+     "src": "gmail",
+     "text": "UNFI UpNext onboarding. Intro call 7/8 (Teams); samples sent 7/7 (UPS). Standing 'Cotto / UNFI' call on the calendar for 2026-08-06 14:00 ET with kdavis@unfi.com."
+    },
+    {
+     "date": "2026-07-21",
+     "src": "gmail",
+     "text": "Timm covers UNFI's Central Region and is the account manager for Heinen's. He fielded Anne Mayer's request for Cotto on 7/6, told her he would work with the contact, and on 7/21 forwarded the chain to Kendall asking whether the UNFI new item setup process had started. UNREAD and unanswered. Answer is yes: the UNFI new item request went to Tim Heuser on 7/21."
+    },
+    {
+     "date": "2026-07-21",
+     "src": "gmail",
+     "text": "PAPERWORK IN. Introduced by Fedele Stella at Wakefern on 7/15: 'As promised I am getting you in UNFI. Let me introduce you to Tim Heuser he is my account mgr for our accounts and Shoprite.' Call held 7/20; Tim sent two files the same day, the UNFI New Item Request form and the Fair New Item paperwork. Kendall returned the completed new item request for all three SKUs on 7/21, listing Tim as Requested By and the reason as customer-driven. Waiting on UNFI to code the items."
+    },
     {
      "date": "2026-07-17",
      "src": "gmail",
@@ -10171,21 +10298,6 @@
      "date": "2026-07-17",
      "src": "gmail",
      "text": "Active. FFS follow-up; discussing which DC to anchor. Bob's largest chain is a 12-store; floated Redners as a good anchor. Cotto still onboarding, DCs TBD."
-    },
-    {
-     "date": "2026-07-16",
-     "src": "gmail",
-     "text": "Found Cotto at the Mohegan selling show, requested sell sheet 7/14 to share with his customer. Kendall sent it. Stoudenmire 7/15: 'I'm trying to get Jen at Winn-Dixie to consider your items for her Cultured reset review. Would you like to send her some samples...'. Kendall shipped samples 7/16, FedEx 874448630970, asked Justin to pass to Jen."
-    },
-    {
-     "date": "2026-07-16",
-     "src": "gmail",
-     "text": "Introduced by Fedele Stella 7/15. Heuser same day: 'do you have any time this week to discuss the process of getting your items into UNFI. I am available Thursday afternoon and can get a quick call in on Friday as well'. Kendall replied noting Cotto had joined UNFI's UpNext program; call set for Friday 7/17 — Heuser accepted the invite 7/16 ('Accepted: Cotto (Kendall) x Tim (UNFI)')."
-    },
-    {
-     "date": "2026-07-16",
-     "src": "gmail",
-     "text": "Request to review Cotto for placement at The Winn-Dixie Company (via UNFI)."
     }
    ],
    "reviewWindows": [
@@ -10304,7 +10416,7 @@
    ],
    "lastTouch": "2025-12-11",
    "nextMeeting": null,
-   "daysSince": 219,
+   "daysSince": 222,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -10352,7 +10464,7 @@
    ],
    "lastTouch": "2026-07-17",
    "nextMeeting": null,
-   "daysSince": 1,
+   "daysSince": 4,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -10413,7 +10525,7 @@
    ],
    "lastTouch": "2026-04-22",
    "nextMeeting": null,
-   "daysSince": 87,
+   "daysSince": 90,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -10464,7 +10576,7 @@
    ],
    "lastTouch": "2026-07-09",
    "nextMeeting": null,
-   "daysSince": 9,
+   "daysSince": 12,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -10516,7 +10628,7 @@
    ],
    "lastTouch": "2026-06-24",
    "nextMeeting": null,
-   "daysSince": 24,
+   "daysSince": 27,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -10586,7 +10698,7 @@
    ],
    "lastTouch": "2026-07-14",
    "nextMeeting": null,
-   "daysSince": 4,
+   "daysSince": 7,
    "owes": "them",
    "due": false,
    "dueReason": null,
@@ -10662,27 +10774,27 @@
      "source": "gmail"
     }
    ],
-   "lastTouch": "2026-07-14",
-   "nextMeeting": "2026-07-20",
-   "daysSince": 4,
+   "lastTouch": "2026-07-20",
+   "nextMeeting": null,
+   "daysSince": 1,
    "owes": "them",
    "due": false,
    "dueReason": null,
    "statuses": [
     {
-     "date": "2026-07-14",
-     "src": "gmail",
-     "text": "Cold inbound 7/13: 'One of my colleagues attended the trade show in New York a few weeks ago and brought back your product sell sheet. We were impressed with your [product]'. Kendall replied 7/14 open to the Canadian market. Kaiser sent a Teams invite for Monday (7/20) — calendar item 'Walmart Canada x Cotto Connect'."
-    },
-    {
-     "date": null,
+     "date": "2026-07-20",
      "src": "calendar",
      "text": "UPCOMING — 'Walmart Canada x Cotto Connect', 2026-07-20 13:00 ET (Teams)."
     },
     {
-     "date": null,
+     "date": "2026-07-20",
      "src": "gmail",
      "text": "FFS NY follow-up 7/14. Connect call scheduled 7/20 (Walmart Canada x Cotto Connect)."
+    },
+    {
+     "date": "2026-07-14",
+     "src": "gmail",
+     "text": "Cold inbound 7/13: 'One of my colleagues attended the trade show in New York a few weeks ago and brought back your product sell sheet. We were impressed with your [product]'. Kendall replied 7/14 open to the Canadian market. Kaiser sent a Teams invite for Monday (7/20) — calendar item 'Walmart Canada x Cotto Connect'."
     }
    ],
    "reviewWindows": [],
@@ -10725,10 +10837,10 @@
    ],
    "lastTouch": "2026-06-12",
    "nextMeeting": null,
-   "daysSince": 36,
+   "daysSince": 39,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 36 days - chase",
+   "dueReason": "Waiting on them 39 days - chase",
    "statuses": [
     {
      "date": "2026-06-12",
@@ -10781,7 +10893,7 @@
    ],
    "lastTouch": "2026-07-17",
    "nextMeeting": null,
-   "daysSince": 1,
+   "daysSince": 4,
    "owes": "us",
    "due": false,
    "dueReason": null,
@@ -10835,22 +10947,22 @@
      "source": "gmail"
     }
    ],
-   "lastTouch": "2026-07-02",
-   "nextMeeting": "2026-07-21",
-   "daysSince": 16,
+   "lastTouch": "2026-07-21",
+   "nextMeeting": null,
+   "daysSince": 0,
    "owes": "them",
    "due": false,
    "dueReason": null,
    "statuses": [
     {
+     "date": "2026-07-21",
+     "src": "gmail",
+     "text": "Yes Chef / JDR x Cotto call scheduled 7/21."
+    },
+    {
      "date": "2026-07-02",
      "src": "gmail",
      "text": "Inbound re: 'Snacks for the Office -- Cotto Whipped Cottage Cheese Dips'. Kendall 7/2: 'We could be open to it. How does it work? As a very small, new brand, we aren't in a position to pay large sums to participate in events like this. Happy to discuss fu[rther]'. No reply."
-    },
-    {
-     "date": null,
-     "src": "gmail",
-     "text": "Yes Chef / JDR x Cotto call scheduled 7/21."
     }
    ],
    "reviewWindows": [],
@@ -10892,7 +11004,7 @@
    ],
    "lastTouch": "2026-04-02",
    "nextMeeting": null,
-   "daysSince": 107,
+   "daysSince": 110,
    "owes": "us",
    "due": true,
    "dueReason": "We owe the next move",
@@ -10943,10 +11055,10 @@
    ],
    "lastTouch": "2026-01-17",
    "nextMeeting": null,
-   "daysSince": 182,
+   "daysSince": 185,
    "owes": "them",
    "due": true,
-   "dueReason": "Waiting on them 182 days - chase",
+   "dueReason": "Waiting on them 185 days - chase",
    "statuses": [
     {
      "date": "2026-01-17",
@@ -10974,26 +11086,18 @@
  ],
  "reviews": [
   {
-   "retailer": "The Fresh Market",
-   "category": "Category review notification list",
-   "cutoff": "2026-07-20",
-   "owner": "Devin Stanley",
-   "source": "Set not currently under review; Devin offered to add Cotto to the notification email, back from vacation 7/20",
-   "daysToCutoff": 2
-  },
-  {
    "retailer": "Winn-Dixie",
    "category": "Cultured reset review — LIVE NOW",
    "cutoff": "2026-07-31",
    "source": "Samples shipped 7/16 via UNFI rep",
-   "daysToCutoff": 13
+   "daysToCutoff": 9
   },
   {
    "retailer": "Fresh Thyme Market",
    "category": "Startup CPG pitch application",
    "cutoff": "2026-08-02",
    "source": "Startup CPG — pitch live in Chicago Oct 27",
-   "daysToCutoff": 15
+   "daysToCutoff": 11
   },
   {
    "retailer": "Wakefern / ShopRite",
@@ -11001,7 +11105,7 @@
    "cutoff": "2026-08-04",
    "owner": "Justin Cittadino",
    "source": "Cittadino OOO end of July; call targeted early August",
-   "daysToCutoff": 17
+   "daysToCutoff": 13
   },
   {
    "retailer": "Publix (inferred)",
@@ -11011,7 +11115,7 @@
    "publish": "2026-11-27",
    "owner": "ANDREW GRIFFIN / RYAN CALCUTTI",
    "source": "Category Review Schedule.xlsx (Jake, 1/20)",
-   "daysToCutoff": 20
+   "daysToCutoff": 16
   },
   {
    "retailer": "Harmons",
@@ -11019,7 +11123,7 @@
    "cutoff": "2026-09-01",
    "owner": "Courtney Bleckert",
    "source": "Via UNFI — buyer described as \"very interested\"; Cotto deferred on geography",
-   "daysToCutoff": 45
+   "daysToCutoff": 41
   },
   {
    "retailer": "Earth Fare",
@@ -11027,7 +11131,7 @@
    "cutoff": "2027-01-04",
    "owner": "Wes Hollamon",
    "source": "Wes at the show: \"review early Jan; let him know if we're onboarded with UNFI sooner\"",
-   "daysToCutoff": 170
+   "daysToCutoff": 166
   },
   {
    "retailer": "Publix (inferred)",
@@ -11037,14 +11141,22 @@
    "publish": "2027-05-28",
    "owner": "JONETTE BACCHUS-YATES / CHERYL JAMES",
    "source": "Category Review Schedule.xlsx (Jake, 1/20)",
-   "daysToCutoff": 202
+   "daysToCutoff": 198
+  },
+  {
+   "retailer": "The Fresh Market",
+   "category": "Category review notification list",
+   "cutoff": "2026-07-20",
+   "owner": "Devin Stanley",
+   "source": "Set not currently under review; Devin offered to add Cotto to the notification email, back from vacation 7/20",
+   "daysToCutoff": -2
   },
   {
    "retailer": "Target",
    "category": "April 2027 transition line review",
    "cutoff": "2026-07-17",
    "source": "Target buyer call 5/7 — \"line review for the April 2027 transition runs June through mid-July 2026\"",
-   "daysToCutoff": -1
+   "daysToCutoff": -5
   },
   {
    "retailer": "Whole Foods Market",
@@ -11053,7 +11165,7 @@
    "publish": "2027-03-30",
    "owner": "Cynthia Hwang",
    "source": "Submitted 7/7; confirmation from Suppliers@wholefoods.com",
-   "daysToCutoff": -9
+   "daysToCutoff": -13
   },
   {
    "retailer": "Publix (inferred)",
@@ -11063,7 +11175,7 @@
    "publish": "2026-09-25",
    "owner": "ALI POLAT / ANGELOT PAUL",
    "source": "Category Review Schedule.xlsx (Jake, 1/20)",
-   "daysToCutoff": -43
+   "daysToCutoff": -47
   },
   {
    "retailer": "Publix (inferred)",
@@ -11073,7 +11185,7 @@
    "publish": "2026-09-25",
    "owner": "ALI POLAT / ANGELOT PAUL",
    "source": "Category Review Schedule.xlsx (Jake, 1/20)",
-   "daysToCutoff": -43
+   "daysToCutoff": -47
   },
   {
    "retailer": "Publix (inferred)",
@@ -11083,7 +11195,7 @@
    "publish": "2026-09-25",
    "owner": "WESLEY REESE / KEITH MACDONALD",
    "source": "Category Review Schedule.xlsx (Jake, 1/20)",
-   "daysToCutoff": -43
+   "daysToCutoff": -47
   },
   {
    "retailer": "Publix (inferred)",
@@ -11093,7 +11205,7 @@
    "publish": "2026-09-25",
    "owner": "WESLEY REESE / KEITH MACDONALD",
    "source": "Category Review Schedule.xlsx (Jake, 1/20)",
-   "daysToCutoff": -43
+   "daysToCutoff": -47
   }
  ],
  "flags": [
@@ -11211,8 +11323,8 @@
   }
  ],
  "coverage": {
-  "records": 423,
-  "accounts": 171,
+  "records": 431,
+  "accounts": 172,
   "sources": [
    "gmail",
    "notion_crm",
@@ -11221,6 +11333,6 @@
    "financial model",
    "category review schedule"
   ],
-  "note": "Built from an exhaustive sweep of Gmail (mailbox origin ~Aug 2025 → today, partitioned into date windows so no period was skipped), the Notion Retail Accounts CRM (72 rows + Contacts + Distributors + Meeting Notes), Google Calendar (632 events, May–Sep 2026), and LinkedIn notification mail. 423 raw records merged into 171 accounts; every alias→account decision is logged in spine/crm/merge_report.txt. Door plan from fundraise/model/Cotto_Financial_Model_current.xlsx (Revenue Inputs). Known gap: LinkedIn message BODIES are not in Gmail — LinkedIn only sends \"You have 1 new message\" — so LinkedIn asks can only be read on linkedin.com and are flagged rather than read. Refreshed by the retail-crm-refresh scheduled task; sweep inputs: sweep_01_through_jan2026.json, sweep_02_feb_to_apr15_2026.json, sweep_03_apr16_to_jun10_2026.json, sweep_04_jun11_to_jul17_2026.json, sweep_05_notion_calendar_linkedin.json, sweep_live_2026-07.json."
+  "note": "Built from an exhaustive sweep of Gmail (mailbox origin ~Aug 2025 → today, partitioned into date windows so no period was skipped), the Notion Retail Accounts CRM (72 rows + Contacts + Distributors + Meeting Notes), Google Calendar (632 events, May–Sep 2026), and LinkedIn notification mail. 431 raw records merged into 172 accounts; every alias→account decision is logged in spine/crm/merge_report.txt. Door plan from fundraise/model/Cotto_Financial_Model_current.xlsx (Revenue Inputs). Known gap: LinkedIn message BODIES are not in Gmail — LinkedIn only sends \"You have 1 new message\" — so LinkedIn asks can only be read on linkedin.com and are flagged rather than read. Refreshed by the retail-crm-refresh scheduled task; sweep inputs: sweep_01_through_jan2026.json, sweep_02_feb_to_apr15_2026.json, sweep_03_apr16_to_jun10_2026.json, sweep_04_jun11_to_jul17_2026.json, sweep_05_notion_calendar_linkedin.json, sweep_live_2026-07.json."
  }
 }

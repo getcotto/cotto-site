@@ -593,13 +593,14 @@
     "type": "Adjustment",
     "location": "Edison NJ",
     "account": "Count reconciliation (Lucy/Localee)",
-    "buf": 43,
-    "fo": 39,
-    "gr": 56,
+    "buf": 40,
+    "fo": 36,
+    "gr": 54,
     "dir": "Out",
     "lot": "",
     "notes": "True-up to Lucy 6/25 physical count: FO 29 / BUF 13 / GR 4. Absorbs this week NY deliveries (FTP 6/23 confirmed; O&O + Last Minute pending Lucy confirm) + reconciliation. Ledger was 56/68/60.",
-    "ref": "COUNT-EDISON-20260625"
+    "ref": "COUNT-EDISON-20260625",
+    "plugNote": "REDUCED 2026-07-22 by 3/3/2 = 8 cs, which is now carried as two DOCUMENTED events from BrandReport_Cotto_6-24-2026.pdf (gmail:19f03f0357ccc7ce, signed PODs for Buffalo and Last Minute Market). The plug was an undocumented balancing figure that already contained those cases; leaving it whole would have relieved the same 8 cases twice. ⚠ THIS IS STILL A PLUG. What remains (40/36/54 = 130 cs) has NO document, and 4 more Localee PODs from the same period (6/19, 6/21, 6/22, 6/23 = 99 cs) are known to exist and are not yet ingested. Each one ingested must shrink this by the same amount. When they are all in, whatever is left is the REAL Edison shrink and should be renamed as such rather than left looking like a count adjustment."
   },
   {
     "date": "2026-06-25",
@@ -686,13 +687,13 @@
     "account": "FK 6/24 run (minus 1 held FO batch)",
     "buf": 222,
     "fo": 186,
-    "gr": 198,
+    "gr": 195,
     "dir": "In",
     "lot": "",
     "notes": "6/24 run landed at Carriacou 7/1 — 3 pallets per RLS BOL1207678. SHIPPED estimate; awaiting Carriacou physical count to true-up.",
     "ref": "RECEIPT-0624",
-    "basis": "counted",
-    "basisNote": "Run receipt confirmed off the Fuel Kitchens batch sheets. Backfilled 2026-07-21 from the documentary trail, not inferred."
+    "basis": "mixed",
+    "basisNote": "CORRECTED 2026-07-22 against the batch sheets themselves (gmail:19f05f4fc22f3cc1, \"Cotto - Batch Sheets - 6..23.26-6.25.26.pdf\"). PER SKU: BUF 222 is CONFIRMED (6/24, three batches 430+442+461 = 1,333 u = 222.2 cs). GR corrected 198 -> 195 (6/23 two batches 384+392, 6/24 one batch 392 = 1,168 u = 194.7 cs). ⚠ FO 186 IS NOT SUPPORTED BY ANY DOCUMENT: the sheets record four 6/25 batches at 393 / 419 / 408(struck, no replacement) / 415 = 1,635 u = 272.5 cs, and NO subset of those reconciles to 186. The previous basisNote claimed this event was \"confirmed off the Fuel Kitchens batch sheets\" while the event note simultaneously said \"SHIPPED estimate; awaiting Carriacou physical count\" -- the two contradicted each other and the confident one was wrong. FO stays at its shipped figure pending a Carriacou receiving count. The BOL (gmail:19f047c2c1b05368) is pallet-level (3 PLTS, Cases=0) and cannot confirm case counts."
   },
   {
     "date": "2026-07-02",
@@ -830,8 +831,8 @@
     "type": "Receipt",
     "location": "In Transit (FK->Carriacou)",
     "account": "FK production run 7-13wk-INTRANSIT-EST",
-    "buf": 192,
-    "fo": 357,
+    "buf": 191,
+    "fo": 355,
     "gr": 178,
     "dir": "In",
     "lot": "",
@@ -839,33 +840,42 @@
     "ref": "RECEIPT-7-13wk-INTRANSIT-EST",
     "basis": "counted",
     "note": "IN TRANSIT, COUNTED. 7/13-7/15 FK production week, picked up 7/17 (BOL 1215199), lands Carriacou 7/22. Per-batch actuals: GR 7/13 390+396+402=1,188u; FO 7/13 400u; FO 7/14 402+378+400+404=1,584u; BUF 7/15 479+475+440=1,394u; FO 7/15 397u. Week total 4,963u = 827 cs (BUF 232 / FO 397 / GR 198). Less Neighborly COTTO-1114 (40/40/20 = 100 cs) = 727 cs in transit. Supersedes the 738-cs estimate, which was derived from same-flavour priors and came within 1.2%. ON ARRIVAL: log an Out from here and an In to Brooklyn against the signed receiving slip.",
-    "basisNote": "CONFIRMED 2026-07-21 from the Batch Coding Traceability Log (PRO-FM-03, 1568_001.pdf), which records per-batch yield as \"units - cases\" in its NOTES column. This is the form that was missing: PRO-FM-02 left Actual Yield blank, PRO-FM-01 carries only theoretical units/batch."
+    "basisNote": "CONFIRMED 2026-07-21 from the Batch Coding Traceability Log (PRO-FM-03, 1568_001.pdf), which records per-batch yield as \"units - cases\" in its NOTES column. This is the form that was missing: PRO-FM-02 left Actual Yield blank, PRO-FM-01 carries only theoretical units/batch.",
+    "expected": "2026-07-22",
+    "expectedSource": "MIGRATION 2026-07-22: lifted from the event note prose (\"lands Carriacou 7/22\"). The promised arrival date was recorded in a sentence, where no check could read it. Going forward it is a FIELD: an in-transit event without one cannot be judged late, only old.",
+    "caseConversionNote": "CORRECTED 2026-07-22. Gross was computed as total units / 6, giving BUF 232 / FO 397 / GR 198. FK PRO-FM-03 carries a PER-BATCH case column summing to BUF 231 / FO 395 / GR 198: partial units do NOT merge across separately packed batches, so dividing the week total overstates by ~3 cases. Less the Neighborly COTTO-1114 draw (40/40/20) this in-transit balance is 191/355/178 = 724 cs, not 727."
   },
   {
-    "date": "2026-07-01",
+    "date": "2026-06-30",
     "dir": "Out",
-    "location": "Edison NJ",
-    "buf": 0,
-    "fo": 6,
+    "location": "Brooklyn (Carriacou)",
+    "buf": 6,
+    "fo": 0,
     "gr": 4,
-    "account": "Butterfield",
+    "account": "Butterfield - Lexington",
     "type": "Delivery",
     "basis": "counted",
     "ref": "LOCALEE-2026-07-01-Butterfield",
-    "note": "Localee Brand Delivery Report 19f202da82472fb6__BrandReport_Cotto_7-1-2026.pdf — POD n/a, signed at Butterfield. Movement record only (the report states NOT FOR INVOICE PURPOSES); billing stays Settle's."
+    "note": "Localee Brand Delivery Report 19f202da82472fb6__BrandReport_Cotto_7-1-2026.pdf — POD n/a, signed at Butterfield. Movement record only (the report states NOT FOR INVOICE PURPOSES); billing stays Settle's.",
+    "locationCorrection": "CORRECTED 2026-07-22. These cases never touched Edison. BOL 063026-001 (gmail:19f1339c7ae729c4) documents ONE 66-case pickup from Carriacou, 257 Scholes St, 8:00 AM Tue 6/30 — BUF 26 / FO 23 / GR 17, one partial pallet, 231 lbs. Cotto_Delivery_Slips_2026-06-30.pdf (gmail:19f1a24bc4e624eb) splits that same 66 across five stops; three were logged Out of Brooklyn and these two were logged Out of Edison. BrandReport_Cotto_7-1-2026.pdf (gmail:19f202da82472fb6) confirms Localee delivered exactly these two on 7/1 (POD 260701-POD_CTO-1 Jason, -2 Jose). One pallet, one BOL, one warehouse. This single mislocation caused BOTH the X1 reconcile breach and the Edison 24-vs-46 contradiction: it drove Edison movements to a NEGATIVE Buffalo balance (-2/19/-6), which is physically impossible.",
+    "pod": "260701-POD_CTO-1 (Jason)",
+    "splitSource": "Store split resolved 2026-07-22 from BrandReport_Cotto_7-1-2026.pdf (gmail:19f202da82472fb6), which names both receivers: Lexington = BUF 6 / FO 0 / GR 4, signed Jason (POD 260701-POD_CTO-1); Madison = BUF 2 / FO 6 / GR 0, signed Jose (POD 260701-POD_CTO-2). The spine carried 0/6/4 and 8/0/0 — the 18-case TOTAL was right, the per-store attribution was not, and one row was literally labelled \"store split unresolved\". It was resolvable from a document that had been sitting in the mailbox since 7/1."
   },
   {
-    "date": "2026-07-01",
+    "date": "2026-06-30",
     "dir": "Out",
-    "location": "Edison NJ",
-    "buf": 8,
-    "fo": 0,
+    "location": "Brooklyn (Carriacou)",
+    "buf": 2,
+    "fo": 6,
     "gr": 0,
-    "account": "Butterfield (store split unresolved)",
+    "account": "Butterfield - Madison",
     "type": "Delivery",
     "basis": "counted",
     "ref": "LOCALEE-2026-07-01-Buffalo",
-    "note": "Localee Brand Delivery Report 19f202da82472fb6__BrandReport_Cotto_7-1-2026.pdf — POD n/a, signed at Buffalo. Movement record only (the report states NOT FOR INVOICE PURPOSES); billing stays Settle's. NOTE: the 7/1 report lists Butterfield Lexington and Madison as separate stops; the wrapped PDF layout could not be split reliably, so this row carries the combined Buffalo cases for both. Totals verified against the report TOTAL (18 cs). Does not affect on-hand: dated on the anchor date, not after it."
+    "note": "Localee Brand Delivery Report 19f202da82472fb6__BrandReport_Cotto_7-1-2026.pdf — POD n/a, signed at Buffalo. Movement record only (the report states NOT FOR INVOICE PURPOSES); billing stays Settle's. NOTE: the 7/1 report lists Butterfield Lexington and Madison as separate stops; the wrapped PDF layout could not be split reliably, so this row carries the combined Buffalo cases for both. Totals verified against the report TOTAL (18 cs). Does not affect on-hand: dated on the anchor date, not after it.",
+    "locationCorrection": "CORRECTED 2026-07-22. These cases never touched Edison. BOL 063026-001 (gmail:19f1339c7ae729c4) documents ONE 66-case pickup from Carriacou, 257 Scholes St, 8:00 AM Tue 6/30 — BUF 26 / FO 23 / GR 17, one partial pallet, 231 lbs. Cotto_Delivery_Slips_2026-06-30.pdf (gmail:19f1a24bc4e624eb) splits that same 66 across five stops; three were logged Out of Brooklyn and these two were logged Out of Edison. BrandReport_Cotto_7-1-2026.pdf (gmail:19f202da82472fb6) confirms Localee delivered exactly these two on 7/1 (POD 260701-POD_CTO-1 Jason, -2 Jose). One pallet, one BOL, one warehouse. This single mislocation caused BOTH the X1 reconcile breach and the Edison 24-vs-46 contradiction: it drove Edison movements to a NEGATIVE Buffalo balance (-2/19/-6), which is physically impossible.",
+    "pod": "260701-POD_CTO-2 (Jose)",
+    "splitSource": "Store split resolved 2026-07-22 from BrandReport_Cotto_7-1-2026.pdf (gmail:19f202da82472fb6), which names both receivers: Lexington = BUF 6 / FO 0 / GR 4, signed Jason (POD 260701-POD_CTO-1); Madison = BUF 2 / FO 6 / GR 0, signed Jose (POD 260701-POD_CTO-2). The spine carried 0/6/4 and 8/0/0 — the 18-case TOTAL was right, the per-store attribution was not, and one row was literally labelled \"store split unresolved\". It was resolvable from a document that had been sitting in the mailbox since 7/1."
   },
   {
     "date": "2026-07-09",
@@ -892,5 +902,31 @@
     "basis": "counted",
     "ref": "LOCALEE-2026-07-13-OliveandOak",
     "note": "Localee Brand Delivery Report 19f71cc1d37b785e__Cotto_DeliveryReport_7-13-2026.pdf — POD n/a, signed at Olive and Oak. Movement record only (the report states NOT FOR INVOICE PURPOSES); billing stays Settle's."
+  },
+  {
+    "date": "2026-06-24",
+    "dir": "Out",
+    "location": "Edison NJ",
+    "buf": 3,
+    "fo": 0,
+    "gr": 0,
+    "account": "Buffalo",
+    "type": "Delivery",
+    "basis": "counted",
+    "ref": "LOCALEE-2026-06-24-Buffalo",
+    "note": "Localee Brand Delivery Report 19f03f0357ccc7ce__BrandReport_Cotto_6-24-2026.pdf — POD n/a, signed at Buffalo. Movement record only (the report states NOT FOR INVOICE PURPOSES); billing stays Settle's."
+  },
+  {
+    "date": "2026-06-24",
+    "dir": "Out",
+    "location": "Edison NJ",
+    "buf": 0,
+    "fo": 3,
+    "gr": 2,
+    "account": "Last Minute",
+    "type": "Delivery",
+    "basis": "counted",
+    "ref": "LOCALEE-2026-06-24-LastMinute",
+    "note": "Localee Brand Delivery Report 19f03f0357ccc7ce__BrandReport_Cotto_6-24-2026.pdf — POD n/a, signed at Last Minute. Movement record only (the report states NOT FOR INVOICE PURPOSES); billing stays Settle's."
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-22",
+  "asOf": "2026-07-23",
   "findings": [
     {
       "sev": "🔴",
@@ -11,9 +11,9 @@
     {
       "sev": "🔴",
       "area": "AR",
-      "title": "Overdue AR (reconciled, past terms): $30134.98",
-      "detail": "Meadow Lane $6672.80; Olive & Oak $593.10; Butterfield Market $5266.80; Last Minute Market $1320.00; Jack's Market $118.80; Farm to People $2372.40; Schmidts Country market $388.44; Sagaponack General Store $1294.80; Farm & Forage Market $604.24; Fairway Market - 86th $2613.60; Fairway Market - 74th St $2613.60; Fairway Market of Chelsea $1425.60; FAIRWAY MARKET OF KIPS BAY $2692.80; Neighborly Ops LLC $2158.00. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
-      "impact": 30134.979999999996
+      "title": "Overdue AR (reconciled, past terms): $15036.20",
+      "detail": "Meadow Lane $6034.40; Butterfield Market $2732.40; Last Minute Market $1029.60; Jack's Market $118.80; Farm to People $395.40; Fairway (all doors) $4725.60. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
+      "impact": 15036.199999999999
     },
     {
       "sev": "🔴",
@@ -72,13 +72,6 @@
       "impact": 1328
     },
     {
-      "sev": "🔴",
-      "area": "Freshness",
-      "title": "⚠ SPINE FROZEN — AR last reconciled 2026-07-06 (16d ago). This is a STALE COPY; every number in this report is out of date. DO NOT act on it.",
-      "detail": "A routine is reading a frozen spine. Reconcile the source and repoint it before trusting any figure below.",
-      "impact": null
-    },
-    {
       "sev": "🟡",
       "area": "Open item",
       "title": "[Freight / Incoming] RLS Load 1209659 (PO 063026) — shipped 7/3, arriving Carriacou/Brooklyn Tue 7/7; LOG RECEIPT on arrival",
@@ -130,9 +123,9 @@
     {
       "sev": "🟡",
       "area": "AR",
-      "title": "Total open AR (Settle+Mercury reconciled): $30134.98",
+      "title": "Total open AR (Settle+Mercury reconciled): $30054.48",
       "detail": "Most is recent within-terms invoices. From ar_status.json — rerun reconcile_ar.js after each Mercury + Settle export.",
-      "impact": 30134.98
+      "impact": 30054.48
     },
     {
       "sev": "🟡",

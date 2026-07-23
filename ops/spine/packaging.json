@@ -241,7 +241,8 @@
       "anchor": {
         "date": "2026-07-21",
         "qty": 5825,
-        "source": "COUNTED. Lisa Trujillo (FK) in writing, 2026-07-21 14:25 UTC, gmail:19f814144e642d3c: \"the box count is 5825.\" Supersedes the 5/21 RECEIPT-derived anchor, which was the only figure available because boxes were omitted from both FK weekly count sheets. Corroborated by PCA invoice 217-10077062 (gmail:19f6792621e0b179): ordered 5,000, SHIPPED 5,825, invoiced 7/14, in FK hands by the 7/17 count."
+        "source": "COUNTED. Lisa Trujillo (FK) in writing, 2026-07-21 14:25 UTC, gmail:19f814144e642d3c: \"the box count is 5825.\" Supersedes the 5/21 RECEIPT-derived anchor, which was the only figure available because boxes were omitted from both FK weekly count sheets. Corroborated by PCA invoice 217-10077062 (gmail:19f6792621e0b179): ordered 5,000, SHIPPED 5,825, invoiced 7/14, in FK hands by the 7/17 count. ⚠ REVERSED IN PART 2026-07-22: an existing ops_view flag reads \"BOX COUNT AMBIGUOUS - do not book\", and it is right. 5,825 is EXACTLY the quantity PCA shipped on the 7/14 overrun (5,000 ordered / 5,825 shipped), so Lisa most likely quoted the packing slip rather than counting the floor. I booked it as a physical count anyway, which is the same error this whole reconciliation exists to correct: a number that matches a document perfectly is evidence it WAS the document. Kept as the working figure because it is better than a 62-day-old receipt, but it is NOT a count until Lisa confirms she counted. ASK: \"was 5825 a count off the floor, or the number on the PCA slip?\"",
+        "confidence": "UNCONFIRMED — treat as the packing slip, not a floor count"
       },
       "receipts": [
         {

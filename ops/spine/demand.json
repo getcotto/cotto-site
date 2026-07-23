@@ -46,12 +46,13 @@
         "gr": 10.5
       },
       "upside": {
-        "buf": 5,
-        "fo": 5,
-        "gr": 5
+        "buf": 2,
+        "fo": 2,
+        "gr": 2
       },
       "note": "WAS 0 booked / 30-30-30 upside, which zeroed a real account in the booked scenario the dash leads with. Demonstrated across Kips Bay 11.9, 86th St 9.5, 74th St 9.5, Chelsea 6.6 = 37.8 cs/wk. Trending up (7/20 was its biggest week). Orders often come by phone, so a silent week here may be a CAPTURE gap, not a demand drop. STEADY ON PURPOSE: crossing all 4 doors spreads over a couple of weeks rather than landing in one day, so modelling it as an event would inflate the peak. Kendall 2026-07-21: \"that tends to get spread out across a couple weeks, so I dont wanna inflate it.\" Revisit only if a crossing ever lands as a single-day slug in the ledger.",
-      "demandType": "steady"
+      "demandType": "steady",
+      "upsideNote": "TRIMMED 2026-07-22 from 5/5/5. Reorder data: only Kips Bay (9.5 cs/wk) and Chelsea are live; 86th and 74th reorder 2.3/wk each off a 60-cs overfill that is still on the shelf. Upside here is Kips Bay growth only, not four doors ramping. Do not size a run on Fairway expansion until the shelf count on today truck shows the 86th/74th fill has cleared."
     },
     {
       "account": "Butterfield - Lex",
@@ -350,8 +351,22 @@
         "gr": 0
       },
       "note": "No demonstrated volume in the window.",
-      "demandType": "steady"
+      "demandType": "steady",
+      "pipeline": {
+        "buf": 50,
+        "fo": 60,
+        "gr": 40,
+        "basis": "estimated"
+      },
+      "pipelineNote": "TIER B (signed, not yet shipping). Sized at ~150 cs as a distributor channel fill per policies.json#opening-fill-sizing, NOT as a retail door. Union Market, August start, 30-day floor. Was booked 0 / upside 0, i.e. invisible to every scenario -- a distributor starting next month contributed literally nothing to the plan. This feeds the FLEX run only (Aug-2), never the committed dairy number, per the estimate-vs-counted policy: a labelled estimate beats a zero you know is wrong."
     }
   ],
-  "_demand_model": "STEADY vs LUMPY, read by engine/lib/demand_model.js. booked[] remains the amortised weekly truth for every account (do not change it). Accounts that draw a slug on ONE day additionally carry event{cases,everyDays,lastOn,source}. Three numbers come out: baseWeekly (steady only, what must be sustained), weeklyEquivalent (base + lumpy amortised, for CAPACITY), and peakWeek (base + the single largest event, for INVENTORY - the week stock must actually exist). Only reclassify an account when a real single-day slug appears in the ledger."
+  "_demand_model": "STEADY vs LUMPY, read by engine/lib/demand_model.js. booked[] remains the amortised weekly truth for every account (do not change it). Accounts that draw a slug on ONE day additionally carry event{cases,everyDays,lastOn,source}. Three numbers come out: baseWeekly (steady only, what must be sustained), weeklyEquivalent (base + lumpy amortised, for CAPACITY), and peakWeek (base + the single largest event, for INVENTORY - the week stock must actually exist). Only reclassify an account when a real single-day slug appears in the ledger.",
+  "_opening_fill_model": {
+    "policy": "opening-fill-sizing (policies.json)",
+    "singleRetailDoorCs": 15,
+    "distributorChannelFillCs": 150,
+    "rule": "A newly-signed single door enters the book at ~15 cs opening + a steady 5-7 cs/wk, NOT at the buyer's first PO. Fairway 86th/74th opened at 60 and reorder 2.3/wk; that 60 was 4x too large and is the template NOT to repeat. Scale the opening number only for multi-door accounts or proven velocity.",
+    "addedOn": "2026-07-22"
+  }
 }

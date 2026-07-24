@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-23",
+  "asOf": "2026-07-24",
   "findings": [
     {
       "sev": "🔴",
@@ -11,9 +11,9 @@
     {
       "sev": "🔴",
       "area": "AR",
-      "title": "Overdue AR (reconciled, past terms): $15036.20",
-      "detail": "Meadow Lane $6034.40; Butterfield Market $2732.40; Last Minute Market $1029.60; Jack's Market $118.80; Farm to People $395.40; Fairway (all doors) $4725.60. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
-      "impact": 15036.199999999999
+      "title": "Overdue AR (reconciled, past terms): $15381.48",
+      "detail": "Meadow Lane $6034.40; Happier Grocery $345.28; Butterfield Market $2732.40; Last Minute Market $1029.60; Jack's Market $118.80; Farm to People $395.40; Fairway (all doors) $4725.60. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
+      "impact": 15381.48
     },
     {
       "sev": "🔴",

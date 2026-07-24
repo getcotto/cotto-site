@@ -46,7 +46,9 @@ export type OpsLot = {
   committed?: number;
   forecastClaim?: number;
   free?: number;
-  daysLeftAtNextClaim?: number;
+  daysLeftAtNextClaim?: number;            // legacy single-horizon field; kept for back-compat
+  daysLeftAtNextMerakiClaim?: number;      // per-channel: next distributor (30-day) claim
+  daysLeftAtNextDirectClaim?: number;      // per-channel: next direct (21-day) claim
   strandedForMeraki?: boolean;
   strandedForDirect?: boolean;
 };

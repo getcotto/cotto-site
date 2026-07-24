@@ -210,11 +210,11 @@ export default function OpsView({ snapshot, storeError }: Props) {
                     {/* Eligibility at the next real claim date, not today — a lot can look fine
                         now and already be too old for the pickup it would have to serve. */}
                     {l.strandedForDirect ? (
-                      <span className="rounded bg-red-50 px-1.5 py-0.5 text-xs font-semibold text-red-700" title={`Only ${l.daysLeftAtNextClaim}d left by the next claim date — under the 21-day direct floor`}>
+                      <span className="rounded bg-red-50 px-1.5 py-0.5 text-xs font-semibold text-red-700" title={`Only ${l.daysLeftAtNextDirectClaim ?? l.daysLeftAtNextClaim}d left by the next direct claim — under the 21-day direct floor`}>
                         neither
                       </span>
                     ) : l.strandedForMeraki ? (
-                      <span className="rounded bg-amber-50 px-1.5 py-0.5 text-xs font-medium text-amber-800" title={`${l.daysLeftAtNextClaim}d left by the next claim date — under Meraki's 30-day floor`}>
+                      <span className="rounded bg-amber-50 px-1.5 py-0.5 text-xs font-medium text-amber-800" title={`${l.daysLeftAtNextMerakiClaim ?? l.daysLeftAtNextClaim}d left by the next Meraki pickup — under Meraki's 30-day floor`}>
                         direct only
                       </span>
                     ) : (

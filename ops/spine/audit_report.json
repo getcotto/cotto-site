@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-24",
+  "asOf": "2026-07-26",
   "findings": [
     {
       "sev": "🔴",
@@ -70,6 +70,20 @@
       "title": "Reorder Cardboard Boxes (8oz 6-pack): NOT enough for the very next run (7/23-24) — order before producing",
       "detail": "Have 0, need 1328 for all runs after the 2026-07-20 count (short 1328). Supplier PCA (Packaging Corp of America); rep Connor Snyder. ⚠ count is stale — confirm with a fresh FK count.",
       "impact": 1328
+    },
+    {
+      "sev": "🔴",
+      "area": "Freight",
+      "title": "Book Pueblo freight by 2026-07-27 (Mon) — ships 2026-07-31",
+      "detail": "Runs 7/23-24 (growth, back-to-back)+7/27-29. Carriers: Jeremy/FFE, GianMarco@RLS, Heather@DTS.",
+      "impact": null
+    },
+    {
+      "sev": "🔴",
+      "area": "Freshness",
+      "title": "⚠ SPINE FROZEN — AR last reconciled 2026-07-22 (4d ago). This is a STALE COPY; every number in this report is out of date. DO NOT act on it.",
+      "detail": "A routine is reading a frozen spine. Reconcile the source and repoint it before trusting any figure below.",
+      "impact": null
     },
     {
       "sev": "🟡",
@@ -157,9 +171,9 @@
     },
     {
       "sev": "🟡",
-      "area": "Freight",
-      "title": "Book Pueblo freight by 2026-07-27 (Mon) — ships 2026-07-31",
-      "detail": "Runs 7/23-24 (growth, back-to-back)+7/27-29. Carriers: Jeremy/FFE, GianMarco@RLS, Heather@DTS.",
+      "area": "Freshness",
+      "title": "Spine may be stale (latest delivery 2026-07-20 = 6d ago, latest order 2026-07-22 = 4d ago)",
+      "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
       "impact": null
     },
     {
@@ -173,13 +187,6 @@
       "sev": "✅",
       "area": "Inventory",
       "title": "On-hand: BUF 712 / FO 855 / GR 498 cs",
-      "detail": "",
-      "impact": null
-    },
-    {
-      "sev": "✅",
-      "area": "Freshness",
-      "title": "Spine fresh (latest event 2026-07-20, latest order 2026-07-22)",
       "detail": "",
       "impact": null
     }

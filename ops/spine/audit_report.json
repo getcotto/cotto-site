@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-26",
+  "asOf": "2026-07-27",
   "findings": [
     {
       "sev": "🔴",
@@ -81,7 +81,7 @@
     {
       "sev": "🔴",
       "area": "Freshness",
-      "title": "⚠ SPINE FROZEN — AR last reconciled 2026-07-22 (4d ago). This is a STALE COPY; every number in this report is out of date. DO NOT act on it.",
+      "title": "⚠ SPINE FROZEN — AR last reconciled 2026-07-22 (5d ago). This is a STALE COPY; every number in this report is out of date. DO NOT act on it.",
       "detail": "A routine is reading a frozen spine. Reconcile the source and repoint it before trusting any figure below.",
       "impact": null
     },
@@ -172,7 +172,7 @@
     {
       "sev": "🟡",
       "area": "Freshness",
-      "title": "Spine may be stale (latest delivery 2026-07-20 = 6d ago, latest order 2026-07-22 = 4d ago)",
+      "title": "Spine may be stale (latest delivery 2026-07-22 = 5d ago, latest order 2026-07-28 = -1d ago)",
       "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
       "impact": null
     },
@@ -186,7 +186,7 @@
     {
       "sev": "✅",
       "area": "Inventory",
-      "title": "On-hand: BUF 712 / FO 855 / GR 498 cs",
+      "title": "On-hand: BUF 671 / FO 822 / GR 482 cs",
       "detail": "",
       "impact": null
     }

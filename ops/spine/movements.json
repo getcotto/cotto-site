@@ -1594,5 +1594,113 @@
     "dir": "Out",
     "lot": "",
     "notes": ""
+  },
+  {
+    "date": "2026-07-22",
+    "type": "Transfer",
+    "location": "In Transit (FK->Carriacou)",
+    "account": "assumed delivery 7-13wk run",
+    "buf": 191,
+    "fo": 355,
+    "gr": 178,
+    "dir": "Out",
+    "lot": "",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-22",
+    "type": "Receipt",
+    "location": "Brooklyn (Carriacou)",
+    "account": "assumed delivery 7-13wk run",
+    "buf": 191,
+    "fo": 355,
+    "gr": 178,
+    "dir": "In",
+    "lot": "",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-22",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Butterfield - Lex",
+    "buf": 5,
+    "fo": 7,
+    "gr": 5,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-22",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Butterfield - Madison",
+    "buf": 8,
+    "fo": 6,
+    "gr": 2,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-22",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Fairway 74th St",
+    "buf": 5,
+    "fo": 5,
+    "gr": 0,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-22",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Fairway 86th St",
+    "buf": 5,
+    "fo": 5,
+    "gr": 0,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-22",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Fairway Kips Bay",
+    "buf": 10,
+    "fo": 4,
+    "gr": 4,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-22",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Fairway Chelsea",
+    "buf": 4,
+    "fo": 4,
+    "gr": 3,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-22",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Happier Grocery (Soho)",
+    "buf": 4,
+    "fo": 2,
+    "gr": 2,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": ""
   }
 ]

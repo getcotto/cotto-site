@@ -6827,5 +6827,70 @@
     "notes": "Tiffany Tan 7/24. Catch-up capture.",
     "units": 12,
     "dateBasis": "estimated delivery: both orders were placed for \"this/next week\" (Butterfield 7/26, Happier 7/24); dated to the estimated next delivery ~7/28, not the order-received date, because the ledger dates by DELIVERY week for velocity. Refine when the route is scheduled."
+  },
+  {
+    "date": "2026-07-30",
+    "account": "Butterfield - Lex",
+    "channel": "Wholesale",
+    "sku": "GR",
+    "cases": 4,
+    "price": 6.6,
+    "total": 158.4,
+    "status": "Scheduled",
+    "source": "gmail:19fa3f7c87fd4d29",
+    "notes": "Butterfield Lex PO 25521 (COTTO PO 07-27-26.pdf), needed-by 7/30. Desktop-down catch-up 7/27.",
+    "units": 24
+  },
+  {
+    "date": "2026-07-30",
+    "account": "Butterfield - Lex",
+    "channel": "Wholesale",
+    "sku": "BUF",
+    "cases": 7,
+    "price": 6.6,
+    "total": 277.2,
+    "status": "Scheduled",
+    "source": "gmail:19fa3f7c87fd4d29",
+    "notes": "Butterfield Lex PO 25521, needed-by 7/30. Desktop-down catch-up 7/27.",
+    "units": 42
+  },
+  {
+    "date": "2026-07-30",
+    "account": "Butterfield - Lex",
+    "channel": "Wholesale",
+    "sku": "FO",
+    "cases": 9,
+    "price": 6.6,
+    "total": 356.4,
+    "status": "Scheduled",
+    "source": "gmail:19fa3f7c87fd4d29",
+    "notes": "Butterfield Lex PO 25521, needed-by 7/30. Desktop-down catch-up 7/27.",
+    "units": 54
+  },
+  {
+    "date": "2026-07-30",
+    "account": "Butterfield - Madison",
+    "channel": "Wholesale",
+    "sku": "FO",
+    "cases": 4,
+    "price": 6.6,
+    "total": 158.4,
+    "status": "Scheduled",
+    "source": "gmail:19f9e9d4ec62854f",
+    "notes": "Butterfield Madison order (Johangel 7/26), Kendall confirmed delivery Thu 7/30. Desktop-down catch-up 7/27.",
+    "units": 24
+  },
+  {
+    "date": "2026-07-30",
+    "account": "Butterfield - Madison",
+    "channel": "Wholesale",
+    "sku": "BUF",
+    "cases": 6,
+    "price": 6.6,
+    "total": 237.6,
+    "status": "Scheduled",
+    "source": "gmail:19f9e9d4ec62854f",
+    "notes": "Butterfield Madison order (Johangel 7/26), Kendall confirmed delivery Thu 7/30. Desktop-down catch-up 7/27.",
+    "units": 36
   }
 ]

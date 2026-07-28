@@ -75,7 +75,18 @@
         "qty": 10039,
         "source": "FK weekly count 7/17 (unlabeled cups). Ledger had computed 9,980 — drift +59."
       },
-      "receipts": []
+      "receipts": [
+        {
+          "date": "2026-08-10",
+          "qty": 15000,
+          "po": "CARY-072726",
+          "supplier": "The Cary Company",
+          "orderedOn": "2026-07-27",
+          "expectedConfirmed": false,
+          "ref": "19ef58cf1d16e7e3",
+          "source": "PO CARY-072726 sent 2026-07-27 (expected date REQUESTED, awaiting supplier confirmation)"
+        }
+      ]
     },
     {
       "key": "lids",
@@ -90,7 +101,18 @@
         "qty": 9698,
         "source": "FK weekly count 7/17. RESOLVES the 21,675-vs-2,675 ambiguity in favour of 2,675 (see _lids_ambiguity_RESOLVED). Lids are ~9.7k, not ~28.6k."
       },
-      "receipts": []
+      "receipts": [
+        {
+          "date": "2026-08-10",
+          "qty": 15000,
+          "po": "CARY-072726",
+          "supplier": "The Cary Company",
+          "orderedOn": "2026-07-27",
+          "expectedConfirmed": false,
+          "ref": "19ef58cf1d16e7e3",
+          "source": "PO CARY-072726 sent 2026-07-27 (expected date REQUESTED, awaiting supplier confirmation)"
+        }
+      ]
     },
     {
       "key": "wrap_buf",

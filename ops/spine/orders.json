@@ -6892,5 +6892,47 @@
     "source": "gmail:19f9e9d4ec62854f",
     "notes": "Butterfield Madison order (Johangel 7/26), Kendall confirmed delivery Thu 7/30. Desktop-down catch-up 7/27.",
     "units": 36
+  },
+  {
+    "date": "2026-08-03",
+    "account": "Meraki Direct (DSD)",
+    "channel": "Wholesale",
+    "sku": "BUF",
+    "cases": 30,
+    "price": 4.95,
+    "total": 891,
+    "status": "Scheduled",
+    "source": "gmail:19fa55dfdcff663b",
+    "dateBasis": "PICKUP DATE ESTIMATED — PO placed 7/27; Meraki picks up the following Monday (~8/3). Confirm when scheduled.",
+    "notes": "Meraki PO 6002182 (operations@merakidirect.co, 7/27). Desktop-down catch-up 7/27 — no auto-capture for inbound Meraki POs.",
+    "units": 180
+  },
+  {
+    "date": "2026-08-03",
+    "account": "Meraki Direct (DSD)",
+    "channel": "Wholesale",
+    "sku": "FO",
+    "cases": 30,
+    "price": 4.95,
+    "total": 891,
+    "status": "Scheduled",
+    "source": "gmail:19fa55dfdcff663b",
+    "dateBasis": "PICKUP DATE ESTIMATED — PO placed 7/27; pickup ~8/3.",
+    "notes": "Meraki PO 6002182, 7/27. Desktop-down catch-up.",
+    "units": 180
+  },
+  {
+    "date": "2026-08-03",
+    "account": "Meraki Direct (DSD)",
+    "channel": "Wholesale",
+    "sku": "GR",
+    "cases": 30,
+    "price": 4.95,
+    "total": 891,
+    "status": "Scheduled",
+    "source": "gmail:19fa55dfdcff663b",
+    "dateBasis": "PICKUP DATE ESTIMATED — PO placed 7/27; pickup ~8/3.",
+    "notes": "Meraki PO 6002182, 7/27. Desktop-down catch-up.",
+    "units": 180
   }
 ]

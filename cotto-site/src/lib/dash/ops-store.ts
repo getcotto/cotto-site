@@ -165,8 +165,10 @@ export type OpsSnapshot = {
   // emit-ops-snapshot.js from the newest movement across events.json + orders.json.
   // Drives the top-of-page freshness banner so a frozen pipe is loud, not silent.
   freshness?: {
-    lastSwept: string | null; // most recent capture date (events + orders), or null if none
+    lastSwept: string | null; // newest ORDER/EVENT date — data recency, NOT "did capture run"
     staleDays: number | null; // days since lastSwept; null when nothing captured yet
+    cloudSweptAt?: string | null; // ISO of the last REAL cloud sweep (Actions) — capture LIVENESS
+    desktopSweptAt?: string | null; // ISO of the last desktop sweep (Settle/AR + texts)
     opsViewAsOf: string | null; // the curated view's own asOf (can lag the engine)
     // Per-source freshness so a single dead input (Settle export not pulled, texts not captured,
     // slips piling up unread) shows on its own chip instead of hiding inside the aggregate.

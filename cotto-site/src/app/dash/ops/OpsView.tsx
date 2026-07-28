@@ -437,33 +437,41 @@ function FreshnessBanner({
   freshness?: OpsSnapshot["freshness"];
   packagingStaleNote?: string;
 }) {
-  const hasFreshness = freshness && freshness.staleDays != null;
-  const days = freshness?.staleDays ?? null;
-  const stale = days != null && days > 1;
-  const level = days != null && days > 3 ? "red" : "amber"; // loudness tier for stale
+  // LIVENESS (did the sweep run), not data recency. Cloud = unstarvable Actions sweep, 4x/day, runs
+  // inventory. Desktop = Settle/AR + texts, only when the app is open. Shown separately: they fail
+  // differently and matter differently. lastSwept (newest order) is INFO, never a failure signal.
+  const now = Date.now();
+  const hoursAgo = (iso?: string | null) => (iso ? (now - Date.parse(iso)) / 3_600_000 : null);
+  const fmtAgo = (h: number | null) =>
+    h == null ? "unknown" : h < 1 ? "just now" : h < 24 ? `${Math.round(h)}h ago` : `${Math.round(h / 24)}d ago`;
+  const cloudH = hoursAgo(freshness?.cloudSweptAt);
+  const desktopH = hoursAgo(freshness?.desktopSweptAt);
+  const cloudLive = cloudH != null && cloudH < 14; // 4x/day => healthy <~7h; 14h = 2 missed slots
+  const desktopStale = freshness?.desktopSweptAt == null || (desktopH != null && desktopH > 26); // app closed
+  const haveLiveness = freshness?.cloudSweptAt != null || freshness?.desktopSweptAt != null;
 
   return (
     <div className="mb-5 space-y-2">
-      {!hasFreshness ? (
+      {!haveLiveness ? (
         <div className="rounded-xl border border-neutral-300 bg-neutral-50 px-4 py-2.5 text-sm text-neutral-600">
-          Capture freshness unknown — no <code className="rounded bg-neutral-100 px-1 py-0.5">freshness</code> in this snapshot. Re-run{" "}
+          Capture liveness unknown — no heartbeat in this snapshot. Re-run{" "}
           <code className="rounded bg-neutral-100 px-1 py-0.5">emit-ops-snapshot.js</code>.
         </div>
-      ) : stale ? (
-        <div
-          className={`rounded-xl border-2 px-4 py-3 text-sm font-semibold ${
-            level === "red" ? "border-red-400 bg-red-50 text-red-800" : "border-amber-400 bg-amber-50 text-amber-900"
-          }`}
-        >
-          ⚠ Last swept {days} days ago{freshness!.lastSwept ? ` (${freshness!.lastSwept})` : ""} — capture has not run.
-          <span className="ml-1 font-normal">
-            New orders, deliveries, and receipts may be missing from this view. Run the order desk or the daily brief to resweep.
-          </span>
+      ) : cloudLive ? (
+        <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2 text-xs font-medium text-emerald-700">
+          ✓ Cloud capture live — swept {fmtAgo(cloudH)} (BOLs, orders, PODs; runs 4×/day)
+          {freshness?.lastSwept ? <span className="ml-1 font-normal text-emerald-600">· newest order {freshness.lastSwept}</span> : null}
         </div>
       ) : (
-        <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2 text-xs font-medium text-emerald-700">
-          ✓ Swept {days === 0 ? "today" : "yesterday"}
-          {freshness!.lastSwept ? ` · latest movement ${freshness!.lastSwept}` : ""} — capture is current.
+        <div className="rounded-xl border-2 border-red-400 bg-red-50 px-4 py-3 text-sm font-semibold text-red-800">
+          ⚠ Cloud capture hasn’t run in {fmtAgo(cloudH)} — the headless sweep may be down.
+          <span className="ml-1 font-normal">New orders, deliveries, and receipts may be missing. Check the capture-sweep workflow.</span>
+        </div>
+      )}
+      {desktopStale && (
+        <div className="rounded-xl border border-amber-300 bg-amber-50 px-4 py-2 text-xs font-medium text-amber-900">
+          Desktop capture (Settle/AR + texts) last ran {fmtAgo(desktopH)} — open the Claude app to catch those up.
+          <span className="ml-1 font-normal">Inventory is unaffected (it rides cloud capture); this is AR/cash visibility.</span>
         </div>
       )}
       {freshness?.sources && <SourceFreshnessStrip sources={freshness.sources} />}

@@ -309,6 +309,9 @@ export default function OpsView({ snapshot, storeError }: Props) {
         </Section>
       )}
 
+      {/* COST — item-by-item unit cost, the permanent home for "what does a unit cost and why" */}
+      {s.cogs && s.cogs.allInPerUnit && <CostBreakdown c={s.cogs} />}
+
       {/* ORDERS */}
       <Section id="orders" eyebrow="This week" title="Open orders — by channel">
         <div className="overflow-x-auto rounded-xl border border-neutral-200 bg-white shadow-sm">
@@ -488,6 +491,91 @@ function FreshnessBanner({
 // calendar, meraki), each green/amber/red by its own staleness so a single quiet channel is
 // visible at a glance. A source with no local cache (calendar is live-queried) shows grey. Slips
 // go red on a backlog (photos arrived but unread) even with no processed date.
+// Item-by-item unit cost. The permanent, readable home for "what does a unit cost and why" — the
+// buckets that sum to all-in, then every line (co-man, packaging, per-SKU ingredients). Reads
+// spine/cogs.json via the snapshot, so it stays current and is one place, not a spreadsheet tab.
+function CostBreakdown({ c }: { c: NonNullable<OpsSnapshot["cogs"]> }) {
+  const skus = [
+    { k: "buf" as const, name: "Buffalo" },
+    { k: "fo" as const, name: "French Onion" },
+    { k: "gr" as const, name: "Garden Ranch" },
+  ];
+  const all = c.allInPerUnit!;
+  const cm = c.coman?.perUnit ?? 0;
+  const pk = c.packaging?.perUnit ?? 0;
+  const fr = c.freight?.perUnit ?? 0;
+  const m = (n?: number) => (n == null ? "—" : `$${n.toFixed(2)}`);
+  return (
+    <Section id="cogs" eyebrow="What it costs to make" title="Cost per unit — item by item">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        {skus.map((s) => (
+          <div key={s.k} className="rounded-xl border border-neutral-200 bg-white p-3 shadow-sm">
+            <div className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">{s.name}</div>
+            <div className="text-2xl font-semibold">{m(all[s.k])}</div>
+            <div className="text-xs text-neutral-500">{m(all[s.k] * 6)}/case</div>
+          </div>
+        ))}
+        <div className="rounded-xl border border-red-200 bg-red-50 p-3 shadow-sm">
+          <div className="text-[11px] font-semibold uppercase tracking-wide text-red-600">Blended</div>
+          <div className="text-2xl font-semibold text-red-700">{m(all.blended)}</div>
+          <div className="text-xs text-red-500">{m(all.blended * 6)}/case</div>
+        </div>
+      </div>
+
+      <div className="mt-4 overflow-x-auto rounded-xl border border-neutral-200 bg-white shadow-sm">
+        <table className="w-full border-collapse">
+          <thead>
+            <tr><Th>Bucket</Th><Th right>Buffalo</Th><Th right>French Onion</Th><Th right>Garden Ranch</Th></tr>
+          </thead>
+          <tbody>
+            <tr><Td>Co-man{c.coman?.supplier ? ` · ${c.coman.supplier}` : ""}</Td><Td right>{m(cm)}</Td><Td right>{m(cm)}</Td><Td right>{m(cm)}</Td></tr>
+            <tr><Td>Packaging</Td><Td right>{m(pk)}</Td><Td right>{m(pk)}</Td><Td right>{m(pk)}</Td></tr>
+            <tr><Td>Ingredients</Td><Td right>{m(c.ingredients?.buf.perUnit)}</Td><Td right>{m(c.ingredients?.fo.perUnit)}</Td><Td right>{m(c.ingredients?.gr.perUnit)}</Td></tr>
+            <tr><Td>Freight</Td><Td right>{m(fr)}</Td><Td right>{m(fr)}</Td><Td right>{m(fr)}</Td></tr>
+            <tr className="font-semibold text-red-700"><Td>All-in / unit</Td><Td right>{m(all.buf)}</Td><Td right>{m(all.fo)}</Td><Td right>{m(all.gr)}</Td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div className="mt-4 grid gap-4 md:grid-cols-2">
+        <CostList title={`Co-man${c.coman?.supplier ? ` — ${c.coman.supplier}` : ""}`} lines={c.coman?.lines ?? []} note={c.coman?.note} />
+        <CostList title="Packaging" lines={c.packaging?.lines ?? []} note={c.packaging?.note} />
+      </div>
+      <div className="mt-4 grid gap-4 md:grid-cols-3">
+        {skus.map((s) => (
+          <CostList key={s.k} title={`${s.name} — ingredients`} lines={c.ingredients?.[s.k].lines ?? []} />
+        ))}
+      </div>
+      <p className="mt-3 text-xs text-neutral-500">
+        Lines are penny-rounded (they sum to within ~$0.02 of each subtotal). Source: SOP model BOM
+        {c.asOf ? `, ${c.asOf}` : ""}. Scaled target ~{m(c.scaledTargetPerUnit?.blended)}/unit at WFM launch. Update a line when a supplier price moves.
+      </p>
+    </Section>
+  );
+}
+
+function CostList({ title, lines, note }: { title: string; lines: { item: string; perUnit: number; supplier?: string; note?: string }[]; note?: string }) {
+  return (
+    <div className="rounded-xl border border-neutral-200 bg-white p-3 shadow-sm">
+      <div className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-neutral-500">{title}</div>
+      <table className="w-full border-collapse text-sm">
+        <tbody>
+          {lines.map((l, i) => (
+            <tr key={i} className="border-t border-neutral-100 first:border-t-0">
+              <td className="py-1 pr-2 text-neutral-700">
+                {l.item}
+                {l.supplier ? <span className="text-neutral-400"> · {l.supplier}</span> : null}
+              </td>
+              <td className="py-1 text-right font-mono tabular-nums text-neutral-700">${l.perUnit.toFixed(2)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      {note && <p className="mt-1 text-[11px] leading-snug text-neutral-400">{note}</p>}
+    </div>
+  );
+}
+
 function SourceFreshnessStrip({
   sources,
 }: {

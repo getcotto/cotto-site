@@ -184,6 +184,18 @@ export type OpsSnapshot = {
       }
     >;
   };
+  // Item-by-item unit cost — the maintained COGS breakdown from spine/cogs.json, so "what does a unit
+  // cost and why" has a permanent, readable home instead of a spreadsheet tab.
+  cogs?: {
+    asOf?: string;
+    coman?: { supplier?: string; perUnit: number; lines: { item: string; perUnit: number }[]; note?: string };
+    packaging?: { perUnit: number; lines: { item: string; perUnit: number; supplier?: string }[]; note?: string };
+    ingredients?: Record<"buf" | "fo" | "gr", { perUnit: number; lines: { item: string; perUnit: number; note?: string }[] }>;
+    freight?: { perUnit: number; note?: string };
+    allInPerUnit?: { buf: number; fo: number; gr: number; blended: number };
+    allInPerCase?: { buf: number; fo: number; gr: number; blended: number };
+    scaledTargetPerUnit?: { blended: number; note?: string };
+  };
 };
 
 export async function getOpsSnapshot(): Promise<OpsSnapshot | null> {

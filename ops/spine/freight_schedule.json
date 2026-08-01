@@ -1,16 +1,1 @@
-[
-  {
-    "pickup": "2026-07-31",
-    "runs": [
-      "7/23-24 (growth, back-to-back)",
-      "7/27-29"
-    ],
-    "buf": 5,
-    "fo": 8,
-    "gr": 7,
-    "pickup_dow": "Fri",
-    "book_by": "2026-07-27",
-    "book_by_dow": "Mon",
-    "overdue": true
-  }
-]
+[]

@@ -6946,9 +6946,9 @@
     "units": 48,
     "price": 0,
     "total": 0,
-    "status": "Scheduled",
+    "status": "Delivered",
     "basis": "planned",
-    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's. CLOSED 2026-08-02 by close_stale_orders.js: matched the delivery event BOL-073026-001 on 2026-07-30 (same stop, 8 cs of BUF out, covering this 8). The row had been left open since 2026-07-30."
   },
   {
     "date": "2026-07-30",
@@ -6961,9 +6961,9 @@
     "units": 48,
     "price": 0,
     "total": 0,
-    "status": "Scheduled",
+    "status": "Delivered",
     "basis": "planned",
-    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's. CLOSED 2026-08-02 by close_stale_orders.js: matched the delivery event BOL-073026-001 on 2026-07-30 (same stop, 8 cs of FO out, covering this 8). The row had been left open since 2026-07-30."
   },
   {
     "date": "2026-07-30",
@@ -6976,9 +6976,9 @@
     "units": 18,
     "price": 0,
     "total": 0,
-    "status": "Scheduled",
+    "status": "Delivered",
     "basis": "planned",
-    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's. CLOSED 2026-08-02 by close_stale_orders.js: matched the delivery event BOL-073026-001 on 2026-07-30 (same stop, 3 cs of BUF out, covering this 3). The row had been left open since 2026-07-30."
   },
   {
     "date": "2026-07-30",
@@ -6991,9 +6991,9 @@
     "units": 12,
     "price": 0,
     "total": 0,
-    "status": "Scheduled",
+    "status": "Delivered",
     "basis": "planned",
-    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's. CLOSED 2026-08-02 by close_stale_orders.js: matched the delivery event BOL-073026-001 on 2026-07-30 (same stop, 2 cs of FO out, covering this 2). The row had been left open since 2026-07-30."
   },
   {
     "date": "2026-07-30",
@@ -7006,9 +7006,9 @@
     "units": 12,
     "price": 0,
     "total": 0,
-    "status": "Scheduled",
+    "status": "Delivered",
     "basis": "planned",
-    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's. CLOSED 2026-08-02 by close_stale_orders.js: matched the delivery event BOL-073026-001 on 2026-07-30 (same stop, 2 cs of GR out, covering this 2). The row had been left open since 2026-07-30."
   },
   {
     "date": "2026-07-30",
@@ -7021,9 +7021,9 @@
     "units": 36,
     "price": 0,
     "total": 0,
-    "status": "Scheduled",
+    "status": "Delivered",
     "basis": "planned",
-    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's. CLOSED 2026-08-02 by close_stale_orders.js: matched the delivery event BOL-073026-001 on 2026-07-30 (same stop, 6 cs of BUF out, covering this 6). The row had been left open since 2026-07-30."
   },
   {
     "date": "2026-07-30",
@@ -7036,9 +7036,9 @@
     "units": 30,
     "price": 0,
     "total": 0,
-    "status": "Scheduled",
+    "status": "Delivered",
     "basis": "planned",
-    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's. CLOSED 2026-08-02 by close_stale_orders.js: matched the delivery event BOL-073026-001 on 2026-07-30 (same stop, 5 cs of FO out, covering this 5). The row had been left open since 2026-07-30."
   },
   {
     "date": "2026-07-30",
@@ -7051,9 +7051,9 @@
     "units": 18,
     "price": 0,
     "total": 0,
-    "status": "Scheduled",
+    "status": "Delivered",
     "basis": "planned",
-    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's. CLOSED 2026-08-02 by close_stale_orders.js: matched the delivery event BOL-073026-001 on 2026-07-30 (same stop, 3 cs of GR out, covering this 3). The row had been left open since 2026-07-30."
   },
   {
     "date": "2026-07-30",
@@ -7066,9 +7066,9 @@
     "units": 36,
     "price": 0,
     "total": 0,
-    "status": "Scheduled",
+    "status": "Delivered",
     "basis": "planned",
-    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's. CLOSED 2026-08-02 by close_stale_orders.js: matched the delivery event BOL-073026-001 on 2026-07-30 (same stop, 6 cs of BUF out, covering this 6). The row had been left open since 2026-07-30."
   },
   {
     "date": "2026-07-30",
@@ -7081,9 +7081,9 @@
     "units": 24,
     "price": 0,
     "total": 0,
-    "status": "Scheduled",
+    "status": "Delivered",
     "basis": "planned",
-    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's. CLOSED 2026-08-02 by close_stale_orders.js: matched the delivery event BOL-073026-001 on 2026-07-30 (same stop, 4 cs of FO out, covering this 4). The row had been left open since 2026-07-30."
   },
   {
     "date": "2026-07-30",
@@ -7096,9 +7096,9 @@
     "units": 42,
     "price": 0,
     "total": 0,
-    "status": "Scheduled",
+    "status": "Delivered",
     "basis": "planned",
-    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's. CLOSED 2026-08-02 by close_stale_orders.js: matched the delivery event BOL-073026-001 on 2026-07-30 (same stop, 7 cs of BUF out, covering this 7). The row had been left open since 2026-07-30."
   },
   {
     "date": "2026-07-30",
@@ -7111,9 +7111,9 @@
     "units": 54,
     "price": 0,
     "total": 0,
-    "status": "Scheduled",
+    "status": "Delivered",
     "basis": "planned",
-    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's. CLOSED 2026-08-02 by close_stale_orders.js: matched the delivery event BOL-073026-001 on 2026-07-30 (same stop, 9 cs of FO out, covering this 9). The row had been left open since 2026-07-30."
   },
   {
     "date": "2026-07-30",
@@ -7126,8 +7126,81 @@
     "units": 24,
     "price": 0,
     "total": 0,
+    "status": "Delivered",
+    "basis": "planned",
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's. CLOSED 2026-08-02 by close_stale_orders.js: matched the delivery event BOL-073026-001 on 2026-07-30 (same stop, 4 cs of GR out, covering this 4). The row had been left open since 2026-07-30."
+  },
+  {
+    "date": "2026-07-31",
+    "account": "Happier Grocery (Soho)",
+    "channel": "Wholesale",
+    "sku": "BUF",
+    "cases": 2,
+    "price": 7.1933,
+    "total": 86.32,
+    "status": "Scheduled",
+    "source": "gmail:19fb92a269ae3d83",
+    "dateBasis": "DELIVERY DATE ESTIMATED — dated to the email-received date; the order says \"this/next week\", not a date. Refine when the route is scheduled.",
+    "notes": "Structured order auto-captured from happier.nyc by ingest_order_emails.js (deterministic parse). Subject: HG ORDER",
+    "units": 12
+  },
+  {
+    "date": "2026-07-31",
+    "account": "Happier Grocery (Soho)",
+    "channel": "Wholesale",
+    "sku": "FO",
+    "cases": 3,
+    "price": 7.1933,
+    "total": 129.48,
+    "status": "Scheduled",
+    "source": "gmail:19fb92a269ae3d83",
+    "dateBasis": "DELIVERY DATE ESTIMATED — dated to the email-received date; the order says \"this/next week\", not a date. Refine when the route is scheduled.",
+    "notes": "Structured order auto-captured from happier.nyc by ingest_order_emails.js (deterministic parse). Subject: HG ORDER",
+    "units": 18
+  },
+  {
+    "date": "2026-08-03",
+    "invoice": "BOL-080326-001",
+    "account": "Route 080326-001",
+    "channel": "Wholesale",
+    "sku": "BUF",
+    "flavor": "Buffalo",
+    "cases": 60,
+    "units": 360,
+    "price": 0,
+    "total": 0,
     "status": "Scheduled",
     "basis": "planned",
-    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 073026-001 (2026-07-30). Captured by ingest_outbound_bol.js from msg 19faf9db3a7a45ab. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 080326-001 (2026-08-03). Captured by ingest_outbound_bol.js from msg 19fbadfa76f865ac. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+  },
+  {
+    "date": "2026-08-03",
+    "invoice": "BOL-080326-001",
+    "account": "Route 080326-001",
+    "channel": "Wholesale",
+    "sku": "FO",
+    "flavor": "French Onion",
+    "cases": 40,
+    "units": 240,
+    "price": 0,
+    "total": 0,
+    "status": "Scheduled",
+    "basis": "planned",
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 080326-001 (2026-08-03). Captured by ingest_outbound_bol.js from msg 19fbadfa76f865ac. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+  },
+  {
+    "date": "2026-08-03",
+    "invoice": "BOL-080326-001",
+    "account": "Route 080326-001",
+    "channel": "Wholesale",
+    "sku": "GR",
+    "flavor": "Garden Ranch",
+    "cases": 60,
+    "units": 360,
+    "price": 0,
+    "total": 0,
+    "status": "Scheduled",
+    "basis": "planned",
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 080326-001 (2026-08-03). Captured by ingest_outbound_bol.js from msg 19fbadfa76f865ac. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
   }
 ]

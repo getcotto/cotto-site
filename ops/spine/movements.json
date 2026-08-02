@@ -1702,5 +1702,65 @@
     "dir": "Out",
     "lot": "FEFO",
     "notes": ""
+  },
+  {
+    "date": "2026-07-30",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Pop Up Grocer (West Village)",
+    "buf": 8,
+    "fo": 8,
+    "gr": 0,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-30",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Happier Grocery (Soho)",
+    "buf": 3,
+    "fo": 2,
+    "gr": 2,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-30",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Fairway Kips Bay",
+    "buf": 6,
+    "fo": 5,
+    "gr": 3,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-30",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Butterfield - Madison",
+    "buf": 6,
+    "fo": 4,
+    "gr": 0,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": ""
+  },
+  {
+    "date": "2026-07-30",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Butterfield - Lex",
+    "buf": 7,
+    "fo": 9,
+    "gr": 4,
+    "dir": "Out",
+    "lot": "FEFO",
+    "notes": ""
   }
 ]

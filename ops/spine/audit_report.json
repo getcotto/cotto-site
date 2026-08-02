@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-01",
+  "asOf": "2026-08-02",
   "findings": [
     {
       "sev": "🔴",
@@ -74,7 +74,7 @@
     {
       "sev": "🔴",
       "area": "Freshness",
-      "title": "⚠ SPINE FROZEN — AR last reconciled 2026-07-22 (10d ago). This is a STALE COPY; every number in this report is out of date. DO NOT act on it.",
+      "title": "⚠ SPINE FROZEN — AR last reconciled 2026-07-22 (11d ago). This is a STALE COPY; every number in this report is out of date. DO NOT act on it.",
       "detail": "A routine is reading a frozen spine. Reconcile the source and repoint it before trusting any figure below.",
       "impact": null
     },
@@ -163,13 +163,6 @@
       "impact": null
     },
     {
-      "sev": "🟡",
-      "area": "Freshness",
-      "title": "Spine may be stale (latest delivery 2026-07-22 = 10d ago, latest order 2026-08-03 = -2d ago)",
-      "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
-      "impact": null
-    },
-    {
       "sev": "✅",
       "area": "Open item",
       "title": "[Quality / Neighborly] Neighborly mislabel — Evan will relabel on their own (they have a label maker); NOT a red flag from Neighborly's side anymore",
@@ -179,7 +172,14 @@
     {
       "sev": "✅",
       "area": "Inventory",
-      "title": "On-hand: BUF 671 / FO 822 / GR 482 cs",
+      "title": "On-hand: BUF 641 / FO 794 / GR 473 cs",
+      "detail": "",
+      "impact": null
+    },
+    {
+      "sev": "✅",
+      "area": "Freshness",
+      "title": "Spine fresh (latest event 2026-07-30, latest order 2026-08-03)",
       "detail": "",
       "impact": null
     }

@@ -89,7 +89,9 @@
     },
     "acct_fee_per_wk": 200,
     "model_notes": "70/30 of $12.00 + $200/wk fee. 1x/wk Thu.",
-    "aliases": [],
+    "aliases": [
+      "Pop Up Grocer (Greenwich Village)"
+    ],
     "invoice_rail": "none",
     "expected_cadence": "weekly",
     "delivery": {
@@ -131,7 +133,9 @@
     },
     "acct_fee_per_wk": 0,
     "model_notes": "1x/wk. Tuesday cadence from 5/19. Steady 6/6/6 per recent orders. Buyer Tiffany Tan.",
-    "aliases": [],
+    "aliases": [
+      "Happier Grocery (Soho)"
+    ],
     "invoice_rail": "settle",
     "expected_cadence": "weekly",
     "delivery": {
@@ -208,7 +212,7 @@
     "status": "Active",
     "channel": "Wholesale",
     "open_date": "2026-05-20",
-    "price_per_unit": 6.0,
+    "price_per_unit": 6,
     "payment_terms": "NET 30",
     "weekly_cases": {
       "buf": 8,
@@ -249,7 +253,7 @@
     "status": "Active",
     "channel": "Wholesale",
     "open_date": "2026-05-20",
-    "price_per_unit": 6.0,
+    "price_per_unit": 6,
     "payment_terms": "NET 30",
     "weekly_cases": {
       "buf": 8,
@@ -290,7 +294,7 @@
     "status": "Active",
     "channel": "Wholesale",
     "open_date": "2026-05-20",
-    "price_per_unit": 6.0,
+    "price_per_unit": 6,
     "payment_terms": "NET 30",
     "weekly_cases": {
       "buf": 4,
@@ -331,7 +335,7 @@
     "status": "Active",
     "channel": "Wholesale",
     "open_date": "2026-05-20",
-    "price_per_unit": 6.0,
+    "price_per_unit": 6,
     "payment_terms": "NET 30",
     "weekly_cases": {
       "buf": 4,
@@ -340,7 +344,9 @@
     },
     "acct_fee_per_wk": 0,
     "model_notes": "Fairway/Wakefern banner (Downtown), 550 2nd Ave. Via Localee. Cost change filed 6/27/26, Wakefern (Ashley Fountain, Village DSD) confirmed set effective 6/30/26: $36.00/case = $6.00/unit, SRP $9.99.",
-    "aliases": [],
+    "aliases": [
+      "Fairway Market - Kips Bay (Kips Bay)"
+    ],
     "invoice_rail": "settle",
     "expected_cadence": "weekly",
     "delivery": {
@@ -505,7 +511,9 @@
     },
     "acct_fee_per_wk": 0,
     "model_notes": "PO #24278. Steady 18/24/8 per 5/14+5/19 orders (GR variable, 5/19 took 0). Tuesday cadence. Buyer Luis Merida.",
-    "aliases": [],
+    "aliases": [
+      "Butterfield Market - Lexington (Upper East Side)"
+    ],
     "invoice_rail": "settle",
     "expected_cadence": "weekly",
     "delivery": {
@@ -550,7 +558,9 @@
     },
     "acct_fee_per_wk": 0,
     "model_notes": "PO #29293. Steady 10/12/15 per 5/14+5/19 avg. Strong GR uptake. Tuesday cadence. Buyer Bielka Marquez.",
-    "aliases": [],
+    "aliases": [
+      "Butterfield Market - Madison (Upper East Side)"
+    ],
     "invoice_rail": "settle",
     "expected_cadence": "weekly",
     "delivery": {

@@ -129,9 +129,14 @@ export default function Dashboard({ initialItems, storeError }: Props) {
 
       <div className="flex items-baseline justify-between mb-4">
         <h1 className="font-display text-3xl text-cotto-red">dash</h1>
-        <button onClick={logout} className="text-xs text-cotto-red/60 hover:text-cotto-red">
-          log out
-        </button>
+        <div className="flex items-center gap-3">
+          <a href="/dash/focus" className="text-xs font-medium text-cotto-red hover:underline">
+            focus →
+          </a>
+          <button onClick={logout} className="text-xs text-cotto-red/60 hover:text-cotto-red">
+            log out
+          </button>
+        </div>
       </div>
 
       <div className="sticky top-0 z-10 bg-brand-cream pt-1 pb-3">

@@ -422,6 +422,7 @@ function Shell({ children, updatedAt, asOf }: { children: ReactNode; updatedAt?:
         <div className="flex items-center gap-4 text-xs text-neutral-500">
           {asOf && <span>as of {fmtDate(asOf)}</span>}
           {updatedAt && <span>updated {timeAgo(updatedAt)}</span>}
+          <Link href="/dash/focus" className="font-medium text-cyan-800 hover:underline">focus</Link>
           <Link href="/dash" className="text-cyan-700 hover:underline">dash</Link>
           <Link href="/dash/ops" className="text-cyan-700 hover:underline">ops</Link>
         </div>

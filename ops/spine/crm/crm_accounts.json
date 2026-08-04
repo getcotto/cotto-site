@@ -169,7 +169,7 @@
    "Marketing launch date to be agreed after distribution/placement is set (not yet dated as of 4/15)",
    "Launch tied to ad calendar: Memorial Day weekend ad considered, then settled on Big Marketing Push ad week of 6/5, featured as 'page 3 story' in promo (Amanda Fischer / Fedele Stella, 5/13). Product brought in 5/28 ahead of the 6/5 ad.",
    "Calendar deadline 2026-08-31, 'Sign up for Fairway NYCFWF (Fedele email).'",
-   "Calendar deadline 2026-08-31 'Sign up for Fairway NYCFWF (Fedele email).'"
+   "Calendar deadline 2026-08-31 'Sign up for Fairway NYCFWF (Fedele email).' Calendar deadline 8/31: sign up for Fairway NYCFWF (per Fedele email)."
   ],
   "thirdParty": [
    "Rainforest Distribution; Dora's Naturals — Perry named and personally intro'd both as the distribution path into Fairway",
@@ -2304,14 +2304,22 @@
      "dan.brooks@wegmans.com"
     ],
     "source": "gmail"
+   },
+   {
+    "name": "Sara Hoffman; Caitlin Maeder",
+    "role": "Sara Hoffman = Fancy Food contact who routed Cotto internally; Caitlin Maeder = the buyer she shared it with",
+    "emails": [
+     "sara.hoffman@wegmans.com"
+    ],
+    "source": "gmail"
    }
   ],
   "lastTouch": "2026-07-13",
   "nextMeeting": null,
   "daysSince": 21,
-  "owes": "them",
+  "owes": "us",
   "due": true,
-  "dueReason": "Waiting on them 21 days - chase",
+  "dueReason": "We owe the next move",
   "statuses": [
    {
     "date": "2026-07-13",
@@ -2322,6 +2330,11 @@
     "date": "2026-07-13",
     "src": "gmail",
     "text": "Warm. Sara sharing with Caitlin Maeder. Parallel push via UNFI: account manager Lisa Stoenner (lisa.stoenner@unfi.com) + Aaron May (AMay@unfi.com) requested Wegmans samples; shipped 7/7 (UPS 1Z17J0571529157024)."
+   },
+   {
+    "date": "2026-07-13",
+    "src": "gmail",
+    "text": "WARM, SAMPLE SEND SCHEDULED FOR LATE AUGUST. Met at Fancy Food; Kendall followed up 7/12 noting samples had gone to Caitlin Maeder and the team. Sara replied 7/13 that she would share with Caitlin and let her know. No email movement since 7/13, but the account is live on the calendar: 8/21 email Sara to confirm sample send timing, then 8/24 send new samples to Wegmans. Jake Meister accepted a \"Wegmans samples\" calendar item 7/27, so River Sea Network is involved in the push."
    },
    {
     "date": "2026-06-12",
@@ -2344,7 +2357,8 @@
   "notes": [
    "Caitlin Maeder is the operative Wegmans buyer contact. Runs in parallel with the UNFI-brokered Wegmans sample request (Lisa Stoenner) — two paths into the same retailer.",
    "Third Wegmans path, cold and cold-dead. The Hoffman/Maeder and UNFI/Stoenner paths are live — consolidate.",
-   "Two paths into Wegmans: direct (Sara Hoffman / Caitlin Maeder) and via UNFI (Lisa Stoenner)."
+   "Two paths into Wegmans: direct (Sara Hoffman / Caitlin Maeder) and via UNFI (Lisa Stoenner).",
+   "Wegmans was also named as an active post-show conversation in the 7/29 Lunr Capital call recap. No reply yet from Caitlin Maeder directly and no email address captured for her, so do not invent one. A RangeMe \"Wegmans Private Label Crackers\" campaign email 7/30 is unrelated to Cotto."
   ]
  },
  {
@@ -3082,13 +3096,18 @@
     "source": "gmail"
    }
   ],
-  "lastTouch": "2026-03-22",
+  "lastTouch": "2026-08-03",
   "nextMeeting": null,
-  "daysSince": 134,
+  "daysSince": 0,
   "owes": "us",
   "due": true,
   "dueReason": "We owe the next move",
   "statuses": [
+   {
+    "date": "2026-08-03",
+    "src": "gmail",
+    "text": "MARKETING PITCH, NO ACTION TAKEN. Airgoods emailed 8/3 pitching its monthly Sample Box program, claiming over 1000 independent grocers receive it, and naming Happier Grocery, Nude Miami, Laurel Supply and Citarella as recipients. Three of those four are already Cotto accounts or live conversations, so the named reach is credible but partly redundant."
+   },
    {
     "date": "2026-03-22",
     "src": "gmail",
@@ -3104,10 +3123,13 @@
    "IMPORTANT — Sample Box Program deadline FEB 8 2026 (from 2026-01-28: 'We'd love to invite you to participate in our Sample Box Program to help kickstart your wholesale growth in 2026! (Feb 8 is the deadline)'). Their 2026-01-29 follow-up adds the reset rationale: 'Many of our retailers use the beginning of the year to reset shelves...'",
    "Airgoods 'Spring Discovery Week' — new-account discovery push with a 10% match, opt-in deadline Friday (week of 3/25)"
   ],
-  "thirdParty": [],
+  "thirdParty": [
+   "Happier Grocery; Nude Miami; Citarella; Laurel Supply"
+  ],
   "threads": [
    "19b6b7e13b147c56",
-   "19cd3ddb07f1f5db"
+   "19cd3ddb07f1f5db",
+   "19fc8ffb9da7c743"
   ],
   "sources": [
    "gmail"
@@ -3118,7 +3140,8 @@
   ],
   "notes": [
    "A live, paid-for wholesale discovery channel sitting at zero because a storefront was never finished. Either finish it or kill it — the Feb 8 sample-box deadline is the forcing function.",
-   "Refrigerated category on Airgoods launched ~late March 2026 specifically — timing lines up with Cotto. Storefront onboarding was still incomplete as of the last nudge."
+   "Refrigerated category on Airgoods launched ~late March 2026 specifically — timing lines up with Cotto. Storefront onboarding was still incomplete as of the last nudge.",
+   "Low priority. The named grocers are largely accounts Cotto already has or is already talking to directly, so the incremental value is Laurel Supply plus unnamed independents. Bulk-sample cost against a cold-chain constraint makes this a real decision, not an automatic yes."
   ]
  },
  {
@@ -6912,6 +6935,56 @@
   ]
  },
  {
+  "id": "internet-icons-the-well-rounded-human",
+  "company": "Internet Icons / The Well Rounded Human",
+  "type": "other",
+  "stage": "in-talks",
+  "doors": null,
+  "plannedDoors": null,
+  "plannedOpen": null,
+  "plannedChannel": null,
+  "inPlan": false,
+  "contacts": [
+   {
+    "name": "Kyla Foroutan; Jon (The Well Rounded Human); Ashley",
+    "role": "Kyla Foroutan = founder, Internet Icons; Jon = creator, The Well Rounded Human",
+    "emails": [
+     "kyla@interneticons.co",
+     "jon@interneticons.co",
+     "ashley@interneticons.co"
+    ],
+    "source": "gmail"
+   }
+  ],
+  "lastTouch": "2026-08-03",
+  "nextMeeting": null,
+  "daysSince": 0,
+  "owes": "us",
+  "due": true,
+  "dueReason": "We owe the next move",
+  "statuses": [
+   {
+    "date": "2026-08-03",
+    "src": "gmail",
+    "text": "NEW INBOUND, MOVING FAST. Jon reached out on Instagram and Kyla followed by email 8/3. They are running a NYC public schools initiative with The Well Rounded Human, bringing healthier options into schools for a day, with schools ranging from 300 to 3,000 students. Current sponsors named: Swoon, Buoy, Pioneer Pastures; Sweetgreen and Avo did giveaway videos and are joining the school series. Kendall replied same day asking about timing, volume, giveaway format and cold-chain logistics given the 60-day refrigerated shelf life. Kyla 8/3: confirmed they can pick up in Brooklyn and asked when Kendall is free to talk this week. That reply is UNREAD."
+   }
+  ],
+  "reviewWindows": [],
+  "thirdParty": [],
+  "threads": [
+   "19fc7ab01da788e9"
+  ],
+  "sources": [
+   "gmail"
+  ],
+  "aliases": [
+   "Internet Icons / The Well Rounded Human"
+  ],
+  "notes": [
+   "Marketing and sampling, not a retail buyer, but it moves real product out of Brooklyn cold storage so it needs an inventory decision. Brooklyn pickup is confirmed, which removes the cold-chain risk. Kendall owes a call time this week."
+  ]
+ },
+ {
   "id": "isle-of-us",
   "company": "Isle of Us",
   "type": "retailer",
@@ -9301,15 +9374,31 @@
      "USBrandbank.customer-changes@smb.nielseniq.com"
     ],
     "source": "gmail"
+   },
+   {
+    "name": "Monica Burton; Victor Holland; Colleen McGinnis; Cedric Tippett Jr",
+    "role": "Monica Burton = Director, Account Development, Perishables (new account rep); Victor Holland = outgoing rep; Cedric Tippett Jr = Byzzer sales",
+    "emails": [
+     "Monica.Burton@nielseniq.com",
+     "Victor.Holland@nielseniq.com",
+     "Colleen.McGinnis@nielseniq.com",
+     "Cedric.TippettJr@nielseniq.com"
+    ],
+    "source": "gmail"
    }
   ],
-  "lastTouch": "2026-07-22",
+  "lastTouch": "2026-08-03",
   "nextMeeting": null,
-  "daysSince": 12,
-  "owes": "them",
-  "due": false,
-  "dueReason": null,
+  "daysSince": 0,
+  "owes": "us",
+  "due": true,
+  "dueReason": "We owe the next move",
   "statuses": [
+   {
+    "date": "2026-08-03",
+    "src": "gmail",
+    "text": "ACCOUNT REP CHANGED. Victor Holland wrote 7/31 introducing Monica Burton as the point of contact at NIQ going forward; Monica leads the Fresh Account Development team. Monica 7/31: she was behind the scenes on the Pitch Slam and attended C360 in person, \"It was great to see you pitch live.\" Kendall offered times 8/3; Monica booked a Teams call, \"NielsenIQ Discussion\", Tue 8/4 4:30pm ET. Separately, Cedric Tippett Jr wrote 8/3 on the Byzzer data thread: he has not heard back and will assume priorities shifted unless Kendall says otherwise."
+   },
    {
     "date": "2026-07-22",
     "src": "gmail",
@@ -9336,7 +9425,8 @@
   "threads": [
    "19d25c4ac9c280d1",
    "19e1d54009b056f5",
-   "19f83dde2daa6a99"
+   "19f83dde2daa6a99",
+   "19fb90edf7f28037"
   ],
   "sources": [
    "gmail"
@@ -9348,7 +9438,8 @@
   "notes": [
    "⭐ This is a genuine, unblocked route to a Whole Foods decision-maker that bypasses the stalled Round 9 / Cynthia Hwang thread. Acosta is a major broker. NIQ data partner assigned: Victor Holland (Victor.Holland@nielseniq.com, Associate Director Sales, 786.523.6210) who supplied category reports and held a call 4/15. Separate NIQ pitch support for the NNY Naturally Rising finalists came via Dawson Phan and Alessandra Andrade Balerini.",
    "Retail-adjacent — included because Cotto DOUBLE-WON the NIQ Pitch Slam (per internal memory) and NIQ category data directly feeds buyer pitches. Fellow finalists: jt@craftmix.com, elina@eswbeauty.com, kris@morelumen.com, michael@eatrotten.com. Also Victor Holland sends the NIQ monthly Blueprint. Monica (Director, Fresh Client Development, NielsenIQ) sent a LinkedIn connect request 6/10.",
-   "BrandBank gates the Wakefern NIF, so this matters to retail. BrandBank flagged that the account name had flipped between Cotto, Inc. and Dipsy LLC (d/b/a Cotto) and asked for confirmation plus documentation. Kendall confirmed Cotto, Inc. on 7/22 and sent the certificate, explaining the sample order had gone in under Dipsy LLC. Dawn replied 7/22 that she amended the company name on the ordering account and asked the NIQ team to update the invoicing account. Cc Avery.Holmes@nielseniq.com. Nothing owed by Kendall."
+   "BrandBank gates the Wakefern NIF, so this matters to retail. BrandBank flagged that the account name had flipped between Cotto, Inc. and Dipsy LLC (d/b/a Cotto) and asked for confirmation plus documentation. Kendall confirmed Cotto, Inc. on 7/22 and sent the certificate, explaining the sample order had gone in under Dipsy LLC. Dawn replied 7/22 that she amended the company name on the ordering account and asked the NIQ team to update the invoicing account. Cc Avery.Holmes@nielseniq.com. Nothing owed by Kendall.",
+   "Relationship origin is the NIQ 2026 Pitch Slam double-win. CONTACT CHANGE: Victor Holland is no longer the day-to-day rep, update saved details to Monica Burton (office 443-808-8723, mobile 443-214-9460). Cedric Tippett Jr / Byzzer is a separate paid-data upsell thread going cold on Cotto side."
   ]
  },
  {
@@ -10723,6 +10814,56 @@
   ]
  },
  {
+  "id": "specialty-food-association",
+  "company": "Specialty Food Association",
+  "type": "other",
+  "stage": "passed",
+  "doors": null,
+  "plannedDoors": null,
+  "plannedOpen": null,
+  "plannedChannel": null,
+  "inPlan": false,
+  "contacts": [
+   {
+    "name": "sofi Awards team",
+    "role": "Awards program administrator",
+    "emails": [
+     "sofiawards@specialtyfood.com"
+    ],
+    "source": "gmail"
+   }
+  ],
+  "lastTouch": "2026-08-03",
+  "nextMeeting": null,
+  "daysSince": 0,
+  "owes": "us",
+  "due": false,
+  "dueReason": null,
+  "statuses": [
+   {
+    "date": "2026-08-03",
+    "src": "gmail",
+    "text": "ENTERED, SAMPLES NOW DUE. Two 2027 sofi Award entries submitted 7/31 in the Salsas and Dips category, invoice #16648, $125 standard entry fee each, confirmed 8/1. On 8/3 the SFA wrote that the application deadline has passed and it is time to ship samples as soon as possible. Kendall has already staged the cold-chain plan on the calendar: prep samples 8/11, ship Next Day 8/18 to arrive Wed 8/19, with 8/26 marked as the last day to ship so samples arrive Thu 8/27."
+   }
+  ],
+  "reviewWindows": [
+   "sofi Awards sample shipment: ship 8/18 for 8/19 arrival, hard last-ship date 8/26 for 8/27 arrival."
+  ],
+  "thirdParty": [],
+  "threads": [
+   "19fc8d7421d9e130"
+  ],
+  "sources": [
+   "gmail"
+  ],
+  "aliases": [
+   "Specialty Food Association (sofi Awards)"
+  ],
+  "notes": [
+   "Not a retailer, but a category award with a firm sample cutoff competing for the same cold-chain sample capacity as buyer sends (Wegmans 8/24, Eco-Meal 8/27). Two entries were paid for, so confirm which SKUs were entered against invoice #16648 before shipping."
+  ]
+ },
+ {
   "id": "startup-cpg",
   "company": "Startup CPG",
   "type": "retailer",
@@ -10775,15 +10916,28 @@
      "patricia@startupcpg.com"
     ],
     "source": "gmail"
+   },
+   {
+    "name": "Startup CPG community team",
+    "role": "Brand community running retailer sampling programs and pitch slams",
+    "emails": [
+     "community@startupcpg.com"
+    ],
+    "source": "gmail"
    }
   ],
-  "lastTouch": "2026-07-27",
+  "lastTouch": "2026-08-03",
   "nextMeeting": null,
-  "daysSince": 7,
+  "daysSince": 0,
   "owes": "us",
   "due": true,
   "dueReason": "We owe the next move",
   "statuses": [
+   {
+    "date": "2026-08-03",
+    "src": "gmail",
+    "text": "THREE LIVE PROGRAMS, ALL WITH DEADLINES. 1) \"Apply to sample for The Fresh Market\", emailed 8/3 with limited spots remaining. This is currently the live route into TFM since Devin Stanley said the set is not under review. 2) Fresh Thyme Innovation Pitch Slam, last call 8/1 for an 8/2 deadline; Kendall submitted the brand application 8/1. 3) Winter FancyFaire section, 38 spots, Jan 17-19 in SF, application opened 8/1. Also promoting a Further event 8/27 and a Brooklyn media panel 8/4."
+   },
    {
     "date": "2026-07-27",
     "src": "gmail",
@@ -10808,11 +10962,6 @@
     "date": "2026-02-27",
     "src": "gmail",
     "text": "Selected Cotto for FIVE Expo West 1:1 buyer meetings, notified 2/26-2/27. Kendall ACCEPTED: UNFI, Happier Grocery (Tiffany Tan), Gourmet Food International (Chris Baum), Good Stuff Distributors, and Hungryroot (Clare Blunt). Kendall DECLINED Good Eggs (Jordana Fuchs-Chesney): 'Unfortunately I will be sampling Cotto at an event that conflicts with this time slot and am unable to attend.'"
-   },
-   {
-    "date": "2025-10-31",
-    "src": "gmail",
-    "text": "PASSED / REJECTED. Cotto applied to the Startup CPG x Sprouts Pitch Slam (Phoenix, AZ, November 2025); declined 2025-10-31."
    }
   ],
   "reviewWindows": [
@@ -10835,7 +10984,8 @@
    "19d69b35734997da",
    "19e9952f7fd626a1",
    "19ed6895baf31897",
-   "19fa5b4297a0dcc7"
+   "19fa5b4297a0dcc7",
+   "19fc9dc3097b59d9"
   ],
   "sources": [
    "gmail"
@@ -11159,7 +11309,7 @@
   "inPlan": false,
   "contacts": [
    {
-    "name": "Maddie",
+    "name": "Maddie Serviente; Alyssa; Chris; Adam",
     "role": "Portfolio/founder relations",
     "emails": [
      "maddie@wearetheangelgroup.com"
@@ -11177,11 +11327,11 @@
    {
     "date": "2026-08-03",
     "src": "gmail",
-    "text": "Raise CLOSED; TAG now an active investor relationship. Maddie 8/3: 'We are so thrilled to officially have Cotto as a portfolio company of The Angel Group... I wanted to reach out to get our ongoing calls on the books. We typically do quarterly or bi-[annual].' Kendall accepted quarterly calls; after scheduling back-and-forth they landed on Sep 8 10am PST for the first call. The ~$1M seed SAFE ($6M post, TAG-led) is funded - an $800,000 wire from 'Cotto0626, a Series of CGF2021 LLC' landed 7/30 and the Sydecar postmoney SAFE completed via DocuSign 7/30."
+    "text": "Raise CLOSED; TAG now an active investor relationship. Maddie 8/3: 'We are so thrilled to officially have Cotto as a portfolio company of The Angel Group... I wanted to reach out to get our ongoing calls on the books. We typically do quarterly or bi-[annual].' Kendall accepted quarterly calls; after scheduling back-and-forth they landed on Sep 8 10am PST for the first call. The ~$1M seed SAFE ($6M post, TAG-led) is funded - an $800,000 wire from 'Cotto0626, a Series of CGF2021 LLC' landed 7/30 and the Sydecar postmoney SAFE completed via DocuSign 7/30. Maddie sent the recurring calendar invite 8/3: \"Cotto x TAG Quarterly Sync\", every 3 months, 1-2pm ET on the second Tuesday, with Alyssa, Chris and Adam from TAG also invited."
    }
   ],
   "reviewWindows": [
-   "First quarterly TAG portfolio call: 2026-09-08 10am PST."
+   "Quarterly TAG sync, recurring 2nd Tuesday 1pm ET, first call Sep 8 2026."
   ],
   "thirdParty": [],
   "threads": [
@@ -11544,6 +11694,54 @@
   ],
   "notes": [
    "Denver, CO. Upscale convenience/gourmet. Out of region."
+  ]
+ },
+ {
+  "id": "true-food-kitchen",
+  "company": "True Food Kitchen",
+  "type": "retailer",
+  "stage": "in-talks",
+  "doors": null,
+  "plannedDoors": null,
+  "plannedOpen": null,
+  "plannedChannel": null,
+  "inPlan": false,
+  "contacts": [
+   {
+    "name": "Gabbey Raissen",
+    "role": "Corporate Chef",
+    "emails": [
+     "gabbey.raissen@truefoodkitchen.com"
+    ],
+    "source": "gmail"
+   }
+  ],
+  "lastTouch": "2026-08-03",
+  "nextMeeting": null,
+  "daysSince": 0,
+  "owes": "us",
+  "due": true,
+  "dueReason": "We owe the next move",
+  "statuses": [
+   {
+    "date": "2026-08-03",
+    "src": "gmail",
+    "text": "NEW INBOUND, UNANSWERED. Came in through the Shopify contact form 8/3 6:17pm and was forwarded from hi@getcotto.com. Gabbey Raissen, Corporate Chef at True Food Kitchen: \"We are currently opening a new restaurant in Boulder that will include a cafe inside, and we would love to explore a potential partnership with Cotto. Would it be possible to get the flavors to try?\" A sample request plus a partnership opening. Still UNREAD and unanswered as of 8/3."
+   }
+  ],
+  "reviewWindows": [],
+  "thirdParty": [],
+  "threads": [
+   "19fc9b8c58fce734"
+  ],
+  "sources": [
+   "gmail"
+  ],
+  "aliases": [
+   "True Food Kitchen"
+  ],
+  "notes": [
+   "True Food Kitchen is a national health-forward restaurant chain, so this is foodservice plus an in-store cafe rather than classic grocery retail. Boulder CO, which is near the Pueblo co-man. No ship address, volume or timeline given yet, so all three are open questions for the reply."
   ]
  },
  {

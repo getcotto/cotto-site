@@ -142,6 +142,27 @@ export async function setResult(id: string, status: FocusRequestStatus): Promise
   await trimResults(c);
 }
 
+// Mark a request done/error, preserving its type/itemId/createdAt from the seeded
+// row. Used by the local worker via POST /api/dash/focus/request/complete. Falls back
+// to sane defaults if the original status row has already expired out of the hash.
+export async function completeResult(
+  id: string,
+  status: "done" | "error",
+  message?: string
+): Promise<void> {
+  const existing = await getResult(id);
+  const now = new Date().toISOString();
+  await setResult(id, {
+    id,
+    type: existing?.type ?? "refresh",
+    itemId: existing?.itemId,
+    status,
+    message,
+    createdAt: existing?.createdAt ?? now,
+    updatedAt: now,
+  });
+}
+
 // Read one request's status (UI polling). Null when unknown/expired.
 export async function getResult(id: string): Promise<FocusRequestStatus | null> {
   const c = await client();

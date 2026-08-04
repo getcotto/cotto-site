@@ -1,4 +1,4 @@
-447 raw records -> 174 accounts
+520 raw records -> 198 accounts
 
 AWG
     <- AWG (Associated Wholesale Grocers)
@@ -26,6 +26,8 @@ Butterfield Market
     <- Butterfield Market (Lexington + Madison)
 California Milk Advisory Board
     <- California Milk Advisory Board (CMAB)
+Carriacou Logistics
+    <- Carriacou Logistics (Brooklyn cold 3PL)
 Castaway Cafe
     <- Castaway Cafe (inside the private Swordfish Beach Club, Westhampton Beach NY)
 ChicExecs
@@ -35,17 +37,21 @@ City Acres Market
     <- City Acres
 D'Agostino
     <- D'Agostino (DAG NYC)
+Demo / field-sampling
+    <- Demo / field-sampling (Summer Fancy Food Show)
 EBS — Emerging Brands Strategies; also a partner in Beckett Industries
     <- EBS — Emerging Brands Strategies; also a partner in Beckett Industries (CPG investment)
 Eco-Meal
     <- Eco-Meal Organic
     <- EcoMeal
+    <- Union Market (via Eco-Meal Organic)
 Eli Zabar
     <- Eli's Market
 Endeavor
     <- Endeavor (Heartland office)
 Fairway Market
     <- Fairway Market (Village Super Market / Wakefern)
+    <- Fairway Market (Wakefern)
     <- Fairway Market / Gourmet Garage (NYC); earlier headline also listed Village Super Market
     <- Fairway Market / Wakefern
     <- Village Super Market / Fairway Market
@@ -63,6 +69,9 @@ Fields Texas
     <- Fields Texas Ltd.
 Food'N'Bev Connect
     <- Food'N'Bev Connect (CT)
+Fuel Kitchens
+    <- Fuel Kitchens (co-man)
+    <- Fuel Kitchens (co-manufacturer)
 Giant Food
     <- Giant Food (Ahold Delhaize)
 Gourmet Foods International (GFI)
@@ -73,7 +82,10 @@ Gourmet Garage
     <- Startup CPG (with Citarella, Gourmet Garage, KeHE, Thrive Market, UNFI)
 INFRA
     <- INFRA (Independent Natural Food Retailers Association)
+Independent
+    <- Independent (Northeast refrigerated logistics)
 Independent CPG launch consultant
+    <- Independent CPG launch consultant (now Cotto investor)
     <- Independent CPG launch consultant (works with 20+ emerging CPG brands)
 Julie B Eatery
     <- Julie B Eatery (upstate NY)
@@ -83,12 +95,18 @@ Key Food
     <- Key Foods
 LA-based angel group
     <- LA-based angel group (co-founder)
+LOHSO
+    <- LOHSO (hot sauce brand)
 LT Life — banner uncertain
     <- LT Life (lt.life) — banner uncertain
+Lasso
+    <- Lasso (better-for-you jello)
 Last Minute Market
     <- Last Minute Market (LMM)
     <- Last Minute Market (Last Minute Montclair LLC)
     <- Last Minute Market / Last Minute Montclair LLC
+Life of Reilley Ventures / Cornell CoE
+    <- Life of Reilley Ventures / Cornell CoE (Food & Ag)
 Lunr Capital
     <- LUNR Capital
 Many Thanks Consulting
@@ -96,6 +114,8 @@ Many Thanks Consulting
 Market Fresh (MI)
     <- Market Fresh
     <- Market Fresh (Michigan)
+Maxwell Ventures
+    <- Maxwell Ventures (Maxwell Social)
 MeadeConnect
     <- MeadeCo LLC / MeadeConnect (Northbrook, IL)
 Meraki Direct
@@ -103,6 +123,8 @@ Meraki Direct
     <- Meraki Direct (Nounos Creamery)
     <- Meraki Direct / Nounos Creamery
     <- Meraki Distributors
+Morrison & Foerster
+    <- Morrison & Foerster (MoFo)
 NCG
     <- NCG (National Co+op Grocers)
 Naturally New York
@@ -128,6 +150,7 @@ Peaklign Partners
     <- Peaklign Partners (Skaneateles / Syracuse, NY)
 Pop Up Grocer
     <- Many Thanks Consulting (ex-Pop Up Grocer buyer)
+    <- Pop Up Grocer / Many Thanks Consulting
 Raley's
     <- Raley's (The Raley's Companies)
     <- The Raley's Companies
@@ -137,6 +160,7 @@ RangeMe / ECRM
     <- RangeMe
     <- RangeMe (product discovery platform)
     <- Sprouts Farmers Market (via RangeMe)
+    <- Walmart U.S. (Open Call) / RangeMe
     <- Walmart U.S. (via RangeMe)
 Relatable
     <- Relatable (angel investor)
@@ -152,6 +176,8 @@ Startup CPG
     <- Startup CPG / Sprouts
     <- Startup CPG — retailer grocery runs & buyer meetings
     <- StartupCPG
+The Angel Group
+    <- The Angel Group (TAG)
 The Fresh Market
     <- Jack's Market (Superfresh Market)
 The Goods Mart
@@ -163,6 +189,7 @@ The Shelf
 UNFI
     <- Mohegan Sun (venue for UNFI East Holiday & Winter Selling Show)
     <- Startup CPG (representing UNFI)
+    <- UNFI (UpNext onboarding + item setup)
     <- UNFI (UpNext program)
     <- UNFI (UpNext)
     <- UNFI (account manager supporting the dairy/dip buyer at Wegmans)
@@ -173,6 +200,8 @@ UNFI
     <- UNFI — UpNext program
 Union Kitchen
     <- Union Kitchen (1625 Eckington Place NE, Washington, DC 20002)
+Unknown early-stage CPG brand
+    <- Unknown early-stage CPG brand (founder peer)
 Valley Roots
     <- Fuel & Iron Realty (referrer) → Valley Roots (food hub / distributor)
 Wakefern / ShopRite
@@ -186,6 +215,7 @@ Westside Market
     <- W Market NYC
 Whole Foods Market
     <- Amazon / Whole Foods Market
+    <- Whole Foods Market (LEAP: Early Growth)
     <- Whole Foods Market + Rainforest Distribution
     <- Whole Foods Market / Amazon
 YBYD

@@ -35,10 +35,29 @@ async function client(): Promise<RedisClientType> {
 // waiting on the other side. Drives the visual you-vs-them distinction.
 export type FocusOwes = "you" | "them";
 
+// Draft lifecycle for the interactive workbench. An item with a proposed reply moves
+//   none → generating → ready → pushed
+// none = no draft yet (agent hasn't written one) · generating = a request is in flight
+// with the local worker (refresh/regenerate) · ready = draftText is written and waiting
+// on Kendall · pushed = the worker created the Gmail draft (draftId set); it is a DRAFT
+// in Gmail, still never sent. The UI never treats "pushed" as sent.
+export type FocusDraftState = "none" | "generating" | "ready" | "pushed";
+
+// Fields shared by any item that can carry an interactive draft (focus rows + bucket
+// rows). All optional so older snapshots deserialize unchanged (backward-compatible).
+export type FocusDraftable = {
+  id?: string; // stable string id — the handle for regenerate/push requests
+  summary?: string; // 1-2 sentence plain-English recap of what THEY emailed
+  draftText?: string; // the proposed reply body, plain text — NOT sent
+  draftState?: FocusDraftState; // lifecycle; treat missing as "none"
+  threadId?: string; // Gmail thread id, for the worker to draft in-thread
+  draftId?: string; // Gmail draft id once the worker pushes it
+};
+
 // One ranked top item — the daily driver rows. A draftUrl means a reply is ALREADY
 // staged (never sent); the view labels it "draft ready (not sent)" so it can never
 // be misread as done.
-export type FocusItem = {
+export type FocusItem = FocusDraftable & {
   rank: number;
   who: string;
   account?: string;
@@ -49,7 +68,7 @@ export type FocusItem = {
 };
 
 // A compact bucket row (respond now / can wait / FYI).
-export type FocusBucketItem = {
+export type FocusBucketItem = FocusDraftable & {
   who: string;
   what: string;
   owes: FocusOwes;

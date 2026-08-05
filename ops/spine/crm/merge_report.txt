@@ -1,4 +1,4 @@
-527 raw records -> 201 accounts
+529 raw records -> 201 accounts
 
 AWG
     <- AWG (Associated Wholesale Grocers)

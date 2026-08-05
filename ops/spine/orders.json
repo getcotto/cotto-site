@@ -7310,47 +7310,5 @@
     "dateBasis": "DATE INFERRED — 'this week', set to Thu 8/6 to match the Butterfield Thursday route. Confirm at route build.",
     "notes": "Butterfield Market Madison (1150 Madison) weekly order, emailed in-body by Johangel Berroa 8/2: FO 6 / GR 8 / BUF 6 = 20 cs. Kendall confirmed 8/2 21:07. Priced at $39.60/cs per this account's prior ledger rows.",
     "dedup_key": "butterfield-madison-20260806-BUF"
-  },
-  {
-    "date": "2026-08-06",
-    "account": "Butterfield - Lex",
-    "channel": "Wholesale",
-    "sku": "FO",
-    "cases": 3,
-    "price": 6.6,
-    "total": 118.8,
-    "status": "Scheduled",
-    "source": "gmail:19fc8c4f32e05203",
-    "po_number": "25664",
-    "notes": "Butterfield Lex PO 25664 (COTTO 08-03-26.pdf), needed-by 8/6. Kendall confirmed receipt 8/3: 'we will deliver this week'.",
-    "units": 18
-  },
-  {
-    "date": "2026-08-06",
-    "account": "Butterfield - Lex",
-    "channel": "Wholesale",
-    "sku": "BUF",
-    "cases": 3,
-    "price": 6.6,
-    "total": 118.8,
-    "status": "Scheduled",
-    "source": "gmail:19fc8c4f32e05203",
-    "po_number": "25664",
-    "notes": "Butterfield Lex PO 25664 (COTTO 08-03-26.pdf), needed-by 8/6. Kendall confirmed receipt 8/3: 'we will deliver this week'.",
-    "units": 18
-  },
-  {
-    "date": "2026-08-06",
-    "account": "Butterfield - Lex",
-    "channel": "Wholesale",
-    "sku": "GR",
-    "cases": 4,
-    "price": 6.6,
-    "total": 158.4,
-    "status": "Scheduled",
-    "source": "gmail:19fc8c4f32e05203",
-    "po_number": "25664",
-    "notes": "Butterfield Lex PO 25664 (COTTO 08-03-26.pdf), needed-by 8/6. Kendall confirmed receipt 8/3: 'we will deliver this week'.",
-    "units": 24
   }
 ]

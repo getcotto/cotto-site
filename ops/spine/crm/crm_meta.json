@@ -1,8 +1,8 @@
 {
- "records": 527,
+ "records": 529,
  "accounts": 201,
- "generatedAt": "2026-08-03T21:45:18",
- "asOf": "2026-08-03",
+ "generatedAt": "2026-08-04T10:45:16",
+ "asOf": "2026-08-04",
  "sweepFiles": [
   "sweep_01_through_jan2026.json",
   "sweep_02_feb_to_apr15_2026.json",

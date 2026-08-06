@@ -7310,5 +7310,63 @@
     "dateBasis": "DATE INFERRED — 'this week', set to Thu 8/6 to match the Butterfield Thursday route. Confirm at route build.",
     "notes": "Butterfield Market Madison (1150 Madison) weekly order, emailed in-body by Johangel Berroa 8/2: FO 6 / GR 8 / BUF 6 = 20 cs. Kendall confirmed 8/2 21:07. Priced at $39.60/cs per this account's prior ledger rows.",
     "dedup_key": "butterfield-madison-20260806-BUF"
+  },
+  {
+    "date": "2026-08-04",
+    "account": "Meraki Direct (DSD)",
+    "channel": "Wholesale",
+    "sku": "FO",
+    "cases": 60,
+    "price": 4.95,
+    "total": 1782,
+    "status": "Scheduled",
+    "source": "gmail:19fcd9fa92eb46ad",
+    "dateBasis": "PICKUP DATE UNCONFIRMED — the PO states no date and the cadence is irregular (this-week vs next-week is exactly what got mis-modelled 7/27). Dated to received; CONFIRM the pickup week with the sender before trusting it.",
+    "notes": "Structured order auto-captured from operations@merakidirect.co by ingest_order_emails.js (deterministic parse). Subject: New Purchase Order",
+    "units": 360
+  },
+  {
+    "date": "2026-08-04",
+    "account": "Meraki Direct (DSD)",
+    "channel": "Wholesale",
+    "sku": "BUF",
+    "cases": 30,
+    "price": 4.95,
+    "total": 891,
+    "status": "Scheduled",
+    "source": "gmail:19fcd9fa92eb46ad",
+    "dateBasis": "PICKUP DATE UNCONFIRMED — the PO states no date and the cadence is irregular (this-week vs next-week is exactly what got mis-modelled 7/27). Dated to received; CONFIRM the pickup week with the sender before trusting it.",
+    "notes": "Structured order auto-captured from operations@merakidirect.co by ingest_order_emails.js (deterministic parse). Subject: New Purchase Order",
+    "units": 180
+  },
+  {
+    "date": "2026-08-05",
+    "invoice": "BOL-080526-001",
+    "account": "Route 080526-001",
+    "channel": "Wholesale",
+    "sku": "BUF",
+    "flavor": "Buffalo",
+    "cases": 30,
+    "units": 180,
+    "price": 0,
+    "total": 0,
+    "status": "Scheduled",
+    "basis": "planned",
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 080526-001 (2026-08-05). Captured by ingest_outbound_bol.js from msg 19fcdb09bbf209bd. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
+  },
+  {
+    "date": "2026-08-05",
+    "invoice": "BOL-080526-001",
+    "account": "Route 080526-001",
+    "channel": "Wholesale",
+    "sku": "FO",
+    "flavor": "French Onion",
+    "cases": 60,
+    "units": 360,
+    "price": 0,
+    "total": 0,
+    "status": "Scheduled",
+    "basis": "planned",
+    "notes": "FORWARD COMMITMENT from Kendall's own outbound BOL 080526-001 (2026-08-05). Captured by ingest_outbound_bol.js from msg 19fcdb09bbf209bd. A BOL is a promise to load a truck, NOT a delivery: it becomes counted when the signed slip returns. Revenue is 0 here on purpose — invoicing stays Settle's."
   }
 ]

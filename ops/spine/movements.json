@@ -1762,5 +1762,17 @@
     "dir": "Out",
     "lot": "FEFO",
     "notes": ""
+  },
+  {
+    "date": "2026-07-31",
+    "type": "Receipt",
+    "location": "In Transit (FK->Carriacou)",
+    "account": "FK production run 7-23-27wk-INTRANSIT-RLS1220085",
+    "buf": 420,
+    "fo": 601,
+    "gr": 320,
+    "dir": "In",
+    "lot": "",
+    "notes": "Production run 7-23-27wk-INTRANSIT-RLS1220085 landed at In Transit (FK->Carriacou) — counts confirmed."
   }
 ]

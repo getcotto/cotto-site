@@ -1138,5 +1138,33 @@
     "basis": "counted",
     "notes": "Production run 7-23-27wk-INTRANSIT-RLS1220085 landed at In Transit (FK->Carriacou) — counts confirmed.",
     "ref": "RECEIPT-7-23-27wk-INTRANSIT-RLS1220085"
+  },
+  {
+    "date": "2026-08-03",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Route 080326-001",
+    "buf": 60,
+    "fo": 40,
+    "gr": 60,
+    "dir": "Out",
+    "lot": "FEFO",
+    "basis": "estimated",
+    "ref": "080326-001",
+    "note": "Delivery confirmed via Telegram one-tap and promoted by promote_confirmed_bol.js from the 080326-001 orders rows. Per-stop counts are exact per the BOL; basis \"estimated\" because no signed slip is in yet (reconcile via delivery_exceptions.json if a returned slip differs). Loaded out of Brooklyn (Carriacou)."
+  },
+  {
+    "date": "2026-08-05",
+    "type": "Delivery",
+    "location": "Brooklyn (Carriacou)",
+    "account": "Route 080526-001",
+    "buf": 30,
+    "fo": 60,
+    "gr": 0,
+    "dir": "Out",
+    "lot": "FEFO",
+    "basis": "estimated",
+    "ref": "080526-001",
+    "note": "Delivery confirmed via Telegram one-tap and promoted by promote_confirmed_bol.js from the 080526-001 orders rows. Per-stop counts are exact per the BOL; basis \"estimated\" because no signed slip is in yet (reconcile via delivery_exceptions.json if a returned slip differs). Loaded out of Brooklyn (Carriacou)."
   }
 ]

@@ -60,6 +60,10 @@ export type FocusDraftable = {
     receivedAt?: string; // date/time header of that message
     text?: string; // plain-text body of the latest message
   };
+  // Follow-through commitments the agent detected in the thread (things KENDALL said
+  // she/Cotto would do) — surfaced as suggested to-dos she accepts with one click.
+  // Never auto-added to her to-do list; proposals only.
+  proposedTodos?: { text: string; category?: string }[];
 };
 
 // One ranked top item — the daily driver rows. A draftUrl means a reply is ALREADY

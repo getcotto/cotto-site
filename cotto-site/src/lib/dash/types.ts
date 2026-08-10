@@ -14,6 +14,11 @@ export type TodoItem = {
   doneAt?: string;
   note?: string;
   source: Source;
+  // Optional link back to the email thread this to-do was captured from on the Focus
+  // board. All optional so existing to-dos deserialize unchanged.
+  threadId?: string;
+  threadUrl?: string;
+  who?: string;
 };
 
 export const CATEGORY_LABEL: Record<Category, string> = {

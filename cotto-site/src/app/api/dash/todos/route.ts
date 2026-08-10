@@ -25,6 +25,9 @@ export async function POST(req: NextRequest) {
     priority?: boolean;
     note?: string;
     source?: string;
+    threadId?: string;
+    threadUrl?: string;
+    who?: string;
   } = {};
   try {
     body = await req.json();
@@ -46,6 +49,9 @@ export async function POST(req: NextRequest) {
     priority: !!body.priority,
     note: body.note?.toString(),
     source,
+    threadId: body.threadId?.toString(),
+    threadUrl: body.threadUrl?.toString(),
+    who: body.who?.toString(),
   });
   return NextResponse.json({ item }, { status: 201 });
 }

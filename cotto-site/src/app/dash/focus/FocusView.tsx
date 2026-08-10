@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { createContext, useCallback, useContext, useRef, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import type {
   FocusSnapshot,
@@ -12,6 +12,7 @@ import type {
   FocusDraftState,
 } from "@/lib/dash/focus-store";
 import type { FocusRequest, FocusRequestType } from "@/lib/dash/focus-requests";
+import { CATEGORIES, CATEGORY_LABEL, type Category, type TodoItem } from "@/lib/dash/types";
 
 type Props = {
   snapshot: FocusSnapshot | null;
@@ -59,6 +60,42 @@ type RequestCtx = {
   refetch: () => Promise<void>;
 };
 const FocusRequestContext = createContext<RequestCtx | null>(null);
+
+// ————————————————————————————————————————————————————————————————
+// To-do bridge. Follow-through to-dos live in the SAME store as the main dash
+// (/api/dash/todos) — one unified list. The Focus board captures into it (from an
+// agent suggestion or a manual add) and shows the to-dos linked to each thread.
+// ————————————————————————————————————————————————————————————————
+type TodoInput = {
+  text: string;
+  category: Category;
+  threadId?: string;
+  threadUrl?: string;
+  who?: string;
+  source?: "kendall" | "claude";
+};
+type TodoCtxT = {
+  todosFor: (threadId?: string) => TodoItem[];
+  addTodo: (input: TodoInput) => Promise<boolean>;
+  toggleTodo: (id: string, done: boolean) => Promise<void>;
+};
+const TodoContext = createContext<TodoCtxT | null>(null);
+
+// Best-effort category guess from the to-do text, so a captured to-do lands in a
+// sensible dash bucket without Kendall picking every time (she can still change it on
+// the dash). Falls back to "ops".
+function guessCategory(text: string): Category {
+  const t = (text || "").toLowerCase();
+  if (/invoice|payment|\bpaid\b|remit|\bar\b|credit|refund|cash|wire|\bach\b|\bbill/.test(t)) return "finance";
+  if (/sample|ship.*dip/.test(t)) return "samples";
+  if (/order|\bpo\b|purchase order|price|pricing|quote|buyer|retail|distribut/.test(t)) return "sales";
+  if (/post|content|instagram|\big\b|giveaway|press|campaign|marketing/.test(t)) return "marketing";
+  if (/contract|\bcoi\b|\bw9\b|onboard|vendor|legal|\bnda\b|\bform\b|application/.test(t)) return "admin";
+  return "ops";
+}
+function normCategory(c: string | undefined, text: string): Category {
+  return (CATEGORIES as readonly string[]).includes(c ?? "") ? (c as Category) : guessCategory(text);
+}
 
 async function pollUntilDone(
   id: string,
@@ -160,12 +197,180 @@ function StateBadge({ state }: { state: FocusDraftState }) {
 }
 
 // ————————————————————————————————————————————————————————————————
+// The embedded to-do panel for one Focus item: agent-suggested follow-throughs to
+// accept, the open to-dos already linked to this thread (checkable), and a manual add
+// box. All backed by the unified /api/dash/todos store — the same list as the main dash.
+// ————————————————————————————————————————————————————————————————
+function TodoBlock({ item }: { item: FocusDraftable & { who?: string; threadUrl?: string } }) {
+  const ctx = useContext(TodoContext);
+  const [dismissed, setDismissed] = useState<string[]>([]);
+  const [busy, setBusy] = useState(false);
+  const [adding, setAdding] = useState(false);
+  const [text, setText] = useState("");
+  const [category, setCategory] = useState<Category>("ops");
+
+  const norm = (s: string) => s.toLowerCase().replace(/\s+/g, " ").trim();
+
+  if (!ctx || !item.id) return null;
+
+  const linked = ctx.todosFor(item.threadId);
+  const open = linked.filter((t) => !t.done);
+  const doneCt = linked.length - open.length;
+  const proposals = (item.proposedTodos || []).filter(
+    (p) => p && p.text && !dismissed.includes(p.text) && !linked.some((t) => norm(t.text) === norm(p.text))
+  );
+
+  const accept = async (p: { text: string; category?: string }) => {
+    setBusy(true);
+    const ok = await ctx.addTodo({
+      text: p.text,
+      category: normCategory(p.category, p.text),
+      threadId: item.threadId,
+      threadUrl: item.threadUrl,
+      who: item.who,
+      source: "claude",
+    });
+    if (ok) setDismissed((d) => [...d, p.text]);
+    setBusy(false);
+  };
+
+  const addManual = async () => {
+    const t = text.trim();
+    if (!t) return;
+    setBusy(true);
+    const ok = await ctx.addTodo({
+      text: t,
+      category,
+      threadId: item.threadId,
+      threadUrl: item.threadUrl,
+      who: item.who,
+      source: "kendall",
+    });
+    if (ok) {
+      setText("");
+      setAdding(false);
+    }
+    setBusy(false);
+  };
+
+  return (
+    <div className="border-t border-neutral-200 pt-3">
+      <div className="text-[11px] font-bold uppercase tracking-[0.14em] text-neutral-400">To-dos</div>
+
+      {/* Agent-suggested follow-throughs — accepted with one click, never auto-added. */}
+      {proposals.length > 0 && (
+        <div className="mt-2 space-y-1.5">
+          {proposals.map((p, i) => (
+            <div
+              key={i}
+              className="flex items-start gap-2 rounded-lg border border-cyan-200 bg-cyan-50/60 px-2.5 py-1.5"
+            >
+              <span className="mt-0.5 shrink-0 text-[10px] font-bold uppercase tracking-wide text-cyan-700">suggested</span>
+              <span className="flex-1 text-sm text-neutral-800">{p.text}</span>
+              <button
+                type="button"
+                disabled={busy}
+                onClick={() => accept(p)}
+                className="shrink-0 rounded-md bg-cyan-700 px-2.5 py-1 text-xs font-semibold text-white hover:bg-cyan-800 disabled:opacity-50"
+              >
+                + Track
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Open to-dos linked to this thread — check to complete. */}
+      {open.length > 0 && (
+        <ul className="mt-2 space-y-1">
+          {open.map((t) => (
+            <li key={t.id} className="flex items-start gap-2">
+              <input
+                type="checkbox"
+                checked={false}
+                onChange={() => ctx.toggleTodo(t.id, true)}
+                className="mt-1 h-3.5 w-3.5 cursor-pointer rounded border-neutral-300 text-cyan-700 focus:ring-cyan-500"
+              />
+              <span className="flex-1 text-sm text-neutral-800">{t.text}</span>
+              <span className="shrink-0 rounded-full bg-neutral-100 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-neutral-500">
+                {CATEGORY_LABEL[t.category]}
+              </span>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {doneCt > 0 && <div className="mt-1.5 text-[11px] text-neutral-400">{doneCt} done</div>}
+
+      {/* Manual add. */}
+      {adding ? (
+        <div className="mt-2 flex flex-wrap items-center gap-2">
+          <input
+            value={text}
+            onChange={(e) => {
+              setText(e.target.value);
+              setCategory(guessCategory(e.target.value));
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") addManual();
+            }}
+            placeholder="e.g. send Valentina the revised invoice"
+            autoFocus
+            className="min-w-0 flex-1 rounded-lg border border-neutral-300 bg-white px-3 py-1.5 text-sm text-neutral-800 outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100"
+          />
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value as Category)}
+            className="rounded-lg border border-neutral-300 bg-white px-2 py-1.5 text-xs text-neutral-700"
+          >
+            {CATEGORIES.map((c) => (
+              <option key={c} value={c}>
+                {CATEGORY_LABEL[c]}
+              </option>
+            ))}
+          </select>
+          <button
+            type="button"
+            disabled={busy || !text.trim()}
+            onClick={addManual}
+            className="rounded-lg bg-cyan-700 px-3 py-1.5 text-sm font-semibold text-white hover:bg-cyan-800 disabled:opacity-50"
+          >
+            Add
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setAdding(false);
+              setText("");
+            }}
+            className="text-xs text-neutral-400 hover:text-neutral-600"
+          >
+            cancel
+          </button>
+        </div>
+      ) : (
+        <button
+          type="button"
+          onClick={() => setAdding(true)}
+          className="mt-2 text-xs font-semibold text-cyan-700 hover:text-cyan-900"
+        >
+          + add a to-do
+        </button>
+      )}
+    </div>
+  );
+}
+
+// ————————————————————————————————————————————————————————————————
 // The interactive workbench: a collapsed "show more" disclosure that reveals the
 // summary of THEIR email, the proposed reply, a feedback box + Regenerate, and a
 // Push to Gmail button. Only rendered for items the agent tagged with an id.
 // ————————————————————————————————————————————————————————————————
-function DraftWorkbench({ item }: { item: FocusDraftable }) {
+function DraftWorkbench({ item }: { item: FocusDraftable & { who?: string; threadUrl?: string } }) {
   const ctx = useContext(FocusRequestContext);
+  const todoCtx = useContext(TodoContext);
+  const openTodoCt = todoCtx?.todosFor(item.threadId).filter((t) => !t.done).length ?? 0;
+  const proposalCt = (item.proposedTodos || []).length;
   const [open, setOpen] = useState(false);
   const [feedback, setFeedback] = useState("");
   // Local override of the snapshot's draftState while a request is in flight, plus a
@@ -222,6 +427,12 @@ function DraftWorkbench({ item }: { item: FocusDraftable }) {
         <span className={`inline-block transition-transform ${open ? "rotate-90" : ""}`}>▸</span>
         {open ? "hide" : hasDraft ? "show email + draft" : item.lastEmail ? "show latest email" : "show more"}
         {!open && <StateBadgeInline state={state} />}
+        {!open && openTodoCt > 0 && (
+          <span className="ml-1 normal-case tracking-normal text-cyan-700">· ◻ {openTodoCt} to-do{openTodoCt > 1 ? "s" : ""}</span>
+        )}
+        {!open && openTodoCt === 0 && proposalCt > 0 && (
+          <span className="ml-1 normal-case tracking-normal text-cyan-600">· follow-up</span>
+        )}
       </button>
 
       {open && (
@@ -319,6 +530,8 @@ function DraftWorkbench({ item }: { item: FocusDraftable }) {
             Buttons queue the work for your local agent — it re-drafts, records your steer as a voice lesson, and creates
             the Gmail draft. Nothing is ever sent. This panel updates when your agent finishes.
           </p>
+
+          <TodoBlock item={item} />
         </div>
       )}
     </div>
@@ -356,6 +569,23 @@ export default function FocusView({ snapshot, storeError }: Props) {
       // leave the current snapshot in place
     }
   }, []);
+
+  // Unified to-do list (same store as the main dash). Fetched on mount and re-pulled
+  // after any add/complete, so the Focus board and the dash never drift.
+  const [todos, setTodos] = useState<TodoItem[]>([]);
+  const refetchTodos = useCallback(async () => {
+    try {
+      const res = await fetch("/api/dash/todos", { cache: "no-store" });
+      if (!res.ok) return;
+      const { items } = (await res.json()) as { items: TodoItem[] };
+      if (Array.isArray(items)) setTodos(items);
+    } catch {
+      // leave current todos in place
+    }
+  }, []);
+  useEffect(() => {
+    void refetchTodos();
+  }, [refetchTodos]);
 
   const submit = useCallback(
     async (input: { type: FocusRequestType; itemId?: string; feedback?: string }) => {
@@ -403,6 +633,36 @@ export default function FocusView({ snapshot, storeError }: Props) {
 
   const ctx: RequestCtx = { submit, refetch };
 
+  const todoCtx: TodoCtxT = {
+    todosFor: (threadId?: string) => (threadId ? todos.filter((t) => t.threadId === threadId) : []),
+    addTodo: async (input) => {
+      try {
+        const res = await fetch("/api/dash/todos", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ priority: false, ...input }),
+        });
+        if (!res.ok) return false;
+        await refetchTodos();
+        return true;
+      } catch {
+        return false;
+      }
+    },
+    toggleTodo: async (id, done) => {
+      try {
+        await fetch(`/api/dash/todos/${id}`, {
+          method: "PATCH",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ done }),
+        });
+        await refetchTodos();
+      } catch {
+        // ignore — next refetch reconciles
+      }
+    },
+  };
+
   if (storeError) {
     return (
       <Shell onRefresh={onRefresh} refreshing={refreshing} refreshNote={refreshNote}>
@@ -433,6 +693,7 @@ export default function FocusView({ snapshot, storeError }: Props) {
 
   return (
     <FocusRequestContext.Provider value={ctx}>
+      <TodoContext.Provider value={todoCtx}>
       <Shell updatedAt={s.updatedAt} onRefresh={onRefresh} refreshing={refreshing} refreshNote={refreshNote}>
         {/* COVERAGE — every unread got read and sorted. */}
         <div className="mt-1 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm font-medium text-emerald-800">
@@ -529,6 +790,7 @@ export default function FocusView({ snapshot, storeError }: Props) {
           </>
         )}
       </Shell>
+      </TodoContext.Provider>
     </FocusRequestContext.Provider>
   );
 }

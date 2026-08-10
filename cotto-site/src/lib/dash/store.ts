@@ -54,6 +54,9 @@ export type CreateInput = {
   priority?: boolean;
   note?: string;
   source?: Source;
+  threadId?: string;
+  threadUrl?: string;
+  who?: string;
 };
 
 export async function createTodo(input: CreateInput): Promise<TodoItem> {
@@ -70,6 +73,9 @@ export async function createTodo(input: CreateInput): Promise<TodoItem> {
     createdAt: new Date().toISOString(),
     note: input.note?.trim() || undefined,
     source,
+    threadId: input.threadId?.trim() || undefined,
+    threadUrl: input.threadUrl?.trim() || undefined,
+    who: input.who?.trim() || undefined,
   };
   const items = await listTodos();
   items.unshift(item);

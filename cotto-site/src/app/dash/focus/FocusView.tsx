@@ -30,6 +30,24 @@ function timeAgo(iso?: string): string {
   return `${Math.round(hrs / 24)}d ago`;
 }
 
+// Render an email Date header as a short, legible received-at (e.g. "Aug 6, 2:23 PM").
+// Falls back to the raw header if it doesn't parse.
+function formatReceived(s?: string): string {
+  if (!s) return "";
+  const t = Date.parse(s);
+  if (Number.isNaN(t)) return s;
+  try {
+    return new Date(t).toLocaleString("en-US", {
+      month: "short",
+      day: "numeric",
+      hour: "numeric",
+      minute: "2-digit",
+    });
+  } catch {
+    return s;
+  }
+}
+
 // ————————————————————————————————————————————————————————————————
 // Request bridge. The page can't do the work (Gmail + voice files live on Kendall's
 // machine); it drops a request on the queue and a local worker picks it up. This
@@ -202,12 +220,37 @@ function DraftWorkbench({ item }: { item: FocusDraftable }) {
         className="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-[0.14em] text-cyan-800 hover:text-cyan-900"
       >
         <span className={`inline-block transition-transform ${open ? "rotate-90" : ""}`}>▸</span>
-        {open ? "hide draft" : hasDraft ? "show draft" : "show more"}
+        {open ? "hide" : hasDraft ? "show email + draft" : item.lastEmail ? "show latest email" : "show more"}
         {!open && <StateBadgeInline state={state} />}
       </button>
 
       {open && (
         <div className="mt-3 space-y-3 rounded-xl border border-neutral-200 bg-neutral-50/70 p-3.5 sm:p-4">
+          {/* The latest email in the thread — read current state without opening Gmail.
+              Always the most recent message (hers or theirs), with when it was received. */}
+          {item.lastEmail && (item.lastEmail.text || item.lastEmail.from) && (
+            <div>
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <div className="text-[11px] font-bold uppercase tracking-[0.14em] text-neutral-400">
+                  Latest email in thread
+                </div>
+                {item.lastEmail.receivedAt && (
+                  <span className="text-[11px] font-medium text-neutral-400">
+                    {formatReceived(item.lastEmail.receivedAt)}
+                  </span>
+                )}
+              </div>
+              {item.lastEmail.from && (
+                <div className="mt-1 truncate text-[12px] font-medium text-neutral-600">{item.lastEmail.from}</div>
+              )}
+              {item.lastEmail.text && (
+                <pre className="mt-1.5 max-h-72 overflow-auto whitespace-pre-wrap break-words rounded-lg border border-neutral-200 bg-white p-3 font-sans text-sm leading-relaxed text-neutral-700">
+                  {item.lastEmail.text}
+                </pre>
+              )}
+            </div>
+          )}
+
           {/* Their email, in plain English. */}
           {item.summary && (
             <div>

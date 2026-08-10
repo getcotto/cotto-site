@@ -52,6 +52,14 @@ export type FocusDraftable = {
   draftState?: FocusDraftState; // lifecycle; treat missing as "none"
   threadId?: string; // Gmail thread id, for the worker to draft in-thread
   draftId?: string; // Gmail draft id once the worker pushes it
+  // The latest message in the thread, so Kendall reads current state without opening
+  // Gmail. Always the most recent non-draft message (hers or theirs); refreshed each
+  // re-triage.
+  lastEmail?: {
+    from?: string; // sender of the latest message
+    receivedAt?: string; // date/time header of that message
+    text?: string; // plain-text body of the latest message
+  };
 };
 
 // One ranked top item — the daily driver rows. A draftUrl means a reply is ALREADY

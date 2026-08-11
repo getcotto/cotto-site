@@ -72,13 +72,6 @@
       "impact": 1328
     },
     {
-      "sev": "🔴",
-      "area": "Freshness",
-      "title": "⚠ SPINE FROZEN — AR last reconciled 2026-07-22 (20d ago). This is a STALE COPY; every number in this report is out of date. DO NOT act on it.",
-      "detail": "A routine is reading a frozen spine. Reconcile the source and repoint it before trusting any figure below.",
-      "impact": null
-    },
-    {
       "sev": "🟡",
       "area": "Open item",
       "title": "[Freight / Incoming] RLS Load 1209659 (PO 063026) — shipped 7/3, arriving Carriacou/Brooklyn Tue 7/7; LOG RECEIPT on arrival",
@@ -179,7 +172,7 @@
     {
       "sev": "✅",
       "area": "Inventory",
-      "title": "On-hand: BUF 584 / FO 647 / GR 264 cs",
+      "title": "On-hand: BUF 936 / FO 1224 / GR 692 cs",
       "detail": "",
       "impact": null
     }

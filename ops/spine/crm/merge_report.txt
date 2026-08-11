@@ -1,4 +1,4 @@
-529 raw records -> 201 accounts
+535 raw records -> 205 accounts
 
 AWG
     <- AWG (Associated Wholesale Grocers)
@@ -160,7 +160,6 @@ RangeMe / ECRM
     <- RangeMe
     <- RangeMe (product discovery platform)
     <- Sprouts Farmers Market (via RangeMe)
-    <- Walmart U.S. (Open Call) / RangeMe
     <- Walmart U.S. (via RangeMe)
 Relatable
     <- Relatable (angel investor)

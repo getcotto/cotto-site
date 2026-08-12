@@ -55,8 +55,14 @@ function formatReceived(s?: string): string {
 // context centralizes: enqueue a request, poll its status, and refetch the snapshot
 // when the worker reports done so the new draft shows up.
 // ————————————————————————————————————————————————————————————————
+type FocusEventPayload = { title: string; startISO: string; durationMin: number; attendees: string[]; addZoom: boolean };
 type RequestCtx = {
-  submit: (input: { type: FocusRequestType; itemId?: string; feedback?: string }) => Promise<FocusRequest | null>;
+  submit: (input: {
+    type: FocusRequestType;
+    itemId?: string;
+    feedback?: string;
+    event?: FocusEventPayload;
+  }) => Promise<FocusRequest | null>;
   refetch: () => Promise<void>;
 };
 const FocusRequestContext = createContext<RequestCtx | null>(null);
@@ -95,6 +101,27 @@ function guessCategory(text: string): Category {
 }
 function normCategory(c: string | undefined, text: string): Category {
   return (CATEGORIES as readonly string[]).includes(c ?? "") ? (c as Category) : guessCategory(text);
+}
+
+// <input type="datetime-local"> works in the browser's local wall-clock. Convert to/from
+// an absolute ISO instant for the worker (Kendall is ET; browser-local = ET for her).
+function isoToLocalInput(iso?: string): string {
+  if (!iso) return "";
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  const pad = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+function localInputToISO(v: string): string | null {
+  if (!v) return null;
+  const d = new Date(v);
+  return Number.isNaN(d.getTime()) ? null : d.toISOString();
+}
+function formatWhen(iso?: string): string {
+  if (!iso) return "";
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  return d.toLocaleString("en-US", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
 }
 
 async function pollUntilDone(
@@ -362,6 +389,131 @@ function TodoBlock({ item }: { item: FocusDraftable & { who?: string; threadUrl?
 }
 
 // ————————————————————————————————————————————————————————————————
+// The embedded Schedule panel for one Focus item: shown only on scheduling threads (the
+// agent proposed an event) or once an event has been created. Pre-fills the agent's
+// proposal; Kendall confirms/edits the time, then Create makes the Google Calendar event
+// (with a Zoom link if connected) and invites the attendees.
+// ————————————————————————————————————————————————————————————————
+function ScheduleBlock({ item }: { item: FocusDraftable & { who?: string } }) {
+  const ctx = useContext(FocusRequestContext);
+  const pe = item.proposedEvent;
+  const created = item.eventCreated;
+  const [title, setTitle] = useState(pe?.title ?? "");
+  const [dt, setDt] = useState(isoToLocalInput(pe?.startISO));
+  const [duration, setDuration] = useState<number>(pe?.durationMin ?? 30);
+  const [addZoom, setAddZoom] = useState<boolean>(pe?.isMeeting !== false);
+  const [busy, setBusy] = useState(false);
+  const [note, setNote] = useState<string | null>(null);
+
+  if (!ctx || !item.id) return null;
+  if (!pe && !created) return null;
+
+  const attendees = pe?.attendees ?? [];
+
+  const create = async () => {
+    const startISO = localInputToISO(dt);
+    if (!title.trim() || !startISO) {
+      setNote("Add a title and a valid date/time.");
+      return;
+    }
+    setBusy(true);
+    setNote(null);
+    const req = await ctx.submit({
+      type: "create_calendar_event",
+      itemId: item.id,
+      event: { title: title.trim(), startISO, durationMin: Number(duration) || 30, attendees, addZoom },
+    });
+    if (!req) {
+      setBusy(false);
+      setNote("Could not queue the request — try again.");
+      return;
+    }
+    await pollUntilDone(req.id, async (settle, message) => {
+      setNote(message ?? (settle === "done" ? "Event created." : "The local worker hit an error."));
+      if (settle === "done") await ctx.refetch();
+      setBusy(false);
+    });
+  };
+
+  return (
+    <div className="border-t border-neutral-200 pt-3">
+      <div className="text-[11px] font-bold uppercase tracking-[0.14em] text-neutral-400">Schedule</div>
+
+      {created ? (
+        <div className="mt-2 rounded-lg border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-800">
+          ✓ Event created{created.title ? `: ${created.title}` : ""}
+          {created.startISO ? ` — ${formatWhen(created.startISO)}` : ""}
+          <div className="mt-1 flex flex-wrap gap-3 text-[11px]">
+            {created.htmlLink && (
+              <a href={created.htmlLink} target="_blank" rel="noreferrer" className="font-medium text-emerald-700 underline">
+                open in Calendar →
+              </a>
+            )}
+            {created.zoomUrl && (
+              <a href={created.zoomUrl} target="_blank" rel="noreferrer" className="font-medium text-emerald-700 underline">
+                Zoom link →
+              </a>
+            )}
+          </div>
+        </div>
+      ) : (
+        <div className="mt-2 space-y-2">
+          <input
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            placeholder="Event title"
+            className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-1.5 text-sm text-neutral-800 outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100"
+          />
+          <div className="flex flex-wrap items-center gap-2">
+            <input
+              type="datetime-local"
+              value={dt}
+              onChange={(e) => setDt(e.target.value)}
+              className="rounded-lg border border-neutral-300 bg-white px-2 py-1.5 text-sm text-neutral-800"
+            />
+            <select
+              value={duration}
+              onChange={(e) => setDuration(Number(e.target.value))}
+              className="rounded-lg border border-neutral-300 bg-white px-2 py-1.5 text-xs text-neutral-700"
+            >
+              {[15, 30, 45, 60].map((m) => (
+                <option key={m} value={m}>
+                  {m} min
+                </option>
+              ))}
+            </select>
+            <label className="flex items-center gap-1.5 text-xs text-neutral-600">
+              <input
+                type="checkbox"
+                checked={addZoom}
+                onChange={(e) => setAddZoom(e.target.checked)}
+                className="h-3.5 w-3.5 rounded border-neutral-300 text-cyan-700"
+              />
+              Zoom link
+            </label>
+          </div>
+          {attendees.length > 0 && <div className="text-[11px] text-neutral-500">Invites: {attendees.join(", ")}</div>}
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              type="button"
+              disabled={busy}
+              onClick={create}
+              className="rounded-lg bg-cyan-700 px-3.5 py-1.5 text-sm font-semibold text-white hover:bg-cyan-800 disabled:opacity-50"
+            >
+              {busy ? "Creating…" : "Create calendar event"}
+            </button>
+            {note && <span className="text-xs text-neutral-500">{note}</span>}
+          </div>
+          <p className="text-[11px] leading-snug text-neutral-400">
+            Creates the event on your Google Calendar and emails the invite. Zoom link added if connected.
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ————————————————————————————————————————————————————————————————
 // The interactive workbench: a collapsed "show more" disclosure that reveals the
 // summary of THEIR email, the proposed reply, a feedback box + Regenerate, and a
 // Push to Gmail button. Only rendered for items the agent tagged with an id.
@@ -432,6 +584,12 @@ function DraftWorkbench({ item }: { item: FocusDraftable & { who?: string; threa
         )}
         {!open && openTodoCt === 0 && proposalCt > 0 && (
           <span className="ml-1 normal-case tracking-normal text-cyan-600">· follow-up</span>
+        )}
+        {!open && item.proposedEvent && !item.eventCreated && (
+          <span className="ml-1 normal-case tracking-normal text-cyan-600">· schedule</span>
+        )}
+        {!open && item.eventCreated && (
+          <span className="ml-1 normal-case tracking-normal text-emerald-700">· event set</span>
         )}
       </button>
 
@@ -532,6 +690,7 @@ function DraftWorkbench({ item }: { item: FocusDraftable & { who?: string; threa
           </p>
 
           <TodoBlock item={item} />
+          <ScheduleBlock item={item} />
         </div>
       )}
     </div>
@@ -588,7 +747,7 @@ export default function FocusView({ snapshot, storeError }: Props) {
   }, [refetchTodos]);
 
   const submit = useCallback(
-    async (input: { type: FocusRequestType; itemId?: string; feedback?: string }) => {
+    async (input: { type: FocusRequestType; itemId?: string; feedback?: string; event?: FocusEventPayload }) => {
       try {
         const res = await fetch("/api/dash/focus/request", {
           method: "POST",

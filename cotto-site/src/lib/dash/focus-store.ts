@@ -64,6 +64,18 @@ export type FocusDraftable = {
   // she/Cotto would do) — surfaced as suggested to-dos she accepts with one click.
   // Never auto-added to her to-do list; proposals only.
   proposedTodos?: { text: string; category?: string }[];
+  // If the thread is about scheduling / confirming availability, a proposed calendar
+  // event Kendall confirms or edits before creating. Proposal only — nothing is put on
+  // her calendar until she clicks Create.
+  proposedEvent?: {
+    title?: string;
+    startISO?: string; // suggested start, ISO 8601 with offset
+    durationMin?: number;
+    attendees?: string[]; // reply-all set from the thread
+    isMeeting?: boolean; // true → default to attaching a Zoom link
+  };
+  // Set by the worker once a calendar event has been created from this item.
+  eventCreated?: { title?: string; startISO?: string; htmlLink?: string; zoomUrl?: string };
 };
 
 // One ranked top item — the daily driver rows. A draftUrl means a reply is ALREADY

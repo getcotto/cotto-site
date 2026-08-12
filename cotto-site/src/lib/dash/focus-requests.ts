@@ -42,15 +42,27 @@ async function client(): Promise<RedisClientType> {
   }
 }
 
-export type FocusRequestType = "refresh" | "regenerate" | "push_to_gmail";
+export type FocusRequestType = "refresh" | "regenerate" | "push_to_gmail" | "create_calendar_event";
+
+// The confirmed event details for a create_calendar_event request. Built on the Focus
+// board from the agent's proposal after Kendall edits/confirms it.
+export type FocusEventInput = {
+  title: string;
+  startISO: string; // event start, ISO 8601 with timezone offset
+  durationMin: number;
+  attendees: string[]; // email addresses to invite
+  addZoom: boolean; // attach a Zoom meeting link
+};
 
 // A single unit of work for the local worker. itemId + feedback are only meaningful
-// for the item-scoped types (regenerate/push_to_gmail); refresh is global.
+// for the item-scoped types (regenerate/push_to_gmail); refresh is global; event is
+// only set for create_calendar_event.
 export type FocusRequest = {
   id: string; // stable request id (uuid-ish)
   type: FocusRequestType;
-  itemId?: string; // the FocusDraftable.id this acts on (regenerate / push_to_gmail)
+  itemId?: string; // the FocusDraftable.id this acts on (regenerate / push_to_gmail / create_calendar_event)
   feedback?: string; // free-text steer for regenerate ("make it warmer, drop the ask")
+  event?: FocusEventInput; // confirmed event details (create_calendar_event)
   createdAt: string; // ISO timestamp, set on enqueue
 };
 
@@ -81,6 +93,7 @@ export async function enqueueRequest(input: {
   type: FocusRequestType;
   itemId?: string;
   feedback?: string;
+  event?: FocusEventInput;
 }): Promise<FocusRequest> {
   const c = await client();
   const now = new Date().toISOString();
@@ -89,6 +102,7 @@ export async function enqueueRequest(input: {
     type: input.type,
     itemId: input.itemId,
     feedback: input.feedback,
+    event: input.event,
     createdAt: now,
   };
   const status: FocusRequestStatus = {

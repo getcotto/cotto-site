@@ -1764,16 +1764,16 @@
     "notes": ""
   },
   {
-    "date": "2026-07-31",
+    "date": "2026-08-03",
     "type": "Receipt",
-    "location": "In Transit (FK->Carriacou)",
-    "account": "FK production run 7-23-27wk-INTRANSIT-RLS1220085",
+    "location": "Brooklyn (Carriacou)",
+    "account": "FK production run 7-23-27wk (RLS1220085)",
     "buf": 420,
     "fo": 601,
     "gr": 320,
     "dir": "In",
-    "lot": "",
-    "notes": "Production run 7-23-27wk-INTRANSIT-RLS1220085 landed at In Transit (FK->Carriacou) — counts confirmed."
+    "lot": "Jul-23 + Jul-27 runs (best-by ~9/22-9/26)",
+    "notes": "Jul-23 (2/4/2 batches) + Jul-27 (4/5/3) FK runs, RLS1220085, LANDED at Brooklyn (Carriacou) 8/3 (run_calendar lands date; Kendall confirmed delivered). Counts confirmed 420/601/320. CORRECTED 2026-08-11: was logged at placeholder \"In Transit\" dated 7/31, which dropped it from on-hand (the 8/1 physical count did not include this run, still in transit). Best-by ~9/22-9/26 (freshest stock on hand)."
   },
   {
     "date": "2026-08-03",
@@ -1893,6 +1893,6 @@
     "gr": 18,
     "dir": "Out",
     "lot": "",
-    "notes": "Kendall giveaway pickup from Brooklyn, per her 8/2 scheduling email (msg 19fc4b726214cd8e): ~50 cs from 6/24 run (17/17/16) + 6 cs from 7/13-15 run (2/2/2) = 19/19/18. Separate from the Meraki 160 (already logged as Route 080326-001). Book as giveaway on P&L, not a sale. ⚠ scheduled amounts (\"roughly\"); confirm actual + whether the separate 6/15-lot pickup happened."
+    "notes": "Kendall giveaway pickup from Brooklyn, per her 8/2 scheduling email (msg 19fc4b726214cd8e): ~50 cs from 6/24 run (17/17/16) + 6 cs from 7/13-15 run (2/2/2) = 19/19/18. Separate from the Meraki 160 (already logged as Route 080326-001). Book as giveaway on P&L, not a sale. ⚠ scheduled amounts (\"roughly\"); confirm actual + whether the separate 6/15-lot pickup happened. | basis:estimated tagged 2026-08-11 per policy estimate-vs-counted — the note already declares these are scheduled \"roughly\" amounts, not a count. Upgrade to \"counted\" once the actual pickup is confirmed."
   }
 ]

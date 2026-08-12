@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-11",
+  "asOf": "2026-08-12",
   "findings": [
     {
       "sev": "🔴",
@@ -74,7 +74,7 @@
     {
       "sev": "🔴",
       "area": "Freshness",
-      "title": "⚠ SPINE FROZEN — AR last reconciled 2026-07-22 (20d ago). This is a STALE COPY; every number in this report is out of date. DO NOT act on it.",
+      "title": "⚠ SPINE FROZEN — AR last reconciled 2026-07-22 (21d ago). This is a STALE COPY; every number in this report is out of date. DO NOT act on it.",
       "detail": "A routine is reading a frozen spine. Reconcile the source and repoint it before trusting any figure below.",
       "impact": null
     },
@@ -164,8 +164,15 @@
     },
     {
       "sev": "🟡",
+      "area": "Receipts",
+      "title": "Unconfirmed receipt 2026-08-03: FK production run 7-23-27wk (RLS1220085)",
+      "detail": "420 BUF / 601 FO / 320 GR logged as estimate — reconcile when the BOL/receipt lands.",
+      "impact": null
+    },
+    {
+      "sev": "🟡",
       "area": "Freshness",
-      "title": "Spine may be stale (latest delivery 2026-08-06 = 5d ago, latest order 2026-08-13 = -2d ago)",
+      "title": "Spine may be stale (latest delivery 2026-08-06 = 6d ago, latest order 2026-08-13 = -1d ago)",
       "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
       "impact": null
     },
@@ -179,7 +186,7 @@
     {
       "sev": "✅",
       "area": "Inventory",
-      "title": "On-hand: BUF 584 / FO 647 / GR 264 cs",
+      "title": "On-hand: BUF 1004 / FO 1248 / GR 584 cs",
       "detail": "",
       "impact": null
     }

@@ -17,6 +17,7 @@ export default function Dashboard({ initialItems, storeError }: Props) {
   const [priority, setPriority] = useState(false);
   const [showDone, setShowDone] = useState(false);
   const [error, setError] = useState<string | null>(storeError);
+  const [harvest, setHarvest] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -116,6 +117,24 @@ export default function Dashboard({ initialItems, storeError }: Props) {
     window.location.href = "/dash";
   }
 
+  // "capture call" — raise the pending flag; the in-app meeting-harvest listener runs
+  // the real Zoom capture within a few minutes and posts the to-dos here. The button
+  // only requests; it never blocks on the capture itself.
+  async function captureCall() {
+    if (harvest === "sending") return;
+    setHarvest("sending");
+    try {
+      const res = await fetch("/api/dash/harvest", { method: "POST" });
+      if (!res.ok) throw new Error((await res.json()).error || "Failed");
+      setHarvest("sent");
+      setTimeout(() => setHarvest("idle"), 90_000);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Failed to request capture");
+      setHarvest("error");
+      setTimeout(() => setHarvest("idle"), 5_000);
+    }
+  }
+
   return (
     <div className="container py-6 max-w-2xl">
       {error && (
@@ -130,6 +149,20 @@ export default function Dashboard({ initialItems, storeError }: Props) {
       <div className="flex items-baseline justify-between mb-4">
         <h1 className="font-display text-3xl text-cotto-red">dash</h1>
         <div className="flex items-center gap-3">
+          <button
+            onClick={captureCall}
+            disabled={harvest === "sending"}
+            title="Pull to-dos from your most recent Zoom call (lands in a few minutes)"
+            className="text-xs font-medium text-cotto-red hover:underline disabled:opacity-40"
+          >
+            {harvest === "sending"
+              ? "requesting…"
+              : harvest === "sent"
+                ? "capturing ✓"
+                : harvest === "error"
+                  ? "try again"
+                  : "＋ capture call"}
+          </button>
           <a href="/dash/focus" className="text-xs font-medium text-cotto-red hover:underline">
             focus →
           </a>

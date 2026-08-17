@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-12",
+  "asOf": "2026-08-17",
   "findings": [
     {
       "sev": "🔴",
@@ -11,9 +11,9 @@
     {
       "sev": "🔴",
       "area": "AR",
-      "title": "Overdue AR (reconciled, past terms): $15381.48",
-      "detail": "Meadow Lane $6034.40; Happier Grocery $345.28; Butterfield Market $2732.40; Last Minute Market $1029.60; Jack's Market $118.80; Farm to People $395.40; Fairway (all doors) $4725.60. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
-      "impact": 15381.48
+      "title": "Overdue AR (reconciled, past terms): $30054.48",
+      "detail": "Meadow Lane $6034.40; Happier Grocery $345.28; Butterfield Market $2732.40; Last Minute Market $1029.60; Jack's Market $118.80; Farm to People $395.40; Fairway (all doors) $4725.60; Neighborly Ops LLC $5466.00; Meraki Direct, Inc $9207.00. Confirmed open in BOTH Settle and Mercury — safe to follow up.",
+      "impact": 30054.48
     },
     {
       "sev": "🔴",
@@ -70,13 +70,6 @@
       "title": "Reorder Cardboard Boxes (8oz 6-pack): NOT enough for the very next run (7/23-24) — order before producing",
       "detail": "Have 0, need 1328 for all runs after the 2026-07-20 count (short 1328). Supplier PCA (Packaging Corp of America); rep Connor Snyder. ⚠ count is stale — confirm with a fresh FK count.",
       "impact": 1328
-    },
-    {
-      "sev": "🔴",
-      "area": "Freshness",
-      "title": "⚠ SPINE FROZEN — AR last reconciled 2026-07-22 (21d ago). This is a STALE COPY; every number in this report is out of date. DO NOT act on it.",
-      "detail": "A routine is reading a frozen spine. Reconcile the source and repoint it before trusting any figure below.",
-      "impact": null
     },
     {
       "sev": "🟡",
@@ -172,7 +165,7 @@
     {
       "sev": "🟡",
       "area": "Freshness",
-      "title": "Spine may be stale (latest delivery 2026-08-06 = 6d ago, latest order 2026-08-13 = -1d ago)",
+      "title": "Spine may be stale (latest delivery 2026-08-06 = 11d ago, latest order 2026-08-13 = 4d ago)",
       "detail": "Recent orders/deliveries may be uncaptured — ask Claude to reconcile in a session.",
       "impact": null
     },
@@ -186,7 +179,7 @@
     {
       "sev": "✅",
       "area": "Inventory",
-      "title": "On-hand: BUF 1004 / FO 1248 / GR 584 cs",
+      "title": "On-hand: BUF 936 / FO 1224 / GR 692 cs",
       "detail": "",
       "impact": null
     }

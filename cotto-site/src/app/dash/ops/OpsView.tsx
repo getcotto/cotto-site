@@ -501,7 +501,9 @@ function VelocityPanel({ v }: { v: NonNullable<OpsSnapshot["velocity"]> }) {
   const delta = w?.deltaCases;
   const dir = delta == null ? "" : delta > 0 ? "▲" : delta < 0 ? "▼" : "—";
   const dirColor = delta == null ? "text-neutral-500" : delta > 0 ? "text-emerald-600" : delta < 0 ? "text-red-600" : "text-neutral-500";
-  const wentSilent = (a: (typeof accts)[number]) => (a.priorWeekCases || 0) > 0 && (a.recentWeekCases || 0) === 0;
+  // A real gap, not a lumpy week: many direct accounts order every ~1-2 weeks, so a single 0-week is normal.
+  // Flag only a SUSTAINED silence — zero in BOTH of the last two complete weeks while carrying a baseline.
+  const wentSilent = (a: (typeof accts)[number]) => (a.recentWeekCases || 0) === 0 && (a.priorWeekCases || 0) === 0 && (a.weeklyCases || 0) > 0;
   return (
     <Section id="velocity" eyebrow="How fast it sells" title="Velocity — units per store per week">
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">

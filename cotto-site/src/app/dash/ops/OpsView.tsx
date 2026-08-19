@@ -99,7 +99,7 @@ export default function OpsView({ snapshot, storeError }: Props) {
 
       {/* KPIs */}
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
-        <Kpi label="On hand" value={s.onHand.total} unit={`cs · Bklyn ${s.location.brooklyn} + Edison ${s.location.edison}`} accent="cyan" />
+        <Kpi label="On hand" value={s.onHand.total} unit={`cs · Bklyn ${s.location.brooklyn}${s.location.edison > 0 ? ` + Edison ${s.location.edison}` : ""}${s.location.inbound > 0 ? ` + ${s.location.inbound} inbound` : ""}`} accent="cyan" />
         {/* Free to promise leads over on-hand: on-hand is what exists, this is what you can sell. */}
         {s.committed && (
           <Kpi

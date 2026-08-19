@@ -13,18 +13,26 @@ export default function RefreshButton() {
     setMsg("");
     try {
       const res = await fetch("/api/dash/refresh", { method: "POST" });
-      const data = await res.json();
-      if (!res.ok || !data.ok) {
-        setState("error");
-        setMsg(data.error || "Refresh failed.");
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.ok) {
+        // Regenerate dispatched; the sweep republishes in ~1-2 min, then reload to render the new snapshot.
+        setMsg("Regenerating from canonical — reloading in ~90s…");
+        setTimeout(() => window.location.reload(), 90_000);
         return;
       }
-      // The sweep regenerates + republishes in ~1-2 min; reload then so the new snapshot renders.
-      setMsg("Regenerating from canonical…");
-      setTimeout(() => window.location.reload(), 90_000);
-    } catch (e) {
+      // Dispatch couldn't run (token missing/misscoped). Still USEFUL: reload to show the latest publish
+      // (the sweep already refreshes 4×/day). Say plainly why a full regenerate didn't fire.
       setState("error");
-      setMsg((e as Error).message);
+      setMsg(
+        res.status === 503
+          ? "Showing latest — on-demand regenerate needs GH_DISPATCH_TOKEN in Vercel. Reloading…"
+          : "Showing latest — regenerate token needs Actions:write on cotto-spine. Reloading…",
+      );
+      setTimeout(() => window.location.reload(), 1500);
+    } catch {
+      // Network/endpoint error — fall back to a plain reload so the button always does something.
+      setMsg("Reloading latest…");
+      setTimeout(() => window.location.reload(), 800);
     }
   }
 

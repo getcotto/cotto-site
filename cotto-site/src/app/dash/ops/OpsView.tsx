@@ -504,9 +504,8 @@ function VelocityPanel({ v }: { v: NonNullable<OpsSnapshot["velocity"]> }) {
   const delta = w?.deltaCases;
   const dir = delta == null ? "" : delta > 0 ? "▲" : delta < 0 ? "▼" : "—";
   const dirColor = delta == null ? "text-neutral-500" : delta > 0 ? "text-emerald-600" : delta < 0 ? "text-red-600" : "text-neutral-500";
-  // A real gap, not a lumpy week: many direct accounts order every ~1-2 weeks, so a single 0-week is normal.
-  // Flag only a SUSTAINED silence — zero in BOTH of the last two complete weeks while carrying a baseline.
-  const wentSilent = (a: (typeof accts)[number]) => (a.recentWeekCases || 0) === 0 && (a.priorWeekCases || 0) === 0 && (a.weeklyCases || 0) > 0;
+  // No churn/"went silent" flag: it false-fired on every account (lumpy-weekly, LA-irregular, consignment).
+  // Rebuild only with per-account cadence + longer history; a wrong alarm is worse than none.
   return (
     <Section id="velocity" eyebrow="How fast it sells" title="Velocity — units per store per week">
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -539,8 +538,8 @@ function VelocityPanel({ v }: { v: NonNullable<OpsSnapshot["velocity"]> }) {
           </thead>
           <tbody>
             {accts.map((a, i) => (
-              <tr key={i} className={wentSilent(a) ? "bg-red-50" : undefined}>
-                <Td>{a.account}{wentSilent(a) ? <span className="ml-2 text-xs font-medium text-red-600">⚠ went silent</span> : null}</Td>
+              <tr key={i}>
+                <Td>{a.account}</Td>
                 <Td right>{a.unitsPerStoreWk}</Td>
                 <Td right>{a.weeklyCases}</Td>
                 <Td right muted={a.doorsConfidence ? a.doorsConfidence !== "confirmed" : false}>{a.doors}{a.doorsConfidence && a.doorsConfidence !== "confirmed" ? "?" : ""}</Td>
@@ -562,7 +561,7 @@ function VelocityPanel({ v }: { v: NonNullable<OpsSnapshot["velocity"]> }) {
         {b.assumedDoorAccounts
           ? `${b.assumedDoorAccounts} of ${b.accounts} accounts have an assumed (single-store) door count, so per-store figures for multi-store accounts are an upper bound — confirm doors to sharpen.`
           : ""}{" "}
-        A red row is an account that was ordering and went silent last full week — worth a call. Source: spine/velocity.json{v.asOf ? `, ${v.asOf}` : ""}.
+        Source: spine/velocity.json{v.asOf ? `, ${v.asOf}` : ""}. (Note: most direct accounts have moved to Meraki — see the Meraki panel; this direct view is now the minority of the business.)
       </p>
     </Section>
   );

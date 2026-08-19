@@ -513,13 +513,24 @@ function ActionBand({ s }: { s: OpsSnapshot }) {
     });
   }
 
-  items.sort((a, b) => (a.level === b.level ? 0 : a.level === "red" ? -1 : 1));
-  const reds = items.filter((i) => i.level === "red").length;
+  // Dedup: the three sources are distinct so overlap is rare, but a flag that restates a packaging
+  // order shouldn't double-list. Key on the normalized label.
+  const seen = new Set<string>();
+  const list = items.filter((i) => {
+    const k = i.label.toLowerCase().replace(/\s+/g, " ").trim();
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+  list.sort((a, b) => (a.level === b.level ? 0 : a.level === "red" ? -1 : 1));
+  const reds = list.filter((i) => i.level === "red").length;
 
-  if (items.length === 0) {
+  if (list.length === 0) {
+    // Deliberately does NOT claim capture status — the FreshnessBanner above owns that and is loud
+    // when the sweep is down. A green "capture is current" here could sit under a red banner.
     return (
       <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
-        <span className="font-semibold">Nothing needs you today.</span> Capture is current; no reorders, aging, or open-order items are outstanding.
+        <span className="font-semibold">Nothing needs you today.</span> No reorders, aging stock, or open orders need action.
       </div>
     );
   }
@@ -529,12 +540,12 @@ function ActionBand({ s }: { s: OpsSnapshot }) {
         <h2 className="text-sm font-semibold text-neutral-900">What needs you today</h2>
         <span className="text-xs tabular-nums text-neutral-500">
           {reds > 0 && <span className="font-medium text-red-600">{reds} urgent</span>}
-          {reds > 0 && items.length > reds ? " · " : ""}
-          {items.length} item{items.length === 1 ? "" : "s"}
+          {reds > 0 && list.length > reds ? " · " : ""}
+          {list.length} item{list.length === 1 ? "" : "s"}
         </span>
       </div>
       <ul className="flex flex-col gap-2">
-        {items.map((i, idx) => (
+        {list.map((i, idx) => (
           <li key={idx} className="flex items-start gap-2.5 text-sm leading-snug">
             <span className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${i.level === "red" ? "bg-red-500" : "bg-amber-400"}`} aria-hidden />
             <span className="text-neutral-800">

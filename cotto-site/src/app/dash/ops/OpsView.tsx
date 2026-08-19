@@ -312,6 +312,9 @@ export default function OpsView({ snapshot, storeError }: Props) {
       {/* VELOCITY — Loop F: units/store/wk, the buyer + investor metric, tracked here permanently */}
       {s.velocity && s.velocity.blended && <VelocityPanel v={s.velocity} />}
 
+      {/* MERAKI — the distributor channel most of the business now runs through, per-store sell-in */}
+      {s.meraki && (s.meraki.storeCount || 0) > 0 && <MerakiPanel m={s.meraki} />}
+
       {/* ORDERS */}
       <Section id="orders" eyebrow="This week" title="Open orders — by channel">
         <div className="overflow-x-auto rounded-xl border border-neutral-200 bg-white shadow-sm">
@@ -560,6 +563,58 @@ function VelocityPanel({ v }: { v: NonNullable<OpsSnapshot["velocity"]> }) {
           ? `${b.assumedDoorAccounts} of ${b.accounts} accounts have an assumed (single-store) door count, so per-store figures for multi-store accounts are an upper bound — confirm doors to sharpen.`
           : ""}{" "}
         A red row is an account that was ordering and went silent last full week — worth a call. Source: spine/velocity.json{v.asOf ? `, ${v.asOf}` : ""}.
+      </p>
+    </Section>
+  );
+}
+
+// MERAKI (distributor) — the channel most of the business now runs through. Per-store sell-in from the
+// monthly Meraki report (spine/meraki_sellin.json). Sell-in, not per-store velocity (no open dates yet).
+function MerakiPanel({ m }: { m: NonNullable<OpsSnapshot["meraki"]> }) {
+  const stores = (m.topStores || []).slice().sort((a, z) => (z.cases || 0) - (a.cases || 0));
+  return (
+    <Section id="meraki" eyebrow="Distributor — most of the business" title="Meraki — per-store sell-in">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="rounded-xl border border-red-200 bg-red-50 p-3 shadow-sm">
+          <div className="text-[11px] font-semibold uppercase tracking-wide text-red-600">Cases sold</div>
+          <div className="text-2xl font-semibold text-red-700">{m.totalCases ?? "—"}</div>
+          <div className="text-xs text-red-500">{m.period || "period"}</div>
+        </div>
+        <div className="rounded-xl border border-neutral-200 bg-white p-3 shadow-sm">
+          <div className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">Stores</div>
+          <div className="text-2xl font-semibold">{m.storeCount ?? "—"}</div>
+          <div className="text-xs text-neutral-500">selling</div>
+        </div>
+        <div className="rounded-xl border border-neutral-200 bg-white p-3 shadow-sm">
+          <div className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">Avg / store</div>
+          <div className="text-2xl font-semibold">{m.storeCount ? ((m.totalCases || 0) / m.storeCount).toFixed(1) : "—"}</div>
+          <div className="text-xs text-neutral-500">cases</div>
+        </div>
+        <div className="rounded-xl border border-neutral-200 bg-white p-3 shadow-sm">
+          <div className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">Top store</div>
+          <div className="truncate text-lg font-semibold">{stores[0]?.store || "—"}</div>
+          <div className="text-xs text-neutral-500">{stores[0]?.cases ?? "—"} cs</div>
+        </div>
+      </div>
+
+      <div className="mt-4 overflow-x-auto rounded-xl border border-neutral-200 bg-white shadow-sm">
+        <table className="w-full border-collapse">
+          <thead>
+            <tr><Th>Store</Th><Th right>Cases</Th><Th right>Orders</Th></tr>
+          </thead>
+          <tbody>
+            {stores.map((s, i) => (
+              <tr key={i}>
+                <Td>{s.store}</Td>
+                <Td right>{s.cases}</Td>
+                <Td right>{s.orders}</Td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="mt-2 text-xs text-neutral-500">
+        {m.note ? `${m.note}. ` : ""}Sell-in per store (top {stores.length}) — not per-store velocity yet: Meraki hasn&apos;t sent store open-dates, so weeks-live per store is unknown. Ask Oreste for open-dates + monthly reports to turn this into u/store/wk. Source: spine/meraki_sellin.json{m.asOf ? `, ${m.asOf}` : ""}.
       </p>
     </Section>
   );

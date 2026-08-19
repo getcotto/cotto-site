@@ -227,6 +227,16 @@ export type OpsSnapshot = {
     }>;
     distributor?: { account?: string; weeklyCases?: number; note?: string } | null;
   };
+  // Meraki (distributor) per-store sell-in — the channel most of the business now runs through, from the
+  // monthly Meraki report (spine/meraki_sellin.json). Sell-in, not per-store velocity (no open dates yet).
+  meraki?: {
+    period?: string;
+    asOf?: string;
+    storeCount?: number;
+    totalCases?: number;
+    note?: string;
+    topStores?: Array<{ store: string; cases: number; orders: number }>;
+  };
 };
 
 export async function getOpsSnapshot(): Promise<OpsSnapshot | null> {

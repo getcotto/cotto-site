@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import type { ReactNode } from "react";
 import type { OpsSnapshot, OpsLot, OpsOrder, OpsLedgerRow, OpsRun, OpsHistoryRow, OpsPackagingComponent } from "@/lib/dash/ops-store";
+import RefreshButton from "./RefreshButton";
 
 type Props = {
   snapshot: OpsSnapshot | null;
@@ -793,9 +794,10 @@ function Shell({ children, asOf, updatedAt }: { children: ReactNode; asOf?: stri
       <main className="mx-auto max-w-5xl px-4 py-6">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h1 className="text-2xl font-bold text-neutral-900">Ops command center</h1>
-          <div className="text-xs text-neutral-400">
+          <div className="flex items-center gap-2 text-xs text-neutral-400">
             {asOf ? <>As of {asOf}</> : null}
-            {updatedAt ? <span className="ml-2 rounded-full bg-neutral-100 px-2 py-0.5">refreshed {timeAgo(updatedAt)}</span> : null}
+            {updatedAt ? <span className="ml-1 rounded-full bg-neutral-100 px-2 py-0.5">refreshed {timeAgo(updatedAt)}</span> : null}
+            <RefreshButton />
           </div>
         </div>
         {children}

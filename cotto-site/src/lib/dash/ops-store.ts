@@ -196,6 +196,37 @@ export type OpsSnapshot = {
     allInPerCase?: { buf: number; fo: number; gr: number; blended: number };
     scaledTargetPerUnit?: { blended: number; note?: string };
   };
+  // Velocity (Loop F) — units/store/wk, the buyer + investor metric. Read from spine/velocity.json
+  // (its one writer is engine/derive_velocity.js); the dash renders it, never recomputes. Distributor
+  // (Meraki) is sell-IN, reported separately, never blended into the direct-door shelf metric.
+  velocity?: {
+    asOf?: string | null;
+    blended?: {
+      unitsPerStoreWk: number;
+      directDoors: number;
+      accounts: number;
+      assumedDoorAccounts?: number;
+      note?: string;
+    };
+    wow?: {
+      recentWeek?: string;
+      recentWeekCases?: number;
+      priorWeek?: string;
+      priorWeekCases?: number;
+      deltaCases?: number;
+      note?: string;
+    } | null;
+    accounts?: Array<{
+      account: string;
+      unitsPerStoreWk: number;
+      weeklyCases: number;
+      doors: number;
+      doorsConfidence?: string;
+      recentWeekCases?: number;
+      priorWeekCases?: number;
+    }>;
+    distributor?: { account?: string; weeklyCases?: number; note?: string } | null;
+  };
 };
 
 export async function getOpsSnapshot(): Promise<OpsSnapshot | null> {

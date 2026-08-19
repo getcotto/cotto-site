@@ -309,8 +309,8 @@ export default function OpsView({ snapshot, storeError }: Props) {
         </Section>
       )}
 
-      {/* COST — item-by-item unit cost, the permanent home for "what does a unit cost and why" */}
-      {s.cogs && s.cogs.allInPerUnit && <CostBreakdown c={s.cogs} />}
+      {/* VELOCITY — Loop F: units/store/wk, the buyer + investor metric, tracked here permanently */}
+      {s.velocity && s.velocity.blended && <VelocityPanel v={s.velocity} />}
 
       {/* ORDERS */}
       <Section id="orders" eyebrow="This week" title="Open orders — by channel">
@@ -491,90 +491,78 @@ function FreshnessBanner({
 // calendar, meraki), each green/amber/red by its own staleness so a single quiet channel is
 // visible at a glance. A source with no local cache (calendar is live-queried) shows grey. Slips
 // go red on a backlog (photos arrived but unread) even with no processed date.
-// Item-by-item unit cost. The permanent, readable home for "what does a unit cost and why" — the
-// buckets that sum to all-in, then every line (co-man, packaging, per-SKU ingredients). Reads
-// spine/cogs.json via the snapshot, so it stays current and is one place, not a spreadsheet tab.
-function CostBreakdown({ c }: { c: NonNullable<OpsSnapshot["cogs"]> }) {
-  const skus = [
-    { k: "buf" as const, name: "Buffalo" },
-    { k: "fo" as const, name: "French Onion" },
-    { k: "gr" as const, name: "Garden Ranch" },
-  ];
-  const all = c.allInPerUnit!;
-  const cm = c.coman?.perUnit ?? 0;
-  const pk = c.packaging?.perUnit ?? 0;
-  const fr = c.freight?.perUnit ?? 0;
-  const m = (n?: number) => (n == null ? "—" : `$${n.toFixed(2)}`);
+// VELOCITY (Loop F) — units/store/wk, the buyer + investor metric. Rendered from spine/velocity.json via
+// the snapshot; engine/derive_velocity.js is the only writer. Meraki sell-IN is shown separately (not shelf
+// sell-through). "Went silent" flags an account that was ordering and dropped to zero last full week.
+function VelocityPanel({ v }: { v: NonNullable<OpsSnapshot["velocity"]> }) {
+  const b = v.blended!;
+  const w = v.wow || undefined;
+  const accts = (v.accounts || []).slice().sort((a, z) => (z.unitsPerStoreWk || 0) - (a.unitsPerStoreWk || 0));
+  const delta = w?.deltaCases;
+  const dir = delta == null ? "" : delta > 0 ? "▲" : delta < 0 ? "▼" : "—";
+  const dirColor = delta == null ? "text-neutral-500" : delta > 0 ? "text-emerald-600" : delta < 0 ? "text-red-600" : "text-neutral-500";
+  const wentSilent = (a: (typeof accts)[number]) => (a.priorWeekCases || 0) > 0 && (a.recentWeekCases || 0) === 0;
   return (
-    <Section id="cogs" eyebrow="What it costs to make" title="Cost per unit — item by item">
+    <Section id="velocity" eyebrow="How fast it sells" title="Velocity — units per store per week">
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        {skus.map((s) => (
-          <div key={s.k} className="rounded-xl border border-neutral-200 bg-white p-3 shadow-sm">
-            <div className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">{s.name}</div>
-            <div className="text-2xl font-semibold">{m(all[s.k])}</div>
-            <div className="text-xs text-neutral-500">{m(all[s.k] * 6)}/case</div>
-          </div>
-        ))}
         <div className="rounded-xl border border-red-200 bg-red-50 p-3 shadow-sm">
           <div className="text-[11px] font-semibold uppercase tracking-wide text-red-600">Blended</div>
-          <div className="text-2xl font-semibold text-red-700">{m(all.blended)}</div>
-          <div className="text-xs text-red-500">{m(all.blended * 6)}/case</div>
+          <div className="text-2xl font-semibold text-red-700">{b.unitsPerStoreWk}</div>
+          <div className="text-xs text-red-500">u/store/wk</div>
+        </div>
+        <div className="rounded-xl border border-neutral-200 bg-white p-3 shadow-sm">
+          <div className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">Direct doors</div>
+          <div className="text-2xl font-semibold">{b.directDoors}</div>
+          <div className="text-xs text-neutral-500">{b.accounts} accounts</div>
+        </div>
+        <div className="rounded-xl border border-neutral-200 bg-white p-3 shadow-sm">
+          <div className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">Week over week</div>
+          <div className={`text-2xl font-semibold ${dirColor}`}>{dir} {delta == null ? "—" : `${delta > 0 ? "+" : ""}${delta} cs`}</div>
+          <div className="text-xs text-neutral-500">{w?.recentWeekCases ?? "—"} vs {w?.priorWeekCases ?? "—"} cs</div>
+        </div>
+        <div className="rounded-xl border border-neutral-200 bg-white p-3 shadow-sm">
+          <div className="text-[11px] font-semibold uppercase tracking-wide text-neutral-500">Category floor</div>
+          <div className="text-2xl font-semibold">5–7</div>
+          <div className="text-xs text-neutral-500">u/SKU/store/wk</div>
         </div>
       </div>
 
       <div className="mt-4 overflow-x-auto rounded-xl border border-neutral-200 bg-white shadow-sm">
         <table className="w-full border-collapse">
           <thead>
-            <tr><Th>Bucket</Th><Th right>Buffalo</Th><Th right>French Onion</Th><Th right>Garden Ranch</Th></tr>
+            <tr><Th>Account</Th><Th right>u/store/wk</Th><Th right>Cases/wk</Th><Th right>Doors</Th><Th right>Last wk</Th><Th right>Prior wk</Th></tr>
           </thead>
           <tbody>
-            <tr><Td>Co-man{c.coman?.supplier ? ` · ${c.coman.supplier}` : ""}</Td><Td right>{m(cm)}</Td><Td right>{m(cm)}</Td><Td right>{m(cm)}</Td></tr>
-            <tr><Td>Packaging</Td><Td right>{m(pk)}</Td><Td right>{m(pk)}</Td><Td right>{m(pk)}</Td></tr>
-            <tr><Td>Ingredients</Td><Td right>{m(c.ingredients?.buf.perUnit)}</Td><Td right>{m(c.ingredients?.fo.perUnit)}</Td><Td right>{m(c.ingredients?.gr.perUnit)}</Td></tr>
-            <tr><Td>Freight</Td><Td right>{m(fr)}</Td><Td right>{m(fr)}</Td><Td right>{m(fr)}</Td></tr>
-            <tr className="font-semibold text-red-700"><Td>All-in / unit</Td><Td right>{m(all.buf)}</Td><Td right>{m(all.fo)}</Td><Td right>{m(all.gr)}</Td></tr>
+            {accts.map((a, i) => (
+              <tr key={i} className={wentSilent(a) ? "bg-red-50" : undefined}>
+                <Td>{a.account}{wentSilent(a) ? <span className="ml-2 text-xs font-medium text-red-600">⚠ went silent</span> : null}</Td>
+                <Td right>{a.unitsPerStoreWk}</Td>
+                <Td right>{a.weeklyCases}</Td>
+                <Td right muted={a.doorsConfidence ? a.doorsConfidence !== "confirmed" : false}>{a.doors}{a.doorsConfidence && a.doorsConfidence !== "confirmed" ? "?" : ""}</Td>
+                <Td right>{a.recentWeekCases ?? "—"}</Td>
+                <Td right>{a.priorWeekCases ?? "—"}</Td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
 
-      <div className="mt-4 grid gap-4 md:grid-cols-2">
-        <CostList title={`Co-man${c.coman?.supplier ? ` — ${c.coman.supplier}` : ""}`} lines={c.coman?.lines ?? []} note={c.coman?.note} />
-        <CostList title="Packaging" lines={c.packaging?.lines ?? []} note={c.packaging?.note} />
-      </div>
-      <div className="mt-4 grid gap-4 md:grid-cols-3">
-        {skus.map((s) => (
-          <CostList key={s.k} title={`${s.name} — ingredients`} lines={c.ingredients?.[s.k].lines ?? []} />
-        ))}
-      </div>
-      <p className="mt-3 text-xs text-neutral-500">
-        Lines are penny-rounded (they sum to within ~$0.02 of each subtotal). Source: SOP model BOM
-        {c.asOf ? `, ${c.asOf}` : ""}. Scaled target ~{m(c.scaledTargetPerUnit?.blended)}/unit at WFM launch. Update a line when a supplier price moves.
+      {v.distributor && (
+        <p className="mt-3 text-xs text-neutral-600">
+          Distributor (Meraki): {v.distributor.weeklyCases ?? "—"} cs/wk sell-IN — {v.distributor.note || "shown separately; not shelf sell-through, so not blended into the per-store metric."}
+        </p>
+      )}
+      <p className="mt-2 text-xs text-neutral-500">
+        {b.note || "Buyer + investor metric."}{" "}
+        {b.assumedDoorAccounts
+          ? `${b.assumedDoorAccounts} of ${b.accounts} accounts have an assumed (single-store) door count, so per-store figures for multi-store accounts are an upper bound — confirm doors to sharpen.`
+          : ""}{" "}
+        A red row is an account that was ordering and went silent last full week — worth a call. Source: spine/velocity.json{v.asOf ? `, ${v.asOf}` : ""}.
       </p>
     </Section>
   );
 }
 
-function CostList({ title, lines, note }: { title: string; lines: { item: string; perUnit: number; supplier?: string; note?: string }[]; note?: string }) {
-  return (
-    <div className="rounded-xl border border-neutral-200 bg-white p-3 shadow-sm">
-      <div className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-neutral-500">{title}</div>
-      <table className="w-full border-collapse text-sm">
-        <tbody>
-          {lines.map((l, i) => (
-            <tr key={i} className="border-t border-neutral-100 first:border-t-0">
-              <td className="py-1 pr-2 text-neutral-700">
-                {l.item}
-                {l.supplier ? <span className="text-neutral-400"> · {l.supplier}</span> : null}
-              </td>
-              <td className="py-1 text-right font-mono tabular-nums text-neutral-700">${l.perUnit.toFixed(2)}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      {note && <p className="mt-1 text-[11px] leading-snug text-neutral-400">{note}</p>}
-    </div>
-  );
-}
 
 function SourceFreshnessStrip({
   sources,
@@ -742,9 +730,7 @@ function Shell({ children, asOf, updatedAt }: { children: ReactNode; asOf?: stri
           </span>
           <span className="hidden text-xs text-neutral-400 sm:inline">Inventory &amp; production command center</span>
           <nav className="ml-auto flex items-center gap-3 text-sm">
-            <Link href="/dash/focus" className="font-medium text-cyan-800 hover:text-cyan-900">Focus</Link>
             <Link href="/dash" className="text-neutral-500 hover:text-neutral-900">Dash</Link>
-            <Link href="/dash/crm" className="text-neutral-500 hover:text-neutral-900">CRM</Link>
           </nav>
         </div>
       </header>

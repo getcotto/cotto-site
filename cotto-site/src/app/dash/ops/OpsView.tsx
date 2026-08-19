@@ -98,6 +98,11 @@ export default function OpsView({ snapshot, storeError }: Props) {
       {/* FRESHNESS — is the Gmail capture still running? Loud when it isn't. */}
       <FreshnessBanner freshness={s.freshness} packagingStaleNote={s.packaging?.staleNote} />
 
+      {/* WHAT NEEDS YOU TODAY — the one thing the dash should answer first, so it leads. Aggregates
+          the operational flags, packaging that must be ordered/chased, and orders open past their
+          delivery into one prioritized list. Calm green when nothing is outstanding. */}
+      <ActionBand s={s} />
+
       {/* KPIs */}
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         <Kpi label="On hand" value={s.onHand.total} unit={`cs · Bklyn ${s.location.brooklyn}${s.location.edison > 0 ? ` + Edison ${s.location.edison}` : ""}${s.location.inbound > 0 ? ` + ${s.location.inbound} inbound` : ""}`} accent="cyan" />
@@ -310,11 +315,13 @@ export default function OpsView({ snapshot, storeError }: Props) {
         </Section>
       )}
 
-      {/* VELOCITY — Loop F: units/store/wk, the buyer + investor metric, tracked here permanently */}
-      {s.velocity && s.velocity.blended && <VelocityPanel v={s.velocity} />}
-
-      {/* MERAKI — the distributor channel most of the business now runs through, per-store sell-in */}
+      {/* MERAKI FIRST — the distributor channel most of the business now runs through. It leads the
+          direct-velocity panel because it IS the bigger number; burying it under the direct doors
+          misread where the business actually is (Kendall, dashboard review 2026-08-19). */}
       {s.meraki && (s.meraki.storeCount || 0) > 0 && <MerakiPanel m={s.meraki} />}
+
+      {/* VELOCITY — Loop F: units/store/wk on the DIRECT doors, the buyer + investor metric */}
+      {s.velocity && s.velocity.blended && <VelocityPanel v={s.velocity} />}
 
       {/* ORDERS */}
       <Section id="orders" eyebrow="This week" title="Open orders — by channel">
@@ -358,29 +365,11 @@ export default function OpsView({ snapshot, storeError }: Props) {
         </div>
       </Section>
 
-      {/* LEDGER */}
-      <Section id="ledger" eyebrow="How we know" title="Reconciliation ledger">
-        <div className="overflow-x-auto rounded-xl border border-neutral-200 bg-white shadow-sm">
-          <table className="w-full border-collapse">
-            <thead>
-              <tr><Th>Date</Th><Th>Movement</Th><Th right>BUF</Th><Th right>FO</Th><Th right>GR</Th><Th right>Total</Th><Th>Source</Th></tr>
-            </thead>
-            <tbody>
-              {s.ledger.map((r: OpsLedgerRow, i) => (
-                <tr key={i} className={r.excluded ? "text-neutral-400" : ""}>
-                  <Td muted={r.excluded}>{r.date}</Td>
-                  <Td muted={r.excluded}>{r.label}</Td>
-                  <Td right muted={r.excluded}>{r.buf ?? ""}</Td>
-                  <Td right muted={r.excluded}>{r.fo ?? ""}</Td>
-                  <Td right muted={r.excluded}>{r.gr ?? ""}</Td>
-                  <Td right muted={r.excluded}>{r.total}</Td>
-                  <Td muted>{r.source}</Td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </Section>
+      {/* RECONCILIATION LEDGER retired 2026-08-19: it rendered the hand-curated ops_view.ledger, which was
+          frozen at a 7/16 mass-balance (total 1,379 incl. a retired Edison line) and CONTRADICTED the
+          engine-computed header on-hand (1,652). The engine-derived "On hand vs spoken for" ledger + the
+          per-lot table above already reconcile on-hand from canonical, so this curated restatement was both
+          stale and redundant. Re-add only if regenerated from canonical (derive_position), never hand-curated. */}
 
       {/* PIPELINE + AUGUST */}
       <Section id="pipeline" eyebrow="What we've made & what's next" title="Production pipeline">
@@ -498,6 +487,67 @@ function FreshnessBanner({
 // VELOCITY (Loop F) — units/store/wk, the buyer + investor metric. Rendered from spine/velocity.json via
 // the snapshot; engine/derive_velocity.js is the only writer. Meraki sell-IN is shown separately (not shelf
 // sell-through). "Went silent" flags an account that was ordering and dropped to zero last full week.
+// WHAT NEEDS YOU TODAY — a prioritized, deduped action list drawn only from real snapshot signal:
+// operational flags (capture gaps, demand divergence, aging stock, safety ceiling), packaging that
+// must be ordered or chased, and orders still open past their delivery. Red before amber; calm green
+// when the board is clear. It answers "what do I do today" before the page shows a single number.
+function ActionBand({ s }: { s: OpsSnapshot }) {
+  type Item = { level: "red" | "amber"; label: string; detail?: string };
+  const items: Item[] = [];
+
+  for (const f of s.flags ?? []) {
+    if (f.level === "red" || f.level === "amber") items.push({ level: f.level, label: f.text });
+  }
+  for (const c of s.packaging?.components ?? []) {
+    if (c.action === "ORDER") {
+      items.push({ level: "red", label: `Order ${c.label}`, detail: c.reorderBy ? `by ${c.reorderBy}` : c.orderQty ? `${c.orderQty.toLocaleString()} units` : undefined });
+    } else if (c.action === "LATE") {
+      items.push({ level: "red", label: `Chase ${c.label} — ordered, lands late`, detail: c.lateFor ? `short ${c.lateFor.short?.toLocaleString()} at ${c.lateFor.run}` : undefined });
+    }
+  }
+  if ((s.committed?.staleOpen?.total ?? 0) > 0) {
+    items.push({
+      level: "amber",
+      label: `${s.committed!.staleOpen.total} cs across ${s.committed!.staleOpenRows?.length ?? 0} order row(s) still open past delivery`,
+      detail: "reconcile or close",
+    });
+  }
+
+  items.sort((a, b) => (a.level === b.level ? 0 : a.level === "red" ? -1 : 1));
+  const reds = items.filter((i) => i.level === "red").length;
+
+  if (items.length === 0) {
+    return (
+      <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
+        <span className="font-semibold">Nothing needs you today.</span> Capture is current; no reorders, aging, or open-order items are outstanding.
+      </div>
+    );
+  }
+  return (
+    <div className="rounded-xl border border-neutral-200 bg-white p-4 shadow-sm">
+      <div className="mb-2 flex items-center justify-between">
+        <h2 className="text-sm font-semibold text-neutral-900">What needs you today</h2>
+        <span className="text-xs tabular-nums text-neutral-500">
+          {reds > 0 && <span className="font-medium text-red-600">{reds} urgent</span>}
+          {reds > 0 && items.length > reds ? " · " : ""}
+          {items.length} item{items.length === 1 ? "" : "s"}
+        </span>
+      </div>
+      <ul className="flex flex-col gap-2">
+        {items.map((i, idx) => (
+          <li key={idx} className="flex items-start gap-2.5 text-sm leading-snug">
+            <span className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${i.level === "red" ? "bg-red-500" : "bg-amber-400"}`} aria-hidden />
+            <span className="text-neutral-800">
+              {i.label}
+              {i.detail && <span className="text-neutral-500"> — {i.detail}</span>}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 function VelocityPanel({ v }: { v: NonNullable<OpsSnapshot["velocity"]> }) {
   const b = v.blended!;
   const w = v.wow || undefined;

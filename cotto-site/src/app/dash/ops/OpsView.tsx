@@ -119,6 +119,23 @@ export default function OpsView({ snapshot, storeError }: Props) {
         <Kpi label="BUF / FO / GR" value={`${s.onHand.buf}/${s.onHand.fo}/${s.onHand.gr}`} unit="cases on hand" accent="neutral" />
       </div>
 
+      {/* WEEKS OF COVER — expiry-adjusted. Raw cover counts stock that will strand before it sells; the
+          deliverable number counts only what can ship before its shelf-life floor, so it's the honest
+          "do we actually need the next run" figure. Shows the raw number alongside only when they differ. */}
+      {s.onHand.cover?.deliverableWeeks != null && (
+        <p className="mt-2 text-xs text-neutral-500 dark:text-neutral-400">
+          Weeks of cover: <b>{s.onHand.cover.deliverableWeeks}</b> deliverable
+          {" "}(only stock shippable before its {s.onHand.cover.floorDays ?? 21}-day floor
+          {typeof s.onHand.cover.deliverableCases === "number" ? `, ~${s.onHand.cover.deliverableCases} cs` : ""})
+          {s.onHand.cover.rawWeeks != null && s.onHand.cover.rawWeeks !== s.onHand.cover.deliverableWeeks
+            ? ` · ${s.onHand.cover.rawWeeks} raw (counts stock that strands before it sells)`
+            : ""}
+          {s.onHand.cover.oversupplied && s.onHand.cover.ceilingWeeks != null
+            ? ` · over the ${s.onHand.cover.ceilingWeeks}-wk ceiling`
+            : ""}
+        </p>
+      )}
+
       {/* COMMITTED TO THIS WEEK'S ROUTE — on-hand above is a PRE-route figure; name what this week's
           deliveries (mostly Thursday's direct route) will draw down, so it isn't read as free-to-sell. */}
       {s.thisWeekRoute && s.thisWeekRoute.total > 0 && (

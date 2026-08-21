@@ -124,7 +124,24 @@ export type OpsPackaging = {
 export type OpsSnapshot = {
   updatedAt: string; // set server-side on POST
   asOf: string; // effective date of the data
-  onHand: { buf: number; fo: number; gr: number; total: number };
+  onHand: {
+    buf: number; fo: number; gr: number; total: number;
+    // Error-bar on the on-hand figure (computed in emit-ops-snapshot). Present since the trust-band work.
+    confidence?: { level?: string; likelyRange?: [number, number]; note?: string; [k: string]: unknown };
+    // Weeks of cover, raw vs EXPIRY-ADJUSTED (from cadence.cover, engine/derive_cadence.js). rawWeeks
+    // counts stock that will strand before it sells; deliverableWeeks counts only cases shippable before
+    // their floor ÷ demand — the honest "do we need the next run" number.
+    cover?: {
+      rawWeeks?: number | null;
+      deliverableWeeks?: number | null;
+      deliverableCases?: number | null;
+      weeklyDemand?: number | null;
+      ceilingWeeks?: number;
+      floorDays?: number;
+      oversupplied?: boolean;
+      note?: string;
+    };
+  };
   // Free-to-promise, from the engine. On-hand alone overstates availability: Meraki pulls ~160 cs
   // a week and open orders sit against it. staleOpen is a data-quality signal — orders still
   // flagged open whose delivery already happened — and is deliberately NOT subtracted.

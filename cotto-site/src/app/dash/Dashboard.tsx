@@ -148,12 +148,16 @@ export default function Dashboard({ initialItems, storeError }: Props) {
 
       <div className="flex items-baseline justify-between mb-4">
         <h1 className="font-display text-3xl text-cotto-red">dash</h1>
-        <div className="flex items-center gap-3">
+        <nav className="flex flex-wrap items-center justify-end gap-x-3 gap-y-1 text-xs">
+          <a href="/dash/ops" className="text-cotto-red/60 hover:text-cotto-red">ops</a>
+          <a href="/dash/week" className="text-cotto-red/60 hover:text-cotto-red">week</a>
+          <a href="/dash/crm" className="text-cotto-red/60 hover:text-cotto-red">crm</a>
+          <a href="/dash/model" className="text-cotto-red/60 hover:text-cotto-red">model</a>
           <button
             onClick={captureCall}
             disabled={harvest === "sending"}
             title="Pull to-dos from your most recent Zoom call (lands in a few minutes)"
-            className="text-xs font-medium text-cotto-red hover:underline disabled:opacity-40"
+            className="font-medium text-cotto-red hover:underline disabled:opacity-40"
           >
             {harvest === "sending"
               ? "requesting…"
@@ -163,13 +167,13 @@ export default function Dashboard({ initialItems, storeError }: Props) {
                   ? "try again"
                   : "＋ capture call"}
           </button>
-          <a href="/dash/focus" className="text-xs font-medium text-cotto-red hover:underline">
+          <a href="/dash/focus" className="font-medium text-cotto-red hover:underline">
             focus →
           </a>
-          <button onClick={logout} className="text-xs text-cotto-red/60 hover:text-cotto-red">
+          <button onClick={logout} className="text-cotto-red/60 hover:text-cotto-red">
             log out
           </button>
-        </div>
+        </nav>
       </div>
 
       <div className="sticky top-0 z-10 bg-brand-cream pt-1 pb-3">

@@ -261,7 +261,7 @@ export default function CrmView({ snapshot, storeError }: Props) {
     return (
       <Shell>
         <div className="rounded-xl border border-neutral-200 bg-white p-6 text-sm text-neutral-600">
-          No CRM snapshot yet. Run <code className="rounded bg-neutral-100 px-1">node emit-crm-snapshot.js</code> from cotto-pipeline to populate it.
+          The CRM view hasn’t been built yet. It refreshes every Monday from your retailer inbox.
         </div>
       </Shell>
     );

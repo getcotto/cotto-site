@@ -112,9 +112,7 @@ export default function ModelView({ snapshot, storeError }: Props) {
 
       {!snapshot && !storeError && (
         <div className="mt-6 rounded-xl border border-dashed border-neutral-300 bg-white p-6 text-center text-sm text-neutral-500">
-          No model snapshot yet. Run the pipeline publisher
-          <code className="mx-1 rounded bg-neutral-100 px-1 py-0.5 text-xs">node cotto-pipeline/emit-snapshot.js</code>
-          to push the latest model here.
+          No model snapshot yet. It publishes automatically the next time the model pipeline runs.
         </div>
       )}
 

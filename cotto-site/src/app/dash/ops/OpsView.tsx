@@ -86,7 +86,7 @@ export default function OpsView({ snapshot, storeError }: Props) {
     return (
       <Shell>
         <div className="rounded-xl border border-neutral-200 bg-white p-6 text-sm text-neutral-600">
-          No ops snapshot yet. Run <code className="rounded bg-neutral-100 px-1.5 py-0.5">node emit-ops-snapshot.js</code> from the local pipeline to publish one.
+          The ops dashboard hasn’t been published yet. It refreshes automatically when the daily close runs each morning and evening — if it’s still empty past mid-morning, the desk close may have stalled (you’ll get a Telegram alert if so).
         </div>
       </Shell>
     );
@@ -450,8 +450,7 @@ function FreshnessBanner({
     <div className="mb-5 space-y-2">
       {!haveLiveness ? (
         <div className="rounded-xl border border-neutral-300 bg-neutral-50 px-4 py-2.5 text-sm text-neutral-600">
-          Capture liveness unknown — no heartbeat in this snapshot. Re-run{" "}
-          <code className="rounded bg-neutral-100 px-1 py-0.5">emit-ops-snapshot.js</code>.
+          Capture liveness unknown — this snapshot doesn’t carry a heartbeat yet. It fills in on the next daily close.
         </div>
       ) : cloudLive ? (
         <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2 text-xs font-medium text-emerald-700">
@@ -848,6 +847,7 @@ function Shell({ children, asOf, updatedAt }: { children: ReactNode; asOf?: stri
           </span>
           <span className="hidden text-xs text-neutral-400 sm:inline">Inventory &amp; production command center</span>
           <nav className="ml-auto flex items-center gap-3 text-sm">
+            <Link href="/dash/week" className="text-neutral-500 hover:text-neutral-900">Week</Link>
             <Link href="/dash" className="text-neutral-500 hover:text-neutral-900">Dash</Link>
           </nav>
         </div>
@@ -863,7 +863,7 @@ function Shell({ children, asOf, updatedAt }: { children: ReactNode; asOf?: stri
         </div>
         {children}
         <footer className="mt-10 border-t border-neutral-200 pt-4 text-xs text-neutral-400">
-          Cotto — Dipsy LLC · internal. Cases = 6-packs (8&nbsp;oz). Auto-published from the spine by cotto-pipeline/emit-ops-snapshot.js.
+          Cotto — Dipsy LLC · internal. Cases = 6-packs (8&nbsp;oz). Auto-published from the spine on each daily close.
         </footer>
       </main>
     </div>

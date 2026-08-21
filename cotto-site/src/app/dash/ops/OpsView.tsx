@@ -119,6 +119,17 @@ export default function OpsView({ snapshot, storeError }: Props) {
         <Kpi label="BUF / FO / GR" value={`${s.onHand.buf}/${s.onHand.fo}/${s.onHand.gr}`} unit="cases on hand" accent="neutral" />
       </div>
 
+      {/* COMMITTED TO THIS WEEK'S ROUTE — on-hand above is a PRE-route figure; name what this week's
+          deliveries (mostly Thursday's direct route) will draw down, so it isn't read as free-to-sell. */}
+      {s.thisWeekRoute && s.thisWeekRoute.total > 0 && (
+        <p className="mt-2 text-xs text-neutral-500">
+          <span className="font-medium text-neutral-700">Committed to this week’s route:</span>{" "}
+          {s.thisWeekRoute.total} cs ({s.thisWeekRoute.buf}/{s.thisWeekRoute.fo}/{s.thisWeekRoute.gr}) across{" "}
+          {s.thisWeekRoute.accounts} stop{s.thisWeekRoute.accounts === 1 ? "" : "s"} — the on-hand above is a
+          pre-route figure this week’s deliveries will draw down.
+        </p>
+      )}
+
       {/* WHAT IS ACTUALLY FREE */}
       {s.committed && (
         <Section id="free" eyebrow="What you can actually sell" title="On hand vs spoken for">

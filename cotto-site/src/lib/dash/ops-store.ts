@@ -147,6 +147,18 @@ export type OpsSnapshot = {
     staleOpen: { buf: number; fo: number; gr: number; total: number };
     staleOpenRows?: Array<{ date: string; account: string; sku: string; cases: number; status: string }>;
   };
+  // Committed to THIS week's route — on-hand is a PRE-route number, so name what this week's
+  // deliveries (mostly Thursday's direct route) will take out of it. Informational only: it does NOT
+  // alter on-hand (which decrements from its own Out events as deliveries are captured). null = no route.
+  thisWeekRoute?: {
+    weekStart: string;
+    weekEnd: string;
+    buf: number;
+    fo: number;
+    gr: number;
+    total: number;
+    accounts: number;
+  } | null;
   // Meraki is deliberately absent: once they pick up, it is SOLD. We cannot see how much sits
   // in their DC versus already on store shelves, so reporting it as a position we hold was
   // precision we do not have. (Kendall, 2026-07-21)

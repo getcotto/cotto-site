@@ -1,28 +1,12 @@
-import { isAuthorizedServer } from "@/lib/dash/auth";
-import { getWeekSnapshot } from "@/lib/dash/week-store";
-import Login from "../Login";
-import WeekView from "./WeekView";
-import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 
-export const metadata: Metadata = {
-  title: "This Week",
-  robots: { index: false, follow: false },
-};
-
-export const dynamic = "force-dynamic";
-export const runtime = "nodejs";
-
-export default async function WeekPage() {
-  const authed = await isAuthorizedServer();
-  if (!authed) {
-    return <Login />;
-  }
-  let snapshot = null;
-  let storeError: string | null = null;
-  try {
-    snapshot = await getWeekSnapshot();
-  } catch (e) {
-    storeError = e instanceof Error ? e.message : "Storage unavailable";
-  }
-  return <WeekView snapshot={snapshot} storeError={storeError} />;
+// RETIRED 2026-09-12. /dash/week rendered the SAME cadence the daily Telegram push sends -- its own
+// store header said so: "the SAME computed cadence the daily Telegram push sends, rendered on the dash
+// as a read-only view." Two surfaces for one artifact is one more place to check and one more place to
+// wonder whether you are looking at the current version. The push already reaches her phone, which is
+// where she actually reads it.
+//
+// Redirect rather than delete so an existing bookmark lands somewhere useful instead of a 404.
+export default function RetiredWeekPage() {
+  redirect("/dash");
 }

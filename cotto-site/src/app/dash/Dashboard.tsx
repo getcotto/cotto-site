@@ -197,9 +197,7 @@ export default function Dashboard({ initialItems, storeError }: Props) {
         </div>
         <nav className="flex flex-wrap items-center justify-end gap-x-3 gap-y-1 text-xs">
           <a href="/dash/ops" className="text-cotto-red/60 hover:text-cotto-red">ops</a>
-          <a href="/dash/week" className="text-cotto-red/60 hover:text-cotto-red">week</a>
           <a href="/dash/crm" className="text-cotto-red/60 hover:text-cotto-red">crm</a>
-          <a href="/dash/model" className="text-cotto-red/60 hover:text-cotto-red">model</a>
           <button
             onClick={captureCall}
             disabled={harvest === "sending"}

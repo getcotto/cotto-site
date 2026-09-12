@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { ReactNode } from "react";
-import type { OpsSnapshot, OpsLot, OpsOrder, OpsLedgerRow, OpsRun, OpsHistoryRow, OpsPackagingComponent } from "@/lib/dash/ops-store";
+import type { OpsSnapshot, OpsLot, OpsRun, OpsHistoryRow, OpsPackagingComponent } from "@/lib/dash/ops-store";
 import RefreshButton from "./RefreshButton";
 
 type Props = {
@@ -351,47 +351,96 @@ export default function OpsView({ snapshot, storeError }: Props) {
       {/* VELOCITY — Loop F: units/store/wk on the DIRECT doors, the buyer + investor metric */}
       {s.velocity && s.velocity.blended && <VelocityPanel v={s.velocity} />}
 
-      {/* ORDERS */}
-      <Section id="orders" eyebrow="This week" title="Open orders — by channel">
-        <div className="overflow-x-auto rounded-xl border border-neutral-200 bg-white shadow-sm">
-          <table className="w-full border-collapse">
-            <thead>
-              <tr><Th>Account</Th><Th>Channel</Th><Th right>BUF/FO/GR</Th><Th right>Cases</Th><Th>Status</Th></tr>
-            </thead>
-            <tbody>
-              {s.orders.map((o: OpsOrder, i) => (
-                <tr key={i}>
-                  <Td>{o.account}</Td>
-                  <Td muted>{o.channel}</Td>
-                  <Td right>{o.buf ?? "—"} / {o.fo ?? "—"} / {o.gr ?? "—"}</Td>
-                  <Td right>{o.cases ?? "—"}</Td>
-                  <td className="border-t border-neutral-100 px-3 py-2">
-                    <span className={`inline-block rounded px-2 py-0.5 text-xs font-medium ${statusChip(o.status)}`}>{o.status}</span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-            {/* Total: the open book is the number that matters against on-hand, and reading it
-                off a column of rows is exactly the arithmetic a dashboard should have done. */}
-            <tfoot>
-              <tr className="bg-neutral-50 font-semibold">
-                <td className="border-t-2 border-neutral-300 px-3 py-2" colSpan={2}>
-                  Total open ({s.orders.length} order{s.orders.length === 1 ? "" : "s"})
-                </td>
-                <td className="border-t-2 border-neutral-300 px-3 py-2 text-right tabular-nums">
-                  {(["buf", "fo", "gr"] as const)
-                    .map((k) => s.orders.reduce((n, o) => n + (Number(o[k]) || 0), 0))
-                    .join(" / ")}
-                </td>
-                <td className="border-t-2 border-neutral-300 px-3 py-2 text-right tabular-nums">
-                  {s.orders.reduce((n, o) => n + (Number(o.cases) || 0), 0).toLocaleString()}
-                </td>
-                <td className="border-t-2 border-neutral-300 px-3 py-2" />
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-      </Section>
+      {/* ORDERS — engine-derived, 2026-09-12.
+          This table used to render ops_view.orders, a HAND-CURATED list an agent wrote. On
+          2026-09-12 it was showing the 8/20 route under an eyebrow that said "This week" -- three
+          weeks stale -- with status fields running 191 to 534 characters of prose explaining what
+          had happened to each order. Kendall: "everything under that is outdated and wrong."
+          The engine already computed the truth (committedRows, forecastRows, staleOpenRows) and
+          this section simply was not reading it. Now it does, and the curated list is gone. */}
+      {s.committed && (
+        <Section
+          id="orders"
+          eyebrow={`Committed through ${s.committed.windowEnd}`}
+          title="Open orders"
+        >
+          {(() => {
+            // committedRows are per-SKU; a delivery is one account on one date.
+            const byKey = new Map<string, { date: string; account: string; buf: number; fo: number; gr: number; status: string }>();
+            for (const r of s.committed!.committedRows ?? []) {
+              const k = `${r.date}|${r.account}`;
+              const row = byKey.get(k) ?? { date: r.date, account: r.account, buf: 0, fo: 0, gr: 0, status: r.status };
+              const sku = String(r.sku || "").toLowerCase();
+              if (sku === "buf" || sku === "fo" || sku === "gr") row[sku] += Number(r.cases) || 0;
+              byKey.set(k, row);
+            }
+            const rows = [...byKey.values()].sort((a, b) => a.date.localeCompare(b.date));
+            const tot = rows.reduce((n, r) => n + r.buf + r.fo + r.gr, 0);
+
+            if (!rows.length) {
+              return (
+                <p className="rounded-xl border border-neutral-200 bg-white px-3 py-3 text-sm text-neutral-600 shadow-sm">
+                  No orders on the book through {s.committed!.windowEnd}. That is either a genuinely quiet
+                  week or orders are being scheduled outside the order book, which is what the capture
+                  warning above would flag.
+                </p>
+              );
+            }
+            return (
+              <div className="overflow-x-auto rounded-xl border border-neutral-200 bg-white shadow-sm">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr><Th>Account</Th><Th>Due</Th><Th right>BUF/FO/GR</Th><Th right>Cases</Th><Th>Status</Th></tr>
+                  </thead>
+                  <tbody>
+                    {rows.map((r, i) => (
+                      <tr key={i}>
+                        <Td>{r.account}</Td>
+                        <Td muted>{r.date}</Td>
+                        <Td right>{r.buf} / {r.fo} / {r.gr}</Td>
+                        <Td right>{r.buf + r.fo + r.gr}</Td>
+                        <td className="border-t border-neutral-100 px-3 py-2">
+                          <span className={`inline-block rounded px-2 py-0.5 text-xs font-medium ${statusChip(r.status)}`}>{r.status}</span>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                  <tfoot>
+                    <tr className="bg-neutral-50 font-semibold">
+                      <td className="border-t-2 border-neutral-300 px-3 py-2" colSpan={2}>
+                        Total ({rows.length} order{rows.length === 1 ? "" : "s"})
+                      </td>
+                      <td className="border-t-2 border-neutral-300 px-3 py-2 text-right tabular-nums">
+                        {rows.reduce((n, r) => n + r.buf, 0)} / {rows.reduce((n, r) => n + r.fo, 0)} / {rows.reduce((n, r) => n + r.gr, 0)}
+                      </td>
+                      <td className="border-t-2 border-neutral-300 px-3 py-2 text-right tabular-nums">{tot.toLocaleString()}</td>
+                      <td className="border-t-2 border-neutral-300 px-3 py-2" />
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            );
+          })()}
+
+          {/* STALE OPEN — past-dated rows nobody closed. Not a scary number: they are excluded from
+              committed so they cannot double-subtract. But an order book that never closes out is how
+              "open orders" stopped meaning anything. One line, with the count, not 17 paragraphs. */}
+          {s.committed.staleOpen?.total > 0 && (
+            <p className="mt-3 rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-900">
+              <span className="font-semibold">{s.committed.staleOpenRows?.length ?? 0} rows ({s.committed.staleOpen.total} cs)</span>{" "}
+              have delivery dates in the past and are still marked open. They are left out of the numbers
+              above so they cannot double-count, but they need closing out.
+              {s.committed.staleOpenRows?.length ? (
+                <span className="mt-1 block text-xs text-amber-800">
+                  Oldest: {s.committed.staleOpenRows.map((r) => r.date).sort()[0]} ·{" "}
+                  {[...new Set(s.committed.staleOpenRows.map((r) => r.account))].slice(0, 4).join(", ")}
+                  {new Set(s.committed.staleOpenRows.map((r) => r.account)).size > 4 ? " and others" : ""}
+                </span>
+              ) : null}
+            </p>
+          )}
+        </Section>
+      )}
 
       {/* RECONCILIATION LEDGER retired 2026-08-19: it rendered the hand-curated ops_view.ledger, which was
           frozen at a 7/16 mass-balance (total 1,379 incl. a retired Edison line) and CONTRADICTED the

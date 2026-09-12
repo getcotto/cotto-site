@@ -98,6 +98,28 @@ export const TEXT_SOFT_LIMIT = 90;
  *
  * Only fires above TEXT_SOFT_LIMIT so genuinely short items with a hyphen are left alone.
  */
+/**
+ * Does this string close everything it opens? Used to reject a split that would cut
+ * through the middle of a quoted subject line or a parenthetical aside.
+ */
+function isBalanced(s: string): boolean {
+  let round = 0;
+  let square = 0;
+  for (const ch of s) {
+    if (ch === "(") round++;
+    else if (ch === ")") round--;
+    else if (ch === "[") square++;
+    else if (ch === "]") square--;
+    if (round < 0 || square < 0) return false; // closed something never opened
+  }
+  if (round !== 0 || square !== 0) return false;
+  // Straight and curly quotes: an odd count means the lede ends mid-quote.
+  const straight = (s.match(/"/g) ?? []).length;
+  const open = (s.match(/“/g) ?? []).length;
+  const close = (s.match(/”/g) ?? []).length;
+  return straight % 2 === 0 && open === close;
+}
+
 export function splitLede(text: string): { text: string; why?: string } {
   const t = text.trim();
   if (t.length <= TEXT_SOFT_LIMIT) return { text: t };
@@ -105,11 +127,15 @@ export function splitLede(text: string): { text: string; why?: string } {
   // Separators the writers actually use, in the order they appear. " - " and the
   // dashes introduce reasoning; ":" and ";" introduce a detail list or an aside.
   // Earliest qualifying split wins, so the lede stays the action.
-  const SEPARATORS = [/\s[-–—]\s/, /:\s/, /;\s/];
+  // Global flags: we scan EVERY occurrence, not just the first. The first separator is
+  // often inside a quoted subject line, and rejecting it must fall through to the next
+  // candidate rather than giving up on the whole item.
+  const SEPARATORS = [/\s[-–—]\s/g, /:\s/g, /;\s/g];
   let best: { lede: string; why: string } | null = null;
   for (const re of SEPARATORS) {
-    const m = t.match(re);
-    if (!m || m.index === undefined) continue;
+    re.lastIndex = 0;
+    for (const m of t.matchAll(re)) {
+    if (m.index === undefined) continue;
     const lede = t.slice(0, m.index).trim();
     const why = t.slice(m.index + m[0].length).trim();
     // A very short lede is a fragment, not a task. 15 is calibrated to Kendall's own
@@ -118,7 +144,13 @@ export function splitLede(text: string): { text: string; why?: string } {
     // A lede still far over the limit has not been helped; an empty tail means there
     // was nothing to move.
     if (lede.length < 15 || !why || lede.length > TEXT_SOFT_LIMIT * 2) continue;
+    // Never cut inside a quote or a bracket. The Kemps item is the case that caught
+    // this: its text embeds an email subject, ("Cottage cheese supply - Cotto, Eric
+    // Weidman referral"), and the first " - " sits INSIDE it, so splitting there left
+    // the lede ending on a dangling `("Cottage cheese supply`.
+    if (!isBalanced(lede)) continue;
     if (!best || lede.length < best.lede.length) best = { lede, why };
+    }
   }
   return best ? { text: best.lede, why: best.why } : { text: t };
 }

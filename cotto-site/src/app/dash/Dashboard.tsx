@@ -171,7 +171,7 @@ export default function Dashboard({ initialItems, storeError }: Props) {
       const res = await fetch("/api/dash/harvest", { method: "POST" });
       if (!res.ok) throw new Error((await res.json()).error || "Failed");
       setHarvest("sent");
-      setTimeout(() => setHarvest("idle"), 90_000);
+      setTimeout(() => setHarvest("idle"), 20_000);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Failed to request capture");
       setHarvest("error");
@@ -203,13 +203,13 @@ export default function Dashboard({ initialItems, storeError }: Props) {
           <button
             onClick={captureCall}
             disabled={harvest === "sending"}
-            title="Pull to-dos from your most recent Zoom call (lands in a few minutes)"
+            title="Flags your most recent Zoom call for capture. The harvest runs at 1:30pm and 9:30pm and picks it up then."
             className="font-medium text-cotto-red hover:underline disabled:opacity-40"
           >
             {harvest === "sending"
               ? "requesting…"
               : harvest === "sent"
-                ? "capturing ✓"
+                ? "queued ✓"
                 : harvest === "error"
                   ? "try again"
                   : "＋ capture call"}

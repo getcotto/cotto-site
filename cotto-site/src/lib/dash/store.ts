@@ -1,5 +1,14 @@
 import { createClient, type RedisClientType } from "redis";
-import { CATEGORIES, SOURCES, type Category, type Source, type TodoItem } from "./types";
+import {
+  CATEGORIES,
+  SOURCES,
+  migrateTodo,
+  splitLede,
+  type Category,
+  type Kind,
+  type Source,
+  type TodoItem,
+} from "./types";
 
 const KEY = "dash:todos:v1";
 
@@ -33,7 +42,10 @@ export async function listTodos(): Promise<TodoItem[]> {
   if (!raw) return [];
   try {
     const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? (parsed as TodoItem[]) : [];
+    // migrateTodo on READ, not as a one-off job: legacy categories, untagged system
+    // plumbing, and memo-shaped text are all normalised every time, so a missed
+    // migration cannot leave the board in two shapes at once.
+    return Array.isArray(parsed) ? (parsed as TodoItem[]).map(migrateTodo) : [];
   } catch {
     return [];
   }
@@ -50,10 +62,13 @@ function genId(): string {
 
 export type CreateInput = {
   text: string;
+  why?: string;
   category: Category;
   priority?: boolean;
   note?: string;
   source?: Source;
+  kind?: Kind;
+  parentId?: string;
   threadId?: string;
   threadUrl?: string;
   who?: string;
@@ -64,15 +79,21 @@ export async function createTodo(input: CreateInput): Promise<TodoItem> {
   if (!text) throw new Error("text required");
   if (!CATEGORIES.includes(input.category)) throw new Error("invalid category");
   const source: Source = input.source && SOURCES.includes(input.source) ? input.source : "kendall";
+  // Writers still hand us memo-shaped text. Split it here so the board never has to
+  // render a paragraph as a task, and nothing is lost: the tail lands in `why`.
+  const split = input.why ? { text, why: input.why.trim() || undefined } : splitLede(text);
   const item: TodoItem = {
     id: genId(),
-    text,
+    text: split.text,
+    why: split.why,
     category: input.category,
     priority: !!input.priority,
     done: false,
     createdAt: new Date().toISOString(),
     note: input.note?.trim() || undefined,
     source,
+    kind: input.kind ?? "task",
+    parentId: input.parentId?.trim() || undefined,
     threadId: input.threadId?.trim() || undefined,
     threadUrl: input.threadUrl?.trim() || undefined,
     who: input.who?.trim() || undefined,
@@ -83,7 +104,7 @@ export async function createTodo(input: CreateInput): Promise<TodoItem> {
   return item;
 }
 
-export type PatchInput = Partial<Pick<TodoItem, "text" | "category" | "priority" | "done" | "note">>;
+export type PatchInput = Partial<Pick<TodoItem, "text" | "why" | "category" | "priority" | "done" | "note" | "parentId">>;
 
 export async function patchTodo(id: string, patch: PatchInput): Promise<TodoItem | null> {
   const items = await listTodos();
@@ -95,6 +116,8 @@ export async function patchTodo(id: string, patch: PatchInput): Promise<TodoItem
   if (patch.category && CATEGORIES.includes(patch.category)) next.category = patch.category;
   if (typeof patch.priority === "boolean") next.priority = patch.priority;
   if (typeof patch.note === "string") next.note = patch.note.trim() || undefined;
+  if (typeof patch.why === "string") next.why = patch.why.trim() || undefined;
+  if (typeof patch.parentId === "string") next.parentId = patch.parentId.trim() || undefined;
   if (typeof patch.done === "boolean") {
     next.done = patch.done;
     next.doneAt = patch.done ? new Date().toISOString() : undefined;
@@ -106,7 +129,8 @@ export async function patchTodo(id: string, patch: PatchInput): Promise<TodoItem
 
 export async function deleteTodo(id: string): Promise<boolean> {
   const items = await listTodos();
-  const next = items.filter((it) => it.id !== id);
+  // Deleting a parent must not orphan its children into an invisible limbo.
+  const next = items.filter((it) => it.id !== id && it.parentId !== id);
   if (next.length === items.length) return false;
   await writeTodos(next);
   return true;

@@ -92,11 +92,18 @@ const TodoContext = createContext<TodoCtxT | null>(null);
 // the dash). Falls back to "ops".
 function guessCategory(text: string): Category {
   const t = (text || "").toLowerCase();
+  // Most specific first. Sections match Kendall's own list (see lib/dash/types.ts).
+  // "samples" was retired into sales; hiring/formulation/events/legal/investors are
+  // hers and were previously all collapsing into ops or admin.
+  if (/\bhir(e|ing)\b|candidate|interview|recruit|\bcfo\b|ops hire/.test(t)) return "hiring";
+  if (/formula|reformulat|recipe|ingredient|bench|\bprotein\b|shelf.?life|deibel|\blab\b|citrus fiber|dry.?curd/.test(t)) return "formulation";
+  if (/expo|festival|\bfest\b|pitch slam|booth|salon|trade ?show|wine ?& ?food|fancy ?f/.test(t)) return "events";
+  if (/investor|\bsafe\b|cap table|fundrais|\braise\b|\bdeck\b|board update/.test(t)) return "investors";
+  if (/contract|\bnda\b|\bmnda\b|attorney|counsel|\blegal\b|trademark|\bclaim\b|docusign/.test(t)) return "legal";
   if (/invoice|payment|\bpaid\b|remit|\bar\b|credit|refund|cash|wire|\bach\b|\bbill/.test(t)) return "finance";
-  if (/sample|ship.*dip/.test(t)) return "samples";
-  if (/order|\bpo\b|purchase order|price|pricing|quote|buyer|retail|distribut/.test(t)) return "sales";
-  if (/post|content|instagram|\big\b|giveaway|press|campaign|marketing/.test(t)) return "marketing";
-  if (/contract|\bcoi\b|\bw9\b|onboard|vendor|legal|\bnda\b|\bform\b|application/.test(t)) return "admin";
+  if (/order|\bpo\b|purchase order|price|pricing|quote|buyer|retail|distribut|sample/.test(t)) return "sales";
+  if (/post|content|instagram|\big\b|giveaway|press|campaign|marketing|social/.test(t)) return "marketing";
+  if (/\bcoi\b|\bw9\b|onboard|vendor|\bform\b|application|\birs\b|\bein\b/.test(t)) return "admin";
   return "ops";
 }
 function normCategory(c: string | undefined, text: string): Category {

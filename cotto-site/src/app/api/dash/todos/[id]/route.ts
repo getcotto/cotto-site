@@ -28,6 +28,8 @@ export async function PATCH(req: NextRequest, ctx: { params: Promise<{ id: strin
   if (typeof body.priority === "boolean") patch.priority = body.priority;
   if (typeof body.done === "boolean") patch.done = body.done;
   if (typeof body.note === "string") patch.note = body.note;
+  if (typeof body.why === "string") patch.why = body.why;
+  if (typeof body.parentId === "string") patch.parentId = body.parentId;
   const item = await patchTodo(id, patch);
   if (!item) return NextResponse.json({ error: "not found" }, { status: 404 });
   return NextResponse.json({ item });

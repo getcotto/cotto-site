@@ -1,3 +1,25 @@
+# This repository's working tree is the WHOLE HOME DIRECTORY (C:\Users\kenda), and its
+# remote is github.com/getcotto/cotto-site. Only three paths are actually part of the
+# project: .gitignore, cotto-site/ and ops/ (139 files).
+#
+# Everything else in here is Kendall's personal machine: Dropbox/, OneDrive/, Documents/,
+# Downloads/, AppData/, .claude/ (which holds credentials and memory), .gitconfig,
+# NTUSER.DAT. None of it was ignored, so a single `git add -A` run from the home
+# directory would have staged all of it for a push to GitHub. Nothing has leaked; the
+# only thing that prevented it was that nobody happened to run that command.
+#
+# So: deny by default, then re-allow the project. Added 2026-09-12 during the system
+# reconciliation. If you add a new top-level project folder, it needs a `!` line here
+# or git will not see it.
+/*
+!/.gitignore
+!/cotto-site/
+!/ops/
 
+# Money feeds: real transaction data, never committed.
 ops/spine/mercury_transactions.csv
 ops/spine/settle_invoices.csv
+
+# Build output and secrets.
+.vercel
+.env*

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isAuthorizedRequest } from "@/lib/dash/auth";
 import { archiveOldDone, createTodo, listTodos } from "@/lib/dash/store";
-import { CATEGORIES, SOURCES, type Category, type Source } from "@/lib/dash/types";
+import { CATEGORIES, KINDS, SOURCES, type Category, type Kind, type Source } from "@/lib/dash/types";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -21,10 +21,13 @@ export async function POST(req: NextRequest) {
   }
   let body: {
     text?: string;
+    why?: string;
     category?: string;
     priority?: boolean;
     note?: string;
     source?: string;
+    kind?: string;
+    parentId?: string;
     threadId?: string;
     threadUrl?: string;
     who?: string;
@@ -43,9 +46,15 @@ export async function POST(req: NextRequest) {
   const source: Source = body.source && (SOURCES as readonly string[]).includes(body.source)
     ? (body.source as Source)
     : "kendall";
+  const kind: Kind = body.kind && (KINDS as readonly string[]).includes(body.kind)
+    ? (body.kind as Kind)
+    : "task";
   const item = await createTodo({
     text,
+    why: body.why?.toString(),
     category,
+    kind,
+    parentId: body.parentId?.toString(),
     priority: !!body.priority,
     note: body.note?.toString(),
     source,
